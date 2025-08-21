@@ -59,26 +59,6 @@ The LLMSymbMech approach identifies three distinct attention head types:
 2. **Symbolic induction heads**: Perform sequence induction over abstract variables
 3. **Retrieval heads**: Predict tokens by retrieving values associated with predicted abstract variables
 
-### Key Methodological Differences
-
-**Our Approach (causal_analysis.py)**:
-- General activation patching across all heads/layers 
-- Focus on identifying causal relationships via logit differences
-- Broad exploration of attention mechanisms
-
-**LLMSymbMech Approach (codebase/tasks/identity_rules/cma.py)**:
-- Targeted patching of specific head types using predefined context pairs
-- Abstract vs token context pairs for different head identification
-- Pre-computed significant heads from statistical testing
-- Generation accuracy evaluation (`gen_acc`) vs logit differences
-
-### Integration Benefits
-
-- **Hypothesis-driven analysis**: Use their significant head identification to focus our analysis
-- **Mechanism validation**: Test whether our models exhibit the same three-stage processing
-- **Enhanced visualization**: Their heatmap approach shows clearer layer×head patterns
-- **Cross-validation**: Compare our broad findings with their specific mechanism predictions
-
 ### Dataset Integration
 
 **LLMSymbMech Dataset Structure**:
@@ -86,13 +66,6 @@ The LLMSymbMech approach identifies three distinct attention head types:
 - `datasets/cma_scores/`: Pre-computed causal scores and significant heads
 - `datasets/*_correct_common_tokens_*.txt`: High-accuracy token subsets (e.g., 1378 tokens for Llama-3.1-70B)
 - Pre-generated prompt files for exact replication
-
-**Workflow Differences**:
-- **Our approach**: Dynamic prompt generation using full vocabulary
-- **Their approach**: Fixed token sets chosen for >90% model accuracy, ensuring statistical reliability
-
-**Integration Strategy**:
-Use their curated tokens for reproducible head identification, then expand with our dynamic generation for broader exploration.
 
 ### Activation Patching Process
 1. Generate prompt pairs that differ in rule structure or token order
