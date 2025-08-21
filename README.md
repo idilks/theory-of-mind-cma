@@ -49,7 +49,7 @@ The code implements causal mediation analysis to understand how transformer atte
 
 ## LLMSymbMech Integration (Now in codebase/)
 
-The `codebase/` folder contains the ICML 2025 "Emergent Symbolic Mechanisms" codebase (copied from LLMSymbMech), which implements a three-stage symbolic processing framework. This extends our causal analysis approach with targeted mechanism identification.
+The `codebase/` folder builds upon the ICML 2025 "Emergent Symbolic Mechanisms" codebase (copied from LLMSymbMech), which implements a three-stage symbolic processing framework. This extends our causal analysis approach with targeted mechanism identification.
 
 ### Three-Stage Symbolic Processing
 
