@@ -1,0 +1,59 @@
+# Environment variables (contains API tokens)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Results and data
+results/
+data/
+causal_mediation_results_full_more_models/
+*.png
+*.jpg
+*.pdf
+legacy/
+slurm_logs/
+.claude/
+.conda/
+.conda_backup_20250713_101749/
+
+# Experiment tracking and logs
+wandb/
+**/wandb/**
+*.log
+*.out
+*.err
+
+# Model cache and checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+model_cache/
+**/model_cache/**
+
+# Huggingface cache (if local)
+.cache/
+**/transformers_cache/**
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cache (general)
+*.cache
