@@ -19,6 +19,10 @@ export HF_DATASETS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
 export HF_METRICS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
 export WANDB_API_KEY="${WANDB_API_KEY:-}"
 
+# Initialize conda for slurm
+source /optnfs/common/miniconda3/etc/profile.d/conda.sh
+eval "$(conda shell.bash hook)"
+
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 cd codebase/tasks/identity_rules
