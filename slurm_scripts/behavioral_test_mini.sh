@@ -25,4 +25,4 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-python behavioral/behavioral_eval.py --config_type minimal_test
+python behavioral/behavioral_eval.py --config_type minimal_test_true

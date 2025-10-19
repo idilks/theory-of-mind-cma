@@ -25,4 +25,4 @@ eval "$(conda shell.bash hook)"
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-python behavioral/behavioral_eval.py --config_type full_comparison
+python behavioral/behavioral_eval_pure.py --config_type minimal_test_true --device cpu
