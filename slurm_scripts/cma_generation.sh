@@ -25,4 +25,4 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABA --template_names food_truck --prompt_num 30
+python codebase/tasks/identity_rules/cma.py --use_behavioral_tom --context_type  abstract --base_rule ABA --template_names food_truck --prompt_num 30 --max_new_tokens 10 --samples_per_condition 1
