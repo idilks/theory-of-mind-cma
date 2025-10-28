@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=cma_gen_lib        # create a short name for your job
+#SBATCH --job-name=hr_abb        # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1       # cpu-cores per task (>1 if multi-threaded tasks)
-#SBATCH --mem=1000GB         # total memory
+#SBATCH --mem=500GB         # total memory
 #SBATCH --gres=gpu:1           # number of gpus per node
 #SBATCH --time=3:59:00          # total run time limit (HH:MM:SS)
-#SBATCH --output=slurm_logs/cma_library%j.out
-#SBATCH --error=slurm_logs/cma_library_%j.err
+#SBATCH --output=slurm_logs/cma_hair%j.out
+#SBATCH --error=slurm_logs/cma_hair_%j.err
 #SBATCH --partition=h200_preemptable
 #SBATCH --mail-type=BEGIN,END,FAIL
 
@@ -37,4 +37,4 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 # python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABA --template_names food_truck --prompt_num 20 --max_new_tokens 15 --activation_name resid_post --model_type Qwen2.5-32B --question_style generation  --samples_per_condition 1 
 
-python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABB --template_names hair_styling --prompt_num 50 --max_new_tokens 10 --activation_name z --model_type Qwen2.5-14B-Instruct --question_style instruction
+python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABB --template_names hair_styling --prompt_num 50 --max_new_tokens 10 --activation_name z --model_type Qwen2.5-14B-Instruct --question_style instruction --better_cma
