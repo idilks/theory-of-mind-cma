@@ -37,4 +37,4 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 # python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABA --template_names food_truck --prompt_num 20 --max_new_tokens 15 --activation_name resid_post --model_type Qwen2.5-32B --question_style generation  --samples_per_condition 1 
 
-python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABB --template_names library_book --prompt_num 50 --max_new_tokens 10 --activation_name z --model_type Qwen2.5-14B-Instruct --question_style instruction --better_cma
+python codebase/tasks/identity_rules/cma.py  --use_behavioral_tom --context_type abstract --base_rule ABB --template_names library_book --prompt_num 50 --max_new_tokens 5 --activation_name z --model_type Qwen2.5-14B-Instruct --question_style instruction --better_cma
