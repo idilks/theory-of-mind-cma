@@ -58,4 +58,6 @@ Thumbs.db
 # Cache (general)
 *.cache
 
-CLAUDE.md
+legacy*/
+
+*CLAUDE.md
