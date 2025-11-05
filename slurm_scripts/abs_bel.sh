@@ -10,7 +10,7 @@
 #SBATCH --error=slurm_logs/cma_bel%j.err
 #SBATCH --partition=h200_preemptable
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --array=0-3
+#SBATCH --array=0-7
 #SBATCH --output=logs/cma_%A_%a.out
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -33,8 +33,8 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # TEMPLATES=("food_truck" "food_truck" "basic_object_move_detailed" "basic_object_move_detailed")
 
 
-RULES=("ABB" "ABA" "ABB")
-TEMPLATES=("food_truck" "basic_object_move_detailed" "basic_object_move_detailed")
+RULES=("ABB" "ABA" "ABB" "ABA" "ABB")
+TEMPLATES=("food_truck" "hair_styling" "basic_object_move_detailed" "basic_object_move_detailed")
 
 
 python codebase/tasks/identity_rules/cma.py \

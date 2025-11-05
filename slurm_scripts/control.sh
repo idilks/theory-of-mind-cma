@@ -1,15 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=original        # create a short name for your job
+#SBATCH --job-name=control        # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1       # cpu-cores per task (>1 if multi-threaded tasks)
 #SBATCH --gres=gpu:1           # number of gpus per node
 #SBATCH --time=5:59:00          # total run time limit (HH:MM:SS)
-#SBATCH --output=slurm_logs/original%j.out
-#SBATCH --error=slurm_logs/original%j.err
+#SBATCH --output=slurm_logs/control%j.out
+#SBATCH --error=slurm_logs/control%j.err
 #SBATCH --partition=h200_preemptable
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --array=0-3
+#SBATCH --array=0-7
 #SBATCH --output=logs/cma_%A_%a.out
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -28,12 +28,13 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 
 
-RULES=("ABA" "ABB" "ABA" "ABB")
-TEMPLATES=("food_truck" "food_truck" "basic_object_move_detailed" "basic_object_move_detailed")
+RULES=("ABA" "ABB" "ABA" "ABB" "ABA" "ABB" "ABA" "ABB")
+TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "food_truck" "food_truck" "hair_styling" "hair_styling")
+PATCH=("" "" "" "" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement")
 
 python codebase/tasks/identity_rules/cma.py \
   --use_behavioral_tom \
-  --context_type abstract \
+  --context_type control \
   --base_rule ${RULES[$SLURM_ARRAY_TASK_ID]} \
   --template_names ${TEMPLATES[$SLURM_ARRAY_TASK_ID]} \
   --prompt_num 50 \
