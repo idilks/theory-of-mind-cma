@@ -9,8 +9,7 @@
 #SBATCH --error=slurm_logs/basic%j.err
 #SBATCH --partition=h200_preemptable
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --array=0-7
-#SBATCH --output=logs/cma_%A_%a.out
+#SBATCH --array=0-5
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -27,19 +26,18 @@ cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 
-
-RULES=("ABA" "ABB" "ABA" "ABB" "ABA" "ABB" "ABA" "ABB")
-TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "food_truck" "food_truck" "hair_styling" "hair_styling")
-PATCH=("" "" "" "" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement")
+TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "basic_object_move_detailed" "basic_object_move_detailed")
+PATCH=("" "--patch_after_movement" "" "--patch_after_movement" "" "--patch_after_movement")
 
 python codebase/tasks/identity_rules/cma.py \
   --use_behavioral_tom \
   --context_type basic \
-  --base_rule ${RULES[$SLURM_ARRAY_TASK_ID]} \
+  --base_rule ABA \
   --template_names ${TEMPLATES[$SLURM_ARRAY_TASK_ID]} \
   --prompt_num 50 \
   --max_new_tokens 5 \
   --activation_name z \
   --model_type Qwen2.5-14B-Instruct \
   --question_style instruction \
-  --better_cma 
+  --better_cma \
+  ${PATCH[$SLURM_ARRAY_TASK_ID]}

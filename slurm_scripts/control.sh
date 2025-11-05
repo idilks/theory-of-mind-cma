@@ -9,7 +9,7 @@
 #SBATCH --error=slurm_logs/control%j.err
 #SBATCH --partition=h200_preemptable
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --array=0-7
+#SBATCH --array=0-5
 #SBATCH --output=logs/cma_%A_%a.out
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -28,9 +28,9 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 
 
-RULES=("ABA" "ABB" "ABA" "ABB" "ABA" "ABB" "ABA" "ABB")
-TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "food_truck" "food_truck" "hair_styling" "hair_styling")
-PATCH=("" "" "" "" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement")
+RULES=("ABA" "ABB" "ABA" "ABB" "ABA" "ABB")
+TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "basic_object_move_detailed" "basic_object_move_detailed")
+# PATCH=("" "" "" "" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement")
 
 python codebase/tasks/identity_rules/cma.py \
   --use_behavioral_tom \
@@ -42,4 +42,6 @@ python codebase/tasks/identity_rules/cma.py \
   --activation_name z \
   --model_type Qwen2.5-14B-Instruct \
   --question_style instruction \
-  --better_cma 
+  --better_cma \
+  --patch_after_movement
+  # ${PATCH[$SLURM_ARRAY_TASK_ID]} \
