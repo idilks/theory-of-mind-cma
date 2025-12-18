@@ -1,15 +1,16 @@
 #!/bin/bash
-#SBATCH --job-name=basic        # create a short name for your job
-#SBATCH --nodes=1                # node count
-#SBATCH --ntasks=1               # total number of tasks across all nodes
-#SBATCH --cpus-per-task=1       # cpu-cores per task (>1 if multi-threaded tasks)
-#SBATCH --gres=gpu:1           # number of gpus per node
-#SBATCH --time=5:59:00          # total run time limit (HH:MM:SS)
-#SBATCH --output=slurm_logs/basic%j.out
-#SBATCH --error=slurm_logs/basic%j.err
+#SBATCH --job-name=basic_cma      # create a short name for your job
+#SBATCH --nodes=1                 # node count
+#SBATCH --ntasks=1                # total number of tasks across all nodes
+#SBATCH --cpus-per-task=1         # cpu-cores per task (>1 if multi-threaded tasks)
+#SBATCH --gres=gpu:1              # number of gpus per node
+#SBATCH --time=5:59:00            # total run time limit (HH:MM:SS)
 #SBATCH --partition=h200_preemptable
+#SBATCH --mem=500GB               # total memory
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --array=0-5
+#SBATCH --output=logs/basic_cma_%A_%a.out
+#SBATCH --error=logs/basic_cma_%A_%a.err
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -25,9 +26,8 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-
 TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "basic_object_move_detailed" "basic_object_move_detailed")
-PATCH=("" "--patch_after_movement" "" "--patch_after_movement" "" "--patch_after_movement")
+PATCH_FLAGS=("" "--patch_after_movement" "" "--patch_after_movement" "" "--patch_after_movement")
 
 python codebase/tasks/identity_rules/cma.py \
   --use_behavioral_tom \
@@ -40,4 +40,4 @@ python codebase/tasks/identity_rules/cma.py \
   --model_type Qwen2.5-14B-Instruct \
   --question_style instruction \
   --better_cma \
-  ${PATCH[$SLURM_ARRAY_TASK_ID]}
+  ${PATCH_FLAGS[$SLURM_ARRAY_TASK_ID]}
