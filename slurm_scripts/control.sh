@@ -8,8 +8,9 @@
 #SBATCH --output=slurm_logs/control%j.out
 #SBATCH --error=slurm_logs/control%j.err
 #SBATCH --partition=h200_preemptable
+#SBATCH --mem=500GB         # total memory
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --array=0-5
+#SBATCH --array=0-4
 #SBATCH --output=logs/cma_%A_%a.out
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -28,8 +29,8 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 
 
-RULES=("ABA" "ABB" "ABA" "ABB" "ABA" "ABB")
-TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "basic_object_move_detailed" "basic_object_move_detailed")
+RULES=("ABA" "ABB" "ABA" "ABB" "ABA")
+TEMPLATES=("food_truck" "food_truck" "hair_styling" "hair_styling" "basic_object_move_detailed")
 # PATCH=("" "" "" "" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement" "--patch_after_movement")
 
 python codebase/tasks/identity_rules/cma.py \
