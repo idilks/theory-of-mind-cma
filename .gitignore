@@ -8,12 +8,15 @@ __pycache__/
 *.so
 .Python
 venv/
+.venv/
 env/
 ENV/
 
 # Results and data
+archive/
+other_results/
 results/
-data/
+# data/
 causal_mediation_results_full_more_models/
 *.png
 *.jpg
@@ -23,6 +26,9 @@ slurm_logs/
 .claude/
 .conda/
 .conda_backup_20250713_101749/
+.vscode/
+# deconfusion/
+*.md
 
 # Experiment tracking and logs
 wandb/
@@ -58,4 +64,7 @@ Thumbs.db
 # Cache (general)
 *.cache
 
-CLAUDE.md
+legacy*/
+archive/
+
+# CLAUDE.md
