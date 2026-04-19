@@ -29,9 +29,13 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
+from scipy.stats import pearsonr, spearmanr
 
 # add codebase to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'codebase', 'tasks', 'causal_analysis'))
@@ -69,10 +73,10 @@ def group_files_by_condition(files: List[Path]) -> Dict[str, List[Path]]:
     """
     group result files by experimental condition based on directory structure.
 
-    conditions are identified by context_type in the path:
-    - abstract_context → cross-belief condition
-    - token_context → within-belief (location swap)
-    - control_context → control
+    conditions are identified by folder name in the path:
+    - abstract_belief → cross-belief condition (C1)
+    - abstract_photo → photo condition (C2)
+    - control → control (C5)
 
     args:
         files: list of paths to result files
@@ -82,25 +86,33 @@ def group_files_by_condition(files: List[Path]) -> Dict[str, List[Path]]:
     """
     grouped = defaultdict(list)
 
+    # order matters: check more specific names (_new) before base names
+    condition_patterns = [
+        ("abstract_photo_new", "abstract_photo_new"),
+        ("answer_changes_photo_new", "answer_changes_photo_new"),
+        ("abstract_belief", "abstract_belief"),
+        ("abstract_photo", "abstract_photo"),
+        ("answer_changes_belief", "answer_changes_belief"),
+        ("answer_changes_photo", "answer_changes_photo"),
+        ("control", "control"),
+    ]
+
     for file in files:
         path_str = str(file)
+        # skip legacy _context folders
+        if "_context/" in path_str:
+            continue
 
-        # identify condition from path
-        if "abstract_context" in path_str:
-            condition = "cross_belief"
-        elif "token_context" in path_str:
-            condition = "within_belief"
-        elif "control_context" in path_str:
-            condition = "control"
-        elif "basic_context" in path_str:
-            condition = "basic"
-        elif "photo" in path_str:
-            condition = "photo"
-        else:
+        matched = False
+        for pattern, condition in condition_patterns:
+            if f"/{pattern}/" in path_str or f"\\{pattern}\\" in path_str:
+                grouped[condition].append(file)
+                matched = True
+                break
+
+        if not matched:
             logger.warning(f"could not identify condition for: {file}")
-            condition = "unknown"
-
-        grouped[condition].append(file)
+            grouped["unknown"].append(file)
 
     for condition, file_list in grouped.items():
         logger.info(f"condition '{condition}': {len(file_list)} files")
@@ -232,6 +244,70 @@ def differential_test(
     return df
 
 
+def correlation_analysis(
+    scores_a: torch.Tensor,
+    scores_b: torch.Tensor,
+    name_a: str,
+    name_b: str,
+    output_dir: str
+) -> Dict:
+    """
+    compute Pearson and Spearman correlations on mean CMA scores across all heads,
+    and produce a scatterplot.
+
+    args:
+        scores_a: per-sample scores (n_samples_a, n_layers, n_heads)
+        scores_b: per-sample scores (n_samples_b, n_layers, n_heads)
+        name_a: label for condition A
+        name_b: label for condition B
+        output_dir: where to save the scatterplot
+
+    returns:
+        dict with correlation statistics
+    """
+    mean_a = scores_a.mean(dim=0).cpu().numpy().flatten()
+    mean_b = scores_b.mean(dim=0).cpu().numpy().flatten()
+
+    r, r_p = pearsonr(mean_a, mean_b)
+    rho, rho_p = spearmanr(mean_a, mean_b)
+
+    logger.info(f"{name_a} vs {name_b}: Pearson r={r:.4f} (p={r_p:.2e}), Spearman ρ={rho:.4f} (p={rho_p:.2e})")
+
+    # scatterplot
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.scatter(mean_a, mean_b, alpha=0.15, s=8, c='steelblue', edgecolors='none')
+
+    # fit line
+    mask = np.isfinite(mean_a) & np.isfinite(mean_b)
+    if mask.sum() > 2:
+        coeffs = np.polyfit(mean_a[mask], mean_b[mask], 1)
+        x_range = np.linspace(mean_a[mask].min(), mean_a[mask].max(), 100)
+        ax.plot(x_range, np.polyval(coeffs, x_range), 'r-', linewidth=1.5, alpha=0.8)
+
+    ax.set_xlabel(f"Mean CMA score ({name_a})", fontsize=12)
+    ax.set_ylabel(f"Mean CMA score ({name_b})", fontsize=12)
+    ax.set_title(f"r={r:.3f}, ρ={rho:.3f}\n(N={len(mean_a)} heads)", fontsize=13)
+    ax.axhline(0, color='gray', linewidth=0.5, alpha=0.5)
+    ax.axvline(0, color='gray', linewidth=0.5, alpha=0.5)
+    fig.tight_layout()
+
+    out_path = Path(output_dir)
+    out_path.mkdir(parents=True, exist_ok=True)
+    fig_path = out_path / f"scatter_{name_a}_vs_{name_b}.png"
+    fig.savefig(fig_path, dpi=150)
+    plt.close(fig)
+    logger.info(f"saved scatterplot: {fig_path}")
+
+    return {
+        "comparison": f"{name_a} vs {name_b}",
+        "pearson_r": r,
+        "pearson_p": r_p,
+        "spearman_rho": rho,
+        "spearman_p": rho_p,
+        "n_heads": len(mean_a),
+    }
+
+
 def save_pooled_results(
     pooled_stats: Dict[str, pd.DataFrame],
     differential_stats: Dict[str, pd.DataFrame],
@@ -348,8 +424,8 @@ def main():
     parser.add_argument(
         "--conditions",
         nargs='+',
-        default=["cross_belief", "within_belief", "control"],
-        help="conditions to analyze (will auto-discover from results)"
+        default=None,
+        help="conditions to analyze. if not specified, uses all discovered conditions"
     )
 
     parser.add_argument(
@@ -369,8 +445,30 @@ def main():
     parser.add_argument(
         "--differential_tests",
         nargs='+',
-        default=["cross_belief:control", "cross_belief:within_belief"],
+        default=None,
         help="differential tests to run (format: condition_a:condition_b)"
+    )
+
+    parser.add_argument(
+        "--correlations",
+        nargs='+',
+        default=None,
+        help="correlation comparisons to run (format: condition_a:condition_b). "
+             "computes Pearson/Spearman on raw CMA scores and saves scatterplots"
+    )
+
+    parser.add_argument(
+        "--skip_pooled_test",
+        action="store_true",
+        help="skip per-condition pooled permutation tests (just pool scores for correlations/differential)"
+    )
+
+    parser.add_argument(
+        "--patch_position",
+        type=str,
+        default=None,
+        choices=["patch_after_movement", "patch_before_movement"],
+        help="filter to a specific patch position (default: use all)"
     )
 
     args = parser.parse_args()
@@ -385,14 +483,23 @@ def main():
         logger.error("no result files found!")
         return
 
+    # filter by patch position if specified
+    if args.patch_position:
+        files = [f for f in files if args.patch_position in str(f)]
+        logger.info(f"filtered to {len(files)} files with patch_position={args.patch_position}")
+
     # group by condition
     grouped = group_files_by_condition(files)
+
+    # use all discovered conditions if none specified
+    conditions_to_analyze = args.conditions if args.conditions else list(grouped.keys())
+    conditions_to_analyze = [c for c in conditions_to_analyze if c != "unknown"]
 
     # pool and test each condition
     pooled_stats = {}
     pooled_scores = {}
 
-    for condition in args.conditions:
+    for condition in conditions_to_analyze:
         if condition not in grouped:
             logger.warning(f"no files found for condition '{condition}'")
             continue
@@ -405,18 +512,19 @@ def main():
         pooled = load_and_pool_scores(grouped[condition])
         pooled_scores[condition] = pooled
 
-        # run permutation test on pooled data
-        results_df = permutation_test_heads(
-            pooled,
-            n_permutations=args.n_permutations,
-            alpha=args.alpha
-        )
-        pooled_stats[condition] = results_df
+        # run permutation test on pooled data (unless skipped)
+        if not args.skip_pooled_test:
+            results_df, threshold = permutation_test_heads(
+                pooled,
+                n_permutations=args.n_permutations,
+                alpha=args.alpha
+            )
+            pooled_stats[condition] = results_df
 
     # run differential tests
     differential_stats = {}
 
-    for test_spec in args.differential_tests:
+    for test_spec in (args.differential_tests or []):
         try:
             cond_a, cond_b = test_spec.split(':')
 
@@ -440,6 +548,51 @@ def main():
         except ValueError as e:
             logger.error(f"invalid test specification '{test_spec}': {e}")
             continue
+
+    # run correlation analyses
+    correlation_results = []
+    if args.correlations:
+        corr_dir = os.path.join(args.output_dir, "correlations")
+
+        for corr_spec in args.correlations:
+            try:
+                cond_a, cond_b = corr_spec.split(':')
+
+                if cond_a not in pooled_scores or cond_b not in pooled_scores:
+                    logger.warning(f"skipping correlation {corr_spec}: missing condition")
+                    continue
+
+                logger.info(f"\n{'='*80}")
+                logger.info(f"correlation analysis: {cond_a} vs {cond_b}")
+                logger.info(f"{'='*80}")
+
+                result = correlation_analysis(
+                    pooled_scores[cond_a],
+                    pooled_scores[cond_b],
+                    cond_a,
+                    cond_b,
+                    corr_dir
+                )
+                correlation_results.append(result)
+
+            except ValueError as e:
+                logger.error(f"invalid correlation specification '{corr_spec}': {e}")
+                continue
+
+        # save correlation summary
+        if correlation_results:
+            corr_df = pd.DataFrame(correlation_results)
+            corr_path = os.path.join(corr_dir, "correlation_summary.csv")
+            corr_df.to_csv(corr_path, index=False)
+            logger.info(f"saved correlation summary: {corr_path}")
+
+            # print a readable table
+            logger.info("\n" + "=" * 80)
+            logger.info("CORRELATION SUMMARY")
+            logger.info("=" * 80)
+            for _, row in corr_df.iterrows():
+                logger.info(f"  {row['comparison']}: r={row['pearson_r']:.4f} (p={row['pearson_p']:.2e}), "
+                           f"ρ={row['spearman_rho']:.4f} (p={row['spearman_p']:.2e})")
 
     # save all results
     logger.info(f"\n{'='*80}")

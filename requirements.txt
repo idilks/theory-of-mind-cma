@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+torch
+transformers==4.46.3
+transformer-lens==2.13.0
+datasets
+pyrootutils
+tqdm
+statsmodels
+seaborn
+sentencepiece
+scipy
