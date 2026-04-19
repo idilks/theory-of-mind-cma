@@ -12,3 +12,5 @@ statsmodels
 seaborn
 sentencepiece
 scipy
+wandb
+Pillow
