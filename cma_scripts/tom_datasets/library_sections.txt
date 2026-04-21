@@ -1,0 +1,34 @@
+fiction
+non-fiction
+reference
+new arrivals
+academic
+popular reads
+study materials
+children's
+young adult
+biography
+self-help
+travel
+cooking
+health
+technology
+science
+history
+art
+music
+poetry
+architecture
+photography
+technology
+film
+music
+education
+engineering
+botany
+theology
+finance
+medicine
+comics    
+
+

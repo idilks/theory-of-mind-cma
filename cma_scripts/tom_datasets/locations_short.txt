@@ -1,0 +1,7 @@
+cabinet
+drawer
+box
+bag
+container
+window
+door

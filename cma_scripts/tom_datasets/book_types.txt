@@ -1,0 +1,20 @@
+history
+science
+art
+philosophy
+psychology
+literature
+mathematics
+biology
+chemistry
+physics
+economics
+sociology
+anthropology
+political science
+computer science
+engineering
+medicine
+law
+education
+business
