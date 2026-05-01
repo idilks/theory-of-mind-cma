@@ -16,6 +16,7 @@ ENV/
 archive/
 other_results/
 results/
+local_results/
 # data/
 causal_mediation_results_full_more_models/
 *.png
@@ -68,3 +69,9 @@ legacy*/
 archive/
 
 # CLAUDE.md
+/.quarto/
+**/*.quarto_ipynb
+
+
+results_for_pi/
+.venv-ndif/

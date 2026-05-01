@@ -13,6 +13,7 @@ from .code_templates import (
     CODE_SYSTEM_PROMPT,
     CODE_QUESTIONS,
     CODE_CONTROL_QUESTIONS,
+    CODE_ABSTRACT_QUESTIONS,
     detect_copy_semantics_position,
 )
 
@@ -46,6 +47,7 @@ class CodeGenerator(PromptGenerator):
         answer_differs = condition.answer_differs if condition is not None else True
 
         is_control = (condition is not None and condition.value == "code_control")
+        is_abstract = (condition is not None and condition.value == "code_abstract")
 
         for template_name in self.template_names:
             if template_name not in CODE_QUESTIONS:
@@ -54,18 +56,30 @@ class CodeGenerator(PromptGenerator):
                     f"Available: {list(CODE_QUESTIONS.keys())}"
                 )
 
-            question = CODE_CONTROL_QUESTIONS[template_name] if is_control else CODE_QUESTIONS[template_name]
+            if is_control:
+                question = CODE_CONTROL_QUESTIONS[template_name]
+            elif is_abstract:
+                question = CODE_ABSTRACT_QUESTIONS[template_name]
+            else:
+                question = CODE_QUESTIONS[template_name]
 
             for _ in range(prompts_per_template):
                 base_rule = self.config.prompts.base_rule
 
-                base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = (
-                    self.template_system.generate_cross_context_pair(
-                        template_name,
-                        base_rule=base_rule,
-                        answer_differs=answer_differs,
+                if is_abstract:
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = (
+                        self.template_system.generate_abstract_pair(
+                            template_name, base_rule=base_rule
+                        )
                     )
-                )
+                else:
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = (
+                        self.template_system.generate_cross_context_pair(
+                            template_name,
+                            base_rule=base_rule,
+                            answer_differs=answer_differs,
+                        )
+                    )
 
                 # Format prompts with code block and question
                 base_full = self._format_code_prompt(base_scenario, question)

@@ -1,403 +1,228 @@
 #!/usr/bin/env python3
-"""
-MDS scatter plot of CMA score profiles across conditions.
-Shows representational similarity structure: which conditions
-recruit similar attention heads?
+"""Cell-level RSA + MDS over the 6 conditions (end-patch only).
 
-Input: causal_scores.pt files (end-patch, all 5 conditions × 3 templates × 2 directions)
-Output: results/rsa_mds_conditions.png, results/rsa_rdm_heatmap.png
+Each cell = (condition, template, direction). 6 conds x 3 templates x 2 dirs
+= 36 cells. Each cell's 1920-vec is its "stimulus representation".
+
+Two views:
+- 18-point MDS: directions averaged within (condition, template) -> 6x3 = 18.
+  Cleaner for visual inspection of condition vs template structure.
+- 6x6 condition-level RDM: directions and templates averaged -> 6 vectors.
+  Mantel-tested against three models:
+    * same-condition (categorical condition identity)
+    * rule-pair structure (flip-rule {C1,C2,C3} vs same-rule {C4,C5,C6})
+    * task type (abstract / answer-changes / location)
+
+Inputs: results_for_pi/heatmaps/manifest.csv (canonical end-patch cell map).
+Outputs:
+  results_for_pi/aggregation/rsa_cell_mds.png
+  results_for_pi/aggregation/rsa_cell_rdm.png  (6x6 condition RDM)
+  results/aggregated/cell_rsa/cell_rdm_18x18.csv
+  results/aggregated/cell_rsa/condition_rdm_6x6.csv
+  results/aggregated/cell_rsa/mantel_results.csv
 """
 
-import torch
-import os
-import re
+from __future__ import annotations
+
+from pathlib import Path
+
+import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import torch
+from matplotlib.lines import Line2D
+from scipy.spatial.distance import squareform
 from scipy.stats import pearsonr
 from sklearn.manifold import MDS
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.lines import Line2D
-from scipy.spatial import ConvexHull
-from scipy.cluster.hierarchy import linkage, dendrogram
-import seaborn as sns
 
-# --- Load data ---
-BASE = os.path.join('results', 'causal_analysis', 'cma', 'Qwen', 'Qwen2.5-14B-Instruct')
-OUT_DIR = 'results'
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
+OUT_AGG = ROOT / "results/aggregated/cell_rsa"
+OUT_FIG = ROOT / "results_for_pi/aggregation"
 
-CONDS = ['abstract_belief', 'abstract_photo', 'answer_changes_belief',
-         'answer_changes_photo', 'control']
-TMPLS = ['food_truck', 'hair_styling', 'library_book']
+CONDITIONS = [
+    "C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief",
+    "C4_answer_changes_photo", "C5_control", "C6_state_only_no_belief",
+]
+SHORT = {c: c.split("_", 1)[0] for c in CONDITIONS}
+TEMPLATES = ["template_food_truck", "template_hair_styling", "template_library_book"]
+TMPL_SHORT = {t: t.replace("template_", "") for t in TEMPLATES}
 
-# Map legacy folder names to canonical condition names
-FOLDER_TO_COND = {
-    'abstract_belief': 'abstract_belief',
-    'abstract_photo': 'abstract_photo',
-    'answer_changes_belief': 'answer_changes_belief',
-    'answer_changes_photo': 'answer_changes_photo',
-    'control': 'control',
-    'photo_context': 'abstract_photo',
-    'control_context': 'control',
-}
-
-scores = {}
-for root, dirs, files in os.walk(BASE):
-    if 'causal_scores.pt' not in files:
-        continue
-    if 'patch_before_movement' not in root or '_ohwell' in root:
-        continue
-    rel = os.path.relpath(root, BASE).replace('\\', '/')
-    parts = rel.split('/')
-    folder = parts[0]
-    condition = FOLDER_TO_COND.get(folder)
-    template = parts[1].replace('template_', '')
-    if condition is None or condition not in CONDS or template not in TMPLS:
-        continue
-    m = re.match(r'base_rule_(\w+)_exp_rule_(\w+)', parts[2])
-    if not m:
-        continue
-    t = torch.load(
-        os.path.join(root, 'causal_scores.pt'),
-        map_location='cpu', weights_only=True
-    ).flatten().numpy()
-    key = (condition, template)
-    if key not in scores:
-        scores[key] = []
-    scores[key].append(t)
-
-print(f"Loaded {len(scores)} condition×template pairs")
-
-# Average over both directions
-pooled = {k: np.mean(v, axis=0) for k, v in scores.items()}
-
-labels = []
-vectors = []
-for c in CONDS:
-    for t in TMPLS:
-        labels.append((c, t))
-        vectors.append(pooled[(c, t)])
-vectors = np.array(vectors)  # (15, 1920)
-print(f"Matrix shape: {vectors.shape}")
-
-# --- Dissimilarity matrix (1 - Pearson r) ---
-n = len(vectors)
-diss = np.zeros((n, n))
-for i in range(n):
-    for j in range(n):
-        r, _ = pearsonr(vectors[i], vectors[j])
-        diss[i, j] = 1 - r
-
-# --- MDS ---
-mds = MDS(n_components=2, dissimilarity='precomputed', random_state=42,
-          normalized_stress='auto')
-coords = mds.fit_transform(diss)
-stress = mds.stress_
-print(f"MDS stress: {stress:.4f}")
-
-# --- Visual config ---
-COND_SHORT = {
-    'abstract_belief': 'Abstract\nBelief',
-    'abstract_photo': 'Abstract\nPhoto',
-    'answer_changes_belief': 'Ans. Change\nBelief',
-    'answer_changes_photo': 'Ans. Change\nPhoto',
-    'control': 'Control'
-}
 COND_COLORS = {
-    'abstract_belief': '#2166ac',
-    'abstract_photo': '#67a9cf',
-    'answer_changes_belief': '#d6604d',
-    'answer_changes_photo': '#f4a582',
-    'control': '#4daf4a'
+    "C1_abstract_belief": "#2166ac",
+    "C2_abstract_photo": "#67a9cf",
+    "C3_answer_changes_belief": "#d6604d",
+    "C4_answer_changes_photo": "#f4a582",
+    "C5_control": "#4daf4a",
+    "C6_state_only_no_belief": "#984ea3",
 }
-TMPL_MARKERS = {'food_truck': 'o', 'hair_styling': 's', 'library_book': '^'}
-TMPL_LABELS = {'food_truck': 'Food Truck', 'hair_styling': 'Hair Styling',
-               'library_book': 'Library Book'}
+TMPL_MARKERS = {"template_food_truck": "o", "template_hair_styling": "s", "template_library_book": "^"}
 
-# ===== PLOT 1: MDS Scatter =====
-fig, ax = plt.subplots(1, 1, figsize=(9, 7))
 
-# Convex hulls
-for c in CONDS:
-    idxs = [i for i, (cond, _) in enumerate(labels) if cond == c]
-    pts = coords[idxs]
-    if len(pts) >= 3:
-        hull = ConvexHull(pts)
-        hull_pts = np.append(hull.vertices, hull.vertices[0])
-        ax.fill(pts[hull_pts, 0], pts[hull_pts, 1],
-                alpha=0.12, color=COND_COLORS[c], zorder=1)
-        ax.plot(pts[hull_pts, 0], pts[hull_pts, 1],
-                color=COND_COLORS[c], alpha=0.4, linewidth=1.5,
-                linestyle='--', zorder=2)
+def load_cell_vectors(manifest: pd.DataFrame) -> dict:
+    """Return dict[(cond, template, rule_pair)] -> 1920-vec."""
+    out = {}
+    for _, r in manifest.iterrows():
+        src = ROOT / r["source"]
+        v = torch.load(src / "causal_scores.pt", map_location="cpu", weights_only=False)
+        v = v.float().cpu().numpy().reshape(-1)
+        out[(r["condition"], r["template"], r["rule_pair"])] = v
+    return out
 
-# Points
-for i, (c, t) in enumerate(labels):
-    ax.scatter(coords[i, 0], coords[i, 1],
-               c=COND_COLORS[c], marker=TMPL_MARKERS[t],
-               s=140, edgecolors='white', linewidth=0.8, zorder=3)
 
-# Centroid labels with smart offsets to avoid overlap
-centroids = {}
-for c in CONDS:
-    idxs = [i for i, (cond, _) in enumerate(labels) if cond == c]
-    centroids[c] = coords[idxs].mean(axis=0)
+def average_over_directions(cells: dict) -> dict:
+    """(cond, tmpl, rule_pair) -> (cond, tmpl) by mean over rule_pair."""
+    out = {}
+    for c in CONDITIONS:
+        for t in TEMPLATES:
+            keys = [k for k in cells if k[0] == c and k[1] == t]
+            if not keys:
+                continue
+            out[(c, t)] = np.mean([cells[k] for k in keys], axis=0)
+    return out
 
-# Compute offsets: push labels away from the global centroid
-global_centroid = np.mean(list(centroids.values()), axis=0)
-for c in CONDS:
-    centroid = centroids[c]
-    direction = centroid - global_centroid
-    norm = np.linalg.norm(direction)
-    if norm > 0:
-        offset = direction / norm * 0.02  # small nudge outward
-    else:
-        offset = np.array([0, 0.02])
 
-    ax.annotate(
-        COND_SHORT[c], centroid + offset,
-        fontsize=9, fontweight='bold', ha='center', va='center',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor=COND_COLORS[c],
-                  alpha=0.3, edgecolor='none'),
-        zorder=4
-    )
+def average_over_template_and_dir(cells: dict) -> dict:
+    """{(cond, tmpl, rule_pair) -> vec} -> {cond -> vec}."""
+    out = {}
+    for c in CONDITIONS:
+        keys = [k for k in cells if k[0] == c]
+        out[c] = np.mean([cells[k] for k in keys], axis=0)
+    return out
 
-# Legends
-color_handles = [
-    mpatches.Patch(color=COND_COLORS[c],
-                   label=COND_SHORT[c].replace('\n', ' '), alpha=0.7)
-    for c in CONDS
-]
-shape_handles = [
-    Line2D([0], [0], marker=TMPL_MARKERS[t], color='gray',
-           linestyle='None', markersize=8, label=TMPL_LABELS[t])
-    for t in TMPLS
-]
 
-leg1 = ax.legend(handles=color_handles, title='Condition', loc='upper left',
-                 fontsize=8, title_fontsize=9, framealpha=0.9)
-ax.add_artist(leg1)
-ax.legend(handles=shape_handles, title='Template', loc='lower left',
-          fontsize=8, title_fontsize=9, framealpha=0.9)
+def pairwise_pearson_rdm(vectors: list[np.ndarray]) -> np.ndarray:
+    n = len(vectors)
+    M = np.zeros((n, n))
+    for i in range(n):
+        for j in range(i, n):
+            r, _ = pearsonr(vectors[i], vectors[j])
+            M[i, j] = M[j, i] = 1 - r
+    return M
 
-ax.set_xlabel('MDS Dimension 1', fontsize=11)
-ax.set_ylabel('MDS Dimension 2', fontsize=11)
-ax.set_title(
-    'Representational Similarity of CMA Profiles Across Conditions\n'
-    '(End-Patch Position, Qwen2.5-14B-Instruct)',
-    fontsize=12, fontweight='bold'
-)
-ax.text(0.98, 0.02, f'Stress = {stress:.4f}',
-        transform=ax.transAxes, ha='right', va='bottom',
-        fontsize=9, fontstyle='italic',
-        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-ax.grid(True, alpha=0.2)
-ax.set_aspect('equal')
-plt.tight_layout()
 
-mds_path = os.path.join(OUT_DIR, 'rsa_mds_conditions.png')
-plt.savefig(mds_path, dpi=300, bbox_inches='tight')
-plt.close()
-print(f"Saved MDS plot: {mds_path}")
+def mantel_test(diss: np.ndarray, model_groups: list[int], n_perm: int = 5000,
+                seed: int = 42) -> tuple[float, float]:
+    """Mantel: is diss correlated with model RDM (0 if same group, 1 else)?"""
+    n = len(model_groups)
+    g = np.asarray(model_groups)
+    model = (g[:, None] != g[None, :]).astype(float)
+    upper = np.triu_indices(n, k=1)
+    obs_r, _ = pearsonr(diss[upper], model[upper])
+    rng = np.random.default_rng(seed)
+    null = np.empty(n_perm)
+    for k in range(n_perm):
+        perm = rng.permutation(n)
+        null[k] = pearsonr(diss[upper], model[np.ix_(perm, perm)][upper])[0]
+    p = float(np.mean(null >= obs_r))
+    return float(obs_r), p
 
-# ===== PLOT 2: RDM Heatmap (5x5, averaged across templates) =====
-# Build condition-level dissimilarity (average across templates)
-cond_vectors = {}
-for c in CONDS:
-    vecs = [pooled[(c, t)] for t in TMPLS]
-    cond_vectors[c] = np.mean(vecs, axis=0)
 
-cond_labels_short = ['Abstract\nBelief', 'Abstract\nPhoto',
-                     'Ans.Change\nBelief', 'Ans.Change\nPhoto', 'Control']
+def plot_cell_mds(coords: np.ndarray, labels: list[tuple[str, str]], stress: float, out: Path):
+    fig, ax = plt.subplots(figsize=(9, 7))
+    for i, (c, t) in enumerate(labels):
+        ax.scatter(coords[i, 0], coords[i, 1], c=COND_COLORS[c], marker=TMPL_MARKERS[t],
+                   s=170, edgecolors="white", linewidth=1, zorder=3)
+        ax.annotate(f"{SHORT[c]}/{TMPL_SHORT[t][:3]}",
+                    (coords[i, 0], coords[i, 1]), fontsize=7, ha="center", va="center")
+    color_legend = [mpatches.Patch(color=COND_COLORS[c], label=SHORT[c], alpha=0.85) for c in CONDITIONS]
+    shape_legend = [Line2D([0], [0], marker=TMPL_MARKERS[t], color="gray", linestyle="None",
+                           markersize=9, label=TMPL_SHORT[t]) for t in TEMPLATES]
+    leg1 = ax.legend(handles=color_legend, title="Condition", loc="upper left", fontsize=8)
+    ax.add_artist(leg1)
+    ax.legend(handles=shape_legend, title="Template", loc="lower left", fontsize=8)
+    ax.set_xlabel("MDS dim 1")
+    ax.set_ylabel("MDS dim 2")
+    ax.set_title(f"Cell-level RSA — 18 points (6 conditions × 3 templates), end-patch\nstress = {stress:.4f}")
+    ax.grid(True, alpha=0.2)
+    plt.tight_layout()
+    out.parent.mkdir(parents=True, exist_ok=True)
+    plt.savefig(out, dpi=160)
+    plt.close()
 
-rdm = np.zeros((5, 5))
-for i, c1 in enumerate(CONDS):
-    for j, c2 in enumerate(CONDS):
-        r, _ = pearsonr(cond_vectors[c1], cond_vectors[c2])
-        rdm[i, j] = 1 - r
 
-# ===== PERMUTATION TESTS =====
-N_PERM = 10000
-rng = np.random.default_rng(42)
-n_heads = len(cond_vectors[CONDS[0]])
+def plot_condition_rdm(rdm: np.ndarray, mantel: dict, out: Path):
+    cond_short = [SHORT[c] for c in CONDITIONS]
+    fig, ax = plt.subplots(figsize=(7, 6))
+    im = ax.imshow(rdm, cmap="RdYlBu_r", vmin=0, vmax=1)
+    ax.set_xticks(range(len(cond_short)))
+    ax.set_xticklabels(cond_short)
+    ax.set_yticks(range(len(cond_short)))
+    ax.set_yticklabels(cond_short)
+    for i in range(rdm.shape[0]):
+        for j in range(rdm.shape[1]):
+            ax.text(j, i, f"{rdm[i, j]:.2f}", ha="center", va="center",
+                    color="white" if rdm[i, j] > 0.5 else "black", fontsize=10)
+    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04, label="1 - Pearson r")
+    mantel_line = " | ".join(f"{name}: r={r:+.2f} p={p:.3f}" for name, (r, p) in mantel.items())
+    ax.set_title(f"6×6 condition RDM (template+direction averaged)\nMantel: {mantel_line}", fontsize=10)
+    plt.tight_layout()
+    out.parent.mkdir(parents=True, exist_ok=True)
+    plt.savefig(out, dpi=160)
+    plt.close()
 
-# --- Cell-wise permutation test ---
-# For each pair: permute head indices of one vector, recompute 1-r
-# H0: the head-level correspondence between conditions is no better than chance
-# p-value: fraction of permuted dissimilarities <= observed (i.e., as similar or more)
-print(f"\n--- Cell-wise permutation test ({N_PERM} permutations) ---")
-pval_matrix = np.ones((5, 5))
-for i, c1 in enumerate(CONDS):
-    for j, c2 in enumerate(CONDS):
-        if i == j:
-            pval_matrix[i, j] = np.nan
-            continue
-        if i > j:
-            pval_matrix[i, j] = pval_matrix[j, i]
-            continue
-        v1 = cond_vectors[c1]
-        v2 = cond_vectors[c2]
-        observed = rdm[i, j]
-        # Count how many permuted dissimilarities are <= observed
-        # (i.e., produce as much or more similarity by chance)
-        count = 0
-        for _ in range(N_PERM):
-            v2_perm = rng.permutation(v2)
-            r_perm, _ = pearsonr(v1, v2_perm)
-            if (1 - r_perm) <= observed:
-                count += 1
-        pval = count / N_PERM
-        pval_matrix[i, j] = pval
-        pval_matrix[j, i] = pval
 
-print("\nCell-wise p-values (H0: head correspondence is random):")
-print(f"{'':>25s}", end='')
-for c in CONDS:
-    print(f"{c:>20s}", end='')
-print()
-for i, c1 in enumerate(CONDS):
-    print(f"{c1:>25s}", end='')
-    for j, c2 in enumerate(CONDS):
-        if i == j:
-            print(f"{'---':>20s}", end='')
+def main():
+    OUT_AGG.mkdir(parents=True, exist_ok=True)
+    OUT_FIG.mkdir(parents=True, exist_ok=True)
+
+    print(f"reading manifest: {MANIFEST}")
+    manifest = pd.read_csv(MANIFEST)
+    cells = load_cell_vectors(manifest)
+    print(f"  {len(cells)} cells loaded")
+
+    cells_18 = average_over_directions(cells)
+    print(f"  18 (cond, template) cells after direction averaging: {len(cells_18)}")
+
+    labels_18 = [(c, t) for c in CONDITIONS for t in TEMPLATES if (c, t) in cells_18]
+    vectors_18 = [cells_18[k] for k in labels_18]
+    rdm_18 = pairwise_pearson_rdm(vectors_18)
+    mds = MDS(n_components=2, dissimilarity="precomputed", random_state=42, normalized_stress="auto")
+    coords_18 = mds.fit_transform(rdm_18)
+    print(f"  MDS stress: {mds.stress_:.4f}")
+
+    pd.DataFrame(rdm_18, index=[f"{SHORT[c]}_{TMPL_SHORT[t]}" for c, t in labels_18],
+                 columns=[f"{SHORT[c]}_{TMPL_SHORT[t]}" for c, t in labels_18]).to_csv(
+        OUT_AGG / "cell_rdm_18x18.csv")
+    plot_cell_mds(coords_18, labels_18, mds.stress_, OUT_FIG / "rsa_cell_mds.png")
+
+    cond_vecs = average_over_template_and_dir(cells)
+    rdm_6 = pairwise_pearson_rdm([cond_vecs[c] for c in CONDITIONS])
+    pd.DataFrame(rdm_6, index=[SHORT[c] for c in CONDITIONS],
+                 columns=[SHORT[c] for c in CONDITIONS]).to_csv(OUT_AGG / "condition_rdm_6x6.csv")
+
+    # Mantel models on the 18x18 (full structure where labels exist)
+    cond_groups = [CONDITIONS.index(c) for c, _ in labels_18]
+    rule_groups = [0 if c in ("C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief")
+                   else 1 for c, _ in labels_18]
+    task_groups = []
+    for c, _ in labels_18:
+        if c in ("C1_abstract_belief", "C2_abstract_photo"):
+            task_groups.append(0)        # abstract
+        elif c in ("C3_answer_changes_belief", "C4_answer_changes_photo"):
+            task_groups.append(1)        # answer-changes
         else:
-            p = pval_matrix[i, j]
-            stars = '***' if p < 0.001 else '**' if p < 0.01 else '*' if p < 0.05 else 'ns'
-            print(f"{p:>14.4f} {stars:>4s}", end='')
-    print()
+            task_groups.append(2)        # location
+    template_groups = [TEMPLATES.index(t) for _, t in labels_18]
 
-# --- Mantel tests on 15x15 RDM (condition × template level) ---
-# With 15 items we have 105 upper-triangle values and enormous permutation space,
-# giving the test real statistical power.
-print(f"\n--- Mantel tests on 15x15 RDM ({N_PERM} permutations) ---")
+    mantel = {}
+    mantel["same-cond"] = mantel_test(rdm_18, cond_groups)
+    mantel["rule-pair"] = mantel_test(rdm_18, rule_groups)
+    mantel["task-type"] = mantel_test(rdm_18, task_groups)
+    mantel["template"] = mantel_test(rdm_18, template_groups)
 
-upper_idx_15 = np.triu_indices(15, k=1)
-obs_upper_15 = diss[upper_idx_15]  # diss is the 15x15 matrix computed earlier
+    print("\nMantel tests on 18x18 cell RDM:")
+    rows = []
+    for name, (r, p) in mantel.items():
+        stars = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "ns"
+        print(f"  {name:12s} r={r:+.4f}  p={p:.4f}  {stars}")
+        rows.append({"model": name, "r": r, "p": p})
+    pd.DataFrame(rows).to_csv(OUT_AGG / "mantel_results.csv", index=False)
 
-# Condition label for each of the 15 items (order: 5 conds × 3 templates)
-cond_per_item = [c for c, t in labels]
+    plot_condition_rdm(rdm_6, mantel, OUT_FIG / "rsa_cell_rdm.png")
+    print(f"\noutputs:\n  tables -> {OUT_AGG}\n  figures -> {OUT_FIG}")
 
-# --- Model 1: Belief vs non-belief ---
-# belief group: abstract_belief, answer_changes_belief = 0; rest = 1
-belief_map = {'abstract_belief': 0, 'answer_changes_belief': 0,
-              'abstract_photo': 1, 'answer_changes_photo': 1, 'control': 1}
-belief_labels = [belief_map[c] for c in cond_per_item]
-model_belief_15 = np.zeros((15, 15))
-for i in range(15):
-    for j in range(15):
-        model_belief_15[i, j] = 0.0 if belief_labels[i] == belief_labels[j] else 1.0
 
-obs_r_belief, _ = pearsonr(obs_upper_15, model_belief_15[upper_idx_15])
-
-belief_null = np.zeros(N_PERM)
-for p_idx in range(N_PERM):
-    perm = rng.permutation(15)
-    perm_model = model_belief_15[np.ix_(perm, perm)]
-    r_perm, _ = pearsonr(obs_upper_15, perm_model[upper_idx_15])
-    belief_null[p_idx] = r_perm
-
-belief_p = np.mean(belief_null >= obs_r_belief)
-print(f"\nModel 1 — Belief vs non-belief:")
-print(f"  Observed r = {obs_r_belief:.4f}")
-print(f"  Null: mean={np.mean(belief_null):.4f}, std={np.std(belief_null):.4f}")
-print(f"  p = {belief_p:.4f} {'***' if belief_p < 0.001 else '**' if belief_p < 0.01 else '*' if belief_p < 0.05 else 'ns'}")
-
-# --- Model 2: Task type (abstract vs answer_changes vs control) ---
-task_map = {'abstract_belief': 0, 'abstract_photo': 0,
-            'answer_changes_belief': 1, 'answer_changes_photo': 1, 'control': 2}
-task_labels = [task_map[c] for c in cond_per_item]
-model_task_15 = np.zeros((15, 15))
-for i in range(15):
-    for j in range(15):
-        model_task_15[i, j] = 0.0 if task_labels[i] == task_labels[j] else 1.0
-
-obs_r_task, _ = pearsonr(obs_upper_15, model_task_15[upper_idx_15])
-
-task_null = np.zeros(N_PERM)
-for p_idx in range(N_PERM):
-    perm = rng.permutation(15)
-    perm_model = model_task_15[np.ix_(perm, perm)]
-    r_perm, _ = pearsonr(obs_upper_15, perm_model[upper_idx_15])
-    task_null[p_idx] = r_perm
-
-task_p = np.mean(task_null >= obs_r_task)
-print(f"\nModel 2 — Abstract vs answer_changes vs control:")
-print(f"  Observed r = {obs_r_task:.4f}")
-print(f"  Null: mean={np.mean(task_null):.4f}, std={np.std(task_null):.4f}")
-print(f"  p = {task_p:.4f} {'***' if task_p < 0.001 else '**' if task_p < 0.01 else '*' if task_p < 0.05 else 'ns'}")
-
-# --- Model 3: Same condition (within-condition similarity) ---
-# Tests whether items from the same condition are more similar than across conditions
-model_same_15 = np.zeros((15, 15))
-for i in range(15):
-    for j in range(15):
-        model_same_15[i, j] = 0.0 if cond_per_item[i] == cond_per_item[j] else 1.0
-
-obs_r_same, _ = pearsonr(obs_upper_15, model_same_15[upper_idx_15])
-
-same_null = np.zeros(N_PERM)
-for p_idx in range(N_PERM):
-    perm = rng.permutation(15)
-    perm_model = model_same_15[np.ix_(perm, perm)]
-    r_perm, _ = pearsonr(obs_upper_15, perm_model[upper_idx_15])
-    same_null[p_idx] = r_perm
-
-same_p = np.mean(same_null >= obs_r_same)
-print(f"\nModel 3 — Same condition clusters together:")
-print(f"  Observed r = {obs_r_same:.4f}")
-print(f"  Null: mean={np.mean(same_null):.4f}, std={np.std(same_null):.4f}")
-print(f"  p = {same_p:.4f} {'***' if same_p < 0.001 else '**' if same_p < 0.01 else '*' if same_p < 0.05 else 'ns'}")
-
-# Store for plot titles
-obs_mantel_belief = obs_r_belief
-mantel_belief_p = belief_p
-obs_mantel_task = obs_r_task
-mantel_task_p = task_p
-obs_mantel_same = obs_r_same
-mantel_same_p = same_p
-
-# ===== PLOT 2: RDM Heatmap with significance =====
-
-# Build annotation strings: dissimilarity + stars
-annot_strings = np.empty((5, 5), dtype=object)
-for i in range(5):
-    for j in range(5):
-        if i == j:
-            annot_strings[i, j] = f"{rdm[i, j]:.3f}"
-        else:
-            p = pval_matrix[i, j]
-            stars = '***' if p < 0.001 else '**' if p < 0.01 else '*' if p < 0.05 else ''
-            annot_strings[i, j] = f"{rdm[i, j]:.3f}{stars}"
-
-fig, ax = plt.subplots(1, 1, figsize=(7, 6))
-sns.heatmap(
-    rdm, annot=annot_strings, fmt='', cmap='RdYlBu_r',
-    xticklabels=cond_labels_short, yticklabels=cond_labels_short,
-    vmin=0, vmax=1, ax=ax, linewidths=0.5,
-    cbar_kws={'label': '1 − Pearson r (dissimilarity)'}
-)
-
-# Add Mantel test results to title
-def fmt_p(p):
-    return '<.001' if p < 0.001 else f'{p:.3f}'
-
-mantel_lines = [
-    f"15×15 Mantel: same-cond r={obs_mantel_same:.2f} p={fmt_p(mantel_same_p)}, "
-    f"belief r={obs_mantel_belief:.2f} p={fmt_p(mantel_belief_p)}, "
-    f"task r={obs_mantel_task:.2f} p={fmt_p(mantel_task_p)}"
-]
-ax.set_title(
-    'Representational Dissimilarity Matrix (CMA Scores)\n'
-    f'End-Patch, Template-Averaged\n'
-    f'{mantel_lines[0]}\n'
-    '* p<.05, ** p<.01, *** p<.001 (cell-wise permutation, 10k perms)',
-    fontsize=9, fontweight='bold'
-)
-plt.tight_layout()
-
-rdm_path = os.path.join(OUT_DIR, 'rsa_rdm_heatmap.png')
-plt.savefig(rdm_path, dpi=300, bbox_inches='tight')
-plt.close()
-print(f"\nSaved RDM heatmap: {rdm_path}")
-
-print("\nDone!")
+if __name__ == "__main__":
+    main()

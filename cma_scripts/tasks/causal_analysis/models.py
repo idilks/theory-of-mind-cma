@@ -13,9 +13,14 @@ import transformer_lens
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from utils import get_model_id_family, vocab_dict
 
+
+def _get_hf_token():
+    """Return Hugging Face token from either supported environment variable."""
+    return os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN", "")
+
 def setup_hf_authentication():
     """Setup HuggingFace authentication if token is available."""
-    hf_token = os.environ.get("HF_TOKEN", "")
+    hf_token = _get_hf_token()
     if hf_token:
         try:
             from huggingface_hub import login
@@ -119,7 +124,7 @@ class ModelLoader:
         logger.info(f"model type: {self.model_config.model_type}, model id: {model_id}")
         
         # Load tokenizer with authentication
-        hf_token = os.environ.get("HF_TOKEN", "")
+        hf_token = _get_hf_token()
         tokenizer_kwargs = {"trust_remote_code": True, "use_fast": True}
         if hf_token:
             tokenizer_kwargs["token"] = hf_token
@@ -175,7 +180,7 @@ class ModelLoader:
                     }
                     
                     # Add HF token if available
-                    hf_token = os.environ.get("HF_TOKEN", "")
+                    hf_token = _get_hf_token()
                     if hf_token:
                         load_kwargs_hf["token"] = hf_token
                     

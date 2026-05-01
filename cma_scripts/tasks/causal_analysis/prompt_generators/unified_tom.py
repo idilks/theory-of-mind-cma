@@ -41,6 +41,41 @@ class UnifiedTomGenerator(PromptGenerator):
         # Get template names from config
         self.template_names = config.prompts.template_names or ["food_truck"]
         print(f"DEBUG: Using template_names: {self.template_names}")
+        self._supports_system_role = self._detect_system_role_support()
+        if self._supports_system_role:
+            print("DEBUG: Chat template supports system role; using system+user messages")
+        else:
+            print("DEBUG: Chat template does not support system role; folding system prompt into user message")
+
+    def _detect_system_role_support(self) -> bool:
+        """Return True when tokenizer chat template accepts a system role."""
+        test_messages = [
+            {"role": "system", "content": "System prompt compatibility check."},
+            {"role": "user", "content": "User prompt compatibility check."},
+        ]
+        try:
+            self.tokenizer.apply_chat_template(
+                test_messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+            return True
+        except Exception as exc:
+            # Gemma templates can raise this specific message.
+            if "System role not supported" in str(exc):
+                return False
+            raise
+
+    def _build_messages(self, system_prompt: str, user_prompt: str):
+        """Build chat messages while preserving behavior for templates that support system role."""
+        if self._supports_system_role:
+            return [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ]
+
+        combined_user_prompt = f"{system_prompt}\n\n{user_prompt}"
+        return [{"role": "user", "content": combined_user_prompt}]
         
     def generate_prompts(self) -> Tuple[List[Tuple[str, str]], List[Tuple[str, str]], List[str]]:
         """Generate base/exp prompt pairs for CMA.
@@ -70,21 +105,26 @@ class UnifiedTomGenerator(PromptGenerator):
                     # answer_differs is derived from the condition enum when available
                     if self.config.prompts.condition is not None:
                         answer_differs = self.config.prompts.condition.answer_differs
+                        same_belief = getattr(self.config.prompts.condition, "same_belief", False)
                     else:
                         raise ValueError("Condition must be specified in config for UnifiedTomGenerator to determine answer_differs. Please set config.prompts.condition with appropriate answer_differs value.")
-                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = self.template_system.generate_cross_context_pair(template_name, base_rule=base_rule, context_type=context_type, answer_differs=answer_differs)
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = self.template_system.generate_cross_context_pair(template_name, base_rule=base_rule, context_type=context_type, answer_differs=answer_differs, same_belief=same_belief)
+                elif context_type == "basic":
+                    # C5 STATE_ONLY_NO_BELIEF: no observer/belief/photo. End-patch only.
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = self.template_system.generate_basic_pair(template_name, base_rule=base_rule)
+                else:
+                    raise ValueError(f"UnifiedTomGenerator does not support context_type={context_type!r}. Supported: 'abstract', 'photo', 'basic'.")
 
                 # Get question based on config
                 question_style = self.config.prompts.question_style  # "completion" or "instruction"
                 base_question = self.question_formatter.get_cma_questions(template_name, context_type=context_type, belief_type=base_rule, question_style=question_style)
-                system_prompt = "You are Qwen, you are an helpful assistant reasoning about agents' beliefs."
+                system_prompt = "You are a helpful assistant reasoning about agents' beliefs."
 
                 # Build prompts with assigned scenarios
                 base_full_prompt = f"{base_scenario}\n{base_question}"
 
                 # now adding system/user prompt structure
-                base_messages = [{"role": "system", "content": system_prompt},
-                            {"role": "user", "content": base_full_prompt}]
+                base_messages = self._build_messages(system_prompt, base_full_prompt)
 
                 # Apply chat template - this adds the assistant header automatically
                 formatted_prompt = self.tokenizer.apply_chat_template(
@@ -112,8 +152,7 @@ class UnifiedTomGenerator(PromptGenerator):
 
                 exp_full_prompt = f"{exp_scenario}\n{exp_question}"
 
-                exp_messages = [{"role": "system", "content": system_prompt},
-                                {"role": "user", "content": exp_full_prompt}]
+                exp_messages = self._build_messages(system_prompt, exp_full_prompt)
 
                 formatted_exp_prompt = self.tokenizer.apply_chat_template(
                     exp_messages,

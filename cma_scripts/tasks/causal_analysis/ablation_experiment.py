@@ -547,7 +547,7 @@ def main():
     logger.info("=== generating prompts ===")
     template_system = UnifiedTemplateSystem(vocab_dir="tom_datasets")
     question_formatter = UnifiedQuestionFormatter(tokenizer=tokenizer)
-    system_prompt = "You are Qwen, you are an helpful assistant reasoning about agents' beliefs."
+    system_prompt = "You are a helpful assistant reasoning about agents' beliefs."
 
     prompt_dict = generate_unpaired_prompts(
         template_system, question_formatter, tokenizer,

@@ -196,12 +196,15 @@ class GenerationEvaluator:
             # logger.debug("Using TOM location extraction evaluation path")
             extracted = extract_location_from_response(gen_ans)
             matches = locations_match(extracted, correct_ans)
-            
-            # Fallback: if extraction fails but answers match directly (case-insensitive)
-            if not matches and extracted == "":
-                matches = gen_ans.lower().strip() == correct_ans.lower().strip()
+
+            # Fallback: when tag extraction fails (e.g. lowercase responses like
+            # "health section" without <loc> tags), match the raw response with
+            # locations_match — which normalizes case/articles and does a
+            # substring check ("health" in "health section" -> True).
+            if not matches:
+                matches = locations_match(gen_ans, correct_ans)
                 if matches:
-                    logger.debug(f"TOM extraction failed, using direct match: '{gen_ans}' == '{correct_ans}'")
+                    logger.debug(f"TOM extraction failed, fell back to locations_match on raw response: '{gen_ans}' ~ '{correct_ans}'")
             
             logger.debug(f"Evaluating TOM answer: Generated='{gen_ans}', Extracted='{extracted}', Correct='{correct_ans}', Matches={matches}")
             return matches

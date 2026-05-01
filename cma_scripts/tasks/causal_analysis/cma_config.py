@@ -15,22 +15,27 @@ class CMACondition(Enum):
     ABSTRACT_PHOTO = "abstract_photo"                # C2: photo false↔true, answer SAME
     ANSWER_CHANGES_BELIEF = "answer_changes_belief"  # C3: belief false↔true, answer DIFFERENT
     ANSWER_CHANGES_PHOTO = "answer_changes_photo"    # C4: photo false↔true, answer DIFFERENT
-    CONTROL = "control"                              # C5: location swap, answer DIFFERENT
+    STATE_ONLY_NO_BELIEF = "state_only_no_belief"    # C5: no observer/belief/photo. Pure state-change scenario; location swap, answer DIFFERENT. Uses BasicTemplate. End-patch only.
     ABSTRACT_PHOTO_NEW = "abstract_photo_new"        # C2 variant: patch at photo event, answer SAME
     ANSWER_CHANGES_PHOTO_NEW = "answer_changes_photo_new"  # C4 variant: patch at photo event, answer DIFFERENT
     CODE_ANSWER_CHANGES = "code_answer_changes"      # C6: copy vs reference semantics, answer DIFFERENT
     CODE_CONTROL = "code_control"                    # C7: direct mutation only, answer DIFFERENT
+    CODE_ABSTRACT = "code_abstract"                  # C9: copy vs reference semantics, answer SAME (asks about mutated var)
+    LOCATION_ONLY_MATCHED_BELIEF = "answer_changes_location_only"  # C8: both prompts false-belief, swapped subs, answer DIFFERENT. bf-control: isolates location/answer under matched belief engagement. NOTE: matched_belief is currently always "false"; "true" variant deferred to next sprint.
 
     @property
     def context_type(self) -> str:
         """Which prompt template family to use."""
-        if self in (CMACondition.ABSTRACT_BELIEF, CMACondition.ANSWER_CHANGES_BELIEF):
+        if self in (CMACondition.ABSTRACT_BELIEF, CMACondition.ANSWER_CHANGES_BELIEF,
+                    CMACondition.LOCATION_ONLY_MATCHED_BELIEF):
             return "abstract"
         elif self in (CMACondition.ABSTRACT_PHOTO, CMACondition.ANSWER_CHANGES_PHOTO,
                       CMACondition.ABSTRACT_PHOTO_NEW, CMACondition.ANSWER_CHANGES_PHOTO_NEW):
             return "photo"
-        elif self in (CMACondition.CODE_ANSWER_CHANGES, CMACondition.CODE_CONTROL):
+        elif self in (CMACondition.CODE_ANSWER_CHANGES, CMACondition.CODE_CONTROL, CMACondition.CODE_ABSTRACT):
             return "code"
+        elif self is CMACondition.STATE_ONLY_NO_BELIEF:
+            return "basic"
         return "control"
 
     @property
@@ -40,10 +45,20 @@ class CMACondition(Enum):
             CMACondition.ANSWER_CHANGES_BELIEF,
             CMACondition.ANSWER_CHANGES_PHOTO,
             CMACondition.ANSWER_CHANGES_PHOTO_NEW,
-            CMACondition.CONTROL,
+            CMACondition.STATE_ONLY_NO_BELIEF,
             CMACondition.CODE_ANSWER_CHANGES,
             CMACondition.CODE_CONTROL,
+            CMACondition.LOCATION_ONLY_MATCHED_BELIEF,
         )
+
+    @property
+    def same_belief(self) -> bool:
+        """Both base and exp prompts use the SAME belief-context template (both false).
+
+        Isolates location/answer computation under matched belief engagement,
+        providing a clean bf-patch control for abstract belief conditions.
+        """
+        return self is CMACondition.LOCATION_ONLY_MATCHED_BELIEF
 
     @property
     def patch_at_photo_event(self) -> bool:
@@ -249,7 +264,8 @@ class ExperimentConfig:
         patch_after = getattr(args, 'patch_after_movement', False)
 
         if context_type == "control":
-            return CMACondition.CONTROL
+            # Legacy --context_type control now maps to the no-belief state-only condition (BasicTemplate).
+            return CMACondition.STATE_ONLY_NO_BELIEF
         elif context_type == "photo":
             return CMACondition.ABSTRACT_PHOTO
         elif context_type == "abstract":

@@ -9,7 +9,7 @@ import logging
 logger: logging.Logger = logging.getLogger(__name__)
 
 HF_HOME = os.environ.get("HF_HOME", "/dartfs/rc/lab/F/FranklandS/models/cache") ## set cache folder for huggingface on your choice like this "/scratch/gpfs/userid/.cache". ignore this if using the default dir
-HF_TOKEN = os.environ.get("HF_TOKEN", "") # replace with your own HF token; create one under Access Tokens in your HF account
+HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN", "") # replace with your own HF token; create one under Access Tokens in your HF account
 WANDB_API_KEY = os.environ.get("WANDB_API_KEY", "${WANDB_API_KEY:-}") # your wandb api key from https://wandb.ai/authorize
 LINE_SEP = "---------------------\n"
 HEAD_ACTIVATIONS = ["q", "k", "v", "z", "pattern", "attn_scores", "rot_q", "rot_k"]

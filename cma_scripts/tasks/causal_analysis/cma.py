@@ -393,11 +393,20 @@ class CMAOrchestrator:
                 base_is_aba = (self.config.prompts.base_rule == "ABA")
 
                 if context_type in ("abstract", "control"):
-                    # Belief formation markers: ABA base is false context -> is_false_belief=True
-                    base_pos = prompt_generator.detect_belief_formation_position(
-                        base_prompt, tokenizer, is_false_belief=base_is_aba)
-                    exp_pos = prompt_generator.detect_belief_formation_position(
-                        exp_prompt, tokenizer, is_false_belief=not base_is_aba)
+                    condition = self.config.prompts.condition
+                    same_belief = getattr(condition, "same_belief", False) if condition is not None else False
+                    if same_belief:
+                        # C8 bf-control: both prompts are false-belief, detector uses false marker for both.
+                        base_pos = prompt_generator.detect_belief_formation_position(
+                            base_prompt, tokenizer, is_false_belief=True)
+                        exp_pos = prompt_generator.detect_belief_formation_position(
+                            exp_prompt, tokenizer, is_false_belief=True)
+                    else:
+                        # Belief formation markers: ABA base is false context -> is_false_belief=True
+                        base_pos = prompt_generator.detect_belief_formation_position(
+                            base_prompt, tokenizer, is_false_belief=base_is_aba)
+                        exp_pos = prompt_generator.detect_belief_formation_position(
+                            exp_prompt, tokenizer, is_false_belief=not base_is_aba)
 
                     if base_pos == -1 or exp_pos == -1:
                         raise ValueError(

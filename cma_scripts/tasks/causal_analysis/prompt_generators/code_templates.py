@@ -56,6 +56,14 @@ CODE_CONTROL_QUESTIONS = {
     "list_extend": "What is the value of nums?",
 }
 
+# Abstract (same-answer) condition: ask about the mutated variable so that
+# both copy and reference prompts share an identical correct answer.
+CODE_ABSTRACT_QUESTIONS = {
+    "list_append": "What is the value of list_a?",
+    "dict_update": "What is the value of dict_a?",
+    "list_extend": "What is the value of nums?",
+}
+
 
 # ---------------------------------------------------------------------------
 # Template dataclasses
@@ -291,6 +299,31 @@ class CodeTemplateSystem:
         return subs
 
     # ---- pair generation --------------------------------------------------
+
+    def generate_abstract_pair(
+        self, template_name: str, base_rule: str
+    ) -> Tuple[str, str, str, str, str]:
+        """Same-answer code pair: copy vs reference, answer is the mutated value.
+
+        Uses identical substitutions for both prompts so the only token that
+        differs is the copy-semantics marker (`[:]` present vs absent). The
+        question asks about the mutated variable (e.g. list_a), so the answer
+        is `[val_1, val_2]` for both.
+        """
+        template = self.templates[template_name]
+        subs = self._sample_substitutions(template_name)
+
+        if base_rule == "ABA":
+            base_scenario = template.false_context_template.format(**subs)
+            exp_scenario = template.true_context_template.format(**subs)
+        elif base_rule == "ABB":
+            base_scenario = template.true_context_template.format(**subs)
+            exp_scenario = template.false_context_template.format(**subs)
+        else:
+            raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
+
+        ans = self._compute_answer(template_name, subs, is_copy=False)
+        return base_scenario, exp_scenario, ans, ans, ans
 
     def generate_cross_context_pair(
         self, template_name: str, base_rule: str, answer_differs: bool

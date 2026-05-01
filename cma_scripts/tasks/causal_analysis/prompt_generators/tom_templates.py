@@ -484,7 +484,50 @@ class UnifiedTemplateSystem:
             return basic_templates[template_name]
         return self.templates[template_name]
     
-    def generate_cross_context_pair(self, template_name: str, base_rule: str, context_type: str, answer_differs: bool) -> Tuple[str, str, str, str, str]:
+    def generate_basic_pair(self, template_name: str, base_rule: str) -> Tuple[str, str, str, str, str]:
+        """Generate a base/exp prompt pair for the no-belief state-only control (C5).
+
+        Uses BasicTemplate (no observer, no belief, no photo). Base and exp share
+        identical surface form but with the two contrastive variables swapped, so
+        the only thing varying is the location/state token, and answers differ.
+
+        base_rule controls swap direction: ABA = (var_1=v1, var_2=v2); ABB swaps.
+        End-patch only — bf detection is undefined for no-belief prompts.
+        """
+        template = self.get_template(template_name, "basic")
+
+        # Find the contrastive _1 / _2 variables (same vocab type).
+        var_1 = next(v for v in template.variables if v.endswith("_1"))
+        var_2 = next(v for v in template.variables if v.endswith("_2"))
+        vocab_type = template.variables[var_1]
+        v1, v2 = self.vocab_loader.sample_different(vocab_type, 2)
+
+        # Sample any non-contrastive variables independently.
+        substitutions = {}
+        for var, vt in template.variables.items():
+            if var in (var_1, var_2):
+                continue
+            substitutions[var] = self.vocab_loader.sample(vt)
+
+        if base_rule == "ABA":
+            base_subs = {**substitutions, var_1: v1, var_2: v2}
+            exp_subs  = {**substitutions, var_1: v2, var_2: v1}
+        else:  # "ABB"
+            base_subs = {**substitutions, var_1: v2, var_2: v1}
+            exp_subs  = {**substitutions, var_1: v1, var_2: v2}
+
+        base_scenario = template.template.format(**base_subs)
+        exp_scenario  = template.template.format(**exp_subs)
+        base_ans = base_subs[template.answer_key]
+        exp_ans  = exp_subs[template.answer_key]
+        causal_ans = base_ans  # patching base→exp should pull base's answer through
+        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+
+    # TODO(refactor): generate_cross_context_pair has accumulated three branches
+    # (same_belief, answer_differs, default) plus a missing control branch that
+    # caused a bug in April 2026. The clean replacement is a single PairSpec
+    # dispatcher table — see docs/refactor_pair_generation.md.
+    def generate_cross_context_pair(self, template_name: str, base_rule: str, context_type: str, answer_differs: bool, *, same_belief: bool = False) -> Tuple[str, str, str, str, str]:
         """Generate a base/exp prompt pair for cross-context CMA.
 
         Args:
@@ -493,6 +536,9 @@ class UnifiedTemplateSystem:
             context_type: "abstract" or "photo" — selects template family.
             answer_differs: True → same locations, different answers (C3/C4).
                            False → swapped locations, same answer (C1/C2).
+            same_belief: If True, BOTH prompts use false_context_template with
+                         swapped substitutions (C8 bf-control). Overrides the
+                         answer_differs branch. Only valid for abstract context.
         """
         template = self.get_template(template_name, context_type)
 
@@ -514,6 +560,22 @@ class UnifiedTemplateSystem:
         # Create swapped version (only needed for same-answer conditions)
         swapped_subs = substitutions.copy()
         swapped_subs[var_1], swapped_subs[var_2] = substitutions[var_2], substitutions[var_1]
+
+        if same_belief:
+            # C8 bf-control: both prompts use false_context_template, swapped subs.
+            # Belief type held constant; only the correct answer differs.
+            if base_rule == "ABA":
+                base_scenario = template.false_context_template.format(**substitutions)
+                exp_scenario = template.false_context_template.format(**swapped_subs)
+                base_ans = substitutions[var_1]            # false-belief answer for base
+                exp_ans = swapped_subs[var_1]              # false-belief answer for exp (=subs[var_2])
+            elif base_rule == "ABB":
+                base_scenario = template.false_context_template.format(**swapped_subs)
+                exp_scenario = template.false_context_template.format(**substitutions)
+                base_ans = swapped_subs[var_1]             # = subs[var_2]
+                exp_ans = substitutions[var_1]
+            causal_ans = base_ans  # patching base→exp should pull base's answer through
+            return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
 
         if answer_differs:
             # Different answers: base and exp use SAME variable assignments.
