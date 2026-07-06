@@ -3,13 +3,14 @@
 
 Two analyses, in response to a peer-review of aggregation_analysis.qmd:
 
-1. Partial correlation matrix controlling for the rule-pair indicator.
-   The cell-level Mantel test showed rule-pair structure explains cell
-   similarity better than condition identity (r=0.71 vs 0.37). For each
-   pair (C_i, C_j), we compute Pearson r(C_i, C_j | rule-pair indicator)
+1. Partial correlation matrix controlling for the across-context indicator.
+   The cell-level Mantel test showed the across/within-context axis
+   explains cell similarity better than condition identity. For each
+   pair (C_i, C_j), we compute Pearson r(C_i, C_j | across-context indicator)
    on per-cell vectors, with cells as observations. Tells us how much of
-   the condition-condition similarity remains once the structural axis
-   is partialled out.
+   the condition-condition similarity remains once that axis is partialled out.
+   The across-context indicator = 1 for C1/C2/C3/C4 (false_template <->
+   true_template patches) and 0 for C5/C6 (within-context, no template flip).
 
 2. Bootstrap null for the H2 OLS R^2.
    Reviewer pointed out: when you regress a target onto two predictors that
@@ -50,15 +51,22 @@ OUT_FIG = ROOT / "results_for_pi/aggregation"
 
 CONDITIONS = [
     "C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief",
-    "C4_answer_changes_photo", "C5_control", "C6_state_only_no_belief",
+    "C4_answer_changes_photo", "C5_answer_changes_location_only",
+    "C6_answer_changes_location_only_photo", "C7_state_only_no_belief",
 ]
 SHORT = {c: c.split("_", 1)[0] for c in CONDITIONS}
-FLIP = {"C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief"}
+# Context-axis indicator: across-context (false_template <-> true_template
+# patch) vs within-context (no template flip, pure location retrieval).
+# This is the substantive cognitive axis. See aggregate_conditions.py header
+# and tom_templates.py:580-611 for why the legacy folder labels do not
+# correspond to surface-token swaps for C3/C4.
+ACROSS_CONTEXT = {"C1_abstract_belief", "C2_abstract_photo",
+                  "C3_answer_changes_belief", "C4_answer_changes_photo"}
 N_HEADS = 1920
 RNG = np.random.default_rng(20260501)
 
 
-# ---------- (1) Partial correlation against rule-pair ----------
+# ---------- (1) Partial correlation against across-context indicator ----------
 
 def load_cell_vectors(manifest: pd.DataFrame) -> dict:
     out = {}
@@ -71,29 +79,26 @@ def load_cell_vectors(manifest: pd.DataFrame) -> dict:
     return out
 
 
-def partial_corr_against_rulepair(cells: dict) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Per-head partial correlation: r(C_i, C_j | rule-pair).
-
-    Uses heads as observations within a single condition pair. Builds two
-    1920-vecs per condition (the clamped fingerprint), and a per-head
-    rule-pair scalar that's identical across heads but varies across
-    conditions. That doesn't work as a head-level confounder.
+def partial_corr_against_context_axis(cells: dict) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Per-head partial correlation: r(C_i, C_j | across-context indicator).
 
     Right framing: partial correlation across CELLS. Stack the 36 cells, treat
-    rule-pair as a binary covariate per cell, regress out that covariate from
-    each cell's mean (or use a per-head ANCOVA). We do this at the FINGERPRINT
-    level: for each head h, cell-level vector y_h = [score across 36 cells].
-    Regress out the rule-pair indicator -> residualized y_h. Then per-condition
-    fingerprints from residualized scores -> 6x6 partial Pearson matrix.
+    the across-context binary as a covariate per cell, residualize each head's
+    cell-vector against it, then build per-condition fingerprints from the
+    residualized scores -> 6x6 partial Pearson matrix.
+
+    The covariate = 1 for cells in C1/C2/C3/C4 (false<->true template patch),
+    0 for C5/C6 (within-context patch). This isolates how much condition-vs-
+    condition similarity remains after removing the across/within axis.
     """
     # Order cells consistently
     keys = sorted(cells.keys())
     n_cells = len(keys)
     Y = np.stack([cells[k] for k in keys])  # (36, 1920)
-    rule = np.array([1.0 if k[0] in FLIP else 0.0 for k in keys])  # (36,)
+    ctx = np.array([1.0 if k[0] in ACROSS_CONTEXT else 0.0 for k in keys])  # (36,)
 
-    # Per-head: residualize against rule-pair (intercept + rule). Build design.
-    X = np.stack([np.ones(n_cells), rule], axis=1)  # (36, 2)
+    # Per-head: residualize against context-axis indicator (intercept + ctx).
+    X = np.stack([np.ones(n_cells), ctx], axis=1)  # (36, 2)
     beta, *_ = np.linalg.lstsq(X, Y, rcond=None)    # (2, 1920)
     Y_resid = Y - X @ beta                          # (36, 1920)
 
@@ -131,7 +136,7 @@ def plot_partial_panel(R_orig: pd.DataFrame, R_partial: pd.DataFrame, out: Path)
     delta = R_orig - R_partial
     for ax, M, title, vmin, vmax, cmap in [
         (axes[0], R_orig, "Pearson r (clamped, original)", -1, 1, "RdBu_r"),
-        (axes[1], R_partial, "Pearson r | rule-pair partialled out", -1, 1, "RdBu_r"),
+        (axes[1], R_partial, "Pearson r | context-axis partialled out", -1, 1, "RdBu_r"),
         (axes[2], delta, "Δr (original − partial)", -0.5, 0.5, "PiYG_r"),
     ]:
         im = ax.imshow(M.values.astype(float), vmin=vmin, vmax=vmax, cmap=cmap)
@@ -242,18 +247,18 @@ def main():
     OUT_FIG.mkdir(parents=True, exist_ok=True)
 
     # ---- (1) partial correlation
-    print("(1) partial correlation against rule-pair indicator...")
+    print("(1) partial correlation against across-context indicator...")
     manifest = pd.read_csv(MANIFEST)
     cells = load_cell_vectors(manifest)
-    R_orig, R_partial = partial_corr_against_rulepair(cells)
+    R_orig, R_partial = partial_corr_against_context_axis(cells)
     R_orig.to_csv(OUT_AGG / "partial_corr_original.csv")
     R_partial.to_csv(OUT_AGG / "partial_corr_pearson.csv")
     (R_orig - R_partial).to_csv(OUT_AGG / "partial_corr_delta.csv")
     print("\nOriginal:")
     print(R_orig.round(2).rename(columns=SHORT, index=SHORT).to_string())
-    print("\nPartialled (rule-pair removed):")
+    print("\nPartialled (across-context axis removed):")
     print(R_partial.round(2).rename(columns=SHORT, index=SHORT).to_string())
-    print("\nΔ (original − partial), >0 means correlation shrinks once rule-pair is removed:")
+    print("\nΔ (original − partial), >0 means correlation shrinks once context-axis is removed:")
     print((R_orig - R_partial).round(2).rename(columns=SHORT, index=SHORT).to_string())
     plot_partial_panel(R_orig, R_partial, OUT_FIG / "controls_partial_corr.png")
 
@@ -261,9 +266,10 @@ def main():
     print("\n(2) H2 bootstrap null (matched marginal r) ...")
     fp = load_fp("clamped")
     decomps = [
-        ("C3_answer_changes_belief", ["C1_abstract_belief", "C5_control"], "C3 ≈ C1 + C5"),
-        ("C4_answer_changes_photo", ["C2_abstract_photo", "C5_control"], "C4 ≈ C2 + C5"),
-        ("C4_answer_changes_photo", ["C2_abstract_photo", "C6_state_only_no_belief"], "C4 ≈ C2 + C6"),
+        ("C3_answer_changes_belief", ["C1_abstract_belief", "C5_answer_changes_location_only"], "C3 ≈ C1 + C5"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C5_answer_changes_location_only"], "C4 ≈ C2 + C5"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C6_answer_changes_location_only_photo"], "C4 ≈ C2 + C6"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C7_state_only_no_belief"], "C4 ≈ C2 + C7"),
     ]
     boot_results = []
     rows = []

@@ -58,7 +58,9 @@ def analyze(capture_dir: Path):
     rows = []
     for hi, h in enumerate(heads):
         for qi, qname in enumerate(query_names):
-            masses = {"state": [], "char_q": [], "obj_q": [], "belief_form": []}
+            masses = {"state": [], "state_first": [], "state_second": [],
+                      "state_correct": [], "info_loss": [],
+                      "char_q": [], "obj_q": [], "belief_form": []}
             for pi, pos_dict in enumerate(positions):
                 row = attn[pi, hi, qi].float()  # (max_seq,)
                 # Replace NaN-padding with 0 for the "valid" range only when we use them as floats
@@ -68,7 +70,8 @@ def analyze(capture_dir: Path):
                     # head not captured for this layer (shouldn't happen)
                     continue
                 for cat in masses:
-                    p = pos_dict[cat]
+                    # tolerate old attention.pt files lacking new categories
+                    p = pos_dict.get(cat, -1)
                     if 0 <= p < seq_len:
                         masses[cat].append(valid[p].item())
 
@@ -94,7 +97,7 @@ def analyze(capture_dir: Path):
                                   "p_value": r["p_value"],
                                   "significant": r["significant"]})
         for k, v in r.items():
-            if k.startswith("lookback_") or k.startswith("belief_formation_"):
+            if k.startswith(("lookback_", "belief_formation_", "agent_first_", "agent_last_")):
                 per_head[key][k] = v
 
     df = pd.DataFrame(list(per_head.values()))
@@ -131,8 +134,8 @@ def analyze(capture_dir: Path):
 
     # ---- viz 2: per-prompt strip heatmap for top-3 heads ----
     for rank in range(min(3, len(df))):
-        L = int(df.iloc[rank].layer)
-        H = int(df.iloc[rank].head)
+        L = int(df.iloc[rank]["layer"])
+        H = int(df.iloc[rank]["head"])
         # find head index in original heads list
         hi = next(i for i, h in enumerate(heads) if h["layer"] == L and h["head"] == H)
 

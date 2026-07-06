@@ -20,9 +20,13 @@ Containing:
             Padding positions filled with NaN.
   - heads: list of dicts [{layer, head, observed_score, p_value, significant}]
   - prompts: list of base prompt strings
-  - positions: list of dicts {state, char_q, obj_q, belief_form, lookback,
+  - positions: list of dicts {state, state_first, state_second, state_correct,
+                              info_loss, char_q, obj_q, belief_form, lookback,
                               seq_len, base_ans} per prompt
-  - query_pos_names: ["lookback", "belief_formation"]
+              (state == state_correct, kept for backward compat with older
+              analyze scripts.)
+  - query_pos_names: ["lookback", "belief_formation", "agent_last", "agent_first"]
+                     (older payloads may have only the first two)
   - meta: {template, condition, base_rule, seed, top_k, source_csv}
 """
 
@@ -92,8 +96,7 @@ def find_csv(condition: str, template: str, base_rule: str, exp_rule: str,
 
 def load_top_heads(csv_path: Path, top_k: int) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
-    df["abs_score"] = df["observed_score"].abs()
-    top = df.sort_values("abs_score", ascending=False).head(top_k).reset_index(drop=True)
+    top = df.sort_values("observed_score", ascending=False).head(top_k).reset_index(drop=True)
     return top[["layer", "head", "observed_score", "p_value", "significant"]]
 
 
@@ -143,62 +146,121 @@ TEMPLATE_QUERY_KEYS = {
 }
 
 
+def _find_token_pos(prompt: str, needle: str, offsets) -> int:
+    """First-occurrence char->token lookup. Returns -1 if needle not in prompt."""
+    if not needle:
+        return -1
+    idx = prompt.find(needle)
+    if idx == -1:
+        return -1
+    return char_to_token(offsets, idx, idx + len(needle))
+
+
+def _find_all_token_pos(prompt: str, needle: str, offsets) -> list[int]:
+    """All occurrences of `needle` mapped to token positions (first-token-of-span)."""
+    if not needle:
+        return []
+    out: list[int] = []
+    start = 0
+    while True:
+        idx = prompt.find(needle, start)
+        if idx == -1:
+            break
+        tok = char_to_token(offsets, idx, idx + len(needle))
+        if tok >= 0:
+            out.append(tok)
+        start = idx + max(1, len(needle))
+    return out
+
+
 def extract_positions(prompt: str, base_ans: str, template: str, tokenizer,
-                      generator: UnifiedTomGenerator, base_rule: str) -> dict:
-    """Map source-token strings to token indices in the given prompt."""
+                      generator: UnifiedTomGenerator, base_rule: str,
+                      pair_meta: dict | None = None,
+                      context_type: str = "abstract") -> dict:
+    """Map source-token strings to token indices in the given prompt.
+
+    pair_meta (from UnifiedTomGenerator.last_metadata) supplies the exact
+    location strings filling slots {var_1} and {var_2} of the base scenario,
+    plus the info_loss_marker phrase. When supplied, location anchors come
+    directly from generation metadata — no regex / substring guessing.
+    Falls back to base_ans-only behavior if pair_meta is None.
+    """
     enc = tokenizer(prompt, return_offsets_mapping=True, add_special_tokens=False)
     offsets = enc["offset_mapping"]
     seq_len = len(enc["input_ids"])
 
-    # state token: first occurrence of base_ans in story
-    state_pos = -1
-    if base_ans:
-        idx = prompt.find(base_ans)
-        if idx != -1:
-            state_pos = char_to_token(offsets, idx, idx + len(base_ans))
+    # Three location anchors
+    if pair_meta is not None:
+        loc_first  = pair_meta.get("loc_first_str")  or ""
+        loc_second = pair_meta.get("loc_second_str") or ""
+        loc_correct = pair_meta.get("loc_correct_str") or base_ans or ""
+        info_loss_marker = pair_meta.get("info_loss_marker_str")
+    else:
+        loc_first = loc_second = ""
+        loc_correct = base_ans or ""
+        info_loss_marker = None
 
-    # char_q / obj_q: first occurrence of template-specific query strings
+    state_first_pos  = _find_token_pos(prompt, loc_first, offsets)
+    state_second_pos = _find_token_pos(prompt, loc_second, offsets)
+    state_correct_pos = _find_token_pos(prompt, loc_correct, offsets)
+
+    # `state` retained as alias of state_correct for back-compat with older
+    # analyze scripts that read positions["state"].
+    state_pos = state_correct_pos
+
+    # Information-loss event (e.g. "is unable to see the truck"). Returns -1 in
+    # ABB true-belief prompts where the marker phrase is absent — that absence
+    # is informative for the universal-info-loss-head hypothesis.
+    info_loss_pos = _find_token_pos(prompt, info_loss_marker or "", offsets)
+
+    # char_q / obj_q: first occurrence of template-specific query strings.
+    # Photo prompts replace the named character with an unnamed photographer,
+    # so use "photographer" as the char_q lookup in that frame; the substring
+    # matches "photographer" and "college photographer" alike.
     keys = TEMPLATE_QUERY_KEYS.get(template, {})
-    char_pos = -1
-    if keys.get("char_q"):
-        idx = prompt.find(keys["char_q"])
-        if idx != -1:
-            char_pos = char_to_token(offsets, idx, idx + len(keys["char_q"]))
+    char_str = "photographer" if context_type == "photo" else keys.get("char_q", "")
+    char_pos = _find_token_pos(prompt, char_str, offsets)
+    obj_pos = _find_token_pos(prompt, keys.get("obj_q", ""), offsets)
 
-    obj_pos = -1
-    if keys.get("obj_q"):
-        idx = prompt.find(keys["obj_q"])
-        if idx != -1:
-            obj_pos = char_to_token(offsets, idx, idx + len(keys["obj_q"]))
+    # Agent first/last mention. For photo conditions the relevant "agent" is
+    # the photographer (the source of epistemic access on the photo); for
+    # belief / control conditions it's the named character. Last mention is
+    # the most recent re-invocation of the agent before the question — the
+    # natural query position for binding-update reads. First mention is the
+    # introduction site, where binding is initially registered.
+    agent_str = "photographer" if context_type == "photo" else char_str
+    agent_mentions = _find_all_token_pos(prompt, agent_str, offsets)
+    agent_first_pos = agent_mentions[0] if agent_mentions else -1
+    agent_last_pos = agent_mentions[-1] if agent_mentions else -1
 
-    # belief_formation: existing detector (handles ABA = false belief, ABB = true belief)
-    is_false_belief = (base_rule == "ABA")
-    bf_pos = generator.detect_belief_formation_position(prompt, tokenizer, is_false_belief=is_false_belief)
-    # generator returns position based on tokenizer-with-special-tokens; rerun without special tokens for consistency
-    # If detector returned -1 or out of range, leave -1.
+    # belief_formation / photo-event: probe the prompt directly for whichever
+    # epistemic-access marker is present. No base_rule heuristic — the detector
+    # finds the marker actually in the prompt, so cells where base/exp share a
+    # template kind regardless of base_rule (e.g. C5 same_belief control) work
+    # without special-casing.
+    if context_type == "photo":
+        bf_pos = generator.detect_photo_position(prompt, tokenizer)
+    else:
+        bf_pos = generator.detect_belief_formation_position(prompt, tokenizer)
     if bf_pos < 0 or bf_pos >= seq_len:
-        # try the version with special tokens (tokenizer's default)
-        enc_with = tokenizer(prompt, return_offsets_mapping=True)
-        bf_pos2 = generator.detect_belief_formation_position(prompt, tokenizer, is_false_belief=is_false_belief)
-        if 0 <= bf_pos2 < len(enc_with["input_ids"]):
-            # reproject onto our no-special-tokens encoding by character offset
-            if bf_pos2 < len(enc_with["offset_mapping"]):
-                target_char = enc_with["offset_mapping"][bf_pos2 - 1][1] if bf_pos2 > 0 else 0
-                bf_pos = char_to_token(offsets, target_char, target_char + 1)
-            else:
-                bf_pos = -1
-        else:
-            bf_pos = -1
+        bf_pos = -1
 
     # lookback: last input token (right before model generates)
     lookback_pos = seq_len - 1
 
     return {
-        "state": state_pos,
+        "state": state_pos,                  # alias of state_correct (back-compat)
+        "state_first": state_first_pos,      # value at template slot {var_1} in base
+        "state_second": state_second_pos,    # value at template slot {var_2} in base
+        "state_correct": state_correct_pos,  # = base_ans (correct answer to base prompt)
+        "info_loss": info_loss_pos,          # info-loss event marker; -1 if absent
         "char_q": char_pos,
         "obj_q": obj_pos,
         "belief_form": bf_pos,
         "lookback": lookback_pos,
+        "agent_first": agent_first_pos,      # first mention of agent (intro / binding site)
+        "agent_last": agent_last_pos,        # last mention of agent before question
+        "agent_str": agent_str,
         "seq_len": seq_len,
         "base_ans": base_ans,
     }
@@ -228,8 +290,8 @@ def capture_for_template(
     )
     log.info(f"loading significant heads from {csv_path}")
     heads_df = load_top_heads(csv_path, top_k)
-    log.info(f"top {len(heads_df)} heads (by |observed_score|): "
-             f"min={heads_df.abs_score.min() if 'abs_score' in heads_df else heads_df.observed_score.abs().min():.4g}")
+    log.info(f"top {len(heads_df)} heads (by signed observed_score, positive only): "
+             f"min={heads_df.observed_score.min():.4g}")
 
     cfg = build_prompt_config(template, base_rule, condition, prompt_num, seed,
                               device_map=device_map,
@@ -256,20 +318,25 @@ def capture_for_template(
     prompt_pairs, correct_ans_pairs, _ = generator.generate_prompts()
     base_prompts = [p[0] for p in prompt_pairs]
     base_answers = [a[0] for a in correct_ans_pairs]
+    pair_metadata = getattr(generator, "last_metadata", None) or [None] * len(base_prompts)
     log.info(f"got {len(base_prompts)} base prompts")
 
     # Tokenize + extract positions
     positions = []
-    for p, a in zip(base_prompts, base_answers):
-        positions.append(extract_positions(p, a, template, tokenizer, generator, base_rule))
+    for p, a, meta in zip(base_prompts, base_answers, pair_metadata):
+        positions.append(extract_positions(p, a, template, tokenizer, generator,
+                                          base_rule, pair_meta=meta,
+                                          context_type=condition.context_type))
 
     max_seq = max(pos["seq_len"] for pos in positions)
     log.info(f"max seq len = {max_seq}")
 
     n_prompts = len(base_prompts)
     n_heads = len(heads_df)
-    n_query_pos = 2  # lookback, belief_formation
-    query_pos_names = ["lookback", "belief_formation"]
+    # Query rows we capture from. Order matters — downstream tools index by name
+    # via query_pos_names but old payloads (n_query_pos=2) remain readable.
+    query_pos_names = ["lookback", "belief_formation", "agent_last", "agent_first"]
+    n_query_pos = len(query_pos_names)
 
     # Pre-allocate output (NaN for padding)
     attn_out = torch.full((n_prompts, n_heads, n_query_pos, max_seq),
@@ -299,8 +366,14 @@ def capture_for_template(
             _, cache = model.run_with_cache(tokens, names_filter=names_filter)
 
         seq_len = tokens.shape[1]
-        lookback = positions[pi]["lookback"]
-        bf = positions[pi]["belief_form"]
+        # Query positions in the order of query_pos_names. -1 / out-of-range
+        # leaves NaN row (downstream filters those out).
+        q_positions = [
+            positions[pi]["lookback"],
+            positions[pi]["belief_form"],
+            positions[pi]["agent_last"],
+            positions[pi]["agent_first"],
+        ]
 
         for hi, (L, H) in enumerate(zip(head_layers, head_idxs)):
             key = f"blocks.{L}.attn.hook_pattern"
@@ -309,12 +382,9 @@ def capture_for_template(
             # shape (batch, n_heads, seq_q, seq_k)
             pattern = cache[key][0, H]  # (seq_q, seq_k)
 
-            # Query 0: lookback
-            if 0 <= lookback < seq_len:
-                attn_out[pi, hi, 0, :seq_len] = pattern[lookback].float().cpu().to(torch.float16)
-            # Query 1: belief_formation (may be -1)
-            if 0 <= bf < seq_len:
-                attn_out[pi, hi, 1, :seq_len] = pattern[bf].float().cpu().to(torch.float16)
+            for qi, qpos in enumerate(q_positions):
+                if 0 <= qpos < seq_len:
+                    attn_out[pi, hi, qi, :seq_len] = pattern[qpos].float().cpu().to(torch.float16)
 
         del cache
         if (pi + 1) % 10 == 0:
@@ -350,9 +420,16 @@ def capture_for_template(
         "n_heads": n_heads,
         "max_seq": max_seq,
         "pct_state_found": sum(1 for p in positions if p["state"] >= 0) / n_prompts,
+        "pct_state_first_found":   sum(1 for p in positions if p["state_first"] >= 0) / n_prompts,
+        "pct_state_second_found":  sum(1 for p in positions if p["state_second"] >= 0) / n_prompts,
+        "pct_state_correct_found": sum(1 for p in positions if p["state_correct"] >= 0) / n_prompts,
+        "pct_info_loss_found":     sum(1 for p in positions if p["info_loss"] >= 0) / n_prompts,
         "pct_char_found": sum(1 for p in positions if p["char_q"] >= 0) / n_prompts,
         "pct_obj_found": sum(1 for p in positions if p["obj_q"] >= 0) / n_prompts,
         "pct_bf_found": sum(1 for p in positions if p["belief_form"] >= 0) / n_prompts,
+        "pct_agent_first_found": sum(1 for p in positions if p["agent_first"] >= 0) / n_prompts,
+        "pct_agent_last_found":  sum(1 for p in positions if p["agent_last"]  >= 0) / n_prompts,
+        "agent_str": positions[0].get("agent_str", "") if positions else "",
     }
     (out_dir / "capture_summary.json").write_text(json.dumps(summary, indent=2))
     log.info(f"summary: {summary}")

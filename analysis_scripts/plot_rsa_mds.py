@@ -10,7 +10,8 @@ Two views:
 - 6x6 condition-level RDM: directions and templates averaged -> 6 vectors.
   Mantel-tested against three models:
     * same-condition (categorical condition identity)
-    * rule-pair structure (flip-rule {C1,C2,C3} vs same-rule {C4,C5,C6})
+    * across-context vs within-context (C1/C2/C3/C4 = false_template <->
+      true_template patch; C5/C6/C7 = within-context, no template flip)
     * task type (abstract / answer-changes / location)
 
 Inputs: results_for_pi/heatmaps/manifest.csv (canonical end-patch cell map).
@@ -43,7 +44,8 @@ OUT_FIG = ROOT / "results_for_pi/aggregation"
 
 CONDITIONS = [
     "C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief",
-    "C4_answer_changes_photo", "C5_control", "C6_state_only_no_belief",
+    "C4_answer_changes_photo", "C5_answer_changes_location_only",
+    "C6_answer_changes_location_only_photo", "C7_state_only_no_belief",
 ]
 SHORT = {c: c.split("_", 1)[0] for c in CONDITIONS}
 TEMPLATES = ["template_food_truck", "template_hair_styling", "template_library_book"]
@@ -54,8 +56,9 @@ COND_COLORS = {
     "C2_abstract_photo": "#67a9cf",
     "C3_answer_changes_belief": "#d6604d",
     "C4_answer_changes_photo": "#f4a582",
-    "C5_control": "#4daf4a",
-    "C6_state_only_no_belief": "#984ea3",
+    "C5_answer_changes_location_only": "#4daf4a",
+    "C6_answer_changes_location_only_photo": "#a6d854",
+    "C7_state_only_no_belief": "#984ea3",
 }
 TMPL_MARKERS = {"template_food_truck": "o", "template_hair_styling": "s", "template_library_book": "^"}
 
@@ -194,8 +197,9 @@ def main():
 
     # Mantel models on the 18x18 (full structure where labels exist)
     cond_groups = [CONDITIONS.index(c) for c, _ in labels_18]
-    rule_groups = [0 if c in ("C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief")
-                   else 1 for c, _ in labels_18]
+    context_groups = [0 if c in ("C1_abstract_belief", "C2_abstract_photo",
+                                 "C3_answer_changes_belief", "C4_answer_changes_photo")
+                      else 1 for c, _ in labels_18]
     task_groups = []
     for c, _ in labels_18:
         if c in ("C1_abstract_belief", "C2_abstract_photo"):
@@ -208,7 +212,7 @@ def main():
 
     mantel = {}
     mantel["same-cond"] = mantel_test(rdm_18, cond_groups)
-    mantel["rule-pair"] = mantel_test(rdm_18, rule_groups)
+    mantel["across-context"] = mantel_test(rdm_18, context_groups)
     mantel["task-type"] = mantel_test(rdm_18, task_groups)
     mantel["template"] = mantel_test(rdm_18, template_groups)
 

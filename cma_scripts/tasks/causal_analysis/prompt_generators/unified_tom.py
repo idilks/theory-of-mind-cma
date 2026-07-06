@@ -90,6 +90,7 @@ class UnifiedTomGenerator(PromptGenerator):
         base_answers = []
         exp_answers = []
         causal_answers = []
+        prompt_metadata = []  # per-prompt dicts from template_system *_with_meta
         
         num_prompts = self.config.prompts.prompt_num
         prompts_per_template = max(1, num_prompts // len(self.template_names))
@@ -108,10 +109,10 @@ class UnifiedTomGenerator(PromptGenerator):
                         same_belief = getattr(self.config.prompts.condition, "same_belief", False)
                     else:
                         raise ValueError("Condition must be specified in config for UnifiedTomGenerator to determine answer_differs. Please set config.prompts.condition with appropriate answer_differs value.")
-                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = self.template_system.generate_cross_context_pair(template_name, base_rule=base_rule, context_type=context_type, answer_differs=answer_differs, same_belief=same_belief)
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, pair_meta = self.template_system.generate_cross_context_pair_with_meta(template_name, base_rule=base_rule, context_type=context_type, answer_differs=answer_differs, same_belief=same_belief)
                 elif context_type == "basic":
                     # C5 STATE_ONLY_NO_BELIEF: no observer/belief/photo. End-patch only.
-                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans = self.template_system.generate_basic_pair(template_name, base_rule=base_rule)
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, pair_meta = self.template_system.generate_basic_pair_with_meta(template_name, base_rule=base_rule)
                 else:
                     raise ValueError(f"UnifiedTomGenerator does not support context_type={context_type!r}. Supported: 'abstract', 'photo', 'basic'.")
 
@@ -137,18 +138,7 @@ class UnifiedTomGenerator(PromptGenerator):
 
                 base_prompts.append(formatted_prompt)
 
-                if context_type == "photo":
-                    # this one has a different question
-                    if base_rule == "ABA":
-                        # get the true belief question
-                        exp_question = self.question_formatter.get_cma_questions(template_name, context_type=context_type, belief_type="true_belief", question_style=question_style)
-                    else:
-                        # get the false belief question
-                        exp_question = self.question_formatter.get_cma_questions(template_name, context_type=context_type, belief_type="false_belief", question_style=question_style)
-
-
-                else:
-                    exp_question = base_question
+                exp_question = base_question
 
                 exp_full_prompt = f"{exp_scenario}\n{exp_question}"
 
@@ -167,37 +157,62 @@ class UnifiedTomGenerator(PromptGenerator):
                 exp_answers.append(exp_ans)
                 # Causal answer: after patching base->exp, expect base belief state
                 causal_answers.append(causal_ans)
+                # Stash per-prompt metadata (loc_first/second/correct + info_loss marker)
+                # for downstream attention-position extraction (lookback analysis).
+                # Add the template name so downstream code can pick char_q/obj_q.
+                pair_meta_with_template = {**pair_meta, "template_name": template_name,
+                                           "base_rule": base_rule}
+                prompt_metadata.append(pair_meta_with_template)
 
         # Prepare return format
         prompt_pairs = list(zip(base_prompts[:num_prompts], exp_prompts[:num_prompts]))
         correct_ans_pairs = list(zip(base_answers[:num_prompts], exp_answers[:num_prompts]))
 
+        # Expose metadata on the generator for callers that need it (e.g. the
+        # lookback capture script). Kept off the return tuple to preserve the
+        # existing 3-tuple signature used by cma.py.
+        self.last_metadata = prompt_metadata[:num_prompts]
+
         return prompt_pairs, correct_ans_pairs, causal_answers[:num_prompts]
     
-    def detect_belief_formation_position(self, prompt: str, tokenizer, is_false_belief: bool) -> int:
+    def detect_belief_formation_position(self, prompt: str, tokenizer,
+                                          is_false_belief: bool | None = None) -> int:
         """Detect the token position where the agent's belief state is sealed.
 
-        Iterates through all templates, finds the appropriate marker
-        (false or true belief), and returns the token position at the
-        END of that marker string.
+        When `is_false_belief` is supplied (True/False), looks up that
+        specific marker on each template — used by CMA, which knows in
+        advance which template kind the base/exp prompt was rendered from.
 
-        Returns -1 if no marker found.
+        When `is_false_belief` is None (default), probes the prompt for
+        whichever of the false- and true-belief markers actually appears.
+        Used by lookback analysis, which only needs the marker that's in
+        the prompt and shouldn't depend on CMA's base_rule structure.
+
+        Returns the token position at the END of the matched marker, or -1.
         """
+        if is_false_belief is True:
+            marker_attrs = ("false_belief_marker",)
+        elif is_false_belief is False:
+            marker_attrs = ("true_belief_marker",)
+        else:
+            marker_attrs = ("false_belief_marker", "true_belief_marker")
+
         for template in self.template_system.templates.values():
-            marker = template.false_belief_marker if is_false_belief else template.true_belief_marker
-            if not marker:
-                continue
-            pos = prompt.find(marker)
-            if pos == -1:
-                continue
-            end_char = pos + len(marker)
-            encoding = tokenizer(prompt, return_offsets_mapping=True)
-            for i, (start, end) in enumerate(encoding['offset_mapping']):
-                if start <= end_char <= end:
-                    return i + 1
-                elif start > end_char:
-                    return i
-            return len(encoding['offset_mapping'])
+            for attr in marker_attrs:
+                marker = getattr(template, attr, "") or ""
+                if not marker:
+                    continue
+                pos = prompt.find(marker)
+                if pos == -1:
+                    continue
+                end_char = pos + len(marker)
+                encoding = tokenizer(prompt, return_offsets_mapping=True)
+                for i, (start, end) in enumerate(encoding['offset_mapping']):
+                    if start <= end_char <= end:
+                        return i + 1
+                    elif start > end_char:
+                        return i
+                return len(encoding['offset_mapping'])
         return -1
 
     def detect_photo_position(self, prompt: str, tokenizer) -> int:
@@ -226,6 +241,27 @@ class UnifiedTomGenerator(PromptGenerator):
                         return i
                 return len(encoding['offset_mapping'])
         return -1
+
+    def detect_post_movement_position(self, prompt: str, tokenizer) -> int:
+        """Food-truck-only: token position right after 'drives the truck to <X>.'
+
+        Used by the C3/C4 within-template residual-stream patch experiment, where
+        we want a string-anchored landing site that is identical between base
+        (false_context) and exp (true_context) and lies after the world-state
+        change in both. Returns -1 if the anchor is not found, in which case
+        callers must fall back or raise.
+        """
+        match = re.search(r'drives the truck to [^.]+\.', prompt, re.IGNORECASE)
+        if match is None:
+            return -1
+        end_char = match.end()
+        encoding = tokenizer(prompt, return_offsets_mapping=True)
+        for i, (start, end) in enumerate(encoding['offset_mapping']):
+            if start <= end_char <= end:
+                return i + 1
+            elif start > end_char:
+                return i
+        return len(encoding['offset_mapping'])
 
     def detect_movement_position(self, prompt: str, tokenizer) -> int:
         """Detect the token position after the movement event.

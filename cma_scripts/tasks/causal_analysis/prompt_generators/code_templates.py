@@ -1,38 +1,31 @@
 """
 Code template system for CMA experiments.
 
-Tests whether transformer attention heads track general divergent state
-(not just beliefs) by using Python copy semantics as the divergence mechanism:
-- Shallow reference (list_b = list_a) = true belief analog (state propagates)
-- Deep copy (list_b = list_a[:]) = false belief analog (state diverges)
+Single template: indexed-list mutation. A list `a` is initialized with
+random fillers, the target index holds the "orig" value, then `b` is
+either an alias (`b = a`, true-belief analog: state propagates) or a deep
+copy (`b = a.copy()`, false-belief analog: state diverges), then `a[idx]`
+is mutated. The question asks `b[idx]`.
 
-All code-specific helpers live here — position detection, answer extraction,
-vocabulary, templates. Nothing touches the ToM files.
+Pair generators hold causal_ans constant across all three conditions
+(abstract, answer_changes, control) for a given direction:
+- ABA → causal = X (the "non-base" letter for that pair)
+- ABB → causal = X
+This double-dissociates rule effects from token-position effects.
 """
 
 import re
 import ast
 import random
-from dataclasses import dataclass, field
-from typing import Dict, List, Tuple, Optional
+from dataclasses import dataclass
+from typing import Dict, Tuple
 
 
 # ---------------------------------------------------------------------------
-# Vocabulary (inline — no external txt files needed)
+# Vocabulary
 # ---------------------------------------------------------------------------
 
-CODE_VOCAB = {
-    "list_values": [1, 2, 3, 4, 5, 7, 8, 9, 10, 15, 20, 25, 30, 42, 50, 99],
-    "dict_keys": ["x", "y", "z", "a", "b", "m", "n", "p", "q", "k"],
-    "dict_values": [1, 2, 3, 4, 5, 10, 20, 50, 100],
-}
-
-
-def sample_different(pool: list, count: int = 2) -> list:
-    """Sample `count` distinct items from a pool."""
-    if len(pool) < count:
-        return random.choices(pool, k=count)
-    return random.sample(pool, count)
+CODE_VALUE_POOL = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 
 # ---------------------------------------------------------------------------
@@ -44,52 +37,20 @@ CODE_SYSTEM_PROMPT = (
     "determines variable values. Answer with only the Python value, nothing else."
 )
 
-CODE_QUESTIONS = {
-    "list_append": "What is the value of list_b?",
-    "dict_update": "What is the value of dict_b?",
-    "list_extend": "What is the value of backup?",
-}
-
-CODE_CONTROL_QUESTIONS = {
-    "list_append": "What is the value of list_a?",
-    "dict_update": "What is the value of dict_a?",
-    "list_extend": "What is the value of nums?",
-}
-
-# Abstract (same-answer) condition: ask about the mutated variable so that
-# both copy and reference prompts share an identical correct answer.
-CODE_ABSTRACT_QUESTIONS = {
-    "list_append": "What is the value of list_a?",
-    "dict_update": "What is the value of dict_a?",
-    "list_extend": "What is the value of nums?",
-}
+# Patch-position markers.
+COPY_MARKER = r"b = a\.copy\(\)"
+ALIAS_MARKER = r"b = a(?!\.)"
 
 
 # ---------------------------------------------------------------------------
-# Template dataclasses
+# Template dataclass (one entry; consumed by detect_copy_semantics_position)
 # ---------------------------------------------------------------------------
 
 @dataclass
 class CodeScenarioTemplate:
-    """Template for code-tracing CMA scenarios."""
     name: str
-    false_context_template: str   # deep copy version (state diverges)
-    true_context_template: str    # shallow reference version (state propagates)
-    variables: Dict[str, str]     # variable_name -> vocab pool key in CODE_VOCAB
-    copy_answer_key: str          # variable holding the "copy" (false) answer
-    reference_answer_key: str     # variable holding the "reference" (true) answer
-    copy_marker: str = ""         # regex pattern for deep-copy line
-    reference_marker: str = ""    # regex pattern for shallow-reference line
-    description: str = ""
-
-
-@dataclass
-class CodeControlTemplate:
-    """Template for code control condition (no copy semantics)."""
-    name: str
-    template: str
-    variables: Dict[str, str]
-    answer_key: str
+    copy_marker: str
+    reference_marker: str
     description: str = ""
 
 
@@ -98,294 +59,130 @@ class CodeControlTemplate:
 # ---------------------------------------------------------------------------
 
 class CodeTemplateSystem:
-    """Manages code scenario templates and generates CMA prompt pairs."""
+    """Generates indexed-list code-tracing CMA prompt pairs."""
 
-    def __init__(self):
-        self.templates = self._create_templates()
-        self.control_templates = self._create_control_templates()
-
-    # ---- template definitions ---------------------------------------------
-
-    def _create_templates(self) -> Dict[str, CodeScenarioTemplate]:
-        return {
-            "list_append": CodeScenarioTemplate(
-                name="list_append",
-                false_context_template=(
-                    "list_a = [{val_1}]\n"
-                    "list_b = list_a[:]\n"
-                    "list_a.append({val_2})"
-                ),
-                true_context_template=(
-                    "list_a = [{val_1}]\n"
-                    "list_b = list_a\n"
-                    "list_a.append({val_2})"
-                ),
-                variables={"val_1": "list_values", "val_2": "list_values"},
-                copy_answer_key="val_1",
-                reference_answer_key="val_1",  # computed at runtime
-                copy_marker=r"list_b = list_a\[:\]",
-                reference_marker=r"list_b = list_a(?!\[)",
-                description="List with append — copy vs reference",
-            ),
-            "dict_update": CodeScenarioTemplate(
-                name="dict_update",
-                false_context_template=(
-                    'dict_a = {{"{key_1}": {val_1}}}\n'
-                    "dict_b = dict(dict_a)\n"
-                    'dict_a["{key_2}"] = {val_2}'
-                ),
-                true_context_template=(
-                    'dict_a = {{"{key_1}": {val_1}}}\n'
-                    "dict_b = dict_a\n"
-                    'dict_a["{key_2}"] = {val_2}'
-                ),
-                variables={
-                    "key_1": "dict_keys",
-                    "val_1": "dict_values",
-                    "key_2": "dict_keys",
-                    "val_2": "dict_values",
-                },
-                copy_answer_key="key_1",
-                reference_answer_key="key_1",
-                copy_marker=r"dict_b = dict\(dict_a\)",
-                reference_marker=r"dict_b = dict_a(?!\()",
-                description="Dict with key addition — copy vs reference",
-            ),
-            "list_extend": CodeScenarioTemplate(
-                name="list_extend",
-                false_context_template=(
-                    "nums = [{val_1}, {val_2}]\n"
-                    "backup = nums[:]\n"
-                    "nums.extend([{val_3}, {val_4}])"
-                ),
-                true_context_template=(
-                    "nums = [{val_1}, {val_2}]\n"
-                    "backup = nums\n"
-                    "nums.extend([{val_3}, {val_4}])"
-                ),
-                variables={
-                    "val_1": "list_values",
-                    "val_2": "list_values",
-                    "val_3": "list_values",
-                    "val_4": "list_values",
-                },
-                copy_answer_key="val_1",
-                reference_answer_key="val_1",
-                copy_marker=r"backup = nums\[:\]",
-                reference_marker=r"backup = nums(?!\[)",
-                description="List with extend — copy vs reference",
+    def __init__(self, length_range=(4, 8), pool=None):
+        self.length_range = length_range
+        self.pool = pool if pool is not None else CODE_VALUE_POOL
+        self.templates = {
+            "indexed_list": CodeScenarioTemplate(
+                name="indexed_list",
+                copy_marker=COPY_MARKER,
+                reference_marker=ALIAS_MARKER,
+                description="Indexed-list mutation: alias vs deep-copy semantics",
             ),
         }
 
-    def _create_control_templates(self) -> Dict[str, CodeControlTemplate]:
-        """Control templates: no copy semantics, just direct mutation."""
-        return {
-            "list_append": CodeControlTemplate(
-                name="list_append",
-                template=(
-                    "list_a = [{val_1}]\n"
-                    "list_a.append({val_2})"
-                ),
-                variables={"val_1": "list_values", "val_2": "list_values"},
-                answer_key="val_1",
-                description="List append — direct mutation, no copy",
-            ),
-            "dict_update": CodeControlTemplate(
-                name="dict_update",
-                template=(
-                    'dict_a = {{"{key_1}": {val_1}}}\n'
-                    'dict_a["{key_2}"] = {val_2}'
-                ),
-                variables={
-                    "key_1": "dict_keys",
-                    "val_1": "dict_values",
-                    "key_2": "dict_keys",
-                    "val_2": "dict_values",
-                },
-                answer_key="key_1",
-                description="Dict update — direct mutation, no copy",
-            ),
-            "list_extend": CodeControlTemplate(
-                name="list_extend",
-                template=(
-                    "nums = [{val_1}, {val_2}]\n"
-                    "nums.extend([{val_3}, {val_4}])"
-                ),
-                variables={
-                    "val_1": "list_values",
-                    "val_2": "list_values",
-                    "val_3": "list_values",
-                    "val_4": "list_values",
-                },
-                answer_key="val_1",
-                description="List extend — direct mutation, no copy",
-            ),
-        }
+    # ---- prompt rendering -------------------------------------------------
 
-    # ---- answer computation -----------------------------------------------
+    def _sample_pair_setup(self):
+        """Shared per-pair setup: list length, target idx, distinct (X, Y),
+        and filler values for non-target slots."""
+        length = random.randint(*self.length_range)
+        idx = random.randint(0, length - 1)
+        x, y = random.sample(self.pool, 2)
+        fillers = [random.choice(self.pool) for _ in range(length)]
+        return length, idx, x, y, fillers
 
-    def _compute_answer(self, template_name: str, substitutions: dict, is_copy: bool) -> str:
-        """Compute the expected Python value as a string.
+    @staticmethod
+    def _render_init(fillers, idx, orig_value):
+        items = list(fillers)
+        items[idx] = orig_value
+        return "[" + ", ".join(f"'{c}'" for c in items) + "]"
 
-        For copy (false belief analog): the tracked variable keeps its original value.
-        For reference (true belief analog): the tracked variable reflects the mutation.
-        """
-        if template_name == "list_append":
-            if is_copy:
-                return f"[{substitutions['val_1']}]"
-            else:
-                return f"[{substitutions['val_1']}, {substitutions['val_2']}]"
+    def _render_scenario(self, fillers, idx, orig, kind, mut):
+        body = "b = a.copy()" if kind == "copy" else "b = a"
+        init = self._render_init(fillers, idx, orig)
+        return f"a = {init}\n{body}\na[{idx}] = '{mut}'"
 
-        elif template_name == "dict_update":
-            k1, v1 = substitutions["key_1"], substitutions["val_1"]
-            k2, v2 = substitutions["key_2"], substitutions["val_2"]
-            if is_copy:
-                return '{' + f'"{k1}": {v1}' + '}'
-            else:
-                return '{' + f'"{k1}": {v1}, "{k2}": {v2}' + '}'
+    @staticmethod
+    def _quoted(c):
+        return f"'{c}'"
 
-        elif template_name == "list_extend":
-            v1, v2 = substitutions["val_1"], substitutions["val_2"]
-            v3, v4 = substitutions["val_3"], substitutions["val_4"]
-            if is_copy:
-                return f"[{v1}, {v2}]"
-            else:
-                return f"[{v1}, {v2}, {v3}, {v4}]"
+    @staticmethod
+    def _question(idx):
+        return f"What is b[{idx}]?"
 
-        raise ValueError(f"Unknown template: {template_name}")
+    def _check_template(self, template_name):
+        if template_name not in self.templates:
+            raise ValueError(
+                f"Unknown code template: {template_name}. "
+                f"Available: {list(self.templates.keys())}"
+            )
 
-    def _compute_control_answer(self, template_name: str, substitutions: dict) -> str:
-        """Compute the expected answer for control templates (always the mutated value)."""
-        if template_name == "list_append":
-            return f"[{substitutions['val_1']}, {substitutions['val_2']}]"
-        elif template_name == "dict_update":
-            k1, v1 = substitutions["key_1"], substitutions["val_1"]
-            k2, v2 = substitutions["key_2"], substitutions["val_2"]
-            return '{' + f'"{k1}": {v1}, "{k2}": {v2}' + '}'
-        elif template_name == "list_extend":
-            v1, v2 = substitutions["val_1"], substitutions["val_2"]
-            v3, v4 = substitutions["val_3"], substitutions["val_4"]
-            return f"[{v1}, {v2}, {v3}, {v4}]"
-        raise ValueError(f"Unknown template: {template_name}")
-
-    # ---- variable sampling ------------------------------------------------
-
-    def _sample_substitutions(self, template_name: str, is_control: bool = False) -> dict:
-        """Sample variable values for a template."""
-        if is_control:
-            template = self.control_templates[template_name]
-        else:
-            template = self.templates[template_name]
-
-        subs = {}
-        for var_name, pool_key in template.variables.items():
-            pool = CODE_VOCAB[pool_key]
-            subs[var_name] = random.choice(pool)
-
-        # Ensure distinctness for key contrastive pairs
-        if template_name == "list_append":
-            vals = sample_different(CODE_VOCAB["list_values"], 2)
-            subs["val_1"], subs["val_2"] = vals[0], vals[1]
-        elif template_name == "dict_update":
-            keys = sample_different(CODE_VOCAB["dict_keys"], 2)
-            vals = sample_different(CODE_VOCAB["dict_values"], 2)
-            subs["key_1"], subs["key_2"] = keys[0], keys[1]
-            subs["val_1"], subs["val_2"] = vals[0], vals[1]
-        elif template_name == "list_extend":
-            vals = sample_different(CODE_VOCAB["list_values"], 4)
-            subs["val_1"], subs["val_2"] = vals[0], vals[1]
-            subs["val_3"], subs["val_4"] = vals[2], vals[3]
-
-        return subs
-
-    # ---- pair generation --------------------------------------------------
+    # ---- pair generators --------------------------------------------------
 
     def generate_abstract_pair(
         self, template_name: str, base_rule: str
-    ) -> Tuple[str, str, str, str, str]:
-        """Same-answer code pair: copy vs reference, answer is the mutated value.
+    ) -> Tuple[str, str, str, str, str, str]:
+        """Abstract: base_ans == exp_ans (=Y); causal=X.
 
-        Uses identical substitutions for both prompts so the only token that
-        differs is the copy-semantics marker (`[:]` present vs absent). The
-        question asks about the mutated variable (e.g. list_a), so the answer
-        is `[val_1, val_2]` for both.
+        ABA: base=(orig=Y, copy, mut=X); exp=(orig=X, alias, mut=Y)
+        ABB: base=(orig=X, alias, mut=Y); exp=(orig=Y, copy, mut=X)
         """
-        template = self.templates[template_name]
-        subs = self._sample_substitutions(template_name)
+        self._check_template(template_name)
+        _, idx, x, y, fillers = self._sample_pair_setup()
 
         if base_rule == "ABA":
-            base_scenario = template.false_context_template.format(**subs)
-            exp_scenario = template.true_context_template.format(**subs)
+            base = self._render_scenario(fillers, idx, y, "copy", x)
+            exp = self._render_scenario(fillers, idx, x, "alias", y)
         elif base_rule == "ABB":
-            base_scenario = template.true_context_template.format(**subs)
-            exp_scenario = template.false_context_template.format(**subs)
+            base = self._render_scenario(fillers, idx, x, "alias", y)
+            exp = self._render_scenario(fillers, idx, y, "copy", x)
         else:
             raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
 
-        ans = self._compute_answer(template_name, subs, is_copy=False)
-        return base_scenario, exp_scenario, ans, ans, ans
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(idx))
 
     def generate_cross_context_pair(
         self, template_name: str, base_rule: str, answer_differs: bool
-    ) -> Tuple[str, str, str, str, str]:
-        """Generate a base/exp code prompt pair for CMA.
-
-        Returns:
-            (base_scenario, exp_scenario, base_ans, exp_ans, causal_ans)
-
-        For answer_differs=True (CODE_ANSWER_CHANGES):
-            Same variable values, different copy semantics.
-            ABA: base=copy(false), exp=reference(true)
-            ABB: base=reference(true), exp=copy(false)
-
-        For control (CODE_CONTROL):
-            Different variable values, same direct-assignment structure.
-        """
-        if not answer_differs and template_name in self.control_templates:
+    ) -> Tuple[str, str, str, str, str, str]:
+        """answer_differs=True → answer_changes; False → control."""
+        self._check_template(template_name)
+        if not answer_differs:
             return self._generate_control_pair(template_name, base_rule)
 
-        template = self.templates[template_name]
-        subs = self._sample_substitutions(template_name)
-
+        _, idx, x, y, fillers = self._sample_pair_setup()
         if base_rule == "ABA":
-            # base = copy (false belief analog), exp = reference (true belief analog)
-            base_scenario = template.false_context_template.format(**subs)
-            exp_scenario = template.true_context_template.format(**subs)
-            base_ans = self._compute_answer(template_name, subs, is_copy=True)
-            exp_ans = self._compute_answer(template_name, subs, is_copy=False)
-            causal_ans = base_ans  # after patching, expect base answer
+            # base=(X, copy, Y); exp=(X, alias, Y). same subs, mechanism differs.
+            base = self._render_scenario(fillers, idx, x, "copy", y)
+            exp = self._render_scenario(fillers, idx, x, "alias", y)
         elif base_rule == "ABB":
-            # base = reference (true), exp = copy (false)
-            base_scenario = template.true_context_template.format(**subs)
-            exp_scenario = template.false_context_template.format(**subs)
-            base_ans = self._compute_answer(template_name, subs, is_copy=False)
-            exp_ans = self._compute_answer(template_name, subs, is_copy=True)
-            causal_ans = base_ans
+            # base=(Y, alias, X); exp=(Y, copy, X).
+            base = self._render_scenario(fillers, idx, y, "alias", x)
+            exp = self._render_scenario(fillers, idx, y, "copy", x)
         else:
             raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
 
-        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+        return (base, exp,
+                self._quoted(x), self._quoted(y),
+                self._quoted(x), self._question(idx))
 
     def _generate_control_pair(
         self, template_name: str, base_rule: str
-    ) -> Tuple[str, str, str, str, str]:
-        """Generate a control pair: same structure, different values."""
-        template = self.control_templates[template_name]
+    ) -> Tuple[str, str, str, str, str, str]:
+        """Control: both prompts use the same copy/alias choice as base of
+        the sibling conditions in this direction; only orig/mut letters swap.
+        Patch-position aligned with abstract/answer_changes ABA/ABB.
 
-        subs_1 = self._sample_substitutions(template_name, is_control=True)
-        subs_2 = self._sample_substitutions(template_name, is_control=True)
+        ABA: both copy.  base=(X, copy, Y); exp=(Y, copy, X).
+        ABB: both alias. base=(Y, alias, X); exp=(X, alias, Y).
+        """
+        _, idx, x, y, fillers = self._sample_pair_setup()
+        if base_rule == "ABA":
+            base = self._render_scenario(fillers, idx, x, "copy", y)
+            exp = self._render_scenario(fillers, idx, y, "copy", x)
+        elif base_rule == "ABB":
+            base = self._render_scenario(fillers, idx, y, "alias", x)
+            exp = self._render_scenario(fillers, idx, x, "alias", y)
+        else:
+            raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
 
-        # Ensure the two sets produce different answers
-        while self._compute_control_answer(template_name, subs_1) == self._compute_control_answer(template_name, subs_2):
-            subs_2 = self._sample_substitutions(template_name, is_control=True)
-
-        base_scenario = template.template.format(**subs_1)
-        exp_scenario = template.template.format(**subs_2)
-        base_ans = self._compute_control_answer(template_name, subs_1)
-        exp_ans = self._compute_control_answer(template_name, subs_2)
-        causal_ans = base_ans
-
-        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+        return (base, exp,
+                self._quoted(x), self._quoted(y),
+                self._quoted(x), self._question(idx))
 
 
 # ---------------------------------------------------------------------------
@@ -395,39 +192,40 @@ class CodeTemplateSystem:
 def extract_value_from_code_response(response: str) -> str:
     """Extract a Python value from the model's response.
 
-    Looks for list literals [...], dict literals {...}, or bare numbers.
+    Order: quoted single char (primary case for indexed_list), list literal,
+    dict literal, bare digit, bare letter. Bare digits/letters are
+    re-quoted so ast.literal_eval comparison works (the pool stores values
+    as single-character strings like '7', not ints).
     """
-    # Try list literal
-    list_match = re.search(r'\[[\d\s,]*\]', response)
+    quoted = re.search(r"['\"]([A-Za-z0-9])['\"]", response)
+    if quoted:
+        return f"'{quoted.group(1)}'"
+
+    list_match = re.search(r'\[[^\]]*\]', response)
     if list_match:
         return list_match.group(0).strip()
 
-    # Try dict literal
     dict_match = re.search(r'\{[^}]+\}', response)
     if dict_match:
         return dict_match.group(0).strip()
 
-    # Bare number
-    num_match = re.search(r'\b\d+\b', response)
+    num_match = re.search(r'\b\d\b', response)
     if num_match:
-        return num_match.group(0)
+        return f"'{num_match.group(0)}'"
+
+    letter = re.search(r'\b[A-Za-z]\b', response)
+    if letter:
+        return f"'{letter.group(0)}'"
 
     return ""
 
 
 def code_values_match(predicted: str, expected: str) -> bool:
-    """Compare Python value strings semantically.
-
-    Uses ast.literal_eval so whitespace and dict ordering don't matter.
-    """
     if not predicted or not expected:
         return False
     try:
-        pred_val = ast.literal_eval(predicted.strip())
-        exp_val = ast.literal_eval(expected.strip())
-        return pred_val == exp_val
+        return ast.literal_eval(predicted.strip()) == ast.literal_eval(expected.strip())
     except (ValueError, SyntaxError):
-        # Fallback: normalize whitespace and compare
         return predicted.replace(" ", "") == expected.replace(" ", "")
 
 
@@ -438,20 +236,7 @@ def code_values_match(predicted: str, expected: str) -> bool:
 def detect_copy_semantics_position(
     prompt: str, tokenizer, is_copy: bool, templates: Dict[str, CodeScenarioTemplate]
 ) -> int:
-    """Detect token position where copy/reference semantics are established.
-
-    Searches for the copy or reference marker in the prompt, maps the end
-    of the match to a token position using offset_mapping.
-
-    Args:
-        prompt: Full formatted prompt string.
-        tokenizer: HF tokenizer with offset_mapping support.
-        is_copy: True for deep copy (false belief analog), False for reference.
-        templates: Dict of CodeScenarioTemplate instances to get markers from.
-
-    Returns:
-        Token position (int) after the marker, or -1 if not found.
-    """
+    """Token position after the alias/copy marker in the prompt."""
     for template in templates.values():
         pattern = template.copy_marker if is_copy else template.reference_marker
         if not pattern:

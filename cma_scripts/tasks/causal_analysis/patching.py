@@ -138,6 +138,8 @@ class ActivationPatcher:
         A_tok_id: int = None,
         B_tok_id: int = None,
         movement_positions: Tuple[int, int] = None,
+        token_pos: int = -1,
+        base_logits_diff: torch.Tensor = None,
         **generation_kwargs
     ):
         """Patch activations in different layers at certain token positions."""
@@ -150,8 +152,8 @@ class ActivationPatcher:
             total_num_all = torch.zeros((total_layers, num_position), device=device)
             acc_all = torch.zeros((total_layers, num_position), device=device)
         else:
-            # FIX: Only track per-layer, not per-position (avoids shape mismatch across prompts)
             logits_diff_change = torch.zeros((total_layers,), device=device)
+            logits_diff_normalized = torch.zeros((total_layers,), device=device) if base_logits_diff is not None else None
         
         for layer_idx in tqdm(range(total_layers)):
             if self.config.generate:
@@ -192,36 +194,59 @@ class ActivationPatcher:
                     total_num_all[layer_idx, token_pos] = total_num
                     acc_all[layer_idx, token_pos] = acc
             else:
-                # FIX: Logit diff mode - patch ALL positions at once (faster and no shape issues)
-                def replace_all_positions_hook(activation, hook):
+                # Logit-diff mode: patch a SINGLE token position. movement_positions
+                # carries (base_pos, exp_pos) when the call site detected a structural
+                # anchor (post-movement, belief formation, etc.); otherwise fall back
+                # to token_pos for both (default -1 = end token).
+                if movement_positions is not None:
+                    base_pos, exp_pos = movement_positions
+                else:
+                    base_pos = exp_pos = token_pos
+
+                def replace_position_hook(activation, hook):
                     activation_tag = hook.name
                     if activation.shape[1] == num_position:
-                        # Handle sequence length mismatch: only patch overlapping positions
-                        base_seq_len = base_cache[activation_tag].shape[1]
-                        min_seq_len = min(num_position, base_seq_len)
-                        activation[:, :min_seq_len, :] = base_cache[activation_tag][:, :min_seq_len, :]
-                
+                        activation[:, exp_pos, :] = base_cache[activation_tag][:, base_pos, :]
+
                 act_tag = utils.get_act_name(activation_name, layer_idx)
-                fwd_hooks = [(act_tag, replace_all_positions_hook)]
-                
+                fwd_hooks = [(act_tag, replace_position_hook)]
+
                 if activation_name == "attn_out" and patch_mlp_out:
                     fwd_hooks.append((
                         utils.get_act_name("mlp_out", layer_idx),
-                        replace_all_positions_hook
+                        replace_position_hook
                     ))
-                
+
                 patched_logits = model.run_with_hooks(input_ids, fwd_hooks=fwd_hooks)
                 patched_exp_logits_diff = calculate_logit_probability_difference(
                     patched_logits, model, causal_ans=patched_exp_ans, original_ans=exp_ans
                 )
-                # FIX: Store as scalar per layer, not per position
-                logits_diff_change[layer_idx] = patched_exp_logits_diff - exp_logits_diff
+                raw_change = patched_exp_logits_diff - exp_logits_diff
+                logits_diff_change[layer_idx] = raw_change
+
+                if logits_diff_normalized is not None:
+                    # Normalized indirect effect (Wang/Conmy/Prakash convention):
+                    #   (patched - exp) / (base - exp)
+                    # 0 = no patch effect; 1 = patch fully flipped exp toward base.
+                    # When base and exp give nearly the same logit gap, the metric
+                    # is undefined; fall back to 0 instead of dividing by ~zero.
+                    denom = base_logits_diff - exp_logits_diff
+                    if torch.is_tensor(denom):
+                        denom_val = denom.detach().float()
+                    else:
+                        denom_val = torch.tensor(float(denom), device=device)
+                    if torch.abs(denom_val) < 1e-6:
+                        logits_diff_normalized[layer_idx] = 0.0
+                    else:
+                        logits_diff_normalized[layer_idx] = raw_change / denom_val
         
         if self.config.generate:
             return correct_num_all, total_num_all, acc_all
         else:
-            return logits_diff_change
-    
+            # Return (raw, normalized) so the caller can save both. normalized is None
+            # when base_logits_diff was not provided (older callers).
+            return logits_diff_change, logits_diff_normalized
+
     def run_activation_patching(
         self,
         model: CustomHookedTransformer,
@@ -250,7 +275,10 @@ class ActivationPatcher:
         if self.config.patching.group_heads:
             group_size = total_heads // n_key_value_heads
             total_heads = total_heads // group_size
-        
+
+        # Pop layer-only kwarg so it doesn't leak into the head/generation path.
+        base_logits_diff = kwargs.pop("base_logits_diff", None)
+
         if self.config.patching.activation_name in HEAD_ACTIVATIONS:
             return self.patch_head_activations(
                 model=model,
@@ -273,6 +301,7 @@ class ActivationPatcher:
         elif "resid" in self.config.patching.activation_name or "out" in self.config.patching.activation_name:
             # Pass movement positions for layer patching if available
             movement_positions = token_pos if isinstance(token_pos, tuple) else None
+            token_pos_int = token_pos if isinstance(token_pos, int) else -1
             return self.patch_layer_activations(
                 model=model,
                 base_cache=base_cache,
@@ -287,6 +316,8 @@ class ActivationPatcher:
                 A_tok_id=A_tok_id,
                 B_tok_id=B_tok_id,
                 movement_positions=movement_positions,
+                token_pos=token_pos_int,
+                base_logits_diff=base_logits_diff,
                 **kwargs
             )
             

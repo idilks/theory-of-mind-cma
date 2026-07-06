@@ -485,24 +485,25 @@ class UnifiedTemplateSystem:
         return self.templates[template_name]
     
     def generate_basic_pair(self, template_name: str, base_rule: str) -> Tuple[str, str, str, str, str]:
-        """Generate a base/exp prompt pair for the no-belief state-only control (C5).
+        base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, _ = \
+            self.generate_basic_pair_with_meta(template_name, base_rule)
+        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
 
-        Uses BasicTemplate (no observer, no belief, no photo). Base and exp share
-        identical surface form but with the two contrastive variables swapped, so
-        the only thing varying is the location/state token, and answers differ.
-
-        base_rule controls swap direction: ABA = (var_1=v1, var_2=v2); ABB swaps.
-        End-patch only — bf detection is undefined for no-belief prompts.
+    def generate_basic_pair_with_meta(self, template_name: str, base_rule: str):
+        """Same as generate_basic_pair but also returns a metadata dict with
+        the location strings rendered into the BASE scenario:
+            loc_first_str  = value at the {var_1} slot in base_scenario
+            loc_second_str = value at the {var_2} slot in base_scenario
+            loc_correct_str = base_ans (echo, for downstream clarity)
+            info_loss_marker_str = None (basic template has no observer)
         """
         template = self.get_template(template_name, "basic")
 
-        # Find the contrastive _1 / _2 variables (same vocab type).
         var_1 = next(v for v in template.variables if v.endswith("_1"))
         var_2 = next(v for v in template.variables if v.endswith("_2"))
         vocab_type = template.variables[var_1]
         v1, v2 = self.vocab_loader.sample_different(vocab_type, 2)
 
-        # Sample any non-contrastive variables independently.
         substitutions = {}
         for var, vt in template.variables.items():
             if var in (var_1, var_2):
@@ -512,7 +513,7 @@ class UnifiedTemplateSystem:
         if base_rule == "ABA":
             base_subs = {**substitutions, var_1: v1, var_2: v2}
             exp_subs  = {**substitutions, var_1: v2, var_2: v1}
-        else:  # "ABB"
+        else:
             base_subs = {**substitutions, var_1: v2, var_2: v1}
             exp_subs  = {**substitutions, var_1: v1, var_2: v2}
 
@@ -520,25 +521,40 @@ class UnifiedTemplateSystem:
         exp_scenario  = template.template.format(**exp_subs)
         base_ans = base_subs[template.answer_key]
         exp_ans  = exp_subs[template.answer_key]
-        causal_ans = base_ans  # patching base→exp should pull base's answer through
-        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+        causal_ans = base_ans
+
+        meta = {
+            "loc_first_str":  base_subs[var_1],
+            "loc_second_str": base_subs[var_2],
+            "loc_correct_str": base_ans,
+            "info_loss_marker_str": None,
+        }
+        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, meta
 
     # TODO(refactor): generate_cross_context_pair has accumulated three branches
     # (same_belief, answer_differs, default) plus a missing control branch that
     # caused a bug in April 2026. The clean replacement is a single PairSpec
     # dispatcher table — see docs/refactor_pair_generation.md.
     def generate_cross_context_pair(self, template_name: str, base_rule: str, context_type: str, answer_differs: bool, *, same_belief: bool = False) -> Tuple[str, str, str, str, str]:
+        base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, _ = \
+            self.generate_cross_context_pair_with_meta(
+                template_name, base_rule, context_type, answer_differs,
+                same_belief=same_belief,
+            )
+        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+
+    def generate_cross_context_pair_with_meta(self, template_name: str, base_rule: str, context_type: str, answer_differs: bool, *, same_belief: bool = False):
         """Generate a base/exp prompt pair for cross-context CMA.
 
-        Args:
-            template_name: Which scenario template to use.
-            base_rule: "ABA" or "ABB" — determines direction.
-            context_type: "abstract" or "photo" — selects template family.
-            answer_differs: True → same locations, different answers (C3/C4).
-                           False → swapped locations, same answer (C1/C2).
-            same_belief: If True, BOTH prompts use false_context_template with
-                         swapped substitutions (C8 bf-control). Overrides the
-                         answer_differs branch. Only valid for abstract context.
+        Same return as generate_cross_context_pair but appends a metadata dict
+        for downstream attention-position extraction:
+            loc_first_str  = value at the {var_1} slot in BASE scenario
+            loc_second_str = value at the {var_2} slot in BASE scenario
+            loc_correct_str = base_ans (echo)
+            info_loss_marker_str = template.false_belief_marker if it appears
+                in base_scenario else None. (For ABB base prompts where the
+                agent gains info, this is typically None for non-food_truck
+                templates — that absence is itself informative.)
         """
         template = self.get_template(template_name, context_type)
 
@@ -561,6 +577,10 @@ class UnifiedTemplateSystem:
         swapped_subs = substitutions.copy()
         swapped_subs[var_1], swapped_subs[var_2] = substitutions[var_2], substitutions[var_1]
 
+        # Track which substitution dict was used to render the BASE scenario,
+        # so we can report loc_first/loc_second by template-slot role.
+        base_subs_used = None
+
         if same_belief:
             # C8 bf-control: both prompts use false_context_template, swapped subs.
             # Belief type held constant; only the correct answer differs.
@@ -569,13 +589,19 @@ class UnifiedTemplateSystem:
                 exp_scenario = template.false_context_template.format(**swapped_subs)
                 base_ans = substitutions[var_1]            # false-belief answer for base
                 exp_ans = swapped_subs[var_1]              # false-belief answer for exp (=subs[var_2])
+                base_subs_used = substitutions
             elif base_rule == "ABB":
                 base_scenario = template.false_context_template.format(**swapped_subs)
                 exp_scenario = template.false_context_template.format(**substitutions)
                 base_ans = swapped_subs[var_1]             # = subs[var_2]
                 exp_ans = substitutions[var_1]
+                base_subs_used = swapped_subs
             causal_ans = base_ans  # patching base→exp should pull base's answer through
-            return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+            meta = self._build_pair_meta(
+                template, base_scenario, base_subs_used, var_1, var_2, base_ans,
+                base_template_kind="false",
+            )
+            return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, meta
 
         if answer_differs:
             # Different answers: base and exp use SAME variable assignments.
@@ -586,12 +612,16 @@ class UnifiedTemplateSystem:
                 base_ans = substitutions[var_1]   # B (true belief/photo: saw movement)
                 exp_ans = substitutions[var_2]    # A (false belief/photo: missed movement)
                 causal_ans = substitutions[var_1] # B (expect false → true after patch)
+                base_subs_used = substitutions
+                base_template_kind = "false"
             elif base_rule == "ABB":
                 base_scenario = template.true_context_template.format(**substitutions)
                 exp_scenario = template.false_context_template.format(**substitutions)
                 base_ans = substitutions[var_2]   # A (false belief/photo: missed movement)
                 exp_ans = substitutions[var_1]    # B (true belief/photo: saw movement)
                 causal_ans = substitutions[var_2] # A (expect true → false after patch)
+                base_subs_used = substitutions
+                base_template_kind = "true"
         else:
             # Same answers: base and exp use the same variable assignments.
             # Works for both abstract (C1) AND photo (C2).
@@ -601,14 +631,43 @@ class UnifiedTemplateSystem:
                 base_ans = substitutions[var_1]
                 exp_ans = substitutions[var_1]
                 causal_ans = substitutions[var_2]
+                base_subs_used = substitutions
+                base_template_kind = "false"
             elif base_rule == "ABB":
                 base_scenario = template.true_context_template.format(**substitutions)
                 exp_scenario = template.false_context_template.format(**swapped_subs)
                 base_ans = substitutions[var_2]
                 exp_ans = substitutions[var_2]
                 causal_ans = substitutions[var_1]
+                base_subs_used = substitutions
+                base_template_kind = "true"
 
-        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans
+        meta = self._build_pair_meta(
+            template, base_scenario, base_subs_used, var_1, var_2, base_ans,
+            base_template_kind=base_template_kind,
+        )
+        return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, meta
+
+    @staticmethod
+    def _build_pair_meta(template, base_scenario, base_subs, var_1, var_2,
+                        base_ans, *, base_template_kind: str):
+        """Assemble the metadata dict consumed by lookback-attention extraction.
+
+        loc_first_str / loc_second_str are the substituted values rendered into
+        the BASE scenario at template slots {var_1} / {var_2} respectively.
+        info_loss_marker_str is template.false_belief_marker if it actually
+        appears in base_scenario; otherwise None (e.g. ABB true-belief prompts
+        for hair_styling / library_book — the marker phrase is absent).
+        """
+        marker = getattr(template, "false_belief_marker", "") or ""
+        info_loss = marker if (marker and marker in base_scenario) else None
+        return {
+            "loc_first_str":  base_subs[var_1],
+            "loc_second_str": base_subs[var_2],
+            "loc_correct_str": base_ans,
+            "info_loss_marker_str": info_loss,
+            "base_template_kind": base_template_kind,
+        }
 
 class UnifiedQuestionFormatter:
     """Unified question formatter for all template types."""
@@ -702,3 +761,4 @@ class UnifiedQuestionFormatter:
         user_message = f"{question}"
 
         return user_message
+    

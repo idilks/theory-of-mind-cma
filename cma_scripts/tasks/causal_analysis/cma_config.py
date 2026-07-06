@@ -22,6 +22,7 @@ class CMACondition(Enum):
     CODE_CONTROL = "code_control"                    # C7: direct mutation only, answer DIFFERENT
     CODE_ABSTRACT = "code_abstract"                  # C9: copy vs reference semantics, answer SAME (asks about mutated var)
     LOCATION_ONLY_MATCHED_BELIEF = "answer_changes_location_only"  # C8: both prompts false-belief, swapped subs, answer DIFFERENT. bf-control: isolates location/answer under matched belief engagement. NOTE: matched_belief is currently always "false"; "true" variant deferred to next sprint.
+    LOCATION_ONLY_MATCHED_PHOTO = "answer_changes_location_only_photo"  # C7: photo analogue of C8. Both prompts false-photo, swapped subs, answer DIFFERENT. Photo control for the H1/decomposition tests requested by PI.
 
     @property
     def context_type(self) -> str:
@@ -30,7 +31,8 @@ class CMACondition(Enum):
                     CMACondition.LOCATION_ONLY_MATCHED_BELIEF):
             return "abstract"
         elif self in (CMACondition.ABSTRACT_PHOTO, CMACondition.ANSWER_CHANGES_PHOTO,
-                      CMACondition.ABSTRACT_PHOTO_NEW, CMACondition.ANSWER_CHANGES_PHOTO_NEW):
+                      CMACondition.ABSTRACT_PHOTO_NEW, CMACondition.ANSWER_CHANGES_PHOTO_NEW,
+                      CMACondition.LOCATION_ONLY_MATCHED_PHOTO):
             return "photo"
         elif self in (CMACondition.CODE_ANSWER_CHANGES, CMACondition.CODE_CONTROL, CMACondition.CODE_ABSTRACT):
             return "code"
@@ -49,21 +51,40 @@ class CMACondition(Enum):
             CMACondition.CODE_ANSWER_CHANGES,
             CMACondition.CODE_CONTROL,
             CMACondition.LOCATION_ONLY_MATCHED_BELIEF,
+            CMACondition.LOCATION_ONLY_MATCHED_PHOTO,
         )
 
     @property
     def same_belief(self) -> bool:
-        """Both base and exp prompts use the SAME belief-context template (both false).
+        """Both base and exp prompts use the SAME context template (both false_context).
 
-        Isolates location/answer computation under matched belief engagement,
-        providing a clean bf-patch control for abstract belief conditions.
+        Despite the name, applies to photo as well as belief contexts: it means
+        "skip the false<->true template flip; both sides use false_context_template
+        with swapped substitutions." Isolates location/answer computation under
+        matched epistemic-state engagement.
         """
-        return self is CMACondition.LOCATION_ONLY_MATCHED_BELIEF
+        return self in (
+            CMACondition.LOCATION_ONLY_MATCHED_BELIEF,
+            CMACondition.LOCATION_ONLY_MATCHED_PHOTO,
+        )
 
     @property
     def patch_at_photo_event(self) -> bool:
         """Whether to patch at the photo-taking event instead of movement."""
         return self in (CMACondition.ABSTRACT_PHOTO_NEW, CMACondition.ANSWER_CHANGES_PHOTO_NEW)
+
+    @property
+    def within_context(self) -> bool:
+        """True iff base and exp prompts use the SAME context template (no false↔true flip).
+        Within-context patches keep the rule label fixed (ABA→ABA, ABB→ABB).
+        Across-context patches flip it (ABA→ABB, ABB→ABA).
+        """
+        return self in (
+            CMACondition.STATE_ONLY_NO_BELIEF,
+            CMACondition.LOCATION_ONLY_MATCHED_BELIEF,
+            CMACondition.LOCATION_ONLY_MATCHED_PHOTO,
+            CMACondition.CODE_CONTROL,
+        )
 
 # Constants
 LOC_L, LOC_R = '<loc>', '</loc>'
@@ -143,7 +164,8 @@ class PatchingConfig:
     token_pos_list: List[int] = None
     group_heads: bool = False
     patch_after_movement: bool = False  # Patch after movement event in ToM prompts
-    
+    patch_at_world_change: bool = False  # food_truck-only: patch after 'drives the truck to X.' (overrides patch_after_movement when True)
+
     def __post_init__(self):
         if self.token_pos_list is None:
             self.token_pos_list = [-1]
@@ -230,7 +252,8 @@ class ExperimentConfig:
                 patch_mlp_out=args.patch_mlp_out,
                 token_pos_list=args.token_pos_list,
                 group_heads=args.group_heads,
-                patch_after_movement=getattr(args, 'patch_after_movement', False)
+                patch_after_movement=getattr(args, 'patch_after_movement', False),
+                patch_at_world_change=getattr(args, 'patch_at_world_change', False)
             ),
             evaluation=EvaluationConfig(
                 eval_metric=args.eval_metric,
@@ -283,22 +306,14 @@ class ExperimentConfig:
     def get_exp_rule(self) -> str:
         """Derive the experimental rule label from base_rule and condition.
 
-        Same-answer conditions (answer_differs=False): flip rule (ABA↔ABB).
-        Different-answer conditions: keep rule (ABA→ABA).
+        Across-context patch (different template for base vs exp): flip the rule.
+        Within-context patch (same template, just swapped subs): keep the rule.
         """
-        rule_list = ["ABA", "ABB"]
-        if self.prompts.condition is not None:
-            # Same answers -> flip rule; different answers -> keep rule
-            if not self.prompts.condition.answer_differs:
-                exp_rule_idx = 1 - rule_list.index(self.prompts.base_rule)
-            else:
-                exp_rule_idx = rule_list.index(self.prompts.base_rule)
-        elif self.prompts.context_type == "abstract":
-            # Legacy fallback for when condition is None
-            exp_rule_idx = 1 - rule_list.index(self.prompts.base_rule)
-        else:
-            exp_rule_idx = rule_list.index(self.prompts.base_rule)
-        return rule_list[exp_rule_idx]
+        flipped = "ABB" if self.prompts.base_rule == "ABA" else "ABA"
+        cond = self.prompts.condition
+        if cond is not None and cond.within_context:
+            return self.prompts.base_rule
+        return flipped
 
     def get_save_folder(self, model_id: str, model_remark: str = "") -> str:
         """Generate save folder path based on configuration."""
@@ -306,7 +321,12 @@ class ExperimentConfig:
 
         # add template names to path
         template_str = "_".join(self.prompts.template_names) if self.prompts.template_names else "no_template"
-        patch_str = "patch_after_movement" if self.patching.patch_after_movement else "patch_before_movement"
+        if self.patching.patch_at_world_change:
+            patch_str = "patch_at_world_change"
+        elif self.patching.patch_after_movement:
+            patch_str = "patch_after_movement"
+        else:
+            patch_str = "patch_before_movement"
 
         # Use condition name if available, else fall back to context_type_context
         if self.prompts.condition is not None:

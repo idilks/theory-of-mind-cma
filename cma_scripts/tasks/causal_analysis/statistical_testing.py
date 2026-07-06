@@ -45,8 +45,22 @@ def permutation_test_heads(
     """
     logger.info(f"running permutation test with {n_permutations} permutations, FWER alpha={alpha}")
 
-    n_samples, n_layers, n_heads = per_sample_scores.shape
-    logger.info(f"testing {n_layers * n_heads} heads across {n_samples} samples")
+    # accept 2-D (n_samples, n_layers) for MLP/resid-stream patching, or 3-D
+    # (n_samples, n_layers, n_heads) for attention-head patching. in the 2-D case
+    # we add a singleton head dim so the rest of the function is dimension-agnostic.
+    if per_sample_scores.dim() == 2:
+        n_samples, n_layers = per_sample_scores.shape
+        n_heads = 1
+        per_sample_scores = per_sample_scores.unsqueeze(-1)
+    elif per_sample_scores.dim() == 3:
+        n_samples, n_layers, n_heads = per_sample_scores.shape
+    else:
+        raise ValueError(
+            f"per_sample_scores must be 2-D or 3-D, got {per_sample_scores.dim()}-D "
+            f"with shape {tuple(per_sample_scores.shape)}"
+        )
+    unit_label = "layers" if n_heads == 1 else "heads"
+    logger.info(f"testing {n_layers * n_heads} {unit_label} across {n_samples} samples")
 
     # observed mean scores
     observed_mean = per_sample_scores.mean(dim=0).cpu().numpy()  # (n_layers, n_heads)

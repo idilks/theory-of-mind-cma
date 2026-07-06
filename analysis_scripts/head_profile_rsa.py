@@ -49,8 +49,9 @@ CONDITIONS = [
     "C2_abstract_photo",
     "C3_answer_changes_belief",
     "C4_answer_changes_photo",
-    "C5_control",
-    "C6_state_only_no_belief",
+    "C5_answer_changes_location_only",
+    "C6_answer_changes_location_only_photo",
+    "C7_state_only_no_belief",
 ]
 SHORT = [c.split("_", 1)[0] for c in CONDITIONS]
 N_LAYERS, N_HEADS_PER_LAYER, N_HEADS = 48, 40, 1920

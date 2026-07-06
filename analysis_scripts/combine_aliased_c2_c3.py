@@ -26,8 +26,6 @@ Output canonical labels: ABA->ABB (primary), ABB->ABA (reverse).
 """
 from __future__ import annotations
 
-import os
-import re
 import shutil
 import sys
 from pathlib import Path
@@ -38,6 +36,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "codebase"))
 import torch
 from statistical_testing import permutation_test_heads, save_statistical_results
 from utils import plot
+
+from condition_registry import pick_sample_dir
 
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
@@ -55,7 +55,6 @@ ALIASES = [
     ("answer_changes_belief", "answer_changes_belief", "base_rule_ABA_exp_rule_ABB", "base_rule_ABB_exp_rule_ABB", "base_rule_ABB_exp_rule_ABA"),
 ]
 
-SAMPLE_RE = re.compile(r"sample_num_(\d+)_(.+)")
 N_PERMUTATIONS = 5000
 ALPHA = 0.05
 
@@ -63,22 +62,6 @@ ALPHA = 0.05
 def find_seed_dir(cond_dir: str, template: str, rule_label: str, seed: str) -> Path | None:
     base = RESULTS / cond_dir / template / rule_label / PATCH / f"z_seed_{seed}_shuffle_False"
     return base if base.exists() else None
-
-
-def find_sample_dir(seed_dir: Path) -> tuple[Path, int, str] | None:
-    """return (sample_dir, n_samples, eval_suffix)"""
-    logit = seed_dir / "logit"
-    if not logit.exists():
-        return None
-    candidates = []
-    for d in logit.iterdir():
-        m = SAMPLE_RE.match(d.name)
-        if m and (d / "causal_scores_per_sample.pt").exists():
-            candidates.append((d, int(m.group(1)), m.group(2)))
-    if not candidates:
-        return None
-    candidates.sort(key=lambda x: -x[1])
-    return candidates[0]
 
 
 def copy_prompts(seed1_dir: Path, out_seed_dir: Path, sample_dir_name: str):
@@ -109,8 +92,8 @@ def combine_one(cond_dir: str, seed0_alias: str, seed0_label: str, seed1_label: 
         if s0_dir is None or s1_dir is None:
             print(f"    [{template}] missing seed (s0={s0_dir is not None}, s1={s1_dir is not None})")
             continue
-        s0_sample = find_sample_dir(s0_dir)
-        s1_sample = find_sample_dir(s1_dir)
+        s0_sample = pick_sample_dir(s0_dir / "logit")
+        s1_sample = pick_sample_dir(s1_dir / "logit")
         if s0_sample is None or s1_sample is None:
             print(f"    [{template}] missing sample tensor")
             continue

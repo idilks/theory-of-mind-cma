@@ -22,6 +22,8 @@ import numpy as np
 import seaborn as sns
 import torch
 
+from condition_registry import BY_CNUM
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
 
@@ -33,10 +35,12 @@ DIRECTIONS = [
     ("ABB → (true→false for C1/C3 | false→false for C8)", "ABB_exp_rule_ABA", "ABB_exp_rule_ABA", "ABB_exp_rule_ABB"),
 ]
 
+# Folder names come from the canonical registry; the "C8" label here is this
+# script's own bf-control nomenclature (== canonical C5 answer_changes_location_only).
 COND_DIRS = {
-    "C1 abstract_belief": "abstract_belief",
-    "C3 answer_changes_belief": "answer_changes_belief",
-    "C8 bf-control (new)": "answer_changes_location_only",
+    "C1 abstract_belief": BY_CNUM["C1"].folder,
+    "C3 answer_changes_belief": BY_CNUM["C3"].folder,
+    "C8 bf-control (new)": BY_CNUM["C5"].folder,
 }
 
 

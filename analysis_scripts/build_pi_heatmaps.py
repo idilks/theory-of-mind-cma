@@ -15,7 +15,6 @@ Run from repo root:
 from __future__ import annotations
 
 import re
-from collections import defaultdict
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -24,80 +23,18 @@ import pandas as pd
 import seaborn as sns
 import torch
 
+from condition_registry import heatmap_condition_table, resolve_best_source
+
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
 OUT = ROOT / "results_for_pi/heatmaps"
 
-# canonical condition -> (label, alias folder names from legacy seed=0 runs, allowed rule pairs)
-# C1, C2 are "same-answer" -> rule must flip (ABA->ABB / ABB->ABA).
-# C3, C4, C5, C6 are "different-answer" -> rule kept (ABA->ABA / ABB->ABB).
-# legacy photo_context (seed=0) used keep-rule by mistake -> filter those out for C2.
-FLIP_RULES = {("ABA", "ABB"), ("ABB", "ABA")}
-KEEP_RULES = {("ABA", "ABA"), ("ABB", "ABB")}
-CONDITIONS = {
-    "C1_abstract_belief": ("abstract_belief", ["abstract_belief", "abstract_context"], FLIP_RULES),
-    "C2_abstract_photo": ("abstract_photo", ["abstract_photo", "photo_context"], FLIP_RULES),
-    "C3_answer_changes_belief": ("answer_changes_belief", ["answer_changes_belief"], FLIP_RULES),
-    "C4_answer_changes_photo": ("answer_changes_photo", ["answer_changes_photo"], KEEP_RULES),
-    "C5_control": ("control", ["control", "control_context"], KEEP_RULES),
-    "C6_state_only_no_belief": ("state_only_no_belief", ["state_only_no_belief"], KEEP_RULES),
-}
-
-SEED_PRIORITY = {"combined": 0, "1": 1, "0": 2}  # lower = preferred
-SAMPLE_RE = re.compile(r"sample_num_(\d+)_(.+)")
-
-
-RULE_PAIR_RE = re.compile(r"base_rule_(\w+)_exp_rule_(\w+)")
-
-
-def find_best_source(condition_label: str, alias_folders: list[str], allowed_rule_pairs: set):
-    """Return dict: (template, rule_pair) -> {scores_pt, csv, n, seed_tag, source_dir}"""
-    best: dict[tuple[str, str], dict] = {}
-    for alias in alias_folders:
-        cond_root = RESULTS / alias
-        if not cond_root.exists():
-            continue
-        for scores_pt in cond_root.rglob("causal_scores.pt"):
-            parts = scores_pt.parts
-            try:
-                sample_dir = scores_pt.parent.name
-                logit_dir = scores_pt.parent.parent.name
-                seed_dir = scores_pt.parent.parent.parent.name
-                patch_dir = scores_pt.parent.parent.parent.parent.name
-                rule_dir = scores_pt.parent.parent.parent.parent.parent.name
-                template_dir = scores_pt.parent.parent.parent.parent.parent.parent.name
-            except IndexError:
-                continue
-            if logit_dir != "logit" or patch_dir != "patch_before_movement":
-                continue
-            if not seed_dir.startswith("z_seed_") or not seed_dir.endswith("_shuffle_False"):
-                continue
-            seed_tag = seed_dir[len("z_seed_"):-len("_shuffle_False")]
-            if seed_tag not in SEED_PRIORITY:
-                continue
-            m = SAMPLE_RE.match(sample_dir)
-            if not m:
-                continue
-            rp = RULE_PAIR_RE.match(rule_dir)
-            if not rp or (rp.group(1), rp.group(2)) not in allowed_rule_pairs:
-                continue
-            n = int(m.group(1))
-            key = (template_dir, rule_dir)
-            entry = {
-                "scores_pt": scores_pt,
-                "per_sample_pt": scores_pt.parent / "causal_scores_per_sample.pt",
-                "csv": scores_pt.parent / "statistical_test_results.csv",
-                "n": n,
-                "seed_tag": seed_tag,
-                "priority": SEED_PRIORITY[seed_tag],
-                "source_dir": scores_pt.parent,
-            }
-            cur = best.get(key)
-            if cur is None or entry["priority"] < cur["priority"] or (
-                entry["priority"] == cur["priority"] and entry["n"] > cur["n"]
-            ):
-                best[key] = entry
-    return best
+# canonical condition -> (label, alias folder names, allowed rule pairs).
+# C1-C4 are across-context -> rule flips (ABA->ABB / ABB->ABA); C5-C7 are
+# within-context -> rule kept (ABA->ABA / ABB->ABB). See condition_registry.
+# Legacy aliases (abstract_context, photo_context, control_context) are
+# duplicates / content-invalid per CLAUDE.md and intentionally excluded.
+CONDITIONS = heatmap_condition_table()
 
 
 def render_viridis(scores_pt: Path, out_png: Path, title: str):
@@ -146,7 +83,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     manifest_rows = []
     for c_key, (cond_label, aliases, allowed_rules) in CONDITIONS.items():
-        best = find_best_source(cond_label, aliases, allowed_rules)
+        best = resolve_best_source(RESULTS, aliases, allowed_rules)
         if not best:
             print(f"[{c_key}] no end-patch sources found")
             continue

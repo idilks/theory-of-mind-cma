@@ -6,20 +6,22 @@ Reads results_for_pi/heatmaps/manifest.csv as the canonical map of cells
 
 Produces:
 - per-condition fingerprints (clamped and raw), saved as .npy and .csv
-- 6x6 Pearson correlation matrices (clamped primary, raw robustness)
+- 7x7 Pearson correlation matrices (clamped primary, raw robustness)
   with permutation p-values (head-index shuffle, 5000 perms)
-- 6x6 Jaccard matrices on FWER-significant heads, three variants:
+- 7x7 Jaccard matrices on FWER-significant heads, three variants:
   all-cell (intersection), 4-of-6 (majority), any-cell (union)
-- H1 scatter panels (C1 vs {C2, C5, C6}) with r and p annotated
+- H1 scatter panels (C1 vs {C2, C5, C6, C7}) with r and p annotated
 - H2 decomposition tests:
-    C3 ~= C1 + C5  (answer-changes-belief = abstract belief + ToM control)
-    C4 ~= C2 + C5  and  C4 ~= C2 + C6  (photo side, both location components)
+    C3 ~= C1 + C5  (answer-changes-belief = abstract belief + location control)
+    C4 ~= C2 + C5, C4 ~= C2 + C6, C4 ~= C2 + C7
+    (photo side, three candidate location/state components)
   reports r(C, comp1), r(C, comp2), r(C, comp1+comp2), and OLS regression
   with R^2 and per-coefficient permutation CIs.
 
-Headline figures use the clamped fingerprints and exclude C5 in the primary
-5x5 view (C5 seed=0 only at n=26-50, noise-attenuated until seed=1 lands).
-C5 is appended as an extra row/column with a noise caveat banner.
+Condition mapping (April 2026):
+  C1 abstract_belief, C2 abstract_photo, C3 answer_changes_belief,
+  C4 answer_changes_photo, C5 answer_changes_location_only,
+  C6 answer_changes_location_only_photo (NEW), C7 state_only_no_belief.
 
 Usage:
     python scripts/aggregate_conditions.py
@@ -35,28 +37,34 @@ import numpy as np
 import pandas as pd
 import torch
 
+from condition_registry import (
+    across_context_keys,
+    ordered_keys,
+    short_labels,
+    within_context_keys,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
 AGG_DIR = ROOT / "results/aggregated"
 FIG_DIR = ROOT / "results_for_pi/aggregation"
 
-CONDITIONS = [
-    "C1_abstract_belief",
-    "C2_abstract_photo",
-    "C3_answer_changes_belief",
-    "C4_answer_changes_photo",
-    "C5_control",
-    "C6_state_only_no_belief",
-]
-SHORT = {c: c.split("_", 1)[0] for c in CONDITIONS}
-PRIMARY_SET = [c for c in CONDITIONS if c != "C5_control"]  # 5x5 headline excludes C5
+CONDITIONS = ordered_keys()
+SHORT = short_labels()
+PRIMARY_SET = list(CONDITIONS)  # full 7x7 headline (no caveat exclusions in current run)
 
-# Rule-pair structure: C1/C2/C3 use flip-rule pairs (ABA<->ABB); C4/C5/C6 use
-# same-rule pairs (ABA->ABA / ABB->ABB). The same-rule cluster also shares the
-# property that base and exp prompts use identical location tokens in different
-# roles, while the flip-rule cluster has different initial locations.
-FLIP_RULE = ["C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief"]
-SAME_RULE = ["C4_answer_changes_photo", "C5_control", "C6_state_only_no_belief"]
+# Context-axis structure: C1/C2/C3/C4 patch ACROSS contexts (false_template
+# <-> true_template, i.e. divergent vs non-divergent belief or photo timing).
+# C5/C6/C7 patch WITHIN a single context (no false<->true template flip; only
+# the location/role differs). This is the substantive cognitive axis the
+# study is built around: the "across-context" cluster is where the model
+# has to track that the base and exp scenarios encode different states of
+# the world; the "within-context" cluster isolates pure location retrieval
+# under a fixed structural frame. (The legacy folder labels base_rule_ABA /
+# exp_rule_ABB are not surface-token swaps for C3/C4; they are config-string
+# artifacts. See generator code in tom_templates.py:580-611.)
+ACROSS_CONTEXT = across_context_keys()
+WITHIN_CONTEXT = within_context_keys()
 
 N_HEADS = 1920
 N_PERM = 5000
@@ -173,16 +181,8 @@ def plot_matrix(M: pd.DataFrame, title: str, out: Path, vmin=None, vmax=None,
                 ax.text(j, i, annot_fmt.format(v), ha="center", va="center", color=color, fontsize=9)
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     if c5_caveat:
-        c5_idx = CONDITIONS.index("C5_control")
-        for spine_pos in ([c5_idx, "row"], [c5_idx, "col"]):
-            idx, kind = spine_pos
-            if kind == "row":
-                ax.axhline(idx - 0.5, color="red", lw=1.2)
-                ax.axhline(idx + 0.5, color="red", lw=1.2)
-            else:
-                ax.axvline(idx - 0.5, color="red", lw=1.2)
-                ax.axvline(idx + 0.5, color="red", lw=1.2)
-        ax.set_title(title + "\n(C5 outlined: seed=0 only, n=26-50, noise-attenuated)", fontsize=10)
+        # legacy caveat path; current run does not flag any condition
+        ax.set_title(title, fontsize=11)
     else:
         ax.set_title(title, fontsize=11)
     plt.tight_layout()
@@ -193,10 +193,11 @@ def plot_matrix(M: pd.DataFrame, title: str, out: Path, vmin=None, vmax=None,
 
 def plot_h1_scatter(fps: dict, key: str, out: Path):
     pairs = [("C1_abstract_belief", "C2_abstract_photo"),
-             ("C1_abstract_belief", "C5_control"),
-             ("C1_abstract_belief", "C6_state_only_no_belief"),
-             ("C2_abstract_photo", "C5_control"),
-             ("C2_abstract_photo", "C6_state_only_no_belief")]
+             ("C1_abstract_belief", "C5_answer_changes_location_only"),
+             ("C1_abstract_belief", "C7_state_only_no_belief"),
+             ("C2_abstract_photo", "C5_answer_changes_location_only"),
+             ("C2_abstract_photo", "C6_answer_changes_location_only_photo"),
+             ("C2_abstract_photo", "C7_state_only_no_belief")]
     fig, axes = plt.subplots(1, len(pairs), figsize=(4 * len(pairs), 4), sharey=False)
     for ax, (a, b) in zip(axes, pairs):
         x = fps[a][key]
@@ -319,27 +320,27 @@ def main():
         P.to_csv(AGG_DIR / f"pearson_{key}_pvalues.csv")
         plot_matrix(R, f"Pearson r — fingerprints ({key})",
                     FIG_DIR / f"pearson_{key}.png",
-                    vmin=-1, vmax=1, cmap="RdBu_r", c5_caveat=True)
+                    vmin=-1, vmax=1, cmap="RdBu_r")
 
-        # 5x5 primary view (no C5)
+        # primary view = full 7x7 (file kept named primary5x5 for back-compat with qmd)
         R5 = R.loc[PRIMARY_SET, PRIMARY_SET]
-        plot_matrix(R5, f"Pearson r — primary 5x5 ({key}, C5 excluded)",
+        plot_matrix(R5, f"Pearson r — primary {len(PRIMARY_SET)}x{len(PRIMARY_SET)} ({key})",
                     FIG_DIR / f"pearson_{key}_primary5x5.png",
                     vmin=-1, vmax=1, cmap="RdBu_r")
 
-        # Rule-cluster sub-matrices (within flip-rule, within same-rule, across)
-        Rflip = R.loc[FLIP_RULE, FLIP_RULE]
-        Rsame = R.loc[SAME_RULE, SAME_RULE]
-        Rcross = R.loc[FLIP_RULE, SAME_RULE]
-        Rflip.to_csv(AGG_DIR / f"pearson_{key}_flip_rule.csv")
-        Rsame.to_csv(AGG_DIR / f"pearson_{key}_same_rule.csv")
-        Rcross.to_csv(AGG_DIR / f"pearson_{key}_cross_cluster.csv")
-        plot_matrix(Rflip, f"Pearson r — flip-rule cluster ({key})\nC1/C2/C3 (different initial locations in base vs exp)",
-                    FIG_DIR / f"pearson_{key}_flip_rule.png", vmin=-1, vmax=1, cmap="RdBu_r")
-        plot_matrix(Rsame, f"Pearson r — same-rule cluster ({key})\nC4/C5/C6 (shared location tokens in base & exp)",
-                    FIG_DIR / f"pearson_{key}_same_rule.png", vmin=-1, vmax=1, cmap="RdBu_r")
-        plot_matrix(Rcross, f"Pearson r — across clusters ({key})\nflip-rule (rows) vs same-rule (cols)",
-                    FIG_DIR / f"pearson_{key}_cross_cluster.png", vmin=-1, vmax=1, cmap="RdBu_r")
+        # Context-axis sub-matrices: across-context (C1-C4) vs within-context (C5/C6/C7)
+        Racross = R.loc[ACROSS_CONTEXT, ACROSS_CONTEXT]
+        Rwithin = R.loc[WITHIN_CONTEXT, WITHIN_CONTEXT]
+        Rcross = R.loc[ACROSS_CONTEXT, WITHIN_CONTEXT]
+        Racross.to_csv(AGG_DIR / f"pearson_{key}_across_context.csv")
+        Rwithin.to_csv(AGG_DIR / f"pearson_{key}_within_context.csv")
+        Rcross.to_csv(AGG_DIR / f"pearson_{key}_cross_axis.csv")
+        plot_matrix(Racross, f"Pearson r — across-context cluster ({key})\nC1/C2/C3/C4 (false_template ↔ true_template patch)",
+                    FIG_DIR / f"pearson_{key}_across_context.png", vmin=-1, vmax=1, cmap="RdBu_r")
+        plot_matrix(Rwithin, f"Pearson r — within-context cluster ({key})\nC5/C6/C7 (no context flip; location / state retrieval)",
+                    FIG_DIR / f"pearson_{key}_within_context.png", vmin=-1, vmax=1, cmap="RdBu_r")
+        plot_matrix(Rcross, f"Pearson r — across-axis ({key})\nacross-context (rows) vs within-context (cols)",
+                    FIG_DIR / f"pearson_{key}_cross_axis.png", vmin=-1, vmax=1, cmap="RdBu_r")
 
     # Jaccard matrices
     for mode in ("all", "4of6", "any"):
@@ -347,7 +348,7 @@ def main():
         M.to_csv(AGG_DIR / f"jaccard_{mode}.csv")
         plot_matrix(M, f"Jaccard ({mode}-cell) — FWER-significant heads",
                     FIG_DIR / f"jaccard_{mode}.png",
-                    vmin=0, vmax=1, cmap="viridis", c5_caveat=True)
+                    vmin=0, vmax=1, cmap="viridis")
         # Sig-head counts per condition for context
         print(f"  jaccard {mode}: sig-head counts: " +
               ", ".join(f"{SHORT[c]}={int(sig_set(fps, c, mode).sum())}" for c in CONDITIONS))
@@ -361,9 +362,12 @@ def main():
     print("\nH2 decompositions...")
     h2_rows = []
     decomps = [
-        ("C3_answer_changes_belief", ["C1_abstract_belief", "C5_control"], "h2_C3_eq_C1plusC5"),
-        ("C4_answer_changes_photo", ["C2_abstract_photo", "C5_control"], "h2_C4_eq_C2plusC5"),
-        ("C4_answer_changes_photo", ["C2_abstract_photo", "C6_state_only_no_belief"], "h2_C4_eq_C2plusC6"),
+        ("C3_answer_changes_belief", ["C1_abstract_belief", "C5_answer_changes_location_only"], "h2_C3_eq_C1plusC5"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C5_answer_changes_location_only"], "h2_C4_eq_C2plusC5"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C6_answer_changes_location_only_photo"], "h2_C4_eq_C2plusC6"),
+        ("C4_answer_changes_photo", ["C2_abstract_photo", "C7_state_only_no_belief"], "h2_C4_eq_C2plusC7"),
+        ("C3_answer_changes_belief", ["C2_abstract_photo", "C5_answer_changes_location_only"], "h2_C3_eq_C2plusC5"),
+        ("C4_answer_changes_photo", ["C1_abstract_belief", "C6_answer_changes_location_only_photo"], "h2_C4_eq_C1plusC6"),
     ]
     for target, comps, tag in decomps:
         for key in ("clamped", "raw"):

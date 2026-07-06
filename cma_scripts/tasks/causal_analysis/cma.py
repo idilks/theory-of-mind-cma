@@ -76,7 +76,8 @@ def get_args():
     parser.add_argument("--activation_name", type=str, default="resid_post", help="activation name")
     parser.add_argument("--patch_mlp_out", action="store_true", help="whether to patch MLP output as well for resid stream patching")
     parser.add_argument("--token_pos_list", nargs='+', type=int, default=[-1], help="target token position for doing causal mediation analysis")
-    parser.add_argument("--patch_after_movement", action="store_true", help="patch activations after the movement event in theory of mind prompts") 
+    parser.add_argument("--patch_after_movement", action="store_true", help="patch activations after the movement event in theory of mind prompts")
+    parser.add_argument("--patch_at_world_change", action="store_true", help="food_truck-only: patch right after 'drives the truck to <X>.' regardless of context_type. Takes precedence over --patch_after_movement.")
     parser.add_argument("--group_heads", action="store_true", help="whether to group attention heads by their grouped query attention (used for LLaMA-2 and Code Llama)")
 
     ### generation and evaluation parameters
@@ -153,7 +154,8 @@ class CMAOrchestrator:
                 "temperature": self.config.generation.temperature,
                 "eval_metric": self.config.evaluation.eval_metric,
                 "template_names": self.config.prompts.template_names,
-                "patch_after_movement": self.config.patching.patch_after_movement
+                "patch_after_movement": self.config.patching.patch_after_movement,
+                "patch_at_world_change": self.config.patching.patch_at_world_change
             }
         logger.info(f"Condition: {condition_name}, context_type: {self.config.prompts.context_type}, "
                      f"answer_differs: {self.config.prompts.condition.answer_differs if self.config.prompts.condition else 'N/A'}")
@@ -371,23 +373,40 @@ class CMAOrchestrator:
             exp_input_ids = tokenizer(exp_prompt, return_tensors="pt").input_ids.to(model.cfg.device)
 
             # Cache base activations (this is the memory-heavy part)
-            base_cache = model.run_with_cache(base_input_ids, names_filter=lambda x: True)[1]
+            base_logits, base_cache = model.run_with_cache(base_input_ids, names_filter=lambda x: True)
 
             # Calculate exp logits difference if needed
             exp_logits_diff = None
+            base_logits_diff = None
             if not self.config.generate:
                 exp_logits = model(exp_input_ids)
                 if self.config.evaluation.eval_metric == "ab_forced":
                     from evaluation import calculate_ab_margin
                     exp_logits_diff = calculate_ab_margin(exp_logits, A_tok_id, B_tok_id)
+                    base_logits_diff = calculate_ab_margin(base_logits, A_tok_id, B_tok_id)
                 else:
                     from evaluation import calculate_logit_probability_difference
                     exp_logits_diff = calculate_logit_probability_difference(
                         exp_logits, model, causal_ans=causal_ans, original_ans=exp_ans
                     )
+                    base_logits_diff = calculate_logit_probability_difference(
+                        base_logits, model, causal_ans=causal_ans, original_ans=exp_ans
+                    )
 
             # Determine token position for patching
-            if self.config.patching.patch_after_movement:
+            if self.config.patching.patch_at_world_change:
+                # food_truck-only: string-anchored patch at "drives the truck to <X>."
+                # Used by C3/C4 within-template residual-stream experiment. Same anchor
+                # in both base and exp; world state matches at the patch point.
+                base_pos = prompt_generator.detect_post_movement_position(base_prompt, tokenizer)
+                exp_pos = prompt_generator.detect_post_movement_position(exp_prompt, tokenizer)
+                if base_pos == -1 or exp_pos == -1:
+                    raise ValueError(
+                        f"Post-movement anchor 'drives the truck to <X>.' not found in prompt {i+1} "
+                        f"(base: {base_pos}, exp: {exp_pos}). --patch_at_world_change is food_truck-only.")
+                token_pos = (base_pos, exp_pos)
+                logger.info(f"Patching at post-movement: base pos {base_pos}, exp pos {exp_pos} for prompt {i+1}")
+            elif self.config.patching.patch_after_movement:
                 context_type = self.config.prompts.context_type
                 # ABA -> base=false context, ABB -> base=true context. Always.
                 base_is_aba = (self.config.prompts.base_rule == "ABA")
@@ -478,6 +497,7 @@ class CMAOrchestrator:
                 prompt=exp_prompt,
                 A_tok_id=A_tok_id,
                 B_tok_id=B_tok_id,
+                base_logits_diff=base_logits_diff,
                 **generation_kwargs
             )
             results_list.append(result)
@@ -497,13 +517,25 @@ class CMAOrchestrator:
             os.makedirs(final_save_folder, exist_ok=True)
             torch.save(mean_acc, os.path.join(final_save_folder, "acc_all.pt"))
         else:
-            # For logit mode, results are single tensors
-            mean_logits_diff = self._stack_and_average_tensors(results_list)
-            
+            # For logit mode: residual-stream patching now returns (raw, normalized);
+            # head-level patching returns a single tensor (no normalization). Detect
+            # which case we're in and split accordingly.
+            is_layer_tuple = isinstance(results_list[0], tuple) and len(results_list[0]) == 2
+            if is_layer_tuple:
+                raw_list = [r[0] for r in results_list]
+                norm_list = [r[1] for r in results_list if r[1] is not None]
+                if len(norm_list) != len(raw_list):
+                    norm_list = None  # mixed / partial; skip normalized save
+            else:
+                raw_list = results_list
+                norm_list = None
+
+            mean_logits_diff = self._stack_and_average_tensors(raw_list)
+
             if mean_logits_diff.ndim == 1:
                 mean_logits_diff = mean_logits_diff[:, None]  # (n_layers,) -> (n_layers, 1)
 
-            
+
             final_save_folder = os.path.join(
                 save_folder, "logit",
                 f"sample_num_{valid_num}_{self.config.evaluation.eval_metric}_{self.config.evaluation.low_prob_threshold}"
@@ -512,12 +544,24 @@ class CMAOrchestrator:
             torch.save(mean_logits_diff, os.path.join(final_save_folder, "causal_scores.pt"))
 
             # save per-sample scores for statistical testing
-            per_sample_scores = torch.stack(results_list, dim=0)
+            per_sample_scores = torch.stack(raw_list, dim=0)
             torch.save(per_sample_scores, os.path.join(final_save_folder, "causal_scores_per_sample.pt"))
             logger.info(f"saved per-sample scores with shape {per_sample_scores.shape}")
 
+            if norm_list is not None:
+                mean_norm = self._stack_and_average_tensors(norm_list)
+                if mean_norm.ndim == 1:
+                    mean_norm = mean_norm[:, None]
+                torch.save(mean_norm, os.path.join(final_save_folder, "causal_scores_normalized.pt"))
+                per_sample_norm = torch.stack(norm_list, dim=0)
+                torch.save(per_sample_norm, os.path.join(final_save_folder, "causal_scores_normalized_per_sample.pt"))
+                logger.info(f"saved normalized scores; mean range "
+                            f"[{float(mean_norm.min()):.3f}, {float(mean_norm.max()):.3f}]")
+
             patch_info = ""
-            if self.config.patching.patch_after_movement:
+            if self.config.patching.patch_at_world_change:
+                patch_info = " | patch at post-movement"
+            elif self.config.patching.patch_after_movement:
                 ctx = self.config.prompts.context_type
                 condition = self.config.prompts.condition
                 if ctx in ('abstract', 'control'):
