@@ -90,9 +90,9 @@ results/pooled_analysis/
 - column `differential_effect`: difference in causal scores between conditions
 - column `q_value`: FDR-corrected p-value for the difference
 
-### for your paper
+### workflow notes
 
-claim: "layers 29-35, heads 30-34 support belief tracking"
+some example claim: "layers 29-35, heads 30-34 support belief tracking"
 
 **statistical support**:
 1. open `cross_belief_vs_control_significant_differential.csv`

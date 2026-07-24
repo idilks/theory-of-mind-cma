@@ -2,12 +2,11 @@
 
 causal mediation analysis (CMA) of theory of mind in transformer language models. we patch
 activations between matched prompt conditions to identify the attention heads responsible for
-belief tracking, location retrieval, and state tracking. built on the LLMSymbMech framework
-(ICML 2025, vendored under `codebase/`).
+belief tracking, location retrieval, and state tracking. 
 
-- **primary model:** Qwen2.5-14B-Instruct (48 layers × 40 heads = 1920 heads)
-- **replication arm:** Gemma-2-27B-it (`ungroup_gqa` path)
-- **templates:** food_truck, hair_styling, library_book (+ a code-domain `indexed_list` arm)
+- primary model: Qwen2.5-14B-Instruct (48 layers × 40 heads = 1920 heads)
+- replication arm: Gemma-2-27B-it (`ungroup_gqa` path)
+- templates: food_truck, hair_styling, library_book (+ a code-domain `indexed_list` condition)
 
 ## setup
 
@@ -17,9 +16,7 @@ pip install -r requirements.txt
 export HF_TOKEN="your_hf_token"   # https://huggingface.co/settings/tokens
 ```
 
-pinned versions matter: `transformers==4.46.3`, `transformer-lens==2.13.0` (see `requirements.txt`).
-
-## quick start — run a CMA
+## quick start 
 
 ```bash
 cd codebase/tasks/causal_analysis
@@ -57,16 +54,16 @@ numberings — when in doubt, refer to a condition by its folder name.
 | C6 | `answer_changes_location_only_photo`| location tokens only, photo     | different    | answer / location-retrieval heads      |
 | C7 | `state_only_no_belief`              | state change, no belief         | different    | state-update heads (control)           |
 
-a parallel **code-domain arm** (`code_abstract`, `code_answer_changes`, `code_control`) uses
+a parallel code-domain (`code_abstract`, `code_answer_changes`, `code_control`) uses
 copy-vs-alias list mutation as a non-ToM divergence analog. the `CMACondition` enum in
-`cma_config.py` is the source of truth for all condition members — import it rather than
+`cma_config.py` is the source of truth for all condition members, add new condigurations there rather than
 hand-rolling condition tables.
 
 ## repo layout
 
 | path                              | what's here                                                            |
 |-----------------------------------|-----------------------------------------------------------------------|
-| `codebase/`                       | vendored LLMSymbMech framework; `tasks/causal_analysis/` is the CMA pipeline (`cma.py`, `ablation_experiment.py`, `cma_config.py`, prompt generators) |
+| `codebase/`                       | adjusted LLMSymbMech framework; `tasks/causal_analysis/` is the CMA pipeline (`cma.py`, `ablation_experiment.py`, `cma_config.py`, prompt generators) |
 | `scripts/`                        | post-hoc analysis: cross-condition stats, heatmaps, ablation, RSA/DLA, lookback. see `scripts/README.md` and `scripts/condition_registry.py` (canonical C1–C7 registry) |
 | `slurm_scripts/`                  | HPC batch jobs (CMA, ablation, RSA); per-model subdirs (`gemma/`, …)   |
 | `tom_datasets/`                   | prompt templates and stimulus data                                    |
@@ -84,11 +81,9 @@ results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct/
 
 seed priority when resolving a source: `combined` > `1` > `0`. use **seed=1, end position** for
 the full 7-condition analysis (only seed with complete coverage). large result trees
-(`results/`, `other_results/`) are gitignored — they're pulled from the cluster, not committed.
+(`results/`, `other_results/`) are gitignored.
 
 ## notes
 
 - `codebase/tasks/identity_rules/` is the upstream in-context-learning task; the ToM prompt
-  generators still import from it, so it's a dependency, not dead code.
-- research writeups, design docs, and PI-facing reports are kept private (gitignored) and are not
-  part of this shared repo.
+  generators still import from it.
