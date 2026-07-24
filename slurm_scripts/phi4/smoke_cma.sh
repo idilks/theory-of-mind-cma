@@ -17,7 +17,7 @@ export HF_HOME="/dartfs/rc/lab/F/FranklandS/models/cache"
 export HF_DATASETS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
 export HF_METRICS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
 export WANDB_API_KEY="${WANDB_API_KEY:-}"
-export HF_TOKEN="***REMOVED_HF_TOKEN***"
+: "${HF_TOKEN:?HF_TOKEN not set - add it to ~/.bashrc on the HPC (see README setup)}"
 export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
 
 source /optnfs/common/miniconda3/etc/profile.d/conda.sh
