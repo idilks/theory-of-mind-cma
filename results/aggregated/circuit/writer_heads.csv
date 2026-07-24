@@ -1,0 +1,58 @@
+set,layer,head,mean_score,source
+primary,35,30,11.61402,belief_only_sysprompt_prefill/head_list.csv
+primary,29,31,8.53987,belief_only_sysprompt_prefill/head_list.csv
+primary,29,34,7.108836,belief_only_sysprompt_prefill/head_list.csv
+primary,31,19,4.6051726,belief_only_sysprompt_prefill/head_list.csv
+primary,31,18,4.136207,belief_only_sysprompt_prefill/head_list.csv
+primary,39,23,3.566723,belief_only_sysprompt_prefill/head_list.csv
+primary,32,33,3.5067568,belief_only_sysprompt_prefill/head_list.csv
+primary,32,30,3.4706633,belief_only_sysprompt_prefill/head_list.csv
+primary,32,34,3.168919,belief_only_sysprompt_prefill/head_list.csv
+primary,33,2,2.9793103,belief_only_sysprompt_prefill/head_list.csv
+primary,31,17,2.5,belief_only_sysprompt_prefill/head_list.csv
+primary,39,20,2.4307432,belief_only_sysprompt_prefill/head_list.csv
+primary,32,32,2.3900862,belief_only_sysprompt_prefill/head_list.csv
+primary,28,14,2.336207,belief_only_sysprompt_prefill/head_list.csv
+primary,35,33,2.1469595,belief_only_sysprompt_prefill/head_list.csv
+primary,36,12,2.1266892,belief_only_sysprompt_prefill/head_list.csv
+primary,34,29,1.7534482,belief_only_sysprompt_prefill/head_list.csv
+primary,36,21,1.6994047,belief_only_sysprompt_prefill/head_list.csv
+primary,38,33,1.5086207,belief_only_sysprompt_prefill/head_list.csv
+primary,38,31,1.4517242,belief_only_sysprompt_prefill/head_list.csv
+primary,32,26,1.3224138,belief_only_sysprompt_prefill/head_list.csv
+primary,31,21,1.2982758,belief_only_sysprompt_prefill/head_list.csv
+primary,33,1,1.2181034,belief_only_sysprompt_prefill/head_list.csv
+primary,29,11,1.1956897,belief_only_sysprompt_prefill/head_list.csv
+primary,37,15,1.1084183,belief_only_sysprompt_prefill/head_list.csv
+primary,36,30,1.0726352,belief_only_sysprompt_prefill/head_list.csv
+primary,36,33,1.0463436,belief_only_sysprompt_prefill/head_list.csv
+primary,36,10,1.0393518,belief_only_sysprompt_prefill/head_list.csv
+primary,36,24,0.9305556,belief_only_sysprompt_prefill/head_list.csv
+primary,32,4,0.7888514,belief_only_sysprompt_prefill/head_list.csv
+sensitivity,29,31,5.4417585,sig>=half of 6 C1 best-source cells
+sensitivity,29,34,3.8586898000000005,sig>=half of 6 C1 best-source cells
+sensitivity,30,15,-1.7031560666666667,sig>=half of 6 C1 best-source cells
+sensitivity,31,18,2.8906371,sig>=half of 6 C1 best-source cells
+sensitivity,31,19,2.9112952999999995,sig>=half of 6 C1 best-source cells
+sensitivity,32,4,0.10471628666666666,sig>=half of 6 C1 best-source cells
+sensitivity,32,26,1.3600910666666666,sig>=half of 6 C1 best-source cells
+sensitivity,32,27,-2.24028685,sig>=half of 6 C1 best-source cells
+sensitivity,32,30,2.7200174200000005,sig>=half of 6 C1 best-source cells
+sensitivity,32,32,1.7773458666666666,sig>=half of 6 C1 best-source cells
+sensitivity,32,33,2.90042358,sig>=half of 6 C1 best-source cells
+sensitivity,32,34,2.2553259116666666,sig>=half of 6 C1 best-source cells
+sensitivity,33,0,-1.4000306375,sig>=half of 6 C1 best-source cells
+sensitivity,33,2,1.5319397466666667,sig>=half of 6 C1 best-source cells
+sensitivity,34,10,-1.85363,sig>=half of 6 C1 best-source cells
+sensitivity,34,12,-3.1243855000000003,sig>=half of 6 C1 best-source cells
+sensitivity,35,11,-1.8043653874999999,sig>=half of 6 C1 best-source cells
+sensitivity,35,13,-1.2097788674999999,sig>=half of 6 C1 best-source cells
+sensitivity,35,30,5.1851196,sig>=half of 6 C1 best-source cells
+sensitivity,35,31,-1.341057092,sig>=half of 6 C1 best-source cells
+sensitivity,35,33,1.346557775,sig>=half of 6 C1 best-source cells
+sensitivity,35,34,-1.58848308,sig>=half of 6 C1 best-source cells
+sensitivity,36,10,0.14821346666666665,sig>=half of 6 C1 best-source cells
+sensitivity,36,12,0.023744074999999976,sig>=half of 6 C1 best-source cells
+sensitivity,36,30,0.5286095,sig>=half of 6 C1 best-source cells
+sensitivity,39,20,0.609971,sig>=half of 6 C1 best-source cells
+sensitivity,39,23,2.0650956333333332,sig>=half of 6 C1 best-source cells

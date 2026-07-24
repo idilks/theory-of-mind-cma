@@ -12,10 +12,13 @@ venv/
 env/
 ENV/
 
-# Results and data
+# Results and data — the raw trees are large/regenerable and stay ignored,
+# EXCEPT results/aggregated/ (the distilled, team-shared results; see bottom).
 archive/
 other_results/
-results/
+/results/*
+!/results/aggregated/
+codebase/results/
 local_results/
 # data/
 causal_mediation_results_full_more_models/
@@ -73,5 +76,25 @@ archive/
 **/*.quarto_ipynb
 
 
-results_for_pi/
 .venv-ndif/
+
+
+# documentation — private writeups, plans, reports, meeting notes
+/writeups
+/deconfusion
+/error
+/attention
+
+# third-party reference code (Yang et al / LLMSymbMech originals — kept local, not redistributed)
+/reference
+
+# rendered artifacts (quarto/comparison HTML are outputs, keep private)
+*.html
+
+# ...but the team-facing docs stay tracked
+!/README.md
+!/scripts/README.md
+
+# team-shared distilled results (~3MB: csv/npy/npz/png) — re-include ALL of
+# results/aggregated/, overriding the *.png/*.pt/etc. globs above (last match wins).
+!/results/aggregated/**

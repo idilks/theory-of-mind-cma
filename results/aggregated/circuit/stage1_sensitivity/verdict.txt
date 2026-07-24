@@ -1,0 +1,3 @@
+stage-1 geometric screen — writer_set=sensitivity, split_seed=0, n_null=1000, templates=['food_truck', 'hair_styling', 'library_book']
+[L40] writers frac_hold=0.1299 (null p95=0.0840, p=0.0020) -> pass | mlp frac_hold=0.5032 (null p95=0.0042) -> pass | reader median ratio Q=2.25 V=0.89 -> pass | cos(rank1, sum-writes)=0.310 | verdict: GO
+[L41] writers frac_hold=0.1214 (null p95=0.0821, p=0.0010) -> pass | mlp frac_hold=0.4522 (null p95=0.0043) -> pass | reader median ratio Q=2.11 V=0.87 -> pass | cos(rank1, sum-writes)=0.305 | verdict: GO

@@ -1,0 +1,8 @@
+,C1_abstract_belief,C2_abstract_photo,C3_answer_changes_belief,C4_answer_changes_photo,C5_answer_changes_location_only,C6_answer_changes_location_only_photo,C7_state_only_no_belief
+C1_abstract_belief,1.0,0.14285714285714285,0.4666666666666667,0.1111111111111111,0.0,0.0,0.0
+C2_abstract_photo,0.14285714285714285,1.0,0.06666666666666667,0.3333333333333333,0.0,0.0,0.0
+C3_answer_changes_belief,0.4666666666666667,0.06666666666666667,1.0,0.2,0.25,0.25,0.125
+C4_answer_changes_photo,0.1111111111111111,0.3333333333333333,0.2,1.0,0.18181818181818182,0.3333333333333333,0.5
+C5_answer_changes_location_only,0.0,0.0,0.25,0.18181818181818182,1.0,0.5,0.3
+C6_answer_changes_location_only_photo,0.0,0.0,0.25,0.3333333333333333,0.5,1.0,0.6
+C7_state_only_no_belief,0.0,0.0,0.125,0.5,0.3,0.6,1.0

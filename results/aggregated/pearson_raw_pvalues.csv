@@ -1,0 +1,8 @@
+,C1_abstract_belief,C2_abstract_photo,C3_answer_changes_belief,C4_answer_changes_photo,C5_answer_changes_location_only,C6_answer_changes_location_only_photo,C7_state_only_no_belief
+C1_abstract_belief,0.0,0.0,0.0,0.0,0.0008,0.005,0.0016
+C2_abstract_photo,0.0,0.0,0.0,0.0,0.0004,0.001,0.0002
+C3_answer_changes_belief,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C4_answer_changes_photo,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C5_answer_changes_location_only,0.0008,0.0004,0.0,0.0,0.0,0.0,0.0
+C6_answer_changes_location_only_photo,0.005,0.001,0.0,0.0,0.0,0.0,0.0
+C7_state_only_no_belief,0.0016,0.0002,0.0,0.0,0.0,0.0,0.0
