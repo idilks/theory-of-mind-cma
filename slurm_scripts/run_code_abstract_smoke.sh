@@ -21,14 +21,14 @@ source /optnfs/common/miniconda3/etc/profile.d/conda.sh
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-# Smoke test for code_abstract (C9): same-answer copy-vs-reference condition.
-# 5 prompts, list_append only, end-patch, no permutation tests.
+# Smoke test for code_abstract (C9): same-answer copy-vs-alias condition
+# (indexed_list redesign). 5 prompts, end-patch, no permutation tests.
 # Goal: verify pipeline runs end-to-end and produces non-zero causal scores.
 
 python codebase/tasks/causal_analysis/cma.py \
   --condition code_abstract \
   --base_rule ABA \
-  --template_names list_append \
+  --template_names indexed_list \
   --seed 0 \
   --prompt_num 5 \
   --min_valid_sample_num 1 \

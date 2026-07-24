@@ -12,6 +12,25 @@ Pair generators hold causal_ans constant across all three conditions
 - ABA → causal = X (the "non-base" letter for that pair)
 - ABB → causal = X
 This double-dissociates rule effects from token-position effects.
+
+Worked example (abstract condition, ABA, idx=2, Y='C', X='X'; answers SAME):
+
+    base (copy / false-belief analog):     exp (alias / true-belief analog):
+    a = ['A', 'B', 'C', 'D']               a = ['A', 'B', 'X', 'D']
+    b = a.copy()                           b = a
+    a[2] = 'X'                             a[2] = 'C'
+    What is b[2]?  -> 'C'                  What is b[2]?  -> 'C'
+
+Both answer 'C'; patching base's copy semantics into exp makes b[2] the
+pre-mutation value 'X' — causal_ans = 'X', distinct from the surface answer.
+For answer_changes the values are NOT swapped, so base/exp answers differ.
+
+Answer tokenization constraint: answers are rendered as quoted chars ('C').
+Most quote+char sequences tokenize with a bare leading ' token, making the
+first-token logit diff between causal and original answers identically 0.
+`filter_answer_pool` keeps only chars whose quoted form starts with a merged
+'{c} token; CodeGenerator samples the answer pair (x, y) from that subset
+(fillers still draw from the full pool).
 """
 
 import re
@@ -26,6 +45,22 @@ from typing import Dict, Tuple
 # ---------------------------------------------------------------------------
 
 CODE_VALUE_POOL = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+
+
+def filter_answer_pool(tokenizer, pool=None):
+    """Chars whose quoted form '{c}' tokenizes as ['{c}, '] — i.e. the first
+    token is a merged quote+char token, distinct across chars. Answers (x, y)
+    must come from this subset or the first-token logit diff degenerates to
+    comparing ' against ' (identically 0).
+    """
+    pool = pool if pool is not None else CODE_VALUE_POOL
+    kept = [c for c in pool
+            if len(tokenizer(f"'{c}'", add_special_tokens=False)["input_ids"]) == 2]
+    if len(kept) < 2:
+        raise ValueError(
+            f"Answer pool collapsed to {kept} under this tokenizer; "
+            "need >= 2 chars with merged quote+char first tokens.")
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -61,9 +96,10 @@ class CodeScenarioTemplate:
 class CodeTemplateSystem:
     """Generates indexed-list code-tracing CMA prompt pairs."""
 
-    def __init__(self, length_range=(4, 8), pool=None):
+    def __init__(self, length_range=(4, 8), pool=None, answer_pool=None):
         self.length_range = length_range
         self.pool = pool if pool is not None else CODE_VALUE_POOL
+        self.answer_pool = answer_pool if answer_pool is not None else self.pool
         self.templates = {
             "indexed_list": CodeScenarioTemplate(
                 name="indexed_list",
@@ -80,7 +116,7 @@ class CodeTemplateSystem:
         and filler values for non-target slots."""
         length = random.randint(*self.length_range)
         idx = random.randint(0, length - 1)
-        x, y = random.sample(self.pool, 2)
+        x, y = random.sample(self.answer_pool, 2)
         fillers = [random.choice(self.pool) for _ in range(length)]
         return length, idx, x, y, fillers
 

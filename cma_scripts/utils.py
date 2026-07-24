@@ -27,8 +27,9 @@ model_family_dict = {
     "gpt2": ["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"],
     "Llama-3": ["Llama-3.1-70B", "Llama-3.1-8B", "Llama-3.1-8B-Instruct", "Llama-3.1-70B-Instruct"],
     "Qwen2.5": ["Qwen2.5-7B", "Qwen2.5-14B", "Qwen2.5-14B-Instruct", "Qwen2.5-32B", "Qwen2.5-72B"],
-    "gemma-2": ["gemma-2-2b", "gemma-2-9b", "gemma-2-27b"], 
+    "gemma-2": ["gemma-2-2b", "gemma-2-9b", "gemma-2-27b"],
     "gpt-oss": ["gpt-oss-20b"],
+    "phi-4": ["phi-4"],  # no vocab_dict entry: template-system ToM/code paths only, not identity_rules
 }
 
 ## the file recording the significant heads for Llama-3.1-70B
@@ -69,6 +70,10 @@ def get_model_id_family(model_type):
     elif "gpt-oss" in model_type:
         model_id = f"openai/{model_type}"
         model_family = "gpt-oss"
+    ### phi-4 (14B dense, GQA 40H/10KV — run with --ungroup_grouped_query_attention)
+    elif "phi-4" in model_type:
+        model_id = model_type if "/" in model_type else f"microsoft/{model_type}"
+        model_family = "phi-4"
     else:
         raise ValueError(f"Unknown model family for {model_type}. Please configurate the model_family (model_id) and download the corresponding vocab file (using datasets/get_vocab.py).")
     return model_id, model_family

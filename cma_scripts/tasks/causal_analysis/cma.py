@@ -463,10 +463,16 @@ class CMAOrchestrator:
                         logger.info(f"Patching at movement position: base pos {base_pos}, exp pos {exp_pos} for prompt {i+1}")
 
                 elif context_type == "code":
+                    # base kind: ABA=copy, ABB=alias (all code conditions).
+                    # exp flips the kind, except code_control (within_context)
+                    # where both prompts share the base kind.
+                    condition = self.config.prompts.condition
+                    within = condition is not None and condition.within_context
+                    exp_is_copy = base_is_aba if within else not base_is_aba
                     base_pos = prompt_generator.detect_copy_semantics_position(
                         base_prompt, tokenizer, is_copy=base_is_aba)
                     exp_pos = prompt_generator.detect_copy_semantics_position(
-                        exp_prompt, tokenizer, is_copy=not base_is_aba)
+                        exp_prompt, tokenizer, is_copy=exp_is_copy)
 
                     if base_pos == -1 or exp_pos == -1:
                         raise ValueError(

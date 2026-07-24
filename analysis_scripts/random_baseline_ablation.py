@@ -6,9 +6,11 @@ counts match the first-k heads of --target_csv, ablates each, and writes
 a long-form CSV of metrics. Also writes the target's own metrics at the
 same k values for comparison.
 
-Pool for random draws: at each layer that has target heads, all 40 heads
-EXCEPT the heads in the target set itself. (Not excluding other condition
-sets is intentional — see agenda discussion.)
+Pool for random draws (--sampling layer_matched, default): at each layer that
+has target heads, all 40 heads EXCEPT the heads in the target set itself.
+(Not excluding other condition sets is intentional — see agenda discussion.)
+--sampling uniform instead draws k heads uniformly from all 48x40=1920 heads
+excluding the target set (used by the code-arm nulls).
 
 Usage (cheap C1\\C5 pilot):
     python scripts/random_baseline_ablation.py \\
@@ -43,9 +45,10 @@ if codebase_root not in sys.path:
 # Importing ablation_experiment triggers os.chdir(codebase_root); fine.
 from tasks.causal_analysis.ablation_experiment import (  # noqa: E402
     build_ablation_hooks,
+    compute_answer_token_id,
     evaluate_prompt,
-    generate_unpaired_prompts,
-    get_first_answer_token_id,
+    generate_eval_prompts,
+    get_match_fn,
 )
 from tasks.causal_analysis.cma_config import (  # noqa: E402
     GenerationConfig,
@@ -53,10 +56,6 @@ from tasks.causal_analysis.cma_config import (  # noqa: E402
     PromptConfig,
 )
 from tasks.causal_analysis.models import ModelLoader  # noqa: E402
-from tasks.causal_analysis.prompt_generators.tom_templates import (  # noqa: E402
-    UnifiedQuestionFormatter,
-    UnifiedTemplateSystem,
-)
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -98,22 +97,33 @@ def stratified_random_set(counts, target_set, n_heads_per_layer, rng):
     return sampled
 
 
+def uniform_random_set(k, target_set, n_layers, n_heads_per_layer, rng):
+    """Sample k heads uniformly from ALL layers x heads (e.g. 48x40 = 1920),
+    excluding heads in target_set. Returns a list of (layer, head) tuples."""
+    pool = [(l, h) for l in range(n_layers) for h in range(n_heads_per_layer)
+            if (l, h) not in target_set]
+    if len(pool) < k:
+        raise ValueError(f"uniform pool size {len(pool)} < requested k={k}")
+    return rng.sample(pool, k)
+
+
 # ---------------------------------------------------------------------------
 # one-shot ablation evaluator (no cumulative sweep)
 # ---------------------------------------------------------------------------
 
 def _precompute_answer_tokens(prompt_dict, tokenizer):
     """For each variant, encode correct/alt answers as first-token IDs.
-    Same logic as run_cumulative_ablation, factored out."""
+    Same logic as run_cumulative_ablation, factored out. Dispatches per
+    variant (ToM leading-space vs code quote-prefill handling)."""
     correct_toks, alt_toks = {}, {}
     for v, d in prompt_dict.items():
         prompts_v = d["prompts"]
         correct_toks[v] = [
-            get_first_answer_token_id(tokenizer, a, prepend_space=p.endswith(" "))
+            compute_answer_token_id(tokenizer, v, a, p)
             for a, p in zip(d["correct"], prompts_v)
         ]
         alt_toks[v] = [
-            get_first_answer_token_id(tokenizer, a, prepend_space=p.endswith(" "))
+            compute_answer_token_id(tokenizer, v, a, p)
             for a, p in zip(d["alt"], prompts_v)
         ]
     return correct_toks, alt_toks
@@ -132,6 +142,7 @@ def ablate_once(model, tokenizer, prompt_dict, head_list,
         alts = d["alt"]
         ctoks = correct_toks[v]
         atoks = alt_toks[v]
+        match_fn = get_match_fn(v, prompts[0]) if prompts else None
 
         n = len(prompts)
         pc_arr = np.zeros(n)
@@ -145,6 +156,7 @@ def ablate_once(model, tokenizer, prompt_dict, head_list,
                 corrects[i], alts[i], ctoks[i], atoks[i],
                 eos_token_ids, fwd_hooks=hooks,
                 max_new_tokens=max_new_tokens,
+                match_fn=match_fn,
             )
             pc_arr[i] = pc
             pa_arr[i] = pa
@@ -222,6 +234,14 @@ def main():
                    help="k values to evaluate at. Default: just len(target)")
     p.add_argument("--n_heads_per_layer", type=int, default=40,
                    help="Qwen2.5-14B = 40")
+    p.add_argument("--n_layers", type=int, default=48,
+                   help="Qwen2.5-14B = 48 (used by --sampling uniform)")
+    p.add_argument("--sampling", choices=["layer_matched", "uniform"],
+                   default="layer_matched",
+                   help="layer_matched: per-layer counts match the first-k "
+                        "target heads (original convention). uniform: k heads "
+                        "drawn uniformly from all n_layers x n_heads_per_layer "
+                        "heads, excluding the target set (code-arm nulls).")
 
     # mirror ablation_experiment.py for reproducibility
     p.add_argument("--model_type", type=str, default="Qwen2.5-14B-Instruct")
@@ -289,11 +309,8 @@ def main():
 
     # --- generate prompts (same machinery as ablation_experiment) ---
     logger.info("=== generating prompts ===")
-    template_system = UnifiedTemplateSystem(vocab_dir="tom_datasets")
-    question_formatter = UnifiedQuestionFormatter(tokenizer=tokenizer)
-    prompt_dict = generate_unpaired_prompts(
-        template_system, question_formatter, tokenizer,
-        args.templates, args.prompt_num, args.system_prompt,
+    prompt_dict = generate_eval_prompts(
+        tokenizer, args.templates, args.prompt_num, args.system_prompt,
         eval_variants=args.eval_variants,
         prefill_mode=args.assistant_prefill,
     )
@@ -344,9 +361,14 @@ def main():
     for k in k_eval:
         counts = counts_by_k[k]
         for i in range(args.n_random):
-            rand_set = stratified_random_set(
-                counts, target_set, args.n_heads_per_layer, rng
-            )
+            if args.sampling == "uniform":
+                rand_set = uniform_random_set(
+                    k, target_set, args.n_layers, args.n_heads_per_layer, rng
+                )
+            else:
+                rand_set = stratified_random_set(
+                    counts, target_set, args.n_heads_per_layer, rng
+                )
             if (i % max(1, args.n_random // 10)) == 0:
                 logger.info(f"  k={k} sample {i+1}/{args.n_random}")
             for row in ablate_once(model, tokenizer, prompt_dict, rand_set,

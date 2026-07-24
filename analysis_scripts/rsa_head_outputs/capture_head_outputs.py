@@ -44,8 +44,11 @@ DEFAULT_HEADS_CSV = ROOT / "results/rsa_head_outputs/topk_heads/union_top20.csv"
 DEFAULT_OUT_DIR = ROOT / "results/rsa_head_outputs/activations"
 
 
-def build_chat_prompt(scenario: str, question: str, tokenizer) -> str:
-    system_prompt = "You are a helpful assistant reasoning about agents' beliefs."
+BELIEF_SYSTEM_PROMPT = "You are a helpful assistant reasoning about agents' beliefs."
+
+
+def build_chat_prompt(scenario: str, question: str, tokenizer,
+                      system_prompt: str = BELIEF_SYSTEM_PROMPT) -> str:
     full = f"{scenario}\n{question}"
     msgs = [{"role": "system", "content": system_prompt},
             {"role": "user",   "content": full}]
@@ -59,7 +62,15 @@ def main():
     ap.add_argument("--heads_csv", type=Path, default=DEFAULT_HEADS_CSV)
     ap.add_argument("--out_dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--model_type", default="Qwen2.5-14B-Instruct")
+    ap.add_argument("--system_prompt", choices=["belief", "code"], default="belief",
+                    help="'code' uses CODE_SYSTEM_PROMPT (for code_position stimuli)")
     args = ap.parse_args()
+
+    if args.system_prompt == "code":
+        from prompt_generators.code_templates import CODE_SYSTEM_PROMPT
+        system_prompt = CODE_SYSTEM_PROMPT
+    else:
+        system_prompt = BELIEF_SYSTEM_PROMPT
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -101,7 +112,8 @@ def main():
     head_idxs = heads_df["head"].astype(int).tolist()
 
     for si, row in stim_df.iterrows():
-        prompt = build_chat_prompt(row["scenario"], row["question"], tokenizer)
+        prompt = build_chat_prompt(row["scenario"], row["question"], tokenizer,
+                                   system_prompt=system_prompt)
         tokens = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)["input_ids"].to(
             next(model.parameters()).device
         )

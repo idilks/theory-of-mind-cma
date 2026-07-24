@@ -15,6 +15,7 @@ from .code_templates import (
     CodeTemplateSystem,
     CODE_SYSTEM_PROMPT,
     detect_copy_semantics_position,
+    filter_answer_pool,
 )
 
 
@@ -23,8 +24,18 @@ class CodeGenerator(PromptGenerator):
 
     def __init__(self, config, tokenizer):
         super().__init__(config, tokenizer)
-        self.template_system = CodeTemplateSystem()
+        self.template_system = CodeTemplateSystem(
+            answer_pool=filter_answer_pool(tokenizer)
+        )
         self.template_names = config.prompts.template_names or ["indexed_list"]
+        unknown = [n for n in self.template_names
+                   if n not in self.template_system.templates]
+        if unknown:
+            raise ValueError(
+                f"Unknown code template(s) {unknown}. "
+                f"Available: {list(self.template_system.templates.keys())}. "
+                "(list_append/dict_update/list_extend were removed with the "
+                "July 2026 indexed_list redesign.)")
 
     def generate_prompts(self) -> Tuple[List[Tuple[str, str]], List[Tuple[str, str]], List[str]]:
         """Generate base/exp prompt pairs for CMA with code templates.
@@ -43,9 +54,13 @@ class CodeGenerator(PromptGenerator):
         num_prompts = self.config.prompts.prompt_num
         prompts_per_template = max(1, num_prompts // len(self.template_names))
 
+        # Route on the condition itself, NOT condition.answer_differs:
+        # code_control's answers also differ (base=X, exp=Y), so answer_differs
+        # is True for it and cannot distinguish it from code_answer_changes.
         condition = self.config.prompts.condition
-        answer_differs = condition.answer_differs if condition is not None else True
-        is_abstract = (condition is not None and condition.value == "code_abstract")
+        cond_name = condition.value if condition is not None else "code_answer_changes"
+        is_abstract = cond_name == "code_abstract"
+        is_control = cond_name == "code_control"
 
         for template_name in self.template_names:
             for _ in range(prompts_per_template):
@@ -58,11 +73,13 @@ class CodeGenerator(PromptGenerator):
                         )
                     )
                 else:
+                    # answer_differs=False selects the control pair (same
+                    # copy/alias kind on both sides, letters swapped)
                     base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
                         self.template_system.generate_cross_context_pair(
                             template_name,
                             base_rule=base_rule,
-                            answer_differs=answer_differs,
+                            answer_differs=not is_control,
                         )
                     )
 

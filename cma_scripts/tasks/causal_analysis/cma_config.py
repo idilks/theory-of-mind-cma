@@ -153,6 +153,12 @@ class PromptConfig:
         # Set default template names for behavioral ToM integration
         if self.template_names is None:
             self.template_names = ["basic_object_move"]
+        # Code conditions: the ToM/CLI defaults are meaningless here — remap
+        # them to the code template so `--condition code_*` runs without an
+        # explicit --template_names.
+        if self.context_type == "code" and self.template_names in (
+                ["basic_object_move"], ["food_truck"]):
+            self.template_names = ["indexed_list"]
         if self.context_type not in ["abstract", "token", "control", "photo", "basic", "code"]:
             raise ValueError(f"context_type must be abstract, token, control, photo, or basic, got {self.context_type}")
 

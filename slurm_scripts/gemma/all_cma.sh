@@ -1,12 +1,12 @@
 #!/bin/bash -l
-#SBATCH --job-name=gemma_cma      # full 20-CMA grid on Gemma-2-27B-it
+#SBATCH --job-name=gemma_cma      # remaining rebuttal cells on Gemma-2-27B-it
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:1
 #SBATCH --time=20:59:00
 #SBATCH --partition=h200_preemptable,preempt_wager
-#SBATCH --array=0-35%6
+#SBATCH --array=0-13%6
 #SBATCH --mem=100GB
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --output=logs/gemma_cma_%A_%a.out
@@ -28,41 +28,37 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-# Gemma-2-27B-it CMA grid: 7 conditions × 2 rules × 3 templates = 42 cells,
-# minus 6 already completed locally = 36 remaining jobs.
-# End patch only (no --patch_after_movement).
-# Cluster cap: 6 concurrent jobs (set via %6 in --array directive above).
+# NeurIPS-rebuttal Gemma grid (July 24 2026). End patch only, seed 0
+# (matches all existing Gemma cells). 14 jobs:
+#   [0-1]   C2 abstract_photo — the 2 missing reverse cells
+#   [2-7]   C3 answer_changes_belief — all 6 (needed for H2 replication)
+#   [8-13]  C5 answer_changes_location_only — all 6 (needed for H1+H2)
+# C4/C6/C7 deliberately skipped — no headline claim needs them on Gemma.
 #
-# Completed (skipped here): abstract_belief×{food_truck/ABA, library_book/ABA,
-#   library_book/ABB, hair_styling/ABB}; abstract_photo×{food_truck/ABA,
-#   library_book/ABA}.
+# Already on disk (results/causal_analysis/cma/google/gemma-2-27b-it_ungroup_gqa):
+#   abstract_belief  6/6 cells
+#   abstract_photo   food_truck ABA+ABB, hair_styling ABA, library_book ABA
 
 JOB_CONDS=(
-  abstract_belief abstract_belief
-  abstract_photo abstract_photo abstract_photo abstract_photo
-  answer_changes_belief answer_changes_belief answer_changes_belief answer_changes_belief answer_changes_belief answer_changes_belief
-  answer_changes_photo answer_changes_photo answer_changes_photo answer_changes_photo answer_changes_photo answer_changes_photo
-  state_only_no_belief state_only_no_belief state_only_no_belief state_only_no_belief state_only_no_belief state_only_no_belief
-  answer_changes_location_only answer_changes_location_only answer_changes_location_only answer_changes_location_only answer_changes_location_only answer_changes_location_only
-  answer_changes_location_only_photo answer_changes_location_only_photo answer_changes_location_only_photo answer_changes_location_only_photo answer_changes_location_only_photo answer_changes_location_only_photo
+  abstract_photo abstract_photo
+  answer_changes_belief answer_changes_belief answer_changes_belief
+  answer_changes_belief answer_changes_belief answer_changes_belief
+  answer_changes_location_only answer_changes_location_only answer_changes_location_only
+  answer_changes_location_only answer_changes_location_only answer_changes_location_only
 )
 JOB_TEMPLATES=(
-  hair_styling food_truck
-  hair_styling food_truck library_book hair_styling
-  food_truck library_book hair_styling food_truck library_book hair_styling
-  food_truck library_book hair_styling food_truck library_book hair_styling
-  food_truck library_book hair_styling food_truck library_book hair_styling
-  food_truck library_book hair_styling food_truck library_book hair_styling
-  food_truck library_book hair_styling food_truck library_book hair_styling
+  hair_styling library_book
+  food_truck library_book hair_styling
+  food_truck library_book hair_styling
+  food_truck library_book hair_styling
+  food_truck library_book hair_styling
 )
 JOB_RULES=(
-  ABA ABB
-  ABA ABB ABB ABB
-  ABA ABA ABA ABB ABB ABB
-  ABA ABA ABA ABB ABB ABB
-  ABA ABA ABA ABB ABB ABB
-  ABA ABA ABA ABB ABB ABB
-  ABA ABA ABA ABB ABB ABB
+  ABB ABB
+  ABA ABA ABA
+  ABB ABB ABB
+  ABA ABA ABA
+  ABB ABB ABB
 )
 
 IDX=$SLURM_ARRAY_TASK_ID
@@ -70,7 +66,7 @@ CONDITION=${JOB_CONDS[$IDX]}
 TEMPLATE=${JOB_TEMPLATES[$IDX]}
 RULE=${JOB_RULES[$IDX]}
 
-echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE position=end"
+echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE position=end seed=0"
 
 python codebase/tasks/causal_analysis/cma.py \
   --use_template_system \
@@ -84,4 +80,4 @@ python codebase/tasks/causal_analysis/cma.py \
   --ungroup_grouped_query_attention \
   --question_style instruction \
   --run_statistical_tests \
-  --n_permutations 5000 \
+  --n_permutations 5000
