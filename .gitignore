@@ -98,3 +98,15 @@ archive/
 # team-shared distilled results (~3MB: csv/npy/npz/png) — re-include ALL of
 # results/aggregated/, overriding the *.png/*.pt/etc. globs above (last match wins).
 !/results/aggregated/**
+
+# raw CMA primary outputs (~14MB): the per-head causal score tensors and the
+# permutation-test tables. Un-ignore the directory chain so git descends, re-ignore
+# the bulky per-sample/prompt-dump neighbours, then re-include just the two we want.
+# (.pt/.png are already ignored above; *.* can't be used here because directory
+# names contain dots — Qwen2.5-14B-Instruct, sample_num_50_gen_acc_0.9.)
+!/results/causal_analysis/
+!/results/causal_analysis/**/
+/results/causal_analysis/**/*.txt
+/results/causal_analysis/**/*.csv
+!/results/causal_analysis/**/causal_scores.pt
+!/results/causal_analysis/**/statistical_test_results.csv
