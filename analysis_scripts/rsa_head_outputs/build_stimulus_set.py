@@ -26,7 +26,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import random
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -41,7 +43,6 @@ TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 def build_for_template(ts: UnifiedTemplateSystem, qf: UnifiedQuestionFormatter,
                        template_name: str, k_per_cell: int, seed: int,
                        context_type: str = "abstract") -> list[dict]:
-    import random
     rng = random.Random(seed)
     template = ts.get_template(template_name, context_type)
     var_1 = next(v for v in template.variables if v.endswith("_1"))
@@ -96,7 +97,6 @@ def build_for_template(ts: UnifiedTemplateSystem, qf: UnifiedQuestionFormatter,
 
 
 def audit(rows: list[dict], k_per_cell: int) -> None:
-    from collections import Counter
     cells = Counter((r["belief_veracity"], r["answer_state"] == r["loc_a"]) for r in rows)
     # Cells: (true|false, ans_is_loc_a True|False). Each pair contributes 1 to each cell.
     assert len(rows) == 4 * k_per_cell, f"expected {4 * k_per_cell} rows, got {len(rows)}"

@@ -21,22 +21,28 @@ Outputs:
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
+from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
+
+# same guard as the other rsa_head_outputs/* scripts: makes rsa_utils resolvable
+# when this module is imported, not just when it is run as a script
+sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+from rsa_utils import cosine_rdm  # noqa: E402
+
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads"
 FIG_OUT = ROOT / "results_for_pi/aggregation/rsa_head_output_rdms.png"
 CSV_OUT = ROOT / "results/rsa_head_outputs/mantel_results.csv"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
-
-
-from rsa_utils import cosine_rdm
 
 
 def model_rdm_belief(stim: pd.DataFrame) -> np.ndarray:
@@ -55,7 +61,6 @@ def upper_tri(M: np.ndarray) -> np.ndarray:
 
 
 def spearman(x: np.ndarray, y: np.ndarray) -> float:
-    from scipy.stats import spearmanr
     r, _ = spearmanr(x, y)
     return float(r)
 
@@ -127,7 +132,6 @@ def main():
     pd.DataFrame(rows).to_csv(CSV_OUT, index=False)
     print(f"mantel results -> {CSV_OUT}")
 
-    import matplotlib.pyplot as plt
     fig, axes = plt.subplots(2, 2, figsize=(10, 10))
     for ax, M, title in [
         (axes[0, 0], rdm_c1, f"top-{args.k} C1 (belief) weighted RDM"),

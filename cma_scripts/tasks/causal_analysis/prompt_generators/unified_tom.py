@@ -14,7 +14,6 @@ Token context: control and photo contexts.
 
 """
 
-import sys
 import os
 import re
 

@@ -5,7 +5,7 @@ Simplified parsing focused on <loc> tag extraction.
 
 import re
 from abc import ABC, abstractmethod
-from typing import List, Tuple, Optional
+from typing import List, Tuple
 
 def extract_location_from_response(response: str, loc1: str = None, loc2: str = None) -> str:
     """

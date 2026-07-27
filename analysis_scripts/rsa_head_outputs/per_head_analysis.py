@@ -91,9 +91,6 @@ def main():
 
     # ---- Plot 1: dissociation scatter ----
     fig, ax = plt.subplots(figsize=(8, 7))
-    color_map = {"C1": "#4c72b0", "C5": "#dd8452", "C1+C2": "#7768ae",
-                 "C1+C5": "#7c7c7c", "C2+C5": "#a86464"}
-
     def color_for(membership: str) -> str:
         # priority: pure C1 > pure C5 > pure C2 > overlap
         sets = set(membership.split("+")) if membership != "none" else set()

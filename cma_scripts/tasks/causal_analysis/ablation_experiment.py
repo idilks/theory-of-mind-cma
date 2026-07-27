@@ -38,7 +38,7 @@ if codebase_root not in sys.path:
 # need to be in the right directory for relative imports in models.py
 os.chdir(codebase_root)
 
-from tasks.causal_analysis.models import ModelLoader, setup_hf_authentication
+from tasks.causal_analysis.models import ModelLoader
 from tasks.causal_analysis.cma_config import ModelConfig, GenerationConfig, PromptConfig
 from tasks.causal_analysis.prompt_generators.tom_templates import (
     UnifiedTemplateSystem, UnifiedQuestionFormatter

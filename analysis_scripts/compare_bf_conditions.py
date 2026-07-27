@@ -184,8 +184,8 @@ def plot_venn(U_C1: np.ndarray, U_C3: np.ndarray, U_C8: np.ndarray, out: Path) -
     set_C1 = set(np.where(U_C1)[0].tolist())
     set_C3 = set(np.where(U_C3)[0].tolist())
     set_C8 = set(np.where(U_C8)[0].tolist())
-    v = venn3([set_C1, set_C3, set_C8],
-              set_labels=("C1 abstract_belief", "C3 answer_changes_belief", "C8 bf-control"),
+    venn3([set_C1, set_C3, set_C8],
+          set_labels=("C1 abstract_belief", "C3 answer_changes_belief", "C8 bf-control"),
               ax=ax)
     ax.set_title(f"Universal sig heads at bf (6/6 runs each)\n"
                  f"|C1|={len(set_C1)}  |C3|={len(set_C3)}  |C8|={len(set_C8)}",

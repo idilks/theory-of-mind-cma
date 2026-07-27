@@ -5,13 +5,24 @@ Model loading and setup utilities for CMA experiments.
 import logging
 import os
 import sys
+
 import torch
-from transformers import AutoTokenizer, GenerationConfig
 import transformer_lens
+from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 
 # Add codebase root to path for utils import
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-from utils import get_model_id_family, vocab_dict
+from utils import get_model_id_family
+
+# Optional dependency: transformers pulls huggingface_hub in, but the login
+# helper is only needed when a token is present, so a missing hub degrades to
+# passing the token on each request instead of failing at import.
+try:
+    from huggingface_hub import login
+except ImportError:
+    login = None
+
+logger = logging.getLogger(__name__)
 
 
 def _get_hf_token():
@@ -22,16 +33,14 @@ def setup_hf_authentication():
     """Setup HuggingFace authentication if token is available."""
     hf_token = _get_hf_token()
     if hf_token:
+        if login is None:
+            logger.warning("huggingface_hub not available for login, using token in requests")
+            return
         try:
-            from huggingface_hub import login
             login(token=hf_token)
             logger.info("Successfully authenticated with HuggingFace")
-        except ImportError:
-            logger.warning("huggingface_hub not available for login, using token in requests")
         except Exception as e:
             logger.warning(f"HuggingFace login failed: {e}, using token in requests")
-
-logger = logging.getLogger(__name__)
 
 class CustomHookedTransformer(transformer_lens.HookedTransformer):
     def resize_token_embeddings(self, new_num_tokens: int, id_map=None):
@@ -172,7 +181,6 @@ class ModelLoader:
             if model_family == "gpt-oss":
                 logger.info(f"Attempting to load {model_id} directly (experimental support)")
                 try:
-                    from transformers import AutoModelForCausalLM
                     load_kwargs_hf = {
                         "torch_dtype": torch.bfloat16,
                         "device_map": self.model_config.device_map,
@@ -294,9 +302,8 @@ class ModelLoader:
     def _setup_special_tokens(self, model, tokenizer):
         """Setup EOS tokens and A/B tokens for evaluation."""
         # Setup EOS tokens
-        eos_token_id = tokenizer.eos_token_id 
-        vocab = tokenizer.get_vocab()
-        
+        eos_token_id = tokenizer.eos_token_id
+
         # Skip newline eos tokens in dual-answer mode since schema contains newlines
         if not (self.prompt_config.use_template_system and self.prompt_config.ask_world):
             eos_token = self.generation_config.eos_token or "\n"
@@ -308,7 +315,7 @@ class ModelLoader:
                 exact_newline_id = tokenizer.encode("\n", add_special_tokens=False)[-1]
                 add_eos_token_id = [exact_newline_id]
                 logger.info(f"DEBUG: Added exact newline token ID: {exact_newline_id}")
-            except:
+            except Exception:
                 add_eos_token_id = []
                 logger.warning("Could not find exact newline token")
             

@@ -16,15 +16,17 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 import torch
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
-from condition_registry import REGISTRY, resolve_best_source  # noqa: E402
+from condition_registry import resolve_best_source  # noqa: E402
 
 RESULTS_ROOT = REPO / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
 OUT = REPO / "writeups/results_for_pi/code_domain"
@@ -109,8 +111,6 @@ def clamped(fp):
 def build_cumulative_section():
     """Figures + stats fragment for the full-1920 Yang-style cumulative
     ablation (C1/C5 orderings on code_copy/code_alias + co-run ToM evals)."""
-    import pandas as pd
-
     curves = {}  # (ordering, protocol) -> DataFrame
     for okey, _ in CUMAB_ORDERINGS:
         for pkey, _ in CUMAB_PROTOCOLS:
@@ -126,8 +126,6 @@ def build_cumulative_section():
             "`pull_results.sh` and merge._\n")
         return
 
-    xticks = [0, 500, 1000, 1500]
-    from matplotlib.lines import Line2D
     legend_handles = [
         Line2D([0], [0], color=CURVE_COLORS["target"], lw=1.5,
                label="Ablation"),

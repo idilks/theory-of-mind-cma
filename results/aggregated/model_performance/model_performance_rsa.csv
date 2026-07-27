@@ -1,0 +1,15 @@
+model,grid,split,level,acc,correct,n
+Qwen2.5-14B-Instruct,code_ledger,all,-,0.9236,133,144
+Qwen2.5-14B-Instruct,code_ledger,role_b,alias,0.9306,67,72
+Qwen2.5-14B-Instruct,code_ledger,role_b,copy,0.9167,66,72
+gemma-2-27b-it,code_ledger,all,-,0.8333,120,144
+gemma-2-27b-it,code_ledger,role_b,alias,0.8194,59,72
+gemma-2-27b-it,code_ledger,role_b,copy,0.8472,61,72
+Qwen2.5-14B-Instruct,code_padtwins,all,-,0.9062,783,864
+Qwen2.5-14B-Instruct,code_padtwins,role_b,alias,0.8519,368,432
+Qwen2.5-14B-Instruct,code_padtwins,role_b,copy,0.9606,415,432
+gemma-2-27b-it,code_padtwins,all,-,0.8727,754,864
+gemma-2-27b-it,code_padtwins,role_b,alias,0.8542,369,432
+gemma-2-27b-it,code_padtwins,role_b,copy,0.8912,385,432
+Qwen2.5-14B-Instruct,code_position,all,-,0.9792,141,144
+gemma-2-27b-it,code_position,all,-,0.9444,136,144

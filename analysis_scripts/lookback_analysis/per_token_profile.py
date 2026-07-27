@@ -27,6 +27,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
+from transformers import AutoTokenizer
 
 import matplotlib
 matplotlib.use("Agg")
@@ -49,7 +50,6 @@ ANCHOR_COLORS = {
 
 
 def _load_tokenizer():
-    from transformers import AutoTokenizer
     return AutoTokenizer.from_pretrained("Qwen/Qwen2.5-14B-Instruct")
 
 

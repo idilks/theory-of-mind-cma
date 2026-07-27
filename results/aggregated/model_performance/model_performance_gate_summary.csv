@@ -1,0 +1,6 @@
+model,family,cells,pairs_kept,pairs_requested,pass_rate
+Qwen/Qwen2.5-14B-Instruct,code,11,1006,1015,0.9911
+Qwen/Qwen2.5-14B-Instruct,photo,46,4404,4500,0.9787
+Qwen/Qwen2.5-14B-Instruct,tom,53,5047,5403,0.9341
+google/gemma-2-27b-it_ungroup_gqa,photo,6,1000,1000,1.0
+google/gemma-2-27b-it_ungroup_gqa,tom,18,2555,2600,0.9827

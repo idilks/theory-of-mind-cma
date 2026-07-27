@@ -4,19 +4,25 @@ Handles generation accuracy, logit differences, and dual-answer analysis.
 """
 
 import logging
-import re
 from collections import defaultdict
-from typing import List, Tuple, Optional, Dict, Any
+from typing import List, Tuple, Optional
 
 import torch
 from transformers import AutoTokenizer
 
-from prompt_generators.base import extract_dual_answers, normalize_loc, classify_belief_prediction, classify_world_prediction
+from prompt_generators.base import (
+    extract_dual_answers,
+    normalize_loc,
+    classify_belief_prediction,
+    classify_world_prediction,
+    extract_location_from_response,
+    locations_match,
+)
+from prompt_generators.code_templates import (
+    extract_value_from_code_response,
+    code_values_match,
+)
 from models import CustomHookedTransformer
-from prompt_generators.base import extract_location_from_response, locations_match
-
-
-
 
 logger = logging.getLogger(__name__)
 
@@ -183,7 +189,6 @@ class GenerationEvaluator:
                 return (not malformed) and (normalize_loc(belief_pred) == normalize_loc(correct_ans))
         
         elif self.config.prompts.context_type == "code":
-            from prompt_generators.code_templates import extract_value_from_code_response, code_values_match
             if getattr(self.config.prompts, "code_quote_prefill", False):
                 # Prompt was prefilled through the opening quote, so the
                 # generation starts mid-answer (e.g. "R'] ..."); restore the
@@ -328,13 +333,20 @@ class DualAnswerStatsTracker:
 
 
 def get_first_token_id(model: CustomHookedTransformer, text: str) -> int:
-    """Get first token ID for text, handling multi-token cases."""
+    """Get the first token ID for a text, handling multi-token words."""
+    # NOTE: this file previously carried two definitions of this function; the
+    # later one (kept here) shadowed the earlier one at import time, so this is
+    # the variant that has always run. The dead earlier copy also caught
+    # ValueError — worth widening this `except` if to_single_token is ever seen
+    # raising it, but that is a behaviour change, not a cleanup.
     try:
+        # Try single token first
         return model.to_single_token(text)
-    except (AssertionError, ValueError):
-        # Multi-token case - use first token
-        tokens = model.to_tokens(text, prepend_bos=False)[0]
+    except AssertionError:
+        # Handle multi-token case by using first token
+        tokens = model.to_tokens(text, prepend_bos=False)[0]  # Remove batch dimension
         return tokens[0].item()
+
 
 def calculate_logit_probability_difference(
     logits: torch.Tensor,
@@ -371,15 +383,6 @@ def calculate_dual_logit_differences(
     belief_diff = logits[0, -1, belief_causal_id] - logits[0, -1, belief_orig_id]
     return belief_diff
 
-def get_first_token_id(model: CustomHookedTransformer, text: str) -> int:
-    """Get the first token ID for a text, handling multi-token words."""
-    try:
-        # Try single token first
-        return model.to_single_token(text)
-    except AssertionError:
-        # Handle multi-token case by using first token
-        tokens = model.to_tokens(text, prepend_bos=False)[0]  # Remove batch dimension
-        return tokens[0].item()
 
 def calculate_ab_margin(logits: torch.Tensor, A_tok_id: int, B_tok_id: int) -> float:
     """Compute next-token margin for forced-choice A vs B."""

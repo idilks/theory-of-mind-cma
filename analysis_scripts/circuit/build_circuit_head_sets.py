@@ -29,6 +29,7 @@ Run locally (needs other_results/, which HPC doesn't have).
 
 from __future__ import annotations
 
+import csv as csvmod
 import sys
 from pathlib import Path
 
@@ -40,6 +41,10 @@ from circuit_common import (  # noqa: E402
     AGG_DIR, DLA_DIR, READER_CSV, READER_DLA_LAYERS, READER_TC5_MIN_LAYER,
     REPO, T_C1_PREFILL_CSV, T_C5_CSV, TEMPLATES, WRITER_CSV, WRITER_MAX_LAYER,
 )
+
+sys.path.insert(0, str(REPO / "scripts"))
+from condition_registry import resolve_best_source  # noqa: E402
+from h2_additivity_robustness import CROSS_RULES, RESULTS_ROOT  # noqa: E402
 
 
 def build_writers() -> pd.DataFrame:
@@ -58,11 +63,6 @@ def build_writers() -> pd.DataFrame:
                          source="belief_only_sysprompt_prefill/head_list.csv"))
 
     # sensitivity: >= half-of-cells significance rule (scatter-pack style)
-    sys.path.insert(0, str(REPO / "scripts"))
-    from condition_registry import resolve_best_source
-    from h2_additivity_robustness import CROSS_RULES, RESULTS_ROOT
-    import csv as csvmod
-
     best = resolve_best_source(RESULTS_ROOT, ["abstract_belief"], CROSS_RULES)
     counts: dict[tuple[int, int], int] = {}
     scores: dict[tuple[int, int], list] = {}

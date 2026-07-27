@@ -18,10 +18,10 @@ from __future__ import annotations
 
 import argparse
 import logging
+import re
 import sys
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 import torch
 
@@ -35,6 +35,7 @@ from cma_config import (  # noqa: E402
     PromptConfig, WandbConfig, ExperimentConfig,
 )
 from models import ModelLoader  # noqa: E402
+from prompt_generators.code_templates import CODE_SYSTEM_PROMPT  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("rsa-capture")
@@ -74,7 +75,6 @@ def main():
     args = ap.parse_args()
 
     if args.system_prompt == "code":
-        from prompt_generators.code_templates import CODE_SYSTEM_PROMPT
         system_prompt = CODE_SYSTEM_PROMPT
     else:
         system_prompt = BELIEF_SYSTEM_PROMPT
@@ -103,7 +103,6 @@ def main():
     model, tokenizer, *_ = ModelLoader(cfg.model, cfg.generation, cfg.prompts).load_model_and_tokenizer()
     model.eval()
 
-    import re
     def names_filter(name: str) -> bool:
         if "hook_z" not in name:
             return False

@@ -43,6 +43,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
+from scipy import ndimage
 from scipy import stats as sps
 import matplotlib
 
@@ -232,8 +233,6 @@ def residual_significance(target_cells, comp_cells, shape, clamp):
         the largest 4-connected positive patch vs its null. Diverging
         colormaps invite the eye to read patches into near-zero noise.
     """
-    from scipy import ndimage
-
     f = (lambda x: np.clip(x, 0, None)) if clamp else (lambda x: x)
     keys = sorted(set(target_cells) & set(comp_cells[0]) & set(comp_cells[1]))
     R = np.stack([f(target_cells[k]) - (f(comp_cells[0][k]) + f(comp_cells[1][k]))

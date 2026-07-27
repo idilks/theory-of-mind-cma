@@ -23,6 +23,16 @@ from codebase.tasks.causal_analysis.prompt_generators.tom_templates import (
     UnifiedTemplateSystem,
 )
 
+# Optional: the script still reports its prompt-pair diff without a tokenizer,
+# so a missing/unimportable transformers degrades instead of failing at import.
+try:
+    from transformers import AutoTokenizer
+except Exception as _import_err:  # noqa: BLE001 - reported to the user below
+    AutoTokenizer = None
+    _AUTOTOKENIZER_IMPORT_ERROR = str(_import_err)
+else:
+    _AUTOTOKENIZER_IMPORT_ERROR = None
+
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 N_PAIRS_PER_TEMPLATE = 2
 TOKENIZER_ID = "Qwen/Qwen2.5-14B-Instruct"
@@ -97,8 +107,9 @@ def render_pair(ts, template_name, subs, var_1):
 
 
 def try_load_tokenizer():
+    if AutoTokenizer is None:
+        return None, _AUTOTOKENIZER_IMPORT_ERROR
     try:
-        from transformers import AutoTokenizer
         tok = AutoTokenizer.from_pretrained(TOKENIZER_ID)
         return tok, None
     except Exception as e:

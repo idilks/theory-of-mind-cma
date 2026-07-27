@@ -7,8 +7,6 @@ import os
 from typing import Dict, List, Tuple
 from dataclasses import dataclass
 
-from transformers import AutoTokenizer
-
 
 @dataclass
 class ScenarioTemplate:

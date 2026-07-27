@@ -43,10 +43,13 @@ import argparse
 import csv
 import random
 import sys
+from collections import Counter
 from itertools import product
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
+from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "codebase"))
@@ -130,7 +133,6 @@ def build_rows(n_rep: int, seed: int) -> list[dict]:
 
 
 def audit(rows: list[dict], n_rep: int) -> None:
-    from collections import Counter
     n_cells = 2 * len(IDX_LEVELS) * len(PREFIX_PAD_LEVELS) * len(SUFFIX_PAD_LEVELS)
     assert len(rows) == n_cells * n_rep, f"expected {n_cells * n_rep}, got {len(rows)}"
     cells = Counter((r["semantics"], r["idx"], r["pad_len"], r["suffix_pad_len"])
@@ -173,7 +175,6 @@ def try_token_positions(rows: list[dict]):
 
 
 def design_check(rows: list[dict]) -> None:
-    from scipy.stats import spearmanr
 
     slot_pos = np.array([r["slot_char_pos"] for r in rows], float)
     ans_pos = np.array([r["ans_char_pos"] for r in rows], float)
@@ -269,7 +270,6 @@ def design_check(rows: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 def build_union_heads_csv(out_path: Path) -> None:
-    import pandas as pd
     sources = {
         "code_abstract": HEAD_SET_DIR / "code_abstract_head_list.csv",
         "code_control": HEAD_SET_DIR / "code_control_head_list.csv",

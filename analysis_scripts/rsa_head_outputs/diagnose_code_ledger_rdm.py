@@ -24,6 +24,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import torch
 import matplotlib
 
 matplotlib.use("Agg")
@@ -46,7 +47,6 @@ N_REP = 3
 
 
 def load_sets(model: str):
-    import torch
     if model == "gemma":
         d = torch.load(GEMMA_ACT_PATH, weights_only=False)
         sets = {}

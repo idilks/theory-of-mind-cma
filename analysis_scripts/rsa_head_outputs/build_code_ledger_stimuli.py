@@ -33,6 +33,7 @@ import argparse
 import csv
 import random
 import sys
+from collections import Counter
 from itertools import product
 from pathlib import Path
 
@@ -168,7 +169,6 @@ def build_rows(n_rep: int, seed: int, answer_pool: list[str]) -> list[dict]:
 
 
 def audit(rows: list[dict], n_rep: int) -> None:
-    from collections import Counter
     n_cells = (len(QUERIED_OBJECTS) * len(SLOT_TYPES) * len(ROLE_B)
                * len(COPY_SYNTAXES) * len(ALIAS_SYNTAXES))
     assert len(rows) == n_cells * n_rep, f"expected {n_cells * n_rep}, got {len(rows)}"
@@ -206,7 +206,6 @@ def token_positions(rows, tokenizer_name):
 
 
 def design_check(rows: list[dict], tokenizer_names: list[str]) -> None:
-    from scipy.stats import spearmanr
 
     cat = lambda key: np.array([hash(r[key]) for r in rows], float)  # noqa: E731
     slot_div = np.array([1.0 if (r["queried_object"] == "copy"

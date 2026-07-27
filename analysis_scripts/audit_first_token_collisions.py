@@ -10,7 +10,6 @@ we tokenize each entry with a leading space (" {word}") because that is how the
 answer typically appears in the model's continuation. for completeness we also
 report the no-leading-space form.
 """
-import sys
 from collections import defaultdict
 from pathlib import Path
 

@@ -36,7 +36,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from scipy.cluster.hierarchy import fcluster, linkage, dendrogram
+from scipy.cluster.hierarchy import fcluster, linkage
 from scipy.spatial.distance import squareform
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -114,7 +114,7 @@ def plot_cluster_profiles(profiles: np.ndarray, labels: np.ndarray, out: Path):
         members = profiles[labels == ci]
         mean_p = members.mean(axis=0)
         sem_p = members.std(axis=0) / np.sqrt(max(1, len(members)))
-        bars = ax.bar(range(len(SHORT)), mean_p, yerr=sem_p, color="steelblue", capsize=2)
+        ax.bar(range(len(SHORT)), mean_p, yerr=sem_p, color="steelblue", capsize=2)
         ax.set_xticks(range(len(SHORT)))
         ax.set_xticklabels(SHORT, rotation=45, fontsize=8)
         ax.set_title(f"cluster {ci}\nn={len(members)}", fontsize=10)

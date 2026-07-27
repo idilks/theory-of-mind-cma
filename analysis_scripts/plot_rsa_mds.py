@@ -33,7 +33,6 @@ import numpy as np
 import pandas as pd
 import torch
 from matplotlib.lines import Line2D
-from scipy.spatial.distance import squareform
 from scipy.stats import pearsonr
 from sklearn.manifold import MDS
 

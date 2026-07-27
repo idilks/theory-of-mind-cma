@@ -1,6 +1,5 @@
 """Quick test to verify photo prompt generation logic."""
 
-import sys
 from transformers import AutoTokenizer
 from prompt_generators.tom_templates import UnifiedTemplateSystem
 

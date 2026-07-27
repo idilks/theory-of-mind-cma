@@ -32,14 +32,24 @@ Readouts per prompt: p(correct)/p(alt) over the two first answer tokens,
 flip_score = p_alt/(p_alt+p_correct) (same definition as the ablation
 work), KL(steered || clean) at -1 (collateral-damage meter), top-1 token,
 applied-delta norm; reader-head (L42-46) attention mass at query -1 on
-believed vs current location tokens (secondary readout; captured for
-clean + target directions only — a null here is reportable, not
-disqualifying, per the OV-mixing caveat).
+believed vs current location tokens (secondary readout; by default
+captured for clean + target directions only — pass
+--attn_all_directions to capture it for the CONTROL directions too,
+which is what turns the attention readout from "reliably shifts" into
+"shifts more than a magnitude-matched non-wire edit").
 
-Specificity legs: basic_ab under inject and true_belief under delete must
-stay intact. Cross-domain leg: inject the ToM direction into code_alias
-prompts (CODE_SYSTEM_PROMPT + quote prefill) -> does the model report the
-stale pre-mutation value? Cross-domain uses additive steering only
+Specificity / negative-control legs (all predicted no-ops, and all
+magnitude- AND operator-matched, which the orthogonal-direction controls
+are not):
+  basic_ab   under inject  -> no belief variable to move
+  TB prompts under delete  -> the FB component it removes is absent
+  FB prompts under inject  -> already at the FB pole; nothing to add
+The last two are sign-reversal controls: SAME direction, same norms,
+opposite sign, on prompts where the operator's precondition fails.
+
+Cross-domain leg: inject the ToM direction into code_alias prompts
+(CODE_SYSTEM_PROMPT + quote prefill) -> does the model report the stale
+pre-mutation value? Cross-domain uses additive steering only
 (P_k(mu_FB^ToM - x) on code prompts would inject ToM content wholesale,
 not just the divergence coordinates). The mirror (code-derived direction
 into true_belief) needs a code-domain Stage-1 capture first.
@@ -125,6 +135,8 @@ def heldout_capture_prompts(capture_dir: Path, dirs_npz, variant: str,
 
 def fresh_prompt_set(tokenizer, variant: str, n: int, seed: int) -> list[dict]:
     """Generate specificity / cross-domain prompts (not tied to the capture)."""
+    # deferred: importing ablation_experiment os.chdir()s to codebase/, which
+    # would break the relative output paths this script resolves at startup
     from tasks.causal_analysis.ablation_experiment import generate_eval_prompts
     random.seed(seed)
     np.random.seed(seed)
@@ -368,7 +380,7 @@ def render_figures(out_dir: Path):
                 g = g.sort_values("dose")
                 ax.plot(g["dose"], g[metric], marker="o", label=d)
             ax.set_title(f"{pset} / {mode}", fontsize=9)
-            ax.set_xlabel("dose (× natural scale)")
+            ax.set_xlabel(r"steering coefficient $\alpha$ (× natural scale)")
             ax.set_ylabel(metric)
             ax.set_xscale("log")
             ax.legend(fontsize=6)
@@ -394,7 +406,7 @@ def render_figures(out_dir: Path):
             ax.axhline(g["shift"].iloc[0], ls=":", lw=1,
                        label=f"clean {pset}")
         ax.set_xscale("log")
-        ax.set_xlabel("dose")
+        ax.set_xlabel(r"steering coefficient $\alpha$")
         ax.set_ylabel("reader attn mass: believed − current")
         ax.set_title("reader-head attention shift (secondary readout)")
         ax.legend(fontsize=6)
@@ -431,6 +443,16 @@ def main():
                     "for tom runs / receiving-domain for code runs (the "
                     "original conventions); native/other force it")
     ap.add_argument("--skip_specificity", action="store_true")
+    ap.add_argument("--only_controls", action="store_true",
+                    help="run ONLY the control-direction legs (random / "
+                         "heads_ctl / shuffled). Pair with "
+                         "--attn_all_directions and a fresh --run_label to "
+                         "produce the attention null for an existing run: "
+                         "the finished-config skip logic would otherwise "
+                         "skip those configs in the original output dir")
+    ap.add_argument("--attn_all_directions", action="store_true",
+                    help="capture the reader-head attention readout for "
+                         "control directions too (default: target only)")
     ap.add_argument("--run_label", default=None,
                     help="default: main (tom) / code_main (code)")
     ap.add_argument("--plot_only", action="store_true")
@@ -492,15 +514,23 @@ def main():
 
     # ---- config grid ------------------------------------------------------
     # (prompt_set, mode, direction) legs; dose grid applied to each.
-    legs = [(TBD, "inject", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
-    legs += [(FBD, "delete", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
+    main_dirs = (CONTROL_DIRECTIONS if args.only_controls
+                 else TARGET_DIRECTIONS + CONTROL_DIRECTIONS)
+    legs = [(TBD, "inject", d) for d in main_dirs]
+    legs += [(FBD, "delete", d) for d in main_dirs]
     if args.only_cross_domain:
         legs = []
-    if not args.skip_specificity and not args.only_cross_domain:
+    if not args.skip_specificity and not (args.only_cross_domain
+                                          or args.only_controls):
         if args.domain == "tom":
             legs += [("basic_ab", "inject", d) for d in TARGET_DIRECTIONS]
+        # sign-reversal negative controls: same direction and norms, operator
+        # applied where its precondition fails (nothing to delete on TB /
+        # nothing to add on FB). Predicted no-ops; a flip here would mean the
+        # operators damage rather than move the wire coordinate.
         legs += [(TBD, "delete", d) for d in TARGET_DIRECTIONS]
-    if not args.skip_cross_domain:
+        legs += [(FBD, "inject", d) for d in TARGET_DIRECTIONS]
+    if not args.skip_cross_domain and not args.only_controls:
         if args.domain == "tom":
             legs += [("code_alias", "inject", d) for d in TARGET_DIRECTIONS]
         else:
@@ -524,6 +554,8 @@ def main():
         return
 
     # ---- model ------------------------------------------------------------
+    # deferred past the --dry-run early return above: pulls in transformer_lens
+    # and the full model stack, which --dry-run deliberately does not require
     from tasks.causal_analysis.cma_config import (
         EvaluationConfig, ExperimentConfig, GenerationConfig, ModelConfig,
         PatchingConfig, PromptConfig, WandbConfig)
@@ -612,6 +644,8 @@ def main():
             done.add((pset, "clean", "clean", 0.0))
 
     for pset, mode, direction in legs:
+        if all((pset, mode, direction, d) in done for d in args.doses):
+            continue  # fully resumed leg: don't pay for its clean pass
         run_clean(pset)
         for dose in args.doses:
             key = (pset, mode, direction, dose)
@@ -634,8 +668,9 @@ def main():
                 sign = +1.0 if mode == "inject" else -1.0
                 fn = make_steer_fn("add", dose, applied_norms, vec=vec,
                                    scale=use_scale, sign=sign)
-            capture_attn = (direction in TARGET_DIRECTIONS
-                            and pset in (FBD, TBD, "mirror_tom_tb"))
+            capture_attn = (pset in (FBD, TBD, "mirror_tom_tb")
+                            and (direction in TARGET_DIRECTIONS
+                                 or args.attn_all_directions))
             rows, attn_rows, _ = eval_config(
                 model, tokenizer, get_prompts(pset), [(hook_name, fn)],
                 applied_norms, clean_cache[pset], capture_attn, readers,

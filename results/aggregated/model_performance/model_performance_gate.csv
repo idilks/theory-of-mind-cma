@@ -1,0 +1,17 @@
+model,family,condition,cells,pairs_kept,pairs_requested,pass_rate
+Qwen/Qwen2.5-14B-Instruct,code,code_abstract,4,306,310,0.9871
+Qwen/Qwen2.5-14B-Instruct,code,code_answer_changes,5,402,405,0.9926
+Qwen/Qwen2.5-14B-Instruct,code,code_control,2,298,300,0.9933
+Qwen/Qwen2.5-14B-Instruct,photo,abstract_photo,6,882,900,0.98
+Qwen/Qwen2.5-14B-Instruct,photo,abstract_photo_new,6,290,300,0.9667
+Qwen/Qwen2.5-14B-Instruct,photo,answer_changes_location_only_photo,6,900,900,1.0
+Qwen/Qwen2.5-14B-Instruct,photo,answer_changes_photo,22,2046,2100,0.9743
+Qwen/Qwen2.5-14B-Instruct,photo,answer_changes_photo_new,6,286,300,0.9533
+Qwen/Qwen2.5-14B-Instruct,tom,abstract_belief,13,1079,1203,0.8969
+Qwen/Qwen2.5-14B-Instruct,tom,answer_changes_belief,22,1952,2100,0.9295
+Qwen/Qwen2.5-14B-Instruct,tom,answer_changes_location_only,12,1158,1200,0.965
+Qwen/Qwen2.5-14B-Instruct,tom,state_only_no_belief,6,858,900,0.9533
+google/gemma-2-27b-it_ungroup_gqa,photo,abstract_photo,6,1000,1000,1.0
+google/gemma-2-27b-it_ungroup_gqa,tom,abstract_belief,6,787,800,0.9838
+google/gemma-2-27b-it_ungroup_gqa,tom,answer_changes_belief,6,889,900,0.9878
+google/gemma-2-27b-it_ungroup_gqa,tom,answer_changes_location_only,6,879,900,0.9767

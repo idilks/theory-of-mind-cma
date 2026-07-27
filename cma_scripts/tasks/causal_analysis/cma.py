@@ -1,7 +1,13 @@
 #####################################
-from html import parser
-import os 
+import os
+
 import pyrootutils
+
+# NOTE: setup_root() must run before any sibling-module import below. It puts
+# the codebase root on sys.path (pythonpath=True) *and* chdir()s into it
+# (cwd=True), so importing this module has the side effect of changing the
+# process working directory — callers that resolve relative paths beforehand
+# must import it last (see scripts/merge_cumulative_ablation_chunks.py).
 root = pyrootutils.setup_root(__file__, dotenv=True, pythonpath=True, cwd=True)
 
 from utils import HF_TOKEN, HF_HOME, plot
@@ -16,10 +22,13 @@ os.environ["HF_HOME"] = HF_HOME  ## set the cache directory for Hugging Face
 # patched exp context (c1*): expected answer after patching activations from c2 to c1, causal_ans (y_c1*)
 ######################################
 
-from typing import List, Tuple
-import logging
 import argparse
-import os
+import json
+import logging
+import tempfile
+from typing import List, Tuple
+
+import torch
 import wandb
 
 logger: logging.Logger = logging.getLogger(__name__)
@@ -30,10 +39,16 @@ from utils import set_seed
 # Import modular components
 from cma_config import ExperimentConfig, CMACondition
 from models import ModelLoader
-from evaluation import GenerationEvaluator, DualAnswerStatsTracker, PromptFilter
+from evaluation import (
+    GenerationEvaluator,
+    DualAnswerStatsTracker,
+    PromptFilter,
+    calculate_ab_margin,
+    calculate_logit_probability_difference,
+)
 from patching import ActivationPatcher
 from prompt_generators import get_prompt_generator
-import torch
+from statistical_testing import permutation_test_heads, save_statistical_results
 
 def get_args():
     
@@ -391,11 +406,9 @@ class CMAOrchestrator:
             if not self.config.generate:
                 exp_logits = model(exp_input_ids)
                 if self.config.evaluation.eval_metric == "ab_forced":
-                    from evaluation import calculate_ab_margin
                     exp_logits_diff = calculate_ab_margin(exp_logits, A_tok_id, B_tok_id)
                     base_logits_diff = calculate_ab_margin(base_logits, A_tok_id, B_tok_id)
                 else:
-                    from evaluation import calculate_logit_probability_difference
                     exp_logits_diff = calculate_logit_probability_difference(
                         exp_logits, model, causal_ans=causal_ans, original_ans=exp_ans
                     )
@@ -614,8 +627,6 @@ class CMAOrchestrator:
             per_sample_path = os.path.join(final_save_folder, "causal_scores_per_sample.pt")
             if os.path.exists(per_sample_path):
                 try:
-                    from statistical_testing import permutation_test_heads, save_statistical_results
-
                     logger.info("running permutation testing for statistical significance...")
                     per_sample_scores = torch.load(per_sample_path)
 
@@ -631,7 +642,7 @@ class CMAOrchestrator:
                         threshold=threshold
                     )
 
-                    logger.info(f"statistical results saved:")
+                    logger.info("statistical results saved:")
                     logger.info(f"  full table: {csv_path}")
                     logger.info(f"  significant heads: {sig_path}")
                     logger.info(f"  summary: {summary_path}")
@@ -709,9 +720,6 @@ class CMAOrchestrator:
             return
         
         try:
-            import tempfile
-            import json
-            
             # Create artifact
             artifact_name = f"cma_prompt_responses_{self.config.prompts.context_type}_{self.config.prompts.base_rule}"
             artifact = wandb.Artifact(
@@ -792,8 +800,7 @@ class CMAOrchestrator:
             wandb.log_artifact(artifact)
             logger.info(f"Created wandb artifact: {artifact_name}")
             
-            # Clean up temp file    
-            import os
+            # Clean up temp file
             os.unlink(temp_path)
             
         except Exception as e:

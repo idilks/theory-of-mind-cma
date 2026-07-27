@@ -38,7 +38,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import torch
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -152,16 +151,25 @@ def main():
             nvec = upper_tri(R)
             for m in MANTEL_MODELS:
                 row[f"r_{m}"] = float(spearmanr(nvec, mvecs[m]).statistic)
-            if variant == "pad_projected":
-                _, p = mantel(R, model_rdms["object_divergence"],
-                              args.n_perm_mantel, rng)
-                row["p_object_div"] = p
+            if variant in ("raw", "pad_projected"):
+                # permutation p for every Mantel model, before and after
+                # projection — so "the position fit collapses to the null"
+                # is a test, not an eyeball comparison against a floor
+                # quoted from another grid.
+                for m in MANTEL_MODELS:
+                    _, p = mantel(R, model_rdms[m], args.n_perm_mantel, rng)
+                    row[f"p_{m}"] = p
+                row["p_object_div"] = row["p_object_divergence"]  # legacy name
             rows.append(row)
+            ps = (f"  p: obj {row['p_object_divergence']:.4f} slot "
+                  f"{row['p_queried_slot_abs']:.4f} ans "
+                  f"{row['p_answer_identity']:.4f}"
+                  if "p_object_divergence" in row else "")
             print(f"[{set_name}/{variant}] pre|suf = "
                   f"{row['rho_prefix|suffix']:+.3f}  obj_div r = "
                   f"{row['r_object_divergence']:+.3f}  slot_abs r = "
                   f"{row['r_queried_slot_abs']:+.3f}  answer r = "
-                  f"{row['r_answer_identity']:+.3f}")
+                  f"{row['r_answer_identity']:+.3f}{ps}")
         hsub = [h for h in head_rows if h["head_set"] == set_name]
         print(f"[{set_name}] pad subspace: mean top-{args.k} EVR = "
               f"{np.mean([h['evr_topk'] for h in hsub]):.3f}, mean PC1 "

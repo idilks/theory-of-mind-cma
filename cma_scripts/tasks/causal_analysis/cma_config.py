@@ -5,7 +5,7 @@ Replaces parameter soup with structured configuration objects.
 
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Union
+from typing import List, Optional
 import os
 
 

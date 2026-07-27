@@ -27,7 +27,7 @@ import os
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import matplotlib
 matplotlib.use('Agg')
@@ -36,10 +36,11 @@ import numpy as np
 import pandas as pd
 import torch
 from scipy.stats import pearsonr, spearmanr
+from statsmodels.stats.multitest import multipletests
 
 # add codebase to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'codebase', 'tasks', 'causal_analysis'))
-from statistical_testing import permutation_test_heads, save_statistical_results
+from statistical_testing import permutation_test_heads
 
 logging.basicConfig(
     level=logging.INFO,
@@ -217,7 +218,6 @@ def differential_test(
             p_values[layer, head] = (np.abs(null) >= np.abs(obs)).mean()
 
     # FDR correction
-    from statsmodels.stats.multitest import multipletests
     p_flat = p_values.flatten()
     reject, q_values, _, _ = multipletests(p_flat, alpha=alpha, method='fdr_bh')
     q_values = q_values.reshape(n_layers, n_heads)

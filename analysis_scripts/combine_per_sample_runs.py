@@ -50,7 +50,6 @@ def find_runs(results_dir: Path, seeds, patch_position: str):
     groups = defaultdict(dict)  # key -> {seed: (path, n_samples, eval_suffix)}
 
     for pt in results_dir.rglob("causal_scores_per_sample.pt"):
-        parts = pt.parts
         # expect: .../<condition>/template_<name>/base_rule_<X>_exp_rule_<Y>/<patch_pos>/z_seed_<S>_shuffle_<B>/logit/sample_num_<N>_<suffix>/causal_scores_per_sample.pt
         try:
             sample_dir = pt.parent.name

@@ -112,6 +112,8 @@ def main():
             print("config:", c)
         return
 
+    # deferred past the --dry-run early return above: pulls in transformer_lens
+    # and the full model stack, which --dry-run deliberately does not require
     from tasks.causal_analysis.cma_config import (
         EvaluationConfig, ExperimentConfig, GenerationConfig, ModelConfig,
         PatchingConfig, PromptConfig, WandbConfig)

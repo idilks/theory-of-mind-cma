@@ -28,7 +28,6 @@ from __future__ import annotations
 import argparse
 import logging
 import re
-from collections import defaultdict
 from itertools import combinations
 from pathlib import Path
 

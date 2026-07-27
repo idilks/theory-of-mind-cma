@@ -6,7 +6,7 @@ import logging
 import os
 import sys
 from functools import partial
-from typing import List, Tuple, Union, Callable
+from typing import List, Tuple, Union
 
 import torch
 import transformer_lens.utils as utils

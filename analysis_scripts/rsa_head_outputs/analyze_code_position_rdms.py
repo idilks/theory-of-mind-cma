@@ -31,6 +31,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import torch
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -118,7 +119,6 @@ def main():
                     help="gemma = full-head capture + story-CMA head sets")
     args = ap.parse_args()
 
-    import torch
     if args.model == "gemma":
         d = torch.load(GEMMA_ACT_PATH, weights_only=False)
         z = d["z"].float().numpy()      # (n_stim, n_layers, n_heads, head_dim)

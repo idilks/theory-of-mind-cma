@@ -6,8 +6,13 @@ Checks that detect_belief_formation_position / detect_movement_position
 return valid (non -1) positions for all 5 conditions × 2 directions.
 """
 
+import re
 import sys
-sys.path.insert(0, "codebase/tasks/causal_analysis")
+from pathlib import Path
+
+# absolute so the smoke test runs from any cwd, not just the repo root
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]
+                       / "codebase" / "tasks" / "causal_analysis"))
 
 from prompt_generators.tom_templates import UnifiedTemplateSystem
 from transformers import AutoTokenizer
@@ -44,9 +49,8 @@ for cond_name, context_type, answer_differs, detection in CONDITIONS:
                 base_found = base_pos in base_scenario if base_pos else False
                 exp_found = exp_marker in exp_scenario if exp_marker else False
 
-                # Use the actual detection function via a minimal wrapper
-                from prompt_generators.unified_tom import UnifiedTomGenerator
-                # Can't instantiate without config, so test marker presence directly
+                # UnifiedTomGenerator can't be instantiated without a config,
+                # so test marker presence directly
                 base_char_pos = base_scenario.find(base_pos) if base_pos else -1
                 exp_char_pos = exp_scenario.find(exp_marker) if exp_marker else -1
 
@@ -61,7 +65,6 @@ for cond_name, context_type, answer_differs, detection in CONDITIONS:
 
             elif detection == "movement":
                 # Photo templates — use detect_movement_position logic (regex)
-                import re
                 movement_patterns = [
                     r'drives the truck to [^.]+\.',
                     r'moves? (?:the )?[^.]+? to [^.]+\.',
