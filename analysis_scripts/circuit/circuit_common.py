@@ -64,6 +64,19 @@ SYSTEM_PROMPT_MATCHED = "You are a helpful assistant reasoning about agents' bel
 
 EVAL_VARIANTS = ["false_belief", "true_belief"]
 
+# Domain registry: variants ordered (divergent, non-divergent) so the
+# FB/TB roles map onto (code_copy, code_alias) — copy is the false-belief
+# analog (state diverges), alias the true-belief analog. Code prompts
+# always use CODE_SYSTEM_PROMPT (generator enforces it) and the single
+# indexed_list template.
+DOMAINS = {
+    "tom": dict(variants=EVAL_VARIANTS, templates=TEMPLATES,
+                capture_subdir="", default_writer_set="primary"),
+    "code": dict(variants=["code_copy", "code_alias"],
+                 templates=["indexed_list"], capture_subdir="code_domain",
+                 default_writer_set="code_abstract"),
+}
+
 
 def load_head_csv(path: Path, head_set: str | None = None) -> pd.DataFrame:
     """Load a circuit head CSV (columns layer, head, ... [, set])."""
@@ -82,7 +95,9 @@ def split_pair_indices(n_pairs: int, template: str, seed: int) -> tuple[np.ndarr
     Stage-2 steering are reported on the held-out half (design: no
     self-fit steering). Stratification = splitting within each template.
     """
-    rng = np.random.default_rng([seed, TEMPLATES.index(template)])
+    ti = (TEMPLATES.index(template) if template in TEMPLATES
+          else 100 + sum(template.encode()) % 1000)  # stable id for non-ToM templates
+    rng = np.random.default_rng([seed, ti])
     perm = rng.permutation(n_pairs)
     half = n_pairs // 2
     return np.sort(perm[:half]), np.sort(perm[half:])

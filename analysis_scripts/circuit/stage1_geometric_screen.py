@@ -51,21 +51,19 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from circuit_common import (  # noqa: E402
-    BAND_LAYERS, CAPTURE_ROOT, EVAL_VARIANTS, SITE_KEYS, STAGE1_OUT,
-    TEMPLATES, WRITER_CSV, load_head_csv, orthonormal_basis,
+    BAND_LAYERS, CAPTURE_ROOT, DOMAINS, SITE_KEYS, STAGE1_OUT,
+    WRITER_CSV, load_head_csv, orthonormal_basis,
     projection_fraction, rms_normalize, split_pair_indices,
 )
-
-FB, TB = EVAL_VARIANTS  # false_belief, true_belief
 
 
 # ---------------------------------------------------------------------------
 # loading + means
 # ---------------------------------------------------------------------------
 
-def load_captures(capture_dir: Path):
+def load_captures(capture_dir: Path, templates: list, weights_path: Path):
     caps = {}
-    for t in TEMPLATES:
+    for t in templates:
         p = capture_dir / f"{t}.pt"
         if not p.exists():
             print(f"WARNING: {p} missing — screening without template {t}")
@@ -73,13 +71,12 @@ def load_captures(capture_dir: Path):
         caps[t] = torch.load(p, map_location="cpu", weights_only=False)
     if not caps:
         sys.exit(f"no capture files under {capture_dir}")
-    weights = torch.load(capture_dir / "weights.pt", map_location="cpu",
-                         weights_only=False)
+    weights = torch.load(weights_path, map_location="cpu", weights_only=False)
     assert weights["band_layers"] == list(BAND_LAYERS)
     return caps, weights
 
 
-def split_means(caps: dict, split_seed: int):
+def split_means(caps: dict, split_seed: int, variants: list):
     """Per (template, split-half): mean z/mlp/resid per variant, float64.
 
     Returns dict[template] = {"fit_idx", "hold_idx",
@@ -94,21 +91,21 @@ def split_means(caps: dict, split_seed: int):
                  "z": {}, "mlp": {}, "resid": {}, "resid_raw": cap["resid"]}
         for half, idx in (("fit", fit_idx), ("hold", hold_idx)):
             entry["z"][half] = {v: cap["z"][v][idx].to(torch.float64).mean(0).numpy()
-                                for v in EVAL_VARIANTS}
+                                for v in variants}
             entry["mlp"][half] = {v: cap["mlp"][v][idx].to(torch.float64).mean(0).numpy()
-                                  for v in EVAL_VARIANTS}
+                                  for v in variants}
             entry["resid"][half] = {v: cap["resid"][v][idx].to(torch.float64).mean(0).numpy()
-                                    for v in EVAL_VARIANTS}
+                                    for v in variants}
         out[t] = entry
     return out
 
 
-def pooled_delta(per_template: dict, kind: str, half: str) -> np.ndarray:
-    """FB-TB mean difference pooled over templates (weighted by pair count)."""
+def pooled_delta(per_template: dict, kind: str, half: str, fb: str, tb: str) -> np.ndarray:
+    """divergent-minus-nondivergent mean difference pooled over templates."""
     num, count = None, 0
     for t, e in per_template.items():
         n = len(e[f"{half}_idx"])
-        d = e[kind][half][FB] - e[kind][half][TB]
+        d = e[kind][half][fb] - e[kind][half][tb]
         num = d * n if num is None else num + d * n
         count += n
     return num / count
@@ -191,10 +188,15 @@ def reader_read_norms(directions: np.ndarray, weights: dict) -> dict:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--capture_dir", type=Path,
-                    default=CAPTURE_ROOT / "Qwen2.5-14B-Instruct")
-    ap.add_argument("--writer_set", choices=["primary", "sensitivity"],
-                    default="primary")
+    ap.add_argument("--domain", choices=list(DOMAINS), default="tom")
+    ap.add_argument("--capture_dir", type=Path, default=None,
+                    help="default: stage1_capture/{model}[/code_domain]")
+    ap.add_argument("--weights_path", type=Path, default=None,
+                    help="default: the ToM capture dir's weights.pt")
+    ap.add_argument("--model_type", default="Qwen2.5-14B-Instruct")
+    ap.add_argument("--writer_set",
+                    choices=["primary", "sensitivity", "code_abstract"],
+                    default=None, help="default: domain's canonical set")
     ap.add_argument("--split_seed", type=int, default=0)
     ap.add_argument("--null_seed", type=int, default=1234)
     ap.add_argument("--n_null", type=int, default=1000)
@@ -203,15 +205,28 @@ def main():
     ap.add_argument("--out_dir", type=Path, default=None)
     args = ap.parse_args()
 
-    out_dir = args.out_dir or (
-        STAGE1_OUT if args.writer_set == "primary"
-        else STAGE1_OUT.parent / "stage1_sensitivity")
+    domain = DOMAINS[args.domain]
+    FB, TB = domain["variants"]  # divergent, non-divergent
+    if args.writer_set is None:
+        args.writer_set = domain["default_writer_set"]
+    tom_capture = CAPTURE_ROOT / args.model_type
+    capture_dir = args.capture_dir or (tom_capture / domain["capture_subdir"])
+    weights_path = args.weights_path or (tom_capture / "weights.pt")
+
+    if args.out_dir:
+        out_dir = args.out_dir
+    elif args.domain == "code":
+        out_dir = STAGE1_OUT.parent / "stage1_code"
+    elif args.writer_set == "sensitivity":
+        out_dir = STAGE1_OUT.parent / "stage1_sensitivity"
+    else:
+        out_dir = STAGE1_OUT
     fig_dir = out_dir / "figures"
     fig_dir.mkdir(parents=True, exist_ok=True)
 
-    caps, weights = load_captures(args.capture_dir)
+    caps, weights = load_captures(capture_dir, domain["templates"], weights_path)
     templates = list(caps.keys())
-    per_t = split_means(caps, args.split_seed)
+    per_t = split_means(caps, args.split_seed, domain["variants"])
 
     writers = load_head_csv(WRITER_CSV, head_set=args.writer_set)
     writer_pairs = list(zip(writers["layer"], writers["head"]))
@@ -234,10 +249,10 @@ def main():
         # -- deltas per scope ------------------------------------------------
         for scope in scopes:
             if scope == "pooled":
-                dz_fit = pooled_delta(per_t, "z", "fit")
-                dmlp_fit = pooled_delta(per_t, "mlp", "fit")
-                dres_fit = pooled_delta(per_t, "resid", "fit")[site_i]
-                dres_hold = pooled_delta(per_t, "resid", "hold")[site_i]
+                dz_fit = pooled_delta(per_t, "z", "fit", FB, TB)
+                dmlp_fit = pooled_delta(per_t, "mlp", "fit", FB, TB)
+                dres_fit = pooled_delta(per_t, "resid", "fit", FB, TB)[site_i]
+                dres_hold = pooled_delta(per_t, "resid", "hold", FB, TB)[site_i]
             else:
                 e = per_t[scope]
                 dz_fit = e["z"]["fit"][FB] - e["z"]["fit"][TB]
@@ -320,6 +335,7 @@ def main():
                  mean_TB_fit=np.concatenate(tb_fit).mean(0),
                  natural_scale=np.linalg.norm(pooled_dres_fit),
                  split_seed=args.split_seed, writer_set=args.writer_set,
+                 domain=args.domain, variants=np.array(domain["variants"]),
                  templates=np.array(templates),
                  **{f"fit_idx_{t}": per_t[t]["fit_idx"] for t in templates},
                  **{f"hold_idx_{t}": per_t[t]["hold_idx"] for t in templates})

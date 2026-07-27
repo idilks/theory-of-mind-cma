@@ -8,6 +8,7 @@ The pair generator returns the per-pair question (which embeds the random
 target index), so questions are not held in static dicts.
 """
 
+import logging
 from typing import List, Tuple
 
 from .base import PromptGenerator
@@ -16,7 +17,10 @@ from .code_templates import (
     CODE_SYSTEM_PROMPT,
     detect_copy_semantics_position,
     filter_answer_pool,
+    filter_answer_pool_prefill,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class CodeGenerator(PromptGenerator):
@@ -24,9 +28,26 @@ class CodeGenerator(PromptGenerator):
 
     def __init__(self, config, tokenizer):
         super().__init__(config, tokenizer)
-        self.template_system = CodeTemplateSystem(
-            answer_pool=filter_answer_pool(tokenizer)
-        )
+        try:
+            answer_pool = filter_answer_pool(tokenizer)
+            self.quote_prefill = False
+        except ValueError:
+            # Tokenizer has no merged quote+char tokens (Gemma-2): fall back
+            # to quote-prefill — prompts end with the opening quote and the
+            # readout token is the bare char. The flag propagates to the
+            # accuracy filter and the logit readout through the shared config.
+            answer_pool = filter_answer_pool_prefill(tokenizer)
+            self.quote_prefill = True
+            config.prompts.code_quote_prefill = True
+            logger.warning(
+                "filter_answer_pool collapsed for this tokenizer — enabling "
+                f"QUOTE-PREFILL readout (pool: {''.join(answer_pool)})")
+        self.template_system = CodeTemplateSystem(answer_pool=answer_pool)
+        self.system_role_ok = self._supports_system_role(tokenizer)
+        if not self.system_role_ok:
+            logger.warning("chat template lacks system role; folding "
+                           "CODE_SYSTEM_PROMPT into the user message "
+                           "(unified_tom.py convention)")
         self.template_names = config.prompts.template_names or ["indexed_list"]
         unknown = [n for n in self.template_names
                    if n not in self.template_system.templates]
@@ -88,6 +109,9 @@ class CodeGenerator(PromptGenerator):
 
                 base_formatted = self._apply_chat_template(base_full)
                 exp_formatted = self._apply_chat_template(exp_full)
+                if self.quote_prefill:
+                    base_formatted += "'"
+                    exp_formatted += "'"
 
                 base_prompts.append(base_formatted)
                 exp_prompts.append(exp_formatted)
@@ -117,11 +141,31 @@ class CodeGenerator(PromptGenerator):
             f"{question}"
         )
 
+    @staticmethod
+    def _supports_system_role(tokenizer) -> bool:
+        """Same probe as unified_tom.py — Gemma templates reject system messages."""
+        try:
+            tokenizer.apply_chat_template(
+                [{"role": "system", "content": "check"},
+                 {"role": "user", "content": "check"}],
+                tokenize=False, add_generation_prompt=True)
+            return True
+        except Exception as exc:
+            if "System role not supported" in str(exc):
+                return False
+            raise
+
     def _apply_chat_template(self, user_content: str) -> str:
-        messages = [
-            {"role": "system", "content": CODE_SYSTEM_PROMPT},
-            {"role": "user", "content": user_content},
-        ]
+        if self.system_role_ok:
+            messages = [
+                {"role": "system", "content": CODE_SYSTEM_PROMPT},
+                {"role": "user", "content": user_content},
+            ]
+        else:
+            messages = [
+                {"role": "user",
+                 "content": f"{CODE_SYSTEM_PROMPT}\n\n{user_content}"},
+            ]
         return self.tokenizer.apply_chat_template(
             messages,
             tokenize=False,

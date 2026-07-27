@@ -56,3 +56,15 @@ sensitivity,36,12,0.023744074999999976,sig>=half of 6 C1 best-source cells
 sensitivity,36,30,0.5286095,sig>=half of 6 C1 best-source cells
 sensitivity,39,20,0.609971,sig>=half of 6 C1 best-source cells
 sensitivity,39,23,2.0650956333333332,sig>=half of 6 C1 best-source cells
+code_abstract,35,30,3.07305755,code_abstract_head_list.csv
+code_abstract,29,31,1.9881757,code_abstract_head_list.csv
+code_abstract,29,34,1.4881757,code_abstract_head_list.csv
+code_abstract,35,33,1.3597974,code_abstract_head_list.csv
+code_abstract,33,3,1.2820946,code_abstract_head_list.csv
+code_abstract,32,33,1.2576014,code_abstract_head_list.csv
+code_abstract,39,23,1.1173986,code_abstract_head_list.csv
+code_abstract,32,30,1.1140203,code_abstract_head_list.csv
+code_abstract,32,34,1.0506757,code_abstract_head_list.csv
+code_abstract,34,29,1.0278716,code_abstract_head_list.csv
+code_abstract,28,14,0.84037167,code_abstract_head_list.csv
+code_abstract,36,37,0.7474662,code_abstract_head_list.csv

@@ -52,7 +52,14 @@ def build_chat_prompt(scenario: str, question: str, tokenizer,
     full = f"{scenario}\n{question}"
     msgs = [{"role": "system", "content": system_prompt},
             {"role": "user",   "content": full}]
-    return tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+    try:
+        return tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+    except Exception as exc:
+        if "System role not supported" not in str(exc):
+            raise
+        # fold, matching unified_tom.py's convention for Gemma
+        msgs = [{"role": "user", "content": f"{system_prompt}\n\n{full}"}]
+        return tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
 
 
 def main():

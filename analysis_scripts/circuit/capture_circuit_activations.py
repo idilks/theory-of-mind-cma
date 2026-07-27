@@ -45,7 +45,7 @@ sys.path.insert(0, str(ROOT / "codebase"))
 sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
-    BAND_LAYERS, CAPTURE_ROOT, EVAL_VARIANTS, READER_CSV, SITES,
+    BAND_LAYERS, CAPTURE_ROOT, DOMAINS, READER_CSV, SITES,
     SYSTEM_PROMPT_MATCHED, load_head_csv,
 )
 
@@ -113,7 +113,9 @@ def save_weight_slices(model, out_path: Path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--template", required=True)
+    ap.add_argument("--domain", choices=list(DOMAINS), default="tom")
+    ap.add_argument("--template", default=None,
+                    help="required for tom; defaults to indexed_list for code")
     ap.add_argument("--model_type", default="Qwen2.5-14B-Instruct")
     ap.add_argument("--prompt_num", type=int, default=150,
                     help="matched FB/TB pairs per template")
@@ -126,7 +128,14 @@ def main():
     ap.add_argument("--device_map", type=str, default="cuda")
     args = ap.parse_args()
 
-    out_dir = args.out_dir or (CAPTURE_ROOT / args.model_type)
+    domain = DOMAINS[args.domain]
+    variants = domain["variants"]
+    if args.template is None:
+        if len(domain["templates"]) != 1:
+            sys.exit("--template is required for the tom domain")
+        args.template = domain["templates"][0]
+    out_dir = args.out_dir or (CAPTURE_ROOT / args.model_type
+                               / domain["capture_subdir"])
     out_dir.mkdir(parents=True, exist_ok=True)
 
     random.seed(args.seed)
@@ -155,13 +164,15 @@ def main():
     if args.save_weights:
         save_weight_slices(model, out_dir / "weights.pt")
 
-    log.info(f"generating {args.prompt_num} matched FB/TB pairs for {args.template}")
+    log.info(f"generating {args.prompt_num} matched {variants[0]}/{variants[1]} "
+             f"pairs for {args.template}")
+    # code variants ignore the system prompt arg and use CODE_SYSTEM_PROMPT
     prompt_sets = generate_eval_prompts(
         tokenizer, [args.template], args.prompt_num,
-        SYSTEM_PROMPT_MATCHED, EVAL_VARIANTS, prefill_mode="per_variant",
+        SYSTEM_PROMPT_MATCHED, variants, prefill_mode="per_variant",
     )
-    n = len(prompt_sets[EVAL_VARIANTS[0]]["prompts"])
-    assert all(len(prompt_sets[v]["prompts"]) == n for v in EVAL_VARIANTS)
+    n = len(prompt_sets[variants[0]]["prompts"])
+    assert all(len(prompt_sets[v]["prompts"]) == n for v in variants)
 
     names, names_filter = build_names_filter()
     n_band = len(BAND_LAYERS)
@@ -171,15 +182,15 @@ def main():
     device = next(model.parameters()).device
 
     z = {v: torch.full((n, n_band, n_heads, d_head), float("nan"), dtype=torch.float16)
-         for v in EVAL_VARIANTS}
+         for v in variants}
     mlp = {v: torch.full((n, n_band, d_model), float("nan"), dtype=torch.float16)
-           for v in EVAL_VARIANTS}
+           for v in variants}
     resid = {v: torch.full((n, len(SITES), d_model), float("nan"), dtype=torch.float32)
-             for v in EVAL_VARIANTS}
-    behavior = {v: [] for v in EVAL_VARIANTS}
+             for v in variants}
+    behavior = {v: [] for v in variants}
 
     site_names = list(SITES.values())
-    for variant in EVAL_VARIANTS:
+    for variant in variants:
         ps = prompt_sets[variant]
         for i, prompt in enumerate(ps["prompts"]):
             tokens = tokenizer(prompt, return_tensors="pt",
@@ -209,29 +220,32 @@ def main():
             if (i + 1) % 25 == 0:
                 log.info(f"  {variant}: {i + 1}/{n}")
 
-    beh_df = pd.concat([pd.DataFrame(behavior[v]) for v in EVAL_VARIANTS],
+    beh_df = pd.concat([pd.DataFrame(behavior[v]) for v in variants],
                        ignore_index=True)
-    for v in EVAL_VARIANTS:
+    for v in variants:
         sub = beh_df[beh_df["variant"] == v]
         log.info(f"{v}: mean p_correct={sub['p_correct'].mean():.3f} "
                  f"mean p_alt={sub['p_alt'].mean():.3f} "
                  f"collisions={int(sub['first_token_collision'].sum())}")
-    tb = beh_df[beh_df["variant"] == "true_belief"]["p_correct"].mean()
+    # non-divergent variant (true_belief / code_alias) is the working-model check
+    nondiv = variants[1]
+    tb = beh_df[beh_df["variant"] == nondiv]["p_correct"].mean()
     if tb < 0.9:
-        log.warning(f"true_belief mean p_correct={tb:.3f} < 0.9 — protocol "
-                    "expects a working model (~0.99); check prompts/prefill")
+        log.warning(f"{nondiv} mean p_correct={tb:.3f} < 0.9 — protocol "
+                    "expects a working model; check prompts/prefill")
 
     out_path = out_dir / f"{args.template}.pt"
     torch.save({
         "z": z, "mlp": mlp, "resid": resid,
-        "prompts": {v: prompt_sets[v]["prompts"] for v in EVAL_VARIANTS},
-        "behavior": {v: behavior[v] for v in EVAL_VARIANTS},
+        "prompts": {v: prompt_sets[v]["prompts"] for v in variants},
+        "behavior": {v: behavior[v] for v in variants},
         "meta": {
             "template": args.template, "model_type": args.model_type,
-            "n_pairs": n, "seed": args.seed,
-            "system_prompt": SYSTEM_PROMPT_MATCHED,
+            "domain": args.domain, "n_pairs": n, "seed": args.seed,
+            "system_prompt": ("CODE_SYSTEM_PROMPT" if args.domain == "code"
+                              else SYSTEM_PROMPT_MATCHED),
             "prefill_mode": "per_variant",
-            "eval_variants": EVAL_VARIANTS,
+            "eval_variants": variants,
             "band_layers": list(BAND_LAYERS),
             "sites": dict(SITES), "position": -1,
         },

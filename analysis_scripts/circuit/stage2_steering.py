@@ -75,16 +75,20 @@ sys.path.insert(0, str(ROOT / "codebase"))
 sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
-    BAND_LAYERS, CAPTURE_ROOT, EVAL_VARIANTS, INJECTION_HOOKS,
+    BAND_LAYERS, CAPTURE_ROOT, DOMAINS, EVAL_VARIANTS, INJECTION_HOOKS,
     READER_DLA_LAYERS, SITE_KEYS, STAGE1_OUT, STAGE2_OUT_ROOT,
     SYSTEM_PROMPT_MATCHED, TEMPLATES, WRITER_CSV, load_head_csv,
     split_pair_indices,
 )
 
-FB, TB = EVAL_VARIANTS
+FB, TB = EVAL_VARIANTS  # ToM names kept for the tom-domain legs
 DOSES = [0.5, 1.0, 2.0, 4.0]
 CONTROL_DIRECTIONS = ["random", "heads_ctl", "shuffled"]
 TARGET_DIRECTIONS = ["target_topk", "target_rank1"]
+# Prompt sets steered with a direction fit in the OTHER domain get additive
+# steering only (subspace swap toward a foreign domain mean would inject that
+# domain's content wholesale), at the receiving domain's natural scale.
+# Which sets those are depends on the run's domain — see cross_sets in main.
 
 log = logging.getLogger("circuit-steer")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -94,11 +98,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 # prompt sets
 # ---------------------------------------------------------------------------
 
-def heldout_tom_prompts(capture_dir: Path, dirs_npz, variant: str) -> list[dict]:
-    """Held-out matched prompts from the Stage-1 capture (never re-generated,
-    so they are byte-identical to what the directions were NOT fit on)."""
+def heldout_capture_prompts(capture_dir: Path, dirs_npz, variant: str,
+                            templates: list, divergent: str) -> list[dict]:
+    """Held-out matched prompts from a Stage-1 capture (never re-generated,
+    so they are byte-identical to what the directions were NOT fit on).
+    `divergent` names the FB-analog variant; "believed" = the stale value."""
     rows = []
-    for t in TEMPLATES:
+    for t in templates:
         p = capture_dir / f"{t}.pt"
         if not p.exists():
             continue
@@ -108,8 +114,8 @@ def heldout_tom_prompts(capture_dir: Path, dirs_npz, variant: str) -> list[dict]
         for i in hold:
             b = beh[int(i)]
             correct, alt = b["correct"], b["alt"]
-            believed = correct if variant == FB else alt
-            current = alt if variant == FB else correct
+            believed = correct if variant == divergent else alt
+            current = alt if variant == divergent else correct
             rows.append(dict(prompt=cap["prompts"][variant][int(i)],
                              template=t, pair_idx=int(i), variant=variant,
                              correct=correct, alt=alt,
@@ -140,9 +146,12 @@ def fresh_prompt_set(tokenizer, variant: str, n: int, seed: int) -> list[dict]:
 # directions
 # ---------------------------------------------------------------------------
 
-def build_control_directions(capture_dir: Path, split_seed: int, seed: int,
-                             site_i: int, d_model: int) -> dict[str, np.ndarray]:
+def build_control_directions(capture_dir: Path, weights_path: Path,
+                             split_seed: int, seed: int, site_i: int,
+                             d_model: int, variants: list, templates: list,
+                             heads_ctl_set: str) -> dict[str, np.ndarray]:
     """Unit control directions computed from the fit half of the capture."""
+    fb_v, tb_v = variants
     rng = np.random.default_rng(seed)
     out = {"random": None, "heads_ctl": None, "shuffled": None}
 
@@ -151,7 +160,7 @@ def build_control_directions(capture_dir: Path, split_seed: int, seed: int,
 
     # shuffled-pair Dresid + fit-half Delta-z (for heads_ctl), per template
     dz_sum, shuf_sum, n_tot = None, None, 0
-    for t in TEMPLATES:
+    for t in templates:
         p = capture_dir / f"{t}.pt"
         if not p.exists():
             continue
@@ -159,26 +168,25 @@ def build_control_directions(capture_dir: Path, split_seed: int, seed: int,
         n = cap["meta"]["n_pairs"]
         fit, _ = split_pair_indices(n, t, split_seed)
         k = len(fit)
-        rf = cap["resid"][FB][fit, site_i].to(torch.float64).numpy()
-        rt = cap["resid"][TB][fit, site_i].to(torch.float64).numpy()
+        rf = cap["resid"][fb_v][fit, site_i].to(torch.float64).numpy()
+        rt = cap["resid"][tb_v][fit, site_i].to(torch.float64).numpy()
         pool = np.concatenate([rf, rt])
         flip = rng.permutation(2 * k)[:k]
         signs = np.full(2 * k, -1.0)
         signs[flip] = 1.0
         shuf = (pool * signs[:, None]).sum(0) / k
         shuf_sum = shuf * k if shuf_sum is None else shuf_sum + shuf * k
-        dz = (cap["z"][FB][fit].to(torch.float64).mean(0)
-              - cap["z"][TB][fit].to(torch.float64).mean(0)).numpy()
+        dz = (cap["z"][fb_v][fit].to(torch.float64).mean(0)
+              - cap["z"][tb_v][fit].to(torch.float64).mean(0)).numpy()
         dz_sum = dz * k if dz_sum is None else dz_sum + dz * k
         n_tot += k
     shuf = shuf_sum / n_tot
     out["shuffled"] = shuf / np.linalg.norm(shuf)
 
-    weights = torch.load(capture_dir / "weights.pt", map_location="cpu",
-                         weights_only=False)
+    weights = torch.load(weights_path, map_location="cpu", weights_only=False)
     w_o = weights["W_O_band"].to(torch.float64).numpy()
     dz = dz_sum / n_tot
-    writers = load_head_csv(WRITER_CSV, head_set="primary")
+    writers = load_head_csv(WRITER_CSV, head_set=heads_ctl_set)
     wset = set(zip(writers["layer"], writers["head"]))
     bi = {L: i for i, L in enumerate(BAND_LAYERS)}
     n_heads = weights["n_heads"]
@@ -316,6 +324,13 @@ def eval_config(model, tokenizer, prompts, fwd_hooks, applied_norms,
 
 def render_figures(out_dir: Path):
     per = pd.read_csv(out_dir / "per_prompt.csv")
+    # preemptable-partition requeues can run overlapping attempts that
+    # append the same configs more than once — keep the first occurrence
+    key = ["prompt_set", "mode", "direction", "dose", "template", "pair_idx"]
+    n0 = len(per)
+    per = per.drop_duplicates(subset=key, keep="first")
+    if len(per) < n0:
+        log.info(f"dropped {n0 - len(per)} duplicate rows (requeued-job appends)")
     fig_dir = out_dir / "figures"
     fig_dir.mkdir(exist_ok=True)
     summary = (per.groupby(["prompt_set", "mode", "direction", "dose"])
@@ -329,44 +344,42 @@ def render_figures(out_dir: Path):
                .reset_index())
     summary.to_csv(out_dir / "summary.csv", index=False)
 
-    panels = [("true_belief", "inject", "flip_score",
-               "inject FB-direction into TB\n(flip toward believed = rerouting)"),
-              ("false_belief", "delete", "flip_score",
-               "delete direction from FB\n(flip toward current = reversion)"),
-              ("basic_ab", "inject", "p_correct",
-               "specificity: basic_ab accuracy under inject"),
-              ("true_belief", "delete", "p_correct",
-               "specificity: TB accuracy under delete"),
-              ("code_alias", "inject", "flip_score",
-               "cross-domain: code_alias flip toward stale value"),
-              ("true_belief", "inject", "kl",
-               "collateral: KL(steered||clean), TB inject")]
-    fig, axes = plt.subplots(2, 3, figsize=(15, 8))
-    for ax, (pset, mode, metric, title) in zip(axes.flat, panels):
-        sub = summary[(summary["prompt_set"] == pset) & (summary["mode"] == mode)]
-        if sub.empty:
+    # data-driven grid: one panel per observed (prompt_set, mode) leg,
+    # one figure per metric (works for both tom- and code-domain runs)
+    combos = (summary[summary["direction"] != "clean"]
+              [["prompt_set", "mode"]].drop_duplicates().values.tolist())
+    for metric in ("flip_score", "p_correct", "kl"):
+        ncols = 3
+        nrows = max(1, -(-len(combos) // ncols))
+        fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows),
+                                 squeeze=False)
+        for ax in axes.flat:
             ax.set_axis_off()
-            continue
-        clean = summary[(summary["prompt_set"] == pset)
-                        & (summary["direction"] == "clean")]
-        if not clean.empty:
-            ax.axhline(clean[metric].iloc[0], color="0.6", ls=":", lw=1,
-                       label="clean baseline")
-        for d, g in sub[sub["direction"] != "clean"].groupby("direction"):
-            g = g.sort_values("dose")
-            ax.plot(g["dose"], g[metric], marker="o", label=d)
-        ax.set_title(title, fontsize=9)
-        ax.set_xlabel("dose (× natural scale)")
-        ax.set_ylabel(metric)
-        ax.set_xscale("log")
-        ax.legend(fontsize=6)
-    fig.tight_layout()
-    fig.savefig(fig_dir / "dose_response_grid.png", dpi=150)
-    plt.close(fig)
+        for ax, (pset, mode) in zip(axes.flat, combos):
+            ax.set_axis_on()
+            sub = summary[(summary["prompt_set"] == pset)
+                          & (summary["mode"] == mode)]
+            clean = summary[(summary["prompt_set"] == pset)
+                            & (summary["direction"] == "clean")]
+            if not clean.empty and metric != "kl":
+                ax.axhline(clean[metric].iloc[0], color="0.6", ls=":", lw=1,
+                           label="clean")
+            for d, g in sub[sub["direction"] != "clean"].groupby("direction"):
+                g = g.sort_values("dose")
+                ax.plot(g["dose"], g[metric], marker="o", label=d)
+            ax.set_title(f"{pset} / {mode}", fontsize=9)
+            ax.set_xlabel("dose (× natural scale)")
+            ax.set_ylabel(metric)
+            ax.set_xscale("log")
+            ax.legend(fontsize=6)
+        fig.tight_layout()
+        fig.savefig(fig_dir / f"dose_{metric}.png", dpi=150)
+        plt.close(fig)
 
     attn_path = out_dir / "attention.csv"
     if attn_path.exists():
         at = pd.read_csv(attn_path)
+        at = at.drop_duplicates(subset=key + ["layer", "head"], keep="first")
         at["shift"] = at["mass_believed"] - at["mass_current"]
         piv = (at.groupby(["prompt_set", "mode", "direction", "dose"])["shift"]
                .mean().reset_index())
@@ -397,10 +410,11 @@ def render_figures(out_dir: Path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--capture_dir", type=Path,
-                    default=CAPTURE_ROOT / "Qwen2.5-14B-Instruct")
+    ap.add_argument("--domain", choices=list(DOMAINS), default="tom")
+    ap.add_argument("--capture_dir", type=Path, default=None,
+                    help="default: stage1_capture/{model}[/code_domain]")
     ap.add_argument("--directions", type=Path, default=None,
-                    help="default: <stage1>/directions_{site}.npz")
+                    help="default: the domain's stage1 directions_{site}.npz")
     ap.add_argument("--site", choices=SITE_KEYS, default="L41")
     ap.add_argument("--model_type", default="Qwen2.5-14B-Instruct")
     ap.add_argument("--doses", type=float, nargs="+", default=DOSES)
@@ -409,8 +423,16 @@ def main():
     ap.add_argument("--n_code", type=int, default=150)
     ap.add_argument("--n_basic", type=int, default=225)
     ap.add_argument("--skip_cross_domain", action="store_true")
+    ap.add_argument("--only_cross_domain", action="store_true",
+                    help="run ONLY the cross-domain legs (rescale reruns)")
+    ap.add_argument("--cross_scale", choices=["default", "native", "other"],
+                    default="default",
+                    help="scale for cross-set injections: default = native "
+                    "for tom runs / receiving-domain for code runs (the "
+                    "original conventions); native/other force it")
     ap.add_argument("--skip_specificity", action="store_true")
-    ap.add_argument("--run_label", default="main")
+    ap.add_argument("--run_label", default=None,
+                    help="default: main (tom) / code_main (code)")
     ap.add_argument("--plot_only", action="store_true")
     ap.add_argument("--dry_run", action="store_true",
                     help="build directions + config list, no model")
@@ -418,13 +440,22 @@ def main():
     ap.add_argument("--device_map", type=str, default="cuda")
     args = ap.parse_args()
 
-    out_dir = STAGE2_OUT_ROOT / args.model_type / f"{args.site}_{args.run_label}"
+    domain = DOMAINS[args.domain]
+    FBD, TBD = domain["variants"]  # divergent, non-divergent
+    run_label = args.run_label or ("main" if args.domain == "tom" else "code_main")
+    tom_root = CAPTURE_ROOT / args.model_type
+    capture_dir = args.capture_dir or (tom_root / domain["capture_subdir"])
+    weights_path = tom_root / "weights.pt"
+    stage1_dir = (STAGE1_OUT if args.domain == "tom"
+                  else STAGE1_OUT.parent / "stage1_code")
+
+    out_dir = STAGE2_OUT_ROOT / args.model_type / f"{args.site}_{run_label}"
     out_dir.mkdir(parents=True, exist_ok=True)
     if args.plot_only:
         render_figures(out_dir)
         return
 
-    dirs_path = args.directions or (STAGE1_OUT / f"directions_{args.site}.npz")
+    dirs_path = args.directions or (stage1_dir / f"directions_{args.site}.npz")
     dz = np.load(dirs_path)
     site_i = SITE_KEYS.index(args.site)
     hook_name = INJECTION_HOOKS[args.site]
@@ -436,18 +467,46 @@ def main():
     log.info(f"directions: {dirs_path.name} k={int(dz['k'])} "
              f"natural_scale={scale:.2f} hook={hook_name}")
 
-    controls = build_control_directions(args.capture_dir, args.split_seed,
-                                        args.control_seed, site_i, d_model)
+    # cross-set injections run at the RECEIVING domain's natural scale when
+    # that domain's stage1 file exists (else fall back to the native scale)
+    cross_sets = {"code_alias"} if args.domain == "tom" else {"mirror_tom_tb"}
+    other_stage1 = (STAGE1_OUT.parent / "stage1_code" if args.domain == "tom"
+                    else STAGE1_OUT)
+    other_npz_path = other_stage1 / f"directions_{args.site}.npz"
+    dz_other = np.load(other_npz_path) if other_npz_path.exists() else None
+    if args.cross_scale == "native":
+        cross_scale = scale
+    elif args.cross_scale == "other":
+        if dz_other is None:
+            sys.exit(f"--cross_scale other needs {other_npz_path}")
+        cross_scale = float(dz_other["natural_scale"])
+    else:  # original conventions: tom runs used native scale (keeps resumed
+        # runs consistent); code runs use the receiving (ToM) scale
+        cross_scale = (scale if args.domain == "tom" or dz_other is None
+                       else float(dz_other["natural_scale"]))
+
+    controls = build_control_directions(
+        capture_dir, weights_path, args.split_seed, args.control_seed,
+        site_i, d_model, domain["variants"], domain["templates"],
+        heads_ctl_set=("primary" if args.domain == "tom" else "code_abstract"))
 
     # ---- config grid ------------------------------------------------------
     # (prompt_set, mode, direction) legs; dose grid applied to each.
-    legs = [(TB, "inject", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
-    legs += [(FB, "delete", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
-    if not args.skip_specificity:
-        legs += [("basic_ab", "inject", d) for d in TARGET_DIRECTIONS]
-        legs += [(TB, "delete", d) for d in TARGET_DIRECTIONS]
+    legs = [(TBD, "inject", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
+    legs += [(FBD, "delete", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
+    if args.only_cross_domain:
+        legs = []
+    if not args.skip_specificity and not args.only_cross_domain:
+        if args.domain == "tom":
+            legs += [("basic_ab", "inject", d) for d in TARGET_DIRECTIONS]
+        legs += [(TBD, "delete", d) for d in TARGET_DIRECTIONS]
     if not args.skip_cross_domain:
-        legs += [("code_alias", "inject", d) for d in TARGET_DIRECTIONS]
+        if args.domain == "tom":
+            legs += [("code_alias", "inject", d) for d in TARGET_DIRECTIONS]
+        else:
+            # mirror: code direction into held-out ToM true_belief prompts
+            # (pre-registered prediction: null, given wire cos = 0.0997)
+            legs += [("mirror_tom_tb", "inject", d) for d in TARGET_DIRECTIONS]
 
     per_path = out_dir / "per_prompt.csv"
     attn_path = out_dir / "attention.csv"
@@ -483,8 +542,7 @@ def main():
     model.eval()
     device = next(model.parameters()).device
 
-    weights = torch.load(args.capture_dir / "weights.pt", map_location="cpu",
-                         weights_only=False)
+    weights = torch.load(weights_path, map_location="cpu", weights_only=False)
     readers = [r for r in weights["readers"]
                if READER_DLA_LAYERS[0] <= r["layer"] <= READER_DLA_LAYERS[1]]
     pattern_names = {f"blocks.{r['layer']}.attn.hook_pattern" for r in readers}
@@ -501,8 +559,16 @@ def main():
 
     def get_prompts(pset):
         if pset not in prompt_sets:
-            if pset in (FB, TB):
-                prompt_sets[pset] = heldout_tom_prompts(args.capture_dir, dz, pset)
+            if pset in (FBD, TBD):
+                prompt_sets[pset] = heldout_capture_prompts(
+                    capture_dir, dz, pset, domain["templates"], divergent=FBD)
+            elif pset == "mirror_tom_tb":
+                if dz_other is None:
+                    sys.exit("mirror leg needs the ToM stage1 directions file "
+                             f"({other_npz_path}) for held-out indices")
+                prompt_sets[pset] = heldout_capture_prompts(
+                    tom_root, dz_other, TB, DOMAINS["tom"]["templates"],
+                    divergent=FB)
             elif pset == "basic_ab":
                 prompt_sets[pset] = fresh_prompt_set(tokenizer, "basic_ab",
                                                      args.n_basic, args.control_seed)
@@ -535,7 +601,7 @@ def main():
         if pset in clean_cache:
             return
         prompts = get_prompts(pset)
-        capture_attn = pset in (FB, TB)
+        capture_attn = pset in (FBD, TBD, "mirror_tom_tb")
         log.info(f"clean pass: {pset}")
         rows, attn_rows, logprobs = eval_config(
             model, tokenizer, prompts, [], applied_norms, None,
@@ -552,11 +618,12 @@ def main():
             if key in done:
                 continue
             log.info(f"config: {key}")
+            use_scale = cross_scale if pset in cross_sets else scale
             if direction == "target_topk":
-                if pset == "code_alias":
+                if pset in cross_sets:
                     fn = make_steer_fn("add", dose, applied_norms,
                                        vec=dir_vecs["cross_topk_delta"],
-                                       scale=scale, sign=+1.0)
+                                       scale=use_scale, sign=+1.0)
                 else:
                     mu = mu_fb_t if mode == "inject" else mu_tb_t
                     fn = make_steer_fn("swap", dose, applied_norms,
@@ -566,9 +633,9 @@ def main():
                                else direction]
                 sign = +1.0 if mode == "inject" else -1.0
                 fn = make_steer_fn("add", dose, applied_norms, vec=vec,
-                                   scale=scale, sign=sign)
+                                   scale=use_scale, sign=sign)
             capture_attn = (direction in TARGET_DIRECTIONS
-                            and pset in (FB, TB))
+                            and pset in (FBD, TBD, "mirror_tom_tb"))
             rows, attn_rows, _ = eval_config(
                 model, tokenizer, get_prompts(pset), [(hook_name, fn)],
                 applied_norms, clean_cache[pset], capture_attn, readers,
@@ -577,10 +644,10 @@ def main():
             done.add(key)
 
     (out_dir / "config.json").write_text(json.dumps(dict(
-        vars(args), capture_dir=str(args.capture_dir),
+        vars(args), domain=args.domain, capture_dir=str(capture_dir),
         directions=str(dirs_path), out_dir=str(out_dir), doses=args.doses,
-        k=int(dz["k"]), natural_scale=scale, hook=hook_name,
-        writer_set=str(dz["writer_set"]),
+        k=int(dz["k"]), natural_scale=scale, cross_scale=cross_scale,
+        hook=hook_name, writer_set=str(dz["writer_set"]),
     ), indent=2, default=str))
     render_figures(out_dir)
     log.info(f"done -> {out_dir}")

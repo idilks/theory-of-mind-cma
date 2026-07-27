@@ -184,6 +184,11 @@ class GenerationEvaluator:
         
         elif self.config.prompts.context_type == "code":
             from prompt_generators.code_templates import extract_value_from_code_response, code_values_match
+            if getattr(self.config.prompts, "code_quote_prefill", False):
+                # Prompt was prefilled through the opening quote, so the
+                # generation starts mid-answer (e.g. "R'] ..."); restore the
+                # quote so the quoted-char extraction regex applies.
+                gen_ans = "'" + gen_ans
             extracted = extract_value_from_code_response(gen_ans)
             matches = code_values_match(extracted, correct_ans)
             if not matches and extracted == "":

@@ -31,6 +31,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import torch
 from scipy import stats as sps
 import matplotlib
 
@@ -41,13 +42,16 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 from condition_registry import resolve_best_source  # noqa: E402
 from h2_additivity_robustness import (  # noqa: E402  (shares style + loaders)
-    load_tom_fp, build_code_fp, N_LAYERS, N_HEADS, N_PERM,
-    BLUE, ORANGE, GREEN, GRAY, RESULTS_ROOT, CROSS_RULES, WITHIN_RULES)
+    load_tom_fp, build_code_fp, build_gemma_fp, N_LAYERS, N_HEADS, N_PERM,
+    GEMMA_SHAPE, GEMMA_ROOT, BLUE, ORANGE, GREEN, GRAY, RESULTS_ROOT,
+    CROSS_RULES, WITHIN_RULES)
 
 OUT = REPO / "writeups/results_for_pi/fingerprint_scatters"
 FIG = OUT / "figures"
 HEADSETS = REPO / "results/aggregated/code_head_sets"
 RNG = np.random.default_rng(0)
+
+GEMMA_N_LAYERS, GEMMA_N_HEADS = GEMMA_SHAPE
 
 TOM_CONDS = {
     "C1": ("abstract_belief", CROSS_RULES),
@@ -61,6 +65,16 @@ LABELS = {
     "C3": "C3 belief+answer", "C5": "C5 answer (ToM frame)",
     "C6": "C6 answer (photo frame)", "SUM_C2_C6": "C2 + C6 (photo-frame sum)",
     "code_abs": "code abstract", "code_ctl": "code control",
+    "gC1": "Gemma C1 belief (abstract)", "gC2": "Gemma C2 photo (abstract)",
+    "gC3": "Gemma C3 belief+answer", "gC5": "Gemma C5 answer (ToM frame)",
+    "gSUM_C1_C5": "Gemma C1 + C5 (own-frame sum)",
+}
+
+GEMMA_CONDS = {
+    "gC1": ("abstract_belief", CROSS_RULES, "gemma_c1_head_list.csv"),
+    "gC2": ("abstract_photo", CROSS_RULES, "gemma_c2_head_list.csv"),
+    "gC3": ("answer_changes_belief", CROSS_RULES, "gemma_c3_head_list.csv"),
+    "gC5": ("answer_changes_location_only", WITHIN_RULES, "gemma_c5_head_list.csv"),
 }
 
 
@@ -90,10 +104,11 @@ def published_set(csv_name: str) -> set:
     return heads
 
 
-def flat_idx(heads: set) -> np.ndarray:
-    mask = np.zeros(N_LAYERS * N_HEADS, dtype=bool)
+def flat_idx(heads: set, n_layers: int = N_LAYERS,
+             n_heads: int = N_HEADS) -> np.ndarray:
+    mask = np.zeros(n_layers * n_heads, dtype=bool)
     for l, h in heads:
-        mask[l * N_HEADS + h] = True
+        mask[l * n_heads + h] = True
     return mask
 
 
@@ -152,6 +167,60 @@ def scatter_pair(xk, yk, fps, sig, path):
     }
 
 
+def noise_scale_diagnostic(fps, sig, cell_sources):
+    """Why is Spearman lower than Pearson, and lower still under raw?
+
+    Clamping is per-cell clip(scores, 0) then mean, so a head's across-cell
+    noise *scale* leaks into its clamped score: a head bouncing +-2 averages
+    to ~+1 clamped but ~0 raw. Noise scale is a property of the head and is
+    shared across conditions, so clamped fingerprints agree with each other
+    even among heads carrying no signal. Pearson barely notices (that
+    agreement lives at tiny magnitudes); Spearman does, because ranks ignore
+    magnitude.
+
+    Returns rho(fingerprint, across-cell SD) over non-significant heads.
+    """
+    rows = []
+    for key, (root, folder, rules, shape) in cell_sources.items():
+        best = resolve_best_source(root, [folder], rules)
+        cells = np.stack([
+            torch.load(e["scores_pt"], map_location="cpu",
+                       weights_only=False).float().numpy().ravel()
+            for _, e in sorted(best.items())])
+        sd = cells.std(axis=0)
+        null = ~sig[key]
+        rows.append({
+            "condition": key, "n_null_heads": int(null.sum()),
+            "rho_clamped_vs_cellSD": float(
+                sps.spearmanr(fps[key]["clamped"][null], sd[null]).statistic),
+            "rho_raw_vs_cellSD": float(
+                sps.spearmanr(fps[key]["raw"][null], sd[null]).statistic)})
+    return rows
+
+
+def restricted_spearman(xk, yk, fps, sig):
+    """Spearman with the noise sea removed, two ways.
+
+    sig-union: heads significant in either condition. Valid as a diagnostic
+      for pairs that SHARE machinery; for dissociated pairs the union is two
+      near-disjoint clusters (high-in-x / high-in-y), so selection alone
+      manufactures a negative correlation (Berkson). Flagged, not hidden.
+    null-only: heads significant in neither — isolates how much agreement
+      clamping manufactures where there is no signal to find.
+    """
+    keep, null = sig[xk] | sig[yk], ~(sig[xk] | sig[yk])
+    out = {"pair": f"{xk}~{yk}", "n_sig_union": int(keep.sum()),
+           "n_null": int(null.sum())}
+    for key in ("clamped", "raw"):
+        x, y = fps[xk][key], fps[yk][key]
+        out[f"rho_full_{key}"] = float(sps.spearmanr(x, y).statistic)
+        out[f"rho_sigunion_{key}"] = float(
+            sps.spearmanr(x[keep], y[keep]).statistic)
+        out[f"rho_nullonly_{key}"] = float(
+            sps.spearmanr(x[null], y[null]).statistic)
+    return out
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     FIG.mkdir(parents=True, exist_ok=True)
@@ -172,8 +241,23 @@ def main():
     print(f"sig[code_abs]: {sig['code_abs'].sum()}  sig[code_ctl]: {sig['code_ctl'].sum()}"
           f"  sig[C2 or C6]: {sig['SUM_C2_C6'].sum()}")
 
+    # -- Gemma replication (46x32 = 1472 heads; within-Gemma pairs only,
+    #    no head correspondence across architectures)
+    gemma_prov = []
+    for k, (folder, rules, csv_name) in GEMMA_CONDS.items():
+        fps[k], prov = build_gemma_fp(folder, rules)
+        gemma_prov.extend(prov)
+        sig[k] = flat_idx(published_set(csv_name),
+                          GEMMA_N_LAYERS, GEMMA_N_HEADS)
+        print(f"sig[{k}]: {sig[k].sum()} heads ({len(prov)} cells)")
+    fps["gSUM_C1_C5"] = {k: fps["gC1"][k] + fps["gC5"][k]
+                         for k in ("raw", "clamped")}
+    sig["gSUM_C1_C5"] = sig["gC1"] | sig["gC5"]
+
     PAIRS = [("C1", "C5"), ("C1", "C2"), ("C5", "C6"), ("C3", "SUM_C2_C6"),
-             ("code_abs", "C1"), ("code_ctl", "C5"), ("code_abs", "code_ctl")]
+             ("code_abs", "C1"), ("code_ctl", "C5"), ("code_abs", "code_ctl"),
+             ("gC1", "gC5"), ("gC1", "gC2"), ("gC3", "gSUM_C1_C5"),
+             ("gC3", "gC1"), ("gC3", "gC5")]
 
     rows = []
     for xk, yk in PAIRS:
@@ -182,9 +266,32 @@ def main():
 
     df = pd.DataFrame(rows)
     df.to_csv(OUT / "stats_scatter_pairs.csv", index=False)
+
+    # -- why Spearman is low, and what it looks like without the noise sea
+    cell_sources = {k: (RESULTS_ROOT, folder, rules, (N_LAYERS, N_HEADS))
+                    for k, (folder, rules) in TOM_CONDS.items()}
+    cell_sources.update({
+        k: (GEMMA_ROOT, folder, rules, GEMMA_SHAPE)
+        for k, (folder, rules, _) in GEMMA_CONDS.items()})
+    df_sd = pd.DataFrame(noise_scale_diagnostic(fps, sig, cell_sources))
+    df_sd.to_csv(OUT / "stats_noise_scale.csv", index=False)
+
+    df_restr = pd.DataFrame([restricted_spearman(xk, yk, fps, sig)
+                             for xk, yk in PAIRS])
+    df_restr.to_csv(OUT / "stats_spearman_restricted.csv", index=False)
+
     frag = ["<!-- AUTO-GENERATED by scripts/build_fingerprint_scatters.py -->\n",
-            "### Pairwise fingerprint statistics (1920 heads per pair)\n",
-            df.round(3).to_markdown(index=False) + "\n"]
+            "### Pairwise fingerprint statistics (all heads per pair)\n",
+            df.round(3).to_markdown(index=False) + "\n",
+            "\n### Clamping leaks per-head noise scale into the score\n",
+            "Spearman of the fingerprint against the head's across-cell SD,"
+            " over non-significant heads only.\n",
+            df_sd.round(3).to_markdown(index=False) + "\n",
+            "\n### Spearman with the noise sea removed\n",
+            "`sigunion` = heads significant in either condition"
+            " (**Berkson-biased for dissociated pairs — see the doc**);"
+            " `nullonly` = heads significant in neither.\n",
+            df_restr.round(3).to_markdown(index=False) + "\n"]
     (OUT / "stats_fragment.md").write_text("\n".join(frag))
 
     print("\n== sanity vs published ==")

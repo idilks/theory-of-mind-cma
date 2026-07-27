@@ -368,6 +368,16 @@ class CMAOrchestrator:
         for i, (base_prompt, exp_prompt, base_ans, exp_ans, causal_ans) in enumerate(valid_prompts):
             logger.info(f"Patching valid prompt {i+1}/{valid_num}")
 
+            # Quote-prefill readout (code conditions on tokenizers without
+            # merged quote+char tokens, e.g. Gemma-2): the prompt already ends
+            # with the opening quote, so the logit readout must use the
+            # bare-char continuation ("'R'" -> "R'", first token = R). Applies
+            # to the unpatched diffs below AND the patched diffs inside
+            # run_activation_patching, which receives these same variables.
+            if getattr(self.config.prompts, "code_quote_prefill", False):
+                causal_ans = causal_ans[1:]
+                exp_ans = exp_ans[1:]
+
             # Tokenize fresh (small overhead, huge memory savings)
             base_input_ids = tokenizer(base_prompt, return_tensors="pt").input_ids.to(model.cfg.device)
             exp_input_ids = tokenizer(exp_prompt, return_tensors="pt").input_ids.to(model.cfg.device)

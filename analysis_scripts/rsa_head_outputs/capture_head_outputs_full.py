@@ -19,6 +19,7 @@ import logging
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import torch
 
@@ -39,16 +40,33 @@ log = logging.getLogger("rsa-capture-full")
 DEFAULT_STIM_DIR = ROOT / "results/rsa_head_outputs/stimuli"
 DEFAULT_OUT_DIR = ROOT / "results/rsa_head_outputs/activations_full"
 
-N_LAYERS = 48
-N_HEADS = 40
-HEAD_DIM = 128
+BELIEF_SYSTEM_PROMPT = "You are a helpful assistant reasoning about agents' beliefs."
 
 
-def build_chat_prompt(scenario: str, question: str, tokenizer) -> str:
-    system_prompt = "You are a helpful assistant reasoning about agents' beliefs."
+def supports_system_role(tokenizer) -> bool:
+    """Same probe as unified_tom.py — Gemma templates reject system messages."""
+    try:
+        tokenizer.apply_chat_template(
+            [{"role": "system", "content": "check"},
+             {"role": "user", "content": "check"}],
+            tokenize=False, add_generation_prompt=True)
+        return True
+    except Exception as exc:
+        if "System role not supported" in str(exc):
+            return False
+        raise
+
+
+def build_chat_prompt(scenario: str, question: str, tokenizer,
+                      system_prompt: str = BELIEF_SYSTEM_PROMPT,
+                      system_role_ok: bool = True) -> str:
     full = f"{scenario}\n{question}"
-    msgs = [{"role": "system", "content": system_prompt},
-            {"role": "user",   "content": full}]
+    if system_role_ok:
+        msgs = [{"role": "system", "content": system_prompt},
+                {"role": "user",   "content": full}]
+    else:
+        # fold, matching unified_tom.py's convention for Gemma
+        msgs = [{"role": "user", "content": f"{system_prompt}\n\n{full}"}]
     return tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
 
 
@@ -58,7 +76,20 @@ def main():
     ap.add_argument("--stim_dir", type=Path, default=DEFAULT_STIM_DIR)
     ap.add_argument("--out_dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--model_type", default="Qwen2.5-14B-Instruct")
+    ap.add_argument("--ungroup_grouped_query_attention", action="store_true",
+                    help="required for Gemma-2 (GQA) so hook_z is per-head")
+    ap.add_argument("--system_prompt", choices=["belief", "code"], default="belief",
+                    help="'code' uses CODE_SYSTEM_PROMPT (for code_* stimuli)")
+    ap.add_argument("--decode_answers", action="store_true",
+                    help="also greedy-decode a few tokens per prompt and store "
+                         "them (baseline accuracy check, ~2x runtime)")
     args = ap.parse_args()
+
+    if args.system_prompt == "code":
+        from prompt_generators.code_templates import CODE_SYSTEM_PROMPT
+        system_prompt = CODE_SYSTEM_PROMPT
+    else:
+        system_prompt = BELIEF_SYSTEM_PROMPT
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -67,7 +98,8 @@ def main():
     log.info(f"loaded {len(stim_df)} stimuli from {stim_csv}")
 
     cfg = ExperimentConfig(
-        model=ModelConfig(model_type=args.model_type),
+        model=ModelConfig(model_type=args.model_type,
+                          ungroup_grouped_query_attention=args.ungroup_grouped_query_attention),
         generation=GenerationConfig(),
         evaluation=EvaluationConfig(),
         patching=PatchingConfig(activation_name="z"),
@@ -83,38 +115,73 @@ def main():
     def names_filter(name: str) -> bool:
         return name.endswith(".attn.hook_z")
 
+    n_layers = model.cfg.n_layers
+    n_heads = model.cfg.n_heads
+    head_dim = model.cfg.d_head
+    log.info(f"model dims: {n_layers} layers x {n_heads} heads x {head_dim}")
+
     n_stim = len(stim_df)
-    z_out = torch.full((n_stim, N_LAYERS, N_HEADS, HEAD_DIM),
+    z_out = torch.full((n_stim, n_layers, n_heads, head_dim),
                        float("nan"), dtype=torch.float16)
+    generations: list[str] = []
+
+    system_role_ok = supports_system_role(tokenizer)
+    if not system_role_ok:
+        log.info("chat template lacks system role; folding into user message")
 
     for si, row in stim_df.iterrows():
-        prompt = build_chat_prompt(row["scenario"], row["question"], tokenizer)
+        prompt = build_chat_prompt(row["scenario"], row["question"], tokenizer,
+                                   system_prompt=system_prompt,
+                                   system_role_ok=system_role_ok)
         tokens = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)["input_ids"].to(
             next(model.parameters()).device
         )
         with torch.no_grad():
             _, cache = model.run_with_cache(tokens, names_filter=names_filter)
 
-        for L in range(N_LAYERS):
+        for L in range(n_layers):
             key = f"blocks.{L}.attn.hook_z"
             if key not in cache:
                 continue
             # cache[key]: (batch, seq, n_heads, head_dim) -> last token, all heads
             z_out[si, L] = cache[key][0, -1].float().cpu().to(torch.float16)
         del cache
+
+        if args.decode_answers:
+            with torch.no_grad():
+                # KV cache is incompatible with ungrouped GQA (16 KV heads vs
+                # 32 ungrouped): past_key_value_caching.py append() crashes.
+                gen = model.generate(tokens, max_new_tokens=8, do_sample=False,
+                                     use_past_kv_cache=False, verbose=False)
+            generations.append(tokenizer.decode(gen[0, tokens.shape[1]:]))
+
         if (si + 1) % 10 == 0:
             log.info(f"  {si + 1}/{n_stim}")
 
-    out_path = args.out_dir / f"{args.template}.pt"
-    torch.save({
+    payload = {
         "z": z_out,
         "stim": stim_df.to_dict("records"),
         "meta": {
             "template": args.template, "model": args.model_type,
-            "n_stim": n_stim, "n_layers": N_LAYERS,
-            "n_heads": N_HEADS, "head_dim": HEAD_DIM,
+            "n_stim": n_stim, "n_layers": n_layers,
+            "n_heads": n_heads, "head_dim": head_dim,
+            "system_prompt": args.system_prompt,
         },
-    }, out_path)
+    }
+    if args.decode_answers:
+        payload["generations"] = generations
+        if "answer" in stim_df.columns:
+            from prompt_generators.code_templates import (
+                extract_value_from_code_response, code_values_match,
+            )
+            correct = [code_values_match(extract_value_from_code_response(g), a)
+                       for g, a in zip(generations, stim_df["answer"])]
+            payload["correct"] = correct
+            log.info(f"baseline accuracy: {np.mean(correct):.3f} "
+                     f"({int(np.sum(correct))}/{len(correct)})")
+
+    out_path = args.out_dir / f"{args.template}.pt"
+    torch.save(payload, out_path)
     log.info(f"saved {out_path}  (shape={tuple(z_out.shape)}, dtype=float16)")
 
 

@@ -63,6 +63,28 @@ def filter_answer_pool(tokenizer, pool=None):
     return kept
 
 
+def filter_answer_pool_prefill(tokenizer, pool=None):
+    """Quote-prefill companion to filter_answer_pool, for tokenizers with NO
+    merged quote+char tokens (Gemma-2: every '{c}' tokenizes as [', {c}, '],
+    so the first-token logit diff degenerates to ' vs '). With the prompt
+    prefilled through the opening quote, the readout token is the first token
+    of the continuation "{c}'"; keep chars whose readout token is unique
+    across the pool.
+    """
+    pool = pool if pool is not None else CODE_VALUE_POOL
+    first_ids = {c: tokenizer(f"{c}'", add_special_tokens=False)["input_ids"][0]
+                 for c in pool}
+    counts: Dict[int, int] = {}
+    for tid in first_ids.values():
+        counts[tid] = counts.get(tid, 0) + 1
+    kept = [c for c in pool if counts[first_ids[c]] == 1]
+    if len(kept) < 2:
+        raise ValueError(
+            f"Prefill answer pool collapsed to {kept} under this tokenizer; "
+            "need >= 2 chars with distinct post-quote first tokens.")
+    return kept
+
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------

@@ -88,6 +88,19 @@ def build_writers() -> pd.DataFrame:
                          mean_score=float(np.mean(scores[(layer, head)])),
                          source=f"sig>=half of {n_cells} C1 best-source cells"))
 
+    # code-domain writers: the published code_abstract significant set
+    # (union of positive sig heads over both directions), layer <= 40.
+    code_csv = REPO / "results/aggregated/code_head_sets/code_abstract_head_list.csv"
+    code = pd.read_csv(code_csv)
+    code_kept = code[code["layer"] <= WRITER_MAX_LAYER]
+    dropped = code[code["layer"] > WRITER_MAX_LAYER]
+    print(f"code_abstract: {len(code_kept)} writers (dropped "
+          f"{[(int(r.layer), int(r.head)) for r in dropped.itertuples()]})")
+    for r in code_kept.itertuples():
+        rows.append(dict(set="code_abstract", layer=int(r.layer),
+                         head=int(r.head), mean_score=float(r.mean_score),
+                         source="code_abstract_head_list.csv"))
+
     return pd.DataFrame(rows)
 
 

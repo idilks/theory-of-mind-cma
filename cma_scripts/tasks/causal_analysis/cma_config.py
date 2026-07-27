@@ -141,6 +141,10 @@ class PromptConfig:
     question_style: str = "instruction"  # "completion" or "instruction" for CMA questions
     template_names: List[str] = None  # Templates to use for unified ToM system
     better_cma: bool = False  # Use improved CMA prompt generation logic
+    # Set at runtime by CodeGenerator when the tokenizer has no merged
+    # quote+char tokens (Gemma-2): prompts are prefilled through the opening
+    # quote and the logit readout uses the bare-char token. Never set on CLI.
+    code_quote_prefill: bool = False
 
     def __post_init__(self):
         if self.base_rule not in ["ABA", "ABB"]:
