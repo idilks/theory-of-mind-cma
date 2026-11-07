@@ -1,8 +1,7 @@
 # Causal mediation analysis of theory of mind in transformer language models
 
 We patch activations between matched prompt pairs differing in one factor, per attention
-head, to separate the heads that track **belief** from those doing **location retrieval**
-and **state tracking**.
+head, to separate the heads encode abstract divergence information from heads responsible for retrieval
 
 - primary model: Qwen2.5-14B-Instruct (48 layers × 40 heads = 1920 heads)
 - replication: Gemma-2-27B-it (`--ungroup_grouped_query_attention`)
@@ -36,18 +35,13 @@ python cma.py \
   --run_statistical_tests
 ```
 
-One of `--use_template_system` (ToM) or `--context_type code` is required; without either
-we get an error. With `--patch_after_movement` we patch at the belief-formation
-position; without it we patch the end token. All headline results use the end token.
+One of `--use_template_system` (ToM) or `--context_type code` is required.
 
 For statistics we use a max-statistic permutation test with FWER correction over all 1920
 heads, 5000 permutations, implemented in `tasks/causal_analysis/statistical_testing.py`. We
-recommend importing it rather than reimplementing, so correction stays consistent across
-conditions.
+recommend importing for consistency across conditions.
 
 ## conditions
-
-We keep the canonical numbering in `analysis_scripts/condition_registry.py` (`REGISTRY`).
 
 | #  | folder name                          | what varies (base↔exp)          | answers   | target heads                      |
 |----|--------------------------------------|---------------------------------|-----------|-----------------------------------|
@@ -103,12 +97,8 @@ results/causal_analysis/cma/{Qwen/Qwen2.5-14B-Instruct | google/gemma-2-27b-it_u
 Seed priority when resolving a source: `combined` > `1` > `0`. Use **seed=1, end position**
 for the seven-condition analysis. `resid_post_*` folders are residual-stream arms.
 
-For `code_abstract` we include seed 0 (the runs behind the paper's code-domain cells) and
-seed 1 (added later as the held-out seed for the Q conditions). Under the seed priority, seed
-1 is used, so the code rows of `results/summary/h2_robustness/` are the seed-1 values. In the
-paper we quote only the story and Gemma rows, which do not depend on this choice.
 
-Included alongside the CMA cells (derived tables only, no figures):
+Included alongside the CMA cells:
 
 | path | content |
 |---|---|
@@ -120,14 +110,3 @@ Included alongside the CMA cells (derived tables only, no figures):
 | `results/summary/` | the statistics behind the paper's tables and the heatmap manifest |
 | `results/tom_performance/` | behavioral accuracy runs |
 
-**Not included** (multi-GB): activation captures (`results/circuit/stage1_capture/*.pt`,
-`results/rsa_head_outputs/activations_*`), raw per-prompt path-patching outputs
-(`results/circuit/path_patching/`, summarised in `results/aggregated/path_patching_*`),
-and raw behavioral responses. We regenerate the captures with
-`analysis_scripts/circuit/capture_circuit_activations.py`,
-`analysis_scripts/rsa_head_outputs/capture_head_outputs*.py` and
-`analysis_scripts/lookback_analysis/capture_attention_patterns.py`.
-
-**Path:** the outputs of `cma.py` are in `cma_scripts/results/` (its `log_dir` is relative,
-and we use `pyrootutils` to set the working directory to `cma_scripts/`), while we run every
-analysis script against `<repo_root>/results/`. Move results to the repository root.
