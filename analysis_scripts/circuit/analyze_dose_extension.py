@@ -3,7 +3,7 @@
 Merges the frozen paper run (L41_main, alpha <= 4) with the extension run
 (L41_dose_ext: alpha in {6, 8, 12, 16} on the belief legs, plus the generic
 belief-free leg over the full grid) and writes the tables the appendix
-figure (scripts/rebuttal_figures/fig14_dose_extension.py) and the paper
+figure (analysis_scripts/paper_figures/fig14_dose_extension.py) and the paper
 text quote. No inference; saved CSVs only.
 
 Outputs (results/aggregated/circuit/dose_extension/):
@@ -194,7 +194,7 @@ def main():
         "generic leg over {0.5, ..., 16}). Same held-out prompts, same `--control_seed 99`. "
         "Rank-1 direction only; the 8-dim swap operator is off-manifold by alpha = 4 and was not extended.",
         "",
-        "Metric definitions are in the module docstring of `scripts/circuit/analyze_dose_extension.py`. "
+        "Metric definitions are in the module docstring of `analysis_scripts/circuit/analyze_dose_extension.py`. "
         f"Applied edit norm is alpha x {merged[merged.dose == 1].applied_norm.iloc[0]:.1f}; "
         "the clean residual norm at this site is about 390 (stage-1 capture, final token).",
         "",

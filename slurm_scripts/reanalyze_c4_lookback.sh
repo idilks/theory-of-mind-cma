@@ -35,8 +35,8 @@ for TEMPLATE in "${TEMPLATES[@]}"; do
       continue
     fi
     echo "=== $CAP_DIR ==="
-    python scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir "$CAP_DIR"
-    python scripts/lookback_analysis/per_token_profile.py --capture_dir "$CAP_DIR" --top_k 5 --no_tokenizer
+    python analysis_scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir "$CAP_DIR"
+    python analysis_scripts/lookback_analysis/per_token_profile.py --capture_dir "$CAP_DIR" --top_k 5 --no_tokenizer
   done
 done
 

@@ -42,7 +42,7 @@ TEMPLATE=${TEMPLATES[$SLURM_ARRAY_TASK_ID]}
 
 echo "Job $SLURM_ARRAY_TASK_ID: lookback capture template=$TEMPLATE"
 
-python scripts/lookback_analysis/capture_attention_patterns.py \
+python analysis_scripts/lookback_analysis/capture_attention_patterns.py \
   --template $TEMPLATE \
   --condition abstract_belief \
   --base_rule ABA \
@@ -51,9 +51,9 @@ python scripts/lookback_analysis/capture_attention_patterns.py \
   --top_k 50 \
   --prompt_num 50 \
   --seed 0 \
-  --results_root codebase/results \
+  --results_root cma_scripts/results \
   --out_root results/lookback_analysis
 
 # Auto-run analysis after capture (CPU-only; cheap)
 CAP_DIR=results/lookback_analysis/abstract_belief/template_${TEMPLATE}/base_rule_ABA_exp_rule_ABB/patch_before_movement
-python scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir $CAP_DIR
+python analysis_scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir $CAP_DIR

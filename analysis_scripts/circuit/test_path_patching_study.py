@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 class StudyTests(unittest.TestCase):
     def plan(self):
-        return build_plan(ROOT / "docs/head_evidence_inventory/head_membership.csv",
+        return build_plan(ROOT / "results/aggregated/head_evidence_inventory/head_membership.csv",
                           ROOT / "results/aggregated/circuit/reader_heads.csv", seed=20261022)
 
     def test_full_union_and_one_to_one_same_layer_controls(self):

@@ -17,7 +17,7 @@ from style import VIOLET, apply_style, despine
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "results/circuit/stage2_steering/Qwen2.5-14B-Instruct/L41_main/accuracy_by_config.csv"
-OUTPUT = ROOT / "writeups/neurips-overleaf/figures/fig13_residual_coefficients"
+OUTPUT = ROOT / "results/figures/fig13_residual_coefficients"
 CURVES = [
     ("target_rank1", "Mean difference", VIOLET, "-"),
     ("random", "Random direction", "#777777", "-"),

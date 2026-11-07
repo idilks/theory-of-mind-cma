@@ -1,12 +1,5 @@
 """Canonical condition registry (story C1-C7 + code K/Q) + shared CMA result-path resolution.
 
-Single source of truth for the condition tables and seed/source-resolution
-logic that were hand-rolled across the heatmap / aggregation scripts. Extracted
-verbatim from build_pi_heatmaps.py / build_avg_heatmaps.py (see Refactor Debt
-items 1-2 in CLAUDE.md) -- pure extraction, zero behavior change.
-
-Canonical numbering == scripts/aggregate_conditions.py == the thesis:
-
     C1 abstract_belief                     (belief false<->true, answer SAME)
     C2 abstract_photo                      (photo  false<->true, answer SAME)
     C3 answer_changes_belief               (belief false<->true, answer DIFFERENT)
@@ -33,10 +26,10 @@ condition they mirror; Q-ids by the veracity-vs-address question they answer:
 Code results only count under template_indexed_list (template_list_append runs
 are invalid), so code conditions carry a `templates` filter.
 
-Other C# numberings exist in legacy scripts (build_pi_results.py,
-compare_bf_conditions.py, visualize_conditions.py) -- do NOT trust those.
+Older scripts outside this release used other C-numberings; this registry is
+the canonical one.
 
-Run `python scripts/condition_registry.py` for a self-check that the registry
+Run `python analysis_scripts/condition_registry.py` for a self-check that the registry
 folder names match what is actually on disk under the Qwen results tree.
 """
 from __future__ import annotations
@@ -48,9 +41,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Mirror the sys.path pattern used by scripts/combine_per_sample_runs.py so we
-# can import the canonical condition enum from the LLMSymbMech codebase.
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+# Mirror the sys.path pattern used by analysis_scripts/combine_per_sample_runs.py so we
+# can import the canonical condition enum from the LLMSymbMech cma_scripts.
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 from cma_config import CMACondition  # noqa: E402
 
 # ---------------------------------------------------------------------------
@@ -155,7 +148,7 @@ def within_context_keys() -> list[str]:
 def heatmap_condition_table() -> dict:
     """key -> (folder, [alias_folders], allowed_rule_pairs).
 
-    Reproduces the CONDITIONS dict in build_pi_heatmaps.py / build_avg_heatmaps.py.
+    Reproduces the CONDITIONS dict in build_summary_heatmaps.py / build_avg_heatmaps.py.
     """
     return {c.key: (c.folder, [c.folder], c.rule_pairs) for c in REGISTRY}
 
@@ -199,7 +192,7 @@ def resolve_best_source(
 
     entry keys: scores_pt, per_sample_pt, csv, n, seed_tag, priority, source_dir.
 
-    This is the shared implementation behind build_pi_heatmaps.find_best_source,
+    This is the shared implementation behind build_summary_heatmaps.find_best_source,
     build_avg_heatmaps.find_best_source, and the Gemma variant. Set
     `require_per_sample=True` to skip cells lacking causal_scores_per_sample.pt
     (Gemma tolerance behavior). `templates` (iterable of template_* dir names)

@@ -10,22 +10,6 @@ Output (per template): results/rsa_head_outputs/activations_full/{template}.pt
   - z: (n_stim, n_layers, n_heads, head_dim) float16
   - stim: list of dicts mirroring the stimulus CSV
   - meta: {template, model, n_stim, n_layers, n_heads, head_dim}
-
-With --capture_attn_summary, four REDUCED attention readouts are added, each
-(n_stim, n_layers, n_heads) float32, computed from the final-token query row
-of hook_pattern:
-  - attn_mean_src   attention-weighted mean absolute source position
-  - attn_entropy    entropy of that attention row (nats)
-  - attn_mass_slot  mass on the tokens spanning the queried slot's character
-  - attn_mass_mut   mass on the tokens spanning the mutated character
-plus attn_mass_code (mass on the whole code block) and n_tokens.
-
-Raw patterns are NOT stored: 864 stimuli x 48 layers x 40 heads x T^2 is
-hundreds of GB, and everything the position-inheritance control needs is a
-scalar per (stimulus, head). attn_mean_src is that scalar — a head that
-merely inherits position through its value vectors has a pad response
-predictable from how far its attention centre of mass moves, and nothing
-else. See scripts/rsa_head_outputs/padtwins_position_prediction.py.
 """
 
 from __future__ import annotations
@@ -41,8 +25,8 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from cma_config import (  # noqa: E402
     EvaluationConfig, GenerationConfig, ModelConfig, PatchingConfig,
@@ -89,56 +73,6 @@ def build_chat_prompt(scenario: str, question: str, tokenizer,
     return tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
 
 
-def char_span_mask(offsets, lo: int, hi: int, n_tokens: int) -> np.ndarray:
-    """Tokens whose character span overlaps [lo, hi). Special tokens carry
-    the (0, 0) span and never match for lo >= 0."""
-    m = np.zeros(n_tokens, dtype=bool)
-    for ti, (a, b) in enumerate(offsets[:n_tokens]):
-        if a < hi and b > lo:
-            m[ti] = True
-    return m
-
-
-def stimulus_masks(tokenizer, prompt: str, row, n_tokens: int):
-    """Boolean key-position masks for the queried slot char, the mutated
-    char, and the code block. Character offsets in the stimulus CSV are
-    relative to `scenario`; shift them by where the scenario starts inside
-    the chat-templated prompt."""
-    enc = tokenizer(prompt, return_offsets_mapping=True, add_special_tokens=False)
-    offsets = enc["offset_mapping"]
-    base = prompt.find(row["scenario"])
-    if base < 0:  # chat template altered the text — masks are unusable
-        z = np.zeros(n_tokens, dtype=bool)
-        return z, z, z
-    slot = int(row["slot_char_pos"]) + base
-    mut = int(row["mut_char_pos"]) + base
-    code0 = int(row["code_start_char"]) + base
-    code1 = base + int(row["scenario_len"])
-    return (char_span_mask(offsets, slot, slot + 1, n_tokens),
-            char_span_mask(offsets, mut, mut + 1, n_tokens),
-            char_span_mask(offsets, code0, code1, n_tokens))
-
-
-def make_pattern_hooks(store, n_layers):
-    """Reduce hook_pattern's final-token query row to per-head scalars.
-
-    Registered as forward hooks rather than cached, so peak memory stays at
-    one layer's (n_heads, T) row instead of every layer's (n_heads, T, T)."""
-    def hook(pattern, hook):
-        # pattern: (batch, n_heads, query, key); batch is always 1 here
-        p = pattern[0, :, -1, :].float()
-        pos = torch.arange(p.shape[-1], device=p.device, dtype=p.dtype)
-        L = hook.layer()
-        store["mean_src"][L] = (p * pos).sum(-1).cpu()
-        store["entropy"][L] = (-(p * torch.log(p + 1e-12)).sum(-1)).cpu()
-        for key, m in store["masks"].items():
-            store[key][L] = p[:, m].sum(-1).cpu()
-        return pattern
-
-    names = {f"blocks.{L}.attn.hook_pattern" for L in range(n_layers)}
-    return [(lambda n: n in names, hook)]
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--template", required=True)
@@ -152,12 +86,6 @@ def main():
     ap.add_argument("--decode_answers", action="store_true",
                     help="also greedy-decode a few tokens per prompt and store "
                          "them (baseline accuracy check, ~2x runtime)")
-    ap.add_argument("--capture_attn_summary", action="store_true",
-                    help="also store per-head reduced attention readouts at "
-                         "the final token (mean source position, entropy, "
-                         "mass on the queried-slot / mutated / code spans). "
-                         "Needs the stimulus CSV to carry slot_char_pos, "
-                         "mut_char_pos, code_start_char, scenario_len.")
     args = ap.parse_args()
 
     if args.system_prompt == "code":
@@ -199,21 +127,6 @@ def main():
                        float("nan"), dtype=torch.float16)
     generations: list[str] = []
 
-    ATTN_KEYS = ("mean_src", "entropy", "mass_slot", "mass_mut", "mass_code")
-    attn_out, attn_store, pattern_hooks, n_tokens_out = None, None, [], None
-    if args.capture_attn_summary:
-        missing = {"slot_char_pos", "mut_char_pos", "code_start_char",
-                   "scenario_len"} - set(stim_df.columns)
-        if missing:
-            raise SystemExit(f"--capture_attn_summary needs columns {missing} "
-                             f"in {stim_csv}")
-        attn_out = {k: torch.full((n_stim, n_layers, n_heads), float("nan"),
-                                  dtype=torch.float32) for k in ATTN_KEYS}
-        n_tokens_out = torch.zeros(n_stim, dtype=torch.int32)
-        attn_store = {k: {} for k in ATTN_KEYS}
-        attn_store["masks"] = {}
-        pattern_hooks = make_pattern_hooks(attn_store, n_layers)
-
     system_role_ok = supports_system_role(tokenizer)
     if not system_role_ok:
         log.info("chat template lacks system role; folding into user message")
@@ -225,23 +138,8 @@ def main():
         tokens = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)["input_ids"].to(
             next(model.parameters()).device
         )
-        if args.capture_attn_summary:
-            n_tok = tokens.shape[1]
-            m_slot, m_mut, m_code = stimulus_masks(tokenizer, prompt, row, n_tok)
-            attn_store["masks"] = {
-                "mass_slot": torch.tensor(m_slot, device=tokens.device),
-                "mass_mut": torch.tensor(m_mut, device=tokens.device),
-                "mass_code": torch.tensor(m_code, device=tokens.device)}
-            n_tokens_out[si] = n_tok
-
-        with torch.no_grad(), model.hooks(fwd_hooks=pattern_hooks):
+        with torch.no_grad():
             _, cache = model.run_with_cache(tokens, names_filter=names_filter)
-
-        if args.capture_attn_summary:
-            for k in ATTN_KEYS:
-                for L, v in attn_store[k].items():
-                    attn_out[k][si, L] = v
-                attn_store[k].clear()
 
         for L in range(n_layers):
             key = f"blocks.{L}.attn.hook_z"
@@ -272,14 +170,6 @@ def main():
             "system_prompt": args.system_prompt,
         },
     }
-    if args.capture_attn_summary:
-        payload.update({f"attn_{k}": v for k, v in attn_out.items()})
-        payload["n_tokens"] = n_tokens_out
-        payload["meta"]["attn_summary"] = list(ATTN_KEYS)
-        log.info("attention summary: mean source position ranges "
-                 f"{float(attn_out['mean_src'].nanmean()):.1f} "
-                 f"(mean over all heads/stimuli), mean code-span mass "
-                 f"{float(attn_out['mass_code'].nanmean()):.3f}")
     if args.decode_answers:
         payload["generations"] = generations
         if "answer" in stim_df.columns:

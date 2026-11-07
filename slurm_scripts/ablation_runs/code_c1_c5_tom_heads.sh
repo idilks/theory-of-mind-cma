@@ -13,7 +13,7 @@
 #SBATCH --output=logs/abl_c1c5_full_on_code_%A_%a.out
 #SBATCH --error=logs/abl_c1c5_full_on_code_%A_%a.err
 
-# PI-requested (July 2026): Yang et al. 2025 §3.4/B.5-style cumulative
+# Yang et al. 2025 §3.4/B.5-style cumulative
 # ablation of ALL 1920 heads, ranked by the ToM CMA fingerprints, evaluated
 # on code AND ToM variants in one sweep — H1 dissociation ported to code,
 # plus the within-domain Yang curve for free from the same ablation order.
@@ -33,12 +33,12 @@
 # resubmit the same array index.
 #
 # AFTER ALL 4 CHUNKS OF A CONFIG FINISH, merge them:
-#   python scripts/merge_cumulative_ablation_chunks.py \
+#   python analysis_scripts/merge_cumulative_ablation_chunks.py \
 #     --chunks results/ablation/$LABEL/chunk_* \
 #     --output_dir results/ablation/$LABEL --run_label $LABEL
 #
 # Prereq on HPC: results/aggregated/code_head_sets/tom_c1_c5_all_heads_ranked.csv
-# (build locally with `python scripts/build_tom_c1_c5_full_ranking_csv.py`;
+# (build locally with `python analysis_scripts/build_tom_c1_c5_full_ranking_csv.py`;
 #  results/aggregated syncs via sync_to_hpc.sh.)
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -59,7 +59,7 @@ mkdir -p logs
 
 HEAD_CSV=results/aggregated/code_head_sets/tom_c1_c5_all_heads_ranked.csv
 if [ ! -f "$HEAD_CSV" ]; then
-  echo "ERROR: $HEAD_CSV not present on HPC. Run scripts/build_tom_c1_c5_full_ranking_csv.py locally; sync_to_hpc.sh carries it over." >&2
+  echo "ERROR: $HEAD_CSV not present on HPC. Run analysis_scripts/build_tom_c1_c5_full_ranking_csv.py locally; sync_to_hpc.sh carries it over." >&2
   exit 1
 fi
 
@@ -92,7 +92,7 @@ CHUNK_DIR="results/ablation/$LABEL/chunk_${CURVE}_${K_START}_${K_END}"
 
 echo "Job $IDX: headset=$HEADSET prefill=$PREFILL curve=$CURVE k-chunk=[$K_START:$K_END)"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 75 \
   --max_new_tokens 8 \

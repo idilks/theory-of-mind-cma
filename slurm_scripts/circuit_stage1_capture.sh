@@ -13,14 +13,14 @@
 #SBATCH --error=logs/circuit_s1_capture_%A_%a.err
 
 # Stage-1 capture for the layered-lookback circuit
-# (docs/design_layered_lookback_circuit.md). 150 matched FB/TB pairs per
+# 150 matched FB/TB pairs per
 # template, forward passes only: hook_z + hook_mlp_out L28-40, resid_post
 # L40/41 at position -1, under the matched-prompt+prefill protocol.
 # Array task 0 additionally saves the weight-slice artifact (W_O band,
 # reader W_Q/W_V/ln1.w) so the laptop screen needs no model load.
 #
 # Prerequisite (synced via results/aggregated): run locally first
-#   python scripts/circuit/build_circuit_head_sets.py
+#   python analysis_scripts/circuit/build_circuit_head_sets.py
 
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -46,7 +46,7 @@ fi
 
 echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE $EXTRA"
 
-python scripts/circuit/capture_circuit_activations.py \
+python analysis_scripts/circuit/capture_circuit_activations.py \
   --template "$TEMPLATE" \
   --prompt_num 150 \
   --seed 0 \

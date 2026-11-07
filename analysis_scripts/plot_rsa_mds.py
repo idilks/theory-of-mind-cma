@@ -14,10 +14,10 @@ Two views:
       true_template patch; C5/C6/C7 = within-context, no template flip)
     * task type (abstract / answer-changes / location)
 
-Inputs: results_for_pi/heatmaps/manifest.csv (canonical end-patch cell map).
+Inputs: results/summary/heatmaps/manifest.csv (canonical end-patch cell map).
 Outputs:
-  results_for_pi/aggregation/rsa_cell_mds.png
-  results_for_pi/aggregation/rsa_cell_rdm.png  (6x6 condition RDM)
+  results/summary/aggregation/rsa_cell_mds.png
+  results/summary/aggregation/rsa_cell_rdm.png  (6x6 condition RDM)
   results/aggregated/cell_rsa/cell_rdm_18x18.csv
   results/aggregated/cell_rsa/condition_rdm_6x6.csv
   results/aggregated/cell_rsa/mantel_results.csv
@@ -37,9 +37,9 @@ from scipy.stats import pearsonr
 from sklearn.manifold import MDS
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
+MANIFEST = ROOT / "results/summary/heatmaps/manifest.csv"
 OUT_AGG = ROOT / "results/aggregated/cell_rsa"
-OUT_FIG = ROOT / "results_for_pi/aggregation"
+OUT_FIG = ROOT / "results/summary/aggregation"
 
 CONDITIONS = [
     "C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief",

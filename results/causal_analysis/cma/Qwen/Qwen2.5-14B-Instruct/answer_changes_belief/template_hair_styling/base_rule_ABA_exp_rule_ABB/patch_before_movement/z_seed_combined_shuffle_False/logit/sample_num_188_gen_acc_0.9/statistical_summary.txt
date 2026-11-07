@@ -1,0 +1,36 @@
+# causal mediation analysis - statistical testing results
+# permutation test with FWER correction (max-statistic method)
+
+FWER threshold: 1.111037
+total heads tested: 1920
+significant heads (|score| > threshold): 51
+proportion significant: 2.7%
+
+significant heads by layer:
+  layer 28: heads [np.int64(14)]
+  layer 29: heads [np.int64(30), np.int64(31), np.int64(34)]
+  layer 30: heads [np.int64(15)]
+  layer 31: heads [np.int64(18), np.int64(19), np.int64(21), np.int64(22), np.int64(31)]
+  layer 32: heads [np.int64(3), np.int64(26), np.int64(27), np.int64(30), np.int64(33), np.int64(34)]
+  layer 33: heads [np.int64(0), np.int64(1), np.int64(2), np.int64(8)]
+  layer 34: heads [np.int64(10), np.int64(12), np.int64(27), np.int64(29)]
+  layer 35: heads [np.int64(11), np.int64(13), np.int64(29), np.int64(30), np.int64(31), np.int64(33), np.int64(34)]
+  layer 36: heads [np.int64(10), np.int64(21), np.int64(23), np.int64(24), np.int64(36)]
+  layer 37: heads [np.int64(16), np.int64(38)]
+  layer 38: heads [np.int64(33), np.int64(35), np.int64(36), np.int64(38)]
+  layer 39: heads [np.int64(4), np.int64(20), np.int64(23), np.int64(24)]
+  layer 43: heads [np.int64(32)]
+  layer 46: heads [np.int64(10), np.int64(12), np.int64(13), np.int64(14)]
+
+top 10 heads by effect size:
+ layer  head  observed_score  p_value  significant
+    39    23        6.950133      0.0         True
+    29    31        6.934175      0.0         True
+    29    34        5.157580      0.0         True
+    35    30        4.846410      0.0         True
+    32    33        4.547873      0.0         True
+    31    19        4.500665      0.0         True
+    32    30        4.490026      0.0         True
+    31    18        4.098404      0.0         True
+    36    21        3.576463      0.0         True
+    33     2        3.266622      0.0         True

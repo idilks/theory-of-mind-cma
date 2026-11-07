@@ -16,8 +16,8 @@ Verdict per (condition, query):
   named-adequate    → null on named scalars is the real story
 
 Run:
-  python scripts/lookback_analysis/diagnose_named_coverage.py \
-      --root other_results/lookback_analysis --top_k 10
+  python analysis_scripts/lookback_analysis/diagnose_named_coverage.py \
+      --root results/lookback_analysis --top_k 10
 """
 from __future__ import annotations
 
@@ -77,10 +77,10 @@ def load_unnamed(patch_dir: Path, query: str) -> pd.DataFrame:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="other_results/lookback_analysis")
+    ap.add_argument("--root", default="results/lookback_analysis")
     ap.add_argument("--top_k", type=int, default=10,
                     help="top-K CMA heads per cell to diagnose (Yang uses 10)")
-    ap.add_argument("--out_dir", default="other_results/lookback_analysis/_diagnostic")
+    ap.add_argument("--out_dir", default="results/lookback_analysis/_diagnostic")
     args = ap.parse_args()
 
     root = Path(args.root)

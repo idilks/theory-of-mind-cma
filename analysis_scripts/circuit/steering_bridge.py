@@ -162,7 +162,7 @@ def prepare_inputs(args):
     flat = sorted(set(np.argsort(a)[-32:].tolist()) - set(np.argsort(b)[-22:].tolist()))
     heads = [(h // 40, h % 40) for h in flat]
     if len(heads) != 22 or any(l not in BAND_LAYERS for l, _ in heads):
-        raise ValueError("The frozen selection must contain Steven's 22 upstream heads")
+        raise ValueError("The frozen selection must contain the 22 upstream heads")
     with np.load(direction_path) as data:
         dirs = {k: data[k].copy() for k in data.files}
     bases = {"rank1": torch.from_numpy(dirs["v_rank1"]).double()[None],

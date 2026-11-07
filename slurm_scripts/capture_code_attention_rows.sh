@@ -34,9 +34,9 @@ mkdir -p logs
 
 STIM=results/rsa_head_outputs/stimuli_code_padtwins/code_padtwins.csv
 if [ ! -f $STIM ]; then
-  python scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
+  python analysis_scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
 fi
 
-python scripts/lookback_analysis/capture_code_attention_rows.py \
+python analysis_scripts/lookback_analysis/capture_code_attention_rows.py \
   --stim_csv $STIM \
   --model_type Qwen2.5-14B-Instruct

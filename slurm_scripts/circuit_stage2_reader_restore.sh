@@ -49,7 +49,7 @@ if [ ! -f results/aggregated/circuit/stage1/directions_L41.npz ]; then
 fi
 
 echo "Part A: pilot (5 prompts per variant, identity checks on all of them)"
-python scripts/circuit/stage2_reader_restoration.py \
+python analysis_scripts/circuit/stage2_reader_restoration.py \
   --site L41 --restore q k v pattern \
   --limit 5 --n_identity 5 \
   --run_label reader_restore_pilot || exit 1
@@ -65,6 +65,6 @@ if worst > 1e-2:
 PY
 
 echo "Part B: full run (225 held-out prompts per variant)"
-python scripts/circuit/stage2_reader_restoration.py \
+python analysis_scripts/circuit/stage2_reader_restoration.py \
   --site L41 --restore q k v pattern \
   --run_label reader_restore

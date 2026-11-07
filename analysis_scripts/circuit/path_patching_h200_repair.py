@@ -20,8 +20,8 @@ import tempfile
 sys.dont_write_bytecode = True
 TASKS = {'path': (1, 3, 6, 7), 'control': (2, 5, 8, 13)}
 ROOT = Path(__file__).resolve().parents[2]
-CORE = 'scripts/circuit/path_patching.py'
-CONTROL = 'scripts/circuit/path_patching_clean_control.py'
+CORE = 'analysis_scripts/circuit/path_patching.py'
+CONTROL = 'analysis_scripts/circuit/path_patching_clean_control.py'
 PLAN = 'results/aggregated/path_patching_setup/plan.json'
 
 
@@ -190,7 +190,7 @@ def execute(args):
             # Bind the study's ordinary import to the byte-identical executed core.
             core = load(output/'code_snapshot'/CORE, 'frozen_path_repair_core')
             sys.modules['path_patching'] = core
-            module = load(output/'code_snapshot/scripts/circuit/path_patching_study.py', 'frozen_path_repair_study')
+            module = load(output/'code_snapshot/analysis_scripts/circuit/path_patching_study.py', 'frozen_path_repair_study')
             module.execute_task(argparse.Namespace(plan=str(output/'code_snapshot'/PLAN),
                 task_id=args.task_id, pairs_per_cell=info['pairs'], batch_size=info['batch_size'],
                 output_root=str(output), dry_run=False))

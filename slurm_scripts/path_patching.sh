@@ -58,7 +58,7 @@ export TOKENIZERS_PARALLELISM=false
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-2}
 export PYTHONUNBUFFERED=1
 python -c 'import sys, torch, transformer_lens, transformers, numpy; print("Environment:", sys.prefix); print("torch:", torch.__version__); assert torch.cuda.is_available(), "CUDA unavailable"'
-python -c 'import sys, torch; sys.path.insert(0,"scripts/circuit"); from path_patching_h200_repair import validate_gpu_names; validate_gpu_names([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])'
+python -c 'import sys, torch; sys.path.insert(0,"analysis_scripts/circuit"); from path_patching_h200_repair import validate_gpu_names; validate_gpu_names([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])'
 
 # Freeze the code once per study (first task wins; later tasks reuse it).
 mkdir -p "$OUTPUT_ROOT"
@@ -67,12 +67,12 @@ mkdir -p "$OUTPUT_ROOT"
     if [[ ! -d "$SNAPSHOT" ]]; then
         test -s "$PROJECT_DIR/$PLAN_REL" || { echo "Missing $PLAN_REL; sync results/aggregated/path_patching_setup first." >&2; exit 1; }
         staging=$(mktemp -d "$OUTPUT_ROOT/.code_snapshot.XXXXXX")
-        mkdir -p "$staging/scripts/circuit" "$staging/$(dirname "$PLAN_REL")"
+        mkdir -p "$staging/analysis_scripts/circuit" "$staging/$(dirname "$PLAN_REL")"
         rsync -a --exclude results --exclude wandb --exclude logs --exclude __pycache__ \
             --exclude '*.pt' --exclude '*.pth' --exclude '*.ckpt' --exclude '*.out' --exclude '*.err' \
-            "$PROJECT_DIR/codebase" "$staging/"
-        cp scripts/condition_registry.py "$staging/scripts/"
-        cp scripts/circuit/path_patching.py scripts/circuit/path_patching_study.py "$staging/scripts/circuit/"
+            "$PROJECT_DIR/cma_scripts" "$staging/"
+        cp analysis_scripts/condition_registry.py "$staging/analysis_scripts/"
+        cp analysis_scripts/circuit/path_patching.py analysis_scripts/circuit/path_patching_study.py "$staging/analysis_scripts/circuit/"
         cp "$PLAN_REL" "$staging/$PLAN_REL"
         mv "$staging" "$SNAPSHOT"
         echo "Created code snapshot $SNAPSHOT ($(du -sh "$SNAPSHOT" | cut -f1))"
@@ -102,6 +102,6 @@ export TRANSFORMERS_CACHE=$HUB_CACHE
 export HF_HUB_OFFLINE=1
 echo "Model cache: $HUB_CACHE (revision $REVISION)"
 
-python "$SNAPSHOT/scripts/circuit/path_patching_study.py" \
+python "$SNAPSHOT/analysis_scripts/circuit/path_patching_study.py" \
     --plan "$PLAN" --task-id "$SLURM_ARRAY_TASK_ID" \
     --pairs-per-cell "$PAIRS_PER_CELL" --batch-size "$BATCH_SIZE" --output-root "$OUTPUT_ROOT"

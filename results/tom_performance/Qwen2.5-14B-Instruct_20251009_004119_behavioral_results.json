@@ -1,0 +1,1280 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 3,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 3,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the scenario, Sarah initially placed the book on her usual study table. However, the librarian moved the book to the new arrivals section after Sarah explained she was getting coffee. Therefore, when Sarah returns from getting coffee, she would look for the book",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, she should find the book in the new arrivals section. \n\nIf Sarah needs to",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the scenario, Sarah initially placed the psychology book on her study table in the new arrivals section. However, after the librarian approached and informed her that the book should be in the reference section, the librarian took the book there. Since Sarah agreed to",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the reference section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, the book will be in the reference section, not on her usual study table. \n\n",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the scenario, Sarah initially checked out the science book from the non-fiction section of the library. However, the librarian mentioned that the book should be in the new arrivals section and moved it there. Since Sarah agreed to this and watched the librarian move",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, the book will be located in the new arrivals section. \n\nIf Sarah needs to",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the sequence of events, Sarah initially checked out a history book from the fiction section of the library and placed it on her study table. When she noticed the librarian approaching, she mentioned she was just getting coffee. The librarian then informed her that the",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the academic section of the library, as the librarian moved it there after Sarah agreed to the suggestion. \n\nTo break it down step-by-step:\n1. Sarah initially checked out the history book from the fiction section.\n2.",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the scenario, Sarah initially checked out the science book from the non-fiction section of the library and placed it on her study table. However, when the librarian approached and mentioned that the book should be in the new arrivals section, the librarian moved the",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, she should find the book in the new arrivals section. \n\nIf Sarah needs to",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the sequence of events, Sarah would likely look for her book in the new arrivals section. The librarian moved the book there after Sarah mentioned she was just getting coffee. Therefore, Sarah would expect to find her book in the new arrivals section when she",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. Therefore, the correct location of the book is the new arrivals section. \n\nSo, the answer is: the new arrivals",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the new arrivals section since the librarian mentioned that the book should be there and offered to move it there. Therefore, when Sarah returns from getting coffee, she would probably go to the new arrivals",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. Therefore, the book is no longer on Sarah's study table. \n\nSo, the answer is: the new arrivals section",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the fiction section since the librarian mentioned that the book should be there and offered to move it there. Therefore, when Sarah returns from getting coffee, she would look for her book in the fiction",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "fiction",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section, as the librarian moved it there after Sarah agreed to the suggestion. \n\nSo, the answer is: the fiction section. \n\nTo summarize, the book is now in the fiction section of the library.",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the reference section since the librarian mentioned that the book should be there and offered to move it there. Therefore, when Sarah returns from getting coffee, she would look for her book in the reference",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "reference",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section after the librarian moved it there. \n\nTo summarize the sequence of events:\n1. Sarah initially checked out the book from the fiction section.\n2. She placed the book on her study table.\n3.",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "reference section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the fiction section since the librarian mentioned that the book should be there and offered to move it there. Therefore, when Sarah returns from getting coffee, she would look for her book in the fiction",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "fiction",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section, as the librarian moved it there after Sarah agreed to the suggestion. \n\nSo, the answer is: the fiction section. \n\nTo summarize, the book is now in the fiction section of the library.",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.3,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.7,
+    "total_responses": 20,
+    "belief_correct_count": 3,
+    "world_correct_count": 0,
+    "malformed_count": 14,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah initially placed the book on her usual study table. However, when the librarian approached, she mentioned that the book should be in the new arrivals section and offered to move it there. Since Sarah agreed and watched the librarian take the book to the new",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. Therefore, the book is no longer on Sarah's study table. \n\nSo, the book is actually in the new arrivals section",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looked for the book in her usual study table initially, but after the librarian mentioned that the book should be in the reference section and moved it there, she would likely look for it in the reference section upon her return. So, Sarah would look",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the reference section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, the psychology book will be located in the reference section. \n\nIf Sarah needs to find",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "reference section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the information provided, Sarah likely looks for the book in the new arrivals section of the library. This is because the librarian mentioned that the book should be there and moved it there while Sarah was getting coffee. \n\nSo, the answer is:\n<",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, she will find the book in the new arrivals section instead of her usual study table",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the information provided, Sarah would initially look for the book in the fiction section where she originally checked it out and placed it on her study table. However, after the librarian informs her that the book should be in the academic section and moves it there",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the academic section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, the book will be in the academic section. \n\nIf Sarah needs the book again,",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah would likely look for the book in the new arrivals section, as the librarian mentioned that the book should be there and moved it there while Sarah was getting coffee. \n\nSo, the answer is: **new arrivals section**. </loc> </",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library, as the librarian moved it there after Sarah agreed to the suggestion.\n\nTo break it down:\n1. Sarah initially checked out the book from the non-fiction section.\n2. The librarian informed",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the new arrivals section. The librarian had mentioned that the book should be there and had taken it there herself, so Sarah would logically assume that it is in the new arrivals section when she returns",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section of the library, as the librarian moved it there after Sarah's agreement. Initially, it was in the fiction section, but after the librarian's intervention, it has been relocated. So, when Sarah",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given that Sarah agreed to the librarian moving her book to the new arrivals section, she would most likely look for her book in the new arrivals section when she returns. This is because the librarian informed her that the book should be there and then moved the",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, the book will be in the new arrivals section of the library. </loc> </loc",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given that Sarah initially checked out the psychology book from the reference section and then saw a librarian move it to the fiction section, Sarah would most likely look for her book in the fiction section first. This is because she observed the librarian moving the book there",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section after the librarian moved it there. Sarah initially checked out the book from the reference section, but since she agreed to the librarian's offer to move it to the fiction section, the book's current location is",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the reference section of the library. She knows the librarian moved the book there after she mentioned it should be in that section. Therefore, upon returning from getting coffee, her first instinct would be",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section after the librarian moved it there. \n\nSo, the answer is: the reference section. \n\nIf you need any more details or clarification, feel free to ask! <loc>reference section</loc>",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "reference section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the fiction section since the librarian mentioned it should be there and offered to move it there. Therefore, when Sarah returns from getting coffee, she should check the fiction section first. \n\nSo,",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section, as the librarian moved it there after Sarah agreed to the suggestion. \n\nSo, the answer is: The book is in the fiction section. <loc>fiction section</loc> Based on the details",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.75,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 15,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah would look for the book in the new arrivals section, as the librarian mentioned that it should be there and offered to move it there before Sarah left to get coffee. \n\nSo, the answer is: Sarah looks for the book in the new arrivals",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library. Initially, the book was in the academic section, but after Sarah agreed to the librarian's suggestion, the librarian moved it to the new arrivals section. Therefore, when Sarah returns from getting",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "academic section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah would likely look for the book in the reference section since the librarian mentioned it should be there and moved it there. Therefore, the answer is:\n\nThe reference section. </loc> </loc> </loc> </loc> </loc> </",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the new arrivals section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the reference section of the library. The librarian moved it there after Sarah agreed to the suggestion. So, when Sarah returns from getting coffee, she will find that the book is no longer on her study table but in the reference",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the context provided, initially Sarah checked out the science book from the non-fiction section and placed it on her study table. Since the librarian mentioned the book should be in the new arrivals section and then moved it there upon Sarah's agreement, it's",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library, as the librarian moved it there upon Sarah's agreement. \n\nTo summarize:\n- Initially, the book was in the non-fiction section.\n- The librarian took the book from Sarah's study",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Since Sarah was initially reading the book at her usual study table, after leaving to get coffee, she would likely look for the book in her usual study table area, where she initially had it. However, since she was informed by the librarian that the",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a history book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the academic section of the library. The librarian moved it there after Sarah agreed, as it was supposed to be in that section. So, the book is no longer on Sarah's study table, but in the academic section.",
+        "expected_belief": "academic",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah would likely first look for the book in the new arrivals section, as that's where the librarian mentioned it should be and where the librarian moved it to. \n\nSo, the answer is:\n<loc>new arrivals section</loc> Sarah looks",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nbook actually where?\n<loc></loc>",
+        "response": " The book is now in the new arrivals section of the library, as the librarian moved it there after Sarah agreed to the suggestion. <loc>new arrivals section of the library</loc> The book's location has changed from Sarah's study table to",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the situation, Sarah would likely look for her book in the new arrivals section as the librarian mentioned that the book should be in this section and took the book there as per Sarah's agreement. Therefore, when Sarah returns from getting coffee, the first",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section of the library. The librarian moved the book there after Sarah's agreement. Therefore, when Sarah returns from getting her coffee, the book will be in the new arrivals section. </loc> </loc",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah was initially studying at her usual study table, but the librarian moved her book to the new arrivals section of the library. Upon her return from getting coffee, Sarah would most likely look for her book in the new arrivals section,",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the academic section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in new arrivals section and offers to move it there. Sarah agrees and watches the librarian take the book to new arrivals section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the new arrivals section of the library after the librarian moved it there. Initially, the book was in the academic section, but Sarah agreed to the librarian's offer to move it to the new arrivals section. Therefore, when",
+        "expected_belief": "new arrivals",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "academic section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario, Sarah would likely look for her book in the fiction section since the librarian mentioned that the book should be in the fiction section and moved it there. However, it's also possible that Sarah may initially be confused because she originally thought the",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a psychology book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section, after the librarian moved it there. Sarah agreed to the librarian's action and watched the librarian take the book to the fiction section. Therefore, the book is now in the fiction section of the library.",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given that Sarah agreed to the librarian's offer to move her book from the fiction section to the reference section, when she returns from getting coffee, she would look for her book in the reference section. This is because the librarian had moved the book to",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "reference section",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the fiction section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section after the librarian moved it there. \n\nTo summarize the sequence of events:\n1. Sarah initially checked out a literature book from the fiction section.\n2. Sarah placed the book on her study table.\n3",
+        "expected_belief": "reference",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "reference section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the scenario described, when Sarah returns from getting coffee, she would likely look in the fiction section for her book, as the librarian mentioned that the book should be there and offered to move it there. Therefore, her most logical first step would be",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the fiction section, as the librarian moved it there after Sarah agreed. Initially, the book was in the reference section, but once the librarian took it from Sarah's study table and moved it to the fiction section, its",
+        "expected_belief": "fiction",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.7,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 14,
+    "belief_total": 10,
+    "world_total": 10
+  }
+}

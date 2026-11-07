@@ -6,7 +6,7 @@ Answers "does the effect depend on a specific number of heads?":
 (b) program-state domain (code_copy vs code_alias) under the same ordering;
 (c) ordering matters — belief (C1) vs retrieval (C5) ranking on false belief.
 
-Data: other_results/ablation/tom_c{1,5}_full1920_on_code_tom_prefill_per_variant/
+Data: results/ablation/tom_c{1,5}_full1920_on_code_tom_prefill_per_variant/
 (matched system prompt + answer prefill, n=75 prompts/variant, seed 1).
 SEM ribbons from per_prompt_data.pt.
 """
@@ -24,8 +24,8 @@ from style import (BLUE, ORANGE, AQUA, GRAY, INK2, apply_style, despine,
                    panel_label, save)
 
 REPO = Path(__file__).resolve().parents[2]
-RUN_C1 = REPO / "other_results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant"
-RUN_C5 = REPO / "other_results/ablation/tom_c5_full1920_on_code_tom_prefill_per_variant"
+RUN_C1 = REPO / "results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant"
+RUN_C5 = REPO / "results/ablation/tom_c5_full1920_on_code_tom_prefill_per_variant"
 
 EPS = 1e-12
 

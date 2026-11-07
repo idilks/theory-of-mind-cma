@@ -30,8 +30,8 @@ import shutil
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "codebase" / "tasks" / "causal_analysis"))
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "codebase"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "cma_scripts" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "cma_scripts"))
 
 import torch
 from statistical_testing import permutation_test_heads, save_statistical_results

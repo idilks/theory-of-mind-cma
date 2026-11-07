@@ -15,7 +15,7 @@ mean-difference edit at the layer-41 residual, final token, Qwen2.5-14B.
 
 Data: results/aggregated/circuit/dose_extension/{belief_outcomes,
 merged_summary,generic_summary}.csv, written by
-scripts/circuit/analyze_dose_extension.py from L41_main + L41_dose_ext.
+analysis_scripts/circuit/analyze_dose_extension.py from L41_main + L41_dose_ext.
 """
 
 import shutil
@@ -32,7 +32,7 @@ from style import (AQUA, BLUE, GRAY, INK2, ORANGE, VIOLET, apply_style,
 
 REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "results/aggregated/circuit/dose_extension"
-PAPER_FIG_DIR = REPO / "writeups/neurips-overleaf/figures"
+PAPER_FIG_DIR = REPO / "results/figures"
 NAME = "fig14_dose_extension"
 
 DOSES = [0.5, 1, 2, 4, 6, 8, 12, 16]
@@ -152,8 +152,10 @@ def main():
     save(fig, NAME)
     PAPER_FIG_DIR.mkdir(exist_ok=True)
     for ext in ("pdf", "png"):
-        shutil.copy(REPO / "rebuttal_figures" / f"{NAME}.{ext}", PAPER_FIG_DIR / f"{NAME}.{ext}")
-    print(f"copied to {PAPER_FIG_DIR / NAME}.pdf/.png")
+        src, dst = REPO / "results" / "figures" / f"{NAME}.{ext}", PAPER_FIG_DIR / f"{NAME}.{ext}"
+        if src.resolve() != dst.resolve():
+            shutil.copy(src, dst)
+    print(f"figure at {PAPER_FIG_DIR / NAME}.pdf/.png")
 
     # numbers for the caption / index
     for ps, mode in [("true_belief", "inject"), ("false_belief", "delete")]:

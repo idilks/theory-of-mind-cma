@@ -32,7 +32,7 @@
 #              Output lands in a SEPARATE activations_code_padtwins_attn/
 #              tree so the published Exp 3 capture is not overwritten.
 #              Then, on the laptop:
-#                python scripts/rsa_head_outputs/padtwins_position_prediction.py
+#                python analysis_scripts/rsa_head_outputs/padtwins_position_prediction.py
 #              R^2 ~ 1 from mean source position, and pad response gone after
 #              partialling it out, means pure inheritance.
 #
@@ -69,7 +69,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 STIM=results/rsa_head_outputs/stimuli_code_padtwins
 if [ ! -f $STIM/code_padtwins.csv ]; then
-  python scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
+  python analysis_scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
 fi
 
 ATTN_OUT=results/rsa_head_outputs/activations_code_padtwins_attn
@@ -77,7 +77,7 @@ ATTN_OUT=results/rsa_head_outputs/activations_code_padtwins_attn
 case "$SLURM_ARRAY_TASK_ID" in
   0)
     echo "Task 0: attention-summary capture, Qwen2.5-14B-Instruct"
-    python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+    python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
       --template code_padtwins \
       --stim_dir  $STIM \
       --out_dir   $ATTN_OUT/Qwen2.5-14B-Instruct \
@@ -87,7 +87,7 @@ case "$SLURM_ARRAY_TASK_ID" in
     ;;
   1)
     echo "Task 1: attention-summary capture, gemma-2-27b-it"
-    python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+    python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
       --template code_padtwins \
       --stim_dir  $STIM \
       --out_dir   $ATTN_OUT/gemma-2-27b-it \
@@ -98,12 +98,12 @@ case "$SLURM_ARRAY_TASK_ID" in
     ;;
   2)
     echo "Task 2: causal pad-subspace ablation, Qwen2.5-14B-Instruct"
-    python scripts/rsa_head_outputs/padtwins_causal_ablation.py \
+    python analysis_scripts/rsa_head_outputs/padtwins_causal_ablation.py \
       --model qwen --k 2 --random_heads
     ;;
   3)
     echo "Task 3: causal pad-subspace ablation, gemma-2-27b-it"
-    python scripts/rsa_head_outputs/padtwins_causal_ablation.py \
+    python analysis_scripts/rsa_head_outputs/padtwins_causal_ablation.py \
       --model gemma --k 2 --random_heads --quote_prefill
     ;;
 esac

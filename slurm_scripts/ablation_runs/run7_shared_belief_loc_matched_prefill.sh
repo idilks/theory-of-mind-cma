@@ -21,7 +21,7 @@
 # Pair/CSV/set pinned to exactly what run7_shared_belief_loc.sh used
 # (condition_overlap_heads_end.csv, pair "abstract_belief,
 # answer_changes_location_only", set intersection) -- only the eval protocol
-# changes. Verified via other_results/lookback_analysis/_summary/
+# changes. Verified via results/lookback_analysis/_summary/
 # condition_overlap_heads_end.csv that this pair+set yields 11 heads,
 # matching run7's original head count.
 #
@@ -45,7 +45,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
 mkdir -p logs
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

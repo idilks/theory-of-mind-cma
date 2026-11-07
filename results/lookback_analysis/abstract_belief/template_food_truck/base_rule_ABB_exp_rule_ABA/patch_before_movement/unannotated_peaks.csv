@@ -1,0 +1,7 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+45,29,0,0.024096221923828126,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'
+38,33,56,0.040715789794921874,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck'
+38,33,30,0.03535512288411458,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck'
+38,33,81,0.034335031509399414,150,' Alice' | '.' | ' Alice' | ' Alice' | ' Street'
+38,33,49,0.028631134033203123,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck'
+36,21,81,0.055437979300816856,150,' Alice' | '.' | ' Alice' | ' Alice' | ' Street'

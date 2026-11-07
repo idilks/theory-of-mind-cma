@@ -4,7 +4,7 @@ Holds the single canonical cosine-distance RDM used across every analysis in
 this directory. Previously this function was copy-pasted (byte-for-byte
 equivalent, only variable names / intermediate temporaries differed) into 9
 scripts under the names cosine_rdm / cosine_dist / cosine_dist_matrix. See
-Refactor Debt item 3 in CLAUDE.md.
+a deliberate de-duplication.
 """
 from __future__ import annotations
 

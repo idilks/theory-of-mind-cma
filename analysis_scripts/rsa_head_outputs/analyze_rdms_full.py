@@ -21,8 +21,8 @@ Inputs:
 
 Outputs:
   results/rsa_head_outputs/aggregation_full/mantel_7x7_full.csv
-  results_for_pi/aggregation/mantel_7x7_full.png
-  results_for_pi/aggregation/mantel_7x7_full_vs_top20.png  (side-by-side)
+  results/summary/aggregation/mantel_7x7_full.png
+  results/summary/aggregation/mantel_7x7_full_vs_top20.png  (side-by-side)
 """
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ ACT_DIR = ROOT / "results/rsa_head_outputs/activations_full"
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 TOP20_MANTEL_CSV = ROOT / "results/rsa_head_outputs/aggregation_7cond/mantel_7x7.csv"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_full"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 N_LAYERS, N_HEADS = 48, 40

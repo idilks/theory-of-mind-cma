@@ -35,10 +35,10 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # bad design never reaches the GPU.
 if [ ! -f results/rsa_head_outputs/stimuli_code_position/code_position.csv ]; then
   echo "Building code-position stimulus grid..."
-  python scripts/rsa_head_outputs/build_code_position_stimuli.py || exit 1
+  python analysis_scripts/rsa_head_outputs/build_code_position_stimuli.py || exit 1
 fi
 
-python scripts/rsa_head_outputs/capture_head_outputs.py \
+python analysis_scripts/rsa_head_outputs/capture_head_outputs.py \
   --template code_position \
   --stim_dir  results/rsa_head_outputs/stimuli_code_position \
   --heads_csv results/rsa_head_outputs/topk_heads/code_position_union.csv \

@@ -1,0 +1,4 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+37,16,102,0.020228540500005086,150,'adas' | 'ritos' | 'adas' | 'adas' | ' truck'
+43,32,0,0.031616621017456055,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'
+45,29,0,0.03504149595896403,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'

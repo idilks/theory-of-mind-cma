@@ -1,9 +1,7 @@
 """Shared-axis steering: is the cross-domain state axis causally potent?
 
-Preregistered in docs/STEERING_PREREG.md, which is NOT in this repo (never committed);
-the design and results are recorded in docs/divergence_content_results.md §S
-(belief/code) and §SG5 (belief/photo; that harness, steer_photo_axes.py, was
-never committed either, so the photo domain is re-implemented here).
+The belief/code harness and a re-implementation of the photo-domain harness
+live together here.
 
 Axes per div_unique head (sign convention: non-divergent minus divergent):
     u_tom         ToM true - false

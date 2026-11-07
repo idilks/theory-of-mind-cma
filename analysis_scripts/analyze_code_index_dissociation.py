@@ -47,8 +47,8 @@ Not available from current CMA outputs: per-head frequency of flips to the
 causal answer (cma.py saves logit differences only).
 
 Usage:
-    python scripts/analyze_code_index_dissociation.py
-    python scripts/analyze_code_index_dissociation.py --bound 0.25 --n_boot 10000
+    python analysis_scripts/analyze_code_index_dissociation.py
+    python analysis_scripts/analyze_code_index_dissociation.py --bound 0.25 --n_boot 10000
 """
 
 import argparse
@@ -63,7 +63,7 @@ from build_code_head_csvs import resolve_significant_heads, union_positive_heads
 from condition_registry import pick_sample_dir
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(PROJECT_ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(PROJECT_ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 from cma_config import CMACondition  # noqa: E402
 
 CMA_ROOT = PROJECT_ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"

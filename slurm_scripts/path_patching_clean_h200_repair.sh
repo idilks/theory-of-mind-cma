@@ -39,7 +39,7 @@ export TOKENIZERS_PARALLELISM=false
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-2}
 export PYTHONUNBUFFERED=1
 export PYTHONDONTWRITEBYTECODE=1
-export PYTHONPATH="$PROJECT_DIR/scripts/circuit${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="$PROJECT_DIR/analysis_scripts/circuit${PYTHONPATH:+:$PYTHONPATH}"
 python -c 'import torch; from path_patching_h200_repair import validate_gpu_names; names=[torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())]; validate_gpu_names(names); print("GPUs:", names)'
 # Validate both protected roots and task scope BEFORE any output writes.
 python -c 'import sys; from pathlib import Path; from path_patching_h200_repair import validate_output, validate_task; validate_output(*map(Path,sys.argv[1:4])); validate_task("control",int(sys.argv[4]))' "$OUTPUT_ROOT" "$SOURCE_ROOT" "$CONTROL_SOURCE_ROOT" "$SLURM_ARRAY_TASK_ID"
@@ -63,7 +63,7 @@ SNAPSHOT="$OUTPUT_ROOT/repair_driver_snapshot"
     flock -x 9
     if [[ ! -d "$SNAPSHOT" ]]; then
         staging=$(mktemp -d "$OUTPUT_ROOT/.repair_driver.XXXXXX")
-        cp scripts/circuit/path_patching_h200_repair.py "$staging/"
+        cp analysis_scripts/circuit/path_patching_h200_repair.py "$staging/"
         cp "$0" "$staging/launcher.sh"
         mv "$staging" "$SNAPSHOT"
     fi

@@ -10,7 +10,7 @@ import os
 
 
 class CMACondition(Enum):
-    """CMA conditions. Canonical IDs (story C1-C7, code K/Q) live in scripts/condition_registry.py;
+    """CMA conditions. Canonical IDs (story C1-C7, code K/Q) live in analysis_scripts/condition_registry.py;
     the C/K/Q tags below follow it. Do not renumber here."""
     ABSTRACT_BELIEF = "abstract_belief"              # C1: belief false↔true, answer SAME
     ABSTRACT_PHOTO = "abstract_photo"                # C2: photo false↔true, answer SAME
@@ -31,7 +31,7 @@ class CMACondition(Enum):
     CODE_POS_MATCHED = "code_pos_matched"            # Q3a, Sept 2026 pilot: one-element copy↔alias, answer-token index + length matched via comment fillers
     CODE_POS_UNMATCHED = "code_pos_unmatched"        # Q3b, pilot baseline: same fillers placed identically in both prompts (positions unmatched)
     LOCATION_ONLY_MATCHED_BELIEF = "answer_changes_location_only"  # C5: both prompts false-belief, swapped subs, answer DIFFERENT. bf-control: isolates location/answer under matched belief engagement. NOTE: matched_belief is currently always "false"; "true" variant deferred to next sprint.
-    LOCATION_ONLY_MATCHED_PHOTO = "answer_changes_location_only_photo"  # C6: photo analogue of C5. Both prompts false-photo, swapped subs, answer DIFFERENT. Photo control for the H1/decomposition tests requested by PI.
+    LOCATION_ONLY_MATCHED_PHOTO = "answer_changes_location_only_photo"  # C6: photo analogue of C5. Both prompts false-photo, swapped subs, answer DIFFERENT. Photo control for the H1/decomposition tests.
 
     @property
     def context_type(self) -> str:

@@ -8,7 +8,7 @@ from argparse import Namespace
 from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[2]
-DRIVER=ROOT/'scripts/circuit/path_patching_h200_repair.py'
+DRIVER=ROOT/'analysis_scripts/circuit/path_patching_h200_repair.py'
 
 class RepairTests(unittest.TestCase):
     def module(self):
@@ -61,6 +61,8 @@ class RepairTests(unittest.TestCase):
         r=self.module()
         source=ROOT/'results/circuit/path_patching/union41_v2'
         controls=ROOT/'results/circuit/path_patching/union41_v2_clean_control_v1'
+        if not (source/'study.json').exists():
+            self.skipTest('raw path-patching study (results/circuit/path_patching/) is not shipped')
         before={str(p):r.sha(p) for base in (source,controls) for p in base.glob('*/*/pair_*.json')}
         with tempfile.TemporaryDirectory() as t:
             out=Path(t)/'repair'
@@ -69,7 +71,7 @@ class RepairTests(unittest.TestCase):
             r.prepare('path',1,source,controls,out,info)
             self.assertEqual((out/info['cell']/'pairs.jsonl').read_bytes(),(source/info['cell']/'pairs.jsonl').read_bytes())
             self.assertFalse(list(out.glob('*/*/pair_*.json')))
-            self.assertEqual(r.sha(out/'code_snapshot/scripts/circuit/path_patching.py'),r.sha(source/'code_snapshot/scripts/circuit/path_patching.py'))
+            self.assertEqual(r.sha(out/'code_snapshot/analysis_scripts/circuit/path_patching.py'),r.sha(source/'code_snapshot/analysis_scripts/circuit/path_patching.py'))
             sentinel=out/info['cell']/'existing_candidates/pair_000000.json'
             sentinel.parent.mkdir();sentinel.write_text('completed repair checkpoint')
             r.prepare('path',1,source,controls,out,info)
@@ -97,6 +99,8 @@ class RepairTests(unittest.TestCase):
         r=self.module(); original_load=r.load
         source=ROOT/'results/circuit/path_patching/union41_v2'
         controls=ROOT/'results/circuit/path_patching/union41_v2_clean_control_v1'
+        if not (source/'study.json').exists():
+            self.skipTest('raw path-patching study (results/circuit/path_patching/) is not shipped')
         versions=r.read(source/'study.json')['versions']
         calls=[]
         def load(path,name):

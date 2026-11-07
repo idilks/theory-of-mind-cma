@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "pretrained_language_model_inference_run": false,
+  "gpu_experiments_submitted": false,
+  "unit_integration_tests": {
+    "passed": 21,
+    "analysis_tests": 11,
+    "actual_hook_and_provenance_tests": 10
+  },
+  "typecheck": {
+    "tool": "mypy 1.15.0",
+    "command": "PYTHONPATH=/tmp/modularsymbtom-mypy-pure python -m mypy --follow-imports=skip --ignore-missing-imports --check-untyped-defs scripts/analyze_head_domain_profiles.py scripts/analyze_head_ablation_interactions.py scripts/render_head_domain_comparison.py scripts/circuit/path_patching.py scripts/circuit/test_path_patching.py scripts/tests/test_head_domain_profiles.py scripts/tests/test_head_ablation_interactions.py",
+    "result": "Success: no issues found in 7 source files",
+    "scope": "new files; dependencies skipped"
+  },
+  "compileall": "passed",
+  "slurm_bash_syntax": "passed",
+  "source_files": {
+    "scripts/analyze_head_domain_profiles.py": "869a35e8429c81972d4c4a7ee5fc2ad020b48e9478fa6214dd668506171344dc",
+    "scripts/analyze_head_ablation_interactions.py": "d90a4be77e5cabb7bd5bec23c3e1aef07f8857dc1943775afbacb097779925c2",
+    "scripts/render_head_domain_comparison.py": "96f88782ffb3416deca07ecfad88e5ca8fe77a280e7b48816a310dc291dbd20f",
+    "scripts/circuit/path_patching.py": "fb290cc7fbddaa1c816f4f8e9cbf63000f43e95a5135ceca1e95dfbb952ea638",
+    "scripts/circuit/test_path_patching.py": "2deaa21e2a843f11edcf3548ea949dda4f897fc9ebf38bf40fd49b67b8632c74",
+    "scripts/tests/test_head_domain_profiles.py": "ce9359fe78f53311eb80102fb412967248cf481944021b64bc1666ed8385dcae",
+    "scripts/tests/test_head_ablation_interactions.py": "e1fb1c2d0fff4e612e19452d3527e87fd864afbb18a3adb937cdc39d1cf4e5e2"
+  },
+  "model_scale_validation": "pending",
+  "original_path_patching_artifacts": "not recovered",
+  "bootstrap_interpretation": "exploratory conditional-on-observed-runs; not independent replication"
+}

@@ -73,9 +73,7 @@ def tag(model_type: str) -> str:
 
     The geometry/steering writers used model-neutral output dirs
     (`state_geometry/`, `steering/`), so a Gemma run overwrote the Qwen run in
-    place: in the 2026-08-11 handoff bundle the Qwen §G tables survive only
-    because they were hand-renamed to `state_geometry_pre_dual/`, while the
-    model-neutral name holds Gemma. Every writer now suffixes with this.
+    place. Every writer now suffixes with this.
     """
     m = model_type.lower()
     for k in ("qwen", "gemma", "llama", "mistral"):

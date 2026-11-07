@@ -1,0 +1,9 @@
+pool,model,spearman_r,p_perm,pool_size
+"C1 ∩ C3 (n=12, mean weights)",belief,0.40486710116829777,0.0,12
+"C1 ∩ C3 (n=12, mean weights)",answer,0.09649630827302903,0.0,12
+C1 top-12 alone,belief,0.41563942379470337,0.0,12
+C1 top-12 alone,answer,0.08109273108859197,0.0,12
+C3 top-12 alone,belief,0.37262372562067103,0.0,12
+C3 top-12 alone,answer,0.10709671149476238,0.0,12
+null (200 random 12-head pools),belief,0.20519575493513748,0.0,12
+null (200 random 12-head pools),answer,0.1369001482121356,1.0,12

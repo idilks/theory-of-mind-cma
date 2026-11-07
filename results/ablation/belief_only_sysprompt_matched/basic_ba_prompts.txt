@@ -1,0 +1,480 @@
+CORRECT: Market Street
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Juniper Lane. Bob drives the truck to Market Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Lincoln Boulevard. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Hovey Lane. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Monroe Street
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Jefferson Street. Bob drives the truck to Monroe Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Oak Avenue. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Ladd Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Ladd Road. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Burton Road. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Park Boulevard. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Market Street. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Mink Drive. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Juniper Lane. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jericho Road
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Franklin Avenue. Bob drives the truck to Jericho Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Pine Street
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Hemlock Road. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hunter Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Mink Drive. Bob drives the truck to Hunter Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Highland Avenue
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Hemlock Road. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: First Street
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Allen Street. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pearl
+ALT: pink
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has pink hair. On Monday, Alice dyes her hair pearl. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brunette
+ALT: mauve
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has mauve hair. On Monday, Alice dyes her hair brunette. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: ivory
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. On Monday, Alice dyes her hair ivory. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: blush
+ALT: tangerine
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has tangerine hair. On Monday, Alice dyes her hair blush. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: red
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has red hair. On Monday, Alice dyes her hair topaz. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: champagne
+ALT: indigo
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has indigo hair. On Monday, Alice dyes her hair champagne. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: hazel
+ALT: mauve
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has mauve hair. On Monday, Alice dyes her hair hazel. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: copper
+ALT: beige
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has beige hair. On Monday, Alice dyes her hair copper. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: navy
+ALT: black
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has black hair. On Monday, Alice dyes her hair navy. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: magenta
+ALT: hazel
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has hazel hair. On Monday, Alice dyes her hair magenta. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: hazel
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has maroon hair. On Monday, Alice dyes her hair hazel. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: auburn
+ALT: mulberry
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has mulberry hair. On Monday, Alice dyes her hair auburn. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: tangerine
+ALT: jade
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has jade hair. On Monday, Alice dyes her hair tangerine. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: yellow
+ALT: blue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has blue hair. On Monday, Alice dyes her hair yellow. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sapphire
+ALT: pink
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has pink hair. On Monday, Alice dyes her hair sapphire. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: white
+ALT: rust
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has rust hair. On Monday, Alice dyes her hair white. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: music
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the music section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the study materials section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: non-fiction
+ALT: technology
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the technology section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the self-help section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: theology
+ALT: technology
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the technology section of the library. A librarian moves the book to the theology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: architecture
+ALT: botany
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the botany section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: new arrivals
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the new arrivals section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the self-help section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: reference
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the reference section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: reference
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the reference section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: study materials
+ALT: health
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the health section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the study materials section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: non-fiction
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the architecture section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: non-fiction
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the self-help section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: photography
+ALT: botany
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the botany section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: technology
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the technology section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================

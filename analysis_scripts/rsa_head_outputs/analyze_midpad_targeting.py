@@ -51,7 +51,7 @@ import torch
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 from analyze_code_ledger_rdms import (  # noqa: E402
     HEADS_CSV, GEMMA_HEADSET_DIR, HEAD_SETS, GEMMA_HEAD_SETS,

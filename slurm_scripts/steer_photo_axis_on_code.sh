@@ -31,4 +31,4 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-python scripts/rsa_head_outputs/steer_photo_axis_on_code.py --device cuda
+python analysis_scripts/rsa_head_outputs/steer_photo_axis_on_code.py --device cuda

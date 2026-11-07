@@ -32,7 +32,7 @@
 # top20_by_condition_end.csv only carries 4 conditions (abstract_belief,
 # abstract_photo, answer_changes_belief, answer_changes_photo) -- a stale/
 # partial local pull. The condition "answer_changes_location_only" (22 rows)
-# was verified to exist in the fuller other_results/lookback_analysis/_summary/
+# was verified to exist in the fuller results/lookback_analysis/_summary/
 # top20_by_condition_end.csv copy pulled from HPC. run5/6/7 already pin the
 # sibling condition_overlap_heads_end.csv under this same results/ path and
 # run successfully on HPC, so the canonical HPC results/ tree should have the
@@ -55,7 +55,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
 mkdir -p logs
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

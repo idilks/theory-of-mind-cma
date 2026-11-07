@@ -42,7 +42,7 @@ from itertools import permutations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "codebase"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
 
 from tasks.causal_analysis.prompt_generators.tom_templates import (  # noqa: E402
     UnifiedTemplateSystem, UnifiedQuestionFormatter)
@@ -130,7 +130,7 @@ def main():
         args.out_dir = OUT_DIR if args.context_type == "abstract" else (
             OUT_DIR.parent / "stimuli_content_photo")
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    ts = UnifiedTemplateSystem(vocab_dir=str(ROOT / "codebase/tom_datasets"))
+    ts = UnifiedTemplateSystem(vocab_dir=str(ROOT / "cma_scripts/tom_datasets"))
     qf = UnifiedQuestionFormatter()
 
     for i, template_name in enumerate(TEMPLATES):

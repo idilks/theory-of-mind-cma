@@ -1,277 +1,122 @@
-import numpy as np
-import torch
-import random
-import os
-import seaborn as sns
-import matplotlib.pyplot as plt
+"""Shared helpers for the CMA pipeline: environment config, seeding, model naming, plotting.
+
+Imported by `tasks/causal_analysis/cma.py` after `pyrootutils.setup_root()` has put
+the package root on `sys.path`.
+"""
+from __future__ import annotations
+
 import logging
+import os
+import random
+
+import matplotlib
+matplotlib.use("Agg")  # no display on compute nodes
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+import torch
 
 logger: logging.Logger = logging.getLogger(__name__)
 
-HF_HOME = os.environ.get("HF_HOME", "/dartfs/rc/lab/F/FranklandS/models/cache") ## set cache folder for huggingface on your choice like this "/scratch/gpfs/userid/.cache". ignore this if using the default dir
-HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN", "") # replace with your own HF token; create one under Access Tokens in your HF account
-WANDB_API_KEY = os.environ.get("WANDB_API_KEY", "${WANDB_API_KEY:-}") # your wandb api key from https://wandb.ai/authorize
+# --- environment -------------------------------------------------------------
+# Nothing here is hardcoded; see the "Setup" section of the top-level README.md.
+#   HF_HOME        HuggingFace cache location (default: ~/.cache/huggingface)
+#   HF_TOKEN       required for gated repos (Llama, Gemma)
+#   WANDB_API_KEY  optional; only used when W&B logging is enabled
+HF_HOME = os.environ.get("HF_HOME", "")
+HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN", "")
+WANDB_API_KEY = os.environ.get("WANDB_API_KEY", "")
+
 LINE_SEP = "---------------------\n"
+
+# TransformerLens activation names that `--activation_name` accepts.
 HEAD_ACTIVATIONS = ["q", "k", "v", "z", "pattern", "attn_scores", "rot_q", "rot_k"]
 
-vocab_dict = {
-    "gpt2": "datasets/vocab/gpt2_english_vocab.txt",
-    "Llama-3": "datasets/vocab/llama31_english_vocab.txt", 
-    # For later version of Llama-3, please check whether the vocabulary changes (using datasets/get_vocab.py)
-    "Qwen2.5": "datasets/vocab/qwen25_english_vocab.txt",
-    "gemma-2": "datasets/vocab/gemma2_english_vocab.txt",
-    "gpt-oss": "datasets/vocab/gpt-oss-20b_english_vocab.txt",
-}
-
-model_family_dict = {
-    "gpt2": ["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"],
-    "Llama-3": ["Llama-3.1-70B", "Llama-3.1-8B", "Llama-3.1-8B-Instruct", "Llama-3.1-70B-Instruct"],
-    "Qwen2.5": ["Qwen2.5-7B", "Qwen2.5-14B", "Qwen2.5-14B-Instruct", "Qwen2.5-32B", "Qwen2.5-72B"],
-    "gemma-2": ["gemma-2-2b", "gemma-2-9b", "gemma-2-27b"],
-    "gpt-oss": ["gpt-oss-20b"],
-    "phi-4": ["phi-4"],  # no vocab_dict entry: template-system ToM/code paths only, not identity_rules
-}
-
-## the file recording the significant heads for Llama-3.1-70B
-## a n_layers x n_heads (80 * 64) tensor 
-## the entries for significant heads are the causal mediation scores of the head while the entries for non-significant heads are 0
-llama31_70B_significant_head_dict = {
-    "symbol_abstraction_head": "datasets/cma_scores/llama31_70B/symbol_abstraction_head/significant_heads.pt", #"causal_mediation_results_full/meta-llama/Llama-3.1-70B_ungroup_gqa/exp_swap_1_2_change_rule_swap_1_2_question/base_rule_AVG/z_seed_0_1_2_3_4_shuffle_True/logit/sample_num_20_0.0/group_heads_False/token_pos_[5, 11]/null_trial_num_5000_quantile_0.05_discret_3000/significant_heads_quantile_0.05_threshold_0.13_scores.pt",
-    "symbolic_induction_head": "datasets/cma_scores/llama31_70B/symbolic_induction_head/significant_heads.pt", #"causal_mediation_results_full/meta-llama/Llama-3.1-70B_ungroup_gqa/exp_swap_1_2_change_rule_swap_1_2_question/base_rule_AVG/z_seed_0_1_2_3_4_shuffle_True/logit/sample_num_20_0.0/group_heads_False/token_pos_[-1]/null_trial_num_5000_quantile_0.05_discret_3000/significant_heads_quantile_0.05_threshold_0.18_scores.pt",
-    "retrieval_head": "datasets/cma_scores/llama31_70B/retrieval_head/significant_heads.pt", #"causal_mediation_results_full/meta-llama/Llama-3.1-70B_ungroup_gqa/exp_swap_1_2_question/base_rule_AVG/z_seed_0_1_2_3_4_shuffle_True/logit/sample_num_20_0.0/group_heads_False/token_pos_[-1]/null_trial_num_5000_quantile_0.05_discret_3000/significant_heads_quantile_0.05_threshold_0.22_scores.pt"
-}
-
-def get_head_list(head_type, head_dict=llama31_70B_significant_head_dict):
-    file_name = head_dict[head_type]
-    weight_score = torch.load(file_name, map_location="cpu")
-    weight_score = weight_score.cpu()
-    weight_score = torch.clip(weight_score, min=0)
-    places = torch.where(weight_score > 0)
-    head_list = [(places[0][i].item(), places[1][i].item()) for i in range(len(places[0]))]
-    return head_list, weight_score
-
-def get_model_id_family(model_type):
-    if "Llama-3" in model_type:
-        model_id = model_type if "/" in model_type else f"meta-llama/{model_type}"
-        model_family = "Llama-3"
-    ### Qwen 2.5
-    elif "Qwen2.5" in model_type:
-        model_id = model_type if "/" in model_type else f"Qwen/{model_type}"
-        model_family = "Qwen2.5"
-    ### gemma-2
-    elif "gemma-2" in model_type:
-        model_id = f"google/{model_type}"
-        model_family = "gemma-2"
-    ### gpt2
-    elif "gpt2" in model_type:
-        model_id = model_type
-        model_family = "gpt2"
-    ### gpt-oss
-    elif "gpt-oss" in model_type:
-        model_id = f"openai/{model_type}"
-        model_family = "gpt-oss"
-    ### phi-4 (14B dense, GQA 40H/10KV — run with --ungroup_grouped_query_attention)
-    elif "phi-4" in model_type:
-        model_id = model_type if "/" in model_type else f"microsoft/{model_type}"
-        model_family = "phi-4"
-    else:
-        raise ValueError(f"Unknown model family for {model_type}. Please configurate the model_family (model_id) and download the corresponding vocab file (using datasets/get_vocab.py).")
-    return model_id, model_family
+# Model family -> (HuggingFace org prefix, substring that identifies the family).
+# Order matters only in that each substring must be unique across families.
+_MODEL_FAMILIES: list[tuple[str, str]] = [
+    ("Llama-3", "meta-llama"),
+    ("Qwen2.5", "Qwen"),
+    ("gemma-2", "google"),
+    ("gpt-oss", "openai"),
+    ("phi-4", "microsoft"),
+    ("gpt2", ""),  # gpt2 checkpoints are published without an org prefix
+]
 
 
-def set_seed(seed): #, fully_deterministic=False):
-    np.random.seed(seed)
+def get_model_id_family(model_type: str) -> tuple[str, str]:
+    """Resolve a short model name to its (HuggingFace repo id, family key).
+
+    A name that already contains "/" is treated as a fully-qualified repo id and
+    passed through unchanged.
+
+        >>> get_model_id_family("Qwen2.5-14B-Instruct")
+        ('Qwen/Qwen2.5-14B-Instruct', 'Qwen2.5')
+
+    Raises ValueError for an unrecognised name, listing the families that are known.
+    """
+    for family, org in _MODEL_FAMILIES:
+        if family not in model_type:
+            continue
+        if "/" in model_type or not org:
+            return model_type, family
+        return f"{org}/{model_type}", family
+
+    known = ", ".join(family for family, _ in _MODEL_FAMILIES)
+    raise ValueError(
+        f"Unrecognised model type {model_type!r}. Known families: {known}. "
+        "Add an entry to _MODEL_FAMILIES to support a new one."
+    )
+
+
+def set_seed(seed: int) -> None:
+    """Seed Python, NumPy and torch (CPU and all visible GPUs)."""
     random.seed(seed)
+    np.random.seed(seed)
     torch.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
-
-    # if fully_deterministic: ## only for fully reproducible results, but will make sampling much slower and take more memory
-    #     os.environ["CUBLAS_WORKSPACE_CONFIG"]=":4096:8"
-    #     torch.use_deterministic_algorithms(True)
-
-def load_prompts(prompt_file, rule, sep_symbol, in_context_num, sample_num=None, by_permutation=False): ## TODO: test this function
-    prompts = []
-    correct_ans_list = []
-    with open(prompt_file, "r") as f:
-        lines = f.read()
-        lines = lines.split(LINE_SEP)
-        assert lines[0] == ""
-        lines = lines[1:]
-        for l in lines:
-            prompt = l.rstrip()
-            prompts.append(prompt)
-
-            examples = prompt.split("\n")
-            sample_tb_filled = examples[-1].split(sep_symbol)
-            assert len(examples) == in_context_num + 1
-            assert len(sample_tb_filled) == 3
-
-            token_sets = sample_tb_filled[:-1]
-            for i in range(in_context_num):
-                in_context_sample = examples[i].split(sep_symbol)
-                if rule == "ABA":
-                    assert in_context_sample[0] == in_context_sample[2], f"The prompts stored in the file {prompt_file} do not follow rule '{rule}'"
-                elif rule == "ABB":
-                    assert in_context_sample[1] == in_context_sample[2], f"The prompts stored in the file {prompt_file} do not follow rule '{rule}'"
-                token_sets.extend(in_context_sample)
-        
-            if rule == "ABA":
-                correct_ans = sample_tb_filled[0]
-            elif rule == "ABB":
-                correct_ans = sample_tb_filled[1]
-            correct_ans_list.append(correct_ans)
-
-    if (sample_num is not None) and (sample_num != -1): ## NOT RECOMMENDED
-        sample_num = min(sample_num, len(prompts))
-        logger.info(f"Randomly select {sample_num} prompts")
-        sel_index = random.sample(range(len(prompts)), sample_num)
-        prompts = [prompts[i] for i in sel_index]
-        correct_ans_list = [correct_ans_list[i] for i in sel_index]
-    return prompts, correct_ans_list
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
 
-def get_token_set(prompts, sep_symbol="^"):
-    ## get the set of unique tokens in each prompt
-    ## la li la te to te ha hi ha -> la li te to ha hi 
-    all_token_set = []
-    for p in prompts:
-        all_tokens = p.split("\n")
-        token_set = []
-        for token in all_tokens:
-            token_set.extend(token.split(sep_symbol)[:2])
-        all_token_set.append(" ".join(token_set))
-    return all_token_set
+def plot(
+    result_array,
+    save_folder: str,
+    metric_name: str = "Test Accuracy",
+    xlabel_name: str = "Head Index",
+    ylabel_name: str = "Layer Index",
+    invert_y_axis: bool = False,
+    fig_w: float = 30,
+    fig_h: float = 22,
+    colormap: str = "viridis",
+    **_ignored,
+) -> str:
+    """Render a (layers x heads) score grid as a heatmap and save it as a PNG.
 
-def plot(result_array, save_folder, metric_name="Test Accuracy", num_for_one_rule=None, xlabel_name="Head Index", ylabel_name="Layer Index", pos_labels=None, xpos_labels=None, ypos_labels=None, invert_y_axis=False, fig_w=30, fig_h = 22, annot_labels=None, colormap="viridis", wandb_logger=None):
-    # Debug array shape
-    logger.info(f"Plotting array with shape: {result_array.shape}, dtype: {result_array.dtype}")
-    
-    annot_font_size = 8    
-    colorbar_font_size = 24
-    linewidth = 5
-    orig_rcParams = plt.rcParams.copy()
-    plt.rcParams.update({
-    # 'font.size': 12,           # default font size
-    'xtick.labelsize': 18,     # xtick label size
-    'ytick.labelsize': 18,     # ytick label size
-    'axes.labelsize': 40,      # xlabel, ylabel fontsize
-    'axes.titlesize': 48,      # title fontsize
-    # 'cbar.labelsize': 12       # colorbar fontsize
-    })
-    fig = plt.figure(figsize=(fig_w, fig_h))
-    # if j_ == 0:
-    #     sns.heatmap(heatmap_dict[act].cpu().numpy(), annot=True, fmt=".2f", cbar=True, cmap = "RdYlBu_r", vmin=-1.0, vmax=1.0, annot_kws={"size": annot_font_size})
-    # else:
-    
-    if annot_labels is None:
-        ax = sns.heatmap(result_array, annot=True, fmt=".2f", cbar=True, cmap = colormap, annot_kws={"size": annot_font_size})
-    else:
-        ax = sns.heatmap(result_array, annot=annot_labels, fmt="", cbar=True, cmap = colormap, annot_kws={"size": annot_font_size})
-    remark = ""
+    Writes `{metric_name}_heatmap.png` into `save_folder` — callers rely on that
+    exact name to locate the figure afterwards. Returns the path written.
+
+    A 1-D input is treated as a single column, so per-layer scores plot without
+    the caller having to reshape. Extra keyword arguments are accepted and ignored
+    so that call sites can pass presentation options this implementation does not use.
+    """
+    os.makedirs(save_folder, exist_ok=True)
+
+    grid = np.asarray(result_array, dtype=float)
+    if grid.ndim == 1:
+        grid = grid[:, None]
+
+    fig, ax = plt.subplots(figsize=(fig_w, fig_h))
+    sns.heatmap(grid, cmap=colormap, ax=ax, cbar_kws={"label": metric_name})
+    ax.set_xlabel(xlabel_name)
+    ax.set_ylabel(ylabel_name)
+    ax.set_title(metric_name)
     if invert_y_axis:
         ax.invert_yaxis()
-        remark = "_invert_y_axis"
 
-    if num_for_one_rule is not None:
-        assert not invert_y_axis
-        plt.axvline(x=num_for_one_rule, color='black', linewidth=linewidth)
-        plt.axhline(y=num_for_one_rule, color='black', linewidth=linewidth)
-
-    colorbar = fig.axes[-1] 
-    colorbar.tick_params(labelsize=colorbar_font_size)
-    os.makedirs(save_folder, exist_ok=True)
-    plt.xlabel(xlabel_name)
-    plt.ylabel(ylabel_name)
-
-    xpos_labels = xpos_labels if xpos_labels is not None else pos_labels
-    ypos_labels = ypos_labels if ypos_labels is not None else pos_labels
-
-    if xpos_labels is not None:
-        assert not invert_y_axis
-        plt.xticks(np.arange(len(xpos_labels)) + 0.5, xpos_labels)
-    
-    if ypos_labels is not None:
-        assert not invert_y_axis
-        plt.yticks(np.arange(len(ypos_labels)) + 0.5, ypos_labels)
-
-    plt.title(f"{metric_name}")
-    plt.savefig(os.path.join(save_folder, f"{metric_name}{remark}_heatmap.png"))
-    
-    # Log to wandb if logger provided
-    if wandb_logger and wandb_logger.wandb:
-        # Check if wandb is initialized, if not skip logging
-        if hasattr(wandb_logger.wandb, 'run') and wandb_logger.wandb.run is not None:
-            _log_interactive_heatmap(result_array, metric_name, xlabel_name, ylabel_name, 
-                                   xpos_labels, ypos_labels, colormap, wandb_logger)
-        else:
-            logger.warning("wandb not initialized, skipping heatmap logging")
-    
+    out_path = os.path.join(save_folder, f"{metric_name}_heatmap.png")
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
     plt.close(fig)
 
-    plt.rcParams.update(orig_rcParams)
-    return
-
-def _log_interactive_heatmap(result_array, metric_name, xlabel_name, ylabel_name, 
-                           xpos_labels, ypos_labels, colormap, wandb_logger):
-    """Create interactive plotly heatmap and log to wandb"""
-    try:
-        import plotly.graph_objects as go
-        
-        # Create labels for axes
-        n_layers, n_heads = result_array.shape
-        x_labels = xpos_labels if xpos_labels is not None else [f"H{i}" for i in range(n_heads)]
-        y_labels = ypos_labels if ypos_labels is not None else [f"L{i}" for i in range(n_layers)]
-        
-        # Create plotly heatmap
-        fig = go.Figure(data=go.Heatmap(
-            z=result_array,
-            x=x_labels,
-            y=y_labels,
-            colorscale=_matplotlib_to_plotly_colormap(colormap),
-            hovertemplate=f'{ylabel_name}: %{{y}}<br>{xlabel_name}: %{{x}}<br>{metric_name}: %{{z:.3f}}<extra></extra>',
-            showscale=True
-        ))
-        
-        fig.update_layout(
-            title=f"Interactive {metric_name}",
-            xaxis_title=xlabel_name,
-            yaxis_title=ylabel_name,
-            width=800,
-            height=600
-        )
-        
-        # Log both interactive plot and summary stats
-        wandb_logger.wandb.log({
-            f"interactive_heatmap/{metric_name}": wandb_logger.wandb.plotly_chart(fig),
-            f"static_heatmap/{metric_name}": wandb_logger.wandb.Image(plt),
-            f"stats/{metric_name}_mean": np.nanmean(result_array),
-            f"stats/{metric_name}_max": np.nanmax(result_array),
-            f"stats/{metric_name}_std": np.nanstd(result_array)
-        })
-        
-    except ImportError:
-        logger.warning("plotly not available, logging static image only")
-        wandb_logger.wandb.log({
-            f"heatmap/{metric_name}": wandb_logger.wandb.Image(plt),
-            f"stats/{metric_name}_mean": np.nanmean(result_array),
-            f"stats/{metric_name}_max": np.nanmax(result_array)
-        })
-
-def _matplotlib_to_plotly_colormap(colormap):
-    """Convert matplotlib colormap names to plotly colorscales"""
-    colormap_mapping = {
-        'viridis': 'Viridis',
-        'plasma': 'Plasma', 
-        'inferno': 'Inferno',
-        'magma': 'Magma',
-        'RdYlBu_r': 'RdYlBu',
-        'RdBu': 'RdBu',
-        'Blues': 'Blues',
-        'Reds': 'Reds'
-    }
-    return colormap_mapping.get(colormap, 'Viridis')
-
-
-
+    logger.info("wrote heatmap: %s", out_path)
+    return out_path

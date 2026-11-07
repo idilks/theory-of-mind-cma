@@ -68,7 +68,7 @@ RULE=${JOB_RULES[$IDX]}
 
 echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE position=end seed=0"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $RULE \

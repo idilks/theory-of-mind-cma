@@ -1,0 +1,27 @@
+EXPECTED: Monroe Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling poutine, on Monroe Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of poutine later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Franklin Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+EXPECTED: navy
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has navy hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair sage, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a ring as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+EXPECTED: non-fiction
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the non-fiction section of the library. She sits down and reads the book in the desk area in non-fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the popular reads section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================

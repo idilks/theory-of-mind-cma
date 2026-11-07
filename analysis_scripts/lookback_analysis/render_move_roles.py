@@ -8,7 +8,7 @@ tick = uniform attention for that role's tokens; error bars = 95% bootstrap over
 Roles come from region_attention_shares.py (story, share_role_*) and
 code_region_shares.py (code). A role absent from a template (no preposition in
 hair_styling: "dyes her hair maroon") is left out of that template's average.
-Run: python scripts/lookback_analysis/render_move_roles.py
+Run: python analysis_scripts/lookback_analysis/render_move_roles.py
 """
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ from head_groups import story_head_group, code_head_group  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 REG = ROOT / "results/lookback_analysis/_regions"
-OUT = ROOT / "results_for_pi/aggregation"
+OUT = ROOT / "results/summary/aggregation"
 STEM = OUT / "move_sentence_roles"
 DIV, RET, INK, MUTED = "#E07B39", "#2368A2", "#172D40", "#526577"
 B, SEED = 5000, 0

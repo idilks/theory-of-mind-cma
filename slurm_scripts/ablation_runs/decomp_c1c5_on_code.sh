@@ -43,7 +43,7 @@
 #
 # Prereq on HPC: results/lookback_analysis/_summary/condition_overlap_heads_end.csv
 # (same file run5/6/7_matched_prefill expect; local fuller copy lives at
-# other_results/lookback_analysis/_summary/).
+# results/lookback_analysis/_summary/).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -88,7 +88,7 @@ LABEL="decomp_${SETLABEL}_on_code_prefill_${PREFILL}"
 
 echo "Job $IDX: set=$SET ($SETLABEL) prefill=$PREFILL"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 75 \
   --max_new_tokens 8 \

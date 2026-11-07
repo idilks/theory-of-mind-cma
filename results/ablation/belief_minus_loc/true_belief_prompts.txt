@@ -1,0 +1,1500 @@
+CORRECT: Juniper Lane
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bagels, on Market Street. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bagels later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Lincoln Boulevard
+ALT: Heneage Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Heneage Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Monroe Street. Bob, the owner of the food truck, drives the truck to Jefferson Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hummus later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Oak Avenue
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ladd Road
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Burton Road
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Burton Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Park Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Market Street
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyozas, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyozas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Hovey Lane. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kebab later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Franklin Avenue
+ALT: Jericho Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Jericho Road. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hemlock Road
+ALT: Pine Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Pine Street. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kebab later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Hunter Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hemlock Road
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Allen Street
+ALT: First Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pozoles, on First Street. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pozoles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Highland Avenue
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Monroe Street
+ALT: Ivy Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Ivy Lane. Bob, the owner of the food truck, drives the truck to Monroe Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: University Drive
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. Bob, the owner of the food truck, drives the truck to University Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jericho Road
+ALT: Downtown Plaza
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bratwursts, on Downtown Plaza. Bob, the owner of the food truck, drives the truck to Jericho Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bratwursts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Hilltop Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ramen, on Hilltop Drive. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of ramen later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyros, on Oak Avenue. Bob, the owner of the food truck, drives the truck to Buck Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyros later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Elm Avenue
+ALT: Pine Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Pine Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Elm Avenue
+ALT: Second Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Second Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Franklin Avenue
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Monroe Street. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Burton Road. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ladd Road
+ALT: Madison Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling sandwiches, on Madison Drive. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of sandwiches later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Brook Road
+ALT: Ivy Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Ivy Lane. Bob, the owner of the food truck, drives the truck to Brook Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Allen Street
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pozoles, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pozoles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Madison Drive
+ALT: Washington Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Washington Avenue. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Cedar Lane
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Cedar Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Mink Drive. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Hunter Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crabcakes, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Jefferson Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crabcakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Brook Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bratwursts, on Brook Road. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bratwursts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Downtown Plaza
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hot dogs, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Downtown Plaza. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hot dogs later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling wraps, on Allen Street. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of wraps later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: First Street
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyozas, on Oak Avenue. Bob, the owner of the food truck, drives the truck to First Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyozas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: River Road
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Burton Road. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: River Road
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Juniper Lane. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Park Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on University Drive. Bob, the owner of the food truck, drives the truck to Buck Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: River Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling samosas, on River Road. Bob, the owner of the food truck, drives the truck to Heneage Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of samosas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Second Street
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling waffles, on University Drive. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of waffles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Buck Road. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Market Street
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling cookies, on Buck Road. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of cookies later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: aquamarine
+ALT: lime
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has lime hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair aquamarine, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color aquamarine. Tuesday is Alice's birthday and Jennifer is out shopping for a purse as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cream
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has crimson hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair cream, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color cream. Tuesday is Alice's birthday and Jennifer is out shopping for gloves as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brown
+ALT: red
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has red hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair brown, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color brown. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: amethyst
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has teal hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair amethyst, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color amethyst. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: tangerine
+ALT: turquoise
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has turquoise hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair tangerine, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color tangerine. Tuesday is Alice's birthday and Jennifer is out shopping for gloves as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: jade
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has cobalt hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair jade, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color jade. Tuesday is Alice's birthday and Jennifer is out shopping for a keychain as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: yellow
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has crimson hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair yellow, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color yellow. Tuesday is Alice's birthday and Jennifer is out shopping for a brooch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: jade
+ALT: cream
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has cream hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair jade, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color jade. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: beige
+ALT: verdigris
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has verdigris hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair beige, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color beige. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: burgundy
+ALT: pink
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has pink hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair burgundy, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color burgundy. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: navy
+ALT: caramel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has caramel hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair navy, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color navy. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: sienna
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has sienna hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair grey, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color grey. Tuesday is Alice's birthday and Jennifer is out shopping for a purse as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: chestnut
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has crimson hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair chestnut, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color chestnut. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pearl
+ALT: mulberry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has mulberry hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair pearl, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color pearl. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: blue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has blue hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair grey, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color grey. Tuesday is Alice's birthday and Jennifer is out shopping for a wallet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lavender
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has maroon hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair lavender, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color lavender. Tuesday is Alice's birthday and Jennifer is out shopping for a bow tie as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: orange
+ALT: copper
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has copper hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair orange, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color orange. Tuesday is Alice's birthday and Jennifer is out shopping for a bow tie as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: mauve
+ALT: silver
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has silver hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair mauve, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color mauve. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sage
+ALT: coral
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has coral hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair sage, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color sage. Tuesday is Alice's birthday and Jennifer is out shopping for a ring as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: plum
+ALT: brown
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has brown hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair plum, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color plum. Tuesday is Alice's birthday and Jennifer is out shopping for a brooch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fuchsia
+ALT: white
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has white hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair fuchsia, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color fuchsia. Tuesday is Alice's birthday and Jennifer is out shopping for a pendant as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: black
+ALT: wine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has wine hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair black, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color black. Tuesday is Alice's birthday and Jennifer is out shopping for a wallet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: wine
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has sage hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair wine, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color wine. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: ivory
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has ivory hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair teal, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color teal. Tuesday is Alice's birthday and Jennifer is out shopping for a ring as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: auburn
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has teal hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair auburn, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color auburn. Tuesday is Alice's birthday and Jennifer is out shopping for a watch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: umber
+ALT: rust
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has rust hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair umber, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color umber. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: white
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has white hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair teal, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color teal. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: chartreuse
+ALT: neon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has neon hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair chartreuse, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color chartreuse. Tuesday is Alice's birthday and Jennifer is out shopping for a belt as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: yellow
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has topaz hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair yellow, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color yellow. Tuesday is Alice's birthday and Jennifer is out shopping for a wallet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: platinum
+ALT: navy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has navy hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair platinum, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color platinum. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: gold
+ALT: magenta
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has magenta hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair gold, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color gold. Tuesday is Alice's birthday and Jennifer is out shopping for a wallet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: wine
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has violet hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair wine, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color wine. Tuesday is Alice's birthday and Jennifer is out shopping for hair clips as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: hazel
+ALT: cherry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has cherry hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair hazel, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color hazel. Tuesday is Alice's birthday and Jennifer is out shopping for a watch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: blush
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has cobalt hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair blush, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color blush. Tuesday is Alice's birthday and Jennifer is out shopping for a watch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: orange
+ALT: pink
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has pink hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair orange, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color orange. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: auburn
+ALT: amethyst
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has amethyst hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair auburn, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color auburn. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: verdigris
+ALT: lime
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has lime hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair verdigris, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color verdigris. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pearl
+ALT: coral
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has coral hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair pearl, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color pearl. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: plum
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has sage hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair plum, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color plum. Tuesday is Alice's birthday and Jennifer is out shopping for a tie as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: sapphire
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has sapphire hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair grey, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color grey. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: burgundy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has burgundy hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair grey, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color grey. Tuesday is Alice's birthday and Jennifer is out shopping for a belt as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brown
+ALT: cream
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has cream hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair brown, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color brown. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has violet hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair teal, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color teal. Tuesday is Alice's birthday and Jennifer is out shopping for gloves as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lilac
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has topaz hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair lilac, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color lilac. Tuesday is Alice's birthday and Jennifer is out shopping for a belt as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: mahogany
+ALT: hazel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has hazel hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair mahogany, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color mahogany. Tuesday is Alice's birthday and Jennifer is out shopping for a purse as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: emerald
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has emerald hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair topaz, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color topaz. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: maroon
+ALT: neon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has neon hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair maroon, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color maroon. Tuesday is Alice's birthday and Jennifer is out shopping for a tie as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: rust
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has violet hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair rust, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color rust. Tuesday is Alice's birthday and Jennifer is out shopping for hair clips as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pink
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has topaz hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair pink, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color pink. Tuesday is Alice's birthday and Jennifer is out shopping for a pendant as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: maroon
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has sage hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair maroon, but the process goes terribly and she immediately calls Jennifer to tell her about the new hair color maroon. Tuesday is Alice's birthday and Jennifer is out shopping for gloves as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant asks what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: popular reads
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a philosophy book from the young adult section of the library. She sits down and reads the book in the desk area in young adult. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in popular reads section and offers to move it there. Sarah agrees and watches the librarian take the book to popular reads section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: botany
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a computer science book from the botany section of the library. She sits down and reads the book in the desk area in botany. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in education section and offers to move it there. Sarah agrees and watches the librarian take the book to education section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a literature book from the young adult section of the library. She sits down and reads the book in the desk area in young adult. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in comics section and offers to move it there. Sarah agrees and watches the librarian take the book to comics section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: engineering
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a mathematics book from the engineering section of the library. She sits down and reads the book in the desk area in engineering. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in children's section and offers to move it there. Sarah agrees and watches the librarian take the book to children's section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a physics book from the music section of the library. She sits down and reads the book in the desk area in music. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in fiction section and offers to move it there. Sarah agrees and watches the librarian take the book to fiction section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: science
+ALT: non-fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a mathematics book from the non-fiction section of the library. She sits down and reads the book in the desk area in non-fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in science section and offers to move it there. Sarah agrees and watches the librarian take the book to science section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: biography
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a chemistry book from the music section of the library. She sits down and reads the book in the desk area in music. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in biography section and offers to move it there. Sarah agrees and watches the librarian take the book to biography section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a law book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in history section and offers to move it there. Sarah agrees and watches the librarian take the book to history section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: comics
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a computer science book from the comics section of the library. She sits down and reads the book in the desk area in comics. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in engineering section and offers to move it there. Sarah agrees and watches the librarian take the book to engineering section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a philosophy book from the health section of the library. She sits down and reads the book in the desk area in health. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in music section and offers to move it there. Sarah agrees and watches the librarian take the book to music section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a philosophy book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in music section and offers to move it there. Sarah agrees and watches the librarian take the book to music section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: botany
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a psychology book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in botany section and offers to move it there. Sarah agrees and watches the librarian take the book to botany section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a medicine book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in children's section and offers to move it there. Sarah agrees and watches the librarian take the book to children's section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a computer science book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in education section and offers to move it there. Sarah agrees and watches the librarian take the book to education section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a economics book from the music section of the library. She sits down and reads the book in the desk area in music. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in health section and offers to move it there. Sarah agrees and watches the librarian take the book to health section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: cooking
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a law book from the cooking section of the library. She sits down and reads the book in the desk area in cooking. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in finance section and offers to move it there. Sarah agrees and watches the librarian take the book to finance section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: theology
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the self-help section of the library. She sits down and reads the book in the desk area in self-help. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in theology section and offers to move it there. Sarah agrees and watches the librarian take the book to theology section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in music section and offers to move it there. Sarah agrees and watches the librarian take the book to music section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: photography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the photography section of the library. She sits down and reads the book in the desk area in photography. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: non-fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a engineering book from the non-fiction section of the library. She sits down and reads the book in the desk area in non-fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in engineering section and offers to move it there. Sarah agrees and watches the librarian take the book to engineering section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: travel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a psychology book from the travel section of the library. She sits down and reads the book in the desk area in travel. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the history section of the library. She sits down and reads the book in the desk area in history. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in engineering section and offers to move it there. Sarah agrees and watches the librarian take the book to engineering section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a law book from the finance section of the library. She sits down and reads the book in the desk area in finance. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in history section and offers to move it there. Sarah agrees and watches the librarian take the book to history section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: art
+ALT: reference
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a engineering book from the reference section of the library. She sits down and reads the book in the desk area in reference. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in art section and offers to move it there. Sarah agrees and watches the librarian take the book to art section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a medicine book from the academic section of the library. She sits down and reads the book in the desk area in academic. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in technology section and offers to move it there. Sarah agrees and watches the librarian take the book to technology section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: popular reads
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a art book from the self-help section of the library. She sits down and reads the book in the desk area in self-help. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in popular reads section and offers to move it there. Sarah agrees and watches the librarian take the book to popular reads section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: science
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a anthropology book from the health section of the library. She sits down and reads the book in the desk area in health. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in science section and offers to move it there. Sarah agrees and watches the librarian take the book to science section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: film
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a economics book from the academic section of the library. She sits down and reads the book in the desk area in academic. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in film section and offers to move it there. Sarah agrees and watches the librarian take the book to film section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: art
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a computer science book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in art section and offers to move it there. Sarah agrees and watches the librarian take the book to art section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: travel
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a sociology book from the education section of the library. She sits down and reads the book in the desk area in education. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in travel section and offers to move it there. Sarah agrees and watches the librarian take the book to travel section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a engineering book from the technology section of the library. She sits down and reads the book in the desk area in technology. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in history section and offers to move it there. Sarah agrees and watches the librarian take the book to history section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: architecture
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the education section of the library. She sits down and reads the book in the desk area in education. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in architecture section and offers to move it there. Sarah agrees and watches the librarian take the book to architecture section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: cooking
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a political science book from the cooking section of the library. She sits down and reads the book in the desk area in cooking. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in academic section and offers to move it there. Sarah agrees and watches the librarian take the book to academic section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a literature book from the history section of the library. She sits down and reads the book in the desk area in history. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in finance section and offers to move it there. Sarah agrees and watches the librarian take the book to finance section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: theology
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a medicine book from the young adult section of the library. She sits down and reads the book in the desk area in young adult. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in theology section and offers to move it there. Sarah agrees and watches the librarian take the book to theology section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: science
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a sociology book from the science section of the library. She sits down and reads the book in the desk area in science. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in children's section and offers to move it there. Sarah agrees and watches the librarian take the book to children's section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a mathematics book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in technology section and offers to move it there. Sarah agrees and watches the librarian take the book to technology section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: travel
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a anthropology book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in travel section and offers to move it there. Sarah agrees and watches the librarian take the book to travel section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a science book from the health section of the library. She sits down and reads the book in the desk area in health. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: art
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a engineering book from the art section of the library. She sits down and reads the book in the desk area in art. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in children's section and offers to move it there. Sarah agrees and watches the librarian take the book to children's section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the technology section of the library. She sits down and reads the book in the desk area in technology. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in education section and offers to move it there. Sarah agrees and watches the librarian take the book to education section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a biology book from the music section of the library. She sits down and reads the book in the desk area in music. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in self-help section and offers to move it there. Sarah agrees and watches the librarian take the book to self-help section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a biology book from the finance section of the library. She sits down and reads the book in the desk area in finance. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in music section and offers to move it there. Sarah agrees and watches the librarian take the book to music section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: photography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a mathematics book from the photography section of the library. She sits down and reads the book in the desk area in photography. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in comics section and offers to move it there. Sarah agrees and watches the librarian take the book to comics section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: popular reads
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the popular reads section of the library. She sits down and reads the book in the desk area in popular reads. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a history book from the architecture section of the library. She sits down and reads the book in the desk area in architecture. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in music section and offers to move it there. Sarah agrees and watches the librarian take the book to music section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the education section of the library. She sits down and reads the book in the desk area in education. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in self-help section and offers to move it there. Sarah agrees and watches the librarian take the book to self-help section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: biography
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a psychology book from the music section of the library. She sits down and reads the book in the desk area in music. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in biography section and offers to move it there. Sarah agrees and watches the librarian take the book to biography section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: young adult
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a law book from the history section of the library. She sits down and reads the book in the desk area in history. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in young adult section and offers to move it there. Sarah agrees and watches the librarian take the book to young adult section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah checks out a art book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Sarah sees a librarian approaching and explains she's just getting coffee. The librarian mentions the book should be in reference section and offers to move it there. Sarah agrees and watches the librarian take the book to reference section. Sarah then leaves to get coffee.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================

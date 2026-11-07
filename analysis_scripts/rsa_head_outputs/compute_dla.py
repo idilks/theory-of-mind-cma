@@ -19,7 +19,7 @@ Output (per template):
     dla_answer, dla_distractor, logit_diff
 
 Usage (HPC):
-  python scripts/rsa_head_outputs/compute_dla.py --template food_truck
+  python analysis_scripts/rsa_head_outputs/compute_dla.py --template food_truck
 """
 
 from __future__ import annotations
@@ -34,8 +34,8 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from cma_config import (  # noqa: E402
     EvaluationConfig, GenerationConfig, ModelConfig, PatchingConfig,

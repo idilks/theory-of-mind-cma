@@ -1,16 +1,38 @@
+# Python 3.11 is what this code was developed and run against.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# Conda users can instead use environment.yaml, which pins the same versions.
+#
+# NOTE ON TORCH: the line below installs the default CPU/CUDA build for your
+# platform. Running the CMA pipeline on a 14B model needs a CUDA build matched
+# to your driver -- see https://pytorch.org/get-started/locally/ and install
+# torch first if the default wheel is wrong for your machine.
+
+# --- core numerics -----------------------------------------------------------
 numpy
 pandas
-scikit-learn
-matplotlib
+scipy                     # permutation tests, RDM statistics (used in 22 modules)
+scikit-learn              # MDS embedding for the RSA plots
+statsmodels               # FDR correction in analyze_pooled_conditions.py
+
+# --- models and interpretability ---------------------------------------------
 torch
 transformers==4.46.3
 transformer-lens==2.13.0
+huggingface_hub           # gated-repo auth in tasks/causal_analysis/models.py
+sentencepiece             # tokenizer backend for the Llama/Gemma families
 datasets
-pyrootutils
 tqdm
-statsmodels
+
+# --- plotting ----------------------------------------------------------------
+matplotlib
 seaborn
-sentencepiece
-scipy
-wandb
-Pillow
+matplotlib-venn           # condition-overlap diagram in compare_bf_conditions.py
+plotly                    # interactive heatmaps logged to W&B (utils.py)
+Pillow                    # figure compositing in visualize_conditions.py
+
+# --- experiment plumbing -----------------------------------------------------
+pyrootutils               # resolves the repo root via cma_scripts/.project-root
+wandb                     # imported unconditionally by cma.py, even with --no_wandb

@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
 REPO = Path(__file__).resolve().parents[2]
-OUT_DIR = REPO / "rebuttal_figures"
+OUT_DIR = REPO / "results" / "figures"
 
 # categorical slots (fixed assignment across all rebuttal figures)
 BLUE = "#2a78d6"     # divergence-tracking / belief / target curves

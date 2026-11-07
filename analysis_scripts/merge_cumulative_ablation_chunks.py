@@ -12,7 +12,7 @@ format every downstream consumer expects, in the parent output dir:
     cumulative_ablation_plot.png
 
 Usage:
-    python scripts/merge_cumulative_ablation_chunks.py \
+    python analysis_scripts/merge_cumulative_ablation_chunks.py \
         --chunks results/ablation/LABEL/chunk_* \
         --output_dir results/ablation/LABEL \
         --run_label LABEL
@@ -29,11 +29,11 @@ import torch
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-sys.path.insert(0, os.path.join(PROJECT_ROOT, "codebase", "tasks", "causal_analysis"))
+sys.path.insert(0, os.path.join(PROJECT_ROOT, "cma_scripts", "tasks", "causal_analysis"))
 
 
 def _load_plot_results():
-    # deferred: importing ablation_experiment os.chdir()s to codebase/, which
+    # deferred: importing ablation_experiment os.chdir()s to cma_scripts/, which
     # would break relative --chunks/--output_dir paths resolved before it
     from ablation_experiment import plot_results
     return plot_results

@@ -21,7 +21,7 @@
 #
 # Prereq: results/lookback_analysis/_summary/decomposition_heads_end.csv must
 # be present on HPC (build locally with
-# `python scripts/build_decomposition_head_csvs.py` and scp it over -- the
+# `python analysis_scripts/build_decomposition_head_csvs.py` and scp it over -- the
 # build script's inputs are excluded from sync_to_hpc.sh).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -46,7 +46,7 @@ if [ ! -f "$HEAD_CSV" ]; then
   exit 1
 fi
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

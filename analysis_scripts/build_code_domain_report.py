@@ -2,11 +2,11 @@
 
 Reads best-available cells via condition_registry (ToM: seed-priority
 combined>1>0; code: seed 0 indexed_list) and writes PNGs, CSVs and a
-markdown stats fragment to writeups/results_for_pi/code_domain/.
+markdown stats fragment to results/summary/code_domain/.
 Rerun after new cells land (e.g. code_answer_changes), then re-render
-writeups/results_for_pi/code_domain_results.qmd.
+results/summary/code_domain_results.qmd.
 
-Heatmap rendering follows the PI rule: clamp negatives to 0, no
+Heatmap rendering follows the project convention: clamp negatives to 0, no
 percentile/floor thresholding, vmax = positive max.
 """
 
@@ -25,19 +25,19 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
 REPO = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 from condition_registry import (  # noqa: E402
     resolve_best_source, REGISTRY, CODE_BY_ID, FLIP_RULES, KEEP_RULES,
 )
 
 RESULTS_ROOT = REPO / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
-OUT = REPO / "writeups/results_for_pi/code_domain"
-INTERSECTION_CSV = REPO / "other_results/ablation/decomp_intersection_belief_rank/head_list.csv"
+OUT = REPO / "results/summary/code_domain"
+INTERSECTION_CSV = REPO / "results/ablation/decomp_intersection_belief_rank/head_list.csv"
 
 CROSS_RULES = FLIP_RULES
 WITHIN_RULES = KEEP_RULES
 
-ABLATION_ROOT = REPO / "other_results/ablation"
+ABLATION_ROOT = REPO / "results/ablation"
 CUMAB_ORDERINGS = [("tom_c1", "C1 belief-fingerprint ordering"),
                    ("tom_c5", "C5 answer-fingerprint ordering")]
 CUMAB_PROTOCOLS = [("per_variant", "quote-prefill (primary)"),
@@ -122,8 +122,8 @@ def build_cumulative_section():
                 print(f"[skip] cumulative ablation {okey}/{pkey}: {path} missing")
     if not curves:
         (OUT / "cumab_stats.md").write_text(
-            "_Cumulative-ablation results not pulled yet — rerun after "
-            "`pull_results.sh` and merge._\n")
+            "_Cumulative-ablation results not present — rerun once the "
+            "ablation outputs are in place._\n")
         return
 
     legend_handles = [

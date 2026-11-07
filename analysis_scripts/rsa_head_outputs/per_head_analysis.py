@@ -25,7 +25,7 @@ from sklearn.decomposition import PCA
 ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 CSV_OUT = ROOT / "results/rsa_head_outputs/per_head_profiles.csv"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]

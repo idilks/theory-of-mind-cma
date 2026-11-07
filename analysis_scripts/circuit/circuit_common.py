@@ -1,10 +1,9 @@
 """Shared constants and helpers for the layered-lookback circuit analysis.
 
-Design: docs/design_layered_lookback_circuit.md. Stage 1 = geometric screen
-(writers -> resid wire -> readers), Stage 2 = causal steering (gated on
-Stage 1's go/no-go).
+Stage 1 = geometric screen (writers -> resid wire -> readers), Stage 2 =
+causal steering (gated on Stage 1's go/no-go).
 
-Conventions pinned here so capture (HPC) and screen (laptop) agree:
+Conventions pinned here so capture and screen agree:
   - band layers 28..40 inclusive: hook_z + hook_mlp_out capture range and
     the pool for random-head-set nulls (matches the design's L28-40).
   - bus sites: resid_post at L40 and L41, position -1. resid_post L41 ==
@@ -23,18 +22,17 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
 
-# --- head-set sources (local trees; the builder bakes them into AGG_DIR,
-#     which sync_to_hpc.sh pushes, so HPC jobs never read other_results/) ---
-T_C1_PREFILL_CSV = REPO / "other_results/ablation/belief_only_sysprompt_prefill/head_list.csv"
-T_C5_CSV = REPO / "other_results/ablation/loc_belief_heads/head_list.csv"
+# --- head-set sources (the builder bakes them into AGG_DIR) ---
+T_C1_PREFILL_CSV = REPO / "results/ablation/belief_only_sysprompt_prefill/head_list.csv"
+T_C5_CSV = REPO / "results/ablation/loc_belief_heads/head_list.csv"
 DLA_DIR = REPO / "results/rsa_head_outputs/dla"
 
-# --- baked artifacts (synced to HPC via results/aggregated) ---
+# --- baked artifacts ---
 AGG_DIR = REPO / "results/aggregated/circuit"
 WRITER_CSV = AGG_DIR / "writer_heads.csv"
 READER_CSV = AGG_DIR / "reader_heads.csv"
 
-# --- capture outputs (pulled from HPC via pull_results.sh) ---
+# --- capture outputs ---
 CAPTURE_ROOT = REPO / "results/circuit/stage1_capture"
 
 # --- stage-1 screen outputs ---

@@ -1,0 +1,9 @@
+item_id,domain,max_abs_diff,exact
+food_truck:0,tom,0.0,True
+food_truck:2,tom,0.0,True
+food_truck:4,tom,0.0,True
+food_truck:6,tom,0.0,True
+food_truck:8,tom,0.0,True
+food_truck:10,tom,0.0,True
+food_truck:12,tom,0.0,True
+food_truck:14,tom,0.0,True

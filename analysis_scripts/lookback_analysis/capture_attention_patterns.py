@@ -24,7 +24,7 @@ Containing:
                               info_loss, char_q, obj_q, belief_form, lookback,
                               seq_len, base_ans} per prompt
               (state == state_correct, kept for backward compat with older
-              analyze scripts.)
+              analyze analysis_scripts.)
   - query_pos_names: ["lookback", "belief_formation", "agent_last", "agent_first"]
                      (older payloads may have only the first two)
   - meta: {template, condition, base_rule, seed, top_k, source_csv}
@@ -47,8 +47,8 @@ import torch
 # project root on path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from cma_config import (  # noqa: E402
     CMACondition,
@@ -149,7 +149,7 @@ def _find_token_pos(prompt: str, needle: str, offsets) -> int:
     """First whole-word occurrence char->token lookup. Returns -1 if needle not in prompt.
 
     Whole-word since Oct 2026: a plain substring search matched the location "art"
-    inside "<|im_start|>" and anchored it at token 0 (docs/STATUS.md). Captures
+    inside "<|im_start|>" and anchored it at token 0. Captures
     written before then used the substring search.
     """
     if not needle:

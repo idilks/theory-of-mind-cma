@@ -1,0 +1,23 @@
+# causal mediation analysis - statistical testing results
+# permutation test with FWER correction (max-statistic method)
+
+FWER threshold: 0.255102
+total heads tested: 1920
+significant heads (|score| > threshold): 1
+proportion significant: 0.1%
+
+significant heads by layer:
+  layer 0: heads [17]
+
+top 10 heads by effect size:
+ layer  head  observed_score  p_value  significant
+    13    17        0.056122   0.1362        False
+    11    10        0.053571   0.1074        False
+     2    39        0.043367   0.2774        False
+    22    11        0.040816   0.2844        False
+    35     4        0.040816   0.1702        False
+     2     9        0.038265   0.3504        False
+    10     9        0.038265   0.2498        False
+    28    38        0.038265   0.2124        False
+     6    22        0.035714   0.2898        False
+    25    39        0.035714   0.2848        False

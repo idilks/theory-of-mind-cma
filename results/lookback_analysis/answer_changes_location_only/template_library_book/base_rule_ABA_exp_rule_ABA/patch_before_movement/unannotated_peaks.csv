@@ -1,0 +1,13 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+43,34,94,0.1274753761291504,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+43,34,95,0.0717684268951416,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+43,34,12,0.03175563812255859,150,' young' | ' young' | ' young' | ' young' | ' young'
+43,34,49,0.021512447992960614,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'
+35,11,94,0.3042790758609772,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+35,11,95,0.14505665143330893,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+38,35,94,0.27226200421651203,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+38,35,95,0.14137568910916645,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+43,30,49,0.08326218048731486,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'
+43,30,94,0.08034342487653097,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+41,10,94,0.05282805442810059,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+41,10,49,0.05147887428601583,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'

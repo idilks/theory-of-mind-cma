@@ -1,0 +1,1050 @@
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Jefferson Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Monroe Street. The food truck stays at Monroe Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Burton Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Park Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hovey Lane. The food truck stays at Hovey Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jericho Road. The food truck stays at Jericho Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Hemlock Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Pine Street. The food truck stays at Pine Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hunter Lane. The food truck stays at Hunter Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Hemlock Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Allen Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to First Street. The food truck stays at First Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Monroe Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ivy Lane. The food truck stays at Ivy Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Jericho Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Downtown Plaza. The food truck stays at Downtown Plaza.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hilltop Drive. The food truck stays at Hilltop Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyros is on Buck Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Elm Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Pine Street. The food truck stays at Pine Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Elm Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Monroe Street. The food truck stays at Monroe Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Burton Road. The food truck stays at Burton Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sandwiches is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Brook Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ivy Lane. The food truck stays at Ivy Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Allen Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Washington Avenue. The food truck stays at Washington Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Lincoln Boulevard. The food truck stays at Lincoln Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Cedar Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Jefferson Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hunter Lane. The food truck stays at Hunter Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Downtown Plaza. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Lincoln Boulevard. The food truck stays at Lincoln Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on First Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Burton Road. The food truck stays at Burton Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Park Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Buck Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to River Road. The food truck stays at River Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Buck Road. The food truck stays at Buck Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Buck Road. The food truck stays at Buck Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling croissants is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Buck Road. The food truck stays at Buck Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on Elm Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Ivy Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hilltop Drive. The food truck stays at Hilltop Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Hilltop Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hunter Lane. The food truck stays at Hunter Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Brook Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Pine Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Washington Avenue. The food truck stays at Washington Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ice cream is on Allen Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Allen Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling croissants is on Cedar Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jericho Road. The food truck stays at Jericho Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Brook Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sushi is on Downtown Plaza. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ivy Lane. The food truck stays at Ivy Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling churros is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Burton Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Downtown Plaza. The food truck stays at Downtown Plaza.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Elm Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Pine Street. The food truck stays at Pine Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Pine Street. The food truck stays at Pine Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Hilltop Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Downtown Plaza. The food truck stays at Downtown Plaza.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Hemlock Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Monroe Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Washington Avenue. The food truck stays at Washington Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Washington Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hunter Lane. The food truck stays at Hunter Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hilltop Drive. The food truck stays at Hilltop Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Lincoln Boulevard. The food truck stays at Lincoln Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gelatos is on Hemlock Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on Burton Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Washington Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hemlock Road. The food truck stays at Hemlock Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tacos is on Buck Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyros is on Cedar Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Ivy Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Burton Road. The food truck stays at Burton Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Monroe Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ladd Road. The food truck stays at Ladd Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Ladd Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Downtown Plaza. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Jefferson Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Burton Road. The food truck stays at Burton Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling churros is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jericho Road. The food truck stays at Jericho Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Washington Avenue. The food truck stays at Washington Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sushi is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gelatos is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ladd Road. The food truck stays at Ladd Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Pine Street. The food truck stays at Pine Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hunter Lane. The food truck stays at Hunter Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Elm Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Lincoln Boulevard. The food truck stays at Lincoln Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Brook Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jericho Road. The food truck stays at Jericho Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling salads is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+

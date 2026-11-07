@@ -27,7 +27,7 @@
 #           code_alias) at alpha in {6, 8, 12, 16}; rank-1 target + controls.
 #           The 8-dim swap operator is skipped (off-manifold at alpha = 4).
 #           ~12 legs x 4 doses x ~225 prompts ~ 10k forwards.
-#   Part B  generic belief-free prompts (scripts/circuit/generic_prompts.py),
+#   Part B  generic belief-free prompts (analysis_scripts/circuit/generic_prompts.py),
 #           full grid {0.5 .. 16}, rank-1 inject + delete, three controls
 #           inject; KL + top-1 agreement readouts. ~9k forwards.
 #
@@ -56,7 +56,7 @@ fi
 
 set -e
 echo "Part A: belief legs, alpha in {6, 8, 12, 16}, rank-1 + controls"
-python scripts/circuit/stage2_steering.py \
+python analysis_scripts/circuit/stage2_steering.py \
   --site L41 \
   --run_label dose_ext \
   --control_seed 99 \
@@ -64,7 +64,7 @@ python scripts/circuit/stage2_steering.py \
   --doses 6 8 12 16
 
 echo "Part B: generic collateral leg, full alpha grid"
-python scripts/circuit/stage2_steering.py \
+python analysis_scripts/circuit/stage2_steering.py \
   --site L41 \
   --run_label dose_ext \
   --control_seed 99 \

@@ -23,7 +23,7 @@
 #       sysprompt + prefill (companion null for experiment 2b)
 #
 # Prereq: results/aggregated/code_head_sets/*_head_list.csv on HPC
-# (build locally with `python scripts/build_code_head_csvs.py`, scp over).
+# (build locally with `python analysis_scripts/build_code_head_csvs.py`, scp over).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -73,7 +73,7 @@ echo "Job $IDX: null vs $TARGET (k=$K) on '${VARIANTS[$IDX]}'"
 
 # NB: --system_prompt is ignored for code variants (they always use
 # CODE_SYSTEM_PROMPT, matching the code CMA protocol).
-python scripts/random_baseline_ablation.py \
+python analysis_scripts/random_baseline_ablation.py \
   --target_csv $TARGET \
   --n_random 100 \
   --k_eval $K \

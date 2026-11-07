@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build head-set CSVs for the code-domain ablation arm (July 2026 redesign).
+"""Build head-set CSVs for the code-domain ablation arm
 
 Sources (seed 0, end-patch, template_indexed_list, max sample_num):
   code_abstract  : union of POSITIVE significant heads over ABA->ABB and
@@ -7,11 +7,10 @@ Sources (seed 0, end-patch, template_indexed_list, max sample_num):
   code_control   : union of POSITIVE significant heads over ABA->ABA and
                    ABB->ABB directions (answer-writer heads)
   tom_intersection : the ToM C1 ∩ C2 19-head set, copied verbatim from
-                   other_results/ablation/decomp_intersection_belief_rank/head_list.csv
+                   results/ablation/decomp_intersection_belief_rank/head_list.csv
 
 Ranking: mean observed_score across the directions where the head is
 significant, sorted by |mean| descending. Negative-score heads are dropped
-(the ablation sweeps positive carriers; L34H12 / L46H10 / L44H18 excluded).
 
 Outputs (results/aggregated/code_head_sets/):
   code_heads_end.csv            per_condition format (condition,layer,head,mean_score)
@@ -20,9 +19,6 @@ Outputs (results/aggregated/code_head_sets/):
   {condition}_head_list.csv     head_list.csv format (layer,head,rank,mean_score,
                                 abs_mean_score) -> random_baseline_ablation.py
                                 --target_csv
-
-NOTE: results/ is excluded from sync_to_hpc.sh — scp the output folder to the
-HPC before submitting the code ablation jobs (the SLURM scripts check for it).
 """
 
 from pathlib import Path
@@ -35,12 +31,12 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 # code conditions are not in the C1-C7 condition_registry (ToM-only); import
 # the enum directly for canonical folder names.
-sys.path.insert(0, str(PROJECT_ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(PROJECT_ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 from cma_config import CMACondition  # noqa: E402
 
 CMA_ROOT = PROJECT_ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
 TOM_INTERSECTION_CSV = (
-    PROJECT_ROOT / "other_results/ablation/decomp_intersection_belief_rank/head_list.csv"
+    PROJECT_ROOT / "results/ablation/decomp_intersection_belief_rank/head_list.csv"
 )
 OUT_DIR = PROJECT_ROOT / "results/aggregated/code_head_sets"
 

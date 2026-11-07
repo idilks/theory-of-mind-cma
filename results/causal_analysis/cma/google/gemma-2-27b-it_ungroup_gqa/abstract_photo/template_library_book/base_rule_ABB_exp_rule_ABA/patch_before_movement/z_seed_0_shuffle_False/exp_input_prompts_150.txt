@@ -1,0 +1,1050 @@
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to history section where it belongs. The book stays in history section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A business book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to medicine section where it belongs. The book stays in medicine section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in science section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to photography section where it belongs. The book stays in photography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in science section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in architecture section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to popular reads section where it belongs. The book stays in popular reads section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to science section where it belongs. The book stays in science section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in history section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in science section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to art section where it belongs. The book stays in art section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A education book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to science section where it belongs. The book stays in science section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to film section where it belongs. The book stays in film section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A biology book is on a desk in children's section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to non-fiction section where it belongs. The book stays in non-fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in film section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to popular reads section where it belongs. The book stays in popular reads section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in travel section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to cooking section where it belongs. The book stays in cooking section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A law book is on a desk in academic section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to history section where it belongs. The book stays in history section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A biology book is on a desk in botany section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A education book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to biography section where it belongs. The book stays in biography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in art section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to photography section where it belongs. The book stays in photography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A biology book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to self-help section where it belongs. The book stays in self-help section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A history book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to art section where it belongs. The book stays in art section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in children's section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to film section where it belongs. The book stays in film section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to art section where it belongs. The book stays in art section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in young adult section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in new arrivals section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to science section where it belongs. The book stays in science section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in new arrivals section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in botany section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to self-help section where it belongs. The book stays in self-help section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A business book is on a desk in finance section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to cooking section where it belongs. The book stays in cooking section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in architecture section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to comics section where it belongs. The book stays in comics section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in film section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to finance section where it belongs. The book stays in finance section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in academic section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to popular reads section where it belongs. The book stays in popular reads section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in travel section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in new arrivals section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in photography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in new arrivals section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to finance section where it belongs. The book stays in finance section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in reference section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to non-fiction section where it belongs. The book stays in non-fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A business book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in new arrivals section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A business book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A psychology book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to film section where it belongs. The book stays in film section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to study materials section where it belongs. The book stays in study materials section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to biography section where it belongs. The book stays in biography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to non-fiction section where it belongs. The book stays in non-fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in academic section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in travel section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A history book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to medicine section where it belongs. The book stays in medicine section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in film section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A economics book is on a desk in architecture section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in architecture section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in film section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in film section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in science section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in finance section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in medicine section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in art section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A history book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to cooking section where it belongs. The book stays in cooking section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A science book is on a desk in photography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A anthropology book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to poetry section where it belongs. The book stays in poetry section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to medicine section where it belongs. The book stays in medicine section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A history book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A medicine book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A sociology book is on a desk in art section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A physics book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A philosophy book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to photography section where it belongs. The book stays in photography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in biography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A computer science book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A literature book is on a desk in botany section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in theology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to cooking section where it belongs. The book stays in cooking section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A mathematics book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A art book is on a desk in travel section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A biology book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A political science book is on a desk in finance section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A engineering book is on a desk in photography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+
+<bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+A chemistry book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to new arrivals section where it belongs. The book stays in new arrivals section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<end_of_turn>
+<start_of_turn>model
+

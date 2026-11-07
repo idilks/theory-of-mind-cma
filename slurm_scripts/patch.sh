@@ -38,7 +38,7 @@ CONTEXT=${CONTEXTS[$CONTEXT_IDX]}
 
 echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE context=$CONTEXT"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --context_type $CONTEXT \
   --base_rule ABA \

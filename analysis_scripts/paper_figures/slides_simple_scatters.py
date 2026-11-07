@@ -9,7 +9,7 @@ stdout for the speaker notes. code_abstract is pinned to seed 0 so it
 matches the published fingerprint (r = 0.867 with C1); the seed-1 rerun
 from Sept 2026 would otherwise win the seed priority.
 
-Outputs -> rebuttal_figures/slides/scatter_*.{png,pdf}
+Outputs -> paper_figures/slides/scatter_*.{png,pdf}
 """
 
 import sys
@@ -27,7 +27,7 @@ from condition_registry import resolve_best_source
 
 REPO = Path(__file__).resolve().parents[2]
 FP = REPO / "results/aggregated/fingerprints"
-OUT = REPO / "rebuttal_figures/slides"
+OUT = REPO / "paper_figures/slides"
 NAMES = {"C1": "C1_abstract_belief", "C2": "C2_abstract_photo",
          "C3": "C3_answer_changes_belief",
          "C5": "C5_answer_changes_location_only"}

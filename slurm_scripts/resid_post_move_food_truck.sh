@@ -76,7 +76,7 @@ fi
 
 echo "Job $IDX: condition=$CONDITION template=food_truck rule=$RULE position=$PATCH_LABEL seed=1 prompt_num=150 activation=resid_post"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $RULE \

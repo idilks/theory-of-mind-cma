@@ -1,0 +1,640 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples,condition,template,base_rule,patch_position
+37,16,82,0.0985970723628997,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,83,0.0513968094189961,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,2,0.0263788350423177,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+35,11,82,0.021392482916514,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+35,11,83,0.0202015578746795,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,82,0.111610030333201,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,83,0.1005815243721008,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,84,0.0509066482384999,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+36,10,2,0.0299812507629394,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+38,35,65,0.1149768181641896,150,' has' | ' mul' | ' has' | 'Alice' | 'Alice',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,65,0.1494568312168121,150,' has' | ' mul' | ' has' | 'Alice' | 'Alice',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,82,0.0985970723628997,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,83,0.0513968094189961,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,2,0.0263788350423177,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+35,11,65,0.0973551225662231,150,' has' | ' mul' | ' has' | 'Alice' | 'Alice',answer_changes_photo,hair_styling,ABA,patch_before_movement
+35,11,82,0.021392482916514,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+35,11,83,0.0202015578746795,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,82,0.111610030333201,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,83,0.1005815243721008,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,65,0.079665922721227,150,' has' | ' mul' | ' has' | 'Alice' | 'Alice',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,84,0.0509066482384999,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+43,30,37,0.0417879029115041,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABA,patch_before_movement
+36,10,65,0.0660918156305949,150,' has' | ' mul' | ' has' | 'Alice' | 'Alice',answer_changes_photo,hair_styling,ABA,patch_before_movement
+36,10,2,0.0299812507629394,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABA,patch_before_movement
+36,10,37,0.0271589533487955,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABA,patch_before_movement
+37,16,57,0.4308287672201792,150,'.' | '.' | '.' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,59,0.1812368257840474,150,' mar' | ' ' | ' och' | ' her' | ' her',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,49,0.172234628200531,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,50,0.0853073445955912,150,' mar' | ' ' | ' och' | 'ed' | 'ed',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,61,0.0279017015298207,150,' her' | ' her' | ' her' | ' d' | ' d',answer_changes_photo,hair_styling,ABB,patch_before_movement
+35,11,57,0.5091680224736531,150,'.' | '.' | '.' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+35,11,58,0.1677977728843689,150,'oon' | 'umber' | 're' | ' hair' | ' hair',answer_changes_photo,hair_styling,ABB,patch_before_movement
+35,11,49,0.1545528157552083,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+35,11,59,0.0988741771380106,150,' mar' | ' ' | ' och' | ' her' | ' her',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,57,0.4051619716485341,150,'.' | '.' | '.' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,49,0.2784345245361328,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,59,0.1301824255784352,150,' mar' | ' ' | ' och' | ' her' | ' her',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,58,0.0835565694173177,150,'oon' | 'umber' | 're' | ' hair' | ' hair',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,50,0.0364458465576171,150,' mar' | ' ' | ' och' | 'ed' | 'ed',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,57,0.3899125432968139,150,'.' | '.' | '.' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,59,0.1330159175395965,150,' mar' | ' ' | ' och' | ' her' | ' her',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,84,0.0893733064333597,150,' are' | ' a' | ' are' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,58,0.0851922806104024,150,'oon' | 'umber' | 're' | ' hair' | ' hair',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,49,0.069734384616216,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,32,57,0.2756342681248983,150,'.' | '.' | '.' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,32,84,0.1408003791173299,150,' are' | ' a' | ' are' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,32,59,0.1323789807160695,150,' mar' | ' ' | ' och' | ' her' | ' her',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,32,85,0.0638332895437876,150,'You' | ' are' | 'You' | 'system' | 'system',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,32,49,0.0635459792613983,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,49,0.1714916539192199,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,50,0.0855233709017435,150,' mar' | ' ' | ' och' | 'ed' | 'ed',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,61,0.0276990834871927,150,' her' | ' her' | ' her' | ' d' | ' d',answer_changes_photo,hair_styling,ABB,patch_before_movement
+37,16,51,0.0252520585060119,150,'ed' | 'ed' | 'ed' | ' dy' | ' dy',answer_changes_photo,hair_styling,ABB,patch_before_movement
+35,11,49,0.1545059204101562,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,49,0.2785193634033203,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,50,0.0365203599135081,150,' mar' | ' ' | ' och' | 'ed' | 'ed',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,84,0.0901374681790669,150,' are' | ' a' | ' are' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,49,0.0696772030989329,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,85,0.047261643409729,150,'You' | ' are' | 'You' | 'system' | 'system',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,86,0.0348468414942423,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,30,87,0.0269812258441796,89,'system' | '\\n' | 'system' | 'You' | '<|im_start|>',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,34,84,0.1413575104872385,150,' are' | ' a' | ' are' | '\\n' | '\\n',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,34,86,0.0815005405743916,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,34,88,0.0710352245023695,59,'<|im_start|>' | 'system' | '<|im_start|>' | '\\n' | '<|im_start|>',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,34,85,0.07020623366038,150,'You' | ' are' | 'You' | 'system' | 'system',answer_changes_photo,hair_styling,ABB,patch_before_movement
+43,34,87,0.0524223533908972,89,'system' | '\\n' | 'system' | 'You' | '<|im_start|>',answer_changes_photo,hair_styling,ABB,patch_before_movement
+38,35,86,0.0322763927777608,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,85,0.0315095174312591,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,89,0.025838193985132,26,'\\n' | '<|im_start|>' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,92,0.1163747708002726,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,86,0.0449971389770507,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,85,0.0266910012563069,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,63,0.0249506366252899,150,'adas' | ' is' | 'adas' | 'adas' | ' tacos',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,86,0.041440417766571,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,92,0.0406765143076578,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,0,0.0376576932271321,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,63,0.0216027641296386,150,'adas' | ' is' | 'adas' | 'adas' | ' tacos',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,92,0.1686653693517049,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,86,0.0945590511957804,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,85,0.0490641816457112,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,0,0.0462969621022542,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,93,0.0455324053764343,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+35,11,60,0.747960721651713,150,' Pine' | 'lar' | ' Highland' | ' Falls' | ' Spring',answer_changes_photo,food_truck,ABA,patch_before_movement
+35,11,62,0.114680475393931,150,' is' | ' on' | ' is' | ' is' | ' is',answer_changes_photo,food_truck,ABA,patch_before_movement
+35,11,61,0.0787605424722035,150,' on' | ' Pop' | ' on' | ' on' | ' on',answer_changes_photo,food_truck,ABA,patch_before_movement
+35,11,59,0.0239666871229807,150,' Street' | ' Drive' | ' Avenue' | ' Drive' | ' Road',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,60,0.6517701224486033,150,' Pine' | 'lar' | ' Highland' | ' Falls' | ' Spring',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,62,0.0923574916521708,150,' is' | ' on' | ' is' | ' is' | ' is',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,61,0.075177743434906,150,' on' | ' Pop' | ' on' | ' on' | ' on',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,86,0.0323930327097574,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+38,35,85,0.031520748535792,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,60,0.6218577309449513,150,' Pine' | 'lar' | ' Highland' | ' Falls' | ' Spring',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,92,0.1057953039805094,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,62,0.0813869337240855,150,' is' | ' on' | ' is' | ' is' | ' is',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,61,0.0797540390491485,150,' on' | ' Pop' | ' on' | ' on' | ' on',answer_changes_photo,food_truck,ABA,patch_before_movement
+37,16,86,0.0442699340979258,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,60,0.5524268976847331,150,' Pine' | 'lar' | ' Highland' | ' Falls' | ' Spring',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,62,0.0730657776196797,150,' is' | ' on' | ' is' | ' is' | ' is',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,61,0.0704117798805236,150,' on' | ' Pop' | ' on' | ' on' | ' on',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,86,0.0406050904591878,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+43,32,92,0.0387439926465352,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,60,0.4667615854740143,150,' Pine' | 'lar' | ' Highland' | ' Falls' | ' Spring',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,92,0.1683417359987894,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,86,0.0963294287522633,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,62,0.0608458979924519,150,' is' | ' on' | ' is' | ' is' | ' is',answer_changes_photo,food_truck,ABA,patch_before_movement
+45,29,85,0.0497231920560201,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABA,patch_before_movement
+35,11,48,0.5044820888837178,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+35,11,24,0.3301705932617187,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+35,11,50,0.0512787783145904,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',answer_changes_photo,food_truck,ABB,patch_before_movement
+35,11,25,0.0293967378139495,150,' at' | ' at' | ' at' | ' at' | ' at',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,48,0.4613181853294372,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,24,0.2520790986220041,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,50,0.052526440223058,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,25,0.0465358285109202,150,' at' | ' at' | ' at' | ' at' | ' at',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,93,0.0241310000419616,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,48,0.3656644948323567,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,24,0.2148045031229655,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,93,0.1756189465522766,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,92,0.1728693048159281,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,91,0.0912721872329711,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,48,0.3465623680750529,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,86,0.1497646963596344,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,85,0.1263705853621164,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,24,0.1132781966527303,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,93,0.0652734239896138,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+38,35,24,0.5461891682942709,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+38,35,48,0.3154053918520609,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+38,35,25,0.0488766471544901,150,' at' | ' at' | ' at' | ' at' | ' at',answer_changes_photo,food_truck,ABB,patch_before_movement
+38,35,50,0.0346998230616251,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',answer_changes_photo,food_truck,ABB,patch_before_movement
+35,11,24,0.3297174072265625,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+35,11,25,0.0296911557515462,150,' at' | ' at' | ' at' | ' at' | ' at',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,24,0.2526612516244252,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,25,0.0464238023757934,150,' at' | ' at' | ' at' | ' at' | ' at',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,93,0.0242734352747599,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,85,0.0209182961781819,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,32,92,0.0203631917635599,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,24,0.2148372840881347,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,93,0.1722009976704915,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,92,0.1699429353078206,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,91,0.0887828230857849,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',answer_changes_photo,food_truck,ABB,patch_before_movement
+45,29,85,0.0587853415807088,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+42,21,92,0.2125733892122904,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+42,21,93,0.1872002482414245,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+42,21,86,0.135384976863861,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+42,21,85,0.1191012330849965,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+42,21,91,0.1163264155387878,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,86,0.1527495276927948,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,85,0.1283326522509257,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,24,0.1122674190998077,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,93,0.0651511947313944,3,'\\n' | 'system' | '<|im_start|>',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,30,92,0.0619475642840067,3,'You' | '\\n' | 'system',answer_changes_photo,food_truck,ABB,patch_before_movement
+43,34,97,0.0897412017981211,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,11,0.0574353663126627,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,99,0.0238392476240793,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,0,0.0213892396291097,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,97,0.1241393605868021,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,99,0.0348506581783294,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,98,0.0323443377017974,150,'system' | 'system' | 'You' | 'system' | 'system',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,100,0.0317485630512237,58,'system' | 'system' | 'system' | 'system' | 'system',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,69,0.1055535888671875,150,' the' | ' the' | '.' | ' the' | ' the',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,70,0.0380782445271809,150,' of' | ' of' | ' library' | ' of' | ' of',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,97,0.0376936511198679,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,67,0.0330866110324859,150,'.' | '.' | ' college' | '.' | '.',answer_changes_photo,library_book,ABA,patch_before_movement
+38,35,72,0.6450821415583292,150,' academic' | ' medicine' | ' of' | ' thriller' | ' art',answer_changes_photo,library_book,ABA,patch_before_movement
+38,35,74,0.1806684140364329,150,' desk' | ' desk' | ' sociology' | ' desk' | ' desk',answer_changes_photo,library_book,ABA,patch_before_movement
+38,35,73,0.0908502070109049,150,' in' | ' in' | ' section' | ' in' | ' in',answer_changes_photo,library_book,ABA,patch_before_movement
+38,35,75,0.0294000009695688,150,' a' | ' a' | ' in' | ' a' | ' a',answer_changes_photo,library_book,ABA,patch_before_movement
+35,11,72,0.6481179563204448,150,' academic' | ' medicine' | ' of' | ' thriller' | ' art',answer_changes_photo,library_book,ABA,patch_before_movement
+35,11,74,0.2012788760662079,150,' desk' | ' desk' | ' sociology' | ' desk' | ' desk',answer_changes_photo,library_book,ABA,patch_before_movement
+35,11,73,0.0758795360724131,150,' in' | ' in' | ' section' | ' in' | ' in',answer_changes_photo,library_book,ABA,patch_before_movement
+35,11,75,0.0263328802585601,150,' a' | ' a' | ' in' | ' a' | ' a',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,72,0.4481226352850596,150,' academic' | ' medicine' | ' of' | ' thriller' | ' art',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,74,0.1231815636157989,150,' desk' | ' desk' | ' sociology' | ' desk' | ' desk',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,73,0.1142067245642344,150,' in' | ' in' | ' section' | ' in' | ' in',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,97,0.0891770792007446,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+43,34,11,0.058151569366455,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,72,0.3926045862833658,150,' academic' | ' medicine' | ' of' | ' thriller' | ' art',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,74,0.1256650225321451,150,' desk' | ' desk' | ' sociology' | ' desk' | ' desk',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,97,0.1214632121721903,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,73,0.1030930519104003,150,' in' | ' in' | ' section' | ' in' | ' in',answer_changes_photo,library_book,ABA,patch_before_movement
+37,16,75,0.0687737401326497,150,' a' | ' a' | ' in' | ' a' | ' a',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,72,0.3761795552571614,150,' academic' | ' medicine' | ' of' | ' thriller' | ' art',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,69,0.104717788696289,150,' the' | ' the' | '.' | ' the' | ' the',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,74,0.092105016708374,150,' desk' | ' desk' | ' sociology' | ' desk' | ' desk',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,71,0.073756841023763,150,' section' | ' section' | ' the' | ' section' | ' section',answer_changes_photo,library_book,ABA,patch_before_movement
+36,10,73,0.0418027369181315,150,' in' | ' in' | ' section' | ' in' | ' in',answer_changes_photo,library_book,ABA,patch_before_movement
+35,11,58,0.6046274693806967,150,' history' | ' psychology' | ' where' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,61,0.1098312413692474,150,' the' | ' the' | ' non' | ' the' | ' the',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,39,0.0987367117404937,150,' history' | ' psychology' | '.' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,33,0.0433550643920898,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,41,0.0409651947021484,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,58,0.5046029623349507,150,' history' | ' psychology' | ' where' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,61,0.1165052624543507,150,' the' | ' the' | ' non' | ' the' | ' the',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,39,0.1095238494873046,150,' history' | ' psychology' | '.' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,41,0.0628477541605631,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,95,0.0611235912640889,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,58,0.4758984311421712,150,' history' | ' psychology' | ' where' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,33,0.1670070775349935,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,61,0.1265205017725626,150,' the' | ' the' | ' non' | ' the' | ' the',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,39,0.0691459290186564,150,' history' | ' psychology' | '.' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,41,0.0363271741072336,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,58,0.5000920128822327,150,' history' | ' psychology' | ' where' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,39,0.1703845914204915,150,' history' | ' psychology' | '.' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,33,0.0942516899108886,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,61,0.0847866606712341,150,' the' | ' the' | ' non' | ' the' | ' the',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,41,0.0728992851575215,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+33,10,58,0.434186573823293,150,' history' | ' psychology' | ' where' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+33,10,57,0.0844498244921366,150,' section' | ' section' | ' it' | ' section' | ' section',answer_changes_photo,library_book,ABB,patch_before_movement
+33,10,60,0.0717309029897054,150,' book' | ' book' | '-fiction' | ' book' | ' book',answer_changes_photo,library_book,ABB,patch_before_movement
+33,10,39,0.0455456034342447,150,' history' | ' psychology' | '.' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+33,10,95,0.0452389514446258,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,33,0.0433550643920898,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+35,11,41,0.0409651947021484,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,41,0.0628477541605631,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,95,0.0611235912640889,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,11,0.0273381821314493,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_photo,library_book,ABB,patch_before_movement
+43,34,0,0.0203864161173502,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,33,0.1670070775349935,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,41,0.0363271741072336,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,95,0.0257111001014709,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+37,16,34,0.0225842809677124,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,33,0.0942516899108886,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_photo,library_book,ABB,patch_before_movement
+38,35,41,0.0728992851575215,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,95,0.1197524873415629,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,98,0.0951091739638098,58,'\\n' | '\\n' | '\\n' | 'system' | '\\n',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,99,0.0935382485389709,35,'system' | 'system' | 'system' | '<|im_start|>' | 'system',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,96,0.0317747298876444,150,'system' | 'system' | ' are' | 'system' | 'system',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,41,0.0239792585372924,150,' photo' | ' photo' | ' non' | ' photo' | ' photo',answer_changes_photo,library_book,ABB,patch_before_movement
+43,30,52,0.1066609168052673,150,'You' | 'You' | 'You' | ' are' | 'You',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,30,53,0.0723943253358205,150,'\\n' | '\\n' | '\\n' | 'You' | '\\n',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,30,54,0.0260537107785542,150,'system' | 'system' | 'system' | '\\n' | 'system',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,34,52,0.1594336454073588,150,'You' | 'You' | 'You' | ' are' | 'You',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,34,53,0.141472084124883,150,'\\n' | '\\n' | '\\n' | 'You' | '\\n',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,34,54,0.0685084076722463,150,'system' | 'system' | 'system' | '\\n' | 'system',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,34,0,0.0507704671223958,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,34,55,0.0211002676041571,91,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | 'system' | '<|im_start|>',state_only_no_belief,hair_styling,ABA,patch_before_movement
+43,30,52,0.0991194411118825,150,'You' | 'You' | 'You' | ' are' | 'You',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,30,53,0.0808023941516876,150,'\\n' | '\\n' | '\\n' | 'You' | '\\n',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,30,54,0.0267167810599009,150,'system' | 'system' | 'system' | '\\n' | 'system',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,34,52,0.1508559119701385,150,'You' | 'You' | 'You' | ' are' | 'You',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,34,53,0.148636515935262,150,'\\n' | '\\n' | '\\n' | 'You' | '\\n',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,34,54,0.0602127110958099,150,'system' | 'system' | 'system' | '\\n' | 'system',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,34,0,0.0472711817423502,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,hair_styling,ABB,patch_before_movement
+43,34,55,0.0241235140915755,91,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | 'system' | '<|im_start|>',state_only_no_belief,hair_styling,ABB,patch_before_movement
+37,16,0,0.0592704645792643,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,food_truck,ABA,patch_before_movement
+37,16,63,0.0476854693889617,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABA,patch_before_movement
+37,16,62,0.0470122424761454,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABA,patch_before_movement
+37,16,22,0.0227503395080566,150,' in' | ' in' | ' in' | ' in' | ' in',state_only_no_belief,food_truck,ABA,patch_before_movement
+38,35,63,0.052683793703715,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABA,patch_before_movement
+38,35,62,0.0405919071038564,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABA,patch_before_movement
+38,35,66,0.0285816030068831,22,'<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',state_only_no_belief,food_truck,ABA,patch_before_movement
+43,32,26,0.0542590586344401,150,' The' | ' The' | ' The' | ' The' | ' The',state_only_no_belief,food_truck,ABA,patch_before_movement
+43,32,19,0.0376069005330403,150,' Where' | ' Where' | ' Where' | ' Where' | ' Where',state_only_no_belief,food_truck,ABA,patch_before_movement
+43,32,63,0.0285315601030985,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABA,patch_before_movement
+43,32,0,0.0280380121866862,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,food_truck,ABA,patch_before_movement
+43,32,62,0.0275679675738016,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABA,patch_before_movement
+36,30,22,0.0830019124348958,150,' in' | ' in' | ' in' | ' in' | ' in',state_only_no_belief,food_truck,ABA,patch_before_movement
+36,30,63,0.0767031574249267,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABA,patch_before_movement
+36,30,62,0.0654261938730875,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABA,patch_before_movement
+36,30,21,0.0437440490722656,150,' place' | ' place' | ' place' | ' place' | ' place',state_only_no_belief,food_truck,ABA,patch_before_movement
+36,30,0,0.026080576578776,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,food_truck,ABA,patch_before_movement
+37,16,0,0.0556567637125651,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,food_truck,ABB,patch_before_movement
+37,16,62,0.0477263363202412,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABB,patch_before_movement
+37,16,63,0.0401337035497029,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+37,16,22,0.0202499516805013,150,' in' | ' in' | ' in' | ' in' | ' in',state_only_no_belief,food_truck,ABB,patch_before_movement
+38,35,63,0.0515336330731709,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+38,35,62,0.0475099837779998,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,32,26,0.0524753316243489,150,' The' | ' The' | ' The' | ' The' | ' The',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,32,19,0.0364877827962239,150,' Where' | ' Where' | ' Where' | ' Where' | ' Where',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,32,63,0.0307429337501525,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,32,0,0.0281323115030924,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,32,62,0.0254375036557515,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABB,patch_before_movement
+35,14,63,0.0788271085421244,150,'system' | '\\n' | 'You' | '\\n' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+35,14,62,0.0712078603108724,150,'\\n' | 'You' | ' are' | 'You' | 'system',state_only_no_belief,food_truck,ABB,patch_before_movement
+35,14,26,0.0429262288411458,150,' The' | ' The' | ' The' | ' The' | ' The',state_only_no_belief,food_truck,ABB,patch_before_movement
+35,14,66,0.0274192121895876,22,'<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+35,14,64,0.0235212706301334,137,'<|im_start|>' | 'system' | '\\n' | 'system' | '<|im_start|>',state_only_no_belief,food_truck,ABB,patch_before_movement
+43,34,71,0.0707723287741343,150,'You' | 'You' | '\\n' | '\\n' | 'You',state_only_no_belief,library_book,ABA,patch_before_movement
+43,34,72,0.0354374821980794,150,'\\n' | '\\n' | 'system' | 'system' | '\\n',state_only_no_belief,library_book,ABA,patch_before_movement
+43,34,0,0.0239543088277181,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,library_book,ABA,patch_before_movement
+43,34,12,0.0226759974161783,150,' young' | ' young' | ' young' | ' young' | ' young',state_only_no_belief,library_book,ABA,patch_before_movement
+43,30,71,0.1343611268202463,150,'You' | 'You' | '\\n' | '\\n' | 'You',state_only_no_belief,library_book,ABA,patch_before_movement
+43,30,72,0.0858610804875691,150,'\\n' | '\\n' | 'system' | 'system' | '\\n',state_only_no_belief,library_book,ABA,patch_before_movement
+43,34,71,0.0797416496276855,150,'You' | 'You' | '\\n' | '\\n' | 'You',state_only_no_belief,library_book,ABB,patch_before_movement
+43,34,12,0.0308628813425699,150,' young' | ' young' | ' young' | ' young' | ' young',state_only_no_belief,library_book,ABB,patch_before_movement
+43,34,72,0.0305212473869323,150,'\\n' | '\\n' | 'system' | 'system' | '\\n',state_only_no_belief,library_book,ABB,patch_before_movement
+43,34,0,0.0265543937683105,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',state_only_no_belief,library_book,ABB,patch_before_movement
+43,30,71,0.1448376154899597,150,'You' | 'You' | '\\n' | '\\n' | 'You',state_only_no_belief,library_book,ABB,patch_before_movement
+43,30,72,0.0829057729244232,150,'\\n' | '\\n' | 'system' | 'system' | '\\n',state_only_no_belief,library_book,ABB,patch_before_movement
+43,30,9,0.0219808435440063,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',state_only_no_belief,library_book,ABB,patch_before_movement
+38,33,2,0.109492441813151,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,hair_styling,ABA,patch_before_movement
+38,33,4,0.0558901977539062,150,'<|im_end|>' | '<|im_end|>' | '<|im_end|>' | '<|im_end|>' | '<|im_end|>',abstract_belief,hair_styling,ABA,patch_before_movement
+38,33,0,0.0385903930664062,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,hair_styling,ABA,patch_before_movement
+35,28,2,0.120446294148763,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,hair_styling,ABA,patch_before_movement
+35,28,101,0.0357698329289754,150,' her' | ' hair' | ' her' | ' hair' | ' time',abstract_belief,hair_styling,ABA,patch_before_movement
+35,28,102,0.0297958715756734,150,' dying' | ' her' | ' dying' | ' her' | ' hair',abstract_belief,hair_styling,ABA,patch_before_movement
+33,2,2,0.1209376017252604,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,hair_styling,ABA,patch_before_movement
+36,14,0,0.1083133951822916,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,hair_styling,ABA,patch_before_movement
+36,14,2,0.0715309143066406,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,hair_styling,ABA,patch_before_movement
+38,31,4,0.0566569010416666,150,'<|im_end|>' | '<|im_end|>' | '<|im_end|>' | '<|im_end|>' | '<|im_end|>',abstract_belief,hair_styling,ABA,patch_before_movement
+38,31,0,0.0489642842610677,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,hair_styling,ABA,patch_before_movement
+37,15,64,0.050117472410202,150,' em' | 'ac' | ' cherry' | '.' | 'urn',abstract_belief,hair_styling,ABB,patch_before_movement
+32,4,64,0.2575771737098694,150,' em' | 'ac' | ' cherry' | '.' | 'urn',abstract_belief,hair_styling,ABB,patch_before_movement
+32,4,63,0.0727911229928334,150,'erald' | '.' | '.' | ' Tuesday' | '.',abstract_belief,hair_styling,ABB,patch_before_movement
+32,4,65,0.0669155577818552,150,' color' | ' lil' | ' color' | ' plum' | 'ub',abstract_belief,hair_styling,ABB,patch_before_movement
+36,21,64,0.0719214510917663,150,' em' | 'ac' | ' cherry' | '.' | 'urn',abstract_belief,hair_styling,ABB,patch_before_movement
+36,21,65,0.0252513412634531,150,' color' | ' lil' | ' color' | ' plum' | 'ub',abstract_belief,hair_styling,ABB,patch_before_movement
+35,28,64,0.0652302233378092,150,' em' | 'ac' | ' cherry' | '.' | 'urn',abstract_belief,hair_styling,ABB,patch_before_movement
+37,38,64,0.1306951443354288,150,' em' | 'ac' | ' cherry' | '.' | 'urn',abstract_belief,hair_styling,ABB,patch_before_movement
+37,38,65,0.0531515375773112,150,' color' | ' lil' | ' color' | ' plum' | 'ub',abstract_belief,hair_styling,ABB,patch_before_movement
+37,38,63,0.0342370510101318,150,'erald' | '.' | '.' | ' Tuesday' | '.',abstract_belief,hair_styling,ABB,patch_before_movement
+36,23,96,0.0558969684441884,150,' She' | '.' | ' She' | ' She' | ' Road',abstract_belief,food_truck,ABA,patch_before_movement
+35,33,2,0.2828889973958333,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,food_truck,ABA,patch_before_movement
+45,29,0,0.0240962219238281,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,food_truck,ABB,patch_before_movement
+38,33,56,0.0407157897949218,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',abstract_belief,food_truck,ABB,patch_before_movement
+38,33,30,0.0353551228841145,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',abstract_belief,food_truck,ABB,patch_before_movement
+38,33,81,0.0343350315093994,150,' Alice' | '.' | ' Alice' | ' Alice' | ' Street',abstract_belief,food_truck,ABB,patch_before_movement
+38,33,49,0.0286311340332031,150,' truck' | ' truck' | ' truck' | ' truck' | ' truck',abstract_belief,food_truck,ABB,patch_before_movement
+36,21,81,0.0554379793008168,150,' Alice' | '.' | ' Alice' | ' Alice' | ' Street',abstract_belief,food_truck,ABB,patch_before_movement
+38,33,94,0.2378820975621541,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',abstract_belief,library_book,ABA,patch_before_movement
+38,33,49,0.1586045837402343,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_belief,library_book,ABA,patch_before_movement
+38,33,48,0.0754397583007812,150,' section' | ' section' | ' section' | ' section' | ' section',abstract_belief,library_book,ABA,patch_before_movement
+38,33,95,0.0622078474362691,150,' in' | ' in' | ' sociology' | ' in' | ' in',abstract_belief,library_book,ABA,patch_before_movement
+37,4,49,0.1674137369791666,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_belief,library_book,ABA,patch_before_movement
+37,4,94,0.1196851094563802,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',abstract_belief,library_book,ABA,patch_before_movement
+37,4,95,0.0470794026056925,150,' in' | ' in' | ' sociology' | ' in' | ' in',abstract_belief,library_book,ABA,patch_before_movement
+30,26,49,0.2311697769165039,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_belief,library_book,ABA,patch_before_movement
+30,26,48,0.1125572713216145,150,' section' | ' section' | ' section' | ' section' | ' section',abstract_belief,library_book,ABA,patch_before_movement
+30,26,9,0.0498317464192708,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',abstract_belief,library_book,ABA,patch_before_movement
+30,26,59,0.0459712084134419,150,' it' | ' it' | ' was' | ' it' | ' it',abstract_belief,library_book,ABA,patch_before_movement
+30,26,44,0.0282272338867187,150,' belongs' | ' belongs' | ' belongs' | ' belongs' | ' belongs',abstract_belief,library_book,ABA,patch_before_movement
+36,21,94,0.0754301325480143,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',abstract_belief,library_book,ABA,patch_before_movement
+32,32,94,0.0817749786376953,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',abstract_belief,library_book,ABA,patch_before_movement
+32,32,2,0.0489425841967264,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_belief,library_book,ABA,patch_before_movement
+32,32,93,0.046865066687266,150,'.' | '.' | ' Later' | '.' | '.',abstract_belief,library_book,ABA,patch_before_movement
+32,32,88,0.0417724768320719,150,' the' | ' the' | ' book' | ' the' | ' the',abstract_belief,library_book,ABA,patch_before_movement
+32,32,101,0.0352763843536376,150,' the' | ' the' | ' book' | ' the' | ' the',abstract_belief,library_book,ABA,patch_before_movement
+30,26,60,0.4833363850911458,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',abstract_belief,library_book,ABB,patch_before_movement
+30,26,59,0.0516932773590087,150,' section' | ' section' | ' and' | ' section' | ' section',abstract_belief,library_book,ABB,patch_before_movement
+30,26,9,0.0252419026692708,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',abstract_belief,library_book,ABB,patch_before_movement
+45,38,60,0.2241299561659495,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',abstract_belief,library_book,ABB,patch_before_movement
+45,38,83,0.0477590576807657,150,' academic' | ' medicine' | ' Sarah' | ' thriller' | ' art',abstract_belief,library_book,ABB,patch_before_movement
+45,38,0,0.0418157958984375,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,library_book,ABB,patch_before_movement
+36,10,60,0.1689710998535156,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',abstract_belief,library_book,ABB,patch_before_movement
+36,10,83,0.1486588096618652,150,' academic' | ' medicine' | ' Sarah' | ' thriller' | ' art',abstract_belief,library_book,ABB,patch_before_movement
+36,10,85,0.0270417789618174,150,' area' | ' area' | ' sociology' | ' area' | ' area',abstract_belief,library_book,ABB,patch_before_movement
+30,18,23,0.2389652506510416,150,' in' | ' in' | ' in' | ' in' | ' in',abstract_belief,library_book,ABB,patch_before_movement
+30,18,60,0.1664854685465494,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',abstract_belief,library_book,ABB,patch_before_movement
+30,18,24,0.0976609293619791,150,' book' | ' book' | ' book' | ' book' | ' book',abstract_belief,library_book,ABB,patch_before_movement
+32,32,60,0.1267701721191406,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',abstract_belief,library_book,ABB,patch_before_movement
+32,32,59,0.0702523803710937,150,' section' | ' section' | ' and' | ' section' | ' section',abstract_belief,library_book,ABB,patch_before_movement
+32,32,58,0.0547067070007324,150,' and' | ' and' | ' offers' | ' and' | ' and',abstract_belief,library_book,ABB,patch_before_movement
+32,32,0,0.0369303385416666,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_belief,library_book,ABB,patch_before_movement
+36,10,2,0.0299812507629394,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+39,3,0,0.1300141143798828,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+39,3,82,0.0716391066710154,150,'You' | ' are' | 'You' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+39,3,2,0.055859260559082,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+39,3,83,0.0503915890057881,150,'\\n' | 'You' | '\\n' | 'system' | 'system',abstract_photo,hair_styling,ABA,patch_before_movement
+39,3,84,0.0229522045453389,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+45,25,82,0.1687897324562072,150,'You' | ' are' | 'You' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+45,25,83,0.1084373708566029,150,'\\n' | 'You' | '\\n' | 'system' | 'system',abstract_photo,hair_styling,ABA,patch_before_movement
+45,25,2,0.0539034779866536,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+45,25,84,0.051368970076243,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+45,25,0,0.0315997505187988,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+37,18,82,0.2234935609499613,150,'You' | ' are' | 'You' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+37,18,83,0.1428578809897105,150,'\\n' | 'You' | '\\n' | 'system' | 'system',abstract_photo,hair_styling,ABA,patch_before_movement
+37,18,2,0.0574548276265462,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+37,18,84,0.0526154597600301,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+35,28,2,0.0834270731608072,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABA,patch_before_movement
+35,28,82,0.060086776415507,150,'You' | ' are' | 'You' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+35,28,83,0.0562528479099273,150,'\\n' | 'You' | '\\n' | 'system' | 'system',abstract_photo,hair_styling,ABA,patch_before_movement
+35,28,40,0.03407501856486,150,' her' | ' her' | ' her' | 'yes' | 'yes',abstract_photo,hair_styling,ABA,patch_before_movement
+35,28,0,0.0319045766194661,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_photo,hair_styling,ABA,patch_before_movement
+43,32,84,0.1425383249918619,150,' are' | ' a' | ' are' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+43,32,85,0.0643132746219635,150,'You' | ' are' | 'You' | 'system' | 'system',abstract_photo,hair_styling,ABB,patch_before_movement
+43,32,49,0.0626774565378824,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',abstract_photo,hair_styling,ABB,patch_before_movement
+43,32,86,0.059698238770167,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+43,32,0,0.0459050687154134,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+32,4,49,0.2323746744791666,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',abstract_photo,hair_styling,ABB,patch_before_movement
+32,4,84,0.0567493879795074,150,' are' | ' a' | ' are' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+32,4,0,0.0328810119628906,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+32,4,85,0.0279041663805643,150,'You' | ' are' | 'You' | 'system' | 'system',abstract_photo,hair_styling,ABB,patch_before_movement
+32,4,86,0.0236074888706207,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+36,21,49,0.2364713541666666,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',abstract_photo,hair_styling,ABB,patch_before_movement
+36,21,84,0.1463340540726979,150,' are' | ' a' | ' are' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+36,21,85,0.0620930441220601,150,'You' | ' are' | 'You' | 'system' | 'system',abstract_photo,hair_styling,ABB,patch_before_movement
+36,21,86,0.0318755435943603,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+36,21,87,0.0242408192559574,89,'system' | '\\n' | 'system' | 'You' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+36,23,49,0.1935862223307291,150,'oon' | 'umber' | 're' | ' blonde' | ' moss',abstract_photo,hair_styling,ABB,patch_before_movement
+36,23,84,0.1620575495560964,150,' are' | ' a' | ' are' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+36,23,85,0.0764638745784759,150,'You' | ' are' | 'You' | 'system' | 'system',abstract_photo,hair_styling,ABB,patch_before_movement
+36,23,86,0.0544664740562439,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+36,23,88,0.0498717700020741,59,'<|im_start|>' | 'system' | '<|im_start|>' | '\\n' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+37,15,84,0.1767327602704366,150,' are' | ' a' | ' are' | '\\n' | '\\n',abstract_photo,hair_styling,ABB,patch_before_movement
+37,15,86,0.1020293088754018,150,'\\n' | 'You' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+37,15,88,0.1005512455762442,59,'<|im_start|>' | 'system' | '<|im_start|>' | '\\n' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+37,15,85,0.0902219382921854,150,'You' | ' are' | 'You' | 'system' | 'system',abstract_photo,hair_styling,ABB,patch_before_movement
+37,15,87,0.0782239289765947,89,'system' | '\\n' | 'system' | 'You' | '<|im_start|>',abstract_photo,hair_styling,ABB,patch_before_movement
+36,30,86,0.0765922733147939,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+36,30,93,0.0614421367645263,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+36,30,24,0.0599875815709431,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABA,patch_before_movement
+36,30,85,0.0596480985482533,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABA,patch_before_movement
+36,30,91,0.0426533222198486,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',abstract_photo,food_truck,ABA,patch_before_movement
+36,23,86,0.0609774374961853,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+36,23,85,0.0493420592943827,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABA,patch_before_movement
+36,23,93,0.0455747048060099,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+36,23,92,0.0439506769180297,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABA,patch_before_movement
+36,23,91,0.0365743517875671,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',abstract_photo,food_truck,ABA,patch_before_movement
+35,14,86,0.1548799439271291,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+35,14,93,0.125829537709554,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+35,14,85,0.1228238073984781,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABA,patch_before_movement
+35,14,92,0.1099621256192525,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABA,patch_before_movement
+35,14,91,0.0663191318511962,5,'<|im_start|>' | ' are' | '<|im_start|>' | 'You' | '\\n',abstract_photo,food_truck,ABA,patch_before_movement
+36,21,86,0.0208267748355865,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABA,patch_before_movement
+31,16,8,0.0477598063151041,150,' location' | ' location' | ' location' | ' location' | ' location',abstract_photo,food_truck,ABA,patch_before_movement
+38,35,24,0.5473883056640625,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABB,patch_before_movement
+38,35,25,0.0487926395734151,150,' at' | ' at' | ' at' | ' at' | ' at',abstract_photo,food_truck,ABB,patch_before_movement
+37,18,86,0.2129427913824717,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+37,18,85,0.1833513621489207,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+37,18,93,0.1122237642606099,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+37,18,92,0.1023770570755004,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+37,18,24,0.080663776397705,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABB,patch_before_movement
+34,8,24,0.170838623046875,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABB,patch_before_movement
+34,8,86,0.0906612654527028,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+34,8,85,0.0781878058115641,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+34,8,93,0.0773142576217651,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+34,8,92,0.07584810256958,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+37,38,24,0.1583384195963541,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABB,patch_before_movement
+37,38,92,0.1372311115264892,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+37,38,93,0.1345922152201334,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+37,38,86,0.1278401207923889,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+37,38,85,0.1076752575238545,150,'You' | 'You' | 'You' | 'You' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+35,33,24,0.1647172037760416,150,' Garden' | ' Sunset' | ' Oak' | ' Stone' | ' Brook',abstract_photo,food_truck,ABB,patch_before_movement
+35,33,2,0.1065380859375,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+35,33,92,0.0602686405181884,3,'You' | '\\n' | 'system',abstract_photo,food_truck,ABB,patch_before_movement
+35,33,86,0.0595979551474253,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+35,33,93,0.0577842791875203,3,'\\n' | 'system' | '<|im_start|>',abstract_photo,food_truck,ABB,patch_before_movement
+34,6,97,0.2585044447580973,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',abstract_photo,library_book,ABA,patch_before_movement
+34,6,100,0.0653633053960471,58,'system' | 'system' | 'system' | 'system' | 'system',abstract_photo,library_book,ABA,patch_before_movement
+34,6,10,0.0650467046101888,150,' adult' | ' adult' | ' adult' | ' adult' | ' adult',abstract_photo,library_book,ABA,patch_before_movement
+34,6,98,0.0533317228158315,150,'system' | 'system' | 'You' | 'system' | 'system',abstract_photo,library_book,ABA,patch_before_movement
+34,6,99,0.0520113650957743,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,library_book,ABA,patch_before_movement
+36,30,97,0.1546231003602345,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',abstract_photo,library_book,ABA,patch_before_movement
+36,30,68,0.0554591782887776,150,' library' | ' library' | ' A' | ' library' | ' library',abstract_photo,library_book,ABA,patch_before_movement
+36,30,100,0.0534164586971546,58,'system' | 'system' | 'system' | 'system' | 'system',abstract_photo,library_book,ABA,patch_before_movement
+36,30,98,0.0452849555015563,150,'system' | 'system' | 'You' | 'system' | 'system',abstract_photo,library_book,ABA,patch_before_movement
+36,30,99,0.0404080522060394,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',abstract_photo,library_book,ABA,patch_before_movement
+33,10,69,0.109941302537918,150,' the' | ' the' | '.' | ' the' | ' the',abstract_photo,library_book,ABA,patch_before_movement
+33,10,97,0.0491409607728322,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',abstract_photo,library_book,ABA,patch_before_movement
+33,10,59,0.034396702448527,150,' the' | ' the' | ' area' | ' the' | ' the',abstract_photo,library_book,ABA,patch_before_movement
+33,10,100,0.0224866332678959,58,'system' | 'system' | 'system' | 'system' | 'system',abstract_photo,library_book,ABA,patch_before_movement
+38,33,33,0.0467197672526041,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_photo,library_book,ABA,patch_before_movement
+38,33,97,0.0352155570189158,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',abstract_photo,library_book,ABA,patch_before_movement
+38,33,70,0.0306554794311523,150,' of' | ' of' | ' library' | ' of' | ' of',abstract_photo,library_book,ABA,patch_before_movement
+38,33,8,0.0273783620198567,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',abstract_photo,library_book,ABA,patch_before_movement
+38,33,42,0.0260018189748128,150,' section' | ' section' | ' where' | ' section' | ' section',abstract_photo,library_book,ABA,patch_before_movement
+32,32,57,0.084829355875651,150,' section' | ' section' | ' it' | ' section' | ' section',abstract_photo,library_book,ABB,patch_before_movement
+32,32,33,0.060220464070638,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_photo,library_book,ABB,patch_before_movement
+32,32,54,0.0437182064851125,150,' belongs' | ' belongs' | ' After' | ' belongs' | ' belongs',abstract_photo,library_book,ABB,patch_before_movement
+32,32,9,0.0343579355875651,150,' or' | ' or' | ' or' | ' or' | ' or',abstract_photo,library_book,ABB,patch_before_movement
+32,32,95,0.0292699531714121,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,21,95,0.1820639129479726,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,21,57,0.0999112153053283,150,' section' | ' section' | ' it' | ' section' | ' section',abstract_photo,library_book,ABB,patch_before_movement
+36,21,98,0.0923889731538706,58,'\\n' | '\\n' | '\\n' | 'system' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,21,99,0.0558644601276942,35,'system' | 'system' | 'system' | '<|im_start|>' | 'system',abstract_photo,library_book,ABB,patch_before_movement
+36,21,96,0.0506975317001342,150,'system' | 'system' | ' are' | 'system' | 'system',abstract_photo,library_book,ABB,patch_before_movement
+36,10,95,0.1034627608458201,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,10,98,0.0500926858392255,58,'\\n' | '\\n' | '\\n' | 'system' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,10,67,0.0473342196146647,150,' the' | ' the' | ' A' | ' the' | ' the',abstract_photo,library_book,ABB,patch_before_movement
+36,10,99,0.0420637028557913,35,'system' | 'system' | 'system' | '<|im_start|>' | 'system',abstract_photo,library_book,ABB,patch_before_movement
+36,10,9,0.0348109944661458,150,' or' | ' or' | ' or' | ' or' | ' or',abstract_photo,library_book,ABB,patch_before_movement
+36,30,95,0.2133757929007212,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,30,98,0.1507301751909585,58,'\\n' | '\\n' | '\\n' | 'system' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+36,30,99,0.1216610022953578,35,'system' | 'system' | 'system' | '<|im_start|>' | 'system',abstract_photo,library_book,ABB,patch_before_movement
+36,30,96,0.0510444625218709,150,'system' | 'system' | ' are' | 'system' | 'system',abstract_photo,library_book,ABB,patch_before_movement
+36,30,8,0.0444984944661458,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',abstract_photo,library_book,ABB,patch_before_movement
+33,2,57,0.0961372637748718,150,' section' | ' section' | ' it' | ' section' | ' section',abstract_photo,library_book,ABB,patch_before_movement
+33,2,95,0.0854824848969777,150,'\\n' | '\\n' | ' a' | '\\n' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+33,2,98,0.0420376442629715,58,'\\n' | '\\n' | '\\n' | 'system' | '\\n',abstract_photo,library_book,ABB,patch_before_movement
+33,2,40,0.0401267910003662,150,' of' | ' of' | '-fiction' | ' of' | ' of',abstract_photo,library_book,ABB,patch_before_movement
+33,2,33,0.037046775817871,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',abstract_photo,library_book,ABB,patch_before_movement
+37,16,2,0.0349501673380533,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only,hair_styling,ABA,patch_before_movement
+35,11,2,0.0435068559646606,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only,hair_styling,ABA,patch_before_movement
+43,34,0,0.0310443623860677,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only,hair_styling,ABA,patch_before_movement
+37,16,2,0.0252559725443522,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only,hair_styling,ABB,patch_before_movement
+35,11,2,0.0345654261112213,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only,hair_styling,ABB,patch_before_movement
+43,32,0,0.0354998874664306,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only,food_truck,ABA,patch_before_movement
+45,29,0,0.0395793183644612,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only,food_truck,ABA,patch_before_movement
+37,16,102,0.020228540500005,150,'adas' | 'ritos' | 'adas' | 'adas' | ' truck',answer_changes_location_only,food_truck,ABB,patch_before_movement
+43,32,0,0.031616621017456,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only,food_truck,ABB,patch_before_movement
+45,29,0,0.035041495958964,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only,food_truck,ABB,patch_before_movement
+43,34,94,0.1274753761291504,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_location_only,library_book,ABA,patch_before_movement
+43,34,95,0.0717684268951416,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_location_only,library_book,ABA,patch_before_movement
+43,34,12,0.0317556381225585,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only,library_book,ABA,patch_before_movement
+43,34,49,0.0215124479929606,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABA,patch_before_movement
+35,11,94,0.3042790758609772,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_location_only,library_book,ABA,patch_before_movement
+35,11,95,0.1450566514333089,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_location_only,library_book,ABA,patch_before_movement
+38,35,94,0.272262004216512,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_location_only,library_book,ABA,patch_before_movement
+38,35,95,0.1413756891091664,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_location_only,library_book,ABA,patch_before_movement
+43,30,49,0.0832621804873148,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABA,patch_before_movement
+43,30,94,0.0803434248765309,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_location_only,library_book,ABA,patch_before_movement
+41,10,94,0.0528280544281005,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_location_only,library_book,ABA,patch_before_movement
+41,10,49,0.0514788742860158,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABA,patch_before_movement
+38,35,94,0.290821099281311,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABB,patch_before_movement
+38,35,95,0.1237675805886586,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_location_only,library_book,ABB,patch_before_movement
+38,35,12,0.0206848537921905,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only,library_book,ABB,patch_before_movement
+35,11,94,0.3192558153470357,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABB,patch_before_movement
+35,11,95,0.1347308520476023,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_location_only,library_book,ABB,patch_before_movement
+43,30,94,0.0810836688677469,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABB,patch_before_movement
+43,30,95,0.0391172929604848,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_location_only,library_book,ABB,patch_before_movement
+45,25,94,0.0818444967269897,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABB,patch_before_movement
+45,25,95,0.0405987211068471,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_location_only,library_book,ABB,patch_before_movement
+45,25,9,0.0331544240315755,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',answer_changes_location_only,library_book,ABB,patch_before_movement
+37,16,94,0.276269736289978,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_location_only,library_book,ABB,patch_before_movement
+37,16,95,0.1478782335917155,150,' in' | ' in' | ' non' | ' in' | ' in',answer_changes_location_only,library_book,ABB,patch_before_movement
+37,16,97,0.0306518212954203,150,' desk' | ' desk' | ' area' | ' desk' | ' desk',answer_changes_location_only,library_book,ABB,patch_before_movement
+37,16,98,0.02068071047465,150,' the' | ' the' | ' desk' | ' the' | ' the',answer_changes_location_only,library_book,ABB,patch_before_movement
+37,16,82,0.0985970723628997,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+37,16,83,0.0513968094189961,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+37,16,2,0.0263788350423177,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+35,11,82,0.021392482916514,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+35,11,83,0.0202015578746795,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+43,30,82,0.111610030333201,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+43,30,83,0.1005815243721008,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+43,30,84,0.0509066482384999,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+36,10,2,0.0299812507629394,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABA,patch_before_movement
+37,16,82,0.1197350176175435,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+37,16,83,0.0612534503142039,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+37,16,2,0.0239857069651285,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+35,11,82,0.0284677537282307,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+43,30,82,0.1139726682504018,150,'You' | ' are' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+43,30,83,0.1037815241018931,150,'\\n' | 'You' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+43,30,84,0.0466518580913543,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+36,10,2,0.0356756083170572,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,hair_styling,ABB,patch_before_movement
+38,35,86,0.0322763927777608,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+38,35,85,0.0315095174312591,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+38,35,89,0.025838193985132,26,'\\n' | '<|im_start|>' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+37,16,92,0.1163747708002726,3,'You' | '\\n' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+37,16,86,0.0449971389770507,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+37,16,85,0.0266910012563069,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+37,16,63,0.0249506366252899,150,'adas' | ' is' | 'adas' | 'adas' | ' tacos',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+43,32,86,0.041440417766571,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+43,32,92,0.0406765143076578,3,'You' | '\\n' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+43,32,0,0.0376576932271321,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+43,32,63,0.0216027641296386,150,'adas' | ' is' | 'adas' | 'adas' | ' tacos',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+45,29,92,0.1686653693517049,3,'You' | '\\n' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+45,29,86,0.0945590511957804,150,'\\n' | '\\n' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+45,29,85,0.0490641816457112,150,'You' | 'You' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+45,29,0,0.0462969621022542,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+45,29,93,0.0455324053764343,3,'\\n' | 'system' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABA,patch_before_movement
+37,16,85,0.0268648997942606,150,'You' | ' are' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+37,16,86,0.0247718711694081,150,'\\n' | 'You' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+38,35,91,0.0588376879692077,5,'You' | '\\n' | 'You' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+38,35,92,0.0326947122812271,4,'\\n' | 'system' | '\\n' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+38,35,86,0.0295123696327209,150,'\\n' | 'You' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+38,35,85,0.0275934326648712,150,'You' | ' are' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+43,32,0,0.0338076527913411,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+43,32,86,0.0325749282042185,150,'\\n' | 'You' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+43,32,85,0.0269601964950561,150,'You' | ' are' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+45,29,91,0.1029604315757751,5,'You' | '\\n' | 'You' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+45,29,86,0.0694047749042511,150,'\\n' | 'You' | '\\n' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+45,29,85,0.0552589205900828,150,'You' | ' are' | 'You' | 'You' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+45,29,0,0.0432325363159179,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+45,29,92,0.0345728248357772,4,'\\n' | 'system' | '\\n' | 'system',answer_changes_location_only_photo,food_truck,ABB,patch_before_movement
+43,34,97,0.0891770792007446,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,34,11,0.058151569366455,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,34,99,0.0239493306477864,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,34,0,0.0213291613260904,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+37,16,97,0.1214632121721903,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+37,16,99,0.0341782613595326,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+37,16,98,0.031573478380839,150,'system' | 'system' | 'You' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+37,16,100,0.0313344618369793,58,'system' | 'system' | 'system' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,30,97,0.195201385418574,150,'\\n' | '\\n' | ' are' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,30,99,0.0628385861714681,150,'<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,30,98,0.051247090101242,150,'system' | 'system' | 'You' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,30,100,0.0438388997110827,58,'system' | 'system' | 'system' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+43,30,8,0.0227347056070963,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',answer_changes_location_only_photo,library_book,ABA,patch_before_movement
+38,35,11,0.0257263215382893,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+35,11,11,0.0402916467189788,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,34,97,0.1049945334593455,150,'\\n' | '\\n' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,34,11,0.079672934214274,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,97,0.119331092039744,150,'\\n' | '\\n' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,11,0.0317408021291097,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,98,0.0298685999711354,150,'system' | 'system' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,99,0.0268922579288482,150,'<|im_start|>' | '<|im_start|>' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,100,0.0206039095747059,58,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,30,97,0.1920433111985524,150,'\\n' | '\\n' | 'You' | '\\n' | '\\n',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,30,99,0.0541834807395935,150,'<|im_start|>' | '<|im_start|>' | 'system' | '<|im_start|>' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,30,98,0.0520204305648803,150,'system' | 'system' | '\\n' | 'system' | 'system',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,30,100,0.0352971594909141,58,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '\\n' | '<|im_start|>',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+43,30,11,0.0286465946833292,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_location_only_photo,library_book,ABB,patch_before_movement
+37,16,2,0.0349501673380533,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_belief,hair_styling,ABA,patch_before_movement
+35,11,2,0.0435068559646606,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>',answer_changes_belief,hair_styling,ABA,patch_before_movement
+43,34,0,0.0310443623860677,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,hair_styling,ABA,patch_before_movement
+37,16,64,0.0951175951957702,150,' em' | 'ac' | ' cherry' | '.' | 'urn',answer_changes_belief,hair_styling,ABB,patch_before_movement
+37,16,65,0.0835359223683675,150,' color' | ' lil' | ' color' | ' plum' | 'ub',answer_changes_belief,hair_styling,ABB,patch_before_movement
+37,16,63,0.0245363887151082,150,'erald' | '.' | '.' | ' Tuesday' | '.',answer_changes_belief,hair_styling,ABB,patch_before_movement
+37,16,88,0.023624304930369,150,'yes' | ' her' | ' d' | 'yes' | ' a',answer_changes_belief,hair_styling,ABB,patch_before_movement
+35,11,64,0.1480044774214426,150,' em' | 'ac' | ' cherry' | '.' | 'urn',answer_changes_belief,hair_styling,ABB,patch_before_movement
+35,11,65,0.0991095109780629,150,' color' | ' lil' | ' color' | ' plum' | 'ub',answer_changes_belief,hair_styling,ABB,patch_before_movement
+35,11,63,0.035823411544164,150,'erald' | '.' | '.' | ' Tuesday' | '.',answer_changes_belief,hair_styling,ABB,patch_before_movement
+38,35,64,0.1449135287602742,150,' em' | 'ac' | ' cherry' | '.' | 'urn',answer_changes_belief,hair_styling,ABB,patch_before_movement
+38,35,65,0.0850183455149332,150,' color' | ' lil' | ' color' | ' plum' | 'ub',answer_changes_belief,hair_styling,ABB,patch_before_movement
+38,35,63,0.0373071432113647,150,'erald' | '.' | '.' | ' Tuesday' | '.',answer_changes_belief,hair_styling,ABB,patch_before_movement
+43,30,64,0.0458421206474304,150,' em' | 'ac' | ' cherry' | '.' | 'urn',answer_changes_belief,hair_styling,ABB,patch_before_movement
+43,30,65,0.0452722303072611,150,' color' | ' lil' | ' color' | ' plum' | 'ub',answer_changes_belief,hair_styling,ABB,patch_before_movement
+39,3,64,0.1429195646444956,150,' em' | 'ac' | ' cherry' | '.' | 'urn',answer_changes_belief,hair_styling,ABB,patch_before_movement
+39,3,65,0.0769559474786122,150,' color' | ' lil' | ' color' | ' plum' | 'ub',answer_changes_belief,hair_styling,ABB,patch_before_movement
+39,3,0,0.0487812614440918,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,hair_styling,ABB,patch_before_movement
+39,3,63,0.0403153196970621,150,'erald' | '.' | '.' | ' Tuesday' | '.',answer_changes_belief,hair_styling,ABB,patch_before_movement
+43,32,0,0.0354998874664306,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,food_truck,ABA,patch_before_movement
+45,29,0,0.0395793183644612,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,food_truck,ABA,patch_before_movement
+37,16,58,0.031226577758789,150,' the' | ' the' | ' the' | ' the' | ' the',answer_changes_belief,food_truck,ABB,patch_before_movement
+43,32,0,0.0212885538736979,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,food_truck,ABB,patch_before_movement
+35,11,94,0.3042790758609772,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_belief,library_book,ABA,patch_before_movement
+35,11,95,0.1450566514333089,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_belief,library_book,ABA,patch_before_movement
+38,35,94,0.272262004216512,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_belief,library_book,ABA,patch_before_movement
+38,35,95,0.1413756891091664,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_belief,library_book,ABA,patch_before_movement
+43,30,49,0.0832621804873148,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABA,patch_before_movement
+43,30,94,0.0803434248765309,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_belief,library_book,ABA,patch_before_movement
+37,16,94,0.2737367065747579,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_belief,library_book,ABA,patch_before_movement
+37,16,95,0.1454428672790527,150,' in' | ' in' | ' sociology' | ' in' | ' in',answer_changes_belief,library_book,ABA,patch_before_movement
+37,16,49,0.0393643073240915,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABA,patch_before_movement
+37,16,97,0.0301254574457804,150,' desk' | ' desk' | ' area' | ' desk' | ' desk',answer_changes_belief,library_book,ABA,patch_before_movement
+45,38,49,0.1130934810638427,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABA,patch_before_movement
+45,38,94,0.0727137533823649,150,' academic' | ' medicine' | '.' | ' thriller' | ' art',answer_changes_belief,library_book,ABA,patch_before_movement
+38,35,60,0.4973252729574839,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABB,patch_before_movement
+35,11,60,0.4681071599324544,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABB,patch_before_movement
+35,11,83,0.0899969247976938,150,' academic' | ' medicine' | ' Sarah' | ' thriller' | ' art',answer_changes_belief,library_book,ABB,patch_before_movement
+30,26,60,0.4833363850911458,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABB,patch_before_movement
+30,26,59,0.0516932773590087,150,' section' | ' section' | ' and' | ' section' | ' section',answer_changes_belief,library_book,ABB,patch_before_movement
+30,26,9,0.0252419026692708,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',answer_changes_belief,library_book,ABB,patch_before_movement
+43,34,60,0.3651941553751627,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABB,patch_before_movement
+43,34,12,0.05552001953125,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_belief,library_book,ABB,patch_before_movement
+43,34,83,0.0306431639194488,150,' academic' | ' medicine' | ' Sarah' | ' thriller' | ' art',answer_changes_belief,library_book,ABB,patch_before_movement
+43,34,0,0.0217351722717285,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n',answer_changes_belief,library_book,ABB,patch_before_movement
+37,16,60,0.3376302182674408,150,' history' | ' psychology' | ' section' | ' fantasy' | ' romance',answer_changes_belief,library_book,ABB,patch_before_movement
+37,16,9,0.0225640487670898,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics',answer_changes_belief,library_book,ABB,patch_before_movement
+37,16,12,0.0203525892893473,150,' young' | ' young' | ' young' | ' young' | ' young',answer_changes_belief,library_book,ABB,patch_before_movement

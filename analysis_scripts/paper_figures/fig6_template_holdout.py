@@ -5,8 +5,8 @@
     distribution (median across the selected set); a random head sits at 50
 (b) per-template fingerprints agree pairwise at r = 0.70-0.94
 
-Data: writeups/results_for_pi/template_holdout/stats_{loto,crosstemplate}.csv
-(produced by scripts/template_holdout_check.py).
+Data: results/summary/template_holdout/stats_{loto,crosstemplate}.csv
+(produced by analysis_scripts/template_holdout_check.py).
 """
 
 import sys
@@ -21,7 +21,7 @@ from style import (BLUE, AQUA, VIOLET, ORANGE, YELLOW, INK2, apply_style,
                    despine, panel_label, save)
 
 REPO = Path(__file__).resolve().parents[2]
-STATS = REPO / "writeups/results_for_pi/template_holdout"
+STATS = REPO / "results/summary/template_holdout"
 
 CONDS = ["C1", "C2", "C3", "C5", "C6"]
 COND_COLOR = {"C1": BLUE, "C2": AQUA, "C3": VIOLET, "C5": ORANGE, "C6": YELLOW}

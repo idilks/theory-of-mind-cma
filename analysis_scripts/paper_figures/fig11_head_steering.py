@@ -9,8 +9,7 @@ random direction at the same alpha. signed alpha = +1 pushes toward the
 opposite divergence status, -1 toward the item's own status. axis_shuffled =
 the real axes permuted across the same heads (same norms).
 
-Records: docs/divergence_content_results.md §S (belief/code) and §SG5
-(belief/photo); the two harnesses agree on shared cells to three decimals.
+The belief/code and belief/photo harnesses agree on shared cells to three decimals.
 All panels use one x order; the shaded column is that panel's native axis.
 
 Data (--selection top32, the original figure):
@@ -27,7 +26,7 @@ steering_qwen_{selection}_tom-code-photo/steer_summary.csv (steer_state_axes.py
 u_cm, axis_shuffled in every domain. The figure is saved with the selection as
 a suffix, and the transfer percentages (cross-axis / native-axis effect at
 alpha=+1) that the results paragraph quotes are printed and written to
-rebuttal_figures/fig11_transfer_{selection}.csv.
+paper_figures/fig11_transfer_{selection}.csv.
 """
 
 import argparse
@@ -134,7 +133,7 @@ def main():
     fig.legend(handles=handles, loc="lower center", ncol=3, fontsize=7.5,
                frameon=False, bbox_to_anchor=(0.5, -0.05))
     fig.tight_layout(rect=(0, 0.05, 1, 1), w_pad=1.5)
-    pd.DataFrame(transfer).to_csv(REPO / "rebuttal_figures" / f"fig11_transfer{suffix}.csv",
+    pd.DataFrame(transfer).to_csv(REPO / "results" / "figures" / f"fig11_transfer{suffix}.csv",
                                   index=False)
     save(fig, f"fig11_head_steering{suffix}")
 

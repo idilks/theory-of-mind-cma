@@ -14,7 +14,7 @@
 
 # C7 photo control — analogue of C8 (LOCATION_ONLY_MATCHED_BELIEF) on the photo side.
 # Both prompts use false-photo context, locations swapped, answer differs.
-# Adds the missing photo-side cell PI requested for the H1 / decomposition tests:
+# Adds the photo-side cell needed for the H1 / decomposition tests:
 # tests whether r(C3, C1+C5) ~= r(C3, C2+C7) etc., and rounds out the design.
 #
 # Within-context patch: ABA->ABA and ABB->ABB (no false<->true flip).
@@ -49,7 +49,7 @@ RULE=${RULES[$IDX]}
 echo "Job $IDX: condition=answer_changes_location_only_photo template=$TEMPLATE rule=$RULE seed=1 prompt_num=150"
 
 # end-patch only (no --patch_after_movement)
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition answer_changes_location_only_photo \
   --base_rule $RULE \

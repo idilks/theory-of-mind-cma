@@ -1,0 +1,34 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "true_belief_direct_abstract_detailed_T0.1": {
+      "belief_accuracy": 0.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 0,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_abstract_detailed_T0.4": {
+      "belief_accuracy": 0.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 0,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_abstract_detailed_T0.7": {
+      "belief_accuracy": 0.0,
+      "world_accuracy": 0.9100000000000001,
+      "malformed_rate": 0.09000000000000001,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.11789826122551596,
+      "total_responses": 100,
+      "belief_correct_count": 0,
+      "world_correct_count": 91
+    }
+  }
+}

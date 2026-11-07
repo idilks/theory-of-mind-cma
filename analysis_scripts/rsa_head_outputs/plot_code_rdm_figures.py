@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Figures for docs/design_code_pointer_rdm.md (Exp 1 + Exp 2 RDM results).
+"""Figures for the code-pointer RDM arm (Exp 1 + Exp 2 RDM results).
 
 Encoding is constant across all figures — color = signal CLASS, never rank:
   blue   #2a78d6  divergence / veracity-analog models
@@ -8,7 +8,7 @@ Encoding is constant across all figures — color = signal CLASS, never rank:
   yellow #eda100  surface-syntax models
 (4-slot palette validated with the dataviz six-checks script, light surface.)
 
-Outputs -> docs/figures/code_pointer_rdm/*.png
+Outputs -> results/summary/code_pointer_rdm/figures/*.png
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 from analyze_code_padtwins_rdms import load as load_padtwins  # noqa: E402
 from padtwins_projection_test import (  # noqa: E402
@@ -37,7 +37,7 @@ ACT1 = ROOT / "results/rsa_head_outputs/activations_code_position/code_position.
 ACT2 = (ROOT / "results/rsa_head_outputs/activations_code_ledger_full/"
         "Qwen2.5-14B-Instruct/code_ledger.pt")
 HEADS = ROOT / "results/rsa_head_outputs/topk_heads/code_position_union.csv"
-FIG_DIR = ROOT / "docs/figures/code_pointer_rdm"
+FIG_DIR = ROOT / "results/summary/code_pointer_rdm/figures"
 
 BLUE, ORANGE, AQUA, YELLOW = "#2a78d6", "#eb6834", "#1baf7a", "#eda100"
 INK, MUTED, SURFACE = "#0b0b0b", "#898781", "#fcfcfb"

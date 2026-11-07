@@ -5,9 +5,9 @@ loads causal_scores_per_sample.pt files and overwrites old FDR-based
 statistical_test_results.csv / significant_heads.csv / statistical_summary.txt.
 
 usage:
-    python scripts/rerun_statistical_tests.py
-    python scripts/rerun_statistical_tests.py --dry_run
-    python scripts/rerun_statistical_tests.py --n_permutations 10000
+    python analysis_scripts/rerun_statistical_tests.py
+    python analysis_scripts/rerun_statistical_tests.py --dry_run
+    python analysis_scripts/rerun_statistical_tests.py --n_permutations 10000
 """
 
 import sys
@@ -16,7 +16,7 @@ import argparse
 from pathlib import Path
 
 # add cma module to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'codebase', 'tasks', 'causal_analysis'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'cma_scripts', 'tasks', 'causal_analysis'))
 
 import torch
 from statistical_testing import permutation_test_heads, save_statistical_results

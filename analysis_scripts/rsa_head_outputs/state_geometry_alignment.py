@@ -50,7 +50,7 @@ Inputs:
 
 Outputs (results/rsa_head_outputs/state_geometry_{qwen,gemma}/):
   perhead_geometry_alignment.csv, summary printout,
-  figure results_for_pi/aggregation/state_geometry_alignment_{tag}.png
+  figure results/summary/aggregation/state_geometry_alignment_{tag}.png
 """
 
 from __future__ import annotations
@@ -73,7 +73,7 @@ CODE_DIV = ROOT / "results/rsa_head_outputs/activations_code_divergence/code_div
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 GEOM_CSV = ROOT / "results/rsa_head_outputs/code_position_analysis/perhead_geometry.csv"
 OUT_DIR = ROOT / "results/rsa_head_outputs/state_geometry"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 # Qwen defaults. configure() overwrites these for other models; every prior

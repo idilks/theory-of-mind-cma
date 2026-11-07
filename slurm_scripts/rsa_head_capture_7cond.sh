@@ -57,12 +57,12 @@ echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE"
 
 if [ ! -f results/rsa_head_outputs/stimuli/${TEMPLATE}.csv ]; then
   echo "Building stimulus set..."
-  python scripts/rsa_head_outputs/build_stimulus_set.py
+  python analysis_scripts/rsa_head_outputs/build_stimulus_set.py
 fi
 
 if [ ! -f $UNION_CSV ]; then
   echo "Selecting top-20 heads across 7 conditions..."
-  python scripts/rsa_head_outputs/select_topk_heads.py \
+  python analysis_scripts/rsa_head_outputs/select_topk_heads.py \
     --k 20 \
     --conditions "${CONDITIONS[@]}" \
     --out_dir $TOPK_DIR
@@ -71,7 +71,7 @@ if [ ! -f $UNION_CSV ]; then
 fi
 
 mkdir -p $ACT_DIR
-python scripts/rsa_head_outputs/capture_head_outputs.py \
+python analysis_scripts/rsa_head_outputs/capture_head_outputs.py \
   --template $TEMPLATE \
   --heads_csv $UNION_CSV \
   --stim_dir  results/rsa_head_outputs/stimuli \

@@ -41,7 +41,7 @@ OUT_DIR=results/rsa_head_outputs/dla_photo
 
 echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE"
 
-python scripts/rsa_head_outputs/compute_dla.py \
+python analysis_scripts/rsa_head_outputs/compute_dla.py \
   --template $TEMPLATE \
   --act_dir  $ACT_DIR \
   --out_dir  $OUT_DIR

@@ -1,0 +1,33 @@
+{
+  "domain": "tom",
+  "capture_dir": "/dartfs/rc/lab/F/FranklandS/tom/results/circuit/stage1_capture/Qwen2.5-14B-Instruct",
+  "directions": "/dartfs/rc/lab/F/FranklandS/tom/results/aggregated/circuit/stage1/directions_L41.npz",
+  "site": "L41",
+  "model_type": "Qwen2.5-14B-Instruct",
+  "doses": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "split_seed": 0,
+  "control_seed": 99,
+  "n_code": 150,
+  "n_basic": 225,
+  "skip_cross_domain": true,
+  "only_cross_domain": false,
+  "cross_scale": 53.56802435329458,
+  "skip_specificity": false,
+  "only_controls": false,
+  "attn_all_directions": false,
+  "run_label": "main",
+  "plot_only": false,
+  "dry_run": false,
+  "n_devices": 1,
+  "device_map": "cuda",
+  "out_dir": "/dartfs/rc/lab/F/FranklandS/tom/results/circuit/stage2_steering/Qwen2.5-14B-Instruct/L41_main",
+  "k": 8,
+  "natural_scale": 53.56802435329458,
+  "hook": "blocks.42.hook_resid_pre",
+  "writer_set": "primary"
+}

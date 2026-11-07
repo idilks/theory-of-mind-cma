@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Exp 2 (code_ledger) RDM sanity diagnostics: is the map interpretable, or
-nuisance mush? (docs/design_code_pointer_rdm.md; July 25 2026 discussion.)
+nuisance mush?
 
 Per divergence head set:
   1. within- vs between-design-cell mean cosine distance (how much of the map
@@ -13,7 +13,7 @@ Per divergence head set:
   5. figure: stimulus RDM sorted by query cell | 48-cell mean RDM.
 
 Outputs: results/rsa_head_outputs/aggregation_code_ledger/rdm_diagnostic_{model}.csv
-         docs/figures/code_pointer_rdm/fig_exp2_diagnostic_{model}.png
+         results/summary/code_pointer_rdm/figures/fig_exp2_diagnostic_{model}.png
 """
 
 from __future__ import annotations
@@ -32,13 +32,13 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 
 from analyze_code_ledger_rdms import (  # noqa: E402
     ACT_PATH, HEADS_CSV, OUT_DIR, GEMMA_ACT_PATH, GEMMA_HEADSET_DIR)
 
-FIG_DIR = ROOT / "docs/figures/code_pointer_rdm"
+FIG_DIR = ROOT / "results/summary/code_pointer_rdm/figures"
 CELL_KEYS = ("queried_object", "queried_slot_type", "role_b",
              "copy_syntax", "alias_syntax")
 FOOT_KEYS = ("queried_object", "queried_slot_type", "role_b",

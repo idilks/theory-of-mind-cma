@@ -5,7 +5,7 @@ same two operators, replacing the "precondition absent" panel. The
 precondition-absent legs (delete on true belief, inject into false belief)
 are printed to stdout and reported in the compendium as one sentence.
 
-Operators (see scripts/circuit/stage2_steering.py):
+Operators (see analysis_scripts/circuit/stage2_steering.py):
   v          = unit false-minus-true-belief mean-difference direction of the
                L41 residual stream at the final token (fit half only)
   s          = its natural scale ||mean_FB - mean_TB||

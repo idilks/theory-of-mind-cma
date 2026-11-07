@@ -6,7 +6,7 @@ identical heads.
 
 A story head belongs to a condition's group if it is CMA-significant in at least
 `min_frac` of that condition's end-position cells (all templates, both rule
-pairs). Seed 1 is preferred (CLAUDE.md: story end-position heads use seed 1);
+pairs). Seed 1 is preferred (the only seed with full C1-C7 end-position coverage);
 a local `combined` C1 tree exists that the HPC lacks, and preferring it gave a
 27-head C1 group locally vs 22 on the HPC.
 
@@ -22,8 +22,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "analysis_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 from condition_registry import lookup, resolve_condition  # noqa: E402
 
 STORY_SEED_PRIORITY = {"1": 0, "0": 1}  # lower = preferred
@@ -35,7 +35,7 @@ def story_head_group(results_root: Path, condition: str, min_frac: float = 0.5,
                      seed_priority: dict = STORY_SEED_PRIORITY) -> pd.DataFrame:
     """Heads significant in >= min_frac of the condition's cells.
 
-    results_root: the CMA results root ("results" locally, "codebase/results" on the HPC).
+    results_root: the CMA results root ("results" locally, "cma_scripts/results" on the HPC).
     Returns layer, head, n_sig, n_cells, mean_score (mean observed_score over all cells).
     """
     cells = resolve_condition(Path(results_root) / CMA_SUBDIR, lookup(condition),

@@ -45,9 +45,9 @@ class BasicTemplate:
 class VocabularyLoader:
     """Loads vocabulary from txt files."""    
     def __init__(self, vocab_dir: str = "tom_datasets"):
-        # Handle relative path from codebase/tasks/identity_rules/ to project root
+        # Handle relative path from cma_scripts/tasks/identity_rules/ to project root
         if not os.path.isabs(vocab_dir) and not os.path.exists(vocab_dir):
-            # Try relative to project root (3 levels up from codebase/tasks/identity_rules/)
+            # Try relative to project root (3 levels up from cma_scripts/tasks/identity_rules/)
             root_relative_dir = os.path.join("..", "..", "..", vocab_dir)
             if os.path.exists(root_relative_dir):
                 vocab_dir = root_relative_dir
@@ -194,7 +194,7 @@ class UnifiedTemplateSystem:
             ),
             
             "library_book": ScenarioTemplate(
-                name="library_book",  # temporarily taking out the loc tags to test tokenizer
+                name="library_book",
                 false_context_template=(
                     "Sarah checks out a {book_type} book from the {section_1} section of the library. "
                     "She sits down and reads the book in the desk area in {section_1}. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. "
@@ -529,10 +529,6 @@ class UnifiedTemplateSystem:
         }
         return base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, meta
 
-    # TODO(refactor): generate_cross_context_pair has accumulated three branches
-    # (same_belief, answer_differs, default) plus a missing control branch that
-    # caused a bug in April 2026. The clean replacement is a single PairSpec
-    # dispatcher table — see docs/refactor_pair_generation.md.
     def generate_cross_context_pair(self, template_name: str, base_rule: str, context_type: str, answer_differs: bool, *, same_belief: bool = False) -> Tuple[str, str, str, str, str]:
         base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, _ = \
             self.generate_cross_context_pair_with_meta(

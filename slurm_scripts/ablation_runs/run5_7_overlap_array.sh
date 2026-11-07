@@ -49,7 +49,7 @@ LABEL=${JOB_LABELS[$IDX]}
 
 echo "Job $IDX: pair=$PAIR set=$SET label=$LABEL"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 150 \
   --max_new_tokens 5 \

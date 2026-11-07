@@ -10,7 +10,7 @@ vmax = 99th percentile of that cell's positive values. Saves as
 <stem>_singlecolor.png next to the original heatmap.
 
 Run from repo root:
-    python scripts/make_singlecolor_heatmaps.py
+    python analysis_scripts/make_singlecolor_heatmaps.py
 """
 from __future__ import annotations
 

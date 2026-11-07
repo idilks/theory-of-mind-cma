@@ -27,7 +27,7 @@ misassigns every head, so the dims object is a required argument.
   "sig4of6"  FWER-significant in >= 4 of the condition's 6 end-position cells
   "sig3of6"  >= 3 of 6 (sensitivity)
 The sig* lists are read from results/aggregated/head_selection/{rule}/, built
-by scripts/build_significance_head_sets.py, so the steering runner and the
+by analysis_scripts/build_significance_head_sets.py, so the steering runner and the
 figures consume one file rather than re-deriving the rule.
 """
 
@@ -57,7 +57,7 @@ def significance_set(cond: str, selection: str, d,
     """Flat indices from the prebuilt significance-count CSV for one condition."""
     assert selection in SELECTIONS and selection != "top32", selection
     path = Path(sel_dir) / selection / f"{cond}.csv"
-    assert path.exists(), (f"missing {path}; run scripts/build_significance_head_sets.py "
+    assert path.exists(), (f"missing {path}; run analysis_scripts/build_significance_head_sets.py "
                            "(and push results/aggregated/ to the HPC)")
     t = pd.read_csv(path)
     flat = _flat_from_csv(path, d)

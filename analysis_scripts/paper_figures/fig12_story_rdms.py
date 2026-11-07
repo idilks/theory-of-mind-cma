@@ -12,7 +12,7 @@ Head sets (--selection): top32 = top 32 by the frame's divergence fingerprint
 and top 22 by its answer fingerprint, the belief sizes (T_C1, T_C5) applied to
 both frames (the original figure); sig4of6 / sig3of6 = heads FWER-significant
 in >= 4 (>= 3) of the condition's six cells, read from
-results/aggregated/head_selection/ (scripts/build_significance_head_sets.py),
+results/aggregated/head_selection/ (analysis_scripts/build_significance_head_sets.py),
 so set sizes are data-determined and differ by frame. A head-set RDM is the
 unweighted mean of its heads' cosine RDMs, as in fig10. The Mantel values
 printed here are written to aggregation_story_rdms/mantel_story_rdms[_{sel}].csv

@@ -1,0 +1,4 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+37,16,2,0.03495016733805339,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>'
+35,11,2,0.04350685596466065,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>'
+43,34,0,0.031044362386067708,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'

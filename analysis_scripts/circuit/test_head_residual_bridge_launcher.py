@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 LAUNCHER = ROOT / "slurm_scripts/head_residual_bridge.sh"
 REVISION = "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8"
 REQUIRED = (
-    "scripts/circuit/stage2_steering.py",
+    "analysis_scripts/circuit/stage2_steering.py",
     "results/aggregated/circuit/stage1/directions_L41.npz",
     "results/rsa_head_outputs/activations_code_position_full/Qwen2.5-14B-Instruct/code_position.pt",
     "results/circuit/stage1_capture/Qwen2.5-14B-Instruct/weights.pt",
@@ -102,7 +102,7 @@ class BridgeLauncherTests(unittest.TestCase):
         self.assertEqual(len(calls), 2)
         self.assertIn("--bridge_preflight", calls[0]["args"])
         args = calls[1]["args"]
-        self.assertEqual(args[0], "scripts/circuit/stage2_steering.py")
+        self.assertEqual(args[0], "analysis_scripts/circuit/stage2_steering.py")
         self.assertIn("--head_residual_bridge", args)
         self.assertNotIn("--bridge_preflight", args)
         for flag, expected in {

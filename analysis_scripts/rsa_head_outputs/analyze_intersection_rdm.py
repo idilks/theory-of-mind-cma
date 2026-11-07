@@ -22,7 +22,7 @@ Inputs:
 
 Outputs:
   results/rsa_head_outputs/aggregation_per_condition/intersection_C1_C3.csv
-  results_for_pi/aggregation/intersection_C1_C3.png
+  results/summary/aggregation/intersection_C1_C3.png
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations_7cond"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads_7cond"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_per_condition"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 

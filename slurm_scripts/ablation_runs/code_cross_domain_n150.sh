@@ -25,7 +25,7 @@
 #   ToM heads -> code   n=75   (tom_c1_full1920_on_code_tom_*, the Yang-style
 #                               full-1920 sweep, deliberately n=75 for cost)
 #   ToM heads -> code   n=150  LAUNCHED BUT NEVER COMPLETED — the directory
-#                               other_results/ablation/tom_c1_on_code_prefill_*
+#                               results/ablation/tom_c1_on_code_prefill_*
 #                               contains head_list.csv and the prompt files but
 #                               no cumulative_ablation_results.csv.
 #
@@ -99,7 +99,7 @@ done
 
 if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
   echo "Task 0: code_abstract heads -> ToM evals, n=150, matched+prefill"
-  python codebase/tasks/causal_analysis/ablation_experiment.py \
+  python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
     --model_type Qwen2.5-14B-Instruct \
     --prompt_num 150 \
     --max_new_tokens 5 \
@@ -118,7 +118,7 @@ if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
     --output_dir results/ablation/code_cross_code_abstract_on_tom_matched_prefill_n150
 elif [ "$SLURM_ARRAY_TASK_ID" -eq 1 ]; then
   echo "Task 1: T_C1 heads -> code evals, n=150, prefill per_variant"
-  python codebase/tasks/causal_analysis/ablation_experiment.py \
+  python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
     --model_type Qwen2.5-14B-Instruct \
     --prompt_num 150 \
     --max_new_tokens 8 \
@@ -135,7 +135,7 @@ elif [ "$SLURM_ARRAY_TASK_ID" -eq 1 ]; then
     --output_dir results/ablation/tom_c1_on_code_prefill_per_variant_n150
 else
   echo "Task 2: T_C5 heads -> code evals, n=150, prefill per_variant"
-  python codebase/tasks/causal_analysis/ablation_experiment.py \
+  python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
     --model_type Qwen2.5-14B-Instruct \
     --prompt_num 150 \
     --max_new_tokens 8 \

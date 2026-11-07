@@ -1,0 +1,1050 @@
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the academic section of the library. A librarian moves the book to the young adult section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the comics section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the music section of the library. A librarian moves the book to the medicine section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the comics section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the botany section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the theology section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the study materials section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the fiction section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the botany section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the theology section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the technology section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the finance section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the engineering section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the travel section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the photography section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the cooking section of the library. A librarian moves the book to the botany section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the comics section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the reference section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the education section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the film section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the popular reads section of the library. A librarian moves the book to the film section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the self-help section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the film section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the medicine section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the education section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the technology section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the technology section of the library. A librarian moves the book to the cooking section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the finance section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the music section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the health section of the library. A librarian moves the book to the young adult section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the medicine section of the library. A librarian moves the book to the new arrivals section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the engineering section of the library. A librarian moves the book to the cooking section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the engineering section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the photography section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the technology section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the popular reads section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the reference section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the non-fiction section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the art section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the children's section of the library. A librarian moves the book to the art section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the technology section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the self-help section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the self-help section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the finance section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the medicine section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the poetry section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the engineering section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the study materials section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the botany section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the non-fiction section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the reference section of the library. A librarian moves the book to the biography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the botany section of the library. A librarian moves the book to the theology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the theology section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the education section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the botany section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the young adult section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the poetry section of the library. A librarian moves the book to the new arrivals section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the poetry section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the engineering section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the young adult section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the health section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the self-help section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the music section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the study materials section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the cooking section of the library. A librarian moves the book to the botany section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the music section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the non-fiction section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the music section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the cooking section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the photography section of the library. A librarian moves the book to the young adult section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the art section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the technology section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the science section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the popular reads section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the health section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the history section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the children's section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the comics section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the architecture section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the academic section of the library. A librarian moves the book to the engineering section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the young adult section of the library. A librarian moves the book to the biography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the music section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the popular reads section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the music section of the library. A librarian moves the book to the film section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the finance section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the reference section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the popular reads section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the reference section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the engineering section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the theology section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the self-help section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the music section of the library. A librarian moves the book to the botany section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the history section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the study materials section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the reference section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the music section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the theology section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the education section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the architecture section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the children's section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the medicine section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the travel section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the poetry section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the film section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the popular reads section of the library. A librarian moves the book to the art section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the photography section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the poetry section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the travel section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the science section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the popular reads section of the library. A librarian moves the book to the study materials section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the non-fiction section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the academic section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the non-fiction section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the technology section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the biography section of the library. A librarian moves the book to the medicine section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the academic section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the biography section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the poetry section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the young adult section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the reference section of the library. A librarian moves the book to the biography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the travel section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the self-help section of the library. A librarian moves the book to the botany section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the history section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the botany section of the library. A librarian moves the book to the theology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the theology section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the fiction section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the self-help section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the non-fiction section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the new arrivals section of the library. A librarian moves the book to the non-fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the history section of the library. A librarian moves the book to the young adult section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the travel section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the technology section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the travel section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the theology section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the architecture section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the technology section of the library. A librarian moves the book to the medicine section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the art section of the library. A librarian moves the book to the photography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the academic section of the library. A librarian moves the book to the new arrivals section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the self-help section of the library. A librarian moves the book to the film section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the poetry section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the film section of the library. A librarian moves the book to the poetry section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the popular reads section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the travel section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the botany section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the comics section of the library. A librarian moves the book to the new arrivals section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the music section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the reference section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the history section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the popular reads section of the library. A librarian moves the book to the art section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the theology section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+

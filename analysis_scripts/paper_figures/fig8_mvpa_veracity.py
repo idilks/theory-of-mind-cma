@@ -11,7 +11,7 @@ LLMs; report it on filtered head sets only, RSA is the primary instrument".
     ceiling, which is the saturation point.
 
 Data: results/rsa_head_outputs/mvpa_veracity/{summary_belief_veracity,
-random_band_belief_veracity}.csv (scripts/rsa_head_outputs/mvpa_veracity.py;
+random_band_belief_veracity}.csv (analysis_scripts/rsa_head_outputs/mvpa_veracity.py;
 Qwen2.5-14B-Instruct, 144-stimulus capture, 3 templates).
 """
 

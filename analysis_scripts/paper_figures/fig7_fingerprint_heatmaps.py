@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 REPO = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from h2_additivity_robustness import (  # noqa: E402
@@ -31,7 +31,7 @@ from h2_additivity_robustness import (  # noqa: E402
     build_gemma_fp, load_tom_fp)
 from style import CMAP_SEQ, INK2, apply_style, save
 
-CACHE = REPO / "rebuttal_figures" / "_cache_gemma_fps.npz"
+CACHE = REPO / "results" / "figures" / "_cache_gemma_fps.npz"
 
 # (panel title, qwen source, gemma folder, gemma rule set)
 # qwen source: "fp:<name>" = results/aggregated/fingerprints npy,

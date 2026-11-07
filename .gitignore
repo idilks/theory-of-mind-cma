@@ -1,121 +1,31 @@
-# Environment variables (contains API tokens)
-.env
-
-# Python
+# python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-venv/
 .venv/
-env/
-ENV/
+venv/
+.ipynb_checkpoints/
+.mypy_cache/
 
-# Results and data — the raw trees are large/regenerable and stay ignored,
-# EXCEPT results/aggregated/ (the distilled, team-shared results; see bottom).
-archive/
-other_results/
-/results/*
-!/results/aggregated/
-codebase/results/
-local_results/
-# data/
-causal_mediation_results_full_more_models/
-*.png
-*.jpg
-*.pdf
-legacy/
-slurm_logs/
-.claude/
-.conda/
-.conda_backup_20250713_101749/
+# os / editors
+.DS_Store
 .vscode/
-# deconfusion/
-*.md
+.idea/
 
-# Experiment tracking and logs
+# experiment plumbing
 wandb/
-**/wandb/**
 *.log
 *.out
 *.err
+.env
 
-# Model cache and checkpoints
-*.pt
-*.pth
-*.bin
-*.safetensors
-model_cache/
-**/model_cache/**
+# regenerable outputs: figures, activation captures, raw path-patching dumps
+results/figures/
+results/circuit/stage1_capture/**/*.pt
+results/circuit/head_residual_bridge/
+results/circuit/path_patching/
+results/tom_performance/raw_responses/
+*.png
+*.pdf
 
-# Huggingface cache (if local)
-.cache/
-**/transformers_cache/**
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Cache (general)
-*.cache
-
-legacy*/
-archive/
-
-# CLAUDE.md
-/.quarto/
-**/*.quarto_ipynb
-
-
-.venv-ndif/
-
-
-# documentation — private writeups, plans, reports, meeting notes
-/writeups
-/deconfusion
-/error
-/attention
-
-# third-party reference code (Yang et al / LLMSymbMech originals — kept local, not redistributed)
-/reference
-
-# rendered artifacts (quarto/comparison HTML are outputs, keep private)
-*.html
-
-# ...but the team-facing docs stay tracked
-!/README.md
-!/scripts/README.md
-!/docs/path_patching/README.md
-!/CLAUDE.md
-!/docs/STATUS.md
-!/docs/EXPERIMENTS.md
-!/docs/head_evidence_inventory/README.md
-!/docs/head_evidence_inventory/HEAD_DOMAIN_ANALYSIS.md
-!/docs/head_evidence_inventory/ABLATION_ANALYSIS.md
-!/docs/path_patching/NEW_EXPERIMENT.md
-!/rebuttal_figures/FIGURE_INDEX.md
-
-# team-shared distilled results (~3MB: csv/npy/npz/png) — re-include ALL of
-# results/aggregated/, overriding the *.png/*.pt/etc. globs above (last match wins).
-!/results/aggregated/**
-
-# raw CMA primary outputs (~14MB): the per-head causal score tensors and the
-# permutation-test tables. Un-ignore the directory chain so git descends, re-ignore
-# the bulky per-sample/prompt-dump neighbours, then re-include just the two we want.
-# (.pt/.png are already ignored above; *.* can't be used here because directory
-# names contain dots — Qwen2.5-14B-Instruct, sample_num_50_gen_acc_0.9.)
-!/results/causal_analysis/
-!/results/causal_analysis/**/
-/results/causal_analysis/**/*.txt
-/results/causal_analysis/**/*.csv
-!/results/causal_analysis/**/causal_scores.pt
-!/results/causal_analysis/**/statistical_test_results.csv
+# the six job logs that analyze_head_ablation_interactions.py verifies against
+!slurm_logs/*.err

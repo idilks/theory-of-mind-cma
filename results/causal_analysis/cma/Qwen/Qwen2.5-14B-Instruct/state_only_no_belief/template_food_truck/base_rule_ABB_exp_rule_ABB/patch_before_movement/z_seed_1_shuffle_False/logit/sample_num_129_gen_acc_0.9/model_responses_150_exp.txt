@@ -1,0 +1,1350 @@
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on University Drive. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Market Street. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tamagoyaki is on Hunter Lane. Bob drives the truck to Jericho Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jericho Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Heneage Lane. Bob drives the truck to Lincoln Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Juniper Lane. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Hovey Lane. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on Hunter Lane. Bob drives the truck to Monroe Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Jefferson Street. Bob drives the truck to River Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Park Boulevard. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on Lincoln Boulevard. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Park Boulevard. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Hunter Lane. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Jefferson Street. Bob drives the truck to Burton Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling croissants is on Jefferson Street. Bob drives the truck to Ivy Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Park Boulevard. Bob drives the truck to Hilltop Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hilltop Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on River Road. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Adams Boulevard. Bob drives the truck to Market Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Buck Road. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Mink Drive. Bob drives the truck to Washington Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Washington Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Adams Boulevard. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ceviches is on Highland Avenue. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Franklin Avenue. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Pine Street. Bob drives the truck to Hemlock Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Hemlock Road. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Mink Drive. Bob drives the truck to River Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling churros is on Maple Drive. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on Hemlock Road. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Park Boulevard. Bob drives the truck to Jericho Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jericho Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tamagoyaki is on Allen Street. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Maple Drive. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Oak Avenue. Bob drives the truck to Washington Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Washington Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Jefferson Street. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Burton Road. Bob drives the truck to Ivy Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Oak Avenue. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Mink Drive. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Lincoln Boulevard. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on Jericho Road. Bob drives the truck to Hemlock Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jericho Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Washington Avenue. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Juniper Lane. Bob drives the truck to Burton Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Burton Road. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Buck Road. Bob drives the truck to Ivy Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on Park Boulevard. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Pine Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gelatos is on Madison Drive. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Second Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Hunter Lane. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Monroe Street. Bob drives the truck to Franklin Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyros is on Market Street. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Adams Boulevard. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Maple Drive. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tamagoyaki is on Maple Drive. Bob drives the truck to Monroe Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Adams Boulevard. Bob drives the truck to Ivy Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ceviches is on Brook Road. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Market Street. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Heneage Lane. Bob drives the truck to Buck Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Washington Avenue. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Madison Drive. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Hovey Lane. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling salads is on Park Boulevard. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on First Street. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Mink Drive. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Jefferson Street. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tamagoyaki is on Jefferson Street. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gelatos is on Park Boulevard. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Brook Road. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Allen Street. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sandwiches is on Downtown Plaza. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Second Street. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on Maple Drive. Bob drives the truck to Hilltop Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tacos is on Madison Drive. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on First Street. Bob drives the truck to Lincoln Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Ivy Lane. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Mink Drive. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Washington Avenue. Bob drives the truck to Burton Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Lincoln Boulevard. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Washington Avenue. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Heneage Lane. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Juniper Lane. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Highland Avenue. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Maple Drive. Bob drives the truck to Washington Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Washington Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on University Drive. Bob drives the truck to Buck Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gelatos is on Lincoln Boulevard. Bob drives the truck to Monroe Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on River Road. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Burton Road. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on Franklin Avenue. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on First Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Maple Drive. Bob drives the truck to Lincoln Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Buck Road. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Hemlock Road. Bob drives the truck to Buck Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Market Street. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Juniper Lane. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on River Road. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Hilltop Drive. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Cedar Lane. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sandwiches is on Market Street. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Jefferson Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling nachos is on Hemlock Road. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Market Street. Bob drives the truck to Ivy Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling croissants is on River Road. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Oak Avenue. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Market Street. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Franklin Avenue. Bob drives the truck to Hilltop Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hilltop Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Market Street. Bob drives the truck to Hunter Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Franklin Avenue. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on River Road. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Adams Boulevard. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Jericho Road. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Lincoln Boulevard. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Park Boulevard. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling kibbehs is on Adams Boulevard. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling churros is on Highland Avenue. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Second Street. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Ivy Lane. Bob drives the truck to Market Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Lincoln Boulevard. Bob drives the truck to Jericho Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jericho Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling sushi is on Burton Road. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Lincoln Boulevard. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ice cream is on Franklin Avenue. Bob drives the truck to Hemlock Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Monroe Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling tamagoyaki is on Hunter Lane. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Buck Road. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Allen Street. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Pine Street. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crepe is on Allen Street. Bob drives the truck to Franklin Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on River Road. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling smoothies is on Jefferson Street. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Highland Avenue. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on Second Street. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Oak Avenue. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling ceviches is on Burton Road. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Cedar Lane. Bob drives the truck to River Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Brook Road. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling salads is on Pine Street. Bob drives the truck to Cedar Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Cedar Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Brook Road. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Mink Drive. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Lincoln Boulevard. Bob drives the truck to Cedar Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Cedar Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on First Street. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Lincoln Boulevard. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Hovey Lane. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling risotto is on Franklin Avenue. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on Second Street. Bob drives the truck to Hunter Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Madison Drive. Bob drives the truck to Hunter Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling churros is on Ivy Lane. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Buck Road. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling gnocchi is on Juniper Lane. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Hilltop Drive. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Burton Road. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on University Drive. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling faluda is on Highland Avenue. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Elm Avenue. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Oak Avenue. Bob drives the truck to Pine Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---

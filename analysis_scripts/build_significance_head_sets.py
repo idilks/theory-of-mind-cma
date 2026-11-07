@@ -22,11 +22,11 @@ reads the same list:
 
 Rules: sig4of6 (significant in >= 4 of 6 cells, the strict majority already
 used by aggregate_conditions.py's "4of6" Jaccard mode) and sig3of6
-(>= 3 of 6, sensitivity). Cells come from results_for_pi/heatmaps/manifest.csv
+(>= 3 of 6, sensitivity). Cells come from results/summary/heatmaps/manifest.csv
 (end patch, canonical seeds), exactly as aggregate_conditions.py reads them.
 
 Usage:
-    python scripts/build_significance_head_sets.py
+    python analysis_scripts/build_significance_head_sets.py
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
+MANIFEST = ROOT / "results/summary/heatmaps/manifest.csv"
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 OUT_DIR = ROOT / "results/aggregated/head_selection"
 

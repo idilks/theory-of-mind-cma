@@ -1,0 +1,24 @@
+{
+  "Llama-3.1-8B-Instruct": {
+    "false_belief_direct_abstract_detailed_T1.0": {
+      "belief_accuracy": 0.026399999999999996,
+      "world_accuracy": 0.0476,
+      "malformed_rate": 0.9179999999999999,
+      "belief_accuracy_std": 0.026665333299998335,
+      "world_accuracy_std": 0.03415025622158639,
+      "total_responses": 2500,
+      "belief_correct_count": 66,
+      "world_correct_count": 119
+    },
+    "false_belief_direct_abstract_standard_T1.0": {
+      "belief_accuracy": 0.064,
+      "world_accuracy": 0.064,
+      "malformed_rate": 0.8788000000000001,
+      "belief_accuracy_std": 0.05011985634456667,
+      "world_accuracy_std": 0.03836665218650176,
+      "total_responses": 2500,
+      "belief_correct_count": 160,
+      "world_correct_count": 160
+    }
+  }
+}

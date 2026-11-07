@@ -45,7 +45,7 @@ RULE=${RULES[$IDX]}
 
 echo "Job $IDX: condition=answer_changes_location_only template=$TEMPLATE rule=$RULE patch_bf=1"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition answer_changes_location_only \
   --base_rule $RULE \

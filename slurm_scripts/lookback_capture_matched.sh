@@ -56,7 +56,7 @@ case $BLOCK in
 esac
 echo "task $SLURM_ARRAY_TASK_ID: prompts=$COND base=$BASE template=$TEMPLATE heads=[$HEADS]"
 
-python scripts/lookback_analysis/capture_attention_patterns.py \
+python analysis_scripts/lookback_analysis/capture_attention_patterns.py \
   --template $TEMPLATE \
   --condition $COND \
   --base_rule $BASE \
@@ -65,5 +65,5 @@ python scripts/lookback_analysis/capture_attention_patterns.py \
   --head_conditions $HEADS \
   --prompt_num 150 \
   --seed 1 \
-  --results_root codebase/results \
+  --results_root cma_scripts/results \
   --out_root results/lookback_analysis/_matched

@@ -1,0 +1,1280 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 15,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 15,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is on the rug. Since she was not present when John moved the object to the fan, she would not be aware of the change in the object's",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "rug",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the fan. John moved the object from the rug to the fan while Alice was away, and it stayed there without being moved again. Therefore, the correct location of the object is the fan. \n\n<loc>fan",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fan",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object in the drawer, as that is where she originally placed it and she would not be aware that John moved it to the blanket. Her expectation is based on her last known location of the object,",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "drawer",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the blanket. Since John moved the object from the drawer to the blanket while Alice was away, and no one moved it again, the object remains on the blanket. \n\nSo, the answer is:\n<loc>blank",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "blanket",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is on the desk. Since she was not present when John moved the object to the shelf, she would not be aware of the change in the object's",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "desk",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. John moved the object from the desk to the shelf while Alice was away, and it has remained there since then with no further movement. Therefore, the correct answer is:\n\n<loc>shelf</loc>",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "shelf",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the stool. Since Alice was not present when John moved the object to the cabinet, she would not be aware of the change in the object's location",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the cabinet. Since John moved the object from the stool to the cabinet while Alice was away, and no one moved it again after that, the object remains in the cabinet. \n\nSo, the answer is:\n<cabinet",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "cabinet",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is on the stool. Since she was not present when John moved the object to the sofa, she would not be aware of the change in the object's",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "stool",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. Since John moved the object from the stool to the sofa while Alice was away, and nobody moved it again, the object remains on the sofa. \n\nSo, the answer is:\n<loc>sofa",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "sofa",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is on the computer. Since she was not present when John moved the object to the stool, she would not be aware of the change in its location.",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "computer",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the stool. Since John moved the object from the computer to the stool while Alice was away, and nobody moved it again, the object remains on the stool. \n\n<loc>stool</loc> The object is",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "stool",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the ceiling. Since she was not present when John moved the object to the mirror, she would not be aware of the change in its location. Therefore",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the mirror. According to the scenario, John moved the object from the ceiling to the mirror while Alice was away, and it remained there without being moved again. Therefore, the object is on the mirror. \n\nTo summarize",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "mirror",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the dresser. Since she was not present when John moved the object to the drawer, she would not be aware of the change in its location. Therefore",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer. John moved the object from the dresser to the drawer while Alice was away, and it stayed there without being moved again. Therefore, the correct answer is:\n\n<loc>drawer</loc> The object is",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "drawer",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object in its original location, which is the vase. Since Alice was the one who placed the object there and left without moving it, she would not be aware that John moved the object to the",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench. Since John moved the object from the vase to the bench while Alice was away, and no one moved it again, the object remains on the bench. \n\nSo, the answer is:\n<loc>bench",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "bench",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the desk. Since she was not present when John moved the object to the suitcase, she would not be aware of the change in location. Therefore,",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. John moved the object from the desk to the suitcase while Alice was away, and it has not been moved since then. Therefore, the object is in the suitcase. \n\nSo, the answer is:\n<",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "suitcase",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.5,
+    "world_accuracy": 1.0,
+    "malformed_rate": 0.25,
+    "total_responses": 20,
+    "belief_correct_count": 5,
+    "world_correct_count": 10,
+    "malformed_count": 5,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 13,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 13,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object where she last saw it or where she would expect to find it. Since Alice placed the object on the rug and then left the room, she would most probably look for it on the rug first",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "rug first",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the fan. Since John moved the object from the rug to the fan while Alice was away, and nobody moved it again, the current location of the object is the fan. </loc> </loc>Human:",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fan",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object in the drawer, as that is where she originally placed it and she would not be aware of John's actions. The change in the object's location would not be known to her, so her",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "drawer",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the blanket. John moved the object from the drawer to the blanket while Alice was away, and no one moved it again after that. Therefore, the current location of the object is the blanket. \n\nSo, the answer",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "blanket",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally left it, which is on the desk. Since she was not present when John moved the object to the shelf, she would not be aware of the change in the object's",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "desk",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. John moved the object from the desk to the shelf while Alice was away, and it has not been moved since then. Therefore, the location of the object is the shelf. \n\nSo, the answer is",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "shelf",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the stool. Since Alice was not present when John moved the object to the cabinet, she would not be aware of the change in its location. Therefore",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the cabinet. Since John moved the object from the stool to the cabinet while Alice was away, and no one moved it again afterward, the object remains in the cabinet. \n\nSo, the answer is:\n<loc>c",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "cabinet",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the stool. Since she was not present when John moved the object to the sofa, she would not be aware of the change in location. Therefore,",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. \n\nTo break it down step-by-step:\n1. Alice initially places the object on the stool.\n2. Alice leaves the room.\n3. While Alice is away, John moves the object from the stool",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "sofa",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object in its original location, which is the computer. Since she was the one who placed the object there and she was not present when John moved it, she would not be aware of the change",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the stool. Since John moved the object from the computer to the stool while Alice was away, and nobody moved it again after that, the object remains on the stool. \n\nSo, the answer is:\n<loc>",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "stool",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object where she last saw it, which was at the ceiling. Since she was not present when John moved the object to the mirror, she would not know about the change in its location. Therefore,",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "ceiling",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the mirror. This is based on the sequence of events described: Alice initially placed the object on the ceiling, but while she was away, John moved the object to the mirror, and it remained there without any further movement",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "mirror",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object in its last known location, which is the dresser. She is not aware that John moved the object to the drawer, so her expectation is that the object is still in the dresser where she",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer.\n\nTo break it down step-by-step:\n1. Alice initially places the object on the dresser.\n2. Alice leaves the room and goes outside.\n3. While Alice is away, John moves the object from",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "drawer",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object in its original location, the vase. This is because she was the last person to know the object's location before leaving the room, and she would not be aware that John moved the object",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench.\n\nTo break it down step-by-step:\n1. Alice initially places the object in the vase.\n2. Alice leaves the room.\n3. While Alice is away, John moves the object from the vase to",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "bench",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns to the room, she would likely look for the object where she originally placed it, which is the desk. Since she was not present when John moved the object, she would not know about the change and would expect to find it in",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. Since John moved the object from the desk to the suitcase and no one moved it again after that, the object remains in the suitcase. </loc> </loc> </loc> </loc> </loc",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "suitcase",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.3,
+    "world_accuracy": 1.0,
+    "malformed_rate": 0.3,
+    "total_responses": 20,
+    "belief_correct_count": 3,
+    "world_correct_count": 10,
+    "malformed_count": 6,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 16,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 16,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would look for the object where she last placed it, which is on the rug. Since she was unaware that John moved the object to the fan, she would expect to find it where she left it. Therefore, Alice would",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "rug",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at rug. Alice leaves the room and goes outside. While Alice is away, John moves the object from rug to fan. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the fan. \n\nTo break it down:\n1. Initially, Alice places the object on the rug.\n2. Alice leaves the room and goes outside.\n3. While Alice is away, John moves the object from the",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fan",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would look for the object in the drawer, as that is where she initially placed it and that is her last known location for the object. Since she was not present when John moved the object to the blanket, she would not",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "drawer",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at drawer. Alice leaves the room and goes outside. While Alice is away, John moves the object from drawer to blanket. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the blanket. Since John moved the object from the drawer to the blanket, and nobody moved it again, the current location of the object is the blanket. <loc>blanket</loc>Human, can you",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "blanket",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object at its original location, which is the desk. This is because Alice left the object there and has no information about its subsequent movement. Therefore, Alice's expectation would be that the object is",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to shelf. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. Alice initially placed the object on the desk, but while she was away, John moved it to the shelf. Since no one moved the object again after that, it remains on the shelf. \n\nSo,",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "shelf",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object where she originally placed it, which is the stool. Since she was not present when John moved the object to the cabinet, she would not be aware of the change in its location and would expect",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to cabinet. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the cabinet. John moved the object from the stool to the cabinet while Alice was away, and the object remained there without being moved again.\n\nSo, the answer is:\n\n- The object is in the cabinet. To explicitly",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "cabinet",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is on the stool. Since she was not present when John moved the object to the sofa, she would not know about the change in the object's location",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "stool",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at stool. Alice leaves the room and goes outside. While Alice is away, John moves the object from stool to sofa. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. Since John moved the object from the stool to the sofa while Alice was away, and no one else moved it afterward, the object remains on the sofa. </loc> </loc>Human: Bob",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "sofa",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she initially placed it, which is on the computer. Since she was not present when John moved the object to the stool, she would not be aware of the change in location and would",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "computer",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at computer. Alice leaves the room and goes outside. While Alice is away, John moves the object from computer to stool. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the stool. \n\nSince John moved the object from the computer to the stool while Alice was away, and no one moved it again, the object remains on the stool. Therefore, its current location is the stool. <",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "stool",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object at the ceiling, since that's where she originally placed it and she would not be aware that John moved it. Her expectation of where the object is would be based on her last known position of",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "ceiling",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at ceiling. Alice leaves the room and goes outside. While Alice is away, John moves the object from ceiling to mirror. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the mirror. When John moved the object from the ceiling to the mirror, it remained there. Since no one has moved the object again, it is still on the mirror. \n\nSo, the actual location is:\n\n<",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "mirror",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she originally placed it, which is the dresser. Since she was not present when John moved the object to the drawer, she would be unaware of the change and would expect to find the",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at dresser. Alice leaves the room and goes outside. While Alice is away, John moves the object from dresser to drawer. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer. Since John moved the object from the dresser to the drawer and no one moved it again, the current location of the object is the drawer. <loc>drawer</loc>Human, can you provide",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "drawer",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would look for the object at the vase because that's the last known location where she placed the object before she left the room. Since she was not aware that John moved the object to the bench, her natural assumption would be",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "vase because",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at vase. Alice leaves the room and goes outside. While Alice is away, John moves the object from vase to bench. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench. John moved it there while Alice was away, and no one moved it again after that. Therefore, the correct location of the object is:\n\n<loc>bench</loc> The object is located on the",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "bench",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would most likely look for the object where she initially placed it, which is on the desk. This is because her last known location of the object is the desk, and she wouldn't know that John moved it to the suitcase",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": true,
+        "belief_correct": true,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "desk",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice places an object at desk. Alice leaves the room and goes outside. While Alice is away, John moves the object from desk to suitcase. The object stays there and nobody moves it again.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. This is based on the sequence of events described: Alice initially placed the object on the desk, but while she was away, John moved it to the suitcase, and it remained there without further movement.\n\nThus",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": true,
+        "belief_correct": null,
+        "world_correct": true,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "suitcase",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move_detailed",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.6,
+    "world_accuracy": 1.0,
+    "malformed_rate": 0.15,
+    "total_responses": 20,
+    "belief_correct_count": 6,
+    "world_correct_count": 10,
+    "malformed_count": 3,
+    "belief_total": 10,
+    "world_total": 10
+  }
+}

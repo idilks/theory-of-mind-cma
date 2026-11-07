@@ -19,7 +19,7 @@ from typing import Any
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-CORE = "scripts/circuit/path_patching.py"
+CORE = "analysis_scripts/circuit/path_patching.py"
 FIELDS = ("receivers", "receiver_aliases", "component", "routes")
 
 

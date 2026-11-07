@@ -1,0 +1,5 @@
+0: base_ans: 'A', exp_ans: 'A', causal_ans: 'I'
+1: base_ans: 'C', exp_ans: 'C', causal_ans: 'M'
+2: base_ans: 'M', exp_ans: 'M', causal_ans: 'L'
+3: base_ans: 'L', exp_ans: 'L', causal_ans: 'M'
+4: base_ans: 'D', exp_ans: 'D', causal_ans: 'H'

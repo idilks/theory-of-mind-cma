@@ -1,0 +1,13 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+35,11,94,0.3042790758609772,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+35,11,95,0.14505665143330893,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+38,35,94,0.27226200421651203,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+38,35,95,0.14137568910916645,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+43,30,49,0.08326218048731486,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'
+43,30,94,0.08034342487653097,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+37,16,94,0.2737367065747579,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'
+37,16,95,0.14544286727905273,150,' in' | ' in' | ' sociology' | ' in' | ' in'
+37,16,49,0.039364307324091595,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'
+37,16,97,0.030125457445780435,150,' desk' | ' desk' | ' area' | ' desk' | ' desk'
+45,38,49,0.11309348106384277,150,' history' | ' psychology' | '-fiction' | ' fantasy' | ' romance'
+45,38,94,0.07271375338236491,150,' academic' | ' medicine' | '.' | ' thriller' | ' art'

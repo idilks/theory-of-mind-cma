@@ -10,7 +10,7 @@ answer "canal street"). Prints pairs side-by-side and checks:
 
 Run from project root:
     source .venv/bin/activate
-    python scripts/verify_cross_condition_pairs.py
+    python analysis_scripts/verify_cross_condition_pairs.py
 """
 
 import sys
@@ -19,7 +19,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from codebase.tasks.causal_analysis.prompt_generators.tom_templates import (
+from cma_scripts.tasks.causal_analysis.prompt_generators.tom_templates import (
     UnifiedTemplateSystem,
 )
 

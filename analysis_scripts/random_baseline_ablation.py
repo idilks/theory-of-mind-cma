@@ -13,8 +13,8 @@ has target heads, all 40 heads EXCEPT the heads in the target set itself.
 excluding the target set (used by the code-arm nulls).
 
 Usage (cheap C1\\C5 pilot):
-    python scripts/random_baseline_ablation.py \\
-        --target_csv other_results/ablation/belief_minus_loc/head_list.csv \\
+    python analysis_scripts/random_baseline_ablation.py \\
+        --target_csv results/ablation/belief_minus_loc/head_list.csv \\
         --n_random 100 \\
         --k_eval 11 21 \\
         --eval_variants false_belief \\
@@ -38,11 +38,11 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(script_dir, ".."))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
-codebase_root = os.path.join(project_root, "codebase")
-if codebase_root not in sys.path:
-    sys.path.insert(0, codebase_root)
+cma_root = os.path.join(project_root, "cma_scripts")
+if cma_root not in sys.path:
+    sys.path.insert(0, cma_root)
 
-# Importing ablation_experiment triggers os.chdir(codebase_root); fine.
+# Importing ablation_experiment triggers os.chdir(cma_root); fine.
 from tasks.causal_analysis.ablation_experiment import (  # noqa: E402
     build_ablation_hooks,
     compute_answer_token_id,
@@ -192,9 +192,8 @@ def summarize_null(random_df, target_df):
         for metric in ["flip_rate", "flip_score", "mean_p_correct", "mean_p_alt"]:
             null_vals = null_sub[metric].values
             target_val = float(target_row[metric].values[0])
-            # one-sided p-value: P(null >= target) for flip metrics; user can
-            # flip sign for p_correct since for that one "below target" is the
-            # interesting tail. We report both tails so user picks.
+            # Both one-sided tails: right (P(null >= target)) is the relevant
+            # one for flip metrics, left for p_correct.
             p_right = float((null_vals >= target_val).mean())
             p_left = float((null_vals <= target_val).mean())
             out.append({

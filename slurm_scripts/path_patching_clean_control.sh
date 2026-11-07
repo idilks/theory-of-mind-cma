@@ -47,7 +47,7 @@ export TOKENIZERS_PARALLELISM=false
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-2}
 export PYTHONUNBUFFERED=1
 python -c 'import sys, torch, transformer_lens, transformers; print("Environment:", sys.prefix, torch.__version__); assert torch.cuda.is_available(), "CUDA unavailable"'
-python -c 'import sys, torch; sys.path.insert(0,"scripts/circuit"); from path_patching_h200_repair import validate_gpu_names; validate_gpu_names([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])'
+python -c 'import sys, torch; sys.path.insert(0,"analysis_scripts/circuit"); from path_patching_h200_repair import validate_gpu_names; validate_gpu_names([torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])'
 # Reject overlapping paths before creating any files.
 python -c 'from pathlib import Path; import sys; a,b=map(lambda p:Path(p).resolve(),sys.argv[1:]); assert a!=b and a not in b.parents and b not in a.parents, "Source/output roots must be separate"' "$SOURCE_ROOT" "$OUTPUT_ROOT"
 test -s "$SOURCE_ROOT/study.json"
@@ -56,8 +56,8 @@ mkdir -p "$OUTPUT_ROOT"
     flock -x 9
     if [[ ! -d "$SNAPSHOT" ]]; then
         staging=$(mktemp -d "$OUTPUT_ROOT/.code_snapshot.XXXXXX")
-        mkdir -p "$staging/scripts/circuit"
-        cp scripts/circuit/path_patching_clean_control.py "$staging/scripts/circuit/"
+        mkdir -p "$staging/analysis_scripts/circuit"
+        cp analysis_scripts/circuit/path_patching_clean_control.py "$staging/analysis_scripts/circuit/"
         cp slurm_scripts/path_patching_clean_control.sh "$staging/launcher.sh"
         mv "$staging" "$SNAPSHOT"
     fi
@@ -79,5 +79,5 @@ export HF_HUB_CACHE=$HUB_CACHE
 export TRANSFORMERS_CACHE=$HUB_CACHE
 export HF_HUB_OFFLINE=1
 printf 'Clean control task %s; source=%s; output=%s; cache=%s\n' "$SLURM_ARRAY_TASK_ID" "$SOURCE_ROOT" "$OUTPUT_ROOT" "$HUB_CACHE"
-python "$SNAPSHOT/scripts/circuit/path_patching_clean_control.py" \
+python "$SNAPSHOT/analysis_scripts/circuit/path_patching_clean_control.py" \
     --source-root "$SOURCE_ROOT" --output-root "$OUTPUT_ROOT" --task-id "$SLURM_ARRAY_TASK_ID"

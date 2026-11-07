@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from h2_additivity_robustness import (  # noqa: E402
@@ -33,9 +33,9 @@ from style import (BLUE, ORANGE, AQUA, VIOLET, GRAY, INK, INK2, apply_style,
                    despine, panel_label, save)
 
 HEADSETS = REPO / "results/aggregated/code_head_sets"
-SCATTER_STATS = REPO / "writeups/results_for_pi/fingerprint_scatters/stats_scatter_pairs.csv"
-H2_STATS = REPO / "writeups/results_for_pi/h2_robustness/stats_correlations.csv"
-CACHE = REPO / "rebuttal_figures" / "_cache_gemma_code_corrs.csv"
+SCATTER_STATS = REPO / "results/summary/fingerprint_scatters/stats_scatter_pairs.csv"
+H2_STATS = REPO / "results/summary/h2_robustness/stats_correlations.csv"
+CACHE = REPO / "results" / "figures" / "_cache_gemma_code_corrs.csv"
 
 QWEN_LAYERS, GEMMA_LAYERS = 48, GEMMA_SHAPE[0]
 COND_COLOR = {"C1": BLUE, "C2": AQUA, "C3": VIOLET, "C5": ORANGE}

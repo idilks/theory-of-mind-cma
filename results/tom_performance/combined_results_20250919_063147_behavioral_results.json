@@ -1,0 +1,104 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "false_belief_direct_abstract_detailed_T0.1": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 20,
+      "belief_correct_count": 20,
+      "world_correct_count": 20
+    },
+    "false_belief_direct_abstract_detailed_T0.4": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 20,
+      "belief_correct_count": 20,
+      "world_correct_count": 20
+    },
+    "false_belief_direct_abstract_detailed_T0.7": {
+      "belief_accuracy": 0.95,
+      "world_accuracy": 0.95,
+      "malformed_rate": 0.05,
+      "belief_accuracy_std": 0.15,
+      "world_accuracy_std": 0.15,
+      "total_responses": 20,
+      "belief_correct_count": 19,
+      "world_correct_count": 19
+    },
+    "false_belief_direct_abstract_detailed_T1.0": {
+      "belief_accuracy": 0.9,
+      "world_accuracy": 0.9,
+      "malformed_rate": 0.1,
+      "belief_accuracy_std": 0.2,
+      "world_accuracy_std": 0.2,
+      "total_responses": 20,
+      "belief_correct_count": 18,
+      "world_correct_count": 18
+    },
+    "false_belief_direct_abstract_detailed_T1.3": {
+      "belief_accuracy": 0.8,
+      "world_accuracy": 0.8,
+      "malformed_rate": 0.2,
+      "belief_accuracy_std": 0.24494897427831783,
+      "world_accuracy_std": 0.24494897427831783,
+      "total_responses": 20,
+      "belief_correct_count": 16,
+      "world_correct_count": 16
+    },
+    "false_belief_direct_abstract_standard_T0.1": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 20,
+      "belief_correct_count": 20,
+      "world_correct_count": 20
+    },
+    "false_belief_direct_abstract_standard_T0.4": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 20,
+      "belief_correct_count": 20,
+      "world_correct_count": 20
+    },
+    "false_belief_direct_abstract_standard_T0.7": {
+      "belief_accuracy": 0.8,
+      "world_accuracy": 0.8,
+      "malformed_rate": 0.2,
+      "belief_accuracy_std": 0.24494897427831783,
+      "world_accuracy_std": 0.24494897427831783,
+      "total_responses": 20,
+      "belief_correct_count": 16,
+      "world_correct_count": 16
+    },
+    "false_belief_direct_abstract_standard_T1.0": {
+      "belief_accuracy": 0.85,
+      "world_accuracy": 0.85,
+      "malformed_rate": 0.15,
+      "belief_accuracy_std": 0.22912878474779197,
+      "world_accuracy_std": 0.22912878474779197,
+      "total_responses": 20,
+      "belief_correct_count": 17,
+      "world_correct_count": 17
+    },
+    "false_belief_direct_abstract_standard_T1.3": {
+      "belief_accuracy": 0.8,
+      "world_accuracy": 0.8,
+      "malformed_rate": 0.2,
+      "belief_accuracy_std": 0.24494897427831783,
+      "world_accuracy_std": 0.24494897427831783,
+      "total_responses": 20,
+      "belief_correct_count": 16,
+      "world_correct_count": 16
+    }
+  }
+}

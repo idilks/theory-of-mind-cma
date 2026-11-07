@@ -17,8 +17,8 @@ across 144 stimuli, captured from union of top-20 heads in C1..C7), then:
 Outputs:
   results/rsa_head_outputs/aggregation_7cond/mantel_7x7.csv
   results/rsa_head_outputs/aggregation_7cond/per_head_profiles_7cond.csv
-  results_for_pi/aggregation/mantel_7x7_7cond.png
-  results_for_pi/aggregation/per_head_dissociation_7cond.png
+  results/summary/aggregation/mantel_7x7_7cond.png
+  results/summary/aggregation/per_head_dissociation_7cond.png
 """
 
 from __future__ import annotations
@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations_7cond"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads_7cond"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_7cond"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 

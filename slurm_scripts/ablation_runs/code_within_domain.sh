@@ -28,7 +28,7 @@
 #
 # Prereq: results/aggregated/code_head_sets/code_heads_end.csv on HPC
 # (results/ is excluded from sync_to_hpc.sh — build locally with
-# `python scripts/build_code_head_csvs.py` and scp the folder over).
+# `python analysis_scripts/build_code_head_csvs.py` and scp the folder over).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -62,7 +62,7 @@ LABEL="${CONDITION}_prefill_${PREFILL}"
 
 echo "Job $IDX: condition=$CONDITION prefill=$PREFILL"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 150 \
   --max_new_tokens 8 \

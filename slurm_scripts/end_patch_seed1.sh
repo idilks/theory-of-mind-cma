@@ -28,7 +28,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 # end-patch reruns with seed=1 to add ~100 new valid prompts to existing seed=0 results.
 # 5 conditions x 2 directions x 3 templates = 30 jobs.
-# combine afterwards with: python scripts/combine_per_sample_runs.py --seeds 0 1 --patch_position patch_before_movement
+# combine afterwards with: python analysis_scripts/combine_per_sample_runs.py --seeds 0 1 --patch_position patch_before_movement
 #
 # layout: every block of 6 = one condition (ABA-ft, ABA-lb, ABA-hs, ABB-ft, ABB-lb, ABB-hs)
 #   [0-5]   abstract_belief
@@ -73,7 +73,7 @@ RULE=${RULES[$IDX]}
 echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE seed=1 prompt_num=150"
 
 # no --patch_after_movement => end-patch position
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $RULE \

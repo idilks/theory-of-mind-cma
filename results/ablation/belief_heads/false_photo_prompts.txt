@@ -1,0 +1,1500 @@
+CORRECT: Market Street
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Market Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Lincoln Boulevard. The food truck stays at Lincoln Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Heneage Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hovey Lane. The food truck stays at Hovey Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Monroe Street
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Monroe Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Park Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Oak Avenue. The food truck stays at Oak Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Ladd Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Park Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ladd Road. The food truck stays at Ladd Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Jefferson Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Burton Road. The food truck stays at Burton Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Hovey Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jericho Road
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Jericho Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Pine Street
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Pine Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hemlock Road. The food truck stays at Hemlock Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hunter Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Highland Avenue
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hemlock Road. The food truck stays at Hemlock Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: First Street
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on First Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Jefferson Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Highland Avenue. The food truck stays at Highland Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ivy Lane
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Ivy Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Monroe Street. The food truck stays at Monroe Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to University Drive. The food truck stays at University Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Downtown Plaza
+ALT: Jericho Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Downtown Plaza. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jericho Road. The food truck stays at Jericho Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hilltop Drive
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Hilltop Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Oak Avenue
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyros is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Buck Road. The food truck stays at Buck Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Pine Street
+ALT: Elm Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Pine Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Second Street
+ALT: Elm Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Second Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Elm Avenue. The food truck stays at Elm Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Monroe Street
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Monroe Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Franklin Avenue. The food truck stays at Franklin Avenue.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Burton Road
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Burton Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Adams Boulevard. The food truck stays at Adams Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Madison Drive
+ALT: Ladd Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling sandwiches is on Madison Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Ladd Road. The food truck stays at Ladd Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ivy Lane
+ALT: Brook Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Ivy Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Brook Road. The food truck stays at Brook Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Park Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Allen Street. The food truck stays at Allen Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Washington Avenue
+ALT: Madison Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Washington Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Madison Drive. The food truck stays at Madison Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Lincoln Boulevard
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hovey Lane. The food truck stays at Hovey Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Highland Avenue
+ALT: Cedar Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Highland Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Cedar Lane. The food truck stays at Cedar Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hovey Lane. The food truck stays at Hovey Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hunter Lane
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Hunter Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Jefferson Street. The food truck stays at Jefferson Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Brook Road
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Brook Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Hovey Lane. The food truck stays at Hovey Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Lincoln Boulevard
+ALT: Downtown Plaza
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Lincoln Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Downtown Plaza. The food truck stays at Downtown Plaza.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Allen Street
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Allen Street. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Oak Avenue
+ALT: First Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Oak Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to First Street. The food truck stays at First Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Maple Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Burton Road
+ALT: River Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Burton Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to River Road. The food truck stays at River Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: River Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Juniper Lane. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to River Road. The food truck stays at River Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Mink Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Juniper Lane. The food truck stays at Juniper Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Adams Boulevard. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Park Boulevard. The food truck stays at Park Boulevard.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: University Drive
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Buck Road. The food truck stays at Buck Road.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: River Road
+ALT: Heneage Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on River Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Heneage Lane. The food truck stays at Heneage Lane.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Franklin Avenue
+ALT: Second Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Franklin Avenue. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Second Street. The food truck stays at Second Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: University Drive
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on University Drive. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Maple Drive. The food truck stays at Maple Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Buck Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Mink Drive. The food truck stays at Mink Drive.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Buck Road. A photographer takes a photo of the food truck. After the photograph is taken, Bob, the owner, drives the truck to Market Street. The food truck stays at Market Street.
+Where does the photograph show the food truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lime
+ALT: aquamarine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has lime hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair aquamarine. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: crimson
+ALT: cream
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair cream. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: red
+ALT: brown
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has red hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair brown. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: amethyst
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has teal hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair amethyst. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: turquoise
+ALT: tangerine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has turquoise hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair tangerine. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cobalt
+ALT: jade
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cobalt hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair jade. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: crimson
+ALT: yellow
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair yellow. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cream
+ALT: jade
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cream hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair jade. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: verdigris
+ALT: beige
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has verdigris hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair beige. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pink
+ALT: burgundy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has pink hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair burgundy. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: caramel
+ALT: navy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has caramel hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair navy. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sienna
+ALT: grey
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sienna hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair grey. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: crimson
+ALT: chestnut
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair chestnut. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: mulberry
+ALT: pearl
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has mulberry hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair pearl. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: blue
+ALT: grey
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has blue hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair grey. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: maroon
+ALT: lavender
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has maroon hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair lavender. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: copper
+ALT: orange
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has copper hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair orange. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: silver
+ALT: mauve
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has silver hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair mauve. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: coral
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has coral hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair sage. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brown
+ALT: plum
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has brown hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair plum. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: white
+ALT: fuchsia
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has white hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair fuchsia. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: wine
+ALT: black
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has wine hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair black. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sage
+ALT: wine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair wine. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: ivory
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has ivory hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair teal. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: auburn
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has teal hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair auburn. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: rust
+ALT: umber
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has rust hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair umber. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: white
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has white hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair teal. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: neon
+ALT: chartreuse
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has neon hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair chartreuse. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: yellow
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair yellow. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: navy
+ALT: platinum
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has navy hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair platinum. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: magenta
+ALT: gold
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has magenta hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair gold. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: violet
+ALT: wine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair wine. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cherry
+ALT: hazel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cherry hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair hazel. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cobalt
+ALT: blush
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cobalt hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair blush. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pink
+ALT: orange
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has pink hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair orange. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: amethyst
+ALT: auburn
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has amethyst hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair auburn. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lime
+ALT: verdigris
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has lime hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair verdigris. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: coral
+ALT: pearl
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has coral hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair pearl. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sage
+ALT: plum
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair plum. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sapphire
+ALT: grey
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sapphire hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair grey. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: burgundy
+ALT: grey
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has burgundy hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair grey. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cream
+ALT: brown
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cream hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair brown. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: violet
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair teal. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: lilac
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair lilac. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: hazel
+ALT: mahogany
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has hazel hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair mahogany. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: emerald
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has emerald hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair topaz. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: neon
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has neon hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair maroon. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: violet
+ALT: rust
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair rust. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: pink
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair pink. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sage
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. A photographer takes a photo of Alice for her ID card. After the photo is taken, Alice dyes her hair maroon. The hair dye change is permanent and Alice keeps this new color.
+What hair color does the ID card photo show? Answer with only the color, be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: young adult
+ALT: popular reads
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A philosophy book is on a desk in young adult section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to popular reads section where it belongs. The book stays in popular reads section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: botany
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A computer science book is on a desk in botany section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: young adult
+ALT: comics
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A literature book is on a desk in young adult section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to comics section where it belongs. The book stays in comics section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: children's
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A mathematics book is on a desk in engineering section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A physics book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to fiction section where it belongs. The book stays in fiction section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: non-fiction
+ALT: science
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A mathematics book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to science section where it belongs. The book stays in science section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: biography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A chemistry book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to biography section where it belongs. The book stays in biography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A law book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to history section where it belongs. The book stays in history section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: engineering
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A computer science book is on a desk in comics section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A philosophy book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A philosophy book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: botany
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A psychology book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to botany section where it belongs. The book stays in botany section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: children's
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A medicine book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A computer science book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A economics book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to health section where it belongs. The book stays in health section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cooking
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A law book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to finance section where it belongs. The book stays in finance section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: theology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A business book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A business book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: photography
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A education book is on a desk in photography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: non-fiction
+ALT: engineering
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A engineering book is on a desk in non-fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: travel
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A psychology book is on a desk in travel section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: engineering
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A business book is on a desk in history section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to engineering section where it belongs. The book stays in engineering section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A law book is on a desk in finance section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to history section where it belongs. The book stays in history section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: art
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A engineering book is on a desk in reference section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to art section where it belongs. The book stays in art section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A medicine book is on a desk in academic section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: popular reads
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A art book is on a desk in self-help section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to popular reads section where it belongs. The book stays in popular reads section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: science
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A anthropology book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to science section where it belongs. The book stays in science section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: film
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A economics book is on a desk in academic section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to film section where it belongs. The book stays in film section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: poetry
+ALT: art
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A computer science book is on a desk in poetry section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to art section where it belongs. The book stays in art section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: travel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A sociology book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A engineering book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to history section where it belongs. The book stays in history section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A business book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to architecture section where it belongs. The book stays in architecture section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cooking
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A political science book is on a desk in cooking section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to academic section where it belongs. The book stays in academic section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A literature book is on a desk in history section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to finance section where it belongs. The book stays in finance section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: young adult
+ALT: theology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A medicine book is on a desk in young adult section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to theology section where it belongs. The book stays in theology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: science
+ALT: children's
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A sociology book is on a desk in science section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: study materials
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A mathematics book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to technology section where it belongs. The book stays in technology section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: study materials
+ALT: travel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A anthropology book is on a desk in study materials section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to travel section where it belongs. The book stays in travel section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: reference
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A science book is on a desk in health section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: art
+ALT: children's
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A engineering book is on a desk in art section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to children's section where it belongs. The book stays in children's section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A business book is on a desk in technology section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to education section where it belongs. The book stays in education section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A biology book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to self-help section where it belongs. The book stays in self-help section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A biology book is on a desk in finance section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: photography
+ALT: comics
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A mathematics book is on a desk in photography section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to comics section where it belongs. The book stays in comics section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: popular reads
+ALT: reference
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A education book is on a desk in popular reads section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: architecture
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A history book is on a desk in architecture section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to music section where it belongs. The book stays in music section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A education book is on a desk in education section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to self-help section where it belongs. The book stays in self-help section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: biography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A psychology book is on a desk in music section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to biography section where it belongs. The book stays in biography section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A law book is on a desk in history section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to young adult section where it belongs. The book stays in young adult section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: reference
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A art book is on a desk in fiction section of the library. A college photographer takes a picture of the desk area. After the photograph is taken, a librarian moves the book to reference section where it belongs. The book stays in reference section.
+Which section does the photograph show the book in? Answer with only the section name (eg. young adult or classics), be concise<|im_end|>
+<|im_start|>assistant
+
+============================================================

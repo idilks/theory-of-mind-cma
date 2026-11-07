@@ -25,8 +25,8 @@
 #     z: (120, 48, 40, 128) float16 (~180 MB per template), stim, generations
 #
 # Downstream (local, CPU):
-#   python scripts/rsa_head_outputs/analyze_content_rdms.py
-#   python scripts/rsa_head_outputs/mvpa_veracity.py \
+#   python analysis_scripts/rsa_head_outputs/analyze_content_rdms.py
+#   python analysis_scripts/rsa_head_outputs/mvpa_veracity.py \
 #       --act_dir results/rsa_head_outputs/activations_content --target believed
 
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
@@ -59,7 +59,7 @@ if [ ! -f $STIM_DIR/${TEMPLATE}.csv ]; then
 fi
 
 mkdir -p $ACT_DIR
-python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
   --template $TEMPLATE \
   --stim_dir  $STIM_DIR \
   --out_dir   $ACT_DIR \

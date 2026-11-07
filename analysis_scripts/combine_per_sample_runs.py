@@ -2,10 +2,10 @@
 combine per-sample CMA scores from seed_0 and seed_1 runs into a merged result.
 
 usage:
-    python scripts/combine_per_sample_runs.py
-    python scripts/combine_per_sample_runs.py --dry_run
-    python scripts/combine_per_sample_runs.py --patch_position patch_before_movement
-    python scripts/combine_per_sample_runs.py --seeds 0 1 --output_seed_tag combined
+    python analysis_scripts/combine_per_sample_runs.py
+    python analysis_scripts/combine_per_sample_runs.py --dry_run
+    python analysis_scripts/combine_per_sample_runs.py --patch_position patch_before_movement
+    python analysis_scripts/combine_per_sample_runs.py --seeds 0 1 --output_seed_tag combined
 
 what it does:
     for each (condition, template, base_rule->exp_rule, patch_position) under
@@ -26,8 +26,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'codebase', 'tasks', 'causal_analysis'))
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'codebase'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'cma_scripts', 'tasks', 'causal_analysis'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'cma_scripts'))
 
 import torch
 from statistical_testing import permutation_test_heads, save_statistical_results

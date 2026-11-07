@@ -1,0 +1,64 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "false_belief_direct_standard_T0.1": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 100,
+      "world_correct_count": 100
+    },
+    "false_belief_direct_standard_T0.4": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 100,
+      "world_correct_count": 100
+    },
+    "false_belief_direct_standard_T0.7": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 100,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_standard_T0.1": {
+      "belief_accuracy": 0.45,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.49749371855331,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 45,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_standard_T0.4": {
+      "belief_accuracy": 0.47000000000000003,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.4439594576084623,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 47,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_standard_T0.7": {
+      "belief_accuracy": 0.47000000000000003,
+      "world_accuracy": 0.99,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.4484417464955733,
+      "world_accuracy_std": 0.04358898943540673,
+      "total_responses": 100,
+      "belief_correct_count": 47,
+      "world_correct_count": 99
+    }
+  }
+}

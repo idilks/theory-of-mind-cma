@@ -13,7 +13,7 @@ def main() -> None:
     root=Path(__file__).resolve().parents[1]
     out=root/'results/aggregated/head_domain_comparison'
     c=pd.read_csv(out/'cma_head_comparisons.csv')
-    members=pd.read_csv(root/'docs/head_evidence_inventory/head_membership.csv')
+    members=pd.read_csv(root/'results/aggregated/head_evidence_inventory/head_membership.csv')
     names=members[members.membership.eq('belief')].head_name.tolist()
     fig,axes=plt.subplots(1,2,figsize=(11,7),sharey=True)
     for ax,key,title in zip(axes,['C1_minus_C2','C1_minus_K1'],['Belief − photo','Belief − code']):

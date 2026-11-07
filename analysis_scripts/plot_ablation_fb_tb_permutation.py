@@ -57,7 +57,7 @@ def style_panel(ax, *, fontsize=10):
 def load_all() -> pd.DataFrame:
     frames = []
     for run in RUNS:
-        csv = ROOT / "other_results" / "ablation" / run / "permutation_fb_tb" / "permutation_per_k.csv"
+        csv = ROOT / "results" / "ablation" / run / "permutation_fb_tb" / "permutation_per_k.csv"
         df = pd.read_csv(csv)
         if "run_label" not in df.columns or df["run_label"].isna().all():
             df["run_label"] = run
@@ -72,7 +72,7 @@ def neglog10p(p):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(ROOT / "neurips" / "figures" / "ablation_permutation_per_k.png"))
+    ap.add_argument("--out", default=str(ROOT / "results/summary" / "figures" / "ablation_permutation_per_k.png"))
     args = ap.parse_args()
 
     out_png = Path(args.out)

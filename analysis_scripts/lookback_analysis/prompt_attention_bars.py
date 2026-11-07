@@ -25,7 +25,7 @@ No forward passes; CPU only. Reads:
   {capture_dir}/attention.pt   (attn, heads, prompts, positions, query_pos_names, meta)
 
 Usage:
-  python scripts/lookback_analysis/prompt_attention_bars.py \
+  python analysis_scripts/lookback_analysis/prompt_attention_bars.py \
       --capture_dir results/lookback_analysis/abstract_belief/template_food_truck/base_rule_ABA_exp_rule_ABB/patch_before_movement \
       --label "C1 divergence (false-belief prompt)" \
       --capture_dir results/lookback_analysis/answer_changes_location_only/template_food_truck/base_rule_ABA_exp_rule_ABA/patch_before_movement \

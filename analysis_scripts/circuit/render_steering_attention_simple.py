@@ -2,9 +2,9 @@
 
 Reuses the saved means and prompt-bootstrap intervals without recomputing
 statistics. The full control figure remains steering_attention_bars.*.
-Run from the project environment: python scripts/circuit/render_steering_attention_simple.py
+Run from the project environment: python analysis_scripts/circuit/render_steering_attention_simple.py
 --paper writes a compact copy for draft2.tex (no title, subtitle or footnotes; the
-caption carries them) to writeups/neurips-overleaf/figures/steering_attention_paper.pdf.
+caption carries them) to results/figures/steering_attention_paper.pdf.
 """
 
 from __future__ import annotations
@@ -22,10 +22,10 @@ from matplotlib.ticker import PercentFormatter
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "results_for_pi/aggregation"
+OUT = ROOT / "results/summary/aggregation"
 SOURCE = OUT / "steering_attention_bars.csv"
 STEM = OUT / "steering_attention_simple"
-PAPER_STEM = ROOT / "writeups/neurips-overleaf/figures/steering_attention_paper"
+PAPER_STEM = ROOT / "results/figures/steering_attention_paper"
 PANELS = (
     ("false_belief", "False belief", "delete", "Deletion", "believed", "Old", "Current"),
     ("true_belief", "True belief", "inject", "Injection", "current", "Current", "Old"),
@@ -197,7 +197,7 @@ def main() -> None:
         "The steering attention.csv files save only mass_believed and mass_current "
         "per head and prompt. The runner discards full attention patterns after summing "
         "these masks. No token-level steering attention capture was found in the local "
-        "results/circuit or other_results/circuit trees. The older lookback captures use "
+        "results/circuit or results/circuit trees. The older lookback captures use "
         "different prompt/head selections and cannot establish a ranking for this experiment. "
         "Consequently we cannot claim that the correct-answer location is attended more "
         "than every other token or location. That claim needs matching full token-level "
@@ -205,7 +205,7 @@ def main() -> None:
         "spans and individual tokens.\n\n"
         "Source: steering_attention_bars.csv in this directory. Full appendix figure: "
         "steering_attention_bars.png / .pdf. Regenerate this figure with "
-        "`python scripts/circuit/render_steering_attention_simple.py`.\n"
+        "`python analysis_scripts/circuit/render_steering_attention_simple.py`.\n"
     )
     print("Selected means (attention fraction, range 0–1):")
     for row in rows:

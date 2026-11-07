@@ -1,0 +1,3 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+43,32,0,0.035499887466430666,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'
+45,29,0,0.03957931836446126,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'

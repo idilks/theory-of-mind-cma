@@ -22,7 +22,7 @@ from style import (BLUE, AQUA, GRAY, INK, INK2, apply_style, despine,
 
 REPO = Path(__file__).resolve().parents[2]
 ABL = REPO / "results/ablation"
-ABL_OTHER = REPO / "other_results/ablation"
+ABL_OTHER = REPO / "results/ablation"
 
 # (row label, run dir, k, divergence eval, no-divergence eval)
 ROWS = [

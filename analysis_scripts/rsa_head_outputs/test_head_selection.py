@@ -1,6 +1,6 @@
 """Checks for the significance-count head selection (no model, saved data only).
 
-Run:  python scripts/rsa_head_outputs/test_head_selection.py
+Run:  python analysis_scripts/rsa_head_outputs/test_head_selection.py
 """
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
-sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT / "analysis_scripts"))
 import dims  # noqa: E402
 import head_sets_source as hss  # noqa: E402
 from build_significance_head_sets import derived_sets, select  # noqa: E402

@@ -2,7 +2,7 @@
 
 Source runs: `L41_main` (paper, alpha <= 4) and `L41_dose_ext` (alpha in {6, 8, 12, 16}; generic leg over {0.5, ..., 16}). Same held-out prompts, same `--control_seed 99`. Rank-1 direction only; the 8-dim swap operator is off-manifold by alpha = 4 and was not extended.
 
-Metric definitions are in the module docstring of `scripts/circuit/analyze_dose_extension.py`. Applied edit norm is alpha x 53.6; the clean residual norm at this site is about 390 (stage-1 capture, final token).
+Metric definitions are in the module docstring of `analysis_scripts/circuit/analyze_dose_extension.py`. Applied edit norm is alpha x 53.6; the clean residual norm at this site is about 390 (stage-1 capture, final token).
 
 ## Quoted numbers
 

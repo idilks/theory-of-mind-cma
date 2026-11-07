@@ -69,10 +69,10 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
     CAPTURE_ROOT, DOMAINS, INJECTION_HOOKS, READER_DLA_LAYERS, SITE_KEYS,
@@ -81,7 +81,7 @@ from circuit_common import (  # noqa: E402
 from stage2_steering import (  # noqa: E402
     heldout_capture_prompts, location_token_mask, make_steer_fn,
 )
-# ablation_experiment chdir()s to codebase/ on import; every path here is
+# ablation_experiment chdir()s to cma_scripts/ on import; every path here is
 # absolute (ROOT-based), so that is harmless.
 from tasks.causal_analysis.ablation_experiment import compute_answer_token_id  # noqa: E402
 from tasks.causal_analysis.cma_config import (  # noqa: E402

@@ -13,7 +13,7 @@ layer-matched lowest-fingerprint heads (Yang's control construction).
   --xmax 1920   full sweep (default)          -> fig1c_ablation_yang_accuracy
   --xmax 128    zoom to the first 128 heads   -> fig1c_ablation_yang_accuracy_zoom128
 
-Data: other_results/ablation/tom_c{1,5}_full1920_on_code_tom_prefill_per_variant/
+Data: results/ablation/tom_c{1,5}_full1920_on_code_tom_prefill_per_variant/
 (matched system prompt + answer prefill; n = 75 prompts per variant; k grid
 dense to 128 then stride 16, 241 sizes). Accuracy = argmax first token is
 the correct answer (per_prompt_data.pt `acc`).
@@ -33,8 +33,8 @@ from style import INK, INK2, RED, apply_style, despine, panel_label, save
 
 REPO = Path(__file__).resolve().parents[2]
 RUNS = {
-    "c1": REPO / "other_results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant",
-    "c5": REPO / "other_results/ablation/tom_c5_full1920_on_code_tom_prefill_per_variant",
+    "c1": REPO / "results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant",
+    "c5": REPO / "results/ablation/tom_c5_full1920_on_code_tom_prefill_per_variant",
 }
 ROWS = [("c1", "Belief heads (C1 fingerprint order)"),
         ("c5", "Retrieval heads (C5 fingerprint order)")]

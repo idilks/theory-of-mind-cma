@@ -34,7 +34,7 @@ reduces to the believed-minus-current readout; this script keeps the two
 masses separate so the reader can see WHERE attention went, not just the
 signed difference.
 
-Outputs (results_for_pi/aggregation/)
+Outputs (results/summary/aggregation/)
   steering_attention_bars.png / .pdf
   steering_attention_bars.csv   one row per plotted bar: mean, CI, paired
                                 delta vs clean with its own bootstrap CI
@@ -57,14 +57,14 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Patch  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
-sys.path.insert(0, str(ROOT / "scripts" / "rebuttal_figures"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "paper_figures"))
 
 from circuit_common import STAGE2_OUT_ROOT  # noqa: E402
 from style import (BLUE, ORANGE, GRAY, INK, INK2, GRID,  # noqa: E402
                    apply_style, despine, panel_label)
 
-OUT_DIR = ROOT / "results_for_pi" / "aggregation"
+OUT_DIR = ROOT / "results/summary" / "aggregation"
 KEY = ["prompt_set", "mode", "direction", "dose", "template", "pair_idx"]
 POSITIONS = ("believed", "current", "other")
 POS_COLOR = {"believed": BLUE, "current": ORANGE, "other": GRAY}

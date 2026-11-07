@@ -5,8 +5,8 @@ This script loads each `causal_scores_per_sample.pt` file, builds the max-null
 distribution once, then evaluates significance counts for multiple alpha values.
 
 Usage:
-    python scripts/sweep_permutation_alpha.py
-    python scripts/sweep_permutation_alpha.py --alphas 0.01,0.05,0.1,0.2
+    python analysis_scripts/sweep_permutation_alpha.py
+    python analysis_scripts/sweep_permutation_alpha.py --alphas 0.01,0.05,0.1,0.2
 """
 
 from __future__ import annotations

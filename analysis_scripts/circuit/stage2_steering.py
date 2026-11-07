@@ -32,30 +32,20 @@ Readouts per prompt: p(correct)/p(alt) over the two first answer tokens,
 flip_score = p_alt/(p_alt+p_correct) (same definition as the ablation
 work), KL(steered || clean) at -1 (collateral-damage meter), top-1 token,
 applied-delta norm; reader-head (L42-46) attention mass at query -1 on
-believed vs current location tokens (secondary readout; by default
-captured for clean + target directions only — pass
---attn_all_directions to capture it for the CONTROL directions too,
-which is what turns the attention readout from "reliably shifts" into
-"shifts more than a magnitude-matched non-wire edit").
+believed vs current location tokens (secondary readout; captured for
+clean + target directions only — a null here is reportable, not
+disqualifying, per the OV-mixing caveat).
 
-Specificity / negative-control legs (all predicted no-ops, and all
-magnitude- AND operator-matched, which the orthogonal-direction controls
-are not):
-  basic_ab   under inject  -> no belief variable to move
-  TB prompts under delete  -> the FB component it removes is absent
-  FB prompts under inject  -> already at the FB pole; nothing to add
-The last two are sign-reversal controls: SAME direction, same norms,
-opposite sign, on prompts where the operator's precondition fails.
-
-Cross-domain leg: inject the ToM direction into code_alias prompts
-(CODE_SYSTEM_PROMPT + quote prefill) -> does the model report the stale
-pre-mutation value? Cross-domain uses additive steering only
+Specificity legs: basic_ab under inject and true_belief under delete must
+stay intact. Cross-domain leg: inject the ToM direction into code_alias
+prompts (CODE_SYSTEM_PROMPT + quote prefill) -> does the model report the
+stale pre-mutation value? Cross-domain uses additive steering only
 (P_k(mu_FB^ToM - x) on code prompts would inject ToM content wholesale,
 not just the divergence coordinates). The mirror (code-derived direction
 into true_belief) needs a code-domain Stage-1 capture first.
 
 Collateral leg (--include_generic / --only_generic, Nov 2026 dose
-extension): belief-free generic prompts (scripts/circuit/generic_prompts.py)
+extension): belief-free generic prompts (analysis_scripts/circuit/generic_prompts.py)
 under the same final-token edit, rank-1 target + the three controls,
 label-free readouts only — KL(steered || clean) and top-1 agreement with
 the clean model (top1_agree). Rows with empty correct/alt are label-free
@@ -63,10 +53,10 @@ and get NaN p_correct/p_alt/flip_score. --skip_topk drops the 8-dim swap
 operator (already off-manifold at alpha = 4) from every leg.
 
 Checkpointing: per-config rows append to per_prompt.csv; finished configs
-are skipped on restart. --plot_only re-renders figures from the CSVs on a
-laptop (no GPU).
+are skipped on restart. --plot_only re-renders figures from the CSVs
+without a GPU.
 
-Run via slurm_scripts/circuit_stage2_steering.sh after Stage 1's GO.
+Run after Stage 1 returns GO.
 """
 
 from __future__ import annotations
@@ -87,10 +77,10 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
     BAND_LAYERS, CAPTURE_ROOT, DOMAINS, EVAL_VARIANTS, INJECTION_HOOKS,
@@ -144,7 +134,7 @@ def heldout_capture_prompts(capture_dir: Path, dirs_npz, variant: str,
 
 def fresh_prompt_set(tokenizer, variant: str, n: int, seed: int) -> list[dict]:
     """Generate specificity / cross-domain prompts (not tied to the capture)."""
-    # deferred: importing ablation_experiment os.chdir()s to codebase/, which
+    # deferred: importing ablation_experiment os.chdir()s to cma_scripts/, which
     # would break the relative output paths this script resolves at startup
     from tasks.causal_analysis.ablation_experiment import generate_eval_prompts
     random.seed(seed)
@@ -408,7 +398,7 @@ def render_figures(out_dir: Path):
                 g = g.sort_values("dose")
                 ax.plot(g["dose"], g[metric], marker="o", label=d)
             ax.set_title(f"{pset} / {mode}", fontsize=9)
-            ax.set_xlabel(r"steering coefficient $\alpha$ (× natural scale)")
+            ax.set_xlabel("dose (× natural scale)")
             ax.set_ylabel(metric)
             ax.set_xscale("log")
             ax.legend(fontsize=6)
@@ -434,7 +424,7 @@ def render_figures(out_dir: Path):
             ax.axhline(g["shift"].iloc[0], ls=":", lw=1,
                        label=f"clean {pset}")
         ax.set_xscale("log")
-        ax.set_xlabel(r"steering coefficient $\alpha$")
+        ax.set_xlabel("dose")
         ax.set_ylabel("reader attn mass: believed − current")
         ax.set_title("reader-head attention shift (secondary readout)")
         ax.legend(fontsize=6)
@@ -572,23 +562,15 @@ def main():
 
     # ---- config grid ------------------------------------------------------
     # (prompt_set, mode, direction) legs; dose grid applied to each.
-    main_dirs = (CONTROL_DIRECTIONS if args.only_controls
-                 else TARGET_DIRECTIONS + CONTROL_DIRECTIONS)
-    legs = [(TBD, "inject", d) for d in main_dirs]
-    legs += [(FBD, "delete", d) for d in main_dirs]
+    legs = [(TBD, "inject", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
+    legs += [(FBD, "delete", d) for d in TARGET_DIRECTIONS + CONTROL_DIRECTIONS]
     if args.only_cross_domain:
         legs = []
-    if not args.skip_specificity and not (args.only_cross_domain
-                                          or args.only_controls):
+    if not args.skip_specificity and not args.only_cross_domain:
         if args.domain == "tom":
             legs += [("basic_ab", "inject", d) for d in TARGET_DIRECTIONS]
-        # sign-reversal negative controls: same direction and norms, operator
-        # applied where its precondition fails (nothing to delete on TB /
-        # nothing to add on FB). Predicted no-ops; a flip here would mean the
-        # operators damage rather than move the wire coordinate.
         legs += [(TBD, "delete", d) for d in TARGET_DIRECTIONS]
-        legs += [(FBD, "inject", d) for d in TARGET_DIRECTIONS]
-    if not args.skip_cross_domain and not args.only_controls:
+    if not args.skip_cross_domain:
         if args.domain == "tom":
             legs += [("code_alias", "inject", d) for d in TARGET_DIRECTIONS]
         else:
@@ -715,8 +697,6 @@ def main():
             done.add((pset, "clean", "clean", 0.0))
 
     for pset, mode, direction in legs:
-        if all((pset, mode, direction, d) in done for d in args.doses):
-            continue  # fully resumed leg: don't pay for its clean pass
         run_clean(pset)
         for dose in args.doses:
             key = (pset, mode, direction, dose)
@@ -739,9 +719,8 @@ def main():
                 sign = +1.0 if mode == "inject" else -1.0
                 fn = make_steer_fn("add", dose, applied_norms, vec=vec,
                                    scale=use_scale, sign=sign)
-            capture_attn = (pset in (FBD, TBD, "mirror_tom_tb")
-                            and (direction in TARGET_DIRECTIONS
-                                 or args.attn_all_directions))
+            capture_attn = (direction in TARGET_DIRECTIONS
+                            and pset in (FBD, TBD, "mirror_tom_tb"))
             rows, attn_rows, _ = eval_config(
                 model, tokenizer, get_prompts(pset), [(hook_name, fn)],
                 applied_norms, clean_cache[pset], capture_attn, readers,

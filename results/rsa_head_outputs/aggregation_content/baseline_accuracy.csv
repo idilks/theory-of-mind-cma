@@ -1,0 +1,7 @@
+template,belief_veracity,correct
+food_truck,false,1.0
+food_truck,true,1.0
+hair_styling,false,0.9666666666666667
+hair_styling,true,1.0
+library_book,false,1.0
+library_book,true,0.9833333333333333

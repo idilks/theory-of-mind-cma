@@ -1,3 +1,20 @@
+"""Causal mediation analysis (CMA) over attention heads 
+
+Implements the CMA method of Section 3.1 / Algorithm 1 of arXiv:2502.20332. For a
+matched pair of prompts that differ in exactly one factor, it patches each head's
+activation from the base run into the experimental run and measures how far the
+model's answer moves. The result is a (layers x heads) grid of causal scores.
+
+Notation — patching flows from base context (c2) into experimental context (c1):
+    base context (c2)          base_rule / base_prompt / base_ans   (y_c2)
+    exp context  (c1)          exp_rule  / exp_prompt  / exp_ans    (y_c1)
+    patched exp  (c1*)         expected answer after patching        (y_c1*)
+
+`--context_type` selects which head population the contrast targets
+
+Run `python cma.py --help` for the full argument list; the top-level README.md has
+a worked example and the canonical C1-C7 condition table.
+"""
 #####################################
 import os
 
@@ -6,21 +23,16 @@ import pyrootutils
 # NOTE: setup_root() must run before any sibling-module import below. It puts
 # the codebase root on sys.path (pythonpath=True) *and* chdir()s into it
 # (cwd=True), so importing this module has the side effect of changing the
-# process working directory — callers that resolve relative paths beforehand
-# must import it last (see scripts/merge_cumulative_ablation_chunks.py).
+# process working directory
 root = pyrootutils.setup_root(__file__, dotenv=True, pythonpath=True, cwd=True)
 
 from utils import HF_TOKEN, HF_HOME, plot
-os.environ["HF_TOKEN"] = HF_TOKEN # configure the User Access Token to authenticate to the Hub
-os.environ["HF_HOME"] = HF_HOME  ## set the cache directory for Hugging Face 
+
+if HF_TOKEN:
+    os.environ["HF_TOKEN"] = HF_TOKEN  # authenticate to the Hub for gated repos
+if HF_HOME:
+    os.environ["HF_HOME"] = HF_HOME    # override the HuggingFace cache directory
 #####################################
-## implementation of CMA method (Section 3.1 and Alogorithm 1 in https://arxiv.org/pdf/2502.20332?)
-## context_type: abstract (symbol abstraction heads/ symbolic induction heads) or token (retrieval heads)
-## notations: (patching from base context to exp context (c2 -> c1))
-# base context (c2): base_rule/base_prompt/base_ans (y_c2)
-# exp context (c1): exp_rule/exp_prompt/exp_ans (y_c1)
-# patched exp context (c1*): expected answer after patching activations from c2 to c1, causal_ans (y_c1*)
-######################################
 
 import argparse
 import json

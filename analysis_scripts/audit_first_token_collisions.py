@@ -15,7 +15,7 @@ from pathlib import Path
 
 from transformers import AutoTokenizer
 
-VOCAB_DIR = Path(__file__).resolve().parents[1] / "tom_datasets"
+VOCAB_DIR = Path(__file__).resolve().parents[1] / "cma_scripts" / "tom_datasets"
 MODEL_ID = "Qwen/Qwen2.5-14B-Instruct"
 
 # files actually used by the active templates (skip "copy" backups + unused files)

@@ -54,7 +54,7 @@ RULE=${RULES[$IDX]}
 echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE seed=0 prompt_num=150"
 
 # no --patch_after_movement => end-patch position (-1)
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --condition $CONDITION \
   --base_rule $RULE \
   --template_names $TEMPLATE \

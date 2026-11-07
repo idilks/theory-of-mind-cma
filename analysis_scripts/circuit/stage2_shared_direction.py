@@ -36,10 +36,10 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
     AGG_DIR, CAPTURE_ROOT, DOMAINS, INJECTION_HOOKS, READER_DLA_LAYERS,

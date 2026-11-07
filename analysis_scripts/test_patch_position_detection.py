@@ -12,7 +12,7 @@ from pathlib import Path
 
 # absolute so the smoke test runs from any cwd, not just the repo root
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]
-                       / "codebase" / "tasks" / "causal_analysis"))
+                       / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from prompt_generators.tom_templates import UnifiedTemplateSystem
 from transformers import AutoTokenizer

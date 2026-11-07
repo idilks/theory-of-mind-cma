@@ -4,7 +4,7 @@ Same data, significance sets and colouring as build_fingerprint_scatters.py;
 only the axis values differ between panels. Pearson r, Spearman rho and a
 two-sided permutation p (|r|, N_PERM shuffles) are computed per panel.
 
-Outputs -> writeups/results_for_pi/fingerprint_scatters/figures/dual_*.png
+Outputs -> results/summary/fingerprint_scatters/figures/dual_*.png
 """
 
 import sys
@@ -18,7 +18,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 REPO = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 from build_fingerprint_scatters import (  # noqa: E402
     TOM_CONDS, LABELS, FIG, tom_sig_set, published_set, flat_idx)
 from h2_additivity_robustness import (  # noqa: E402

@@ -4,10 +4,10 @@ Aggregated end-patch heatmaps per condition.
 For each condition:
   1. Load `causal_scores_per_sample.pt` from each of the 6 cells
      (3 templates x 2 directions) at patch_before_movement, picking the same
-     source (combined > seed=1 > seed=0) as build_pi_heatmaps.py.
+     source (combined > seed=1 > seed=0) as build_summary_heatmaps.py.
   2. Per-cell mean -> average those means -> 1 vector of length n_heads.
-     Negatives clamped to 0 (PI heatmap rule). Render with the paper's
-     white-to-dark map (rebuttal_figures/style.py).
+     Negatives clamped to 0 (project heatmap convention). Render with the paper's
+     white-to-dark map (paper_figures/style.py).
   3. Re-run the permutation test on the averaged statistic:
      for each permutation, draw one sign-flip per cell, compute that cell's
      permuted mean, then average the cell-means. Apply max-statistic FWER
@@ -23,13 +23,13 @@ untitled: draft2.tex names each panel in a subfigure caption. The manifest recor
 the paper's condition name per row; the appendix table reports its values.
 
 Qwen (default, no args) reproduces the original build_avg_heatmaps behavior:
-    python scripts/build_avg_heatmaps.py
+    python analysis_scripts/build_avg_heatmaps.py
 
 Gemma-2-27B replication arm (subsumes the former build_avg_heatmaps_gemma.py;
 tolerant of incomplete cell coverage -- Gemma C2 has 4/6 cells, C3 partial):
-    python scripts/build_avg_heatmaps.py \
+    python analysis_scripts/build_avg_heatmaps.py \
         --results-root results/causal_analysis/cma/google/gemma-2-27b-it_ungroup_gqa \
-        --out-dir results_for_pi/heatmaps_gemma/aggregated \
+        --out-dir results/summary/heatmaps_gemma/aggregated \
         --conditions C1 C2 C3 \
         --tolerate-missing
 """
@@ -47,12 +47,12 @@ import torch
 
 from condition_registry import BY_CNUM, BY_KEY, REGISTRY, resolve_best_source
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "rebuttal_figures"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "paper_figures"))
 from style import BLUE, CMAP_SEQ, apply_style
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RESULTS = ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
-DEFAULT_OUT = ROOT / "results_for_pi/heatmaps/aggregated"
+DEFAULT_OUT = ROOT / "results/summary/heatmaps/aggregated"
 
 N_PERMUTATIONS = 5000
 ALPHA = 0.05

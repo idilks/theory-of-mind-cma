@@ -2,7 +2,7 @@
 
 Writers (candidate wire authors, design table row "C1 head set"):
   primary     — T_C1, the prefill-protocol significance-based belief set
-                (other_results/ablation/belief_only_sysprompt_prefill/
+                (results/ablation/belief_only_sysprompt_prefill/
                 head_list.csv, K=32), restricted to layer <= 40. The two
                 L46 members (46,10 / 46,13) sit inside the reader band and
                 are dropped: a writer downstream of the measurement layer
@@ -17,14 +17,12 @@ Readers (who could read the L40/41 wire):
   - DLA writer band: union over templates of top-20 DLA heads with layer
     in 42..46 (results/rsa_head_outputs/dla/{t}_dla_top20.csv; both signs
     kept — suppressor heads read the wire too).
-  - T_C5 heads at layer >= 41 (other_results/ablation/loc_belief_heads).
+  - T_C5 heads at layer >= 41 (results/ablation/loc_belief_heads).
 
-Outputs (results/aggregated/circuit/ — synced to HPC by sync_to_hpc.sh):
+Outputs (results/aggregated/circuit/):
   writer_heads.csv  columns: set, layer, head, mean_score, source
   reader_heads.csv  columns: layer, head, source, dla_mean_logit_diff,
                              tc5_mean_score
-
-Run locally (needs other_results/, which HPC doesn't have).
 """
 
 from __future__ import annotations
@@ -42,7 +40,7 @@ from circuit_common import (  # noqa: E402
     REPO, T_C1_PREFILL_CSV, T_C5_CSV, TEMPLATES, WRITER_CSV, WRITER_MAX_LAYER,
 )
 
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 from condition_registry import resolve_best_source  # noqa: E402
 from h2_additivity_robustness import CROSS_RULES, RESULTS_ROOT  # noqa: E402
 

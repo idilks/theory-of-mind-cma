@@ -1,0 +1,22 @@
+{
+  "false_belief_direct_abstract_detailed_T1.0": {
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "belief_accuracy_std": 0.0,
+    "world_accuracy_std": 0.0,
+    "total_responses": 2500,
+    "belief_correct_count": 0,
+    "world_correct_count": 0
+  },
+  "false_belief_direct_abstract_standard_T1.0": {
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "belief_accuracy_std": 0.0,
+    "world_accuracy_std": 0.0,
+    "total_responses": 2500,
+    "belief_correct_count": 0,
+    "world_correct_count": 0
+  }
+}

@@ -29,7 +29,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # Residual-stream CMA at the bf vs end token positions for C1 (abstract_belief)
 # and C2 (abstract_photo). Tests whether belief-veracity / state-tracking signal
 # localizes spatially. 48 layers patched per cell, 5000 permutations, seed=1
-# matches the canonical 7-condition end-position seed in CLAUDE.md.
+# matches the canonical 7-condition end-position seed.
 #
 # Layout: 24 jobs = 2 patch positions x 2 conditions x 2 directions x 3 templates
 #   [0-2]   bf  C1 ABA [ft, lb, hs]
@@ -84,7 +84,7 @@ fi
 
 echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE position=$PATCH_LABEL seed=1 prompt_num=150 activation=resid_post"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $RULE \

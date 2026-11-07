@@ -1,0 +1,487 @@
+run,k,k_is_max,eval_variant,metric,value
+matched_sys / no_prefill,0,False,false_belief,flip_rate,0.0
+matched_sys / no_prefill,0,False,false_belief,mean_p_correct,0.6666704188476918
+matched_sys / no_prefill,0,False,false_belief,flip_score,0.0143856992843222
+matched_sys / no_prefill,0,False,true_belief,flip_rate,0.0416666666666666
+matched_sys / no_prefill,0,False,true_belief,mean_p_correct,0.6184943830109356
+matched_sys / no_prefill,0,False,true_belief,flip_score,0.0240859638405582
+matched_sys / no_prefill,0,False,false_photo,flip_rate,0.0
+matched_sys / no_prefill,0,False,false_photo,mean_p_correct,0.7196408112843832
+matched_sys / no_prefill,0,False,false_photo,flip_score,0.0104166666776652
+matched_sys / no_prefill,0,False,true_photo,flip_rate,0.0
+matched_sys / no_prefill,0,False,true_photo,mean_p_correct,0.6673538275063038
+matched_sys / no_prefill,0,False,true_photo,flip_score,0.0104166951866928
+matched_sys / no_prefill,0,False,basic_ab,flip_rate,0.0625
+matched_sys / no_prefill,0,False,basic_ab,mean_p_correct,0.6946507294972738
+matched_sys / no_prefill,0,False,basic_ab,flip_score,0.0516468683720246
+matched_sys / no_prefill,0,False,basic_ba,flip_rate,0.0416666666666666
+matched_sys / no_prefill,0,False,basic_ba,mean_p_correct,0.7592228737970194
+matched_sys / no_prefill,0,False,basic_ba,flip_score,0.0266507489896601
+matched_sys / no_prefill,11,False,false_belief,flip_rate,0.875
+matched_sys / no_prefill,11,False,false_belief,mean_p_correct,0.1249819367068656
+matched_sys / no_prefill,11,False,false_belief,flip_score,0.8625892856055198
+matched_sys / no_prefill,11,False,true_belief,flip_rate,0.0
+matched_sys / no_prefill,11,False,true_belief,mean_p_correct,0.6167903460827802
+matched_sys / no_prefill,11,False,true_belief,flip_score,0.0167599905779992
+matched_sys / no_prefill,11,False,false_photo,flip_rate,0.0208333333333333
+matched_sys / no_prefill,11,False,false_photo,mean_p_correct,0.6625322898228964
+matched_sys / no_prefill,11,False,false_photo,flip_score,0.0943364642316631
+matched_sys / no_prefill,11,False,true_photo,flip_rate,0.0
+matched_sys / no_prefill,11,False,true_photo,mean_p_correct,0.6684321289261183
+matched_sys / no_prefill,11,False,true_photo,flip_score,0.0104221426520982
+matched_sys / no_prefill,11,False,basic_ab,flip_rate,0.0208333333333333
+matched_sys / no_prefill,11,False,basic_ab,mean_p_correct,0.802758534749349
+matched_sys / no_prefill,11,False,basic_ab,flip_score,0.0105741594675036
+matched_sys / no_prefill,11,False,basic_ba,flip_rate,0.0208333333333333
+matched_sys / no_prefill,11,False,basic_ba,mean_p_correct,0.8299660384654999
+matched_sys / no_prefill,11,False,basic_ba,flip_score,0.0104268887576166
+matched_sys / no_prefill,21,False,false_belief,flip_rate,0.7916666666666666
+matched_sys / no_prefill,21,False,false_belief,mean_p_correct,0.238883397661547
+matched_sys / no_prefill,21,False,false_belief,flip_score,0.7417592032573136
+matched_sys / no_prefill,21,False,true_belief,flip_rate,0.0416666666666666
+matched_sys / no_prefill,21,False,true_belief,mean_p_correct,0.5248012578910372
+matched_sys / no_prefill,21,False,true_belief,flip_score,0.0886559093179739
+matched_sys / no_prefill,21,False,false_photo,flip_rate,0.1041666666666666
+matched_sys / no_prefill,21,False,false_photo,mean_p_correct,0.6445960621640552
+matched_sys / no_prefill,21,False,false_photo,flip_score,0.1561994059274169
+matched_sys / no_prefill,21,False,true_photo,flip_rate,0.0
+matched_sys / no_prefill,21,False,true_photo,mean_p_correct,0.6692566474278768
+matched_sys / no_prefill,21,False,true_photo,flip_score,0.010944557504811
+matched_sys / no_prefill,21,False,basic_ab,flip_rate,0.0
+matched_sys / no_prefill,21,False,basic_ab,mean_p_correct,0.746802012125651
+matched_sys / no_prefill,21,False,basic_ab,flip_score,0.0112046377660405
+matched_sys / no_prefill,21,False,basic_ba,flip_rate,0.0208333333333333
+matched_sys / no_prefill,21,False,basic_ba,mean_p_correct,0.7688084927697977
+matched_sys / no_prefill,21,False,basic_ba,flip_score,0.0115779473894087
+matched_sys / no_prefill,32,True,false_belief,flip_rate,0.7083333333333334
+matched_sys / no_prefill,32,True,false_belief,mean_p_correct,0.2290315948128439
+matched_sys / no_prefill,32,True,false_belief,flip_score,0.7022008027232589
+matched_sys / no_prefill,32,True,true_belief,flip_rate,0.1875
+matched_sys / no_prefill,32,True,true_belief,mean_p_correct,0.3654861369092638
+matched_sys / no_prefill,32,True,true_belief,flip_score,0.1676447583066442
+matched_sys / no_prefill,32,True,false_photo,flip_rate,0.3958333333333333
+matched_sys / no_prefill,32,True,false_photo,mean_p_correct,0.4575934219792564
+matched_sys / no_prefill,32,True,false_photo,flip_score,0.4482410559479627
+matched_sys / no_prefill,32,True,true_photo,flip_rate,0.0
+matched_sys / no_prefill,32,True,true_photo,mean_p_correct,0.6396315743525823
+matched_sys / no_prefill,32,True,true_photo,flip_score,0.0361383148588442
+matched_sys / no_prefill,32,True,basic_ab,flip_rate,0.0208333333333333
+matched_sys / no_prefill,32,True,basic_ab,mean_p_correct,0.6585308710734049
+matched_sys / no_prefill,32,True,basic_ab,flip_score,0.0384606246468539
+matched_sys / no_prefill,32,True,basic_ba,flip_rate,0.0625
+matched_sys / no_prefill,32,True,basic_ba,mean_p_correct,0.6932494553426901
+matched_sys / no_prefill,32,True,basic_ba,flip_score,0.0328209812184783
+matched_sys / prefill,0,False,false_belief,flip_rate,0.0
+matched_sys / prefill,0,False,false_belief,mean_p_correct,0.985595703125
+matched_sys / prefill,0,False,false_belief,flip_score,0.0104183234041499
+matched_sys / prefill,0,False,true_belief,flip_rate,0.0833333333333333
+matched_sys / prefill,0,False,true_belief,mean_p_correct,0.916209707657496
+matched_sys / prefill,0,False,true_belief,flip_score,0.0924776563561801
+matched_sys / prefill,0,False,false_photo,flip_rate,0.0
+matched_sys / prefill,0,False,false_photo,mean_p_correct,0.9837239583333334
+matched_sys / prefill,0,False,false_photo,flip_score,0.0104166666899139
+matched_sys / prefill,0,False,true_photo,flip_rate,0.0
+matched_sys / prefill,0,False,true_photo,mean_p_correct,0.9971516927083334
+matched_sys / prefill,0,False,true_photo,flip_score,0.0104168842819312
+matched_sys / prefill,0,False,basic_ab,flip_rate,0.1041666666666666
+matched_sys / prefill,0,False,basic_ab,mean_p_correct,0.8839472532272339
+matched_sys / prefill,0,False,basic_ab,flip_score,0.1176754328705832
+matched_sys / prefill,0,False,basic_ba,flip_rate,0.0416666666666666
+matched_sys / prefill,0,False,basic_ba,mean_p_correct,0.9517707824707032
+matched_sys / prefill,0,False,basic_ba,flip_score,0.0351133277291064
+matched_sys / prefill,11,False,false_belief,flip_rate,0.3125
+matched_sys / prefill,11,False,false_belief,mean_p_correct,0.5328089999820804
+matched_sys / prefill,11,False,false_belief,flip_score,0.4195673923695424
+matched_sys / prefill,11,False,true_belief,flip_rate,0.0833333333333333
+matched_sys / prefill,11,False,true_belief,mean_p_correct,0.8976408640543619
+matched_sys / prefill,11,False,true_belief,flip_score,0.1034597409772037
+matched_sys / prefill,11,False,false_photo,flip_rate,0.125
+matched_sys / prefill,11,False,false_photo,mean_p_correct,0.7885023752848307
+matched_sys / prefill,11,False,false_photo,flip_score,0.1428748162875219
+matched_sys / prefill,11,False,true_photo,flip_rate,0.0208333333333333
+matched_sys / prefill,11,False,true_photo,mean_p_correct,0.9731038411458334
+matched_sys / prefill,11,False,true_photo,flip_score,0.0135851305703647
+matched_sys / prefill,11,False,basic_ab,flip_rate,0.0833333333333333
+matched_sys / prefill,11,False,basic_ab,mean_p_correct,0.8335896333058676
+matched_sys / prefill,11,False,basic_ab,flip_score,0.0764145095904937
+matched_sys / prefill,11,False,basic_ba,flip_rate,0.0416666666666666
+matched_sys / prefill,11,False,basic_ba,mean_p_correct,0.8578955332438151
+matched_sys / prefill,11,False,basic_ba,flip_score,0.0556952890135997
+matched_sys / prefill,21,False,false_belief,flip_rate,0.2916666666666667
+matched_sys / prefill,21,False,false_belief,mean_p_correct,0.6460229339997264
+matched_sys / prefill,21,False,false_belief,flip_score,0.3367607232982905
+matched_sys / prefill,21,False,true_belief,flip_rate,0.1666666666666666
+matched_sys / prefill,21,False,true_belief,mean_p_correct,0.7789935966332754
+matched_sys / prefill,21,False,true_belief,flip_score,0.2228880105746888
+matched_sys / prefill,21,False,false_photo,flip_rate,0.1041666666666666
+matched_sys / prefill,21,False,false_photo,mean_p_correct,0.6955791075403491
+matched_sys / prefill,21,False,false_photo,flip_score,0.2059542406391138
+matched_sys / prefill,21,False,true_photo,flip_rate,0.0208333333333333
+matched_sys / prefill,21,False,true_photo,mean_p_correct,0.9493408203125
+matched_sys / prefill,21,False,true_photo,flip_score,0.034550173006265
+matched_sys / prefill,21,False,basic_ab,flip_rate,0.0833333333333333
+matched_sys / prefill,21,False,basic_ab,mean_p_correct,0.7440454959869385
+matched_sys / prefill,21,False,basic_ab,flip_score,0.1387166559373497
+matched_sys / prefill,21,False,basic_ba,flip_rate,0.0625
+matched_sys / prefill,21,False,basic_ba,mean_p_correct,0.7685956632097563
+matched_sys / prefill,21,False,basic_ba,flip_score,0.0972350557655417
+matched_sys / prefill,32,True,false_belief,flip_rate,0.3333333333333333
+matched_sys / prefill,32,True,false_belief,mean_p_correct,0.427506858461129
+matched_sys / prefill,32,True,false_belief,flip_score,0.4870867133346071
+matched_sys / prefill,32,True,true_belief,flip_rate,0.25
+matched_sys / prefill,32,True,true_belief,mean_p_correct,0.802355964978536
+matched_sys / prefill,32,True,true_belief,flip_score,0.197223982084546
+matched_sys / prefill,32,True,false_photo,flip_rate,0.2083333333333333
+matched_sys / prefill,32,True,false_photo,mean_p_correct,0.3861507313635665
+matched_sys / prefill,32,True,false_photo,flip_score,0.4468456194849374
+matched_sys / prefill,32,True,true_photo,flip_rate,0.0416666666666666
+matched_sys / prefill,32,True,true_photo,mean_p_correct,0.7439170281092325
+matched_sys / prefill,32,True,true_photo,flip_score,0.0802162599853444
+matched_sys / prefill,32,True,basic_ab,flip_rate,0.0625
+matched_sys / prefill,32,True,basic_ab,mean_p_correct,0.5970301652948061
+matched_sys / prefill,32,True,basic_ab,flip_score,0.1877042912324462
+matched_sys / prefill,32,True,basic_ba,flip_rate,0.0416666666666666
+matched_sys / prefill,32,True,basic_ba,mean_p_correct,0.6794646616908722
+matched_sys / prefill,32,True,basic_ba,flip_score,0.111775349249571
+neutral_sys / prefill,0,False,false_belief,flip_rate,0.2083333333333333
+neutral_sys / prefill,0,False,false_belief,mean_p_correct,0.7263079608482386
+neutral_sys / prefill,0,False,false_belief,flip_score,0.2558558778842755
+neutral_sys / prefill,0,False,true_belief,flip_rate,0.0208333333333333
+neutral_sys / prefill,0,False,true_belief,mean_p_correct,0.9782816569010416
+neutral_sys / prefill,0,False,true_belief,flip_score,0.0288931039439253
+neutral_sys / prefill,0,False,false_photo,flip_rate,0.0
+neutral_sys / prefill,0,False,false_photo,mean_p_correct,0.974151611328125
+neutral_sys / prefill,0,False,false_photo,flip_score,0.0104166727654542
+neutral_sys / prefill,0,False,true_photo,flip_rate,0.0
+neutral_sys / prefill,0,False,true_photo,mean_p_correct,0.9945475260416666
+neutral_sys / prefill,0,False,true_photo,flip_score,0.0104167121120556
+neutral_sys / prefill,0,False,basic_ab,flip_rate,0.0208333333333333
+neutral_sys / prefill,0,False,basic_ab,mean_p_correct,0.9884440104166666
+neutral_sys / prefill,0,False,basic_ab,flip_score,0.0133941678815096
+neutral_sys / prefill,0,False,basic_ba,flip_rate,0.0208333333333333
+neutral_sys / prefill,0,False,basic_ba,mean_p_correct,0.9525146484375
+neutral_sys / prefill,0,False,basic_ba,flip_score,0.0106623214567274
+neutral_sys / prefill,11,False,false_belief,flip_rate,0.625
+neutral_sys / prefill,11,False,false_belief,mean_p_correct,0.3626289382518735
+neutral_sys / prefill,11,False,false_belief,flip_score,0.6360722363323322
+neutral_sys / prefill,11,False,true_belief,flip_rate,0.0625
+neutral_sys / prefill,11,False,true_belief,mean_p_correct,0.9094498952229818
+neutral_sys / prefill,11,False,true_belief,flip_score,0.0809633082171553
+neutral_sys / prefill,11,False,false_photo,flip_rate,0.1666666666666666
+neutral_sys / prefill,11,False,false_photo,mean_p_correct,0.7755724589029948
+neutral_sys / prefill,11,False,false_photo,flip_score,0.1618804172816247
+neutral_sys / prefill,11,False,true_photo,flip_rate,0.0
+neutral_sys / prefill,11,False,true_photo,mean_p_correct,0.9518636067708334
+neutral_sys / prefill,11,False,true_photo,flip_score,0.0108071903195718
+neutral_sys / prefill,11,False,basic_ab,flip_rate,0.0833333333333333
+neutral_sys / prefill,11,False,basic_ab,mean_p_correct,0.8483854929606119
+neutral_sys / prefill,11,False,basic_ab,flip_score,0.0570452140344384
+neutral_sys / prefill,11,False,basic_ba,flip_rate,0.0
+neutral_sys / prefill,11,False,basic_ba,mean_p_correct,0.8608525594075521
+neutral_sys / prefill,11,False,basic_ba,flip_score,0.0418400645636266
+neutral_sys / prefill,21,False,false_belief,flip_rate,0.6666666666666666
+neutral_sys / prefill,21,False,false_belief,mean_p_correct,0.3498205900201962
+neutral_sys / prefill,21,False,false_belief,flip_score,0.6428671335065935
+neutral_sys / prefill,21,False,true_belief,flip_rate,0.1666666666666666
+neutral_sys / prefill,21,False,true_belief,mean_p_correct,0.8063238660494486
+neutral_sys / prefill,21,False,true_belief,flip_score,0.1805135539725261
+neutral_sys / prefill,21,False,false_photo,flip_rate,0.1458333333333333
+neutral_sys / prefill,21,False,false_photo,mean_p_correct,0.6677781815330187
+neutral_sys / prefill,21,False,false_photo,flip_score,0.2430219406851382
+neutral_sys / prefill,21,False,true_photo,flip_rate,0.0416666666666666
+neutral_sys / prefill,21,False,true_photo,mean_p_correct,0.9148610432942708
+neutral_sys / prefill,21,False,true_photo,flip_score,0.0354175570376052
+neutral_sys / prefill,21,False,basic_ab,flip_rate,0.0625
+neutral_sys / prefill,21,False,basic_ab,mean_p_correct,0.7545594374338785
+neutral_sys / prefill,21,False,basic_ab,flip_score,0.1180434001193886
+neutral_sys / prefill,21,False,basic_ba,flip_rate,0.0833333333333333
+neutral_sys / prefill,21,False,basic_ba,mean_p_correct,0.784447987874349
+neutral_sys / prefill,21,False,basic_ba,flip_score,0.0878781773946842
+neutral_sys / prefill,32,True,false_belief,flip_rate,0.5625
+neutral_sys / prefill,32,True,false_belief,mean_p_correct,0.3158507434248652
+neutral_sys / prefill,32,True,false_belief,flip_score,0.6149471252502007
+neutral_sys / prefill,32,True,true_belief,flip_rate,0.2291666666666666
+neutral_sys / prefill,32,True,true_belief,mean_p_correct,0.7994287014007568
+neutral_sys / prefill,32,True,true_belief,flip_score,0.1890110840649619
+neutral_sys / prefill,32,True,false_photo,flip_rate,0.2708333333333333
+neutral_sys / prefill,32,True,false_photo,mean_p_correct,0.357379973939184
+neutral_sys / prefill,32,True,false_photo,flip_score,0.5031329929692524
+neutral_sys / prefill,32,True,true_photo,flip_rate,0.0833333333333333
+neutral_sys / prefill,32,True,true_photo,mean_p_correct,0.7312050263086954
+neutral_sys / prefill,32,True,true_photo,flip_score,0.0811925684367711
+neutral_sys / prefill,32,True,basic_ab,flip_rate,0.0416666666666666
+neutral_sys / prefill,32,True,basic_ab,mean_p_correct,0.6237867226203283
+neutral_sys / prefill,32,True,basic_ab,flip_score,0.1648307025344099
+neutral_sys / prefill,32,True,basic_ba,flip_rate,0.0
+neutral_sys / prefill,32,True,basic_ba,mean_p_correct,0.6838261932134628
+neutral_sys / prefill,32,True,basic_ba,flip_score,0.0964962174667882
+photo_heads / sys+prefill,0,False,false_belief,flip_rate,0.0
+photo_heads / sys+prefill,0,False,false_belief,mean_p_correct,0.985595703125
+photo_heads / sys+prefill,0,False,false_belief,flip_score,0.0104183234041499
+photo_heads / sys+prefill,0,False,true_belief,flip_rate,0.0833333333333333
+photo_heads / sys+prefill,0,False,true_belief,mean_p_correct,0.916209707657496
+photo_heads / sys+prefill,0,False,true_belief,flip_score,0.0924776563561801
+photo_heads / sys+prefill,0,False,false_photo,flip_rate,0.0
+photo_heads / sys+prefill,0,False,false_photo,mean_p_correct,0.9837239583333334
+photo_heads / sys+prefill,0,False,false_photo,flip_score,0.0104166666899139
+photo_heads / sys+prefill,0,False,true_photo,flip_rate,0.0
+photo_heads / sys+prefill,0,False,true_photo,mean_p_correct,0.9971516927083334
+photo_heads / sys+prefill,0,False,true_photo,flip_score,0.0104168842819312
+photo_heads / sys+prefill,0,False,basic_ab,flip_rate,0.1041666666666666
+photo_heads / sys+prefill,0,False,basic_ab,mean_p_correct,0.8839472532272339
+photo_heads / sys+prefill,0,False,basic_ab,flip_score,0.1176754328705832
+photo_heads / sys+prefill,0,False,basic_ba,flip_rate,0.0416666666666666
+photo_heads / sys+prefill,0,False,basic_ba,mean_p_correct,0.9517707824707032
+photo_heads / sys+prefill,0,False,basic_ba,flip_score,0.0351133277291064
+photo_heads / sys+prefill,11,False,false_belief,flip_rate,0.1041666666666666
+photo_heads / sys+prefill,11,False,false_belief,mean_p_correct,0.79983189702034
+photo_heads / sys+prefill,11,False,false_belief,flip_score,0.1432772639695982
+photo_heads / sys+prefill,11,False,true_belief,flip_rate,0.125
+photo_heads / sys+prefill,11,False,true_belief,mean_p_correct,0.8765389124552408
+photo_heads / sys+prefill,11,False,true_belief,flip_score,0.1292763067778026
+photo_heads / sys+prefill,11,False,false_photo,flip_rate,0.0416666666666666
+photo_heads / sys+prefill,11,False,false_photo,mean_p_correct,0.8568992614746094
+photo_heads / sys+prefill,11,False,false_photo,flip_score,0.0930870238068776
+photo_heads / sys+prefill,11,False,true_photo,flip_rate,0.0
+photo_heads / sys+prefill,11,False,true_photo,mean_p_correct,0.9811197916666666
+photo_heads / sys+prefill,11,False,true_photo,flip_score,0.0196954407445398
+photo_heads / sys+prefill,11,False,basic_ab,flip_rate,0.125
+photo_heads / sys+prefill,11,False,basic_ab,mean_p_correct,0.7995659510294596
+photo_heads / sys+prefill,11,False,basic_ab,flip_score,0.1397513225738049
+photo_heads / sys+prefill,11,False,basic_ba,flip_rate,0.0833333333333333
+photo_heads / sys+prefill,11,False,basic_ba,mean_p_correct,0.8064170579115549
+photo_heads / sys+prefill,11,False,basic_ba,flip_score,0.1138185189027676
+photo_heads / sys+prefill,21,False,false_belief,flip_rate,0.1875
+photo_heads / sys+prefill,21,False,false_belief,mean_p_correct,0.6130445193102787
+photo_heads / sys+prefill,21,False,false_belief,flip_score,0.2932898378516916
+photo_heads / sys+prefill,21,False,true_belief,flip_rate,0.3541666666666667
+photo_heads / sys+prefill,21,False,true_belief,mean_p_correct,0.69497449696064
+photo_heads / sys+prefill,21,False,true_belief,flip_score,0.3047432718746712
+photo_heads / sys+prefill,21,False,false_photo,flip_rate,0.125
+photo_heads / sys+prefill,21,False,false_photo,mean_p_correct,0.5875464956407086
+photo_heads / sys+prefill,21,False,false_photo,flip_score,0.2392248344604054
+photo_heads / sys+prefill,21,False,true_photo,flip_rate,0.0208333333333333
+photo_heads / sys+prefill,21,False,true_photo,mean_p_correct,0.8435890153050423
+photo_heads / sys+prefill,21,False,true_photo,flip_score,0.0522438115193115
+photo_heads / sys+prefill,21,False,basic_ab,flip_rate,0.0
+photo_heads / sys+prefill,21,False,basic_ab,mean_p_correct,0.6673086633284887
+photo_heads / sys+prefill,21,False,basic_ab,flip_score,0.1265110454999825
+photo_heads / sys+prefill,21,False,basic_ba,flip_rate,0.0
+photo_heads / sys+prefill,21,False,basic_ba,mean_p_correct,0.6874899692484178
+photo_heads / sys+prefill,21,False,basic_ba,flip_score,0.1241943248605708
+photo_heads / sys+prefill,26,True,false_belief,flip_rate,0.1041666666666666
+photo_heads / sys+prefill,26,True,false_belief,mean_p_correct,0.5448479359887036
+photo_heads / sys+prefill,26,True,false_belief,flip_score,0.2749345699733172
+photo_heads / sys+prefill,26,True,true_belief,flip_rate,0.375
+photo_heads / sys+prefill,26,True,true_belief,mean_p_correct,0.6067478520174822
+photo_heads / sys+prefill,26,True,true_belief,flip_score,0.3888065752603677
+photo_heads / sys+prefill,26,True,false_photo,flip_rate,0.125
+photo_heads / sys+prefill,26,True,false_photo,mean_p_correct,0.5886233138941558
+photo_heads / sys+prefill,26,True,false_photo,flip_score,0.2674740339984875
+photo_heads / sys+prefill,26,True,true_photo,flip_rate,0.0833333333333333
+photo_heads / sys+prefill,26,True,true_photo,mean_p_correct,0.7395885319759449
+photo_heads / sys+prefill,26,True,true_photo,flip_score,0.1159132037629614
+photo_heads / sys+prefill,26,True,basic_ab,flip_rate,0.0416666666666666
+photo_heads / sys+prefill,26,True,basic_ab,mean_p_correct,0.6286520566791296
+photo_heads / sys+prefill,26,True,basic_ab,flip_score,0.1932177828675675
+photo_heads / sys+prefill,26,True,basic_ba,flip_rate,0.0
+photo_heads / sys+prefill,26,True,basic_ba,mean_p_correct,0.6691020987927914
+photo_heads / sys+prefill,26,True,basic_ba,flip_score,0.1232544313041775
+decomp belief_only,0,False,false_belief,flip_rate,0.0
+decomp belief_only,0,False,false_belief,mean_p_correct,0.985595703125
+decomp belief_only,0,False,false_belief,flip_score,0.0104183234041499
+decomp belief_only,0,False,true_belief,flip_rate,0.0833333333333333
+decomp belief_only,0,False,true_belief,mean_p_correct,0.916209707657496
+decomp belief_only,0,False,true_belief,flip_score,0.0924776563561801
+decomp belief_only,0,False,false_photo,flip_rate,0.0
+decomp belief_only,0,False,false_photo,mean_p_correct,0.9837239583333334
+decomp belief_only,0,False,false_photo,flip_score,0.0104166666899139
+decomp belief_only,0,False,true_photo,flip_rate,0.0
+decomp belief_only,0,False,true_photo,mean_p_correct,0.9971516927083334
+decomp belief_only,0,False,true_photo,flip_score,0.0104168842819312
+decomp belief_only,0,False,basic_ab,flip_rate,0.1041666666666666
+decomp belief_only,0,False,basic_ab,mean_p_correct,0.8839472532272339
+decomp belief_only,0,False,basic_ab,flip_score,0.1176754328705832
+decomp belief_only,0,False,basic_ba,flip_rate,0.0416666666666666
+decomp belief_only,0,False,basic_ba,mean_p_correct,0.9517707824707032
+decomp belief_only,0,False,basic_ba,flip_score,0.0351133277291064
+decomp belief_only,11,False,false_belief,flip_rate,0.0
+decomp belief_only,11,False,false_belief,mean_p_correct,0.9833170572916666
+decomp belief_only,11,False,false_belief,flip_score,0.0135102102760003
+decomp belief_only,11,False,true_belief,flip_rate,0.25
+decomp belief_only,11,False,true_belief,mean_p_correct,0.7471759462884316
+decomp belief_only,11,False,true_belief,flip_score,0.262477197002892
+decomp belief_only,11,False,false_photo,flip_rate,0.0
+decomp belief_only,11,False,false_photo,mean_p_correct,0.9888509114583334
+decomp belief_only,11,False,false_photo,flip_score,0.0104166692900335
+decomp belief_only,11,False,true_photo,flip_rate,0.0
+decomp belief_only,11,False,true_photo,mean_p_correct,0.996826171875
+decomp belief_only,11,False,true_photo,flip_score,0.010416768459138
+decomp belief_only,11,False,basic_ab,flip_rate,0.125
+decomp belief_only,11,False,basic_ab,mean_p_correct,0.8461915254592896
+decomp belief_only,11,False,basic_ab,flip_score,0.1373902431827209
+decomp belief_only,11,False,basic_ba,flip_rate,0.0416666666666666
+decomp belief_only,11,False,basic_ba,mean_p_correct,0.9181493123372396
+decomp belief_only,11,False,basic_ba,flip_score,0.0348791512013688
+decomp belief_only,13,True,false_belief,flip_rate,0.0
+decomp belief_only,13,True,false_belief,mean_p_correct,0.9862467447916666
+decomp belief_only,13,True,false_belief,flip_score,0.0150581044199908
+decomp belief_only,13,True,true_belief,flip_rate,0.2291666666666666
+decomp belief_only,13,True,true_belief,mean_p_correct,0.7654667284029225
+decomp belief_only,13,True,true_belief,flip_score,0.2425026329139554
+decomp belief_only,13,True,false_photo,flip_rate,0.0
+decomp belief_only,13,True,false_photo,mean_p_correct,0.9883626302083334
+decomp belief_only,13,True,false_photo,flip_score,0.0104166783453482
+decomp belief_only,13,True,true_photo,flip_rate,0.0
+decomp belief_only,13,True,true_photo,mean_p_correct,0.9966634114583334
+decomp belief_only,13,True,true_photo,flip_score,0.0104173367224284
+decomp belief_only,13,True,basic_ab,flip_rate,0.1458333333333333
+decomp belief_only,13,True,basic_ab,mean_p_correct,0.8354252179463705
+decomp belief_only,13,True,basic_ab,flip_score,0.1449854859923628
+decomp belief_only,13,True,basic_ba,flip_rate,0.0416666666666666
+decomp belief_only,13,True,basic_ba,mean_p_correct,0.9131139119466146
+decomp belief_only,13,True,basic_ba,flip_score,0.0365821874881301
+decomp photo_only,0,False,false_belief,flip_rate,0.0
+decomp photo_only,0,False,false_belief,mean_p_correct,0.9878743489583334
+decomp photo_only,0,False,false_belief,flip_score,0.0104175703592064
+decomp photo_only,0,False,true_belief,flip_rate,0.1041666666666666
+decomp photo_only,0,False,true_belief,mean_p_correct,0.919445405403773
+decomp photo_only,0,False,true_belief,flip_score,0.0894693496918144
+decomp photo_only,0,False,false_photo,flip_rate,0.0
+decomp photo_only,0,False,false_photo,mean_p_correct,0.9833170572916666
+decomp photo_only,0,False,false_photo,flip_score,0.0104166666885794
+decomp photo_only,0,False,true_photo,flip_rate,0.0
+decomp photo_only,0,False,true_photo,mean_p_correct,0.9972330729166666
+decomp photo_only,0,False,true_photo,flip_score,0.0104170227571292
+decomp photo_only,0,False,basic_ab,flip_rate,0.0833333333333333
+decomp photo_only,0,False,basic_ab,mean_p_correct,0.887434591849645
+decomp photo_only,0,False,basic_ab,flip_score,0.1146490099204769
+decomp photo_only,0,False,basic_ba,flip_rate,0.0416666666666666
+decomp photo_only,0,False,basic_ba,mean_p_correct,0.954259236653646
+decomp photo_only,0,False,basic_ba,flip_score,0.0341586196453629
+decomp photo_only,7,True,false_belief,flip_rate,0.0
+decomp photo_only,7,True,false_belief,mean_p_correct,0.9751383463541666
+decomp photo_only,7,True,false_belief,flip_score,0.0104168274669538
+decomp photo_only,7,True,true_belief,flip_rate,0.2916666666666667
+decomp photo_only,7,True,true_belief,mean_p_correct,0.7338258683060607
+decomp photo_only,7,True,true_belief,flip_score,0.2748302955882295
+decomp photo_only,7,True,false_photo,flip_rate,0.0
+decomp photo_only,7,True,false_photo,mean_p_correct,0.98193359375
+decomp photo_only,7,True,false_photo,flip_score,0.010416666698731
+decomp photo_only,7,True,true_photo,flip_rate,0.0
+decomp photo_only,7,True,true_photo,mean_p_correct,0.996337890625
+decomp photo_only,7,True,true_photo,flip_score,0.0104182802989694
+decomp photo_only,7,True,basic_ab,flip_rate,0.25
+decomp photo_only,7,True,basic_ab,mean_p_correct,0.7863443220655123
+decomp photo_only,7,True,basic_ab,flip_score,0.2100790728706183
+decomp photo_only,7,True,basic_ba,flip_rate,0.2083333333333333
+decomp photo_only,7,True,basic_ba,mean_p_correct,0.799180693924427
+decomp photo_only,7,True,basic_ba,flip_score,0.1828763799743628
+decomp intersection (B rank),0,False,false_belief,flip_rate,0.0
+decomp intersection (B rank),0,False,false_belief,mean_p_correct,0.9878743489583334
+decomp intersection (B rank),0,False,false_belief,flip_score,0.0104175703592064
+decomp intersection (B rank),0,False,true_belief,flip_rate,0.1041666666666666
+decomp intersection (B rank),0,False,true_belief,mean_p_correct,0.919445405403773
+decomp intersection (B rank),0,False,true_belief,flip_score,0.0894693496918144
+decomp intersection (B rank),0,False,false_photo,flip_rate,0.0
+decomp intersection (B rank),0,False,false_photo,mean_p_correct,0.9833170572916666
+decomp intersection (B rank),0,False,false_photo,flip_score,0.0104166666885794
+decomp intersection (B rank),0,False,true_photo,flip_rate,0.0
+decomp intersection (B rank),0,False,true_photo,mean_p_correct,0.9972330729166666
+decomp intersection (B rank),0,False,true_photo,flip_score,0.0104170227571292
+decomp intersection (B rank),0,False,basic_ab,flip_rate,0.0833333333333333
+decomp intersection (B rank),0,False,basic_ab,mean_p_correct,0.887434591849645
+decomp intersection (B rank),0,False,basic_ab,flip_score,0.1146490099204769
+decomp intersection (B rank),0,False,basic_ba,flip_rate,0.0416666666666666
+decomp intersection (B rank),0,False,basic_ba,mean_p_correct,0.954259236653646
+decomp intersection (B rank),0,False,basic_ba,flip_score,0.0341586196453629
+decomp intersection (B rank),11,False,false_belief,flip_rate,0.3333333333333333
+decomp intersection (B rank),11,False,false_belief,mean_p_correct,0.4739290119274907
+decomp intersection (B rank),11,False,false_belief,flip_score,0.4588086909414695
+decomp intersection (B rank),11,False,true_belief,flip_rate,0.1041666666666666
+decomp intersection (B rank),11,False,true_belief,mean_p_correct,0.8679835001627604
+decomp intersection (B rank),11,False,true_belief,flip_score,0.1245495911218948
+decomp intersection (B rank),11,False,false_photo,flip_rate,0.1666666666666666
+decomp intersection (B rank),11,False,false_photo,mean_p_correct,0.7395846048990885
+decomp intersection (B rank),11,False,false_photo,flip_score,0.1780411607986581
+decomp intersection (B rank),11,False,true_photo,flip_rate,0.0208333333333333
+decomp intersection (B rank),11,False,true_photo,mean_p_correct,0.9455973307291666
+decomp intersection (B rank),11,False,true_photo,flip_score,0.0217856414822668
+decomp intersection (B rank),11,False,basic_ab,flip_rate,0.0625
+decomp intersection (B rank),11,False,basic_ab,mean_p_correct,0.839038610458374
+decomp intersection (B rank),11,False,basic_ab,flip_score,0.0815573169750164
+decomp intersection (B rank),11,False,basic_ba,flip_rate,0.0416666666666666
+decomp intersection (B rank),11,False,basic_ba,mean_p_correct,0.854809045791626
+decomp intersection (B rank),11,False,basic_ba,flip_score,0.0703053153448241
+decomp intersection (B rank),19,True,false_belief,flip_rate,0.2708333333333333
+decomp intersection (B rank),19,True,false_belief,mean_p_correct,0.5392405560123734
+decomp intersection (B rank),19,True,false_belief,flip_score,0.4020064790794924
+decomp intersection (B rank),19,True,true_belief,flip_rate,0.1875
+decomp intersection (B rank),19,True,true_belief,mean_p_correct,0.8382851680119833
+decomp intersection (B rank),19,True,true_belief,flip_score,0.1643858527939097
+decomp intersection (B rank),19,True,false_photo,flip_rate,0.0625
+decomp intersection (B rank),19,True,false_photo,mean_p_correct,0.6257642841082998
+decomp intersection (B rank),19,True,false_photo,flip_score,0.2197232271429165
+decomp intersection (B rank),19,True,true_photo,flip_rate,0.0625
+decomp intersection (B rank),19,True,true_photo,mean_p_correct,0.8795477549235026
+decomp intersection (B rank),19,True,true_photo,flip_score,0.0397748360788271
+decomp intersection (B rank),19,True,basic_ab,flip_rate,0.0625
+decomp intersection (B rank),19,True,basic_ab,mean_p_correct,0.7347723046938578
+decomp intersection (B rank),19,True,basic_ab,flip_score,0.1192166476133977
+decomp intersection (B rank),19,True,basic_ba,flip_rate,0.0625
+decomp intersection (B rank),19,True,basic_ba,mean_p_correct,0.760973739127318
+decomp intersection (B rank),19,True,basic_ba,flip_score,0.0789464375153446
+decomp intersection (P rank),0,False,false_belief,flip_rate,0.0
+decomp intersection (P rank),0,False,false_belief,mean_p_correct,0.985595703125
+decomp intersection (P rank),0,False,false_belief,flip_score,0.0104183234041499
+decomp intersection (P rank),0,False,true_belief,flip_rate,0.0833333333333333
+decomp intersection (P rank),0,False,true_belief,mean_p_correct,0.916209707657496
+decomp intersection (P rank),0,False,true_belief,flip_score,0.0924776563561801
+decomp intersection (P rank),0,False,false_photo,flip_rate,0.0
+decomp intersection (P rank),0,False,false_photo,mean_p_correct,0.9837239583333334
+decomp intersection (P rank),0,False,false_photo,flip_score,0.0104166666899139
+decomp intersection (P rank),0,False,true_photo,flip_rate,0.0
+decomp intersection (P rank),0,False,true_photo,mean_p_correct,0.9971516927083334
+decomp intersection (P rank),0,False,true_photo,flip_score,0.0104168842819312
+decomp intersection (P rank),0,False,basic_ab,flip_rate,0.1041666666666666
+decomp intersection (P rank),0,False,basic_ab,mean_p_correct,0.8839472532272339
+decomp intersection (P rank),0,False,basic_ab,flip_score,0.1176754328705832
+decomp intersection (P rank),0,False,basic_ba,flip_rate,0.0416666666666666
+decomp intersection (P rank),0,False,basic_ba,mean_p_correct,0.9517707824707032
+decomp intersection (P rank),0,False,basic_ba,flip_score,0.0351133277291064
+decomp intersection (P rank),11,False,false_belief,flip_rate,0.1041666666666666
+decomp intersection (P rank),11,False,false_belief,mean_p_correct,0.79983189702034
+decomp intersection (P rank),11,False,false_belief,flip_score,0.1432772639695982
+decomp intersection (P rank),11,False,true_belief,flip_rate,0.125
+decomp intersection (P rank),11,False,true_belief,mean_p_correct,0.8765389124552408
+decomp intersection (P rank),11,False,true_belief,flip_score,0.1292763067778026
+decomp intersection (P rank),11,False,false_photo,flip_rate,0.0416666666666666
+decomp intersection (P rank),11,False,false_photo,mean_p_correct,0.8568992614746094
+decomp intersection (P rank),11,False,false_photo,flip_score,0.0930870238068776
+decomp intersection (P rank),11,False,true_photo,flip_rate,0.0
+decomp intersection (P rank),11,False,true_photo,mean_p_correct,0.9811197916666666
+decomp intersection (P rank),11,False,true_photo,flip_score,0.0196954407445398
+decomp intersection (P rank),11,False,basic_ab,flip_rate,0.125
+decomp intersection (P rank),11,False,basic_ab,mean_p_correct,0.7995659510294596
+decomp intersection (P rank),11,False,basic_ab,flip_score,0.1397513225738049
+decomp intersection (P rank),11,False,basic_ba,flip_rate,0.0833333333333333
+decomp intersection (P rank),11,False,basic_ba,mean_p_correct,0.8064170579115549
+decomp intersection (P rank),11,False,basic_ba,flip_score,0.1138185189027676
+decomp intersection (P rank),19,True,false_belief,flip_rate,0.2291666666666666
+decomp intersection (P rank),19,True,false_belief,mean_p_correct,0.5353909838207377
+decomp intersection (P rank),19,True,false_belief,flip_score,0.4059325034657881
+decomp intersection (P rank),19,True,true_belief,flip_rate,0.125
+decomp intersection (P rank),19,True,true_belief,mean_p_correct,0.8359662095705668
+decomp intersection (P rank),19,True,true_belief,flip_score,0.1672440465107713
+decomp intersection (P rank),19,True,false_photo,flip_rate,0.0833333333333333
+decomp intersection (P rank),19,True,false_photo,mean_p_correct,0.6192310105155533
+decomp intersection (P rank),19,True,false_photo,flip_score,0.2217731533444936
+decomp intersection (P rank),19,True,true_photo,flip_rate,0.0416666666666666
+decomp intersection (P rank),19,True,true_photo,mean_p_correct,0.8774509429931641
+decomp intersection (P rank),19,True,true_photo,flip_score,0.0402089596726325
+decomp intersection (P rank),19,True,basic_ab,flip_rate,0.0208333333333333
+decomp intersection (P rank),19,True,basic_ab,mean_p_correct,0.7370613018671671
+decomp intersection (P rank),19,True,basic_ab,flip_score,0.1107848681175198
+decomp intersection (P rank),19,True,basic_ba,flip_rate,0.0416666666666666
+decomp intersection (P rank),19,True,basic_ba,mean_p_correct,0.7599717161307732
+decomp intersection (P rank),19,True,basic_ba,flip_score,0.0802543296296461

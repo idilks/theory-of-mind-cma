@@ -63,13 +63,13 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-# importing ablation_experiment os.chdir()s into codebase/, so remember where
+# importing ablation_experiment os.chdir()s into cma_scripts/, so remember where
 # we started and resolve any relative CLI path against it
 CWD = Path.cwd()
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 
 from cma_config import (  # noqa: E402
     EvaluationConfig, ExperimentConfig, GenerationConfig, ModelConfig,

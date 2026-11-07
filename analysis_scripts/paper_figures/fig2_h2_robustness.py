@@ -8,7 +8,7 @@
     C2+C6 substitute (R1 point 4)
 (f) Gemma replication scatter gC3 vs gC1+gC5
 
-Coefficients/correlations are read from writeups/results_for_pi/h2_robustness/
+Coefficients/correlations are read from results/summary/h2_robustness/
 stats_*.csv (the same files behind the rebuttal numbers); scatters and null
 draws are recomputed from the fingerprints.
 """
@@ -22,7 +22,7 @@ import pandas as pd
 from matplotlib.colors import LinearSegmentedColormap
 
 REPO = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "analysis_scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from h2_additivity_robustness import (  # noqa: E402
@@ -31,7 +31,7 @@ from h2_additivity_robustness import (  # noqa: E402
 from style import (BLUE, ORANGE, AQUA, GRAY, INK, INK2, apply_style, despine,
                    panel_label, save)
 
-STATS = REPO / "writeups/results_for_pi/h2_robustness"
+STATS = REPO / "results/summary/h2_robustness"
 
 LAYER_CMAP = LinearSegmentedColormap.from_list(
     "layers_blue", ["#b7d3f6", "#5598e7", "#1c5cab", "#0d366b"])

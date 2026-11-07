@@ -1,0 +1,450 @@
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a anthropology book from the history section of the library. She sits down and reads the book in the desk area in history. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the comics section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): history
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a anthropology book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the health section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a medicine book from the young adult section of the library. She sits down and reads the book in the desk area in young adult. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the study materials section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): young adult
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a business book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the study materials section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): poetry
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a art book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the technology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): study materials
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a political science book from the medicine section of the library. She sits down and reads the book in the desk area in medicine. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): medicine
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a medicine book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the popular reads section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): fiction
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a anthropology book from the photography section of the library. She sits down and reads the book in the desk area in photography. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): photography
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a economics book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a psychology book from the popular reads section of the library. She sits down and reads the book in the desk area in popular reads. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the architecture section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): popular reads
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a medicine book from the poetry section of the library. She sits down and reads the book in the desk area in poetry. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the music section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): poetry
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a philosophy book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): music
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a art book from the science section of the library. She sits down and reads the book in the desk area in science. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the music section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): science
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a literature book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the history section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a engineering book from the young adult section of the library. She sits down and reads the book in the desk area in young adult. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the biography section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): young adult
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a science book from the art section of the library. She sits down and reads the book in the desk area in art. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): art
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a mathematics book from the theology section of the library. She sits down and reads the book in the desk area in theology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the comics section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): theology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a sociology book from the children's section of the library. She sits down and reads the book in the desk area in children's. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the comics section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): children's
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a education book from the science section of the library. She sits down and reads the book in the desk area in science. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): science
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a chemistry book from the film section of the library. She sits down and reads the book in the desk area in film. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the self-help section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): film
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a economics book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the biography section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): study materials
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a biology book from the non-fiction section of the library. She sits down and reads the book in the desk area in non-fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the children's section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): non-fiction
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a mathematics book from the popular reads section of the library. She sits down and reads the book in the desk area in popular reads. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the film section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): popular reads
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a philosophy book from the cooking section of the library. She sits down and reads the book in the desk area in cooking. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the travel section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): cooking
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a philosophy book from the new arrivals section of the library. She sits down and reads the book in the desk area in new arrivals. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): new arrivals
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a law book from the history section of the library. She sits down and reads the book in the desk area in history. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): history
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a biology book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the botany section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a literature book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the study materials section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a anthropology book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the medicine section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a education book from the new arrivals section of the library. She sits down and reads the book in the desk area in new arrivals. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the self-help section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): new arrivals
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a literature book from the children's section of the library. She sits down and reads the book in the desk area in children's. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): children's
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a literature book from the engineering section of the library. She sits down and reads the book in the desk area in engineering. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the poetry section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): engineering
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a sociology book from the biography section of the library. She sits down and reads the book in the desk area in biography. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): biography
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a computer science book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the art section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a psychology book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the music section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a sociology book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the engineering section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): music
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a art book from the photography section of the library. She sits down and reads the book in the desk area in photography. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the self-help section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): photography
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a biology book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the engineering section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): music
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a science book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the self-help section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a computer science book from the self-help section of the library. She sits down and reads the book in the desk area in self-help. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): self-help
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a medicine book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the comics section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a economics book from the new arrivals section of the library. She sits down and reads the book in the desk area in new arrivals. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the engineering section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): engineering
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a mathematics book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the education section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): fiction
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a political science book from the health section of the library. She sits down and reads the book in the desk area in health. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): health
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a history book from the children's section of the library. She sits down and reads the book in the desk area in children's. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the cooking section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): children's
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a physics book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the medicine section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): study materials
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a anthropology book from the art section of the library. She sits down and reads the book in the desk area in art. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): art
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a philosophy book from the technology section of the library. She sits down and reads the book in the desk area in technology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the children's section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): technology
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a psychology book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the health section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---
+prompt (sample 0): <bos><start_of_turn>user
+You are a helpful assistant reasoning about agents' beliefs.
+
+Sarah checks out a chemistry book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the comics section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<end_of_turn>
+<start_of_turn>model
+
+response (sample 0): reference
+---

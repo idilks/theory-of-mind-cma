@@ -25,7 +25,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # (indexed_list redesign). 5 prompts, end-patch, no permutation tests.
 # Goal: verify pipeline runs end-to-end and produces non-zero causal scores.
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --condition code_abstract \
   --base_rule ABA \
   --template_names indexed_list \

@@ -1,0 +1,32 @@
+{
+  "true_belief_direct_abstract_detailed_T0.1": {
+    "belief_accuracy": 0.0,
+    "world_accuracy": 1.0,
+    "malformed_rate": 0.0,
+    "belief_accuracy_std": 0.0,
+    "world_accuracy_std": 0.0,
+    "total_responses": 100,
+    "belief_correct_count": 0,
+    "world_correct_count": 100
+  },
+  "true_belief_direct_abstract_detailed_T0.4": {
+    "belief_accuracy": 0.0,
+    "world_accuracy": 1.0,
+    "malformed_rate": 0.0,
+    "belief_accuracy_std": 0.0,
+    "world_accuracy_std": 0.0,
+    "total_responses": 100,
+    "belief_correct_count": 0,
+    "world_correct_count": 100
+  },
+  "true_belief_direct_abstract_detailed_T0.7": {
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.9,
+    "malformed_rate": 0.1,
+    "belief_accuracy_std": 0.0,
+    "world_accuracy_std": 0.11832159566199231,
+    "total_responses": 100,
+    "belief_correct_count": 0,
+    "world_correct_count": 90
+  }
+}

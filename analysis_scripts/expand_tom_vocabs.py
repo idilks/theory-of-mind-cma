@@ -7,14 +7,14 @@ outputs: overwrites the same files (preserves existing entries, drops dupes,
          appends new candidates that don't collide on first token).
 
 run:
-    python scripts/expand_tom_vocabs.py --dry_run    # preview only
-    python scripts/expand_tom_vocabs.py              # write changes
+    python analysis_scripts/expand_tom_vocabs.py --dry_run    # preview only
+    python analysis_scripts/expand_tom_vocabs.py              # write changes
 """
 import argparse
 from pathlib import Path
 from transformers import AutoTokenizer
 
-VOCAB_DIR = Path(__file__).resolve().parents[1] / "tom_datasets"
+VOCAB_DIR = Path(__file__).resolve().parents[1] / "cma_scripts" / "tom_datasets"
 MODEL_ID = "Qwen/Qwen2.5-14B-Instruct"
 TARGET_SIZE = 50
 

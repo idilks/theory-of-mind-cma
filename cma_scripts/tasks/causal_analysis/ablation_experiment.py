@@ -4,11 +4,11 @@ Cumulative ablation experiment for belief-tracking heads.
 Establishes necessity: do the heads identified by permutation-tested CMA
 need to be active for the model to perform false-belief reasoning?
 
-Usage:
-    python codebase/tasks/causal_analysis/ablation_experiment.py \
+Example usage:
+    python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
         --model_type Qwen2.5-14B-Instruct \
         --prompt_num 50 \
-        --seed 42
+        --seed 30
 """
 
 import argparse
@@ -31,12 +31,12 @@ project_root = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-codebase_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
-if codebase_root not in sys.path:
-    sys.path.insert(0, codebase_root)
+cma_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+if cma_root not in sys.path:
+    sys.path.insert(0, cma_root)
 
 # need to be in the right directory for relative imports in models.py
-os.chdir(codebase_root)
+os.chdir(cma_root)
 
 from tasks.causal_analysis.models import ModelLoader
 from tasks.causal_analysis.cma_config import ModelConfig, GenerationConfig, PromptConfig
@@ -76,6 +76,7 @@ def load_abstract_only_heads(wandb_dir):
       ranked_heads: list of (layer, head) sorted by |mean abstract score| descending
       all_scores_df: DataFrame with mean abstract score per head
     """
+    
     abstract_dir = os.path.join(wandb_dir, "abstract")
     control_dir = os.path.join(wandb_dir, "control", "belief_patch")
 
@@ -1143,7 +1144,7 @@ def main():
                         help="which ablation curves to run (default both). "
                              "Lets SLURM arrays split target/control across "
                              "jobs; merge chunk outputs with "
-                             "scripts/merge_cumulative_ablation_chunks.py")
+                             "analysis_scripts/merge_cumulative_ablation_chunks.py")
     parser.add_argument("--k_index_start", type=int, default=0,
                         help="start index (inclusive) into the k grid — for "
                              "splitting a long sweep across jobs. KL baselines "

@@ -20,7 +20,7 @@
 # Writes only small artifacts, which pull_results.sh brings back:
 #   results/rsa_head_outputs/aggregation_content/*.csv        (block 4)
 #   results/rsa_head_outputs/mvpa_veracity/*.csv              (block 4)
-#   results_for_pi/aggregation/content_rdm_bars.png           (block 6)
+#   results/summary/aggregation/content_rdm_bars.png           (block 6)
 # The .pt captures stay on the cluster (pull_results.sh excludes
 # activations_content/*.pt).
 
@@ -37,14 +37,14 @@ done
 python -c "import sklearn" 2>/dev/null || pip install --quiet scikit-learn
 
 echo "=== content RDMs ==="
-python scripts/rsa_head_outputs/analyze_content_rdms.py --n_perm 5000 --n_random 100
+python analysis_scripts/rsa_head_outputs/analyze_content_rdms.py --n_perm 5000 --n_random 100
 
 echo "=== MVPA: veracity ==="
-python scripts/rsa_head_outputs/mvpa_veracity.py --act_dir $ACT_DIR \
+python analysis_scripts/rsa_head_outputs/mvpa_veracity.py --act_dir $ACT_DIR \
   --out_dir results/rsa_head_outputs/mvpa_veracity/content_capture --target belief_veracity
 
 echo "=== MVPA: believed location (6-way) ==="
-python scripts/rsa_head_outputs/mvpa_veracity.py --act_dir $ACT_DIR \
+python analysis_scripts/rsa_head_outputs/mvpa_veracity.py --act_dir $ACT_DIR \
   --out_dir results/rsa_head_outputs/mvpa_veracity/content_capture --target believed
 
 echo "done"

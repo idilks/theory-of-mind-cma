@@ -156,6 +156,13 @@ class ModelLoader:
         """Setup generation configuration."""
         if self.generation_config.load_generation_config:
             config_name = self.generation_config.generation_config_name or f"{self.model_config.model_type}.json"
+            if not os.path.isdir("./generation_config/"):
+                raise FileNotFoundError(
+                    "--load_generation_config needs a ./generation_config/ directory holding "
+                    f"{config_name}. This release does not ship one; copy the generation_config.json "
+                    "from the model's HuggingFace repo, or omit the flag to use the defaults "
+                    "(which is what all reported results use)."
+                )
             gen_config = GenerationConfig.from_pretrained("./generation_config/", config_file_name=config_name)
             logger.info(f"loading generation config from ./generation_config/{config_name}")
             

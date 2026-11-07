@@ -15,7 +15,7 @@ where r ranges over the pooled significant rows of condition c, w_r is
 the head's CMA observed_score in that (template, direction) cell, and
 a_r is the per-prompt mean attention from query q to source s.
 
-Outputs (under --out_dir, default other_results/lookback_analysis/_summary):
+Outputs (under --out_dir, default results/lookback_analysis/_summary):
   cma_weighted_attention.csv  -- long format: condition, query, source,
                                  wattn, n_rows, sum_w
   cma_weighted_attention_<query>.png  -- one heatmap per query position,
@@ -23,10 +23,10 @@ Outputs (under --out_dir, default other_results/lookback_analysis/_summary):
   cma_weighted_attention_grid.png     -- 2x2 grid of all four queries
 
 Usage:
-  python scripts/lookback_analysis/cma_weighted_attention.py
-  python scripts/lookback_analysis/cma_weighted_attention.py \
-      --root other_results/lookback_analysis \
-      --out_dir other_results/lookback_analysis/_summary
+  python analysis_scripts/lookback_analysis/cma_weighted_attention.py
+  python analysis_scripts/lookback_analysis/cma_weighted_attention.py \
+      --root results/lookback_analysis \
+      --out_dir results/lookback_analysis/_summary
 """
 from __future__ import annotations
 
@@ -143,8 +143,8 @@ def plot_panel(ax, mat, conditions, title, vmax,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="other_results/lookback_analysis", type=Path)
-    ap.add_argument("--out_dir", default="other_results/lookback_analysis/_summary", type=Path)
+    ap.add_argument("--root", default="results/lookback_analysis", type=Path)
+    ap.add_argument("--out_dir", default="results/lookback_analysis/_summary", type=Path)
     args = ap.parse_args()
 
     args.out_dir.mkdir(parents=True, exist_ok=True)

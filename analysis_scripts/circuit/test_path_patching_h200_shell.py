@@ -17,9 +17,9 @@ class RepairShellTests(unittest.TestCase):
     tmp: tempfile.TemporaryDirectory
     def setUp(self):
         fixture.CleanLauncherTests.setUp(self)
-        self.driver=fixture.fixture.ROOT/'scripts/circuit/path_patching_h200_repair.py'
-        (self.root/'scripts/circuit/path_patching_h200_repair.py').write_bytes(self.driver.read_bytes())
-        (self.root/'scripts/circuit/torch.py').write_text('import os\nclass cuda:\n @staticmethod\n def device_count(): return 1\n @staticmethod\n def get_device_name(i): return os.environ["FAKE_GPU"]\n')
+        self.driver=fixture.fixture.ROOT/'analysis_scripts/circuit/path_patching_h200_repair.py'
+        (self.root/'analysis_scripts/circuit/path_patching_h200_repair.py').write_bytes(self.driver.read_bytes())
+        (self.root/'analysis_scripts/circuit/torch.py').write_text('import os\nclass cuda:\n @staticmethod\n def device_count(): return 1\n @staticmethod\n def get_device_name(i): return os.environ["FAKE_GPU"]\n')
         (self.bin_dir/'python').write_text('#!/bin/bash\n'
             'test "$MKL_INTERFACE_LAYER" = activated || exit 81\n'
             'if [ "$1" = "-c" ]; then exec "$REAL_PYTHON" "$@"; fi\n'
@@ -73,7 +73,7 @@ class RepairShellTests(unittest.TestCase):
                 self.assertIn('--kind\n'+kind,calls)
                 self.assertIn(f'HF_HUB_CACHE={hub}',calls)
                 frozen=(output/'repair_driver_snapshot/path_patching_h200_repair.py').read_bytes()
-                (self.root/'scripts/circuit/path_patching_h200_repair.py').write_bytes(self.driver.read_bytes()+b'\n# synchronized edit\n')
+                (self.root/'analysis_scripts/circuit/path_patching_h200_repair.py').write_bytes(self.driver.read_bytes()+b'\n# synchronized edit\n')
                 result,_=self.launch(kind,task,output=output)
                 self.assertEqual(result.returncode,0,result.stderr)
                 self.assertEqual((output/'repair_driver_snapshot/path_patching_h200_repair.py').read_bytes(),frozen)

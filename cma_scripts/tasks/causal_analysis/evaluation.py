@@ -123,7 +123,7 @@ class GenerationEvaluator:
             return correct_num, total_num, acc, gen_texts
         return correct_num, total_num, acc
     
-    def _determine_belief_type(self, prompt: str) -> str: # this function is a terrible hack as i forgot to pass the belief type from the prompt generator
+    def _determine_belief_type(self, prompt: str) -> str:
         """Determine if prompt represents false belief or true belief scenario."""
         if not self.config.prompts.use_template_system:
             return "non-tom"

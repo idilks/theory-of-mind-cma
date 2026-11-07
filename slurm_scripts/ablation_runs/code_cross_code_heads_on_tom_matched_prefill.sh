@@ -15,12 +15,12 @@
 # ablation of the code_abstract divergence heads (K=12), evaluated on ToM
 # false_belief / true_belief prompts under the PRIMARY ToM protocol
 # (belief-mentioning matched system prompt + per_variant prefill, baseline
-# flip ≈ 0 — see CLAUDE.md "Ablation protocols"). basic_ab included as the
+# flip ≈ 0). basic_ab included as the
 # retrieval control (H1-style specificity check). Uses only pre-existing
 # pipeline paths — the new code here is just the head-list CSV.
 #
 # Prereq: results/aggregated/code_head_sets/code_heads_end.csv on HPC
-# (build locally with `python scripts/build_code_head_csvs.py`, scp over).
+# (build locally with `python analysis_scripts/build_code_head_csvs.py`, scp over).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -44,7 +44,7 @@ if [ ! -f "$HEAD_CSV" ]; then
   exit 1
 fi
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

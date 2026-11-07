@@ -39,14 +39,14 @@ echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE"
 # Cheap (CPU-only, seconds) and ensures reproducibility from a fresh checkout.
 if [ ! -f results/rsa_head_outputs/stimuli/${TEMPLATE}.csv ]; then
   echo "Building stimulus set..."
-  python scripts/rsa_head_outputs/build_stimulus_set.py
+  python analysis_scripts/rsa_head_outputs/build_stimulus_set.py
 fi
 if [ ! -f results/rsa_head_outputs/topk_heads/union_top20.csv ]; then
   echo "Selecting top-k heads..."
-  python scripts/rsa_head_outputs/select_topk_heads.py
+  python analysis_scripts/rsa_head_outputs/select_topk_heads.py
 fi
 
-python scripts/rsa_head_outputs/capture_head_outputs.py \
+python analysis_scripts/rsa_head_outputs/capture_head_outputs.py \
   --template $TEMPLATE \
   --heads_csv results/rsa_head_outputs/topk_heads/union_top20.csv \
   --stim_dir  results/rsa_head_outputs/stimuli \

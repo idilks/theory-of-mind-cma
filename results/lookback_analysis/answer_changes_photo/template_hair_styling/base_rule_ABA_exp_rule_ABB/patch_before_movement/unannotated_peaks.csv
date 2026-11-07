@@ -1,0 +1,10 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+37,16,82,0.09859707236289977,150,'You' | ' are' | 'You' | '\\n' | '\\n'
+37,16,83,0.05139680941899617,150,'\\n' | 'You' | '\\n' | 'system' | 'system'
+37,16,2,0.026378835042317708,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>'
+35,11,82,0.021392482916514077,150,'You' | ' are' | 'You' | '\\n' | '\\n'
+35,11,83,0.020201557874679567,150,'\\n' | 'You' | '\\n' | 'system' | 'system'
+43,30,82,0.11161003033320109,150,'You' | ' are' | 'You' | '\\n' | '\\n'
+43,30,83,0.10058152437210083,150,'\\n' | 'You' | '\\n' | 'system' | 'system'
+43,30,84,0.05090664823849996,150,'system' | '\\n' | 'system' | '<|im_start|>' | '<|im_start|>'
+36,10,2,0.029981250762939452,150,'<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>' | '<|im_start|>'

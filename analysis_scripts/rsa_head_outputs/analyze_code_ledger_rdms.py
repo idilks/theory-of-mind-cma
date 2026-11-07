@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Divergence-ledger RDM analysis (Exp 2; docs/design_code_pointer_rdm.md).
+"""Divergence-ledger RDM analysis (Exp 2 of the code RDM arm).
 
 Loads the full-head code_ledger capture, builds set-level neural RDMs (mean of
 per-head cosine RDMs over the union-CSV head sets), and Mantel-tests them
@@ -26,7 +26,7 @@ import torch
 from scipy.stats import spearmanr, rankdata
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 
 ACT_PATH = (ROOT / "results/rsa_head_outputs/activations_code_ledger_full/"

@@ -12,7 +12,7 @@ tables.
 Data: hook_z captures in results/rsa_head_outputs/activations_code_{position,
 ledger}_full/Qwen2.5-14B-Instruct/; head sets from topk_heads/
 code_position_union.csv; r values from aggregation_code_{position,ledger}/
-mantel_code_{position,ledger}.csv. Model RDMs come from the analysis scripts'
+mantel_code_{position,ledger}.csv. Model RDMs come from the analysis analysis_scripts'
 own build_model_rdms, so each panel is the matrix that was tested.
 """
 

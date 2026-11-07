@@ -21,9 +21,9 @@ Inputs:
 Outputs:
   results/rsa_head_outputs/aggregation_per_condition/mantel_7x7_per_cond.csv
   results/rsa_head_outputs/aggregation_per_condition/mantel_vs_models.csv
-  results_for_pi/aggregation/mantel_7x7_per_cond.png
-  results_for_pi/aggregation/mantel_vs_models.png
-  results_for_pi/aggregation/per_cond_rdms.png   (grid of 7 condition RDMs + 2 model RDMs)
+  results/summary/aggregation/mantel_7x7_per_cond.png
+  results/summary/aggregation/mantel_vs_models.png
+  results/summary/aggregation/per_cond_rdms.png   (grid of 7 condition RDMs + 2 model RDMs)
 """
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations_7cond"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads_7cond"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_per_condition"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 

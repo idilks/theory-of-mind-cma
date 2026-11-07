@@ -7,9 +7,9 @@ cross-frame ablation head sets (belief K=32, photo K=26) into:
   intersection_belief_rank : 19 heads in B ∩ P, ranked by their belief score
   belief_only              : 13 heads in B \\ P, ranked by their belief score
 
-The decomposition answers the reviewer question "isn't the cross-frame transfer
-just the intersection?" by isolating the heads each frame selects but the
-other frame's selection missed.
+The decomposition tests whether the cross-frame transfer is just the
+intersection, by isolating the heads each frame selects but the other frame's
+selection missed.
 
 Output CSV slots into the existing ablation_experiment.py --head_source
 per_condition path with --rank_by mean_score.
@@ -22,8 +22,8 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-BELIEF_HEAD_CSV = PROJECT_ROOT / "other_results/ablation/belief_only_sysprompt_prefill/head_list.csv"
-PHOTO_HEAD_CSV  = PROJECT_ROOT / "other_results/ablation/photo_heads_sysprompt_prefill/head_list.csv"
+BELIEF_HEAD_CSV = PROJECT_ROOT / "results/ablation/belief_only_sysprompt_prefill/head_list.csv"
+PHOTO_HEAD_CSV  = PROJECT_ROOT / "results/ablation/photo_heads_sysprompt_prefill/head_list.csv"
 
 OUT_CSV = PROJECT_ROOT / "results/lookback_analysis/_summary/decomposition_heads_end.csv"
 

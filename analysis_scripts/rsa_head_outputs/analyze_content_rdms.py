@@ -30,7 +30,7 @@ reason the content capture exists.
 
 Outputs: results/rsa_head_outputs/aggregation_content/{mantel_content.csv,
 random_band.csv, ceilings.csv, baseline_accuracy.csv} and
-results_for_pi/aggregation/content_rdm_bars.png
+results/summary/aggregation/content_rdm_bars.png
 
 --within_template (Nov 2026): the pooled Mantel is dominated by template
 identity (r ~ 0.81 for every head set, random included; 67% of stimulus pairs
@@ -71,7 +71,7 @@ from rsa_utils import cosine_rdm  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations_content"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_content"
-FIG_PATH = ROOT / "results_for_pi/aggregation/content_rdm_bars.png"
+FIG_PATH = ROOT / "results/summary/aggregation/content_rdm_bars.png"
 TEMPLATES = ("food_truck", "hair_styling", "library_book")
 MODEL_ORDER = ("veracity", "believed", "world", "scenario", "template")
 

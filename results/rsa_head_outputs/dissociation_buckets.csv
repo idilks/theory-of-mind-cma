@@ -1,0 +1,17 @@
+head_set,bucket,mean_dist,sem,n_pairs
+C1 belief heads (top-20),"same belief, same answer",0.07648051797199165,0.007176828064792992,4
+C1 belief heads (top-20),"same belief, diff answer",0.4236428074567913,0.0031137533972720537,5108
+C1 belief heads (top-20),"diff belief, same answer",0.4029278167521724,0.004513809830970535,76
+C1 belief heads (top-20),"diff belief, diff answer",0.5899223748510976,0.0017559668800404325,5108
+C2 photo (state) heads (top-16),"same belief, same answer",0.08040348578335504,0.010156660195289121,4
+C2 photo (state) heads (top-16),"same belief, diff answer",0.46637923153494376,0.0031462967622284026,5108
+C2 photo (state) heads (top-16),"diff belief, same answer",0.33111960616865665,0.004184185262877561,76
+C2 photo (state) heads (top-16),"diff belief, diff answer",0.5927973864821551,0.0020836578116401458,5108
+C3 belief+answer heads (top-20),"same belief, same answer",0.07426927320585673,0.009039261470030794,4
+C3 belief+answer heads (top-20),"same belief, diff answer",0.5405741160523249,0.002470319698201352,5108
+C3 belief+answer heads (top-20),"diff belief, same answer",0.30500642722741006,0.00307732994777666,76
+C3 belief+answer heads (top-20),"diff belief, diff answer",0.6554477856824237,0.0015741108132379458,5108
+C5 answer heads (top-20),"same belief, same answer",0.0784487641168766,0.01788686675517668,4
+C5 answer heads (top-20),"same belief, diff answer",0.6439391471926835,0.001933190173824698,5108
+C5 answer heads (top-20),"diff belief, same answer",0.16154057151288226,0.0038774112292284087,76
+C5 answer heads (top-20),"diff belief, diff answer",0.6751664768398081,0.0016821414949021543,5108

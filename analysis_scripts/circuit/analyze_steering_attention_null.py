@@ -63,7 +63,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
 
 from circuit_common import STAGE2_OUT_ROOT  # noqa: E402
 

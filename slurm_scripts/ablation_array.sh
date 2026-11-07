@@ -66,7 +66,7 @@ EVAL_VARIANTS=${JOB_EVAL_VARIANTS[$IDX]}
 
 echo "Job $IDX: head_condition=$COND label=$LABEL eval=$EVAL_VARIANTS"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 150 \
   --max_new_tokens 5 \

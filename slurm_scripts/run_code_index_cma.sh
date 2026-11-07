@@ -32,7 +32,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 # Index-vs-veracity dissociation (Sept 10 2026 meeting, item 2). End-patch, z.
 # Seed 0 = DISCOVERY (defines the index head set), seed 1 = HELD-OUT evaluation
-# of all frozen head sets (scripts/analyze_code_index_dissociation.py).
+# of all frozen head sets (analysis_scripts/analyze_code_index_dissociation.py).
 # code_abstract seed 0 already exists (the discovery run for its head list).
 # ABA = copy side as base, ABB = alias side as base; code_index* keep the kind
 # on both sides (within_context), code_abstract* flip it.
@@ -77,7 +77,7 @@ echo "node=$(hostname) CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 nvidia-smi --query-gpu=name,memory.used,memory.total --format=csv,noheader || echo "nvidia-smi FAILED on $(hostname)"
 
 # no --patch_after_movement => end-patch position (-1)
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --condition $CONDITION \
   --base_rule $RULE \
   --template_names $TEMPLATE \

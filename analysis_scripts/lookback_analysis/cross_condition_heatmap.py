@@ -6,10 +6,10 @@ Reads every lookback_scores.csv under --root, picks the union of top-N heads
 templates and directions for that condition.
 
 Usage:
-  python scripts/lookback_analysis/cross_condition_heatmap.py \
-      --root other_results/lookback_analysis \
+  python analysis_scripts/lookback_analysis/cross_condition_heatmap.py \
+      --root results/lookback_analysis \
       --top_n 20 \
-      --out_dir other_results/lookback_analysis/_summary
+      --out_dir results/lookback_analysis/_summary
 """
 from __future__ import annotations
 
@@ -46,10 +46,10 @@ def load_all(root: Path) -> pd.DataFrame:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="other_results/lookback_analysis")
+    ap.add_argument("--root", default="results/lookback_analysis")
     ap.add_argument("--top_n", type=int, default=20,
                     help="number of heads to include (ranked by mean lookback->state across all runs)")
-    ap.add_argument("--out_dir", default="other_results/lookback_analysis/_summary")
+    ap.add_argument("--out_dir", default="results/lookback_analysis/_summary")
     args = ap.parse_args()
 
     root = Path(args.root)

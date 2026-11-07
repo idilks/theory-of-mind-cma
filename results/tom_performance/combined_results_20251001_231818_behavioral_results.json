@@ -1,0 +1,124 @@
+{
+  "Qwen2.5-14B-Instruct": {
+    "true_belief_direct_detailed_T0.1": {
+      "belief_accuracy": 0.8099999999999999,
+      "world_accuracy": 0.96,
+      "malformed_rate": 0.01,
+      "belief_accuracy_std": 0.36592348927063983,
+      "world_accuracy_std": 0.13564659966250533,
+      "total_responses": 100,
+      "belief_correct_count": 81,
+      "world_correct_count": 96
+    },
+    "true_belief_direct_detailed_T0.4": {
+      "belief_accuracy": 0.8,
+      "world_accuracy": 0.95,
+      "malformed_rate": 0.02,
+      "belief_accuracy_std": 0.36878177829171555,
+      "world_accuracy_std": 0.1532970971675589,
+      "total_responses": 100,
+      "belief_correct_count": 80,
+      "world_correct_count": 95
+    },
+    "true_belief_direct_detailed_T0.7": {
+      "belief_accuracy": 0.8300000000000001,
+      "world_accuracy": 0.9800000000000001,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.35930488446443365,
+      "world_accuracy_std": 0.08717797887081347,
+      "total_responses": 100,
+      "belief_correct_count": 83,
+      "world_correct_count": 98
+    },
+    "true_belief_direct_standard_T0.1": {
+      "belief_accuracy": 0.45,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.49749371855331,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 45,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_standard_T0.4": {
+      "belief_accuracy": 0.47000000000000003,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.4439594576084623,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 47,
+      "world_correct_count": 100
+    },
+    "true_belief_direct_standard_T0.7": {
+      "belief_accuracy": 0.47000000000000003,
+      "world_accuracy": 0.99,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.4484417464955733,
+      "world_accuracy_std": 0.04358898943540673,
+      "total_responses": 100,
+      "belief_correct_count": 47,
+      "world_correct_count": 99
+    },
+    "false_belief_direct_detailed_T0.1": {
+      "belief_accuracy": 0.99,
+      "world_accuracy": 0.9400000000000001,
+      "malformed_rate": 0.01,
+      "belief_accuracy_std": 0.04358898943540673,
+      "world_accuracy_std": 0.22000000000000003,
+      "total_responses": 100,
+      "belief_correct_count": 99,
+      "world_correct_count": 94
+    },
+    "false_belief_direct_detailed_T0.4": {
+      "belief_accuracy": 0.9800000000000001,
+      "world_accuracy": 0.93,
+      "malformed_rate": 0.02,
+      "belief_accuracy_std": 0.08717797887081347,
+      "world_accuracy_std": 0.23043437243605822,
+      "total_responses": 100,
+      "belief_correct_count": 98,
+      "world_correct_count": 93
+    },
+    "false_belief_direct_detailed_T0.7": {
+      "belief_accuracy": 0.9800000000000001,
+      "world_accuracy": 0.93,
+      "malformed_rate": 0.02,
+      "belief_accuracy_std": 0.08717797887081347,
+      "world_accuracy_std": 0.23043437243605822,
+      "total_responses": 100,
+      "belief_correct_count": 98,
+      "world_correct_count": 93
+    },
+    "false_belief_direct_standard_T0.1": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 100,
+      "world_correct_count": 100
+    },
+    "false_belief_direct_standard_T0.4": {
+      "belief_accuracy": 1.0,
+      "world_accuracy": 1.0,
+      "malformed_rate": 0.0,
+      "belief_accuracy_std": 0.0,
+      "world_accuracy_std": 0.0,
+      "total_responses": 100,
+      "belief_correct_count": 100,
+      "world_correct_count": 100
+    },
+    "false_belief_direct_standard_T0.7": {
+      "belief_accuracy": 0.99,
+      "world_accuracy": 0.99,
+      "malformed_rate": 0.01,
+      "belief_accuracy_std": 0.04358898943540673,
+      "world_accuracy_std": 0.04358898943540673,
+      "total_responses": 100,
+      "belief_correct_count": 99,
+      "world_correct_count": 99
+    }
+  }
+}

@@ -1,0 +1,16 @@
+condition,template_a,template_b,pearson_r
+C1,food_truck,hair_styling,0.8765162394126524
+C1,food_truck,library_book,0.8390503299218629
+C1,hair_styling,library_book,0.8800273492522311
+C2,food_truck,hair_styling,0.9377629060447288
+C2,food_truck,library_book,0.7529873950896603
+C2,hair_styling,library_book,0.8624173240310616
+C3,food_truck,hair_styling,0.8782498132668732
+C3,food_truck,library_book,0.8603804599895012
+C3,hair_styling,library_book,0.913686962848081
+C5,food_truck,hair_styling,0.8146330992094152
+C5,food_truck,library_book,0.7004956403091442
+C5,hair_styling,library_book,0.8414951198242611
+C6,food_truck,hair_styling,0.7853505276861579
+C6,food_truck,library_book,0.7954047446547057
+C6,hair_styling,library_book,0.920134327835572

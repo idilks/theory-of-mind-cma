@@ -1,0 +1,70 @@
+<|im_start|>system
+You are a helpful assistant that traces through Python code and determines variable values. Answer with only the Python value, nothing else.<|im_end|>
+<|im_start|>user
+Consider the following Python code:
+
+```python
+a = ['Q', '6', '5', 'Z', 'T', '4', 'I']
+b = a
+a[6] = 'A'
+```
+
+What is b[6]?<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant that traces through Python code and determines variable values. Answer with only the Python value, nothing else.<|im_end|>
+<|im_start|>user
+Consider the following Python code:
+
+```python
+a = ['S', 'I', 'G', 'M', '8', 'J', 'T', 'G']
+b = a
+a[3] = 'C'
+```
+
+What is b[3]?<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant that traces through Python code and determines variable values. Answer with only the Python value, nothing else.<|im_end|>
+<|im_start|>user
+Consider the following Python code:
+
+```python
+a = ['G', 'W', 'L', 'U']
+b = a
+a[2] = 'M'
+```
+
+What is b[2]?<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant that traces through Python code and determines variable values. Answer with only the Python value, nothing else.<|im_end|>
+<|im_start|>user
+Consider the following Python code:
+
+```python
+a = ['2', '7', 'Q', 'M', '9', 'A', 'F', 'Z']
+b = a
+a[3] = 'L'
+```
+
+What is b[3]?<|im_end|>
+<|im_start|>assistant
+
+<|im_start|>system
+You are a helpful assistant that traces through Python code and determines variable values. Answer with only the Python value, nothing else.<|im_end|>
+<|im_start|>user
+Consider the following Python code:
+
+```python
+a = ['U', 'E', 'M', 'H']
+b = a
+a[3] = 'D'
+```
+
+What is b[3]?<|im_end|>
+<|im_start|>assistant
+

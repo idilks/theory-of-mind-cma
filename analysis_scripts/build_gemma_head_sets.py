@@ -1,21 +1,11 @@
 #!/usr/bin/env python
 """Build Gemma-2-27B head sets from its CMA statistical tests.
 
-Rule: the scatter-pack / circuit "sensitivity" convention — a head enters a
-condition's set when its FWER-corrected permutation test is significant in
->= half of that condition's available cells; its score is the mean observed
-score over the cells where it is significant. (The published Qwen T_C1 came
-from the prefill-ablation pipeline, which has no Gemma counterpart; this rule
-is the reproducible stand-in and matches build_circuit_head_sets.py's
-sensitivity set.)
-
-Scans BOTH results/ and other_results/ trees (CLAUDE.md rule), takes the
-max-sample_num stat CSV per (condition, template, rule pair), seed 0 (the only
-Gemma seed).
+Scans the results/ tree, taking the max-sample_num stat CSV per
+(condition, template, rule pair), seed 0 (the only Gemma seed).
 
 Output: results/aggregated/code_head_sets/gemma_{c1,c2,c3,c5}_head_list.csv
         columns: layer, head, n_sig_cells, n_cells, mean_score
-        (results/aggregated syncs to the HPC.)
 """
 
 from __future__ import annotations
@@ -27,7 +17,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 GEMMA_SUBPATH = "causal_analysis/cma/google/gemma-2-27b-it_ungroup_gqa"
-ROOTS = [REPO / "results" / GEMMA_SUBPATH, REPO / "other_results" / GEMMA_SUBPATH]
+ROOTS = [REPO / "results" / GEMMA_SUBPATH]
 OUT_DIR = REPO / "results/aggregated/code_head_sets"
 
 CONDITIONS = {
@@ -35,7 +25,7 @@ CONDITIONS = {
     "c2": "abstract_photo",
     "c3": "answer_changes_belief",
     "c5": "answer_changes_location_only",
-    # code-domain arm (slurm_scripts/gemma/code_cma.sh): 2 cells per
+    # code-domain arm: 2 cells per
     # condition (indexed_list x ABA/ABB), so the >=half rule becomes
     # "significant in >=1 of 2". Prints 0 cells harmlessly until the CMA
     # results land.

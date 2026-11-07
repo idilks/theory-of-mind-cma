@@ -36,14 +36,14 @@ VARIANT_LABELS = {
 
 ROWS = [
     {
-        "csv": "other_results/ablation/photo_heads/cumulative_ablation_results.csv",
+        "csv": "results/ablation/photo_heads/cumulative_ablation_results.csv",
         "head_label": "photo heads (C2-derived, K=26)",
         "main_variant": "false_belief",
         "insets": ["true_belief", "basic_ab", "basic_ba"],
         "title": "ablate photo heads → evaluate on false belief (C1 contrast)",
     },
     {
-        "csv": "other_results/ablation/belief_heads/cumulative_ablation_results.csv",
+        "csv": "results/ablation/belief_heads/cumulative_ablation_results.csv",
         "head_label": "belief heads (C1-derived, K=32)",
         "main_variant": "false_photo",
         "insets": ["true_photo", "basic_ab", "basic_ba"],
@@ -55,14 +55,14 @@ ROWS = [
 # K labels are derived dynamically from each run's head_list.csv at render time.
 ROWS_CORRECTED = [
     {
-        "csv": "other_results/ablation/photo_heads_sysprompt_prefill/cumulative_ablation_results.csv",
+        "csv": "results/ablation/photo_heads_sysprompt_prefill/cumulative_ablation_results.csv",
         "head_label_tmpl": "photo heads (C2-derived, K={K})",
         "main_variant": "false_belief",
         "insets": ["true_belief", "basic_ab", "basic_ba"],
         "title": "ablate photo heads → evaluate on false belief (C1 contrast)",
     },
     {
-        "csv": "other_results/ablation/belief_only_sysprompt_prefill/cumulative_ablation_results.csv",
+        "csv": "results/ablation/belief_only_sysprompt_prefill/cumulative_ablation_results.csv",
         "head_label_tmpl": "belief heads (C1-derived, K={K})",
         "main_variant": "false_photo",
         "insets": ["true_photo", "basic_ab", "basic_ba"],
@@ -351,7 +351,7 @@ def render(out_path: Path, project_root: Path, corrected: bool = False):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path,
-                   default=Path("neurips/figures/ablation_cross_frame.png"))
+                   default=Path("results/summary/figures/ablation_cross_frame.png"))
     p.add_argument("--compact", action="store_true",
                    help="Render compact two-panel main-body version (no insets).")
     p.add_argument("--three_col", action="store_true",

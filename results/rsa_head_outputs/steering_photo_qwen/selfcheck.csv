@@ -1,0 +1,17 @@
+item_id,domain,max_abs_diff,exact
+belief:food_truck:0,belief,0.0,True
+belief:food_truck:2,belief,0.0,True
+belief:food_truck:4,belief,0.0,True
+belief:food_truck:6,belief,0.0,True
+belief:food_truck:8,belief,0.0,True
+belief:food_truck:10,belief,0.0,True
+belief:food_truck:12,belief,0.0,True
+belief:food_truck:14,belief,0.0,True
+photo:food_truck:0,photo,0.0,True
+photo:food_truck:2,photo,0.0,True
+photo:food_truck:4,photo,0.0,True
+photo:food_truck:6,photo,0.0,True
+photo:food_truck:8,photo,0.0,True
+photo:food_truck:10,photo,0.0,True
+photo:food_truck:12,photo,0.0,True
+photo:food_truck:14,photo,0.0,True

@@ -1,0 +1,27 @@
+EXPECTED: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+A food truck selling poutine is on Monroe Street. Bob drives the truck to Franklin Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+EXPECTED: sage
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice has navy hair. On Monday, Alice dyes her hair sage. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+EXPECTED: popular reads
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the non-fiction section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================

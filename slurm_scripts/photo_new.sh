@@ -52,7 +52,7 @@ esac
 
 echo "Job $SLURM_ARRAY_TASK_ID: condition=$CONDITION template=${TEMPLATES[$TEMPLATE_IDX]} base_rule=$BASE_RULE"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $BASE_RULE \

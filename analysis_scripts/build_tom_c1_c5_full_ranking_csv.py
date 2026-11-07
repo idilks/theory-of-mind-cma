@@ -1,6 +1,6 @@
 """Build the full-1920-head ranking CSV for the Yang-style cumulative ablation.
 
-PI-requested (July 2026, superseding the T_C1/T_C5-only version): cumulative
+Follow-up analysis (superseding the T_C1/T_C5-only version): cumulative
 ablation over ALL heads in the model ordered by the C1 / C5 CMA fingerprints,
 per Yang et al. 2025 §3.4 / B.5 ("the full range of h = 1...H heads in the
 entire model"). Ranks by the RAW 6-cell mean fingerprint (seed=1, end
@@ -10,8 +10,7 @@ control is well-defined.
 
 Output: results/aggregated/code_head_sets/tom_c1_c5_all_heads_ranked.csv
 (consumed by ablation_experiment.py --head_source per_condition
- --rank_by mean_score --control_source ranking; results/aggregated syncs
- to the HPC via sync_to_hpc.sh.)
+ --rank_by mean_score --control_source ranking.)
 """
 
 import csv

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """Aggregate per-condition CMA fingerprints and run cross-condition tests.
 
-Reads results_for_pi/heatmaps/manifest.csv as the canonical map of cells
-(condition, template, rule_pair) -> source folder. End-patch only.
+Reads results/summary/heatmaps/manifest.csv as the canonical map of cells
+(condition, template, rule_pair) -> source folder.
 
 Produces:
 - per-condition fingerprints (clamped and raw), saved as .npy and .csv
@@ -18,13 +18,8 @@ Produces:
   reports r(C, comp1), r(C, comp2), r(C, comp1+comp2), and OLS regression
   with R^2 and per-coefficient permutation CIs.
 
-Condition mapping (April 2026):
-  C1 abstract_belief, C2 abstract_photo, C3 answer_changes_belief,
-  C4 answer_changes_photo, C5 answer_changes_location_only,
-  C6 answer_changes_location_only_photo (NEW), C7 state_only_no_belief.
-
 Usage:
-    python scripts/aggregate_conditions.py
+    python analysis_scripts/aggregate_conditions.py
 """
 
 from __future__ import annotations
@@ -45,9 +40,9 @@ from condition_registry import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
+MANIFEST = ROOT / "results/summary/heatmaps/manifest.csv"
 AGG_DIR = ROOT / "results/aggregated"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 CONDITIONS = ordered_keys()
 SHORT = short_labels()

@@ -3,7 +3,7 @@ Local validation: confirm the photo-frame bf detector lands on a real token in
 photo prompts after the capture-script fix. No model load required; tokenizer only.
 
 Run:
-  python scripts/lookback_analysis/test_photo_detector.py
+  python analysis_scripts/lookback_analysis/test_photo_detector.py
 """
 
 from __future__ import annotations
@@ -13,8 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from transformers import AutoTokenizer
 
@@ -25,7 +25,7 @@ from cma_config import (
 from prompt_generators.unified_tom import UnifiedTomGenerator
 
 # import the capture script's extract_positions so we test the real code path
-sys.path.insert(0, str(ROOT / "scripts" / "lookback_analysis"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "lookback_analysis"))
 from capture_attention_patterns import extract_positions
 
 

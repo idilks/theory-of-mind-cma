@@ -1,0 +1,17 @@
+model,head_set,queried_object,queried_slot_type,reads,rho_prefix|mid,rho_mid|prefix
+gemma,gemma_c1,alias,mutated,mutation,0.6875552528651268,0.35284106797879544
+gemma,gemma_c1,alias,untouched,init,0.7083178133599084,0.3645614180228564
+gemma,gemma_c1,copy,mutated,init,0.7190746394191825,0.37567234864429205
+gemma,gemma_c1,copy,untouched,init,0.7314629786728605,0.3851452301222549
+gemma,gemma_c2,alias,mutated,mutation,0.6975905535759979,0.35709093858397556
+gemma,gemma_c2,alias,untouched,init,0.7227611022772839,0.37786959814319365
+gemma,gemma_c2,copy,mutated,init,0.7286567544314259,0.3833476695175066
+gemma,gemma_c2,copy,untouched,init,0.7430419471665918,0.3972541848301779
+gemma,gemma_c3,alias,mutated,mutation,0.6689641500885246,0.374271284912061
+gemma,gemma_c3,alias,untouched,init,0.7153475523479703,0.38593574025838157
+gemma,gemma_c3,copy,mutated,init,0.743415494186861,0.35402665580021425
+gemma,gemma_c3,copy,untouched,init,0.7366349067754943,0.3938835467720149
+gemma,gemma_c5,alias,mutated,mutation,0.6041959296876488,0.35524167295006553
+gemma,gemma_c5,alias,untouched,init,0.7017106033228453,0.38030757027370016
+gemma,gemma_c5,copy,mutated,init,0.7324738807086155,0.28823595325090745
+gemma,gemma_c5,copy,untouched,init,0.7175396606072585,0.3649275598828683

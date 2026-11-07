@@ -39,6 +39,6 @@ TEMPLATE=${TEMPLATES[$SLURM_ARRAY_TASK_ID]}
 
 echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE"
 
-python scripts/rsa_head_outputs/compute_dla.py --template $TEMPLATE
+python analysis_scripts/rsa_head_outputs/compute_dla.py --template $TEMPLATE
 
 echo "done. Output: results/rsa_head_outputs/dla/${TEMPLATE}_dla.csv"

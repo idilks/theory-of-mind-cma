@@ -1,0 +1,1274 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Oak Avenue. After she saw Bob moving the truck to Oak Avenue, she made a note to herself to grab a plate of pizza from the new location. Therefore, she would go to Oak Avenue",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Oak Avenue. After Bob drives the truck to Oak Avenue, the truck stays in place and is not moved again. Therefore, the food truck is located on Oak Avenue. Alice made a",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Main Street. After she saw Bob moving the truck to Main Street, she made a note to herself to grab a plate of burgers from the new location. Therefore, she would go to Main Street",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is on Main Street. After Bob drives the truck to Main Street, it stays in place and is not moved again. Therefore, the food truck is on Main Street. Alice made a note",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Main Street. After she saw Bob moving the truck to Main Street, she made a note to herself to grab a plate of tacos from the new location. Therefore, she would go to Main Street",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is on Main Street. After Bob moved the truck to Main Street, it stayed in place and was not moved again. Therefore, the food truck is on Main Street. Alice made a note",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck at Downtown Plaza, where Bob moved it to stay for the rest of the day. Since Bob didn't move the truck again after bringing it to Downtown Plaza, Alice should find it there when she returns to get a plate of",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually at Downtown Plaza, as Bob moved it there and it stayed in place after that. Alice made a note to herself to grab a plate of pizza from the new location, which is Downtown Plaza. Therefore, the location of the",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Main Street, as that is where Bob moved it to and it stayed there after Alice made a note to herself to grab a plate of tacos later from the new location. \n\nSo, Alice will",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is on Main Street. Since Bob moved the truck there and it stayed in place after that, the food truck is now located on Main Street. Alice made a note to herself to grab a",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck at Park Boulevard, as that is where Bob moved the truck to and stated that he would stay until the end of the day. Since the food truck remained in place after Bob moved it",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Bob moved the food truck there after Alice initially saw it on Main Street, and he kept it there until the end of the day. Since nobody moved the truck after that, it remained on Park Boulevard",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Alice would look for the food truck at Park Boulevard, since that is where Bob moved it to and it stayed there until the end of the day. She made a note to herself to grab a plate of ice cream from the new location, so she",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Bob moved the truck there after Alice initially passed by it on Downtown Plaza, and he kept it there for the rest of the day. Since nobody moved the truck after that, it remained on Park Boulevard",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck at its new location on Main Street. She made a note to herself to grab a plate of sandwiches from the new location after seeing Bob move the truck there. Since the food truck stayed",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street, as Bob moved it there after Alice initially passed by it on Oak Avenue. Since the food truck stayed in place after Bob moved it, it remains on Main Street. Therefore, the location of the food",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck at Park Boulevard, as that is where Bob moved the truck to and stated that it would stay until the end of the day. Since the food truck stayed in place after Bob moved it",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Bob moved the food truck there after Alice initially passed by it on Oak Avenue. Since Bob did not move the truck again after that, it remains on Park Boulevard. Alice's note to herself to grab",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck at its new location on Main Street. She made a note to herself to grab a plate of tacos from the new location after seeing Bob move the truck there. Since the food truck stayed",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street, as Bob moved the truck there after Alice initially passed by it on Oak Avenue. Since the truck stayed in place after Bob moved it, it remains on Main Street. Therefore, the location of the food",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck on Oak Avenue, where Bob moved it and stayed until the end of the day. \n\nSo, the answer is: Oak Avenue. \n\nTo summarize the reasoning:\n- Alice initially sees the food truck on Park Boulevard.\n-",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Oak Avenue. After Bob moved the truck to Oak Avenue, it stayed in place and was not moved again. Therefore, the food truck is on Oak Avenue. Alice made a note to",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Main Street. She made a note to herself to grab a plate of burgers from the new location after seeing Bob move the truck there. Therefore, she will go to Main Street to find the food",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Main Street. After Bob drives the truck to Main Street, it stays in place, so the food truck is on Main Street. Alice made a note to herself to grab a plate of",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck at its new location on Main Street, where Bob moved it to stay for the rest of the day. After Alice saw Bob moving the truck, she made a note to herself to grab a plate of tacos from the new location",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is on Main Street. Alice made a note to herself to grab a plate of tacos from the new location, indicating that she is aware of the change in the food truck's location. Since",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck at Downtown Plaza, where Bob moved the food truck to stay for the rest of the day. After Alice made a note to herself to grab a plate of pizza later from the new location, she would remember that the food truck",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Downtown Plaza. After Bob drives the truck there, it stays in place and nobody moves it again, so it remains at Downtown Plaza. Alice's note to herself to grab a plate of",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Main Street. After seeing Bob move the truck to Main Street, she made a note to herself to grab a plate of tacos from the new location. Therefore, she would search for the truck on",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Main Street. After Bob moved the truck to Main Street, it stayed in place, so it is still located on Main Street. Alice made a note to herself to grab a plate of",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the scenario described, Alice would look for the food truck at Park Boulevard, where Bob moved it to stay for the rest of the day. Alice made a note to herself to grab a plate of hot dogs from the new location after she saw",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Bob moved the food truck there and stayed until the end of the day, so the food truck did not move from Park Boulevard after that. Therefore, the correct location of the food truck is Park Boulevard",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Given the scenario, Alice would look for the food truck at its new location on Park Boulevard. She made a note to herself to grab a plate of ice cream later from the new location after seeing Bob move the truck. Since the food truck stayed in",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is located on Park Boulevard. After Bob, the owner of the food truck, moved it there, he kept it in that location for the rest of the day. Since no one moved the truck again after that, it remains on Park",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " When Alice returns to buy food, she would look for the food truck at the new location on Main Street. Since she saw Bob moving the truck to Main Street and made a note to herself to grab a plate of sandwiches from the new location, she",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street, as Bob moved the truck there and it stayed in place after that. \n\nTo summarize the sequence of events:\n1. Alice drives past the food truck on Oak Avenue.\n2. Bob moves the food",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " When Alice returns to buy food, she would look for the food truck at Park Boulevard, where Bob had moved it to. She made a note to herself to grab a plate of tacos from the new location after seeing Bob move the truck, so she",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. After Alice drives past the food truck on Oak Avenue, Bob, the owner of the food truck, moves it to Park Boulevard and stays there until the end of the day. Since the food truck remains",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck on Main Street, as that's where Bob moved the truck to stay for the rest of the day. She made a note to herself to grab a plate of tacos from the new location",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street. After Alice drives past the food truck on Oak Avenue, Bob moves the food truck to Main Street and stays there for the rest of the day. Since no one moves the truck after that, it remains",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where it is now located on Oak Avenue. After seeing Bob move the truck to Oak Avenue, Alice made a note to herself to grab a plate of pizza from the new location. Therefore, she should go to Oak Avenue to",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Oak Avenue to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually located on Oak Avenue, since Bob moved the truck there after Alice initially passed by it on Park Boulevard. After this move, the food truck stays in place and does not move again. Therefore, the correct location for the truck",
+        "expected_belief": "Oak Avenue",
+        "expected_world": "Oak Avenue",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck where Bob moved it to, which is on Main Street. After seeing Bob drive the truck to Main Street and making a note to herself, Alice would expect the food truck to be there when she returns to get a plate of",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling burgers, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of burgers later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually where Bob moved it to, which is Main Street. After Bob moves the truck there, it stays in place, and Alice's note to herself to grab a plate of burgers later indicates that she is aware of the new location",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Based on the scenario provided, Alice would likely look for the truck at its new location on Main Street, as that is where Bob moved it and where Alice intends to pick up her tacos later.\n\nSo, the answer is:\nAlice looks for the truck",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is actually at the new location on Main Street where Bob moved it to. After Bob moved the food truck to Main Street, it stayed there and was not moved again. Therefore, the food truck is now located on Main Street. Alice",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Alice looks for the truck at Downtown Plaza, since that's the new location where Bob moved the food truck to and where it stayed until the end of the day. \n\nTherefore, the answer is Downtown Plaza. <loc>Downtown Plaza</loc>",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling pizza, on Park Boulevard. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Downtown Plaza to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of pizza later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " The food truck is now located in Downtown Plaza. Bob moved the truck there to stay until the end of the day, and after that, it stayed in place with nobody moving it again. So, Alice can return later to get a plate of pizza",
+        "expected_belief": "Downtown Plaza",
+        "expected_world": "Downtown Plaza",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nAlice looks for the truck where?\n<loc></loc>",
+        "response": " Given the context provided, Alice had seen the food truck move from First Street to Main Street, and she made a note to herself to grab a plate of tacos from the new location on Main Street. Therefore, Alice would look for the truck on Main",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on First Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\ntruck is actually where?\n<loc></loc>",
+        "response": " Based on the information provided, the food truck is now on Main Street. After Bob, the owner of the food truck, moved it there, the truck stayed in place and wasn't moved again. Alice saw this move and noted the new location to",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "food_truck",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck at its new location on Park Boulevard. Since she saw Bob moving the truck there and made a note to herself, she should head to Park Boulevard to find the food truck and buy her",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling hot dogs, on Main Street. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of hot dogs later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Bob moved the food truck to Park Boulevard and stayed there until the end of the day. Therefore, the current location of the food truck is Park Boulevard. Alice's note to herself to grab a plate",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the scenario provided, Alice made a note to herself to grab a plate of ice cream from the new location after seeing Bob move the truck to Park Boulevard. Given that the truck has stayed in place at Park Boulevard since then, Alice would look",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling ice cream, on Downtown Plaza. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of ice cream later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. Initially, it was located on Downtown Plaza, but Bob moved it to Park Boulevard until the end of the day. Since the truck has already been moved to Park Boulevard and no one has moved it again",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Alice would look for the food truck on Main Street, since that's where Bob moved it to and it stayed there until she returned to buy food. Based on her note to herself, she would know to go to the new location to find the food",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling sandwiches, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of sandwiches later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street. \n\nBob moved the food truck from Oak Avenue to Main Street, and it stayed there until the end of the day, according to the information provided. Therefore, the food truck is located on Main Street",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " When Alice returns to buy food, she would look for the food truck at Park Boulevard. Since she noted that Bob, the owner, moved the truck to this location after she had initially passed by, she would expect it to be there. Given that",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Park Boulevard to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Park Boulevard. After Alice drives past the food truck and Bob moves it to Park Boulevard, the truck stays in place at its new location until the end of the day. Therefore, the food truck is on Park Boulevard",
+        "expected_belief": "Park Boulevard",
+        "expected_world": "Park Boulevard",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhen Alice returns to buy food, where would she look for the food truck?\n<loc></loc>",
+        "response": " Based on the information provided, Alice would look for the food truck on Main Street. After seeing Bob move the truck there, she made a note to herself to return and buy a plate of tacos from the new location. Since the food truck stays in",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice is driving past a food truck selling tacos, on Oak Avenue. She drives past the food truck and continues down the road. Bob, the owner of the food truck, drives the truck to Main Street to stay until the end of the day. Alice sees Bob moving the truck. After Alice turns towards a different street, she makes a note to herself to grab a plate of tacos later from the new location. After this, the food truck stays in place, nobody moves it.\nWhere is the food truck actually located?\n<loc></loc>",
+        "response": " The food truck is actually located on Main Street. After Bob, the owner of the food truck, drives it there from Oak Avenue, the truck remains in place on Main Street until the end of the day, as stated in the scenario. Therefore,",
+        "expected_belief": "Main Street",
+        "expected_world": "Main Street",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "food_truck",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  }
+}

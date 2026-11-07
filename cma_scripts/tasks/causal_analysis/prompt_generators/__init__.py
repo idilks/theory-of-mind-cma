@@ -5,7 +5,6 @@ Prompt generation modules for CMA experiments.
 import logging
 
 from .base import PromptGenerator
-from .identity_rules import IdentityRulesGenerator
 from .unified_tom import UnifiedTomGenerator
 from .code_generator import CodeGenerator
 
@@ -26,6 +25,9 @@ def get_prompt_generator(config, tokenizer) -> PromptGenerator:
     if hasattr(config.prompts, 'use_template_system') and config.prompts.use_template_system:
         logger.info("DEBUG: Selected UnifiedTomGenerator")
         return UnifiedTomGenerator(config, tokenizer)
-    else:
-        logger.info("DEBUG: Selected IdentityRulesGenerator")
-        return IdentityRulesGenerator(config, tokenizer)
+
+    raise ValueError(
+        "No prompt generator for this configuration. Pass --use_template_system for the "
+        "theory-of-mind conditions, or --context_type code for the code domain. The "
+        "in-context-learning ('identity rules') generator is not part of this release."
+    )

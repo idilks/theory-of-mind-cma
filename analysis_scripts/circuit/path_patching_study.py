@@ -94,7 +94,7 @@ def freeze_plan(path: Path, value: dict[str, Any]) -> None:
 
 
 def prepare(path: Path, seed: int) -> None:
-    plan = build_plan(ROOT / "docs/head_evidence_inventory/head_membership.csv",
+    plan = build_plan(ROOT / "results/aggregated/head_evidence_inventory/head_membership.csv",
                       ROOT / "results/aggregated/circuit/reader_heads.csv", seed)
     tasks = [task_spec(plan, i) for i in range(len(plan["cells"]))]
     freeze_plan(path, plan)
@@ -121,10 +121,10 @@ def execute_task(args: argparse.Namespace) -> None:
         return
     output_root = Path(args.output_root).resolve()
     output_root.mkdir(parents=True, exist_ok=True)
-    sources = [Path(__file__), ROOT / "scripts/circuit/path_patching.py",
-               ROOT / "scripts/condition_registry.py",
-               ROOT / "codebase/tasks/causal_analysis/cma_config.py"]
-    sources += sorted((ROOT / "codebase/tasks/causal_analysis/prompt_generators").glob("*.py"))
+    sources = [Path(__file__), ROOT / "analysis_scripts/circuit/path_patching.py",
+               ROOT / "analysis_scripts/condition_registry.py",
+               ROOT / "cma_scripts/tasks/causal_analysis/cma_config.py"]
+    sources += sorted((ROOT / "cma_scripts/tasks/causal_analysis/prompt_generators").glob("*.py"))
     # All tasks in a study must use the same source/dependencies/sample settings.
     # Blocking lock is held only for a tiny manifest read/write, never for inference.
     with (output_root / ".study.lock").open("a") as study_lock:

@@ -46,11 +46,11 @@ echo "Job $SLURM_ARRAY_TASK_ID: template=$TEMPLATE"
 
 if [ ! -f results/rsa_head_outputs/stimuli/${TEMPLATE}.csv ]; then
   echo "Building stimulus set..."
-  python scripts/rsa_head_outputs/build_stimulus_set.py
+  python analysis_scripts/rsa_head_outputs/build_stimulus_set.py
 fi
 
 mkdir -p $ACT_DIR
-python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
   --template $TEMPLATE \
   --stim_dir  results/rsa_head_outputs/stimuli \
   --out_dir   $ACT_DIR

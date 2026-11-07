@@ -1,8 +1,6 @@
 """MVPA (fMRI-style linear decoding) of belief veracity from filtered head sets.
 
-Sept 2026 (Sept 3 meeting action item: "decoding on filtered heads"). Mirrors
-the §H1 protocol in docs/divergence_content_results.md, whose script and
-"compiled 2x2" capture live on Steven's machine, on the capture that IS here:
+Mirrors the §H1 linear-decoding protocol on the capture shipped here:
 results/rsa_head_outputs/activations_full/{template}.pt (144 ToM stimuli,
 z at the final token, [stim, layer, head, d_head]).
 

@@ -23,7 +23,7 @@ Model is loaded fold_ln=False (repo default): ln1.w is a real scale and
 S1c must apply it; resid hooks are pre-LN either way.
 
 Output: results/circuit/stage1_capture/{model}/{template}.pt (+ behavior
-CSV) and .../weights.pt. Run via slurm_scripts/circuit_stage1_capture.sh.
+CSV) and .../weights.pt.
 """
 
 from __future__ import annotations
@@ -39,17 +39,17 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "circuit"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "circuit"))
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "codebase"))
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from circuit_common import (  # noqa: E402
     BAND_LAYERS, CAPTURE_ROOT, DOMAINS, READER_CSV, SITES,
     SYSTEM_PROMPT_MATCHED, load_head_csv,
 )
 
-# NOTE: importing ablation_experiment os.chdir()s to codebase/ — every path
+# NOTE: importing ablation_experiment os.chdir()s to cma_scripts/ — every path
 # in this script is absolute (via ROOT), so that side effect is harmless.
 from tasks.causal_analysis.ablation_experiment import (  # noqa: E402
     compute_answer_token_id, generate_eval_prompts,
@@ -143,7 +143,7 @@ def main():
     torch.manual_seed(args.seed)
 
     if not READER_CSV.exists():
-        sys.exit(f"{READER_CSV} missing — run scripts/circuit/"
+        sys.exit(f"{READER_CSV} missing — run analysis_scripts/circuit/"
                  "build_circuit_head_sets.py locally and re-sync")
 
     cfg = ExperimentConfig(

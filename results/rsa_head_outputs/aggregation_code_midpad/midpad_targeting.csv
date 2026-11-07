@@ -1,0 +1,17 @@
+model,head_set,queried_object,queried_slot_type,reads,rho_prefix|mid,rho_mid|prefix
+qwen,code_abstract,alias,mutated,mutation,0.6977406070484061,0.3664995920151135
+qwen,code_abstract,alias,untouched,init,0.6896449355034021,0.30423304133462714
+qwen,code_abstract,copy,mutated,init,0.7012263799770908,0.3555093058030235
+qwen,code_abstract,copy,untouched,init,0.7141612909558219,0.34031318791868687
+qwen,code_control,alias,mutated,mutation,0.6198063611703174,0.22217627907238682
+qwen,code_control,alias,untouched,init,0.7162324534112795,0.17425038711171315
+qwen,code_control,copy,mutated,init,0.7779727851247817,0.19770739369002013
+qwen,code_control,copy,untouched,init,0.7771772124340596,0.17304461300870122
+qwen,tom_c1,alias,mutated,mutation,0.7129955303796945,0.37126856611478387
+qwen,tom_c1,alias,untouched,init,0.7299658281976492,0.34448057097648244
+qwen,tom_c1,copy,mutated,init,0.7237738549086653,0.3453937636245077
+qwen,tom_c1,copy,untouched,init,0.7407870356790626,0.3703376353787487
+qwen,tom_c5,alias,mutated,mutation,0.6758377924612055,0.2795147323155196
+qwen,tom_c5,alias,untouched,init,0.7218244783369047,0.2584266750136142
+qwen,tom_c5,copy,mutated,init,0.7604867946879491,0.2784268660519716
+qwen,tom_c5,copy,untouched,init,0.7781941447984484,0.26267292008746895

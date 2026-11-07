@@ -9,14 +9,10 @@ direction and asserts the basic invariants:
   - answer_differs conditions: base_ans != exp_ans for every pair.
   - !answer_differs conditions: base_ans == exp_ans for every pair.
 
-Exists because we have no other place that exercises pair generation without
-loading a 14B model — would have caught the legacy photo_context/ ABA->ABA
-bug noted in CLAUDE.md.
-
 Usage:
-    python scripts/verify_pair_generation.py --condition answer_changes_location_only_photo
-    python scripts/verify_pair_generation.py --condition answer_changes_location_only
-    python scripts/verify_pair_generation.py --all
+    python analysis_scripts/verify_pair_generation.py --condition answer_changes_location_only_photo
+    python analysis_scripts/verify_pair_generation.py --condition answer_changes_location_only
+    python analysis_scripts/verify_pair_generation.py --all
 """
 
 import argparse
@@ -24,7 +20,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(REPO_ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(REPO_ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from cma_config import CMACondition  # noqa: E402
 from prompt_generators.tom_templates import UnifiedTemplateSystem  # noqa: E402
@@ -51,7 +47,7 @@ def verify_condition(condition: CMACondition, n_examples: int = N_EXAMPLES) -> i
         print(f"  (verifier only covers abstract/photo, skipping ctx={ctx})")
         return 0
 
-    ts = UnifiedTemplateSystem(vocab_dir=str(REPO_ROOT / "codebase" / "tom_datasets"))
+    ts = UnifiedTemplateSystem(vocab_dir=str(REPO_ROOT / "cma_scripts" / "tom_datasets"))
     failures = 0
 
     for template_name in TEMPLATES:

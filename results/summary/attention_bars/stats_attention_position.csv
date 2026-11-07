@@ -1,0 +1,1177 @@
+condition,template,query,source,wattn,n_head_rows
+abstract_belief,pooled,lookback,state_first,0.00988673694633402,83
+abstract_belief,pooled,lookback,state_second,0.032861410618347776,83
+abstract_belief,pooled,lookback,state_correct,0.01839884388068777,83
+abstract_belief,pooled,lookback,info_loss,0.0003920706317274629,83
+abstract_belief,pooled,lookback,char_q,0.0006868489388438669,83
+abstract_belief,pooled,lookback,obj_q,0.010786056533598305,83
+abstract_belief,pooled,lookback,belief_form,0.006684592614099034,83
+abstract_belief,pooled,belief_formation,state_first,0.0025806917576014334,83
+abstract_belief,pooled,belief_formation,state_second,0.008134923762206564,83
+abstract_belief,pooled,belief_formation,state_correct,0.009247683513835895,83
+abstract_belief,pooled,belief_formation,info_loss,0.03215186013324227,83
+abstract_belief,pooled,belief_formation,char_q,0.012276424791605218,83
+abstract_belief,pooled,belief_formation,obj_q,0.002957993926791212,83
+abstract_belief,pooled,belief_formation,belief_form,0.0820182678765236,83
+abstract_belief,pooled,agent_last,state_first,0.0004713937161777282,83
+abstract_belief,pooled,agent_last,state_second,0.0008799609296959625,83
+abstract_belief,pooled,agent_last,state_correct,0.0006146555720865305,83
+abstract_belief,pooled,agent_last,info_loss,0.0027268549303998335,83
+abstract_belief,pooled,agent_last,char_q,0.010756791112244646,83
+abstract_belief,pooled,agent_last,obj_q,0.0013877512139657381,83
+abstract_belief,pooled,agent_last,belief_form,0.004663455599745512,83
+abstract_belief,pooled,agent_first,state_first,1.5202411635724007e-06,83
+abstract_belief,pooled,agent_first,state_second,2.0253436736685667e-06,83
+abstract_belief,pooled,agent_first,state_correct,1.7693069284194629e-06,83
+abstract_belief,pooled,agent_first,info_loss,0.0,83
+abstract_belief,pooled,agent_first,char_q,0.14559607204647415,83
+abstract_belief,pooled,agent_first,obj_q,0.0,83
+abstract_belief,pooled,agent_first,belief_form,0.0,83
+abstract_belief,food_truck,lookback,state_first,0.005633137263641819,27
+abstract_belief,food_truck,lookback,state_second,0.028070493635879233,27
+abstract_belief,food_truck,lookback,state_correct,0.009075552839680805,27
+abstract_belief,food_truck,lookback,info_loss,0.000381993399127259,27
+abstract_belief,food_truck,lookback,char_q,0.000579449287236228,27
+abstract_belief,food_truck,lookback,obj_q,0.0007681502382369591,27
+abstract_belief,food_truck,lookback,belief_form,0.011547957441245775,27
+abstract_belief,food_truck,belief_formation,state_first,0.0021375244593263044,27
+abstract_belief,food_truck,belief_formation,state_second,0.000646379913266322,27
+abstract_belief,food_truck,belief_formation,state_correct,0.002545849899494229,27
+abstract_belief,food_truck,belief_formation,info_loss,0.015438372715235347,27
+abstract_belief,food_truck,belief_formation,char_q,0.01814095247962644,27
+abstract_belief,food_truck,belief_formation,obj_q,0.0012071196160735663,27
+abstract_belief,food_truck,belief_formation,belief_form,0.12650080728212165,27
+abstract_belief,food_truck,agent_last,state_first,0.0003187138707961973,27
+abstract_belief,food_truck,agent_last,state_second,0.0010217775338774394,27
+abstract_belief,food_truck,agent_last,state_correct,0.0004751355405254215,27
+abstract_belief,food_truck,agent_last,info_loss,0.0009905650188452857,27
+abstract_belief,food_truck,agent_last,char_q,0.016112876384634392,27
+abstract_belief,food_truck,agent_last,obj_q,0.0006344491850746296,27
+abstract_belief,food_truck,agent_last,belief_form,0.0065211010485309836,27
+abstract_belief,food_truck,agent_first,state_first,0.0,27
+abstract_belief,food_truck,agent_first,state_second,0.0,27
+abstract_belief,food_truck,agent_first,state_correct,0.0,27
+abstract_belief,food_truck,agent_first,info_loss,0.0,27
+abstract_belief,food_truck,agent_first,char_q,0.2012757030657835,27
+abstract_belief,food_truck,agent_first,obj_q,0.0,27
+abstract_belief,food_truck,agent_first,belief_form,0.0,27
+abstract_belief,hair_styling,lookback,state_first,0.01576327270013735,40
+abstract_belief,hair_styling,lookback,state_second,0.04789557714347208,40
+abstract_belief,hair_styling,lookback,state_correct,0.029785032293423025,40
+abstract_belief,hair_styling,lookback,info_loss,0.0005636193436616694,40
+abstract_belief,hair_styling,lookback,char_q,0.0006246001967325233,40
+abstract_belief,hair_styling,lookback,obj_q,0.02373091433883265,40
+abstract_belief,hair_styling,lookback,belief_form,0.004713185341073102,40
+abstract_belief,hair_styling,belief_formation,state_first,0.002035169162829769,40
+abstract_belief,hair_styling,belief_formation,state_second,0.006145720820003711,40
+abstract_belief,hair_styling,belief_formation,state_correct,0.006135310003461553,40
+abstract_belief,hair_styling,belief_formation,info_loss,0.07001576548518465,40
+abstract_belief,hair_styling,belief_formation,char_q,0.012279385128970394,40
+abstract_belief,hair_styling,belief_formation,obj_q,0.005232829734582664,40
+abstract_belief,hair_styling,belief_formation,belief_form,0.050103096398897574,40
+abstract_belief,hair_styling,agent_last,state_first,0.0006222184321716311,40
+abstract_belief,hair_styling,agent_last,state_second,0.0009160926632358142,40
+abstract_belief,hair_styling,agent_last,state_correct,0.0007905638540493509,40
+abstract_belief,hair_styling,agent_last,info_loss,0.0015465128987248741,40
+abstract_belief,hair_styling,agent_last,char_q,0.0076779276856957955,40
+abstract_belief,hair_styling,agent_last,obj_q,0.0017226456202086833,40
+abstract_belief,hair_styling,agent_last,belief_form,0.003931034248657867,40
+abstract_belief,hair_styling,agent_first,state_first,0.0,40
+abstract_belief,hair_styling,agent_first,state_second,0.0,40
+abstract_belief,hair_styling,agent_first,state_correct,0.0,40
+abstract_belief,hair_styling,agent_first,info_loss,0.0,40
+abstract_belief,hair_styling,agent_first,char_q,0.09096624023201824,40
+abstract_belief,hair_styling,agent_first,obj_q,0.0,40
+abstract_belief,hair_styling,agent_first,belief_form,0.0,40
+abstract_belief,library_book,lookback,state_first,0.007060705015033235,16
+abstract_belief,library_book,lookback,state_second,0.014531234188007554,16
+abstract_belief,library_book,lookback,state_correct,0.014894340975447461,16
+abstract_belief,library_book,lookback,info_loss,0.00010444233506467147,16
+abstract_belief,library_book,lookback,char_q,0.000994611407404641,16
+abstract_belief,library_book,lookback,obj_q,0.005741838619987794,16
+abstract_belief,library_book,lookback,belief_form,0.0013703797589447585,16
+abstract_belief,library_book,belief_formation,state_first,0.004370204343926125,16
+abstract_belief,library_book,belief_formation,state_second,0.02536199497031387,16
+abstract_belief,library_book,belief_formation,state_correct,0.027062764453889932,16
+abstract_belief,library_book,belief_formation,info_loss,0.014499117570163526,16
+abstract_belief,library_book,belief_formation,char_q,0.0015839920821025797,16
+abstract_belief,library_book,belief_formation,obj_q,0.002054064809613296,16
+abstract_belief,library_book,belief_formation,belief_form,0.05840224535059485,16
+abstract_belief,library_book,agent_last,state_first,0.0004781492189686145,16
+abstract_belief,library_book,agent_last,state_second,0.0005564888322391366,16
+abstract_belief,library_book,agent_last,state_correct,0.0005522802882706936,16
+abstract_belief,library_book,agent_last,info_loss,0.010417390967316541,16
+abstract_belief,library_book,agent_last,char_q,0.006538049153571258,16
+abstract_belief,library_book,agent_last,obj_q,0.0021577215186677876,16
+abstract_belief,library_book,agent_last,belief_form,0.0025965374490756095,16
+abstract_belief,library_book,agent_first,state_first,7.02698623465325e-06,16
+abstract_belief,library_book,agent_first,state_second,9.361713428326905e-06,16
+abstract_belief,library_book,agent_first,state_correct,8.17823890629579e-06,16
+abstract_belief,library_book,agent_first,info_loss,0.0,16
+abstract_belief,library_book,agent_first,char_q,0.14246059763389676,16
+abstract_belief,library_book,agent_first,obj_q,0.0,16
+abstract_belief,library_book,agent_first,belief_form,0.0,16
+abstract_belief,ptype:false belief,lookback,state_first,0.012886938221050831,39
+abstract_belief,ptype:false belief,lookback,state_second,0.04092484449351186,39
+abstract_belief,ptype:false belief,lookback,state_correct,0.012886938221050831,39
+abstract_belief,ptype:false belief,lookback,info_loss,0.00035286749163957533,39
+abstract_belief,ptype:false belief,lookback,char_q,0.000712773096564162,39
+abstract_belief,ptype:false belief,lookback,obj_q,0.015282484826469347,39
+abstract_belief,ptype:false belief,lookback,belief_form,0.004455700260629657,39
+abstract_belief,ptype:false belief,belief_formation,state_first,0.002745551769141545,39
+abstract_belief,ptype:false belief,belief_formation,state_second,0.0005882961321661226,39
+abstract_belief,ptype:false belief,belief_formation,state_correct,0.002745551769141545,39
+abstract_belief,ptype:false belief,belief_formation,info_loss,0.040195009330458345,39
+abstract_belief,ptype:false belief,belief_formation,char_q,0.01927890123214074,39
+abstract_belief,ptype:false belief,belief_formation,obj_q,0.0032487271502705402,39
+abstract_belief,ptype:false belief,belief_formation,belief_form,0.07632482435058054,39
+abstract_belief,ptype:false belief,agent_last,state_first,0.0005312617736870837,39
+abstract_belief,ptype:false belief,agent_last,state_second,0.0010455969456635177,39
+abstract_belief,ptype:false belief,agent_last,state_correct,0.0005312617736870837,39
+abstract_belief,ptype:false belief,agent_last,info_loss,0.003468948832332605,39
+abstract_belief,ptype:false belief,agent_last,char_q,0.008707682639606426,39
+abstract_belief,ptype:false belief,agent_last,obj_q,0.001482597134919436,39
+abstract_belief,ptype:false belief,agent_last,belief_form,0.003907454234491892,39
+abstract_belief,ptype:false belief,agent_first,state_first,1.4890996313069098e-06,39
+abstract_belief,ptype:false belief,agent_first,state_second,1.98546617507588e-06,39
+abstract_belief,ptype:false belief,agent_first,state_correct,1.4890996313069098e-06,39
+abstract_belief,ptype:false belief,agent_first,info_loss,0.0,39
+abstract_belief,ptype:false belief,agent_first,char_q,0.11371133297686113,39
+abstract_belief,ptype:false belief,agent_first,obj_q,0.0,39
+abstract_belief,ptype:false belief,agent_first,belief_form,0.0,39
+abstract_belief,ptype:true belief,lookback,state_first,0.006690455111115794,44
+abstract_belief,ptype:true belief,lookback,state_second,0.02427098455531537,44
+abstract_belief,ptype:true belief,lookback,state_correct,0.02427098455531537,44
+abstract_belief,ptype:true belief,lookback,info_loss,0.000478048940354262,44
+abstract_belief,ptype:true belief,lookback,char_q,0.0006592304870043207,44
+abstract_belief,ptype:true belief,lookback,obj_q,0.005995760563464902,44
+abstract_belief,ptype:true belief,lookback,belief_form,0.009059156014924012,44
+abstract_belief,ptype:true belief,belief_formation,state_first,0.0024050571877876916,44
+abstract_belief,ptype:true belief,belief_formation,state_second,0.016174767293481336,44
+abstract_belief,ptype:true belief,belief_formation,state_correct,0.016174767293481336,44
+abstract_belief,ptype:true belief,belief_formation,info_loss,0.014512039382677068,44
+abstract_belief,ptype:true belief,belief_formation,char_q,0.004816295887240311,44
+abstract_belief,ptype:true belief,belief_formation,obj_q,0.0026482596003203542,44
+abstract_belief,ptype:true belief,belief_formation,belief_form,0.08808381097030504,44
+abstract_belief,ptype:true belief,agent_last,state_first,0.0004076129337550505,44
+abstract_belief,ptype:true belief,agent_last,state_second,0.0007034996390630581,44
+abstract_belief,ptype:true belief,agent_last,state_correct,0.0007034996390630581,44
+abstract_belief,ptype:true belief,agent_last,info_loss,0.0010993327883621722,44
+abstract_belief,ptype:true belief,agent_last,char_q,0.012939820712518226,44
+abstract_belief,ptype:true belief,agent_last,obj_q,0.0012867065617807075,44
+abstract_belief,ptype:true belief,agent_last,belief_form,0.005468866040546161,44
+abstract_belief,ptype:true belief,agent_first,state_first,1.5534179756549326e-06,44
+abstract_belief,ptype:true belief,agent_first,state_second,2.0678273981639432e-06,44
+abstract_belief,ptype:true belief,agent_first,state_correct,2.0678273981639432e-06,44
+abstract_belief,ptype:true belief,agent_first,info_loss,0.0,44
+abstract_belief,ptype:true belief,agent_first,char_q,0.17956466380987068,44
+abstract_belief,ptype:true belief,agent_first,obj_q,0.0,44
+abstract_belief,ptype:true belief,agent_first,belief_form,0.0,44
+abstract_photo,pooled,lookback,state_first,0.038310406904279094,55
+abstract_photo,pooled,lookback,state_second,0.03441214227020673,55
+abstract_photo,pooled,lookback,state_correct,0.04836568405350665,55
+abstract_photo,pooled,lookback,info_loss,,55
+abstract_photo,pooled,lookback,char_q,,55
+abstract_photo,pooled,lookback,obj_q,0.010858184290795716,55
+abstract_photo,pooled,lookback,belief_form,0.0007660665228793192,55
+abstract_photo,pooled,belief_formation,state_first,0.003104298709286417,55
+abstract_photo,pooled,belief_formation,state_second,0.0008577770863565763,55
+abstract_photo,pooled,belief_formation,state_correct,0.002941763475773291,55
+abstract_photo,pooled,belief_formation,info_loss,,55
+abstract_photo,pooled,belief_formation,char_q,,55
+abstract_photo,pooled,belief_formation,obj_q,0.004591947221178405,55
+abstract_photo,pooled,belief_formation,belief_form,0.16228153591480932,55
+abstract_photo,pooled,agent_last,state_first,0.0030516299590755782,55
+abstract_photo,pooled,agent_last,state_second,0.0014768650859105813,55
+abstract_photo,pooled,agent_last,state_correct,0.003845536811367595,55
+abstract_photo,pooled,agent_last,info_loss,,55
+abstract_photo,pooled,agent_last,char_q,,55
+abstract_photo,pooled,agent_last,obj_q,0.005222991331140073,55
+abstract_photo,pooled,agent_last,belief_form,0.0,55
+abstract_photo,pooled,agent_first,state_first,0.0030516299590755782,55
+abstract_photo,pooled,agent_first,state_second,0.0014768650859105813,55
+abstract_photo,pooled,agent_first,state_correct,0.003845536811367595,55
+abstract_photo,pooled,agent_first,info_loss,,55
+abstract_photo,pooled,agent_first,char_q,,55
+abstract_photo,pooled,agent_first,obj_q,0.005222991331140073,55
+abstract_photo,pooled,agent_first,belief_form,0.0,55
+abstract_photo,food_truck,lookback,state_first,0.049914271156358624,13
+abstract_photo,food_truck,lookback,state_second,0.025393681044813588,13
+abstract_photo,food_truck,lookback,state_correct,0.050414014898137134,13
+abstract_photo,food_truck,lookback,info_loss,,13
+abstract_photo,food_truck,lookback,char_q,,13
+abstract_photo,food_truck,lookback,obj_q,0.0017013167549132097,13
+abstract_photo,food_truck,lookback,belief_form,0.0008154519757744618,13
+abstract_photo,food_truck,belief_formation,state_first,0.0028040270645170394,13
+abstract_photo,food_truck,belief_formation,state_second,0.0003374810423426086,13
+abstract_photo,food_truck,belief_formation,state_correct,0.0029709937513364673,13
+abstract_photo,food_truck,belief_formation,info_loss,,13
+abstract_photo,food_truck,belief_formation,char_q,,13
+abstract_photo,food_truck,belief_formation,obj_q,0.0012441587783795288,13
+abstract_photo,food_truck,belief_formation,belief_form,0.20537877349319678,13
+abstract_photo,food_truck,agent_last,state_first,0.002182820443742316,13
+abstract_photo,food_truck,agent_last,state_second,0.0006257893940535448,13
+abstract_photo,food_truck,agent_last,state_correct,0.00251834157367722,13
+abstract_photo,food_truck,agent_last,info_loss,,13
+abstract_photo,food_truck,agent_last,char_q,,13
+abstract_photo,food_truck,agent_last,obj_q,0.003194088017943887,13
+abstract_photo,food_truck,agent_last,belief_form,0.0,13
+abstract_photo,food_truck,agent_first,state_first,0.002182820443742316,13
+abstract_photo,food_truck,agent_first,state_second,0.0006257893940535448,13
+abstract_photo,food_truck,agent_first,state_correct,0.00251834157367722,13
+abstract_photo,food_truck,agent_first,info_loss,,13
+abstract_photo,food_truck,agent_first,char_q,,13
+abstract_photo,food_truck,agent_first,obj_q,0.003194088017943887,13
+abstract_photo,food_truck,agent_first,belief_form,0.0,13
+abstract_photo,hair_styling,lookback,state_first,0.038025254121358695,14
+abstract_photo,hair_styling,lookback,state_second,0.04616593374020214,14
+abstract_photo,hair_styling,lookback,state_correct,0.038871428558774304,14
+abstract_photo,hair_styling,lookback,info_loss,,14
+abstract_photo,hair_styling,lookback,char_q,,14
+abstract_photo,hair_styling,lookback,obj_q,0.03763436602522944,14
+abstract_photo,hair_styling,lookback,belief_form,0.0005387870209620296,14
+abstract_photo,hair_styling,belief_formation,state_first,0.0014485483514136317,14
+abstract_photo,hair_styling,belief_formation,state_second,0.00042747926852372016,14
+abstract_photo,hair_styling,belief_formation,state_correct,0.001605039968382013,14
+abstract_photo,hair_styling,belief_formation,info_loss,,14
+abstract_photo,hair_styling,belief_formation,char_q,,14
+abstract_photo,hair_styling,belief_formation,obj_q,0.0034810930427573035,14
+abstract_photo,hair_styling,belief_formation,belief_form,0.11582867310853306,14
+abstract_photo,hair_styling,agent_last,state_first,0.0025362474520900166,14
+abstract_photo,hair_styling,agent_last,state_second,0.002959295749667151,14
+abstract_photo,hair_styling,agent_last,state_correct,0.005052916225416866,14
+abstract_photo,hair_styling,agent_last,info_loss,,14
+abstract_photo,hair_styling,agent_last,char_q,,14
+abstract_photo,hair_styling,agent_last,obj_q,0.006595373738484579,14
+abstract_photo,hair_styling,agent_last,belief_form,0.0,14
+abstract_photo,hair_styling,agent_first,state_first,0.0025362474520900166,14
+abstract_photo,hair_styling,agent_first,state_second,0.002959295749667151,14
+abstract_photo,hair_styling,agent_first,state_correct,0.005052916225416866,14
+abstract_photo,hair_styling,agent_first,info_loss,,14
+abstract_photo,hair_styling,agent_first,char_q,,14
+abstract_photo,hair_styling,agent_first,obj_q,0.006595373738484579,14
+abstract_photo,hair_styling,agent_first,belief_form,0.0,14
+abstract_photo,library_book,lookback,state_first,0.025219018766952327,28
+abstract_photo,library_book,lookback,state_second,0.03762475325104054,28
+abstract_photo,library_book,lookback,state_correct,0.05175604606852865,28
+abstract_photo,library_book,lookback,info_loss,,28
+abstract_photo,library_book,lookback,char_q,,28
+abstract_photo,library_book,lookback,obj_q,0.005160015036740568,28
+abstract_photo,library_book,lookback,belief_form,0.0008468257117787617,28
+abstract_photo,library_book,belief_formation,state_first,0.004447090092812553,28
+abstract_photo,library_book,belief_formation,state_second,0.0017122594976564144,28
+abstract_photo,library_book,belief_formation,state_correct,0.003715329376691987,28
+abstract_photo,library_book,belief_formation,info_loss,,28
+abstract_photo,library_book,belief_formation,char_q,,28
+abstract_photo,library_book,belief_formation,obj_q,0.00908918108753355,28
+abstract_photo,library_book,belief_formation,belief_form,0.14106370099417603,28
+abstract_photo,library_book,agent_last,state_first,0.004355838231294045,28
+abstract_photo,library_book,agent_last,state_second,0.0015547278990241502,28
+abstract_photo,library_book,agent_last,state_correct,0.004633665094167792,28
+abstract_photo,library_book,agent_last,info_loss,,28
+abstract_photo,library_book,agent_last,char_q,,28
+abstract_photo,library_book,agent_last,obj_q,0.006713579209236859,28
+abstract_photo,library_book,agent_last,belief_form,0.0,28
+abstract_photo,library_book,agent_first,state_first,0.004355838231294045,28
+abstract_photo,library_book,agent_first,state_second,0.0015547278990241502,28
+abstract_photo,library_book,agent_first,state_correct,0.004633665094167792,28
+abstract_photo,library_book,agent_first,info_loss,,28
+abstract_photo,library_book,agent_first,char_q,,28
+abstract_photo,library_book,agent_first,obj_q,0.006713579209236859,28
+abstract_photo,library_book,agent_first,belief_form,0.0,28
+abstract_photo,ptype:current photo,lookback,state_first,0.0023526883152043387,17
+abstract_photo,ptype:current photo,lookback,state_second,0.02620010850145461,17
+abstract_photo,ptype:current photo,lookback,state_correct,0.02620010850145461,17
+abstract_photo,ptype:current photo,lookback,info_loss,,17
+abstract_photo,ptype:current photo,lookback,char_q,,17
+abstract_photo,ptype:current photo,lookback,obj_q,0.0019504916530611355,17
+abstract_photo,ptype:current photo,lookback,belief_form,0.0009903130648508604,17
+abstract_photo,ptype:current photo,belief_formation,state_first,0.0024104592837751035,17
+abstract_photo,ptype:current photo,belief_formation,state_second,0.0020249854722496235,17
+abstract_photo,ptype:current photo,belief_formation,state_correct,0.0020249854722496235,17
+abstract_photo,ptype:current photo,belief_formation,info_loss,,17
+abstract_photo,ptype:current photo,belief_formation,char_q,,17
+abstract_photo,ptype:current photo,belief_formation,obj_q,0.00612365234945531,17
+abstract_photo,ptype:current photo,belief_formation,belief_form,0.12102958982443941,17
+abstract_photo,ptype:current photo,agent_last,state_first,0.0015954453596128489,17
+abstract_photo,ptype:current photo,agent_last,state_second,0.003478300502676253,17
+abstract_photo,ptype:current photo,agent_last,state_correct,0.003478300502676253,17
+abstract_photo,ptype:current photo,agent_last,info_loss,,17
+abstract_photo,ptype:current photo,agent_last,char_q,,17
+abstract_photo,ptype:current photo,agent_last,obj_q,0.0024944742305698974,17
+abstract_photo,ptype:current photo,agent_last,belief_form,0.0,17
+abstract_photo,ptype:current photo,agent_first,state_first,0.0015954453596128489,17
+abstract_photo,ptype:current photo,agent_first,state_second,0.003478300502676253,17
+abstract_photo,ptype:current photo,agent_first,state_correct,0.003478300502676253,17
+abstract_photo,ptype:current photo,agent_first,info_loss,,17
+abstract_photo,ptype:current photo,agent_first,char_q,,17
+abstract_photo,ptype:current photo,agent_first,obj_q,0.0024944742305698974,17
+abstract_photo,ptype:current photo,agent_first,belief_form,0.0,17
+abstract_photo,ptype:outdated photo,lookback,state_first,0.06452568215893079,38
+abstract_photo,ptype:outdated photo,lookback,state_second,0.04039919412153698,38
+abstract_photo,ptype:outdated photo,lookback,state_correct,0.06452568215893079,38
+abstract_photo,ptype:outdated photo,lookback,info_loss,,38
+abstract_photo,ptype:outdated photo,lookback,char_q,,38
+abstract_photo,ptype:outdated photo,lookback,obj_q,0.017352412054539263,38
+abstract_photo,ptype:outdated photo,lookback,belief_form,0.0006025777073104164,38
+abstract_photo,ptype:outdated photo,belief_formation,state_first,0.003610148141231051,38
+abstract_photo,ptype:outdated photo,belief_formation,state_second,6.814057655947914e-06,38
+abstract_photo,ptype:outdated photo,belief_formation,state_correct,0.003610148141231051,38
+abstract_photo,ptype:outdated photo,belief_formation,info_loss,,38
+abstract_photo,ptype:outdated photo,belief_formation,char_q,,38
+abstract_photo,ptype:outdated photo,belief_formation,obj_q,0.003475244796154676,38
+abstract_photo,ptype:outdated photo,belief_formation,belief_form,0.19235661197588294,38
+abstract_photo,ptype:outdated photo,agent_last,state_first,0.0041132735114031435,38
+abstract_photo,ptype:outdated photo,agent_last,state_second,1.770186828469052e-05,38
+abstract_photo,ptype:outdated photo,agent_last,state_correct,0.0041132735114031435,38
+abstract_photo,ptype:outdated photo,agent_last,info_loss,,38
+abstract_photo,ptype:outdated photo,agent_last,char_q,,38
+abstract_photo,ptype:outdated photo,agent_last,obj_q,0.007212239526942027,38
+abstract_photo,ptype:outdated photo,agent_last,belief_form,0.0,38
+abstract_photo,ptype:outdated photo,agent_first,state_first,0.0041132735114031435,38
+abstract_photo,ptype:outdated photo,agent_first,state_second,1.770186828469052e-05,38
+abstract_photo,ptype:outdated photo,agent_first,state_correct,0.0041132735114031435,38
+abstract_photo,ptype:outdated photo,agent_first,info_loss,,38
+abstract_photo,ptype:outdated photo,agent_first,char_q,,38
+abstract_photo,ptype:outdated photo,agent_first,obj_q,0.007212239526942027,38
+abstract_photo,ptype:outdated photo,agent_first,belief_form,0.0,38
+answer_changes_belief,pooled,lookback,state_first,0.021380878687562152,58
+answer_changes_belief,pooled,lookback,state_second,0.05811969023096384,58
+answer_changes_belief,pooled,lookback,state_correct,0.06276200901303716,58
+answer_changes_belief,pooled,lookback,info_loss,0.00036640669486179023,58
+answer_changes_belief,pooled,lookback,char_q,0.00038589551947547867,58
+answer_changes_belief,pooled,lookback,obj_q,0.013263566569803178,58
+answer_changes_belief,pooled,lookback,belief_form,0.0038388853879052177,58
+answer_changes_belief,pooled,belief_formation,state_first,0.0021481937958426974,58
+answer_changes_belief,pooled,belief_formation,state_second,0.010877740653614505,58
+answer_changes_belief,pooled,belief_formation,state_correct,0.011978185311064574,58
+answer_changes_belief,pooled,belief_formation,info_loss,0.015308222371716492,58
+answer_changes_belief,pooled,belief_formation,char_q,0.017708684923386668,58
+answer_changes_belief,pooled,belief_formation,obj_q,0.002739990593488635,58
+answer_changes_belief,pooled,belief_formation,belief_form,0.12812729430719813,58
+answer_changes_belief,pooled,agent_last,state_first,0.0003650836169984018,58
+answer_changes_belief,pooled,agent_last,state_second,0.0004377879572904008,58
+answer_changes_belief,pooled,agent_last,state_correct,0.0004751474485431405,58
+answer_changes_belief,pooled,agent_last,info_loss,0.002455112962800754,58
+answer_changes_belief,pooled,agent_last,char_q,0.009565771753732192,58
+answer_changes_belief,pooled,agent_last,obj_q,0.0012678172076240792,58
+answer_changes_belief,pooled,agent_last,belief_form,0.002559061175112818,58
+answer_changes_belief,pooled,agent_first,state_first,2.2975901411884724e-06,58
+answer_changes_belief,pooled,agent_first,state_second,3.067231117126766e-06,58
+answer_changes_belief,pooled,agent_first,state_correct,2.604496944383229e-06,58
+answer_changes_belief,pooled,agent_first,info_loss,0.0,58
+answer_changes_belief,pooled,agent_first,char_q,0.21398726303554627,58
+answer_changes_belief,pooled,agent_first,obj_q,0.0,58
+answer_changes_belief,pooled,agent_first,belief_form,0.0,58
+answer_changes_belief,food_truck,lookback,state_first,0.020605951497478354,21
+answer_changes_belief,food_truck,lookback,state_second,0.07003474336271406,21
+answer_changes_belief,food_truck,lookback,state_correct,0.08353234695168901,21
+answer_changes_belief,food_truck,lookback,info_loss,0.00039319302344622664,21
+answer_changes_belief,food_truck,lookback,char_q,0.00031226169852594107,21
+answer_changes_belief,food_truck,lookback,obj_q,0.000142563132006612,21
+answer_changes_belief,food_truck,lookback,belief_form,0.007933869408448492,21
+answer_changes_belief,food_truck,belief_formation,state_first,0.0016268641876363917,21
+answer_changes_belief,food_truck,belief_formation,state_second,0.00042074823654108357,21
+answer_changes_belief,food_truck,belief_formation,state_correct,0.0018345865493717669,21
+answer_changes_belief,food_truck,belief_formation,info_loss,0.012316687405160289,21
+answer_changes_belief,food_truck,belief_formation,char_q,0.03471168732571049,21
+answer_changes_belief,food_truck,belief_formation,obj_q,0.0007605973647820381,21
+answer_changes_belief,food_truck,belief_formation,belief_form,0.17932728966739445,21
+answer_changes_belief,food_truck,agent_last,state_first,0.00028388404847732484,21
+answer_changes_belief,food_truck,agent_last,state_second,0.0003564922486247188,21
+answer_changes_belief,food_truck,agent_last,state_correct,0.0003483846647133619,21
+answer_changes_belief,food_truck,agent_last,info_loss,0.0010155626077262409,21
+answer_changes_belief,food_truck,agent_last,char_q,0.015016636786666362,21
+answer_changes_belief,food_truck,agent_last,obj_q,0.000714280015443807,21
+answer_changes_belief,food_truck,agent_last,belief_form,0.004448807476413011,21
+answer_changes_belief,food_truck,agent_first,state_first,0.0,21
+answer_changes_belief,food_truck,agent_first,state_second,0.0,21
+answer_changes_belief,food_truck,agent_first,state_correct,0.0,21
+answer_changes_belief,food_truck,agent_first,info_loss,0.0,21
+answer_changes_belief,food_truck,agent_first,char_q,0.2601504152955215,21
+answer_changes_belief,food_truck,agent_first,obj_q,0.0,21
+answer_changes_belief,food_truck,agent_first,belief_form,0.0,21
+answer_changes_belief,hair_styling,lookback,state_first,0.017824804389410254,21
+answer_changes_belief,hair_styling,lookback,state_second,0.07219425998560139,21
+answer_changes_belief,hair_styling,lookback,state_correct,0.05927277368409482,21
+answer_changes_belief,hair_styling,lookback,info_loss,0.0003885825262798447,21
+answer_changes_belief,hair_styling,lookback,char_q,0.0004219993794374154,21
+answer_changes_belief,hair_styling,lookback,obj_q,0.03888868403986563,21
+answer_changes_belief,hair_styling,lookback,belief_form,0.0005131622845831694,21
+answer_changes_belief,hair_styling,belief_formation,state_first,0.0024646907102973846,21
+answer_changes_belief,hair_styling,belief_formation,state_second,0.0100300438319537,21
+answer_changes_belief,hair_styling,belief_formation,state_correct,0.009973618184904352,21
+answer_changes_belief,hair_styling,belief_formation,info_loss,0.040559071478887786,21
+answer_changes_belief,hair_styling,belief_formation,char_q,0.010552785998494772,21
+answer_changes_belief,hair_styling,belief_formation,obj_q,0.006018424229804175,21
+answer_changes_belief,hair_styling,belief_formation,belief_form,0.09587687886879918,21
+answer_changes_belief,hair_styling,agent_last,state_first,0.00040128926046821084,21
+answer_changes_belief,hair_styling,agent_last,state_second,0.0006221431961873097,21
+answer_changes_belief,hair_styling,agent_last,state_correct,0.0006410737945443661,21
+answer_changes_belief,hair_styling,agent_last,info_loss,0.0011912533729428099,21
+answer_changes_belief,hair_styling,agent_last,char_q,0.004726339238606291,21
+answer_changes_belief,hair_styling,agent_last,obj_q,0.0010187984943857648,21
+answer_changes_belief,hair_styling,agent_last,belief_form,0.0014645887899825902,21
+answer_changes_belief,hair_styling,agent_first,state_first,0.0,21
+answer_changes_belief,hair_styling,agent_first,state_second,0.0,21
+answer_changes_belief,hair_styling,agent_first,state_correct,0.0,21
+answer_changes_belief,hair_styling,agent_first,info_loss,0.0,21
+answer_changes_belief,hair_styling,agent_first,char_q,0.1381992172981656,21
+answer_changes_belief,hair_styling,agent_first,obj_q,0.0,21
+answer_changes_belief,hair_styling,agent_first,belief_form,0.0,21
+answer_changes_belief,library_book,lookback,state_first,0.026619990476970893,16
+answer_changes_belief,library_book,lookback,state_second,0.02437020649483883,16
+answer_changes_belief,library_book,lookback,state_correct,0.03623522182005831,16
+answer_changes_belief,library_book,lookback,info_loss,0.0002633563092534292,16
+answer_changes_belief,library_book,lookback,char_q,0.00045257683925500485,16
+answer_changes_belief,library_book,lookback,obj_q,0.0030220405613813044,16
+answer_changes_belief,library_book,lookback,belief_form,0.0016497726703153773,16
+answer_changes_belief,library_book,belief_formation,state_first,0.0025501180653904197,16
+answer_changes_belief,library_book,belief_formation,state_second,0.027235122436034022,16
+answer_changes_belief,library_book,belief_formation,state_correct,0.02920823543815119,16
+answer_changes_belief,library_book,belief_formation,info_loss,0.008060283681884281,16
+answer_changes_belief,library_book,belief_formation,char_q,0.0009497381880853936,16
+answer_changes_belief,library_book,belief_formation,obj_q,0.0018719992369638327,16
+answer_changes_belief,library_book,belief_formation,belief_form,0.08999957447645096,16
+answer_changes_belief,library_book,agent_last,state_first,0.00044277533062219213,16
+answer_changes_belief,library_book,agent_last,state_second,0.0003448382280857436,16
+answer_changes_belief,library_book,agent_last,state_correct,0.0004703151764972817,16
+answer_changes_belief,library_book,agent_last,info_loss,0.008042009002476697,16
+answer_changes_belief,library_book,agent_last,char_q,0.0071273879201788955,16
+answer_changes_belief,library_book,agent_last,obj_q,0.0023690236187087254,16
+answer_changes_belief,library_book,agent_last,belief_form,0.0010412940827076035,16
+answer_changes_belief,library_book,agent_first,state_first,8.325493255942348e-06,16
+answer_changes_belief,library_book,agent_first,state_second,1.1114346080387647e-05,16
+answer_changes_belief,library_book,agent_first,state_correct,9.437593484087944e-06,16
+answer_changes_belief,library_book,agent_first,info_loss,0.0,16
+answer_changes_belief,library_book,agent_first,char_q,0.2334567515646105,16
+answer_changes_belief,library_book,agent_first,obj_q,0.0,16
+answer_changes_belief,library_book,agent_first,belief_form,0.0,16
+answer_changes_belief,ptype:false belief,lookback,state_first,0.037905131680860606,20
+answer_changes_belief,ptype:false belief,lookback,state_second,0.026268679284359685,20
+answer_changes_belief,ptype:false belief,lookback,state_correct,0.037905131680860606,20
+answer_changes_belief,ptype:false belief,lookback,info_loss,0.00017699434379022465,20
+answer_changes_belief,ptype:false belief,lookback,char_q,0.0004433727453427906,20
+answer_changes_belief,ptype:false belief,lookback,obj_q,0.020401990171450248,20
+answer_changes_belief,ptype:false belief,lookback,belief_form,0.0008223143401465919,20
+answer_changes_belief,ptype:false belief,belief_formation,state_first,0.0029172950863749336,20
+answer_changes_belief,ptype:false belief,belief_formation,state_second,0.0001589166827094802,20
+answer_changes_belief,ptype:false belief,belief_formation,state_correct,0.0029172950863749336,20
+answer_changes_belief,ptype:false belief,belief_formation,info_loss,0.018064867700057243,20
+answer_changes_belief,ptype:false belief,belief_formation,char_q,0.02626988517607972,20
+answer_changes_belief,ptype:false belief,belief_formation,obj_q,0.001969327372908296,20
+answer_changes_belief,ptype:false belief,belief_formation,belief_form,0.20459931597590958,20
+answer_changes_belief,ptype:false belief,agent_last,state_first,0.00048538461384395575,20
+answer_changes_belief,ptype:false belief,agent_last,state_second,0.0003917391832029684,20
+answer_changes_belief,ptype:false belief,agent_last,state_correct,0.00048538461384395575,20
+answer_changes_belief,ptype:false belief,agent_last,info_loss,0.0029490070060632628,20
+answer_changes_belief,ptype:false belief,agent_last,char_q,0.013720141186780804,20
+answer_changes_belief,ptype:false belief,agent_last,obj_q,0.0013603400887238924,20
+answer_changes_belief,ptype:false belief,agent_last,belief_form,0.001407815040642669,20
+answer_changes_belief,ptype:false belief,agent_first,state_first,3.4796732577849325e-06,20
+answer_changes_belief,ptype:false belief,agent_first,state_second,4.639564343713244e-06,20
+answer_changes_belief,ptype:false belief,agent_first,state_correct,3.4796732577849325e-06,20
+answer_changes_belief,ptype:false belief,agent_first,info_loss,0.0,20
+answer_changes_belief,ptype:false belief,agent_first,char_q,0.2933627198974402,20
+answer_changes_belief,ptype:false belief,agent_first,obj_q,0.0,20
+answer_changes_belief,ptype:false belief,agent_first,belief_form,0.0,20
+answer_changes_belief,ptype:true belief,lookback,state_first,0.010412994134673441,38
+answer_changes_belief,ptype:true belief,lookback,state_second,0.0792606284081284,38
+answer_changes_belief,ptype:true belief,lookback,state_correct,0.0792606284081284,38
+answer_changes_belief,ptype:true belief,lookback,info_loss,0.0007195711717799722,38
+answer_changes_belief,ptype:true belief,lookback,char_q,0.00034774531819323917,38
+answer_changes_belief,ptype:true belief,lookback,obj_q,0.008525476080373278,38
+answer_changes_belief,ptype:true belief,lookback,belief_form,0.005841118288286325,38
+answer_changes_belief,ptype:true belief,belief_formation,state_first,0.0016377069273920423,38
+answer_changes_belief,ptype:true belief,belief_formation,state_second,0.017992302740221445,38
+answer_changes_belief,ptype:true belief,belief_formation,state_correct,0.017992302740221445,38
+answer_changes_belief,ptype:true belief,belief_formation,info_loss,0.010168382229694422,38
+answer_changes_belief,ptype:true belief,belief_formation,char_q,0.012026234040809396,38
+answer_changes_belief,ptype:true belief,belief_formation,obj_q,0.003251514184655543,38
+answer_changes_belief,ptype:true belief,belief_formation,belief_form,0.07736939889561205,38
+answer_changes_belief,ptype:true belief,agent_last,state_first,0.0002852344737097717,38
+answer_changes_belief,ptype:true belief,agent_last,state_second,0.00046835258482290354,38
+answer_changes_belief,ptype:true belief,agent_last,state_correct,0.00046835258482290354,38
+answer_changes_belief,ptype:true belief,agent_last,info_loss,0.001534234094791207,38
+answer_changes_belief,ptype:true belief,agent_last,char_q,0.006808331260040522,38
+answer_changes_belief,ptype:true belief,agent_last,obj_q,0.001206405640104812,38
+answer_changes_belief,ptype:true belief,agent_last,belief_form,0.003323194640023388,38
+answer_changes_belief,ptype:true belief,agent_first,state_first,1.512988794307201e-06,38
+answer_changes_belief,ptype:true belief,agent_first,state_second,2.0236033467903144e-06,38
+answer_changes_belief,ptype:true belief,agent_first,state_correct,2.0236033467903144e-06,38
+answer_changes_belief,ptype:true belief,agent_first,info_loss,0.0,38
+answer_changes_belief,ptype:true belief,agent_first,char_q,0.16130222804200556,38
+answer_changes_belief,ptype:true belief,agent_first,obj_q,0.0,38
+answer_changes_belief,ptype:true belief,agent_first,belief_form,0.0,38
+answer_changes_location_only,pooled,lookback,state_first,0.20015784424143637,79
+answer_changes_location_only,pooled,lookback,state_second,0.031032738079897513,79
+answer_changes_location_only,pooled,lookback,state_correct,0.20015784424143637,79
+answer_changes_location_only,pooled,lookback,info_loss,0.00017446118150108973,79
+answer_changes_location_only,pooled,lookback,char_q,0.00040905723659592666,79
+answer_changes_location_only,pooled,lookback,obj_q,0.026749068804506376,79
+answer_changes_location_only,pooled,lookback,belief_form,0.0009484666635307774,79
+answer_changes_location_only,pooled,belief_formation,state_first,0.0027852766506030434,79
+answer_changes_location_only,pooled,belief_formation,state_second,5.001514170993263e-05,79
+answer_changes_location_only,pooled,belief_formation,state_correct,0.0027852766506030434,79
+answer_changes_location_only,pooled,belief_formation,info_loss,0.017038029635623973,79
+answer_changes_location_only,pooled,belief_formation,char_q,0.04853014342493198,79
+answer_changes_location_only,pooled,belief_formation,obj_q,0.001430957830697278,79
+answer_changes_location_only,pooled,belief_formation,belief_form,0.1287281812311048,79
+answer_changes_location_only,pooled,agent_last,state_first,0.000605269820465538,79
+answer_changes_location_only,pooled,agent_last,state_second,0.0008112954491028912,79
+answer_changes_location_only,pooled,agent_last,state_correct,0.000605269820465538,79
+answer_changes_location_only,pooled,agent_last,info_loss,0.002286956647711323,79
+answer_changes_location_only,pooled,agent_last,char_q,0.02530481050137347,79
+answer_changes_location_only,pooled,agent_last,obj_q,0.0015167578061165835,79
+answer_changes_location_only,pooled,agent_last,belief_form,0.0018336497616309316,79
+answer_changes_location_only,pooled,agent_first,state_first,3.263051746907701e-06,79
+answer_changes_location_only,pooled,agent_first,state_second,3.2091213806547086e-06,79
+answer_changes_location_only,pooled,agent_first,state_correct,3.263051746907701e-06,79
+answer_changes_location_only,pooled,agent_first,info_loss,0.0,79
+answer_changes_location_only,pooled,agent_first,char_q,0.2268205940560978,79
+answer_changes_location_only,pooled,agent_first,obj_q,0.0,79
+answer_changes_location_only,pooled,agent_first,belief_form,0.0,79
+answer_changes_location_only,food_truck,lookback,state_first,0.2620933967148696,24
+answer_changes_location_only,food_truck,lookback,state_second,0.015520871482061032,24
+answer_changes_location_only,food_truck,lookback,state_correct,0.2620933967148696,24
+answer_changes_location_only,food_truck,lookback,info_loss,0.00019516949878121363,24
+answer_changes_location_only,food_truck,lookback,char_q,0.0004697667298462859,24
+answer_changes_location_only,food_truck,lookback,obj_q,0.00041405571359870674,24
+answer_changes_location_only,food_truck,lookback,belief_form,0.0010399674290444503,24
+answer_changes_location_only,food_truck,belief_formation,state_first,0.002928532081831757,24
+answer_changes_location_only,food_truck,belief_formation,state_second,0.0,24
+answer_changes_location_only,food_truck,belief_formation,state_correct,0.002928532081831757,24
+answer_changes_location_only,food_truck,belief_formation,info_loss,0.008927815411664783,24
+answer_changes_location_only,food_truck,belief_formation,char_q,0.10137293567854028,24
+answer_changes_location_only,food_truck,belief_formation,obj_q,0.0006854178870687881,24
+answer_changes_location_only,food_truck,belief_formation,belief_form,0.1832962684853945,24
+answer_changes_location_only,food_truck,agent_last,state_first,0.00038447291548278947,24
+answer_changes_location_only,food_truck,agent_last,state_second,0.00025655416197498744,24
+answer_changes_location_only,food_truck,agent_last,state_correct,0.00038447291548278947,24
+answer_changes_location_only,food_truck,agent_last,info_loss,0.0011381058523204782,24
+answer_changes_location_only,food_truck,agent_last,char_q,0.038396738826592586,24
+answer_changes_location_only,food_truck,agent_last,obj_q,0.0011911594005500823,24
+answer_changes_location_only,food_truck,agent_last,belief_form,0.0025849388743591907,24
+answer_changes_location_only,food_truck,agent_first,state_first,0.0,24
+answer_changes_location_only,food_truck,agent_first,state_second,0.0,24
+answer_changes_location_only,food_truck,agent_first,state_correct,0.0,24
+answer_changes_location_only,food_truck,agent_first,info_loss,0.0,24
+answer_changes_location_only,food_truck,agent_first,char_q,0.27559307372294445,24
+answer_changes_location_only,food_truck,agent_first,obj_q,0.0,24
+answer_changes_location_only,food_truck,agent_first,belief_form,0.0,24
+answer_changes_location_only,hair_styling,lookback,state_first,0.17661737486993306,23
+answer_changes_location_only,hair_styling,lookback,state_second,0.02896375614795167,23
+answer_changes_location_only,hair_styling,lookback,state_correct,0.17661737486993306,23
+answer_changes_location_only,hair_styling,lookback,info_loss,0.00013198358732619282,23
+answer_changes_location_only,hair_styling,lookback,char_q,0.00021588318580255638,23
+answer_changes_location_only,hair_styling,lookback,obj_q,0.10538648182834752,23
+answer_changes_location_only,hair_styling,lookback,belief_form,0.00011456407620532351,23
+answer_changes_location_only,hair_styling,belief_formation,state_first,0.00036808739077768106,23
+answer_changes_location_only,hair_styling,belief_formation,state_second,0.00019249238963149243,23
+answer_changes_location_only,hair_styling,belief_formation,state_correct,0.00036808739077768106,23
+answer_changes_location_only,hair_styling,belief_formation,info_loss,0.04883245480033781,23
+answer_changes_location_only,hair_styling,belief_formation,char_q,0.015228383223661249,23
+answer_changes_location_only,hair_styling,belief_formation,obj_q,0.0013361958153841808,23
+answer_changes_location_only,hair_styling,belief_formation,belief_form,0.1213203150436271,23
+answer_changes_location_only,hair_styling,agent_last,state_first,0.0005791237110135985,23
+answer_changes_location_only,hair_styling,agent_last,state_second,0.0007110043489760352,23
+answer_changes_location_only,hair_styling,agent_last,state_correct,0.0005791237110135985,23
+answer_changes_location_only,hair_styling,agent_last,info_loss,0.000617924503613635,23
+answer_changes_location_only,hair_styling,agent_last,char_q,0.006709767592799859,23
+answer_changes_location_only,hair_styling,agent_last,obj_q,0.0014262981764648645,23
+answer_changes_location_only,hair_styling,agent_last,belief_form,0.0006027977358541928,23
+answer_changes_location_only,hair_styling,agent_first,state_first,0.0,23
+answer_changes_location_only,hair_styling,agent_first,state_second,0.0,23
+answer_changes_location_only,hair_styling,agent_first,state_correct,0.0,23
+answer_changes_location_only,hair_styling,agent_first,info_loss,0.0,23
+answer_changes_location_only,hair_styling,agent_first,char_q,0.18093850354288213,23
+answer_changes_location_only,hair_styling,agent_first,obj_q,0.0,23
+answer_changes_location_only,hair_styling,agent_first,belief_form,0.0,23
+answer_changes_location_only,library_book,lookback,state_first,0.13303008890040674,32
+answer_changes_location_only,library_book,lookback,state_second,0.05383722802956162,32
+answer_changes_location_only,library_book,lookback,state_correct,0.13303008890040674,32
+answer_changes_location_only,library_book,lookback,info_loss,0.00017805307104285867,32
+answer_changes_location_only,library_book,lookback,char_q,0.00047123189038095626,32
+answer_changes_location_only,library_book,lookback,obj_q,0.003659877239434592,32
+answer_changes_location_only,library_book,lookback,belief_form,0.0014505128321304081,32
+answer_changes_location_only,library_book,belief_formation,state_first,0.004407607900447728,32
+answer_changes_location_only,library_book,belief_formation,state_second,1.1333024746425281e-05,32
+answer_changes_location_only,library_book,belief_formation,state_correct,0.004407607900447728,32
+answer_changes_location_only,library_book,belief_formation,info_loss,0.004226892633374055,32
+answer_changes_location_only,library_book,belief_formation,char_q,0.0012013608218849833,32
+answer_changes_location_only,library_book,belief_formation,obj_q,0.00252348000802859,32
+answer_changes_location_only,library_book,belief_formation,belief_form,0.059554976544209576,32
+answer_changes_location_only,library_book,agent_last,state_first,0.0009273847126617059,32
+answer_changes_location_only,library_book,agent_last,state_second,0.0016466245189288974,32
+answer_changes_location_only,library_book,agent_last,state_correct,0.0009273847126617059,32
+answer_changes_location_only,library_book,agent_last,info_loss,0.005116321676123925,32
+answer_changes_location_only,library_book,agent_last,char_q,0.021361587844107507,32
+answer_changes_location_only,library_book,agent_last,obj_q,0.002030814037911561,32
+answer_changes_location_only,library_book,agent_last,belief_form,0.0017305715338098084,32
+answer_changes_location_only,library_book,agent_first,state_first,1.0187667388659086e-05,32
+answer_changes_location_only,library_book,agent_first,state_second,1.0019289846361535e-05,32
+answer_changes_location_only,library_book,agent_first,state_correct,1.0187667388659086e-05,32
+answer_changes_location_only,library_book,agent_first,info_loss,0.0,32
+answer_changes_location_only,library_book,agent_first,char_q,0.19453200756617897,32
+answer_changes_location_only,library_book,agent_first,obj_q,0.0,32
+answer_changes_location_only,library_book,agent_first,belief_form,0.0,32
+answer_changes_location_only,ptype:false belief (a),lookback,state_first,0.20331627159815469,40
+answer_changes_location_only,ptype:false belief (a),lookback,state_second,0.03108450184672826,40
+answer_changes_location_only,ptype:false belief (a),lookback,state_correct,0.20331627159815469,40
+answer_changes_location_only,ptype:false belief (a),lookback,info_loss,0.00017996205465526933,40
+answer_changes_location_only,ptype:false belief (a),lookback,char_q,0.00040011517772632523,40
+answer_changes_location_only,ptype:false belief (a),lookback,obj_q,0.027794751187053702,40
+answer_changes_location_only,ptype:false belief (a),lookback,belief_form,0.0009402536293644268,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,state_first,0.0027923028929803446,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,state_second,5.001920696904956e-05,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,state_correct,0.0027923028929803446,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,info_loss,0.016976603197942624,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,char_q,0.04990677086483959,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,obj_q,0.0014534911042306023,40
+answer_changes_location_only,ptype:false belief (a),belief_formation,belief_form,0.12893763545855177,40
+answer_changes_location_only,ptype:false belief (a),agent_last,state_first,0.0006202080207809076,40
+answer_changes_location_only,ptype:false belief (a),agent_last,state_second,0.0007891848436628833,40
+answer_changes_location_only,ptype:false belief (a),agent_last,state_correct,0.0006202080207809076,40
+answer_changes_location_only,ptype:false belief (a),agent_last,info_loss,0.0022230709627121866,40
+answer_changes_location_only,ptype:false belief (a),agent_last,char_q,0.025319961397100826,40
+answer_changes_location_only,ptype:false belief (a),agent_last,obj_q,0.0015419908936677353,40
+answer_changes_location_only,ptype:false belief (a),agent_last,belief_form,0.0018571395875553115,40
+answer_changes_location_only,ptype:false belief (a),agent_first,state_first,2.631011802274344e-06,40
+answer_changes_location_only,ptype:false belief (a),agent_first,state_second,3.5080157363657916e-06,40
+answer_changes_location_only,ptype:false belief (a),agent_first,state_correct,2.631011802274344e-06,40
+answer_changes_location_only,ptype:false belief (a),agent_first,info_loss,0.0,40
+answer_changes_location_only,ptype:false belief (a),agent_first,char_q,0.22562691731068726,40
+answer_changes_location_only,ptype:false belief (a),agent_first,obj_q,0.0,40
+answer_changes_location_only,ptype:false belief (a),agent_first,belief_form,0.0,40
+answer_changes_location_only,ptype:false belief (b),lookback,state_first,0.19698565872236143,39
+answer_changes_location_only,ptype:false belief (b),lookback,state_second,0.030980748829233278,39
+answer_changes_location_only,ptype:false belief (b),lookback,state_correct,0.19698565872236143,39
+answer_changes_location_only,ptype:false belief (b),lookback,info_loss,0.0001689363464515077,39
+answer_changes_location_only,ptype:false belief (b),lookback,char_q,0.00041803824722342394,39
+answer_changes_location_only,ptype:false belief (b),lookback,obj_q,0.025698831412022873,39
+answer_changes_location_only,ptype:false belief (b),lookback,belief_form,0.0009567154738112314,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,state_first,0.0027782198017965096,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,state_second,5.0011058742479034e-05,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,state_correct,0.0027782198017965096,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,info_loss,0.01709972364789457,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,char_q,0.04714751937288686,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,obj_q,0.0014083264018478151,39
+answer_changes_location_only,ptype:false belief (b),belief_formation,belief_form,0.1285178146175422,39
+answer_changes_location_only,ptype:false belief (b),agent_last,state_first,0.0005902665490999141,39
+answer_changes_location_only,ptype:false belief (b),agent_last,state_second,0.0008335023687097582,39
+answer_changes_location_only,ptype:false belief (b),agent_last,state_correct,0.0005902665490999141,39
+answer_changes_location_only,ptype:false belief (b),agent_last,info_loss,0.0023511206198221176,39
+answer_changes_location_only,ptype:false belief (b),agent_last,char_q,0.025289593608091097,39
+answer_changes_location_only,ptype:false belief (b),agent_last,obj_q,0.0014914148028143067,39
+answer_changes_location_only,ptype:false belief (b),agent_last,belief_form,0.0018100576136322111,39
+answer_changes_location_only,ptype:false belief (b),agent_first,state_first,3.897844868103955e-06,39
+answer_changes_location_only,ptype:false belief (b),agent_first,state_second,2.9089250361343547e-06,39
+answer_changes_location_only,ptype:false belief (b),agent_first,state_correct,3.897844868103955e-06,39
+answer_changes_location_only,ptype:false belief (b),agent_first,info_loss,0.0,39
+answer_changes_location_only,ptype:false belief (b),agent_first,char_q,0.22801947047736293,39
+answer_changes_location_only,ptype:false belief (b),agent_first,obj_q,0.0,39
+answer_changes_location_only,ptype:false belief (b),agent_first,belief_form,0.0,39
+answer_changes_location_only_photo,pooled,lookback,state_first,0.2627414493170485,45
+answer_changes_location_only_photo,pooled,lookback,state_second,0.004693764962221085,45
+answer_changes_location_only_photo,pooled,lookback,state_correct,0.2627414493170485,45
+answer_changes_location_only_photo,pooled,lookback,info_loss,,45
+answer_changes_location_only_photo,pooled,lookback,char_q,,45
+answer_changes_location_only_photo,pooled,lookback,obj_q,0.010882868288960644,45
+answer_changes_location_only_photo,pooled,lookback,belief_form,0.00018128028763648735,45
+answer_changes_location_only_photo,pooled,belief_formation,state_first,0.0043195896671777674,45
+answer_changes_location_only_photo,pooled,belief_formation,state_second,9.223528872768006e-06,45
+answer_changes_location_only_photo,pooled,belief_formation,state_correct,0.0043195896671777674,45
+answer_changes_location_only_photo,pooled,belief_formation,info_loss,,45
+answer_changes_location_only_photo,pooled,belief_formation,char_q,,45
+answer_changes_location_only_photo,pooled,belief_formation,obj_q,0.00525226618230693,45
+answer_changes_location_only_photo,pooled,belief_formation,belief_form,0.1593147452845024,45
+answer_changes_location_only_photo,pooled,agent_last,state_first,0.002243890236429793,45
+answer_changes_location_only_photo,pooled,agent_last,state_second,8.643484771014917e-06,45
+answer_changes_location_only_photo,pooled,agent_last,state_correct,0.002243890236429793,45
+answer_changes_location_only_photo,pooled,agent_last,info_loss,,45
+answer_changes_location_only_photo,pooled,agent_last,char_q,,45
+answer_changes_location_only_photo,pooled,agent_last,obj_q,0.006258227841626499,45
+answer_changes_location_only_photo,pooled,agent_last,belief_form,0.0,45
+answer_changes_location_only_photo,pooled,agent_first,state_first,0.002243890236429793,45
+answer_changes_location_only_photo,pooled,agent_first,state_second,8.643484771014917e-06,45
+answer_changes_location_only_photo,pooled,agent_first,state_correct,0.002243890236429793,45
+answer_changes_location_only_photo,pooled,agent_first,info_loss,,45
+answer_changes_location_only_photo,pooled,agent_first,char_q,,45
+answer_changes_location_only_photo,pooled,agent_first,obj_q,0.006258227841626499,45
+answer_changes_location_only_photo,pooled,agent_first,belief_form,0.0,45
+answer_changes_location_only_photo,food_truck,lookback,state_first,0.29037983107971793,16
+answer_changes_location_only_photo,food_truck,lookback,state_second,0.004253866581346322,16
+answer_changes_location_only_photo,food_truck,lookback,state_correct,0.29037983107971793,16
+answer_changes_location_only_photo,food_truck,lookback,info_loss,,16
+answer_changes_location_only_photo,food_truck,lookback,char_q,,16
+answer_changes_location_only_photo,food_truck,lookback,obj_q,0.0003122752736624988,16
+answer_changes_location_only_photo,food_truck,lookback,belief_form,0.00018719704145192794,16
+answer_changes_location_only_photo,food_truck,belief_formation,state_first,0.0037019509469080345,16
+answer_changes_location_only_photo,food_truck,belief_formation,state_second,0.0,16
+answer_changes_location_only_photo,food_truck,belief_formation,state_correct,0.0037019509469080345,16
+answer_changes_location_only_photo,food_truck,belief_formation,info_loss,,16
+answer_changes_location_only_photo,food_truck,belief_formation,char_q,,16
+answer_changes_location_only_photo,food_truck,belief_formation,obj_q,0.0024539994791450024,16
+answer_changes_location_only_photo,food_truck,belief_formation,belief_form,0.17971858770301086,16
+answer_changes_location_only_photo,food_truck,agent_last,state_first,0.0016253639265982629,16
+answer_changes_location_only_photo,food_truck,agent_last,state_second,0.0,16
+answer_changes_location_only_photo,food_truck,agent_last,state_correct,0.0016253639265982629,16
+answer_changes_location_only_photo,food_truck,agent_last,info_loss,,16
+answer_changes_location_only_photo,food_truck,agent_last,char_q,,16
+answer_changes_location_only_photo,food_truck,agent_last,obj_q,0.0020203963129996703,16
+answer_changes_location_only_photo,food_truck,agent_last,belief_form,0.0,16
+answer_changes_location_only_photo,food_truck,agent_first,state_first,0.0016253639265982629,16
+answer_changes_location_only_photo,food_truck,agent_first,state_second,0.0,16
+answer_changes_location_only_photo,food_truck,agent_first,state_correct,0.0016253639265982629,16
+answer_changes_location_only_photo,food_truck,agent_first,info_loss,,16
+answer_changes_location_only_photo,food_truck,agent_first,char_q,,16
+answer_changes_location_only_photo,food_truck,agent_first,obj_q,0.0020203963129996703,16
+answer_changes_location_only_photo,food_truck,agent_first,belief_form,0.0,16
+answer_changes_location_only_photo,hair_styling,lookback,state_first,0.23883827718790437,15
+answer_changes_location_only_photo,hair_styling,lookback,state_second,0.0059469897933573795,15
+answer_changes_location_only_photo,hair_styling,lookback,state_correct,0.23883827718790437,15
+answer_changes_location_only_photo,hair_styling,lookback,info_loss,,15
+answer_changes_location_only_photo,hair_styling,lookback,char_q,,15
+answer_changes_location_only_photo,hair_styling,lookback,obj_q,0.03678202723026293,15
+answer_changes_location_only_photo,hair_styling,lookback,belief_form,0.00015635664552458958,15
+answer_changes_location_only_photo,hair_styling,belief_formation,state_first,0.0017429015071283968,15
+answer_changes_location_only_photo,hair_styling,belief_formation,state_second,0.0,15
+answer_changes_location_only_photo,hair_styling,belief_formation,state_correct,0.0017429015071283968,15
+answer_changes_location_only_photo,hair_styling,belief_formation,info_loss,,15
+answer_changes_location_only_photo,hair_styling,belief_formation,char_q,,15
+answer_changes_location_only_photo,hair_styling,belief_formation,obj_q,0.010355824791747148,15
+answer_changes_location_only_photo,hair_styling,belief_formation,belief_form,0.12248201924160008,15
+answer_changes_location_only_photo,hair_styling,agent_last,state_first,0.001907818283860042,15
+answer_changes_location_only_photo,hair_styling,agent_last,state_second,0.0,15
+answer_changes_location_only_photo,hair_styling,agent_last,state_correct,0.001907818283860042,15
+answer_changes_location_only_photo,hair_styling,agent_last,info_loss,,15
+answer_changes_location_only_photo,hair_styling,agent_last,char_q,,15
+answer_changes_location_only_photo,hair_styling,agent_last,obj_q,0.009470693060737395,15
+answer_changes_location_only_photo,hair_styling,agent_last,belief_form,0.0,15
+answer_changes_location_only_photo,hair_styling,agent_first,state_first,0.001907818283860042,15
+answer_changes_location_only_photo,hair_styling,agent_first,state_second,0.0,15
+answer_changes_location_only_photo,hair_styling,agent_first,state_correct,0.001907818283860042,15
+answer_changes_location_only_photo,hair_styling,agent_first,info_loss,,15
+answer_changes_location_only_photo,hair_styling,agent_first,char_q,,15
+answer_changes_location_only_photo,hair_styling,agent_first,obj_q,0.009470693060737395,15
+answer_changes_location_only_photo,hair_styling,agent_first,belief_form,0.0,15
+answer_changes_location_only_photo,library_book,lookback,state_first,0.24557565443509782,14
+answer_changes_location_only_photo,library_book,lookback,state_second,0.004123994917779213,14
+answer_changes_location_only_photo,library_book,lookback,state_correct,0.24557565443509782,14
+answer_changes_location_only_photo,library_book,lookback,info_loss,,14
+answer_changes_location_only_photo,library_book,lookback,char_q,,14
+answer_changes_location_only_photo,library_book,lookback,obj_q,0.0012629794439780325,14
+answer_changes_location_only_photo,library_book,lookback,belief_form,0.00019673589297061097,14
+answer_changes_location_only_photo,library_book,belief_formation,state_first,0.0077078622420267565,14
+answer_changes_location_only_photo,library_book,belief_formation,state_second,3.156552244486261e-05,14
+answer_changes_location_only_photo,library_book,belief_formation,state_correct,0.0077078622420267565,14
+answer_changes_location_only_photo,library_book,belief_formation,info_loss,,14
+answer_changes_location_only_photo,library_book,belief_formation,char_q,,14
+answer_changes_location_only_photo,library_book,belief_formation,obj_q,0.004398363421791718,14
+answer_changes_location_only_photo,library_book,belief_formation,belief_form,0.16517366377481674,14
+answer_changes_location_only_photo,library_book,agent_last,state_first,0.0034693230164422285,14
+answer_changes_location_only_photo,library_book,agent_last,state_second,2.9580447603610167e-05,14
+answer_changes_location_only_photo,library_book,agent_last,state_correct,0.0034693230164422285,14
+answer_changes_location_only_photo,library_book,agent_last,info_loss,,14
+answer_changes_location_only_photo,library_book,agent_last,char_q,,14
+answer_changes_location_only_photo,library_book,agent_last,obj_q,0.009327473502235588,14
+answer_changes_location_only_photo,library_book,agent_last,belief_form,0.0,14
+answer_changes_location_only_photo,library_book,agent_first,state_first,0.0034693230164422285,14
+answer_changes_location_only_photo,library_book,agent_first,state_second,2.9580447603610167e-05,14
+answer_changes_location_only_photo,library_book,agent_first,state_correct,0.0034693230164422285,14
+answer_changes_location_only_photo,library_book,agent_first,info_loss,,14
+answer_changes_location_only_photo,library_book,agent_first,char_q,,14
+answer_changes_location_only_photo,library_book,agent_first,obj_q,0.009327473502235588,14
+answer_changes_location_only_photo,library_book,agent_first,belief_form,0.0,14
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,state_first,0.2684996037021346,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,state_second,0.00457077346509675,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,state_correct,0.2684996037021346,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,info_loss,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,char_q,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,obj_q,0.01084873828545618,23
+answer_changes_location_only_photo,ptype:outdated photo (a),lookback,belief_form,0.0001835821948589602,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,state_first,0.004395089469117048,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,state_second,9.39173655253924e-06,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,state_correct,0.004395089469117048,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,info_loss,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,char_q,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,obj_q,0.005297317450015006,23
+answer_changes_location_only_photo,ptype:outdated photo (a),belief_formation,belief_form,0.15791410093712677,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,state_first,0.0022734986136977355,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,state_second,9.750878506616686e-06,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,state_correct,0.0022734986136977355,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,info_loss,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,char_q,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,obj_q,0.006230650425930688,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_last,belief_form,0.0,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,state_first,0.0022734986136977355,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,state_second,9.750878506616686e-06,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,state_correct,0.0022734986136977355,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,info_loss,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,char_q,,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,obj_q,0.006230650425930688,23
+answer_changes_location_only_photo,ptype:outdated photo (a),agent_first,belief_form,0.0,23
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,state_first,0.25683033817253487,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,state_second,0.004820023544522228,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,state_correct,0.25683033817253487,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,info_loss,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,char_q,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,obj_q,0.01091790490496387,22
+answer_changes_location_only_photo,ptype:outdated photo (b),lookback,belief_form,0.00017891723369134864,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,state_first,0.004242084325916382,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,state_second,9.050853007552616e-06,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,state_correct,0.004242084325916382,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,info_loss,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,char_q,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,obj_q,0.005206018195050215,22
+answer_changes_location_only_photo,ptype:outdated photo (b),belief_formation,belief_form,0.1607525956541827,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,state_first,0.002213495356901589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,state_second,7.506674777028906e-06,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,state_correct,0.002213495356901589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,info_loss,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,char_q,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,obj_q,0.00628653781012589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_last,belief_form,0.0,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,state_first,0.002213495356901589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,state_second,7.506674777028906e-06,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,state_correct,0.002213495356901589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,info_loss,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,char_q,,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,obj_q,0.00628653781012589,22
+answer_changes_location_only_photo,ptype:outdated photo (b),agent_first,belief_form,0.0,22
+answer_changes_photo,pooled,lookback,state_first,0.1248518155714277,105
+answer_changes_photo,pooled,lookback,state_second,0.053933403982895464,105
+answer_changes_photo,pooled,lookback,state_correct,0.16931278904582764,105
+answer_changes_photo,pooled,lookback,info_loss,,105
+answer_changes_photo,pooled,lookback,char_q,0.0017305475678471786,105
+answer_changes_photo,pooled,lookback,obj_q,0.007237738119479993,105
+answer_changes_photo,pooled,lookback,belief_form,0.00044017608919991245,105
+answer_changes_photo,pooled,belief_formation,state_first,0.0034021936484016383,105
+answer_changes_photo,pooled,belief_formation,state_second,0.0011155009414562395,105
+answer_changes_photo,pooled,belief_formation,state_correct,0.0028130074999648488,105
+answer_changes_photo,pooled,belief_formation,info_loss,,105
+answer_changes_photo,pooled,belief_formation,char_q,0.04499154593366972,105
+answer_changes_photo,pooled,belief_formation,obj_q,0.005442113023185988,105
+answer_changes_photo,pooled,belief_formation,belief_form,0.19705623544963743,105
+answer_changes_photo,pooled,agent_last,state_first,0.0016320853068095469,105
+answer_changes_photo,pooled,agent_last,state_second,0.000822863788730608,105
+answer_changes_photo,pooled,agent_last,state_correct,0.002016425294297781,105
+answer_changes_photo,pooled,agent_last,info_loss,,105
+answer_changes_photo,pooled,agent_last,char_q,0.19462951149685698,105
+answer_changes_photo,pooled,agent_last,obj_q,0.004087648840471263,105
+answer_changes_photo,pooled,agent_last,belief_form,0.0,105
+answer_changes_photo,pooled,agent_first,state_first,0.0016320853068095469,105
+answer_changes_photo,pooled,agent_first,state_second,0.000822863788730608,105
+answer_changes_photo,pooled,agent_first,state_correct,0.002016425294297781,105
+answer_changes_photo,pooled,agent_first,info_loss,,105
+answer_changes_photo,pooled,agent_first,char_q,0.19462951149685698,105
+answer_changes_photo,pooled,agent_first,obj_q,0.004087648840471263,105
+answer_changes_photo,pooled,agent_first,belief_form,0.0,105
+answer_changes_photo,food_truck,lookback,state_first,0.15859091767377284,39
+answer_changes_photo,food_truck,lookback,state_second,0.039422956867003874,39
+answer_changes_photo,food_truck,lookback,state_correct,0.18401348892489264,39
+answer_changes_photo,food_truck,lookback,info_loss,,39
+answer_changes_photo,food_truck,lookback,char_q,0.0028330429953433004,39
+answer_changes_photo,food_truck,lookback,obj_q,0.0008413357759562012,39
+answer_changes_photo,food_truck,lookback,belief_form,0.0004196093182353766,39
+answer_changes_photo,food_truck,belief_formation,state_first,0.0033494042507485654,39
+answer_changes_photo,food_truck,belief_formation,state_second,0.0013562362492278437,39
+answer_changes_photo,food_truck,belief_formation,state_correct,0.003637062780341012,39
+answer_changes_photo,food_truck,belief_formation,info_loss,,39
+answer_changes_photo,food_truck,belief_formation,char_q,0.03339585705582309,39
+answer_changes_photo,food_truck,belief_formation,obj_q,0.002309115951993913,39
+answer_changes_photo,food_truck,belief_formation,belief_form,0.19813659547407314,39
+answer_changes_photo,food_truck,agent_last,state_first,0.001129418259062887,39
+answer_changes_photo,food_truck,agent_last,state_second,0.00036852661912261785,39
+answer_changes_photo,food_truck,agent_last,state_correct,0.0012716764552580773,39
+answer_changes_photo,food_truck,agent_last,info_loss,,39
+answer_changes_photo,food_truck,agent_last,char_q,0.17875813880843983,39
+answer_changes_photo,food_truck,agent_last,obj_q,0.0015944540648524408,39
+answer_changes_photo,food_truck,agent_last,belief_form,0.0,39
+answer_changes_photo,food_truck,agent_first,state_first,0.001129418259062887,39
+answer_changes_photo,food_truck,agent_first,state_second,0.00036852661912261785,39
+answer_changes_photo,food_truck,agent_first,state_correct,0.0012716764552580773,39
+answer_changes_photo,food_truck,agent_first,info_loss,,39
+answer_changes_photo,food_truck,agent_first,char_q,0.17875813880843983,39
+answer_changes_photo,food_truck,agent_first,obj_q,0.0015944540648524408,39
+answer_changes_photo,food_truck,agent_first,belief_form,0.0,39
+answer_changes_photo,hair_styling,lookback,state_first,0.09332593281436516,32
+answer_changes_photo,hair_styling,lookback,state_second,0.05588174601433659,32
+answer_changes_photo,hair_styling,lookback,state_correct,0.1423619674385151,32
+answer_changes_photo,hair_styling,lookback,info_loss,,32
+answer_changes_photo,hair_styling,lookback,char_q,0.0006949124497639333,32
+answer_changes_photo,hair_styling,lookback,obj_q,0.02560840576322266,32
+answer_changes_photo,hair_styling,lookback,belief_form,0.0003739887873067599,32
+answer_changes_photo,hair_styling,belief_formation,state_first,0.002088760889301734,32
+answer_changes_photo,hair_styling,belief_formation,state_second,0.0007218555996373091,32
+answer_changes_photo,hair_styling,belief_formation,state_correct,0.001576305166627822,32
+answer_changes_photo,hair_styling,belief_formation,info_loss,,32
+answer_changes_photo,hair_styling,belief_formation,char_q,0.0563018790432933,32
+answer_changes_photo,hair_styling,belief_formation,obj_q,0.007530649931960243,32
+answer_changes_photo,hair_styling,belief_formation,belief_form,0.2103889461297639,32
+answer_changes_photo,hair_styling,agent_last,state_first,0.0015392523584343088,32
+answer_changes_photo,hair_styling,agent_last,state_second,0.001960621740437731,32
+answer_changes_photo,hair_styling,agent_last,state_correct,0.00297841536617064,32
+answer_changes_photo,hair_styling,agent_last,info_loss,,32
+answer_changes_photo,hair_styling,agent_last,char_q,0.24833832069997164,32
+answer_changes_photo,hair_styling,agent_last,obj_q,0.006821801760862195,32
+answer_changes_photo,hair_styling,agent_last,belief_form,0.0,32
+answer_changes_photo,hair_styling,agent_first,state_first,0.0015392523584343088,32
+answer_changes_photo,hair_styling,agent_first,state_second,0.001960621740437731,32
+answer_changes_photo,hair_styling,agent_first,state_correct,0.00297841536617064,32
+answer_changes_photo,hair_styling,agent_first,info_loss,,32
+answer_changes_photo,hair_styling,agent_first,char_q,0.24833832069997164,32
+answer_changes_photo,hair_styling,agent_first,obj_q,0.006821801760862195,32
+answer_changes_photo,hair_styling,agent_first,belief_form,0.0,32
+answer_changes_photo,library_book,lookback,state_first,0.0954324821970538,34
+answer_changes_photo,library_book,lookback,state_second,0.07604165022116346,34
+answer_changes_photo,library_book,lookback,state_correct,0.16725642665531698,34
+answer_changes_photo,library_book,lookback,info_loss,,34
+answer_changes_photo,library_book,lookback,char_q,0.0007736573335350887,34
+answer_changes_photo,library_book,lookback,obj_q,0.0027213556023892743,34
+answer_changes_photo,library_book,lookback,belief_form,0.0005276652264067584,34
+answer_changes_photo,library_book,belief_formation,state_first,0.0045580847762384255,34
+answer_changes_photo,library_book,belief_formation,state_second,0.0010429824473358225,34
+answer_changes_photo,library_book,belief_formation,state_correct,0.0024745531081422642,34
+answer_changes_photo,library_book,belief_formation,info_loss,,34
+answer_changes_photo,library_book,belief_formation,char_q,0.054715493070627404,34
+answer_changes_photo,library_book,belief_formation,obj_q,0.00885723062451989,34
+answer_changes_photo,library_book,belief_formation,belief_form,0.18443360027977684,34
+answer_changes_photo,library_book,agent_last,state_first,0.0025285269765042114,34
+answer_changes_photo,library_book,agent_last,state_second,0.0006381647590049992,34
+answer_changes_photo,library_book,agent_last,state_correct,0.002449106830466467,34
+answer_changes_photo,library_book,agent_last,info_loss,,34
+answer_changes_photo,library_book,agent_last,char_q,0.17680525569365235,34
+answer_changes_photo,library_book,agent_last,obj_q,0.005932189566670199,34
+answer_changes_photo,library_book,agent_last,belief_form,0.0,34
+answer_changes_photo,library_book,agent_first,state_first,0.0025285269765042114,34
+answer_changes_photo,library_book,agent_first,state_second,0.0006381647590049992,34
+answer_changes_photo,library_book,agent_first,state_correct,0.002449106830466467,34
+answer_changes_photo,library_book,agent_first,info_loss,,34
+answer_changes_photo,library_book,agent_first,char_q,0.17680525569365235,34
+answer_changes_photo,library_book,agent_first,obj_q,0.005932189566670199,34
+answer_changes_photo,library_book,agent_first,belief_form,0.0,34
+answer_changes_photo,ptype:current photo,lookback,state_first,0.006464621533154272,45
+answer_changes_photo,ptype:current photo,lookback,state_second,0.10158184653520208,45
+answer_changes_photo,ptype:current photo,lookback,state_correct,0.10158184653520208,45
+answer_changes_photo,ptype:current photo,lookback,info_loss,,45
+answer_changes_photo,ptype:current photo,lookback,char_q,0.0029385744507497116,45
+answer_changes_photo,ptype:current photo,lookback,obj_q,0.001524481176323371,45
+answer_changes_photo,ptype:current photo,lookback,belief_form,0.0006821982868914575,45
+answer_changes_photo,ptype:current photo,belief_formation,state_first,0.0036416519002651737,45
+answer_changes_photo,ptype:current photo,belief_formation,state_second,0.002381181265693483,45
+answer_changes_photo,ptype:current photo,belief_formation,state_correct,0.002381181265693483,45
+answer_changes_photo,ptype:current photo,belief_formation,info_loss,,45
+answer_changes_photo,ptype:current photo,belief_formation,char_q,0.045426786456667284,45
+answer_changes_photo,ptype:current photo,belief_formation,obj_q,0.006642029631366535,45
+answer_changes_photo,ptype:current photo,belief_formation,belief_form,0.21933769313913748,45
+answer_changes_photo,ptype:current photo,agent_last,state_first,0.0009273977439526668,45
+answer_changes_photo,ptype:current photo,agent_last,state_second,0.0017496323962877516,45
+answer_changes_photo,ptype:current photo,agent_last,state_correct,0.0017496323962877516,45
+answer_changes_photo,ptype:current photo,agent_last,info_loss,,45
+answer_changes_photo,ptype:current photo,agent_last,char_q,0.2309999833091711,45
+answer_changes_photo,ptype:current photo,agent_last,obj_q,0.002187834876535539,45
+answer_changes_photo,ptype:current photo,agent_last,belief_form,0.0,45
+answer_changes_photo,ptype:current photo,agent_first,state_first,0.0009273977439526668,45
+answer_changes_photo,ptype:current photo,agent_first,state_second,0.0017496323962877516,45
+answer_changes_photo,ptype:current photo,agent_first,state_correct,0.0017496323962877516,45
+answer_changes_photo,ptype:current photo,agent_first,info_loss,,45
+answer_changes_photo,ptype:current photo,agent_first,char_q,0.2309999833091711,45
+answer_changes_photo,ptype:current photo,agent_first,obj_q,0.002187834876535539,45
+answer_changes_photo,ptype:current photo,agent_first,belief_form,0.0,45
+answer_changes_photo,ptype:outdated photo,lookback,state_first,0.22876021256308973,60
+answer_changes_photo,ptype:outdated photo,lookback,state_second,0.01211238334819031,60
+answer_changes_photo,ptype:outdated photo,lookback,state_correct,0.22876021256308973,60
+answer_changes_photo,ptype:outdated photo,lookback,info_loss,,60
+answer_changes_photo,ptype:outdated photo,lookback,char_q,0.0006702628136983846,60
+answer_changes_photo,ptype:outdated photo,lookback,obj_q,0.012252261652937206,60
+answer_changes_photo,ptype:outdated photo,lookback,belief_form,0.00022775329463315045,60
+answer_changes_photo,ptype:outdated photo,belief_formation,state_first,0.003192021228152185,60
+answer_changes_photo,ptype:outdated photo,belief_formation,state_second,4.613782893621054e-06,60
+answer_changes_photo,ptype:outdated photo,belief_formation,state_correct,0.003192021228152185,60
+answer_changes_photo,ptype:outdated photo,belief_formation,info_loss,,60
+answer_changes_photo,ptype:outdated photo,belief_formation,char_q,0.04460953548551374,60
+answer_changes_photo,ptype:outdated photo,belief_formation,obj_q,0.00438894665420013,60
+answer_changes_photo,ptype:outdated photo,belief_formation,belief_form,0.17749980816912433,60
+answer_changes_photo,ptype:outdated photo,agent_last,state_first,0.0022505893234918517,60
+answer_changes_photo,ptype:outdated photo,agent_last,state_second,9.439320182726827e-06,60
+answer_changes_photo,ptype:outdated photo,agent_last,state_correct,0.0022505893234918517,60
+answer_changes_photo,ptype:outdated photo,agent_last,info_loss,,60
+answer_changes_photo,ptype:outdated photo,agent_last,char_q,0.16270716166376437,60
+answer_changes_photo,ptype:outdated photo,agent_last,obj_q,0.0057551148631148664,60
+answer_changes_photo,ptype:outdated photo,agent_last,belief_form,0.0,60
+answer_changes_photo,ptype:outdated photo,agent_first,state_first,0.0022505893234918517,60
+answer_changes_photo,ptype:outdated photo,agent_first,state_second,9.439320182726827e-06,60
+answer_changes_photo,ptype:outdated photo,agent_first,state_correct,0.0022505893234918517,60
+answer_changes_photo,ptype:outdated photo,agent_first,info_loss,,60
+answer_changes_photo,ptype:outdated photo,agent_first,char_q,0.16270716166376437,60
+answer_changes_photo,ptype:outdated photo,agent_first,obj_q,0.0057551148631148664,60
+answer_changes_photo,ptype:outdated photo,agent_first,belief_form,0.0,60
+state_only_no_belief,pooled,lookback,state_first,0.024836552050074776,57
+state_only_no_belief,pooled,lookback,state_second,0.27507533809526685,57
+state_only_no_belief,pooled,lookback,state_correct,0.27507533809526685,57
+state_only_no_belief,pooled,lookback,info_loss,,57
+state_only_no_belief,pooled,lookback,char_q,0.0002545247580119854,57
+state_only_no_belief,pooled,lookback,obj_q,0.001330160655677167,57
+state_only_no_belief,pooled,lookback,belief_form,,57
+state_only_no_belief,pooled,belief_formation,state_first,,57
+state_only_no_belief,pooled,belief_formation,state_second,,57
+state_only_no_belief,pooled,belief_formation,state_correct,,57
+state_only_no_belief,pooled,belief_formation,info_loss,,57
+state_only_no_belief,pooled,belief_formation,char_q,,57
+state_only_no_belief,pooled,belief_formation,obj_q,,57
+state_only_no_belief,pooled,belief_formation,belief_form,,57
+state_only_no_belief,pooled,agent_last,state_first,5.41079725413506e-06,57
+state_only_no_belief,pooled,agent_last,state_second,5.134112376937087e-06,57
+state_only_no_belief,pooled,agent_last,state_correct,5.134112376937087e-06,57
+state_only_no_belief,pooled,agent_last,info_loss,,57
+state_only_no_belief,pooled,agent_last,char_q,0.24345633188684881,57
+state_only_no_belief,pooled,agent_last,obj_q,0.0,57
+state_only_no_belief,pooled,agent_last,belief_form,,57
+state_only_no_belief,pooled,agent_first,state_first,5.41079725413506e-06,57
+state_only_no_belief,pooled,agent_first,state_second,5.134112376937087e-06,57
+state_only_no_belief,pooled,agent_first,state_correct,5.134112376937087e-06,57
+state_only_no_belief,pooled,agent_first,info_loss,,57
+state_only_no_belief,pooled,agent_first,char_q,0.24345633188684881,57
+state_only_no_belief,pooled,agent_first,obj_q,0.0,57
+state_only_no_belief,pooled,agent_first,belief_form,,57
+state_only_no_belief,food_truck,lookback,state_first,0.053701382353210765,20
+state_only_no_belief,food_truck,lookback,state_second,0.286629099784144,20
+state_only_no_belief,food_truck,lookback,state_correct,0.286629099784144,20
+state_only_no_belief,food_truck,lookback,info_loss,,20
+state_only_no_belief,food_truck,lookback,char_q,,20
+state_only_no_belief,food_truck,lookback,obj_q,0.0004477352751197223,20
+state_only_no_belief,food_truck,lookback,belief_form,,20
+state_only_no_belief,food_truck,belief_formation,state_first,,20
+state_only_no_belief,food_truck,belief_formation,state_second,,20
+state_only_no_belief,food_truck,belief_formation,state_correct,,20
+state_only_no_belief,food_truck,belief_formation,info_loss,,20
+state_only_no_belief,food_truck,belief_formation,char_q,,20
+state_only_no_belief,food_truck,belief_formation,obj_q,,20
+state_only_no_belief,food_truck,belief_formation,belief_form,,20
+state_only_no_belief,food_truck,agent_last,state_first,,20
+state_only_no_belief,food_truck,agent_last,state_second,,20
+state_only_no_belief,food_truck,agent_last,state_correct,,20
+state_only_no_belief,food_truck,agent_last,info_loss,,20
+state_only_no_belief,food_truck,agent_last,char_q,,20
+state_only_no_belief,food_truck,agent_last,obj_q,,20
+state_only_no_belief,food_truck,agent_last,belief_form,,20
+state_only_no_belief,food_truck,agent_first,state_first,,20
+state_only_no_belief,food_truck,agent_first,state_second,,20
+state_only_no_belief,food_truck,agent_first,state_correct,,20
+state_only_no_belief,food_truck,agent_first,info_loss,,20
+state_only_no_belief,food_truck,agent_first,char_q,,20
+state_only_no_belief,food_truck,agent_first,obj_q,,20
+state_only_no_belief,food_truck,agent_first,belief_form,,20
+state_only_no_belief,hair_styling,lookback,state_first,0.0023534596677024493,15
+state_only_no_belief,hair_styling,lookback,state_second,0.2429064015813388,15
+state_only_no_belief,hair_styling,lookback,state_correct,0.2429064015813388,15
+state_only_no_belief,hair_styling,lookback,info_loss,,15
+state_only_no_belief,hair_styling,lookback,char_q,,15
+state_only_no_belief,hair_styling,lookback,obj_q,0.00248003326066307,15
+state_only_no_belief,hair_styling,lookback,belief_form,,15
+state_only_no_belief,hair_styling,belief_formation,state_first,,15
+state_only_no_belief,hair_styling,belief_formation,state_second,,15
+state_only_no_belief,hair_styling,belief_formation,state_correct,,15
+state_only_no_belief,hair_styling,belief_formation,info_loss,,15
+state_only_no_belief,hair_styling,belief_formation,char_q,,15
+state_only_no_belief,hair_styling,belief_formation,obj_q,,15
+state_only_no_belief,hair_styling,belief_formation,belief_form,,15
+state_only_no_belief,hair_styling,agent_last,state_first,,15
+state_only_no_belief,hair_styling,agent_last,state_second,,15
+state_only_no_belief,hair_styling,agent_last,state_correct,,15
+state_only_no_belief,hair_styling,agent_last,info_loss,,15
+state_only_no_belief,hair_styling,agent_last,char_q,,15
+state_only_no_belief,hair_styling,agent_last,obj_q,,15
+state_only_no_belief,hair_styling,agent_last,belief_form,,15
+state_only_no_belief,hair_styling,agent_first,state_first,,15
+state_only_no_belief,hair_styling,agent_first,state_second,,15
+state_only_no_belief,hair_styling,agent_first,state_correct,,15
+state_only_no_belief,hair_styling,agent_first,info_loss,,15
+state_only_no_belief,hair_styling,agent_first,char_q,,15
+state_only_no_belief,hair_styling,agent_first,obj_q,,15
+state_only_no_belief,hair_styling,agent_first,belief_form,,15
+state_only_no_belief,library_book,lookback,state_first,0.009731937609981124,22
+state_only_no_belief,library_book,lookback,state_second,0.28613768841130177,22
+state_only_no_belief,library_book,lookback,state_correct,0.28613768841130177,22
+state_only_no_belief,library_book,lookback,info_loss,,22
+state_only_no_belief,library_book,lookback,char_q,0.0002545247580119854,22
+state_only_no_belief,library_book,lookback,obj_q,0.0014503841395344496,22
+state_only_no_belief,library_book,lookback,belief_form,,22
+state_only_no_belief,library_book,belief_formation,state_first,,22
+state_only_no_belief,library_book,belief_formation,state_second,,22
+state_only_no_belief,library_book,belief_formation,state_correct,,22
+state_only_no_belief,library_book,belief_formation,info_loss,,22
+state_only_no_belief,library_book,belief_formation,char_q,,22
+state_only_no_belief,library_book,belief_formation,obj_q,,22
+state_only_no_belief,library_book,belief_formation,belief_form,,22
+state_only_no_belief,library_book,agent_last,state_first,5.41079725413506e-06,22
+state_only_no_belief,library_book,agent_last,state_second,5.134112376937087e-06,22
+state_only_no_belief,library_book,agent_last,state_correct,5.134112376937087e-06,22
+state_only_no_belief,library_book,agent_last,info_loss,,22
+state_only_no_belief,library_book,agent_last,char_q,0.24345633188684881,22
+state_only_no_belief,library_book,agent_last,obj_q,0.0,22
+state_only_no_belief,library_book,agent_last,belief_form,,22
+state_only_no_belief,library_book,agent_first,state_first,5.41079725413506e-06,22
+state_only_no_belief,library_book,agent_first,state_second,5.134112376937087e-06,22
+state_only_no_belief,library_book,agent_first,state_correct,5.134112376937087e-06,22
+state_only_no_belief,library_book,agent_first,info_loss,,22
+state_only_no_belief,library_book,agent_first,char_q,0.24345633188684881,22
+state_only_no_belief,library_book,agent_first,obj_q,0.0,22
+state_only_no_belief,library_book,agent_first,belief_form,,22
+state_only_no_belief,ptype:no belief (a),lookback,state_first,0.02349239950731528,30
+state_only_no_belief,ptype:no belief (a),lookback,state_second,0.28951772719525887,30
+state_only_no_belief,ptype:no belief (a),lookback,state_correct,0.28951772719525887,30
+state_only_no_belief,ptype:no belief (a),lookback,info_loss,,30
+state_only_no_belief,ptype:no belief (a),lookback,char_q,0.00022906704015248575,30
+state_only_no_belief,ptype:no belief (a),lookback,obj_q,0.0012463639239442676,30
+state_only_no_belief,ptype:no belief (a),lookback,belief_form,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,state_first,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,state_second,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,state_correct,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,info_loss,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,char_q,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,obj_q,,30
+state_only_no_belief,ptype:no belief (a),belief_formation,belief_form,,30
+state_only_no_belief,ptype:no belief (a),agent_last,state_first,8.180611419128874e-06,30
+state_only_no_belief,ptype:no belief (a),agent_last,state_second,2.0470087800304383e-06,30
+state_only_no_belief,ptype:no belief (a),agent_last,state_correct,2.0470087800304383e-06,30
+state_only_no_belief,ptype:no belief (a),agent_last,info_loss,,30
+state_only_no_belief,ptype:no belief (a),agent_last,char_q,0.23283026658896436,30
+state_only_no_belief,ptype:no belief (a),agent_last,obj_q,0.0,30
+state_only_no_belief,ptype:no belief (a),agent_last,belief_form,,30
+state_only_no_belief,ptype:no belief (a),agent_first,state_first,8.180611419128874e-06,30
+state_only_no_belief,ptype:no belief (a),agent_first,state_second,2.0470087800304383e-06,30
+state_only_no_belief,ptype:no belief (a),agent_first,state_correct,2.0470087800304383e-06,30
+state_only_no_belief,ptype:no belief (a),agent_first,info_loss,,30
+state_only_no_belief,ptype:no belief (a),agent_first,char_q,0.23283026658896436,30
+state_only_no_belief,ptype:no belief (a),agent_first,obj_q,0.0,30
+state_only_no_belief,ptype:no belief (a),agent_first,belief_form,,30
+state_only_no_belief,ptype:no belief (b),lookback,state_first,0.026260196826760496,27
+state_only_no_belief,ptype:no belief (b),lookback,state_second,0.2597788362839057,27
+state_only_no_belief,ptype:no belief (b),lookback,state_correct,0.2597788362839057,27
+state_only_no_belief,ptype:no belief (b),lookback,info_loss,,27
+state_only_no_belief,ptype:no belief (b),lookback,char_q,0.00028422423328938577,27
+state_only_no_belief,ptype:no belief (b),lookback,obj_q,0.0014189130670589627,27
+state_only_no_belief,ptype:no belief (b),lookback,belief_form,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,state_first,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,state_second,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,state_correct,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,info_loss,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,char_q,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,obj_q,,27
+state_only_no_belief,ptype:no belief (b),belief_formation,belief_form,,27
+state_only_no_belief,ptype:no belief (b),agent_last,state_first,2.1794774724394234e-06,27
+state_only_no_belief,ptype:no belief (b),agent_last,state_second,8.735588261818515e-06,27
+state_only_no_belief,ptype:no belief (b),agent_last,state_correct,8.735588261818515e-06,27
+state_only_no_belief,ptype:no belief (b),agent_last,info_loss,,27
+state_only_no_belief,ptype:no belief (b),agent_last,char_q,0.2558529090408689,27
+state_only_no_belief,ptype:no belief (b),agent_last,obj_q,0.0,27
+state_only_no_belief,ptype:no belief (b),agent_last,belief_form,,27
+state_only_no_belief,ptype:no belief (b),agent_first,state_first,2.1794774724394234e-06,27
+state_only_no_belief,ptype:no belief (b),agent_first,state_second,8.735588261818515e-06,27
+state_only_no_belief,ptype:no belief (b),agent_first,state_correct,8.735588261818515e-06,27
+state_only_no_belief,ptype:no belief (b),agent_first,info_loss,,27
+state_only_no_belief,ptype:no belief (b),agent_first,char_q,0.2558529090408689,27
+state_only_no_belief,ptype:no belief (b),agent_first,obj_q,0.0,27
+state_only_no_belief,ptype:no belief (b),agent_first,belief_form,,27

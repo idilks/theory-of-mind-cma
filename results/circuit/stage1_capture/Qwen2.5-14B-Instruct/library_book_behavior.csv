@@ -1,0 +1,301 @@
+idx,variant,correct,alt,p_correct,p_alt,top1_str,token_len,first_token_collision
+0,false_belief,history,comics,0.9998341798782349,8.590742561764841e-10, history,149,False
+1,false_belief,technology,health,0.9990887641906738,2.2876483693479166e-11, technology,149,False
+2,false_belief,young adult,study materials,0.999568521976471,3.849080609796829e-09, young,152,False
+3,false_belief,poetry,study materials,0.9998377561569214,3.331003875506333e-11, poetry,150,False
+4,false_belief,study materials,technology,0.9999427795410156,1.005981647810017e-12, study,151,False
+5,false_belief,medicine,theology,0.9992499947547913,1.2997542398807127e-05, medicine,150,False
+6,false_belief,fiction,popular reads,0.9996140599250793,6.3463496680071785e-09, fiction,150,False
+7,false_belief,photography,science,0.9999992847442627,2.1724383403309844e-10, photography,149,False
+8,false_belief,technology,science,0.9984941482543945,3.7210413665889064e-06, technology,149,False
+9,false_belief,popular reads,architecture,0.9984923601150513,1.3460608834698663e-14, popular,151,False
+10,false_belief,poetry,music,0.9999250173568726,1.2500591672903738e-09, poetry,149,False
+11,false_belief,music,theology,0.9998376369476318,1.669898847467266e-05, music,149,False
+12,false_belief,science,music,0.9990884065628052,7.727371098553704e-08, science,149,False
+13,false_belief,reference,history,0.9999462366104126,4.277557821841249e-11, reference,149,False
+14,false_belief,young adult,biography,0.9997957348823547,9.734212325085423e-10, young,151,False
+15,false_belief,art,science,0.9999775886535645,9.930972311167352e-08, art,149,False
+16,false_belief,theology,comics,0.9999995231628418,1.5737095654388966e-11, theology,149,False
+17,false_belief,children's,comics,0.9984362721443176,1.3688153330804198e-06, children,151,False
+18,false_belief,science,non-fiction,0.9990289211273193,5.206351461062297e-10, science,150,False
+19,false_belief,film,self-help,0.9931628704071045,7.0046579647709e-11, film,150,False
+20,false_belief,study materials,biography,0.9929550290107727,9.477790080536508e-12, study,151,False
+21,false_belief,non-fiction,children's,0.9999909400939941,3.4424459132873994e-14, non,152,False
+22,false_belief,popular reads,film,0.9981581568717957,2.1749766588972122e-16, popular,151,False
+23,false_belief,cooking,travel,0.999626636505127,0.0001584021665621549, cooking,149,False
+24,false_belief,new arrivals,non-fiction,0.9931157231330872,8.09589906225483e-09, new,152,False
+25,false_belief,history,academic,0.9991614818572998,0.0003351813356857747, history,149,False
+26,false_belief,technology,botany,0.9984984397888184,3.769465989345022e-11, technology,150,False
+27,false_belief,reference,study materials,0.9998905658721924,2.734398861850562e-12, reference,150,False
+28,false_belief,technology,medicine,0.9988300204277039,3.3942919586138487e-09, technology,149,False
+29,false_belief,new arrivals,self-help,0.9998412132263184,1.3885739780228334e-11, new,152,False
+30,false_belief,children's,theology,0.9998981952667236,1.4448332308347744e-07, children,151,False
+31,false_belief,engineering,poetry,0.9984968900680542,1.7577003745827824e-06, engineering,149,False
+32,false_belief,biography,fiction,0.9999998807907104,1.1032559310564238e-09, biography,149,False
+33,false_belief,reference,art,0.9999568462371826,1.0498509207161957e-14, reference,150,False
+34,false_belief,technology,music,0.9968152642250061,1.2711294061773515e-07, technology,149,False
+35,false_belief,music,engineering,0.9999518394470215,5.4925241438352757e-11, music,149,False
+36,false_belief,photography,self-help,0.9999985694885254,9.237436593423354e-09, photography,150,False
+37,false_belief,music,engineering,0.9999693632125854,2.1723732535061657e-10, music,149,False
+38,false_belief,reference,self-help,0.9999635219573975,9.54468708930234e-12, reference,150,False
+39,false_belief,self-help,theology,0.9997629523277283,2.2597935185331153e-06, self,152,False
+40,false_belief,reference,comics,0.9999853372573853,7.287617368291824e-14, reference,149,False
+41,false_belief,new arrivals,engineering,0.9999287128448486,2.289571657265732e-11, new,151,False
+42,false_belief,fiction,education,0.9990718364715576,1.0120690603798721e-05, fiction,149,False
+43,false_belief,health,fiction,0.9931634664535522,1.6261830637631647e-07, health,150,False
+44,false_belief,children's,cooking,0.9999359846115112,7.582074967871222e-10, children,151,False
+45,false_belief,study materials,medicine,0.9996705055236816,9.73299218998136e-10, study,151,False
+46,false_belief,art,theology,0.999866247177124,2.260027258671471e-06, art,149,False
+47,false_belief,technology,children's,0.9947793483734131,1.3815440111364374e-11, technology,150,False
+48,false_belief,reference,health,0.9999494552612305,5.108830893052474e-12, reference,149,False
+49,false_belief,reference,comics,0.999988317489624,5.384877114524012e-13, reference,149,False
+50,false_belief,travel,health,0.42427298426628113,1.010775108056805e-07, desk,150,False
+51,false_belief,young adult,biography,0.9998759031295776,4.3629211354812014e-09, young,151,False
+52,false_belief,film,popular reads,0.9688328504562378,2.432738277491353e-08, film,150,False
+53,false_belief,art,self-help,0.9998407363891602,1.7600659703020938e-06, art,150,False
+54,false_belief,education,young adult,0.9990848302841187,1.4624387855224907e-12, education,150,False
+55,false_belief,science,new arrivals,0.9392442107200623,8.965118578063702e-12, science,150,False
+56,false_belief,poetry,education,0.9999415874481201,4.139695874982863e-08, poetry,149,False
+57,false_belief,study materials,medicine,0.9987768530845642,1.0249327775380124e-10, study,151,False
+58,false_belief,children's,medicine,0.976686954498291,8.284085924969986e-05, children,151,False
+59,false_belief,reference,poetry,0.9999736547470093,3.775035145592298e-11, reference,149,False
+60,false_belief,music,popular reads,0.9999096393585205,3.058746926853928e-07, music,150,False
+61,false_belief,technology,new arrivals,0.9980714917182922,5.911685931464506e-16, technology,150,False
+62,false_belief,education,music,0.9980564713478088,1.6554547446409607e-12, education,149,False
+63,false_belief,botany,popular reads,0.9568702578544617,0.0003637341142166406, bot,153,False
+64,false_belief,self-help,botany,0.9999197721481323,8.763545622514357e-08, self,152,False
+65,false_belief,academic,non-fiction,0.9980660080909729,4.743002323358281e-13, academic,150,False
+66,false_belief,children's,comics,0.9523411989212036,1.2144165850713762e-07, children,151,False
+67,false_belief,reference,health,0.9999765157699585,3.0379036553051034e-14, reference,149,False
+68,false_belief,cooking,finance,0.8971251249313354,0.0945562869310379, cooking,149,False
+69,false_belief,study materials,comics,0.9999105930328369,1.7480778651858542e-13, study,151,False
+70,false_belief,comics,architecture,0.999992847442627,4.2777573150409864e-11, comics,149,False
+71,false_belief,technology,fiction,0.9980722665786743,1.3151113531506553e-10, technology,149,False
+72,false_belief,reference,biography,0.9999386072158813,1.7831378734678438e-11, reference,149,False
+73,false_belief,music,medicine,0.9999216794967651,2.1443729565362446e-05, music,149,False
+74,false_belief,academic,technology,0.9997939467430115,5.7881633513945374e-12, academic,149,False
+75,false_belief,fiction,theology,0.997733473777771,0.000260666391113773, fiction,149,False
+76,false_belief,finance,film,0.9999645948410034,1.2014999726476377e-13, finance,149,False
+77,false_belief,popular reads,academic,0.9992870688438416,1.360555277381964e-13, popular,151,False
+78,false_belief,engineering,medicine,0.9997941851615906,2.259864231746178e-06, engineering,150,False
+79,false_belief,fiction,travel,0.9999222755432129,1.1252642906356414e-07, fiction,149,False
+80,false_belief,academic,comics,0.9997308850288391,1.7305203290859418e-14, academic,149,False
+81,false_belief,music,new arrivals,0.999925971031189,1.361425214100112e-13, music,150,False
+82,false_belief,music,photography,0.9999704360961914,8.763989001181471e-08, music,149,False
+83,false_belief,engineering,biography,0.9996646642684937,1.725204157310145e-08, engineering,149,False
+84,false_belief,technology,engineering,0.3766624927520752,1.6435527383507065e-09, desk,149,False
+85,false_belief,finance,new arrivals,0.9996459484100342,1.5270489544085344e-14, finance,150,False
+86,false_belief,non-fiction,reference,0.9999803304672241,3.3314788427940556e-11, non,151,False
+87,false_belief,study materials,technology,0.9998477697372437,7.432549367636376e-12, study,151,False
+88,false_belief,children's,new arrivals,0.9995492100715637,1.0257254073886557e-10, children,152,False
+89,false_belief,children's,music,0.6784775257110596,7.635259180460707e-08, children,151,False
+90,false_belief,children's,cooking,0.9999175071716309,4.6907775441695776e-08, children,151,False
+91,false_belief,film,cooking,0.997590184211731,3.969373874729287e-12, film,149,False
+92,false_belief,reference,comics,0.9999798536300659,1.6586450095334992e-12, reference,150,False
+93,false_belief,technology,popular reads,0.9975263476371765,9.712116666449333e-10, technology,150,False
+94,false_belief,children's,biography,0.9998865127563477,1.7601465742700384e-06, children,151,False
+95,false_belief,study materials,engineering,0.9997392296791077,2.733984913461107e-12, study,152,False
+96,false_belief,biography,non-fiction,0.9999998807907104,1.0815941024755471e-11, biography,150,False
+97,false_belief,non-fiction,comics,0.9999922513961792,4.193763121062427e-13, non,152,False
+98,false_belief,technology,academic,0.9988289475440979,5.037570645072265e-07, technology,149,False
+99,false_belief,technology,travel,0.9932981133460999,2.088343507011814e-07, technology,149,False
+100,false_belief,academic,biography,0.9992863535881042,8.417452498910016e-12, academic,149,False
+101,false_belief,children's,fiction,0.999953031539917,7.337870897572429e-07, children,151,False
+102,false_belief,technology,biography,0.9968268275260925,3.213956034642251e-08, technology,149,False
+103,false_belief,medicine,technology,0.9999246597290039,1.5228833305513945e-08, medicine,149,False
+104,false_belief,health,film,0.9975209832191467,4.996357670585157e-14, health,149,False
+105,false_belief,music,architecture,0.9999768733978271,2.461640058459835e-10, music,149,False
+106,false_belief,poetry,self-help,0.9999251365661621,2.5944153075885268e-11, poetry,150,False
+107,false_belief,technology,architecture,0.9992901086807251,2.4599494663490873e-10, technology,149,False
+108,false_belief,travel,music,0.9974180459976196,1.9122214922617786e-10, travel,149,False
+109,false_belief,young adult,non-fiction,0.9997962117195129,3.160237349586481e-10, young,152,False
+110,false_belief,young adult,engineering,0.9998760223388672,3.700552776535193e-13, young,151,False
+111,false_belief,botany,poetry,0.9769836068153381,2.6902662284555845e-05, bot,151,False
+112,false_belief,theology,film,0.999840497970581,2.2893697354531284e-11, theology,149,False
+113,false_belief,engineering,fiction,0.998497486114502,7.327189450734295e-07, engineering,149,False
+114,false_belief,health,film,0.9913881421089172,5.338565418726293e-13, health,150,False
+115,false_belief,travel,study materials,0.04739047959446907,7.362111631437074e-08, desk,150,False
+116,false_belief,theology,education,0.9999946355819702,2.2159371226848634e-08, theology,149,False
+117,false_belief,travel,science,0.9993146657943726,5.207840825249832e-10, travel,149,False
+118,false_belief,technology,finance,0.9988297820091248,9.533865016897458e-12, technology,150,False
+119,false_belief,music,fiction,0.9999620914459229,1.4449256013904233e-07, music,149,False
+120,false_belief,health,poetry,0.9008406400680542,8.94642369075882e-08, health,150,False
+121,false_belief,botany,medicine,0.8508066534996033,2.067530840577092e-05, bot,151,False
+122,false_belief,education,art,0.9984858632087708,3.8949309137106466e-14, education,149,False
+123,false_belief,reference,fiction,0.9999536275863647,5.211170939212195e-10, reference,149,False
+124,false_belief,theology,study materials,0.9999276399612427,3.7748616732447005e-11, theology,150,False
+125,false_belief,cooking,popular reads,0.9999141693115234,7.888647814979777e-06, cooking,150,False
+126,false_belief,poetry,photography,0.9999631643295288,1.370908648823388e-06, poetry,149,False
+127,false_belief,academic,engineering,0.9997935891151428,2.881755706458933e-13, academic,149,False
+128,false_belief,health,study materials,0.8151571750640869,7.003966295826558e-10, health,150,False
+129,false_belief,music,theology,0.9998445510864258,2.5608906071283855e-06, music,150,False
+130,false_belief,children's,music,0.9999247789382935,1.7256530426834615e-08, children,151,False
+131,false_belief,poetry,technology,0.9999545812606812,3.6533162273144626e-08, poetry,149,False
+132,false_belief,medicine,comics,0.9998971223831177,2.461443826540233e-10, medicine,149,False
+133,false_belief,new arrivals,theology,0.9998538494110107,1.522775505691243e-08, new,151,False
+134,false_belief,new arrivals,health,0.9999547004699707,5.058453655948369e-13, new,151,False
+135,false_belief,education,fiction,0.9975059628486633,5.198415031770764e-10, education,149,False
+136,false_belief,education,fiction,0.9958844780921936,2.052670700081194e-09, education,149,False
+137,false_belief,fiction,art,0.9993999004364014,2.4602198056555835e-10, fiction,149,False
+138,false_belief,music,cooking,0.9999494552612305,7.433304839710164e-12, music,149,False
+139,false_belief,photography,music,0.9999991655349731,3.581744900671424e-10, photography,149,False
+140,false_belief,botany,biography,0.9999440908432007,2.9021582577115623e-06, bot,151,False
+141,false_belief,young adult,health,0.9997380375862122,4.507574435236306e-12, young,152,False
+142,false_belief,music,botany,0.999976634979248,5.602665442694388e-09, music,150,False
+143,false_belief,cooking,theology,0.999906063079834,3.5354179999558255e-05, cooking,149,False
+144,false_belief,reference,technology,0.9999734163284302,2.5945405546234923e-11, reference,149,False
+145,false_belief,new arrivals,travel,0.9999725818634033,1.7831984153171554e-11, new,151,False
+146,false_belief,music,technology,0.9999501705169678,4.690930666129134e-08, music,149,False
+147,false_belief,botany,finance,0.9996322393417358,0.000261162465903908, bot,152,False
+148,false_belief,health,photography,0.9946905970573425,2.830227785466377e-08, health,149,False
+149,false_belief,new arrivals,self-help,0.9999229907989502,1.9808562071437635e-13, new,152,False
+0,true_belief,comics,history,0.9968205690383911,0.0031726614106446505, comics,138,False
+1,true_belief,health,technology,0.999187171459198,9.603353100828826e-05, health,138,False
+2,true_belief,study materials,young adult,0.9994458556175232,0.00043050386011600494, study,142,False
+3,true_belief,study materials,poetry,0.9998144507408142,3.3976372826316492e-09, study,140,False
+4,true_belief,technology,study materials,0.9984962940216064,3.1971874810582694e-15, technology,140,False
+5,true_belief,theology,medicine,0.999819815158844,0.00015843276923988014, theology,139,False
+6,true_belief,popular reads,fiction,0.9946410655975342,3.206908516517615e-08, popular,140,False
+7,true_belief,science,photography,0.9986566305160522,0.0009106569923460484, science,138,False
+8,true_belief,science,technology,0.9997382760047913,1.854905917753058e-07, science,138,False
+9,true_belief,architecture,popular reads,0.9988252520561218,1.758278358465759e-06, architecture,140,False
+10,true_belief,music,poetry,0.9999209642410278,5.829005749546923e-05, music,138,False
+11,true_belief,theology,music,0.9999880790710449,2.9022860417171614e-06, theology,138,False
+12,true_belief,music,science,0.9999674558639526,2.1444710000650957e-05, music,138,False
+13,true_belief,history,reference,0.9998552799224854,4.943734754903062e-09, history,138,False
+14,true_belief,biography,young adult,0.9399008750915527,0.060085851699113846, biography,140,False
+15,true_belief,science,art,0.9993228912353516,0.00012332624464761466, science,138,False
+16,true_belief,comics,theology,0.9974606037139893,0.0024724577087908983, comics,138,False
+17,true_belief,comics,children's,0.9999933242797852,1.76033461229963e-06, comics,140,False
+18,true_belief,non-fiction,science,0.9999895095825195,1.7832285995056374e-11, non,140,False
+19,true_belief,self-help,film,0.9999275207519531,1.1031761060209533e-09, self,140,False
+20,true_belief,biography,study materials,0.9999996423721313,1.0395374899020747e-15, biography,140,False
+21,true_belief,children's,non-fiction,0.9998773336410522,3.5353165003471076e-05, children,142,False
+22,true_belief,film,popular reads,0.9931321740150452,9.545157081447542e-05, film,140,False
+23,true_belief,travel,cooking,0.9982128143310547,0.0007089051650837064, travel,138,False
+24,true_belief,non-fiction,new arrivals,0.999950647354126,2.10233011443961e-07, non,142,False
+25,true_belief,academic,history,0.9990862607955933,3.439331542546935e-14, academic,138,False
+26,true_belief,botany,technology,0.9998433589935303,5.8285531849833205e-05, bot,140,False
+27,true_belief,study materials,reference,0.9998351335525513,8.422075536973495e-12, study,140,False
+28,true_belief,medicine,technology,0.9999285936355591,1.3006369044887833e-05, medicine,138,False
+29,true_belief,self-help,new arrivals,0.9999134540557861,1.2014385796996208e-13, self,142,False
+30,true_belief,theology,children's,0.999998927116394,3.05901977526446e-07, theology,140,False
+31,true_belief,poetry,engineering,0.9999247789382935,3.0587929700232053e-07, poetry,138,False
+32,true_belief,fiction,biography,0.9999173879623413,2.260142764498596e-06, fiction,138,False
+33,true_belief,art,reference,0.9998942613601685,6.824881637612634e-08, art,139,False
+34,true_belief,music,technology,0.9996908903121948,0.00026117777451872826, music,138,False
+35,true_belief,engineering,music,0.9979768395423889,9.59172029979527e-05, engineering,138,False
+36,true_belief,self-help,photography,0.9999675750732422,3.5816319354786685e-10, self,140,False
+37,true_belief,engineering,music,0.9987069368362427,0.00012325022544246167, engineering,138,False
+38,true_belief,self-help,reference,0.99992835521698,3.850466168131561e-09, self,140,False
+39,true_belief,theology,self-help,0.9997923970222473,0.00020342612697277218, theology,141,False
+40,true_belief,comics,reference,0.9999819993972778,4.7850317059783265e-06, comics,138,False
+41,true_belief,engineering,new arrivals,0.9968239068984985,7.171284011064927e-09, engineering,140,False
+42,true_belief,education,fiction,0.9971299767494202,0.000909264839719981, education,138,False
+43,true_belief,fiction,health,0.9998337030410767,2.510581609271867e-08, fiction,139,False
+44,true_belief,cooking,children's,0.9999978542327881,3.466320208644902e-07, cooking,140,False
+45,true_belief,medicine,study materials,0.9997959733009338,3.2654651552221914e-13, medicine,140,False
+46,true_belief,theology,art,0.9999988079071045,7.734412577065086e-08, theology,138,False
+47,true_belief,children's,technology,0.9998538494110107,7.48409001971595e-05, children,140,False
+48,true_belief,health,reference,0.9980602860450745,5.305474459760262e-08, health,138,False
+49,true_belief,comics,reference,0.9998953342437744,9.610159759176895e-05, comics,138,False
+50,true_belief,health,travel,0.99882572889328,3.923251199466904e-07, health,139,False
+51,true_belief,biography,young adult,0.9046318531036377,0.09534749388694763, biography,140,False
+52,true_belief,popular reads,film,0.9959184527397156,6.5334248428028374e-12, popular,140,False
+53,true_belief,self-help,art,0.999956488609314,4.598855463111562e-10, self,140,False
+54,true_belief,young adult,education,0.9998363256454468,4.7843345782894175e-06, young,140,False
+55,true_belief,new arrivals,science,0.9999855756759644,1.1253355580720381e-07, new,140,False
+56,true_belief,education,poetry,0.9978538155555725,0.0002030316973105073, education,138,False
+57,true_belief,medicine,study materials,0.9995681643486023,3.899152864732941e-14, medicine,140,False
+58,true_belief,medicine,children's,0.9998748302459717,2.8449786526607568e-08, medicine,140,False
+59,true_belief,poetry,reference,0.9999408721923828,3.058842423797614e-07, poetry,138,False
+60,true_belief,popular reads,music,0.9947525262832642,2.5303178064102483e-13, popular,140,False
+61,true_belief,new arrivals,technology,0.9999309778213501,5.829063957207836e-05, new,140,False
+62,true_belief,music,education,0.9999088048934937,2.753394073806703e-05, music,138,False
+63,true_belief,popular reads,botany,0.9975159168243408,7.26962096748128e-14, popular,143,False
+64,true_belief,botany,self-help,0.9999339580535889,4.539693327387795e-05, bot,142,False
+65,true_belief,non-fiction,academic,0.9999858140945435,1.0676889132810174e-06, non,140,False
+66,true_belief,comics,children's,0.9999938011169434,5.043445412411529e-07, comics,140,False
+67,true_belief,health,reference,0.9984812140464783,6.339157643253657e-09, health,138,False
+68,true_belief,finance,cooking,0.9998998641967773,5.042971906732419e-07, finance,138,False
+69,true_belief,comics,study materials,0.9999961853027344,7.835012478217551e-13, comics,140,False
+70,true_belief,architecture,comics,0.985514760017395,0.014057612977921963, architecture,138,False
+71,true_belief,fiction,technology,0.9998698234558105,2.78910505802088e-10, fiction,138,False
+72,true_belief,biography,reference,0.999998927116394,2.1024315799422766e-07, biography,138,False
+73,true_belief,medicine,music,0.9998288154602051,9.609520202502608e-05, medicine,138,False
+74,true_belief,technology,academic,0.999087929725647,4.939940456694103e-09, technology,138,False
+75,true_belief,theology,fiction,0.9889901876449585,0.01098668947815895, theology,138,False
+76,true_belief,film,finance,0.969566285610199,0.029278365895152092, film,138,False
+77,true_belief,academic,popular reads,0.9992534518241882,1.3430375922496296e-08, academic,140,False
+78,true_belief,medicine,engineering,0.9999639987945557,3.9277219343603065e-07, medicine,139,False
+79,true_belief,travel,fiction,0.9973453879356384,0.0019253295613452792, travel,138,False
+80,true_belief,comics,academic,0.9998959302902222,9.610164852347225e-05, comics,138,False
+81,true_belief,new arrivals,music,0.9999401569366455,4.5397213398246095e-05, new,140,False
+82,true_belief,photography,music,0.9999991655349731,3.059020627915743e-07, photography,138,False
+83,true_belief,biography,engineering,0.9999986886978149,3.0590192068302713e-07, biography,138,False
+84,true_belief,engineering,technology,0.9984946250915527,1.5207053394306058e-08, engineering,138,False
+85,true_belief,new arrivals,finance,0.9980554580688477,0.0019267002353444695, new,140,False
+86,true_belief,reference,non-fiction,0.9999798536300659,4.691069932505343e-08, reference,140,False
+87,true_belief,technology,study materials,0.9947746396064758,4.310795249340654e-16, technology,140,False
+88,true_belief,new arrivals,children's,0.9999886751174927,4.599003400329593e-10, new,142,False
+89,true_belief,music,children's,0.9999501705169678,8.151614494522619e-09, music,140,False
+90,true_belief,cooking,children's,0.9999980926513672,1.8553879499449977e-07, cooking,140,False
+91,true_belief,cooking,film,0.9999963045120239,1.955560868793782e-08, cooking,138,False
+92,true_belief,comics,reference,0.9999818801879883,1.3007062079850584e-05, comics,139,False
+93,true_belief,popular reads,technology,0.9959063529968262,2.833687062775425e-08, popular,140,False
+94,true_belief,biography,children's,0.9999997615814209,6.3487988199995016e-09, biography,140,False
+95,true_belief,engineering,study materials,0.9975236058235168,3.323294070489702e-11, engineering,141,False
+96,true_belief,non-fiction,biography,0.9999756813049316,8.764035186459296e-08, non,140,False
+97,true_belief,comics,non-fiction,0.9999440908432007,4.539739165920764e-05, comics,141,False
+98,true_belief,academic,technology,0.9992819428443909,6.426775751118205e-14, academic,138,False
+99,true_belief,travel,technology,0.9987612962722778,0.0004302089801058173, travel,138,False
+100,true_belief,biography,academic,0.9999998807907104,1.7257827167327378e-08, biography,138,False
+101,true_belief,fiction,children's,0.9999191761016846,2.0205207298951144e-11, fiction,140,False
+102,true_belief,biography,technology,0.9999985694885254,3.927857790131384e-07, biography,138,False
+103,true_belief,technology,medicine,0.9988299012184143,1.414951156242239e-09, technology,138,False
+104,true_belief,film,health,0.9966893196105957,9.579346078680828e-05, film,138,False
+105,true_belief,architecture,music,0.9987533092498779,0.00033504440216347575, architecture,138,False
+106,true_belief,self-help,poetry,0.9999510049819946,3.850553209616692e-09, self,140,False
+107,true_belief,architecture,technology,0.9985350370407104,0.000552274112123996, architecture,138,False
+108,true_belief,music,travel,0.9999005794525146,3.535398718668148e-05, music,138,False
+109,true_belief,non-fiction,young adult,0.2688746750354767,0.7308771014213562, young,142,False
+110,true_belief,engineering,young adult,0.7767719626426697,0.22254888713359833, engineering,140,False
+111,true_belief,poetry,botany,0.9999831914901733,2.5109567758363482e-08, poetry,140,False
+112,true_belief,film,theology,0.9908959269523621,0.00033240855555050075, film,138,False
+113,true_belief,fiction,engineering,0.999872088432312,1.3438691048861529e-08, fiction,138,False
+114,true_belief,film,health,0.9907811284065247,0.002455900888890028, film,139,False
+115,true_belief,study materials,travel,0.9997960925102234,2.335116766616352e-09, study,140,False
+116,true_belief,education,theology,0.9819567203521729,2.4656923613974868e-08, education,138,False
+117,true_belief,science,travel,0.9995667338371277,5.041291615270893e-07, science,138,False
+118,true_belief,finance,technology,0.9999243021011353,4.944075815416227e-09, finance,139,False
+119,true_belief,fiction,music,0.9999624490737915,2.5109047285809538e-08, fiction,138,False
+120,true_belief,poetry,health,0.9998761415481567,9.609974949853495e-05, poetry,139,False
+121,true_belief,medicine,botany,0.9999723434448242,5.21126808372685e-10, medicine,140,False
+122,true_belief,art,education,0.999729573726654,7.989798406216053e-11, art,138,False
+123,true_belief,fiction,reference,0.9998273849487305,5.491840662785741e-11, fiction,138,False
+124,true_belief,study materials,theology,0.9995467066764832,1.1248416598164113e-07, study,140,False
+125,true_belief,popular reads,cooking,0.9889063835144043,9.439145645662173e-12, popular,140,False
+126,true_belief,photography,poetry,0.952568769454956,0.04742560535669327, photography,138,False
+127,true_belief,engineering,academic,0.9994367957115173,1.0124387699761428e-05, engineering,138,False
+128,true_belief,study materials,health,0.9998342990875244,1.4163740180705986e-09, study,140,False
+129,true_belief,theology,music,0.9999552965164185,3.535592259140685e-05, theology,139,False
+130,true_belief,music,children's,0.9999856948852539,8.151904040687441e-09, music,140,False
+131,true_belief,technology,poetry,0.9988297820091248,3.055443471566832e-07, technology,138,False
+132,true_belief,comics,medicine,0.9999247789382935,5.829027941217646e-05, comics,138,False
+133,true_belief,theology,new arrivals,0.9999996423721313,8.592163647236362e-10, theology,140,False
+134,true_belief,health,new arrivals,0.9990782737731934,1.6903385635647084e-10, health,140,False
+135,true_belief,fiction,education,0.9997898936271667,2.8447368904949144e-08, fiction,138,False
+136,true_belief,fiction,education,0.99989914894104,2.3353574629680907e-09, fiction,138,False
+137,true_belief,art,fiction,0.9945722222328186,0.0052190362475812435, art,138,False
+138,true_belief,cooking,music,0.9995622038841248,0.00043055397691205144, cooking,138,False
+139,true_belief,music,photography,0.9988075494766235,0.0011694834101945162, music,138,False
+140,true_belief,biography,botany,0.9999997615814209,4.847367646165779e-11, biography,140,False
+141,true_belief,health,young adult,0.06004537642002106,0.9392677545547485, young,141,False
+142,true_belief,botany,music,0.9999810457229614,1.0129901056643575e-05, bot,140,False
+143,true_belief,theology,cooking,0.9984585046768188,0.0015011215582489967, theology,138,False
+144,true_belief,technology,reference,0.9975206255912781,1.1831712498633351e-08, technology,138,False
+145,true_belief,travel,new arrivals,0.9986345171928406,7.723861017439049e-08, travel,140,False
+146,true_belief,technology,music,0.9994462132453918,5.040683959123271e-07, technology,138,False
+147,true_belief,finance,botany,0.9999719858169556,8.423228260723281e-12, finance,141,False
+148,true_belief,photography,health,0.999997615814209,4.363452266176182e-09, photography,138,False
+149,true_belief,self-help,new arrivals,0.999884843826294,7.052067957369346e-11, self,142,False

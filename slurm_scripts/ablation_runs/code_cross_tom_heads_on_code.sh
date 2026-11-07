@@ -13,7 +13,7 @@
 #SBATCH --error=logs/abl_tomheads_code_%A_%a.err
 
 # Experiment 2a (cross-domain transfer, the key one): cumulative ablation of
-# the ToM C1∩C2 19-head intersection (from other_results/ablation/
+# the ToM C1∩C2 19-head intersection (from results/ablation/
 # decomp_intersection_belief_rank, copied into the code_heads CSV as
 # condition=tom_intersection), evaluated on CODE prompts (code_copy /
 # code_alias). If the divergence machinery is domain-general, ablating the
@@ -21,7 +21,7 @@
 # false_belief. Both eval protocols (plain generation + quote prefill).
 #
 # Prereq: results/aggregated/code_head_sets/code_heads_end.csv on HPC
-# (build locally with `python scripts/build_code_head_csvs.py`, scp over).
+# (build locally with `python analysis_scripts/build_code_head_csvs.py`, scp over).
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
 export TRANSFORMERS_CACHE="/dartfs/rc/lab/F/FranklandS/models/cache"
@@ -50,7 +50,7 @@ PREFILL=${PREFILLS[$SLURM_ARRAY_TASK_ID]}
 
 echo "Job $SLURM_ARRAY_TASK_ID: tom_intersection heads on code prompts, prefill=$PREFILL"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 150 \
   --max_new_tokens 8 \

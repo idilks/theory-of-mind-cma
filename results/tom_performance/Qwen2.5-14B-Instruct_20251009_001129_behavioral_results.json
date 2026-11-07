@@ -1,0 +1,1274 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the sequence of events, the agent would likely look for the object where they last saw it, which was at the rug. Since the object has been moved to the fan while the agent was away, the agent would not know this change unless they",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the sequence of events provided, the object is actually located near the fan. Initially, the object was at the rug, but after the agent left the room, the object was moved to the fan. Therefore, the current location of the object",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the sequence of events, the agent would likely look for the object where they last saw it, which was in the drawer. Since the object has been moved to a blanket while the agent was away, the agent would not know this change and would",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the object is actually located on the blanket. Initially, the object was at the drawer, but after the agent left the room, the object was moved to the blanket. Therefore, the current location of the object is the",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the scenario, the agent would likely look for the object at the desk first, since that's where it was originally located. However, since the object has been moved to the shelf while the agent was away, the agent might not know this and",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. \n\nTo break it down:\n- Initially, the object was at the desk.\n- The agent left the room.\n- Then, the object was moved to the shelf.\n\nTherefore, the current location of the",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the scenario, the agent would likely look at the stool first, since that was the original location of the object. If the object is not found there, the agent might then look in other places, but the stool is the most logical first place",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the cabinet. \n\nTo break it down:\n- Initially, the object was at the stool.\n- The agent left the room, but this action doesn't directly affect the object's location.\n- The object was then moved",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent would likely look at the stool first, since that was the original location of the object. If the object is not there, the agent might then realize that the object has been moved and could then look at other locations, such as the sofa",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. \n\nTo break it down:\n- Initially, the object was at the stool.\n- The agent left the room.\n- Then, the object was moved to the sofa.\n\nTherefore, the current location of the",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario where Alice left the room and upon her return, the object she was using has been moved to a stool, Alice would likely look for the object on the stool first. This is because the stool is the new location where the object was",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the stool. The information provided states that the object was moved to the stool after the agent left the room. Therefore, the current location of the object is the stool. <loc>stool</loc> Based on",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns to the room, she would likely look for the object at the ceiling first, since that was its last known location before she left. If she doesn't find it there, she might then consider other possibilities, including checking reflective surfaces like",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually still located at the ceiling. The statement \"object moved to mirror\" suggests that the object's reflection is visible in the mirror, but the object itself has not been physically moved. Therefore, the object remains at the ceiling, and",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object where she last saw it, which was at the dresser. Since she was not present when the object was moved to the drawer, she would not know about the change in location. Therefore, Alice",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer. Initially, it was at the dresser, but after the agent left the room, someone or something moved the object to the drawer. Therefore, the current location of the object is the drawer. <loc>",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario, Alice would likely look for the object in the vase first, as that is where she last saw it. Since the object was moved to a bench after she left the room, she would not know this change unless someone informs her or",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench. The sequence of events indicates that the object was initially at the vase, but then it was moved to the bench after the agent left the room. Therefore, the current location of the object is the bench.",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario, Alice would likely first look for the object where she last saw it, which was at the desk. Since she was not present when the object was moved to the suitcase, she would not know about the change in location. Therefore,",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. Initially, it was at the desk, but since the agent left the room and the object was moved to the suitcase, its current location is the suitcase. <loc>suicide</loc> It seems",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent would likely look where they initially left the object, which was at the rug. Since the object has been moved to the fan while the agent was away, the agent may not be aware of this change upon returning, and would first check the",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the sequence of events provided, the object is actually located near the fan. Initially, the object was at the rug, but since it was moved to the fan after the agent left the room, the current location of the object is by the",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the scenario, the agent would likely look for the object where they last saw it, which was in the drawer. Since the object has been moved to a blanket while the agent was away, the agent would probably not know this change and would expect",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the object is actually located on the blanket. The sequence of events indicates that the object was initially at a drawer, then it was moved to a blanket after the agent left the room. Therefore, the current location of the",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent would likely look for the object where they last left it, which was at the desk. Since the object was moved to the shelf while the agent was away, the agent wouldn't know about this change unless they were informed. Therefore, the",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. Based on the information provided, the object was initially at the desk, but after the agent left the room, someone or something moved the object to the shelf. Therefore, the current location of the object is",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the sequence of events, the agent would most likely look for the object where they initially left it, which is at the stool. Since the agent was not present when the object was moved to the cabinet, they would not know about the change in",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the cabinet, as stated in the second sentence: \"object moved to cabinet.\" This means that despite the agent leaving the room, the object was moved to the cabinet, which is its current location. <loc>cabinet",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent would likely look at the stool first, since that is where the object was initially placed. The agent may not immediately know that the object has been moved to the sofa, especially if the agent was not present when the object was moved. Therefore",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. \n\nTo break it down:\n1. Initially, the object was at the stool.\n2. The agent left the room.\n3. During the agent's absence, the object was moved to the sofa.\n\n",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario, Alice would likely look for the object in the last known location before she left the room. Since the object was initially at a computer and then moved to a stool while she was away, she would most probably first check the stool.",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the stool. The information provided states that the object was moved to the stool after the agent left the room. Therefore, the current location of the object is the stool. <loc>stool</loc> Based on",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns to the room, she would most likely look in the last known location of the object, which was at the ceiling. However, since she was not present when the object was moved to the mirror, she would not know about this change",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually still located at the ceiling. The statement \"object moved to mirror\" suggests that the object's reflection appears to be on the mirror, but the physical object itself has not moved from its original position on the ceiling. \n\nTherefore,",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario where Alice initially saw an object on the dresser, and then left the room, only to return later, she would most likely look for the object in its original location, which is the dresser. This is because Alice would not be aware",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer. Initially, it was at the dresser, but after the agent left the room, someone or something moved the object to the drawer. Therefore, the current location of the object is the drawer. <loc>",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the scenario where Alice initially placed an object at a vase, and then she left the room, and upon her return, the object has been moved to a bench, Alice would most likely look for the object at the vase first, as that was",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench. The information provided states that after the agent (presumably a person) left the room, the object was moved to the bench. Therefore, the current location of the object is the bench. <loc>",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given that Alice left the room and the object was moved to a suitcase, when Alice returns, she would likely first look for the object at its original location on the desk. If she does not find it there, she might then consider other locations in",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. Initially, it was at the desk, but after the agent left the room, someone or something moved the object to the suitcase. <loc>suicide</loc> It seems there was a typo in",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent is likely to look at the last known location of the object, which was at the rug. Since the agent left the room and the object has since been moved to the fan, when the agent returns, they would not know that the object",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at rug. agent leaves room. object moved to fan.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the object is actually located near the fan. Initially, the object was at the rug, but it was moved to the fan after the agent left the room. Therefore, the final location of the object is near the fan",
+        "expected_belief": "rug",
+        "expected_world": "fan",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent is likely to look in the last known location of the object, which is at the drawer. Since the object was moved to a blanket while the agent was not in the room, the agent would not know this information and would most probably look",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at drawer. agent leaves room. object moved to blanket.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the sequence of events you've described, initially the object was at the drawer. Then, the agent (a person) left the room, but this action did not change the object's location. Afterward, the object was moved to the",
+        "expected_belief": "drawer",
+        "expected_world": "blanket",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Given the scenario where an object that was initially at a desk is now moved to a shelf, and the agent returns to the room after leaving, the most likely place for the agent to look for the object first would be the desk. This is because",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to shelf.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the shelf. The initial statement indicated that the object was moved to the shelf after the agent left the room. Therefore, the current location of the object is the shelf. \n\n<loc>shelf</loc> To summarize",
+        "expected_belief": "desk",
+        "expected_world": "shelf",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nagent returns and looks where?\n<loc></loc>",
+        "response": " The agent would likely look at the stool first, since that was the last known location of the object before it was moved. If the object is not found there, the agent might then look in other likely places, but based on the given information,",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to cabinet.\nwhere is object actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the object is actually located in the cabinet. The sequence of events states that the object was initially at the stool, but then moved to the cabinet after the agent left the room. Therefore, the current location of the object",
+        "expected_belief": "stool",
+        "expected_world": "cabinet",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nagent returns and looks where?\n<loc></loc>",
+        "response": " Based on the given scenario, the agent would likely look at the stool first since that's where the object was initially placed. However, upon realizing that the object is no longer there, the agent might then look around the room and would eventually notice the",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at stool. agent leaves room. object moved to sofa.\nwhere is object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the sofa. Since the agent left the room after moving the object from the stool to the sofa, there is no reason to suspect that the object has moved again, unless there was additional context or action not mentioned in the",
+        "expected_belief": "stool",
+        "expected_world": "sofa",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "basic_object_move",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the context provided, Alice would likely look for the object in the last known location where she saw or was told the object was placed. If she had last seen the object at a computer and then the agent moved it to a stool, Alice would",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at computer. agent leaves room. object moved to stool.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the object is actually located on the stool. The sequence of events suggests that the object was initially at the computer and then moved to the stool after the agent left the room. Therefore, the current location of the object is",
+        "expected_belief": "computer",
+        "expected_world": "stool",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns to the room, her first instinct would likely be to look in the same place she left the object, which was at the ceiling. However, since she would not find it there, she might then consider other logical places within the room",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at ceiling. agent leaves room. object moved to mirror.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually still located at the ceiling. The information given does not indicate that the object was physically moved; rather, it suggests that there might be an image of the object in a mirror. The agent leaving the room does not affect the object",
+        "expected_belief": "ceiling",
+        "expected_world": "mirror",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns to the room and tries to find the object, she would naturally look in the last known location of the object, which is the dresser. Since she was not present when the object was moved to the drawer, she wouldn't know about",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at dresser. agent leaves room. object moved to drawer.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the drawer. Initially, the object was at the dresser, but since the agent left the room and the object was moved to the drawer, its current location is the drawer. <loc>drawer</loc> Based on",
+        "expected_belief": "dresser",
+        "expected_world": "drawer",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " Given the sequence of events, Alice would likely look for the object in the vase first, since that is where it was initially placed. If she doesn't find it there, she might then consider other locations within the room or nearby areas. However,",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at vase. agent leaves room. object moved to bench.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located on the bench. The information provided states that \"object moved to bench,\" indicating that the object's current location is the bench. <loc>bench</loc> object at vase. agent leaves room. object moved to bench",
+        "expected_belief": "vase",
+        "expected_world": "bench",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhen Alice returns, where would she look for the object?\n<loc></loc>",
+        "response": " When Alice returns, she would likely look for the object where she originally left it, which is at the desk. If the object is no longer there and she cannot find it on the desk, she might then consider other possibilities, including checking the suitcase",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "object at desk. agent leaves room. object moved to suitcase.\nWhere is the object actually located?\n<loc></loc>",
+        "response": " The object is actually located in the suitcase. Initially, it was at the desk, but since it was moved to the suitcase after the agent left the room, its current location is inside the suitcase. <loc>suicide</loc> It appears",
+        "expected_belief": "desk",
+        "expected_world": "suitcase",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "basic_object_move",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  }
+}

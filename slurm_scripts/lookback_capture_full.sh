@@ -85,7 +85,7 @@ TEMPLATE=${TEMPLATES[$TIDX]}
 
 echo "Job $SLURM_ARRAY_TASK_ID: condition=$CONDITION base=$BASE_RULE exp=$EXP_RULE template=$TEMPLATE"
 
-python scripts/lookback_analysis/capture_attention_patterns.py \
+python analysis_scripts/lookback_analysis/capture_attention_patterns.py \
   --template $TEMPLATE \
   --condition $CONDITION \
   --base_rule $BASE_RULE \
@@ -94,13 +94,13 @@ python scripts/lookback_analysis/capture_attention_patterns.py \
   --top_k 50 \
   --prompt_num 150 \
   --seed 1 \
-  --results_root codebase/results \
+  --results_root cma_scripts/results \
   --out_root results/lookback_analysis
 
 CAP_DIR=results/lookback_analysis/${CONDITION}/template_${TEMPLATE}/base_rule_${BASE_RULE}_exp_rule_${EXP_RULE}/patch_before_movement
-python scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir $CAP_DIR
-python scripts/lookback_analysis/per_token_profile.py --capture_dir $CAP_DIR --top_k 5
+python analysis_scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir $CAP_DIR
+python analysis_scripts/lookback_analysis/per_token_profile.py --capture_dir $CAP_DIR --top_k 5
 
 # After the LAST array task completes, aggregate unannotated peaks across all 42 cells.
 # (Each task does this; the last-running one wins. Cheap, idempotent.)
-python scripts/lookback_analysis/per_token_profile.py --root results/lookback_analysis || true
+python analysis_scripts/lookback_analysis/per_token_profile.py --root results/lookback_analysis || true

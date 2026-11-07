@@ -6,7 +6,7 @@ answers, belief-formation marker resolvable in both), and prints one full
 pair per template for eyeball inspection.
 
 Run:
-    python scripts/verify_c6_prompts.py
+    python analysis_scripts/verify_c6_prompts.py
 """
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from prompt_generators.tom_templates import UnifiedTemplateSystem
 
@@ -23,7 +23,7 @@ RULES = ["ABA", "ABB"]
 
 
 def main():
-    ts = UnifiedTemplateSystem(vocab_dir=str(ROOT / "tom_datasets"))
+    ts = UnifiedTemplateSystem(vocab_dir=str(ROOT / "cma_scripts" / "tom_datasets"))
     all_ok = True
     for tmpl in TEMPLATES:
         tpl = ts.get_template(tmpl, "abstract")

@@ -4,8 +4,7 @@
 Design (week plan Step 6): copy/alias semantics x queried index x prefix pad
 x suffix pad, fully crossed, so answer position varies independently of the
 veracity analog — the property the ToM stimuli lack (their veracity<->position
-model-RDM correlation is r = 0.996-0.999 within template; see
-archive/docs/week_plan_2026-07-23.md Step 5a).
+model-RDM correlation is r = 0.996-0.999 within template).
 
 Grid: semantics {copy, alias} x idx {1,2,3,4} x prefix pad {0,16,32} x suffix
 pad {0,16,32} x n_rep (default 2) = 144 stimuli. List length fixed at 6 so
@@ -52,7 +51,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "codebase"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
 
 from tasks.causal_analysis.prompt_generators.code_templates import (  # noqa: E402
     CODE_VALUE_POOL,

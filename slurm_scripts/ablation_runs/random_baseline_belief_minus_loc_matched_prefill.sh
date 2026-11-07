@@ -38,7 +38,7 @@ export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD
 
 mkdir -p logs
 
-python scripts/random_baseline_ablation.py \
+python analysis_scripts/random_baseline_ablation.py \
   --target_csv results/ablation/belief_minus_loc_matched_prefill/head_list.csv \
   --n_random 100 \
   --k_eval 11 21 \

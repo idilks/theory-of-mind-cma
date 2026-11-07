@@ -40,7 +40,7 @@ import torch
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from analyze_code_ledger_rdms import (ACT_PATH, DIVERGENCE_MODELS, HEADS_CSV, OUT_DIR,  # noqa: E402
                                       build_model_rdms, partial_spearman, upper_tri)
 from rsa_utils import cosine_rdm  # noqa: E402

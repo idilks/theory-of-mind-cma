@@ -1,0 +1,1214 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual location: <loc></loc> Alice's actual hair length is: <length></length>\nwhere the agent thinks: Jennifer would respond:",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer would likely respond that Alice's hair is long, as she is unaware of the haircut that went wrong.</loc>\nactual location: <loc>Alice's hair is actually short due to the failed haircut.</",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual location: <loc></loc> Alice's actual hair length is: <length></length>\n\nwhere the agent thinks: Jennifer is unaware of",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual location: <loc></loc> Alice's actual hair length is: <length></length>\n\nwhere the agent thinks: Jennifer is unaware of",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> In this scenario, Jennifer believes that Alice's hair is long because she is unaware of the haircut that",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer would likely respond that Alice's hair is long, as she is unaware of the haircut incident.</loc>\nactual location: <loc>Alice's hair is actually short after the disastrous haircut.</loc> where",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\n",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> where the agent thinks: <loc>long</loc>\nactual location: <loc>short</loc> where the agent thinks: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual location: <loc></loc> Alice's actual hair length is: <length></length>\nwhere the agent thinks: Jennifer would respond:",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>long</loc> The schema you've requested is filled in as follows:\n\nwhere the agent thinks: <loc>short</loc>\nactual location: <loc",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\n",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual location: <loc></loc> Alice's actual hair length is: <length></length>\n\nwhere the agent thinks: Jennifer is unaware of",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that Jennifer would respond: <response></response>\nactual response: <response></response>\nwhere the agent thinks: <loc></loc> thinks that Alice's actual hair length: <length></",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> where the agent thinks: <loc>long</loc>\nactual location: <loc>short</loc> where the agent thinks: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> In the given scenario, Jennifer thinks that Alice's hair is long, as she is unaware of Alice",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <Jennifer thinks that Alice's hair is long.></loc>\nactual location: <Alice has short hair.></loc> where the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer would likely respond based on her last knowledge, which is that Alice has long hair.</loc>\nactual location: <loc>Alice's hair is now short after the disastrous haircut.</loc> where the agent",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> In this scenario, both the agent's (Jennifer's) perception and the actual state of Alice's hair are the same due to the given",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Jennifer thinks Alice's hair is long.</loc>\n",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> where the agent thinks: <loc>long</loc>\nactual location: <loc>short</loc> where the agent thinks: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks Alice's hair is <loc></loc>\nactual location: <loc></loc> Alice's hair is <loc></loc>\nwhere the agent thinks: Jennifer would respond: <loc></loc",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> is Jennifer's response to the sales assistant.\nactual location: <loc></loc> is Alice's actual hair length.\nwhere the agent thinks: Jennifer might respond by saying Alice's hair is still long",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks <response></response>\nactual location: <loc></loc> the actual response is <response></response>\nwhere the agent thinks: Jennifer would likely respond by saying that Alice has long hair,",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>long</loc> In this scenario, Jennifer believes Alice's hair is short because Alice has decided to cut her hair short, but the reality is that Alice's",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer would respond that Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Jennifer would respond that Alice's hair is",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> is different from <loc></loc>\nwhere the agent thinks: Jennifer would likely respond that Alice's hair is long, as she is unaware of the haircut gone wrong. Actual hair length is short due",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that the patient <loc></loc>\nactual location: <loc></loc> is <loc></loc>\nwhere the agent thinks: Jennifer would likely respond to the sales assistant by describing Alice's",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "To adhere to your schema, here's how we fill the information:\n\nwhere the agent thinks: <loc>Jennifer believes Alice has long hair, as they haven't seen her since she cut it and Alice hasn't mentioned any changes to her.</loc",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <loc>Alice's hair is short</loc> where the agent thinks: <loc>Alice's hair is long</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> where the agent thinks: <loc>long</loc>\nactual location: <loc>short</loc> where the agent thinks: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "To answer the question in the requested schema:\n\nwhere the agent thinks: <loc>Jennifer thinks Alice's hair is long, as she doesn't know about Alice cutting her hair short.</loc>\nactual location: <loc>Alice's hair is actually",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc> thinks that the patient's hair is <loc></loc>\nactual location: <loc></loc> the patient's hair is <loc></loc>\nwhere the agent thinks: Jennifer would respond to the",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer might not know about Alice's hair cut, so she would say that Alice has long hair.</loc>\nactual location: <loc>Alice's hair is short now.</loc> where the agent thinks:",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>short</loc>\nactual location: <loc>short</loc> In this scenario, Jennifer thinks Alice's hair is still long because she is unaware of the haircut that went wrong. However, the actual state",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "In the scenario described, it seems Jennifer would be unaware of Alice's situation with her hair, as Alice has been avoiding her friends and not informing them about the haircut mishap. Therefore, Jennifer would likely respond based on her previous knowledge of Alice's",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "The schema is as follows:\n\nwhere the agent thinks: <loc>Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> This indicates that Jennifer believes Alice's hair is still long, while the",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "To address the question using the schema provided, let's analyze the situation based on what Jennifer thinks and the actual state of Alice's hair:\n\nwhere the agent thinks: <loc>long</loc>\nactual location: <loc>short</loc>\n\n",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "Let's analyze the situation step by step:\n\n1. Alice decides to cut her long hair short but the process goes terribly.\n   - Therefore, Alice's hair is now short, but in a bad way (e.g., uneven, too short,",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\nwhere the agent thinks: <loc></loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer likely thinks Alice's hair is the same length as it was before, since she hasn't been told about Alice's recent haircut.</loc>\nactual location: <loc>Alice's hair is short due to",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer thinks that Alice's hair is long.</loc>\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks: <loc>Jennifer thinks that Alice's hair is long.</",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "The agent thinks: <loc>Alice's hair is long.</loc>\nActual location: <loc>Alice's hair is short.</loc> The agent thinks: <loc>Alice's hair is long.</loc>\nActual location: <loc>A",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <loc>Jennifer would not know about Alice's hair length as she does not know about the haircut incident. She might respond based on her last memory, which is that Alice had long hair.</loc>\nactual location: <",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says hair is? actually is?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "Given the context provided in the question, we need to map out the information regarding Alice's hair length in both Jennifer's perception and the actual situation.\n\nwhere the agent thinks: <loc>long</loc>\nactual location: <loc>short</",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: <Jennifer thinks Alice's hair is long because she has not heard from Alice in a while and has not seen her recently.></loc>\nactual location: <Alice's hair is short now after the terrible haircut she got on",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length? And what is Alice's actual hair length?\nAnswer in this exact schema:\nwhere the agent thinks: <loc></loc>\nactual location: <loc></loc>\n",
+        "response": "where the agent thinks: Jennifer believes that Alice's hair is as long as it was before she cut it, since Alice has not informed her of any changes.\nactual location: <loc>Alice's hair is short.</loc> where the agent thinks",
+        "expected_belief": "long",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "dual",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling"
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20
+  }
+}

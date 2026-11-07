@@ -9,7 +9,7 @@ Heads are not independent samples, so this measures how much the gain depends
 on which heads dominate the correlation, not sampling error over prompts.
 
 Inputs: results/aggregated/fingerprints/*.npy (the arrays behind r = 0.971).
-Output: writeups/results_for_pi/h2_robustness/stats_gain_bootstrap.csv
+Output: results/summary/h2_robustness/stats_gain_bootstrap.csv
 """
 
 from pathlib import Path
@@ -19,7 +19,7 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[1]
 FP_DIR = REPO / "results/aggregated/fingerprints"
-OUT = REPO / "results_for_pi/h2_robustness/stats_gain_bootstrap.csv"
+OUT = REPO / "results/summary/h2_robustness/stats_gain_bootstrap.csv"
 N_BOOT = 10_000
 
 

@@ -13,7 +13,7 @@ order, both against the rank-aligned layer-matched control. Built twice:
 The ranking comparison (belief vs retrieval order) that was panel (c) of
 fig1 moves to the appendix.
 
-Data: other_results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant/
+Data: results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant/
 (matched system prompt + answer prefill, n = 75 prompts/variant, seed 1).
 SEM over prompts from per_prompt_data.pt.
 """
@@ -32,7 +32,7 @@ from style import (BLUE, AQUA, GRAY, INK2, apply_style, despine, panel_label,
                    save)
 
 REPO = Path(__file__).resolve().parents[2]
-RUN = REPO / "other_results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant"
+RUN = REPO / "results/ablation/tom_c1_full1920_on_code_tom_prefill_per_variant"
 EPS = 1e-12
 XMAX = 64
 DEPART = {"tom": 19, "code": 51}   # k at which the control leaves baseline

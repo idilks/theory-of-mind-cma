@@ -6,8 +6,8 @@ Both pipelines render the same scenario template + question + chat-template
 wrapper. They differ in the system-prompt string. This script prints both
 prompts and a unified diff so the divergence is visible at a glance.
 
-Run locally (CPU only — only the tokenizer is needed):
-    python scripts/diff_cma_vs_ablation_prompts.py
+Run locally:
+    python analysis_scripts/diff_cma_vs_ablation_prompts.py
 
 Optional flags:
     --template     food_truck | hair_styling | library_book  (default: food_truck)
@@ -23,11 +23,11 @@ import sys
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(script_dir, ".."))
-codebase_root = os.path.join(project_root, "codebase")
-for p in (project_root, codebase_root):
+cma_root = os.path.join(project_root, "cma_scripts")
+for p in (project_root, cma_root):
     if p not in sys.path:
         sys.path.insert(0, p)
-os.chdir(codebase_root)
+os.chdir(cma_root)
 
 from transformers import AutoTokenizer
 

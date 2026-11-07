@@ -1,7 +1,7 @@
 """Tests for the belief-free generic collateral leg of stage2_steering.
 
 No downloaded model: a tiny HookedTransformer and a stub tokenizer.
-Run: .venv/bin/python -m pytest scripts/circuit/test_generic_steering.py -q
+Run: .venv/bin/python -m pytest analysis_scripts/circuit/test_generic_steering.py -q
 """
 import tempfile
 import unittest

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Build the divergence-ledger stimulus grid (Exp 2 of the code RDM arm).
 
-Design + predictions: docs/design_code_pointer_rdm.md. Every prompt contains
+Every prompt contains
 BOTH a copy and an alias of `a`, so a divergence always exists in context;
 what varies is what the question asks about. This separates a global
 divergence *alarm* ("something diverged") from a content-aware *ledger*
@@ -40,7 +40,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "codebase"))
+sys.path.insert(0, str(ROOT / "cma_scripts"))
 
 from tasks.causal_analysis.prompt_generators.code_templates import (  # noqa: E402
     CODE_VALUE_POOL, filter_answer_pool,
@@ -48,7 +48,7 @@ from tasks.causal_analysis.prompt_generators.code_templates import (  # noqa: E4
 
 OUT_DIR = ROOT / "results/rsa_head_outputs/stimuli_code_ledger"
 
-# Fallback = filter_answer_pool(Qwen2.5 tokenizer), documented in CLAUDE.md.
+# Fallback = filter_answer_pool(Qwen2.5 tokenizer), documented in README.md.
 QWEN_ANSWER_POOL = list("ABCDEHILMORST")
 
 LIST_LENGTH = 6

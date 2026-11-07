@@ -12,7 +12,7 @@ Discriminates the cross-domain steering-null explanations:
   scale/manifold mismatch     -> high alignment (failure was operational)
 
 Usage:
-  python scripts/circuit/compare_wires.py \
+  python analysis_scripts/circuit/compare_wires.py \
       --a results/aggregated/circuit/stage1/directions_L41.npz \
       --b results/aggregated/circuit/stage1_code/directions_L41.npz
 """

@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rebuttal_figures"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "paper_figures"))
 from style import BLUE, GRAY, INK, YELLOW, apply_style, despine  # noqa: E402
 
 AGG = ROOT / "results/rsa_head_outputs/aggregation_code_ledger"

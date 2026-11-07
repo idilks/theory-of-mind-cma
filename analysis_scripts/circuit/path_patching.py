@@ -1,6 +1,6 @@
 """New frozen-writer direct path assay; not the lost historical experiment.
 
-See docs/path_patching/NEW_EXPERIMENT.md. All edits are at final token.
+All edits are at the final token; the protocol is summarised in analysis_scripts/README.md.
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ from typing import Any
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path[:0] = [str(ROOT / "scripts"), str(ROOT / "codebase"),
-                str(ROOT / "codebase/tasks/causal_analysis")]
+sys.path[:0] = [str(ROOT / "analysis_scripts"), str(ROOT / "cma_scripts"),
+                str(ROOT / "cma_scripts/tasks/causal_analysis")]
 
 Head = tuple[int, int]
 
@@ -337,7 +337,7 @@ def export_pairs(args: argparse.Namespace) -> None:
     config = ExperimentConfig(ModelConfig(args.model), GenerationConfig(),
         PromptConfig(args.base_rule, cond.condition.context_type, args.n,
             condition=cond.condition, use_template_system=True, template_names=[template],
-            tom_locations_file=str(ROOT / "codebase/tom_datasets/locations.txt")),
+            tom_locations_file=str(ROOT / "cma_scripts/tom_datasets/locations.txt")),
         PatchingConfig(activation_name="z"), EvaluationConfig(), WandbConfig(enabled=False),
         seed=args.seed)
     generator = get_prompt_generator(config, tokenizer)
@@ -362,7 +362,7 @@ def export_pairs(args: argparse.Namespace) -> None:
                 "pairs_sha256": digest(out), "n_pairs": len(rows),
                 "tokenizer_requested_revision": args.revision,
                 "generator_source_sha256": {str(p.relative_to(ROOT)): digest(p) for p in
-                    sorted((ROOT / "codebase/tasks/causal_analysis/prompt_generators").glob("*.py"))},
+                    sorted((ROOT / "cma_scripts/tasks/causal_analysis/prompt_generators").glob("*.py"))},
                 "tokenizer_revision": tokenizer.init_kwargs.get("_commit_hash"),
                 "chat_template": tokenizer.chat_template,
                 "selection": "Unfiltered generated pairs; not the historical generation-filtered CMA cohort"})

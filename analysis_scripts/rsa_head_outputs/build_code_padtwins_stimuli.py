@@ -2,8 +2,7 @@
 """Build the balanced pad-twins stimulus grid (Exp 3 of the code RDM arm).
 
 Purpose: separate veracity-TAG from LOOKBACK/pointer readings of the
-divergence heads via a within-cell position contrast (July 25 2026 discussion
-in writeups/results_for_pi/code_pointer_rdm.qmd, Control 2 callout). Exp 2
+divergence heads via a within-cell position contrast. Exp 2
 randomized pads as nuisance, so same-cell pairs differ in pads AND fillers
 AND slot indices AND answer letters at once; here pads become the ONLY
 within-twin factor:
@@ -18,47 +17,14 @@ Grid (48 query cells x 2 content draws x 9 pad combos = 864 stimuli):
                    model RDM can be re-fit on this grid unchanged;
   content draw     m, u, answer chars, fillers, junk sequences — frozen
                    across the 9 pad combos of its twin group;
-  pads             prefix x second, each in {0, 16, 32}, fully crossed.
+  pads             prefix x suffix, each in {0, 16, 32}, fully crossed.
 
 Pads are NESTED: one 32-token junk sequence per (cell, content) is drawn
 once and pad length k uses its first k tokens, so the pad-16 prompt is a
 strict prefix-extension of the pad-0 prompt (content differences between
 twins are only the presence of extra junk tokens, never different junk).
 
---pad_axis selects where the SECOND pad goes, i.e. which of the two candidate
-lookback targets it moves:
-
-  suffix (default)  after the mutation line -> code_padtwins.csv.
-                    Prefix pad moves BOTH targets (the line-1 init literal and
-                    the mutation literal) by the same amount; the suffix pad
-                    moves NEITHER, only distance-to-end. So this grid cannot
-                    tell "points at the init literal" from "points at the
-                    mutation literal".
-
-  mid               between the alias/copy definitions and the mutation line
-                    -> code_midpad.csv. Now the prefix pad moves both targets
-                    and the mid pad moves ONLY the mutation literal, so the
-                    two targets move by different amounts and the design
-                    becomes a direct test of condition-specific targeting:
-
-                      copy + untouched queries read the line-1 init literal
-                        -> sensitive to prefix pad, FLAT in mid pad
-                      alias + mutated queries read the mutation literal
-                        -> sensitive to BOTH
-
-                    The discriminating signature is that interaction between
-                    queried semantics and which pad moved. A tag carries no
-                    such interaction; a single shared position carrier
-                    predicts equal sensitivity everywhere.
-
-Column-naming note for the mid grid: `mid_pad_len` is the truth and
-`pad_axis` records which design produced the file, but `suffix_pad_len` is
-ALSO written (equal to mid_pad_len) so analyze_code_padtwins_rdms.py,
-padtwins_projection_test.py and padtwins_followups.py — all of which hard-code
-the pair (pad_len, suffix_pad_len) as "the two pad factors" — run on it
-unmodified. Read "suffix_pad_len" in a code_midpad.csv as "second pad factor".
-
-Outputs: results/rsa_head_outputs/stimuli_code_padtwins/{code_padtwins,code_midpad}.csv
+Outputs: results/rsa_head_outputs/stimuli_code_padtwins/code_padtwins.csv
 Column schema = Exp 2's code_ledger.csv + content_id + twin_id, so
 capture_head_outputs_full.py and analyze_code_ledger_rdms.build_model_rdms
 work on it unmodified. Hard-fails on the same confound checks as Exp 2,
@@ -78,7 +44,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 
 from build_code_ledger_stimuli import (  # noqa: E402
     COPY_RENDER, LIST_LENGTH, QUERIED_OBJECTS, SLOT_TYPES, ROLE_B,
@@ -94,19 +60,7 @@ PAD_GRID = (0, 16, 32)
 MAX_PAD = max(PAD_GRID)
 
 
-PAD_NAMES = ("pad", "pad2", "padm")
-
-
-def strip_pads(row: dict) -> str:
-    """The stimulus core: scenario minus every pad line. Twins must agree on
-    this exactly, whichever pad axis the grid uses."""
-    return "\n".join(
-        ln for ln in row["scenario"].split("\n")
-        if not any(ln.startswith(f"{p} = [") for p in PAD_NAMES))
-
-
-def build_rows(n_content: int, seed: int, answer_pool: list[str],
-               pad_axis: str = "suffix") -> list[dict]:
+def build_rows(n_content: int, seed: int, answer_pool: list[str]) -> list[dict]:
     rng = random.Random(seed)
     rows, pid = [], 0
     cells = list(product(QUERIED_OBJECTS, SLOT_TYPES, ROLE_B,
@@ -144,18 +98,13 @@ def build_rows(n_content: int, seed: int, answer_pool: list[str],
                 answer = x_mut if slot_type == "mutated" else orig_u
 
             twin_id = f"cell{cell_i:02d}_content{content}"
-            for pre, second in product(PAD_GRID, PAD_GRID):
+            for pre, suf in product(PAD_GRID, PAD_GRID):
                 prefix_line = (f"pad = {render_list(pre_seq[:pre])}\n"
                                if pre else "")
-                # the second pad lands after the mutation ("suffix", moves
-                # neither lookback target) or before it ("mid", moves only
-                # the mutation literal)
-                mid_line = (f"padm = {render_list(suf_seq[:second])}\n"
-                            if second and pad_axis == "mid" else "")
-                suffix_line = (f"\npad2 = {render_list(suf_seq[:second])}"
-                               if second and pad_axis == "suffix" else "")
+                suffix_line = (f"\npad2 = {render_list(suf_seq[:suf])}"
+                               if suf else "")
                 scenario = (f"{prefix_line}{a_line}\n{b_def}\n{c_def}\n"
-                            f"{mid_line}{mut_line}{suffix_line}")
+                            f"{mut_line}{suffix_line}")
 
                 slot_pos = len(prefix_line) + len("a = [") + 5 * q + 1
                 assert scenario[slot_pos] == (orig_m if q == m else orig_u), \
@@ -163,8 +112,6 @@ def build_rows(n_content: int, seed: int, answer_pool: list[str],
                 mut_pos = scenario.rindex(f"'{x_mut}'") + 1
                 assert scenario[mut_pos] == x_mut
 
-                suf = second if pad_axis == "suffix" else 0
-                mid = second if pad_axis == "mid" else 0
                 rows.append({
                     "prompt_id": pid,
                     "template": "code_padtwins",
@@ -178,13 +125,7 @@ def build_rows(n_content: int, seed: int, answer_pool: list[str],
                     "content_id": content,
                     "twin_id": twin_id,
                     "m": m, "u": u, "q": q,
-                    "pad_len": pre,
-                    # suffix_pad_len == the second pad factor whichever axis
-                    # it lives on, so the downstream pad-twin machinery is
-                    # unmodified; mid_pad_len / pad_axis record the truth.
-                    "suffix_pad_len": second,
-                    "mid_pad_len": mid, "real_suffix_pad_len": suf,
-                    "pad_axis": pad_axis,
+                    "pad_len": pre, "suffix_pad_len": suf,
                     "orig_m": orig_m, "orig_u": orig_u, "mut_char": x_mut,
                     "answer": f"'{answer}'",
                     "slot_char_pos": slot_pos,
@@ -214,8 +155,13 @@ def audit(rows: list[dict], n_content: int) -> None:
     for tid, grp in groups.items():
         assert len(grp) == len(PAD_GRID) ** 2, f"{tid}: {len(grp)} stimuli"
         # twins must be identical once pad lines are stripped
-        cores = {strip_pads(r) for r in grp}
-        answers = {r["answer"] for r in grp}
+        cores, answers = set(), set()
+        for r in grp:
+            core = r["scenario"][r["code_start_char"]:]
+            if r["suffix_pad_len"]:
+                core = core[:core.rindex("\npad2 = ")]
+            cores.add(core)
+            answers.add(r["answer"])
         assert len(cores) == 1, f"{tid}: twins differ beyond pads"
         assert len(answers) == 1, f"{tid}: answer varies within twin group"
         # nested pads: longer pad line starts with the shorter one's items
@@ -224,8 +170,10 @@ def audit(rows: list[dict], n_content: int) -> None:
             assert by_len == sorted(PAD_GRID), f"{tid}: missing {key} level"
 
     for r in rows:
-        core = strip_pads(r)
         for ch in (r["orig_m"], r["orig_u"], r["mut_char"]):
+            core = r["scenario"][r["code_start_char"]:]
+            if r["suffix_pad_len"]:
+                core = core[:core.rindex("\npad2 = ")]
             assert core.count(ch) == 1, \
                 f"char {ch} not unique in core of stimulus {r['prompt_id']}"
         n_copy = sum(s in r["scenario"] for s in (".copy()", "a[:]", "list(a)"))
@@ -268,26 +216,20 @@ def main():
     ap.add_argument("--out_dir", type=Path, default=OUT_DIR)
     ap.add_argument("--tokenizers",
                     default="Qwen/Qwen2.5-14B-Instruct,google/gemma-2-27b-it")
-    ap.add_argument("--pad_axis", choices=["suffix", "mid"], default="suffix",
-                    help="where the second pad goes: after the mutation line "
-                         "(suffix, the Exp 3 grid) or between the definitions "
-                         "and the mutation line (mid, the init-vs-mutation "
-                         "targeting grid)")
     args = ap.parse_args()
 
     tokenizer_names = [t.strip() for t in args.tokenizers.split(",") if t.strip()]
     answer_pool = resolve_answer_pool(tokenizer_names)
-    rows = build_rows(args.n_content, args.seed, answer_pool, args.pad_axis)
+    rows = build_rows(args.n_content, args.seed, answer_pool)
     audit(rows, args.n_content)
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    name = "code_padtwins" if args.pad_axis == "suffix" else "code_midpad"
-    out_path = args.out_dir / f"{name}.csv"
+    out_path = args.out_dir / "code_padtwins.csv"
     with out_path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(rows)
-    print(f"{name}: {len(rows)} stimuli -> {out_path}")
+    print(f"code_padtwins: {len(rows)} stimuli -> {out_path}")
 
     pad_orthogonality_check(rows)
     design_check(rows, tokenizer_names)

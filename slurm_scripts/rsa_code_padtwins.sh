@@ -15,7 +15,7 @@
 # Full-head hook_z captures for the pad-twins grid (Exp 3 of the code RDM
 # arm): 864 balanced stimuli (48 query cells x 2 content draws x 9 pad
 # combos), veracity-tag vs lookback adjudication. Design in
-# scripts/rsa_head_outputs/build_code_padtwins_stimuli.py; analysis in
+# analysis_scripts/rsa_head_outputs/build_code_padtwins_stimuli.py; analysis in
 # analyze_code_padtwins_rdms.py (run after pulling the .pt files).
 # Array 0 = Qwen2.5-14B-Instruct, 1 = gemma-2-27b-it (GQA ungrouped).
 # 864 prompts = 6x the code_ledger grid, which fit both grids in <3h.
@@ -36,12 +36,12 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
 # Builder runs its confound + pad-orthogonality checks; nonzero exit = bad grid.
 if [ ! -f results/rsa_head_outputs/stimuli_code_padtwins/code_padtwins.csv ]; then
-  python scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
+  python analysis_scripts/rsa_head_outputs/build_code_padtwins_stimuli.py || exit 1
 fi
 
 if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
   echo "Job 0: code_padtwins capture, Qwen2.5-14B-Instruct"
-  python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+  python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
     --template code_padtwins \
     --stim_dir  results/rsa_head_outputs/stimuli_code_padtwins \
     --out_dir   results/rsa_head_outputs/activations_code_padtwins_full/Qwen2.5-14B-Instruct \
@@ -50,7 +50,7 @@ if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
     --decode_answers
 else
   echo "Job 1: code_padtwins capture, gemma-2-27b-it"
-  python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+  python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
     --template code_padtwins \
     --stim_dir  results/rsa_head_outputs/stimuli_code_padtwins \
     --out_dir   results/rsa_head_outputs/activations_code_padtwins_full/gemma-2-27b-it \

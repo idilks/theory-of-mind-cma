@@ -1,0 +1,1280 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is on her usual study table. Since she was unaware that the librarian moved the book, she would not know to look in the new arrivals section of the library. Therefore, she will likely return",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the new arrivals section of the library. The librarian moved it there, thinking it was left behind accidentally, and it was properly reshelved in its correct location. \n\nSo, the answer is: the new arrivals section.",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is her usual study table. Since she was unaware that the librarian moved the book, she would not know it has been returned to the non-fiction section. Therefore, she will likely check her study",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the non-fiction section of the library, where it belongs according to the librarian's action. Sarah had initially taken it from the reference section, but the librarian returned it to the non-fiction section while she was away getting coffee.",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is the reference section of the library. Since she was unaware that the librarian had moved it to the fiction section, she would naturally expect to find it in its original location. \n\nSo, Sarah",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section. The librarian moved it from the reference section, where Sarah originally checked it out and placed it on her study table, to its correct location in the fiction section. Since the book is now in the fiction section",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is on her usual study table. Since she was unaware that the librarian moved the book, she would not know it has been relocated to the reference section. Therefore, she will likely check her study",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the reference section of the library. The librarian moved it there, thinking it was misplaced, after Sarah left it on her study table. \n\nSo, the answer is: the reference section. \n\nTo break it down step-by",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is the reference section of the library. Since she was unaware that the librarian had moved it to the fiction section, she would naturally expect to find it in its original location. \n\nSo, Sarah",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section of the library. The librarian moved it there, thinking it was left behind accidentally, even though it originally belonged in the reference section. \n\nSo, the book is now in the fiction section. Sarah will likely",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book at her usual study table, as that's where she left it. She wouldn't know that the librarian had moved it to the reference section. If she doesn't find it there, she might",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section of the library. The librarian moved it there after Sarah left to get coffee, thinking it had been left behind accidentally. \n\nSo, the answer is: the reference section. \n\nIf you need any further",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would look for her book in the new arrivals section of the library, as that is where she originally placed it. Since she is unaware that the librarian has moved the book, she would not think to check the academic section.",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "is",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section of the library. The librarian found the book on Sarah's study table and returned it to its proper place in the academic section. Therefore, the book is now shelved in the academic section. \n\nSo",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book on her usual study table, as that is where she left it. Since she is unaware that the librarian has moved the book, she would not know to look in the non-fiction section. Therefore",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the non-fiction section of the library. The librarian returned it to its correct location while Sarah was away getting coffee. \n\nSo, the answer is: the non-fiction section. \n\nIf you need any further details or have",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would look for her book in the non-fiction section of the library, as that is where she originally checked it out from and placed it on her study table. She would not be aware that the librarian has moved it to the",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "is",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section of the library. The librarian moved it there after Sarah left to get coffee, thinking it was misplaced. Therefore, the book is no longer on Sarah's study table but is now in its correct place in",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book at her usual study table, where she left it before going to get coffee. Since she was unaware that the librarian had moved the book, she would not know it had been returned to the reference",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section of the library. The librarian moved it there, thinking it was left behind accidentally, and it was returned to its proper place. \n\nSo, the answer is: the reference section. \n\nIf you need",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.75,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 15,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is on her usual study table. Since she is unaware of the librarian's actions, she would not know that the book has been moved to the new arrivals section. Therefore, she will likely check",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the new arrivals section of the library.\n\nTo break down the scenario step-by-step:\n\n1. Sarah initially checks out a science book from the non-fiction section.\n2. She places the book on her study table.\n3.",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is her usual study table. Since she was unaware that the librarian moved the book, she would not know it has been returned to the non-fiction section. Therefore, she initially looks for it on",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the non-fiction section of the library where it belongs. Sarah initially had it on her study table, but the librarian returned it to the correct location after she left to get coffee. Therefore, when Sarah returns, she will need",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah will look for the book where she left it, which is the reference section of the library. Since she was unaware that the librarian moved the book to the fiction section, she would not know to look there.\n\nSo, Sarah looks for the book",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "section",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section of the library. Initially, it belonged in the reference section, but the librarian moved it to the fiction section, where it is now correctly shelved according to its actual classification. \n\nSo, the answer to",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is on her usual study table. Since she did not know that the librarian moved the book, she would not think to look in the reference section. Therefore, she will likely start her search by",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the reference section of the library. The librarian moved it from the fiction section, where Sarah had initially placed it, to its correct location in the reference section. \n\nSo, the answer is: the reference section. \n\nLet",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is the reference section of the library. Since she was unaware that the librarian had moved the book, she would not know to check the fiction section. Therefore, Sarah will likely first check the reference",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section. The librarian moved it there, thinking it was left behind accidentally, even though it was originally from the reference section. It stays there after Sarah leaves to get coffee. So, the book is now in the",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would look for her book in the academic section of the library where she initially checked it out and placed it on her study table. Since she is unaware that the librarian has moved the book to the reference section, she would not",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section of the library. The librarian moved it there after Sarah left to get coffee, assuming it had been left behind accidentally. \n\nSo, the answer is: the reference section. \n\nIs there anything else you",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns from getting coffee, she would likely look for her book in the new arrivals section of the library, where she initially checked it out and placed it on her study table. She would not be aware that the librarian has returned it to the",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section of the library. The librarian found the book on Sarah's study table and returned it to its proper place in the academic section. Therefore, the book is no longer on Sarah's study table but is instead",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book on her study table, since that's where she left it. However, since the book is no longer there, she might be confused and could possibly ask a librarian where the book might be.",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the non-fiction section of the library. The librarian moved it there after Sarah left to get coffee, thinking it was misplaced. \n\nSo, the answer is: the non-fiction section. \n\nIf you need any further information",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book in the non-fiction section of the library, as that is where she originally checked it out from and placed it on her study table. She would not know that the librarian has moved it to the",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section of the library. The librarian found the book on Sarah's study table and returned it to where it belongs, which is the academic section. \n\nSo, the answer is: the academic section. \n\nTo",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would look for her book at her usual study table, as that's where she left it. However, since the librarian has moved it back to the reference section, Sarah would not find it there. She would likely be confused",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section of the library. The librarian found the book on Sarah's study table and returned it to where it belongs, which is the reference section. Therefore, the book is now in the reference section. \n\nSo",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.8,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 16,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "false_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Given the situation described, Sarah would look for the book where she left it, which is on her usual study table. Since she is unaware that the librarian moved the book, she would expect it to still be there when she returns from getting coffee.",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the new arrivals section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the new arrivals section of the library.\n\nTo break it down step-by-step:\n\n1. **Initial Placement:** Sarah checked out the book from the non-fiction section and placed it on her usual study table.\n2. **Sarah",
+        "expected_belief": "non-fiction",
+        "expected_world": "new arrivals",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah will look for the book where she left it, which is at her usual study table. Since the book is no longer there and she is unaware that the librarian has moved it, she will likely not consider that it could be in the non-fiction",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "her usual",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the non-fiction section of the library, where it belongs.\n\nHere's the step-by-step reasoning:\n\n1. Sarah initially took the book from the reference section and placed it on her study table.\n2. She left to get",
+        "expected_belief": "reference",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book where she left it, which is the reference section of the library. \n\nSo, in summary:\n- Sarah initially checked out the book from the reference section.\n- She placed it on her study table and left to get coffee",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section. The librarian moved it from Sarah's study table to its correct location in the fiction section, where it belongs according to the library's classification system. This means that when Sarah returns, she will need to look",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "fiction section",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book in the fiction section where she originally checked it out from, since that is where she would expect to have left it. She is not aware that the librarian has moved it to the reference section. Therefore, she would search for",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the reference section now. The librarian moved it there from the fiction section, thinking it was misplaced. So, when Sarah returns, she will find that her book is not where she left it but in the reference section instead.",
+        "expected_belief": "fiction",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nSarah looks for book where?\n<loc></loc>",
+        "response": " Sarah looks for the book in the reference section where she originally checked it out from and placed it on her study table. Since she is not aware that the librarian has moved it to the fiction section, she would not think to look there.\n\nSo,",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a philosophy book from the reference section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nbook actually where?\n<loc></loc>",
+        "response": " The book is actually in the fiction section of the library. It was moved there by the librarian who thought it was left behind accidentally. So, the book is not where Sarah initially placed it in the reference section, but rather in the fiction section.\n\n",
+        "expected_belief": "reference",
+        "expected_world": "fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "library_book",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns from getting coffee, she would look for her book on her usual study table, as that is where she had left it. Since she is unaware that the librarian has moved the book, she would not know to look in the reference section",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": false,
+        "belief_answer": "is",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " Based on the information provided, the book is actually located in the reference section of the library. The librarian found the book on Sarah's study table and returned it to where it belongs, which is the reference section. Therefore, the book is now in",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Considering the context, Sarah would likely look for her book in its original location, which is the new arrivals section of the library. She wouldn't be aware that the librarian moved the book to its correct location in the academic section. So, she would",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a science book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section where the librarian returned it. \n\nTo break it down step by step:\n1. Sarah initially checked out the book from the new arrivals section and placed it on her study table.\n2. While Sarah was",
+        "expected_belief": "new arrivals",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": false,
+        "belief_answer": null,
+        "world_answer": "academic section",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Given the context, Sarah would likely look for her book where she originally placed it, on her usual study table, because she was unaware that someone had moved it. However, since it was not there, she might consider the possibility that it was mistakenly",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the new arrivals section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the non-fiction section of the library, where the librarian returned it. \n\nTo summarize the sequence of events:\n1. Sarah checked out a literature book and placed it on her study table.\n2. Sarah left to get",
+        "expected_belief": "new arrivals",
+        "expected_world": "non-fiction",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " When Sarah returns, she would likely look for her book in the non-fiction section of the library, where she originally checked it out and placed it on her study table. She would not be aware that the librarian has moved the book to the academic section",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a art book from the non-fiction section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the academic section of the library. Since the librarian found the book at Sarah's study table and believed it was misplaced, they returned it to the academic section where it belongs. Therefore, it is now properly shelved in",
+        "expected_belief": "non-fiction",
+        "expected_world": "academic",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhen Sarah returns, where would she look for her book?\n<loc></loc>",
+        "response": " Based on the scenario described, Sarah would naturally look for her book at her usual study table, since that is where she left it. She is unaware that the book was moved by the librarian, so she would not know to check the reference section.",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Sarah checks out a literature book from the academic section of the library. She places it on her usual study table. Sarah leaves to get coffee from the caf\u00e9. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the reference section where it actually belongs. The librarian reshelves it properly and it stays there.\nWhere is the book actually located?\n<loc></loc>",
+        "response": " The book is actually located in the reference section of the library.\n\nTo summarize the sequence of events:\n1. Sarah checked out the book from the academic section.\n2. She left the book on her study table.\n3. The librarian saw the book",
+        "expected_belief": "academic",
+        "expected_world": "reference",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "false_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "library_book",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 0.75,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 15,
+    "belief_total": 10,
+    "world_total": 10
+  }
+}

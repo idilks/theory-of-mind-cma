@@ -40,6 +40,6 @@ for f in results/aggregated/circuit/stage1_code/directions_L41.npz \
   fi
 done
 
-python scripts/circuit/stage2_steering.py \
+python analysis_scripts/circuit/stage2_steering.py \
   --domain code \
   --site L41

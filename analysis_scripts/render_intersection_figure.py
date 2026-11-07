@@ -1,4 +1,4 @@
-"""Render the intersection-ablation figure for the thesis/neurips update.
+"""Render the intersection-ablation figure for the paper.
 
 Layout (matches the visual grammar of figures/ablation_cross_frame_3col.png):
   Main left  : ablate B∩P intersection heads (19, B-rank). Eval on false_belief.
@@ -13,13 +13,13 @@ Layout (matches the visual grammar of figures/ablation_cross_frame_3col.png):
                and k=21 (null_mean +- 1.96*null_std).
 
 Reads:
-  other_results/ablation/decomp_intersection_belief_rank/   (intersection, 19)
-  other_results/ablation/belief_only_sysprompt_prefill/     (T_C1, 32 heads)
-  other_results/ablation/photo_heads_sysprompt_prefill/     (T_C2, 26 heads)
-  other_results/ablation/random_baselines/belief_only_matched_prefill/null_summary.csv
+  results/ablation/decomp_intersection_belief_rank/   (intersection, 19)
+  results/ablation/belief_only_sysprompt_prefill/     (T_C1, 32 heads)
+  results/ablation/photo_heads_sysprompt_prefill/     (T_C2, 26 heads)
+  results/ablation/random_baselines/belief_only_matched_prefill/null_summary.csv
 
 Writes:
-  neurips/figures/ablation_intersection_3col.{png,pdf}  (or path via --out)
+  results/summary/figures/ablation_intersection_3col.{png,pdf}  (or path via --out)
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ VARIANT_LABELS = {
     "basic_ba":     "basic B→A",
 }
 
-ABL = Path("other_results/ablation")
+ABL = Path("results/ablation")
 DEFAULT_NULL_PATH = ABL / "random_baselines" / "belief_only_matched_prefill" / "null_summary.csv"
 
 INTERSECTION_CSV = ABL / "decomp_intersection_belief_rank" / "cumulative_ablation_results.csv"
@@ -256,7 +256,7 @@ def render(out_path: Path, *, eval_belief: str = "false_belief",
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path,
-                   default=Path("neurips/figures/ablation_intersection_3col.png"))
+                   default=Path("results/summary/figures/ablation_intersection_3col.png"))
     p.add_argument("--eval_belief", default="false_belief",
                    choices=["false_belief", "true_belief"],
                    help="Eval variant for the left main panel.")
@@ -265,7 +265,7 @@ def main():
                    help="Eval variant for the right main panel.")
     p.add_argument("--null_csv", type=Path, default=None,
                    help="Path to null_summary.csv. Default: "
-                        "other_results/ablation/random_baselines/"
+                        "results/ablation/random_baselines/"
                         "belief_only_matched_prefill/null_summary.csv. "
                         "Use belief_only_matched_prefill_true/null_summary.csv "
                         "for the true-variant figure.")

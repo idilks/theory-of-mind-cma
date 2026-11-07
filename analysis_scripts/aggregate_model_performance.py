@@ -27,10 +27,10 @@ already on disk. Four independent sources:
               comparison we have. Opt-in (--table rsa): loads big tensors.
 
 Usage:
-    python scripts/aggregate_model_performance.py                  # all but rsa
-    python scripts/aggregate_model_performance.py --table gate_summary
-    python scripts/aggregate_model_performance.py --table rsa
-    python scripts/aggregate_model_performance.py --out results/aggregated/model_performance
+    python analysis_scripts/aggregate_model_performance.py                  # all but rsa
+    python analysis_scripts/aggregate_model_performance.py --table gate_summary
+    python analysis_scripts/aggregate_model_performance.py --table rsa
+    python analysis_scripts/aggregate_model_performance.py --out results/aggregated/model_performance
 """
 
 import argparse
@@ -53,7 +53,7 @@ GATE_RE = re.compile(r"sample_num_(\d+)_gen_acc")
 REQ_RE = re.compile(r"model_responses_(\d+)_base")
 
 # Condition -> stimulus family. "legacy" folders are duplicate aliases or
-# content-invalid (see CLAUDE.md, "Legacy _context folders") and are dropped
+# content-invalid (the pre-registry `*_context` folders) and are dropped
 # unless --include-legacy is passed.
 CONDITION_FAMILY = {
     "abstract_belief": "tom",
@@ -249,7 +249,7 @@ def as_markdown(rows):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--results-root", default="results",
-                    help="tree to scan; 'other_results' holds the HPC-pulled mirror")
+                    help="tree to scan; 'results' holds the HPC-pulled mirror")
     ap.add_argument("--table", choices=["raw", "style", "gate", "gate_summary", "rsa", "all"], default="all",
                     help="'rsa' loads multi-hundred-MB tensors and is excluded from 'all'")
     ap.add_argument("--out", default=None, help="directory to write CSVs into")

@@ -47,7 +47,7 @@ for TEMPLATE in "${TEMPLATES[@]}"; do
 
   if [ -f "$C1_FB/attention.pt" ] && [ -f "$C5_FB/attention.pt" ]; then
     echo "=== $TEMPLATE false-belief: C1 vs C5 ==="
-    python scripts/lookback_analysis/prompt_attention_bars.py \
+    python analysis_scripts/lookback_analysis/prompt_attention_bars.py \
       --capture_dir "$C1_FB" --label "C1 divergence heads, $TEMPLATE, false-belief prompt" \
       --capture_dir "$C5_FB" --label "C5 retrieval heads, $TEMPLATE, false-belief prompt" \
       --out_stem "$OUT/C1_vs_C5_${TEMPLATE}_FB"
@@ -57,7 +57,7 @@ for TEMPLATE in "${TEMPLATES[@]}"; do
 
   if [ -f "$C1_TB/attention.pt" ]; then
     echo "=== $TEMPLATE true-belief: C1 ==="
-    python scripts/lookback_analysis/prompt_attention_bars.py \
+    python analysis_scripts/lookback_analysis/prompt_attention_bars.py \
       --capture_dir "$C1_TB" --label "C1 divergence heads, $TEMPLATE, true-belief prompt" \
       --out_stem "$OUT/C1_${TEMPLATE}_TB"
   else

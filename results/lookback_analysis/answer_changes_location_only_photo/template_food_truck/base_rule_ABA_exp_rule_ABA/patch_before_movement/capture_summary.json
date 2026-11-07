@@ -1,0 +1,16 @@
+{
+  "n_prompts": 150,
+  "n_heads": 50,
+  "max_seq": 96,
+  "pct_state_found": 1.0,
+  "pct_state_first_found": 1.0,
+  "pct_state_second_found": 1.0,
+  "pct_state_correct_found": 1.0,
+  "pct_info_loss_found": 0.0,
+  "pct_char_found": 0.0,
+  "pct_obj_found": 1.0,
+  "pct_bf_found": 1.0,
+  "pct_agent_first_found": 1.0,
+  "pct_agent_last_found": 1.0,
+  "agent_str": "photographer"
+}

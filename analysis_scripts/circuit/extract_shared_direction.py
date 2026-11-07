@@ -18,7 +18,7 @@ into the reader heads' Q subspaces at least as strongly as the full
 rank-1 wires do.
 
 Output: results/aggregated/circuit/shared_direction_{site}.npz
-Steering test: scripts/circuit/stage2_shared_direction.py (GPU).
+Steering test: analysis_scripts/circuit/stage2_shared_direction.py (GPU).
 """
 
 from __future__ import annotations

@@ -1,0 +1,750 @@
+CORRECT: Market Street
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bagels, on Market Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of bagels later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Juniper Lane. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Heneage Lane
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Heneage Lane. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of polenta later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Lincoln Boulevard. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Heneage Lane
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Heneage Lane. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of donuts later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Hovey Lane. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Monroe Street
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Monroe Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of hummus later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Jefferson Street. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Park Boulevard
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Park Boulevard. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Oak Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Park Boulevard
+ALT: Ladd Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Park Boulevard. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Ladd Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Jefferson Street
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Burton Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Adams Boulevard
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Adams Boulevard. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Park Boulevard. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Adams Boulevard
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyozas, on Adams Boulevard. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of gyozas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Market Street. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Hovey Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Hovey Lane. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of kebab later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Mink Drive. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Adams Boulevard
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Adams Boulevard. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Juniper Lane. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Jericho Road
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Jericho Road. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Franklin Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Pine Street
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Pine Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of kebab later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Hemlock Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Hunter Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Hunter Lane. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of burritos later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Mink Drive. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Highland Avenue
+ALT: Hemlock Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Highland Avenue. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of donuts later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Hemlock Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: First Street
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pozoles, on First Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of pozoles later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Allen Street. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Maple Drive
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Maple Drive. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Mink Drive. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Jefferson Street
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Highland Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Ivy Lane
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Ivy Lane. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Monroe Street. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Mink Drive
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to University Drive. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Downtown Plaza
+ALT: Jericho Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bratwursts, on Downtown Plaza. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of bratwursts later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Jericho Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Hilltop Drive
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ramen, on Hilltop Drive. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of ramen later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Juniper Lane. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Oak Avenue
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyros, on Oak Avenue. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of gyros later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Buck Road. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Pine Street
+ALT: Elm Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Pine Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Elm Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: Second Street
+ALT: Elm Avenue
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Second Street. She drives past the food truck and continues down the road and is unable to see the truck. She makes a note to herself to grab a plate of burritos later from the food truck. After Alice is out of sight, Bob, the owner of the truck, drives the truck to Elm Avenue. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+Alice would go to 
+============================================================
+CORRECT: coral
+ALT: wine
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has coral hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair wine, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: ginger
+ALT: yellow
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has ginger hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair yellow, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a watch as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: maroon
+ALT: sapphire
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has maroon hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair sapphire, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: blush
+ALT: white
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has blush hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair white, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: chestnut
+ALT: silver
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has chestnut hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair silver, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: rose
+ALT: orange
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has rose hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair orange, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a pendant as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: lilac
+ALT: cherry
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has lilac hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair cherry, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: pearl
+ALT: chartreuse
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has pearl hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair chartreuse, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: amber
+ALT: champagne
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has amber hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair champagne, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: mulberry
+ALT: purple
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has mulberry hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair purple, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for gloves as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: amethyst
+ALT: white
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has amethyst hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair white, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a belt as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: red
+ALT: lavender
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has red hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair lavender, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for hair clips as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: teal
+ALT: silver
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has teal hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair silver, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: acorn
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has acorn hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair maroon, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a purse as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: platinum
+ALT: verdigris
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has platinum hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair verdigris, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: pink
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has pink hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair topaz, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a bracelet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: ginger
+ALT: olive
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has ginger hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair olive, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: verdigris
+ALT: rose
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has verdigris hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair rose, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a bracelet as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: yellow
+ALT: amber
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has yellow hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair amber, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: ivory
+ALT: peach
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has ivory hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair peach, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: white
+ALT: acorn
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has white hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair acorn, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: lavender
+ALT: tangerine
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has lavender hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair tangerine, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: ginger
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has ginger hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair cobalt, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a hat as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: blue
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has blue hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair crimson, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for cufflinks as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: pink
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice and Jennifer are good friends. Alice has pink hair and she enjoys dying her hair time and again. On Monday, Alice dyes her hair cobalt, but the process goes terribly and she avoids telling this to Jennifer and avoids all her friends and does not go outside. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair color affects how accessories look, the sales assistant ask what color Alice's hair is.
+What color would Jennifer say Alice's hair is? Answer with only the color, be concise.<|im_end|>
+<|im_start|>assistant
+Jennifer would say Alice's hair is 
+============================================================
+CORRECT: history
+ALT: film
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a mathematics book from the history section of the library. She sits down and reads the book in the desk area in history. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the film section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: music
+ALT: science
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a economics book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: study materials
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the architecture section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: music
+ALT: biography
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a science book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the biography section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: music
+ALT: academic
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a psychology book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: art
+ALT: film
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the art section of the library. She sits down and reads the book in the desk area in art. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the film section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: art
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a physics book from the art section of the library. She sits down and reads the book in the desk area in art. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the study materials section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: fiction
+ALT: popular reads
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a science book from the fiction section of the library. She sits down and reads the book in the desk area in fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the popular reads section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: cooking
+ALT: science
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a political science book from the cooking section of the library. She sits down and reads the book in the desk area in cooking. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: children's
+ALT: theology
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a education book from the children's section of the library. She sits down and reads the book in the desk area in children's. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: study materials
+ALT: botany
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a literature book from the study materials section of the library. She sits down and reads the book in the desk area in study materials. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the botany section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: medicine
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a anthropology book from the medicine section of the library. She sits down and reads the book in the desk area in medicine. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the architecture section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: reference
+ALT: non-fiction
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a philosophy book from the reference section of the library. She sits down and reads the book in the desk area in reference. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the non-fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: theology
+ALT: education
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a history book from the theology section of the library. She sits down and reads the book in the desk area in theology. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the education section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: academic
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a economics book from the academic section of the library. She sits down and reads the book in the desk area in academic. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the architecture section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: history
+ALT: health
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the history section of the library. She sits down and reads the book in the desk area in history. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the health section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: history
+ALT: travel
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a business book from the history section of the library. She sits down and reads the book in the desk area in history. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the travel section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: cooking
+ALT: science
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a law book from the cooking section of the library. She sits down and reads the book in the desk area in cooking. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: popular reads
+ALT: theology
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a sociology book from the popular reads section of the library. She sits down and reads the book in the desk area in popular reads. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the theology section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: music
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a art book from the music section of the library. She sits down and reads the book in the desk area in music. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the poetry section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: architecture
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a science book from the architecture section of the library. She sits down and reads the book in the desk area in architecture. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the poetry section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: popular reads
+ALT: science
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a biology book from the popular reads section of the library. She sits down and reads the book in the desk area in popular reads. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the science section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: education
+ALT: academic
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a biology book from the education section of the library. She sits down and reads the book in the desk area in education. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the academic section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: non-fiction
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a chemistry book from the non-fiction section of the library. She sits down and reads the book in the desk area in non-fiction. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the fiction section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================
+CORRECT: medicine
+ALT: biography
+<|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Sarah checks out a physics book from the medicine section of the library. She sits down and reads the book in the desk area in medicine. Later, she finishes the book and leaves to get coffee from the café downstairs before continuing her work. While she's away, a librarian sees the book and, thinking it was left behind accidentally, returns it to the biography section where it actually belongs. The librarian reshelves it properly and it stays there.
+Which section would Sarah look for her book in? Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+Sarah would look for her book in the 
+============================================================

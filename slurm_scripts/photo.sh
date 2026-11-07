@@ -29,7 +29,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # Arrays for different experimental conditions (all templates × both rules × both patch conditions)
 TEMPLATES=("food_truck" "library_book" "hair_styling" "basic_object_move_detailed")
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --context_type photo \
   --base_rule ABA \

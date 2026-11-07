@@ -32,7 +32,7 @@ if [ ! -f results/aggregated/circuit/stage1/directions_L41.npz ]; then
 fi
 
 # Three-route accounting of the Figure "steer-attn" residual edit
-# (scripts/circuit/stage2_route_decomposition.py): pin direct / all
+# (analysis_scripts/circuit/stage2_route_decomposition.py): pin direct / all
 # attention outputs / all MLP outputs of L42-47 at the final token to
 # clean or steered (8 exact configurations -> Shapley shares), plus the
 # all-heads attention-weight route and per-layer necessity. 22 forward
@@ -41,7 +41,7 @@ fi
 # finished prompts are skipped on restart, so just resubmit if preempted.
 
 echo "Part A: pilot (5 prompts per variant) + exactness check"
-python scripts/circuit/stage2_route_decomposition.py \
+python analysis_scripts/circuit/stage2_route_decomposition.py \
   --site L41 --limit 5 --run_label route_decomp_pilot || exit 1
 
 python - <<'PY' || exit 1
@@ -53,5 +53,5 @@ if d["scc_rel_err"].max() > 1e-2:
 PY
 
 echo "Part B: full run"
-python scripts/circuit/stage2_route_decomposition.py \
+python analysis_scripts/circuit/stage2_route_decomposition.py \
   --site L41 --run_label route_decomp

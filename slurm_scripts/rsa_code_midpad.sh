@@ -42,7 +42,7 @@
 # (mid_pad_len and pad_axis carry the truth; see the builder docstring).
 #
 # Analysis after pulling:
-#   python scripts/rsa_head_outputs/analyze_code_padtwins_rdms.py \
+#   python analysis_scripts/rsa_head_outputs/analyze_code_padtwins_rdms.py \
 #       --model qwen --skip_mantel      # pad-twin test on the mid grid
 # and compare rho_prefix|suffix (= prefix response) against
 # rho_suffix|prefix (= mid response) split by queried_object/slot_type.
@@ -67,13 +67,13 @@ OUT=results/rsa_head_outputs/activations_code_midpad_full
 # builder runs the same hard confound + pad-orthogonality checks as Exp 3;
 # a nonzero exit means the grid is bad and nothing should be captured
 if [ ! -f $STIM/code_midpad.csv ]; then
-  python scripts/rsa_head_outputs/build_code_padtwins_stimuli.py \
+  python analysis_scripts/rsa_head_outputs/build_code_padtwins_stimuli.py \
     --pad_axis mid || exit 1
 fi
 
 if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
   echo "Task 0: code_midpad capture, Qwen2.5-14B-Instruct"
-  python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+  python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
     --template code_midpad \
     --stim_dir  $STIM \
     --out_dir   $OUT/Qwen2.5-14B-Instruct \
@@ -83,7 +83,7 @@ if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
     --capture_attn_summary
 else
   echo "Task 1: code_midpad capture, gemma-2-27b-it"
-  python scripts/rsa_head_outputs/capture_head_outputs_full.py \
+  python analysis_scripts/rsa_head_outputs/capture_head_outputs_full.py \
     --template code_midpad \
     --stim_dir  $STIM \
     --out_dir   $OUT/gemma-2-27b-it \

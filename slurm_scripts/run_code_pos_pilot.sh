@@ -38,7 +38,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 # unmatched is the same-format calibration baseline (frozen-set effects).
 #   [0-1]  code_pos_matched    ABA (copy->alias), ABB (alias->copy)  answer token index + length equal
 #   [2-3]  code_pos_unmatched  ABA, ABB                               baseline: same fillers, positions differ
-# Read-out: scripts/analyze_code_index_dissociation.py (frozen sets; T_C1
+# Read-out: analysis_scripts/analyze_code_index_dissociation.py (frozen sets; T_C1
 # split into the 6 index-shared heads vs remaining 26; L29H31, L35H30).
 # cma.py saves only after ALL prompts: a timeout/preemption loses the job.
 
@@ -54,7 +54,7 @@ echo "Job $IDX: condition=$CONDITION template=$TEMPLATE rule=$RULE seed=1 act=z 
 echo "node=$(hostname) CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 nvidia-smi --query-gpu=name,memory.used,memory.total --format=csv,noheader || echo "nvidia-smi FAILED on $(hostname)"
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --condition $CONDITION \
   --base_rule $RULE \
   --template_names $TEMPLATE \

@@ -7,7 +7,7 @@ plus belief_effect, answer_effect, and ratio.
 
 Outputs:
   - results/rsa_head_outputs/all_conditions_buckets.csv
-  - results_for_pi/aggregation/all_conditions_dissociation.png
+  - results/summary/aggregation/all_conditions_dissociation.png
 """
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads"
-FIG_OUT = ROOT / "results_for_pi/aggregation/all_conditions_dissociation.png"
+FIG_OUT = ROOT / "results/summary/aggregation/all_conditions_dissociation.png"
 CSV_OUT = ROOT / "results/rsa_head_outputs/all_conditions_buckets.csv"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]

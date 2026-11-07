@@ -1,0 +1,8 @@
+layer,head,offset_from_end,mean_attn,support_n_prompts,examples
+43,34,71,0.07974164962768554,150,'You' | 'You' | '\\n' | '\\n' | 'You'
+43,34,12,0.030862881342569988,150,' young' | ' young' | ' young' | ' young' | ' young'
+43,34,72,0.030521247386932373,150,'\\n' | '\\n' | 'system' | 'system' | '\\n'
+43,34,0,0.026554393768310546,150,'\\n' | '\\n' | '\\n' | '\\n' | '\\n'
+43,30,71,0.14483761548995971,150,'You' | 'You' | '\\n' | '\\n' | 'You'
+43,30,72,0.08290577292442322,150,'\\n' | '\\n' | 'system' | 'system' | '\\n'
+43,30,9,0.021980843544006347,150,' classics' | ' classics' | ' classics' | ' classics' | ' classics'

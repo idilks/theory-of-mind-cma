@@ -23,7 +23,7 @@
 # harness, so photo values are expected to agree only approximately.
 #
 # Inputs on the cluster (synced by push.sh): results/aggregated/head_selection/
-# (built locally by scripts/build_significance_head_sets.py), the all-heads
+# (built locally by analysis_scripts/build_significance_head_sets.py), the all-heads
 # captures activations_full/, activations_full_photo/,
 # activations_code_position_full/, and stimuli/, stimuli_photo/.
 #
@@ -59,7 +59,7 @@ for f in results/aggregated/head_selection/comparison.csv \
 done
 
 echo "selection=$SELECTION job=$SLURM_JOB_ID node=$(hostname)"
-python -u scripts/rsa_head_outputs/steer_state_axes.py \
+python -u analysis_scripts/rsa_head_outputs/steer_state_axes.py \
   --device cuda --selection "$SELECTION" --domains tom code photo --check_inputs
-python -u scripts/rsa_head_outputs/steer_state_axes.py \
+python -u analysis_scripts/rsa_head_outputs/steer_state_axes.py \
   --device cuda --selection "$SELECTION" --domains tom code photo

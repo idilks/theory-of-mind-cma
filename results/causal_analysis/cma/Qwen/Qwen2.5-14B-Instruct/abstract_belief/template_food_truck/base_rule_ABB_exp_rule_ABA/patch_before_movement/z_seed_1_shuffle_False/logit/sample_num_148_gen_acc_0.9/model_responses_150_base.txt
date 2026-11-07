@@ -1,0 +1,1350 @@
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bagels, on Market Street. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bagels later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Monroe Street. Bob, the owner of the food truck, drives the truck to Jefferson Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hummus later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Burton Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Park Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyozas, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyozas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Hovey Lane. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kebab later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Jericho Road. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Pine Street. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kebab later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pozoles, on First Street. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pozoles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Ivy Lane. Bob, the owner of the food truck, drives the truck to Monroe Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. Bob, the owner of the food truck, drives the truck to University Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bratwursts, on Downtown Plaza. Bob, the owner of the food truck, drives the truck to Jericho Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bratwursts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jericho Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ramen, on Hilltop Drive. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of ramen later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyros, on Oak Avenue. Bob, the owner of the food truck, drives the truck to Buck Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyros later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Pine Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Second Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Monroe Street. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Burton Road. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling sandwiches, on Madison Drive. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of sandwiches later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Ivy Lane. Bob, the owner of the food truck, drives the truck to Brook Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pozoles, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pozoles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Washington Avenue. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Cedar Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Cedar Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Mink Drive. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crabcakes, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Jefferson Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crabcakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bratwursts, on Brook Road. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bratwursts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hot dogs, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Downtown Plaza. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hot dogs later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Downtown Plaza
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling wraps, on Allen Street. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of wraps later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyozas, on Oak Avenue. Bob, the owner of the food truck, drives the truck to First Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyozas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): First Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Burton Road. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Juniper Lane. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Park Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Park Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on University Drive. Bob, the owner of the food truck, drives the truck to Buck Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling samosas, on River Road. Bob, the owner of the food truck, drives the truck to Heneage Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of samosas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling waffles, on University Drive. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of waffles later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Buck Road. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling cookies, on Buck Road. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of cookies later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling croissants, on University Drive. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of croissants later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Second Street. Bob, the owner of the food truck, drives the truck to Heneage Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gnocchi, on Buck Road. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gnocchi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling faluda, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of faluda later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Market Street. Bob, the owner of the food truck, drives the truck to Ivy Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling faluda, on Hilltop Drive. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of faluda later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gnocchi, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Hilltop Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gnocchi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hilltop Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Maple Drive. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Brook Road. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gnocchi, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gnocchi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Second Street. Bob, the owner of the food truck, drives the truck to Brook Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Madison Drive. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hummus later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gnocchi, on Madison Drive. Bob, the owner of the food truck, drives the truck to Pine Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gnocchi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Pine Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crabcakes, on Washington Avenue. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crabcakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ramen, on Elm Avenue. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of ramen later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ice cream, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of ice cream later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Brook Road. Bob, the owner of the food truck, drives the truck to Allen Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Allen Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling smoothies, on Elm Avenue. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of smoothies later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling croissants, on Jericho Road. Bob, the owner of the food truck, drives the truck to Cedar Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of croissants later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Cedar Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Second Street. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Cedar Lane. Bob, the owner of the food truck, drives the truck to Brook Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling wraps, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to University Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of wraps later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Brook Road. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling sushi, on Maple Drive. Bob, the owner of the food truck, drives the truck to Downtown Plaza. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of sushi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Downtown Plaza
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Second Street. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling samosas, on Ivy Lane. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of samosas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling churros, on Madison Drive. Bob, the owner of the food truck, drives the truck to Juniper Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of churros later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Juniper Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burgers, on Downtown Plaza. Bob, the owner of the food truck, drives the truck to Burton Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burgers later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on University Drive. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Pine Street. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Pine Street. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Jefferson Street. Bob, the owner of the food truck, drives the truck to Hilltop Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hilltop Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crepe, on Downtown Plaza. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crepe later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Allen Street. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Market Street. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling nachos, on Cedar Lane. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of nachos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling samosas, on Juniper Lane. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of samosas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Mink Drive. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crabcakes, on Elm Avenue. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crabcakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling poutine, on Elm Avenue. Bob, the owner of the food truck, drives the truck to University Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of poutine later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Heneage Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling samosas, on Brook Road. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of samosas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling bagels, on Market Street. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of bagels later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Adams Boulevard. Bob, the owner of the food truck, drives the truck to Monroe Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hummus later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling smoothies, on Washington Avenue. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of smoothies later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kibbehs, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kibbehs later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Cedar Lane. Bob, the owner of the food truck, drives the truck to Washington Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Washington Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling muffins, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of muffins later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crabcakes, on Hilltop Drive. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crabcakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling risotto, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of risotto later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling donuts, on Oak Avenue. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of donuts later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gelatos, on Mink Drive. Bob, the owner of the food truck, drives the truck to Hemlock Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gelatos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hemlock Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling nachos, on Mink Drive. Bob, the owner of the food truck, drives the truck to Burton Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of nachos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Burton Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Oak Avenue. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kibbehs, on Allen Street. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kibbehs later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crepe, on Heneage Lane. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crepe later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling burritos, on Mink Drive. Bob, the owner of the food truck, drives the truck to Washington Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of burritos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Washington Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Allen Street. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kibbehs, on Hemlock Road. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kibbehs later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling tacos, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Buck Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of tacos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Buck Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling faluda, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of faluda later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling poutine, on Cedar Lane. Bob, the owner of the food truck, drives the truck to Highland Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of poutine later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Highland Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gnocchi, on Second Street. Bob, the owner of the food truck, drives the truck to Oak Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gnocchi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Oak Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gyros, on Allen Street. Bob, the owner of the food truck, drives the truck to Cedar Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gyros later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Cedar Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Maple Drive. Bob, the owner of the food truck, drives the truck to Ivy Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ivy Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pupusas, on Mink Drive. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pupusas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling kebab, on Burton Road. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of kebab later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Maple Drive. Bob, the owner of the food truck, drives the truck to Mink Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Mink Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Monroe Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Monroe Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling hummus, on Ladd Road. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of hummus later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling smoothies, on Second Street. Bob, the owner of the food truck, drives the truck to Ladd Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of smoothies later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Ladd Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Mink Drive. Bob, the owner of the food truck, drives the truck to Downtown Plaza. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Downtown Plaza
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pasta, on Burton Road. Bob, the owner of the food truck, drives the truck to Jefferson Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pasta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Jefferson Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling churros, on Jericho Road. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of churros later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling faluda, on Madison Drive. Bob, the owner of the food truck, drives the truck to Franklin Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of faluda later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Franklin Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling okonomiyaki, on Brook Road. Bob, the owner of the food truck, drives the truck to Hovey Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of okonomiyaki later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hovey Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Washington Avenue. Bob, the owner of the food truck, drives the truck to Second Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Second Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling poutine, on Cedar Lane. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of poutine later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on University Drive. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling ramen, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Market Street. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of ramen later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Market Street
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling milkshakes, on Second Street. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of milkshakes later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Juniper Lane. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling sushi, on Park Boulevard. Bob, the owner of the food truck, drives the truck to Lincoln Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of sushi later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Lincoln Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling gelatos, on Ladd Road. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of gelatos later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crepe, on Pine Street. Bob, the owner of the food truck, drives the truck to River Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crepe later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): River Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling quesadillas, on Juniper Lane. Bob, the owner of the food truck, drives the truck to Hunter Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of quesadillas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Hunter Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Franklin Avenue. Bob, the owner of the food truck, drives the truck to Adams Boulevard. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Adams Boulevard
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling shawarmas, on Hunter Lane. Bob, the owner of the food truck, drives the truck to Madison Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of shawarmas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Madison Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling crepe, on Lincoln Boulevard. Bob, the owner of the food truck, drives the truck to Elm Avenue. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of crepe later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Elm Avenue
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling pizza, on Jericho Road. Bob, the owner of the food truck, drives the truck to Brook Road. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of pizza later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Brook Road
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling empanadas, on Highland Avenue. Bob, the owner of the food truck, drives the truck to Maple Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of empanadas later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Maple Drive
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling polenta, on Oak Avenue. Bob, the owner of the food truck, drives the truck to Heneage Lane. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of polenta later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): Heneage Lane
+---
+prompt (sample 0): <|im_start|>system
+You are a helpful assistant reasoning about agents' beliefs.<|im_end|>
+<|im_start|>user
+Alice sees a food truck selling salads, on Madison Drive. Bob, the owner of the food truck, drives the truck to University Drive. Alice sees Bob moving the truck. She makes a note to herself to grab a plate of salads later from the food truck. She drives past the food truck and continues down the road and is unable to see the truck. After this, the food truck stays in place, nobody moves it.
+Where would Alice go to find the truck? Answer with only the location, be concise<|im_end|>
+<|im_start|>assistant
+
+response (sample 0): University Drive
+---

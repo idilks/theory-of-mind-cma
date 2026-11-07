@@ -63,7 +63,7 @@ from state_geometry_alignment import (  # noqa: E402
 
 PHOTO_ACT = ROOT / "results/rsa_head_outputs/activations_full_photo"
 OUT_DIR = ROOT / "results/rsa_head_outputs/state_geometry_threeway"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 FIG_TAG = _dims.tag("Qwen2.5-14B-Instruct")
 
 

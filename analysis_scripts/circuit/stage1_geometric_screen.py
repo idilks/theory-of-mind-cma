@@ -1,9 +1,9 @@
 """Stage 1 of the layered-lookback circuit: the geometric screen.
 
-Laptop-side linear algebra over the capture artifacts produced by
-capture_circuit_activations.py (no model load). Implements S1a/S1b/S1c
-from docs/design_layered_lookback_circuit.md plus the direction ladder
-rungs 1-2, and prints the go/no-go verdict that gates Stage 2.
+Linear algebra over the capture artifacts produced by
+capture_circuit_activations.py (no model load). Implements S1a/S1b/S1c plus
+the direction ladder rungs 1-2, and prints the go/no-go verdict that gates
+Stage 2.
 
 Split discipline: all directions (Delta r_h, Delta resid, SVD subspace)
 are fit on a random half of matched pairs per template; every reported

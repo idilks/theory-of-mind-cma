@@ -1,0 +1,3 @@
+0: base_ans: Madison Drive, exp_ans: Madison Drive, causal_ans: Mink Drive
+1: base_ans: Jericho Road, exp_ans: Jericho Road, causal_ans: Burton Road
+2: base_ans: University Drive, exp_ans: University Drive, causal_ans: Adams Boulevard

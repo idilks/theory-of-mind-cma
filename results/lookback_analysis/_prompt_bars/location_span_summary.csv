@@ -1,0 +1,10 @@
+group,template,prompt,n_heads,uniform,correct_span,correct_2tok,correct_1tok,heads_on_correct,other_span,other_2tok,heads_on_other
+C1,food_truck,FB,14,0.0077,Pine Street,0.02,0.01,3,Garden Street,0.13,4
+C5,food_truck,FB,12,0.0077,Pine Street,0.41,0.272,7,Garden Street,0.027,1
+C1,hair_styling,FB,19,0.0073,mar oon,0.028,0.007,3,em erald,0.06,8
+C5,hair_styling,FB,12,0.0073,mar oon,0.267,0.065,6,em erald,0.034,2
+C1,library_book,FB,6,0.0071,academic section,0.058,0.005,2,history section,0.009,0
+C5,library_book,FB,16,0.0071,academic section,0.189,0.154,10,history section,0.109,4
+C1,food_truck,TB,13,0.0076,Garden Street,0.028,0.009,2,Pine Street,0.01,0
+C1,hair_styling,TB,21,0.0074,em erald,0.053,0.024,4,mar oon,0.015,2
+C1,library_book,TB,10,0.0078,history section,0.078,0.036,5,academic section,0.025,1

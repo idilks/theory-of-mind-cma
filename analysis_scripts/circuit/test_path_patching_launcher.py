@@ -19,12 +19,12 @@ class LauncherTests(unittest.TestCase):
         plan = root / "results/aggregated/path_patching_setup/plan.json"
         plan.parent.mkdir(parents=True)
         plan.write_text(json.dumps({"revision": REVISION}))
-        for stub in ("codebase/tasks/causal_analysis/cma_config.py", "scripts/condition_registry.py",
-                     "scripts/circuit/path_patching.py", "scripts/circuit/path_patching_study.py"):
+        for stub in ("cma_scripts/tasks/causal_analysis/cma_config.py", "analysis_scripts/condition_registry.py",
+                     "analysis_scripts/circuit/path_patching.py", "analysis_scripts/circuit/path_patching_study.py"):
             (root / stub).parent.mkdir(parents=True, exist_ok=True)
             (root / stub).write_text("# v1\n")
-        (root / "codebase/results/big.pt").parent.mkdir(parents=True)
-        (root / "codebase/results/big.pt").write_text("excluded")
+        (root / "cma_scripts/results/big.pt").parent.mkdir(parents=True)
+        (root / "cma_scripts/results/big.pt").write_text("excluded")
         self.cache = root / "models/cache"
         self.calls = root / "calls.txt"
         bin_dir = root / "bin"
@@ -74,22 +74,22 @@ class LauncherTests(unittest.TestCase):
         result, calls = self.run_launcher()
         self.assertEqual(result.returncode, 0, result.stderr)
         snapshot = self.root / "output/code_snapshot"
-        self.assertIn(str(snapshot / "scripts/circuit/path_patching_study.py"), calls)
+        self.assertIn(str(snapshot / "analysis_scripts/circuit/path_patching_study.py"), calls)
         self.assertEqual(calls[calls.index("--plan") + 1],
                          str(snapshot / "results/aggregated/path_patching_setup/plan.json"))
         self.assertEqual(calls[calls.index("--task-id") + 1], "0")
         self.assertEqual(calls[calls.index("--pairs-per-cell") + 1], "10")
         self.assertIn(f"HF_HUB_CACHE={self.cache}", calls)
-        self.assertTrue((snapshot / "codebase/tasks/causal_analysis/cma_config.py").exists())
-        self.assertFalse((snapshot / "codebase/results").exists())
+        self.assertTrue((snapshot / "cma_scripts/tasks/causal_analysis/cma_config.py").exists())
+        self.assertFalse((snapshot / "cma_scripts/results").exists())
 
     def test_snapshot_is_reused_after_source_changes(self):
         self.add_snapshot(self.cache)
         self.assertEqual(self.run_launcher()[0].returncode, 0)
-        (self.root / "scripts/circuit/path_patching.py").write_text("# v2 pushed mid-run\n")
+        (self.root / "analysis_scripts/circuit/path_patching.py").write_text("# v2 pushed mid-run\n")
         result, _ = self.run_launcher()
         self.assertEqual(result.returncode, 0, result.stderr)
-        frozen = self.root / "output/code_snapshot/scripts/circuit/path_patching.py"
+        frozen = self.root / "output/code_snapshot/analysis_scripts/circuit/path_patching.py"
         self.assertEqual(frozen.read_text(), "# v1\n")
 
     def test_hub_subdirectory_cache_layout(self):

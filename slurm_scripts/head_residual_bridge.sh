@@ -56,7 +56,7 @@ export HF_HOME=$MODEL_CACHE
 export HF_HUB_CACHE=$HUB_CACHE
 export TRANSFORMERS_CACHE=$HUB_CACHE
 
-RUNNER=scripts/circuit/stage2_steering.py
+RUNNER=analysis_scripts/circuit/stage2_steering.py
 for required in "$RUNNER" \
     results/aggregated/circuit/stage1/directions_L41.npz \
     results/rsa_head_outputs/activations_code_position_full/Qwen2.5-14B-Instruct/code_position.pt \

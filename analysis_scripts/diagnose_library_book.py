@@ -10,7 +10,7 @@ import re
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "cma_scripts" / "tasks" / "causal_analysis"))
 from prompt_generators.base import locations_match
 
 RESULTS_ROOT = Path("results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct")

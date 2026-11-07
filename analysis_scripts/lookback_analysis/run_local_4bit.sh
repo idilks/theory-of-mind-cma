@@ -9,9 +9,9 @@
 #   pip install bitsandbytes accelerate
 #
 # Usage:
-#   bash scripts/lookback_analysis/run_local_4bit.sh
+#   bash analysis_scripts/lookback_analysis/run_local_4bit.sh
 # or one template at a time:
-#   bash scripts/lookback_analysis/run_local_4bit.sh food_truck
+#   bash analysis_scripts/lookback_analysis/run_local_4bit.sh food_truck
 
 set -euo pipefail
 
@@ -27,7 +27,7 @@ fi
 
 for T in "${TEMPLATES[@]}"; do
   echo "=== capturing template=$T ==="
-  python scripts/lookback_analysis/capture_attention_patterns.py \
+  python analysis_scripts/lookback_analysis/capture_attention_patterns.py \
     --template "$T" \
     --condition abstract_belief \
     --base_rule ABA \
@@ -43,5 +43,5 @@ for T in "${TEMPLATES[@]}"; do
 
   CAP_DIR="local_results/lookback_analysis/abstract_belief/template_${T}/base_rule_ABA_exp_rule_ABB/patch_before_movement"
   echo "=== analyzing $CAP_DIR ==="
-  python scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir "$CAP_DIR"
+  python analysis_scripts/lookback_analysis/analyze_lookback_attention.py --capture_dir "$CAP_DIR"
 done

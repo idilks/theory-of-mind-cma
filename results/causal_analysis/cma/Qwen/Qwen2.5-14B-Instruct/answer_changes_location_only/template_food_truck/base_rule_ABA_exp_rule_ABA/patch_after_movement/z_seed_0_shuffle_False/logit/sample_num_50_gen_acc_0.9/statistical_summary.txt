@@ -1,0 +1,9 @@
+# causal mediation analysis - statistical testing results
+# permutation test with FWER correction (max-statistic method)
+
+FWER threshold: 0.257500
+total heads tested: 1920
+significant heads (|score| > threshold): 0
+proportion significant: 0.0%
+
+no significant heads found

@@ -1,0 +1,1280 @@
+{
+  "T0.1": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely explain the situation truthfully to the sales assistant. Since Alice cut her hair short but the process went terribly, Jennifer could say something like:\n\n\"Actually, Alice just cut her hair short, but it didn't turn",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided, Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that despite the poor outcome of the haircut, Alice's hair is still short. Therefore, Alice's hair is short, even",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely say that Alice's hair is short. Since Alice had her long hair cut short on Monday, and the process went terribly, Jennifer would know that Alice's hair is now short. Therefore, Jennifer would inform the sales",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is still short, even though the haircut was not successful. Therefore, Alice's hair is short.\n\nThe final answer",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely say that Alice's hair is short, since Alice had her long hair cut short on Monday. However, since the haircut went terribly, Jennifer might want to be careful about how she phrases it to avoid upsetting Alice further",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided in the scenario, Alice's hair is short. The passage mentions that Alice decided to cut her long hair short on Monday, and the process did not go well. Therefore, despite the mishap, Alice's hair is now",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely say that Alice's hair is short, since Alice had her long hair cut short on Monday. However, since the haircut went terribly, Jennifer might also add a comment to express her concern or disappointment. A possible response",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided, Alice decided to cut her long hair short on Monday, but the process did not go well. Therefore, Alice's hair is now short, even though it was originally long. The sales assistant's question about the length of",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely say that Alice's hair is short, as Alice had her long hair cut short on Monday. Therefore, Jennifer would respond to the sales assistant by saying:\n\n\"Alice's hair is short.\" \n\nThis response accurately reflects",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided, Alice recently cut her long hair short, even though the process did not go well. Therefore, Alice's hair is now short. The sales assistant's question about Alice's hair length is irrelevant to the current state of her",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond with honesty, but in a way that is sensitive to Alice's feelings. She might say something like, \"Alice's hair is quite short now, but she's still looking for the right style that suits her",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. However, it does not provide specific details about the actual length of Alice's hair after the haircut. Since the problem does not give us any concrete",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond truthfully but tactfully about Alice's hair. She might say something like, \"Alice's hair is quite short now. She recently got a short haircut, but it didn't turn out the way she wanted",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is now short, even though the cut was not successful. Therefore, Alice's actual hair length is short.\n\nTo",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond truthfully but tactfully about Alice's hair. She might say something like, \"Alice's hair is quite short now. She recently got a new haircut, but it didn't turn out the way she hoped",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is now short, despite the disastrous outcome of the haircut. Therefore, Alice's actual hair length is short.\n\nTo",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond with honesty, but in a way that is sensitive to Alice's feelings. She might say something like, \"Alice's hair is a bit shorter than usual right now, but it's still looking good.\" This",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is now short, but not necessarily in a desirable way. Therefore, Alice's actual hair length is short, even",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond truthfully about Alice's hair length, but she might also choose her words carefully to avoid causing further distress to Alice. Since Alice's hair cut went terribly, Jennifer might say something like:\n\n\"Actually, Alice",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is now short, even though the cut was not successful. Therefore, Alice's actual hair length is short.\n\nTo",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.4": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context provided, Jennifer should respond truthfully to the sales assistant about Alice's hair length, considering the recent haircut. Since Alice cut her long hair short, but the process went terribly, Jennifer should convey that Alice's hair is now short,",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided, Alice decided to cut her long hair short on Monday. However, the process did not go well. Therefore, Alice's hair is now short, even though it was originally long. The sales assistant would be under the impression",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely need to respond in a way that doesn't reveal the disastrous haircut. She could say something like:\n\n\"Jennifer says Alice's hair is short, but she's out getting a touch-up today.\"\n\nThis response helps avoid",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided in the scenario, Alice had long hair before she decided to cut it short on Monday. However, the hair-cutting process went terribly, which implies that the result might not be as intended. Since the question asks about the",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given that Alice recently had a disastrous haircut that resulted in her having very short hair, Jennifer should describe Alice's hair as short when the sales assistant asks about the length of Alice's hair. Here's how Jennifer might phrase it:\n\n\"Jennifer says Alice",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " The problem states that Alice decided to cut her long hair short on Monday, but the process went terribly. This implies that Alice's hair is still short, even though it did not turn out well. Therefore, Alice's hair is short.\n\nThe answer",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context provided, Jennifer would likely say that Alice's hair is short. Since Alice had her long hair cut short on Monday and the process went terribly, Jennifer would be aware of this change. Therefore, when the sales assistant asks how long Alice",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided in the story, Alice decided to cut her long hair short on Monday, but the process did not go well. Therefore, despite the mishap, Alice's hair is now short. So, when the sales assistant asks how",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely need to explain the situation to the sales assistant in a way that is honest and considerate of Alice's feelings. Since Alice's hair was cut short in a way that she didn't like, Jennifer might say something",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information provided, Alice has recently cut her long hair short, but the process did not go well. Therefore, Alice's hair is now short, even though it was originally long. The sales assistant's query about the length of Alice's",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond truthfully but tactfully about Alice's hair. Since Alice's hair was cut short on Monday and the process went terribly, Jennifer might say something like:\n\n\"Actually, Alice just got her hair cut short recently",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the information provided in the scenario, Alice has recently cut her long hair short, and the process did not go well. Therefore, Alice's actual hair length is short, despite it being her long hair originally. The exact length isn't specified",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond with honesty but in a way that is sensitive to Alice's feelings. Since the haircut went terribly, Jennifer might say something like, \"Alice's hair is much shorter now, and she's not very happy with",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem does not provide explicit information about Alice's actual hair length after she cut it short. However, we know the following:\n\n1. Alice had long hair initially.\n2. She cut her hair short on Monday, and the process went terribly.\n",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the situation, Jennifer would likely respond truthfully but tactfully about Alice's hair. Since Alice had her hair cut short, even though it didn't go as planned, Jennifer would probably say something like:\n\n\"Ah, Alice's hair is now",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the information provided, Alice has short hair after having cut her long hair short on Monday. Therefore, Alice's actual hair length is short. The sales assistant's question about Alice's hair length is irrelevant to the outcome since the context clearly states",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer knows that Alice had her long hair cut short on Monday, but the process didn't go well. However, since the sales assistant is asking about Alice's hair length in order to suggest appropriate sunglasses, Jennifer might want to respond",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that on Monday, Alice decides to cut her long hair short, but the process goes terribly. This implies that Alice's hair is now short, even though the cut was not successful. Therefore, Alice's actual hair length is short.\n\n",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond truthfully about Alice's hair length, but she might do so in a way that softens the blow. Since Alice's hair cut went terribly, Jennifer could respond by saying something like, \"Oh, Alice",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the information provided, Alice has recently cut her long hair short. However, the exact length of her hair after the cut is not specified. Since the question asks for Alice's actual hair length after the haircut and the narrative indicates only that it",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20,
+    "belief_total": 10,
+    "world_total": 10
+  },
+  "T0.7": {
+    "total_prompts": 20,
+    "by_vignette": {
+      "true_belief": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "by_format": {
+      "direct": {
+        "correct": 0,
+        "total": 20
+      }
+    },
+    "raw_responses": [
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " To determine how Jennifer should respond about Alice's hair length, we need to carefully analyze the sequence of events.\n\n1. On Monday, Alice decides to cut her long hair short.\n2. The process goes terribly.\n3. Alice calls Jennifer to inform",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a headband as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the details provided in the scenario, Alice recently had a haircut that went terribly wrong and cut her hair short. Thus, Alice's hair is actually short post the disastrous haircut. Despite this, Jennifer is shopping for a headband as a birthday",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 0
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context provided, Jennifer would likely respond in a way that is sensitive to Alice's feelings. Since Alice's hair cut did not go well and she is embarrassed about it, Jennifer might not want to disclose the exact details of the hair disaster.",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " Based on the information given, Alice decided to cut her long hair short on Monday. However, the process did not go well, meaning her hair is now short but in a disastrous state. Therefore, in terms of length, Alice's hair is short",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 1
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context provided, Jennifer is likely aware that Alice got a haircut on Monday, but since Alice's hair turned out badly, the length might be shorter than expected. However, Jennifer might not have precise details about the exact length. A plausible response",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " The problem states that on Monday, Alice cut her long hair short, but the process went terribly. This means Alice originally had long hair but attempted to cut it short, resulting in a disastrous outcome. However, the actual length of Alice's hair after",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 2
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " Given the context, Jennifer needs to answer the sales assistant's question about Alice's hair length. Since Alice cut her long hair short but the process went terribly, Jennifer should still refer to Alice's hair as short, albeit perhaps emphasizing that it's not",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " We're given a few scenarios, but to find out the actual state of Alice's hair, we need to look at the last action that has definitively changed her hair.\n\n1. Initially, Alice has long hair.\n2. On Monday, Alice",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 3
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nJennifer says Alice's hair is?\n<loc></loc>",
+        "response": " In this situation, Jennifer would likely need to think carefully about how to answer the sales assistant's question without causing embarrassment or discomfort for Alice. Considering the circumstances, Jennifer might say something like, \"Alice's hair is quite short now; she had it",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for earrings as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nAlice's hair is actually?\n<loc></loc>",
+        "response": " It seems like there is a bit of confusion in the narrative, but based on the given information, Alice got a bad haircut on Monday, cutting her long hair short. So, Alice's hair is short as a result of the disaster she had on",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "standard",
+          "template_name": "hair_styling",
+          "pair_id": 4
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given that the scene described is on Tuesday, and Alice had her hair cut on Monday, Jennifer would know that Alice's hair is now short. Although the haircut \"went terribly,\" Jennifer might choose to respond in a way that is sensitive to Alice's",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The information provided does not explicitly state Alice's actual hair length after she cut it short, but it does tell us that she cut her long hair short. Therefore, we can infer that her hair is now short, but we do not know the exact",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 5
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given that Alice cut her hair short but the process went terribly, Jennifer would likely need to be careful in how she responds to the sales assistant. Since she knows about the disastrous haircut, she can respond by saying something like:\n\n\"Actually, Alice just",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " The problem states that on Monday, Alice cut her long hair short, but the process went terribly. This implies that Alice's hair is now short, even though the cut was not successful. Therefore, Alice's actual hair length is short. The fact",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 6
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context, Jennifer would likely respond to the sales assistant's question about Alice's hair length by either being vague or providing truthful information. Considering the disaster Alice experienced with her haircut, Jennifer might say something like, \"Alice's hair is pretty short",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a necklace as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the information provided in the passage, Alice has recently cut her long hair short. However, the haircut went terribly, but it does not specify what exactly \"terribly\" means regarding the length of her hair after the haircut. Since the question",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 7
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Given the context that Alice's hair-cutting process went terribly on Monday, and assuming the hair cut ended up being shorter than Alice intended, Jennifer would likely respond to the sales assistant truthfully but perhaps with a hint of humor or honesty about the unexpected",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for sunglasses as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the information provided in the scenario, Alice has very short hair now because she recently cut her long hair short, and the process didn't go well. So, Alice's actual hair length is short. The sales assistant would likely need to be",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 8
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nHow would Jennifer respond about Alice's hair length?\n<loc></loc>",
+        "response": " Considering that Alice's newly cut short hair is a \"disaster\" and that Jennifer is shopping for a scarf as a birthday gift, Jennifer would likely find it necessary to respond truthfully about Alice's hair length to ensure that the scarf she chooses will",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": false,
+        "world_correct": null,
+        "malformed": true,
+        "belief_answer": "",
+        "world_answer": null,
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "belief",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      },
+      {
+        "prompt": "Alice and Jennifer are good friends. On Monday, Alice decides to cut her long hair short, but the process goes terribly. She immediately calls Jennifer to tell her about the disaster. Tuesday is Alice's birthday and Jennifer is out shopping for a scarf as a birthday gift for Alice. As hair length affects how accessories look, the sales assistant asks how long Alice's hair is.\nWhat is Alice's actual hair length?\n<loc></loc>",
+        "response": " Based on the scenario described, Alice has recently cut her long hair short, as the process went terribly. This indicates that her current hair length is short. Therefore, Alice's actual hair length is short, and it contrasts with her previous long hair.",
+        "expected_belief": "short",
+        "expected_world": "short",
+        "correct": false,
+        "belief_correct": null,
+        "world_correct": false,
+        "malformed": true,
+        "belief_answer": null,
+        "world_answer": "",
+        "metadata": {
+          "vignette_type": "true_belief",
+          "question_type": "world",
+          "format_type": "direct",
+          "variant": "detailed",
+          "template_name": "hair_styling",
+          "pair_id": 9
+        }
+      }
+    ],
+    "belief_accuracy": 0.0,
+    "world_accuracy": 0.0,
+    "malformed_rate": 1.0,
+    "total_responses": 20,
+    "belief_correct_count": 0,
+    "world_correct_count": 0,
+    "malformed_count": 20,
+    "belief_total": 10,
+    "world_total": 10
+  }
+}

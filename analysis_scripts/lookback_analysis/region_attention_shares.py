@@ -69,7 +69,7 @@ PREPOSITIONS = {"to", "in"}  # only the word directly before the new location
 TEMPLATE_VOCAB = {"food_truck": "streets.txt", "hair_styling": "hair_colors.txt",
                   "library_book": "library_sections.txt"}
 USER_TAG = "<|im_start|>user\n"
-# true_belief_marker of each template, codebase/tasks/causal_analysis/prompt_generators/tom_templates.py
+# true_belief_marker of each template, cma_scripts/tasks/causal_analysis/prompt_generators/tom_templates.py
 TRUE_BELIEF_MARKERS = ["Alice sees Bob moving the truck", "immediately calls Jennifer to tell her",
                        "watches the librarian take the book"]
 

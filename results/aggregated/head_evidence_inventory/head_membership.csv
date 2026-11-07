@@ -1,0 +1,42 @@
+layer,head,head_name,belief,photo,code,membership
+28,13,L28H13,False,True,False,photo
+28,14,L28H14,True,True,True,belief + photo + code
+28,35,L28H35,False,True,False,photo
+28,37,L28H37,False,True,False,photo
+28,38,L28H38,False,True,False,photo
+29,11,L29H11,True,False,False,belief
+29,31,L29H31,True,True,True,belief + photo + code
+29,34,L29H34,True,True,True,belief + photo + code
+31,17,L31H17,True,False,False,belief
+31,18,L31H18,True,True,False,belief + photo
+31,19,L31H19,True,True,False,belief + photo
+31,21,L31H21,True,False,False,belief
+31,26,L31H26,False,True,False,photo
+32,4,L32H4,True,True,False,belief + photo
+32,26,L32H26,True,False,False,belief
+32,30,L32H30,True,True,True,belief + photo + code
+32,32,L32H32,True,True,False,belief + photo
+32,33,L32H33,True,True,True,belief + photo + code
+32,34,L32H34,True,True,True,belief + photo + code
+33,1,L33H1,True,False,False,belief
+33,2,L33H2,True,True,False,belief + photo
+33,3,L33H3,False,False,True,code
+34,29,L34H29,True,False,True,belief + code
+35,30,L35H30,True,True,True,belief + photo + code
+35,33,L35H33,True,True,True,belief + photo + code
+36,10,L36H10,True,False,False,belief
+36,12,L36H12,True,False,False,belief
+36,21,L36H21,True,True,False,belief + photo
+36,22,L36H22,False,True,False,photo
+36,23,L36H23,False,True,False,photo
+36,24,L36H24,True,False,False,belief
+36,30,L36H30,True,True,False,belief + photo
+36,33,L36H33,True,False,False,belief
+36,37,L36H37,False,False,True,code
+37,15,L37H15,True,False,False,belief
+38,31,L38H31,True,True,False,belief + photo
+38,33,L38H33,True,True,False,belief + photo
+39,20,L39H20,True,True,False,belief + photo
+39,23,L39H23,True,True,True,belief + photo + code
+46,10,L46H10,True,False,False,belief
+46,13,L46H13,True,False,False,belief

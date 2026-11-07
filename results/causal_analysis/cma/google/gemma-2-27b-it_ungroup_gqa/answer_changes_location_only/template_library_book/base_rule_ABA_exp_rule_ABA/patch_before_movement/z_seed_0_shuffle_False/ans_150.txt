@@ -1,0 +1,150 @@
+0: base_ans: history, exp_ans: comics, causal_ans: history
+1: base_ans: technology, exp_ans: health, causal_ans: technology
+2: base_ans: young adult, exp_ans: study materials, causal_ans: young adult
+3: base_ans: poetry, exp_ans: study materials, causal_ans: poetry
+4: base_ans: study materials, exp_ans: technology, causal_ans: study materials
+5: base_ans: medicine, exp_ans: theology, causal_ans: medicine
+6: base_ans: fiction, exp_ans: popular reads, causal_ans: fiction
+7: base_ans: photography, exp_ans: science, causal_ans: photography
+8: base_ans: technology, exp_ans: science, causal_ans: technology
+9: base_ans: popular reads, exp_ans: architecture, causal_ans: popular reads
+10: base_ans: poetry, exp_ans: music, causal_ans: poetry
+11: base_ans: music, exp_ans: theology, causal_ans: music
+12: base_ans: science, exp_ans: music, causal_ans: science
+13: base_ans: reference, exp_ans: history, causal_ans: reference
+14: base_ans: young adult, exp_ans: biography, causal_ans: young adult
+15: base_ans: art, exp_ans: science, causal_ans: art
+16: base_ans: theology, exp_ans: comics, causal_ans: theology
+17: base_ans: children's, exp_ans: comics, causal_ans: children's
+18: base_ans: science, exp_ans: non-fiction, causal_ans: science
+19: base_ans: film, exp_ans: self-help, causal_ans: film
+20: base_ans: study materials, exp_ans: biography, causal_ans: study materials
+21: base_ans: non-fiction, exp_ans: children's, causal_ans: non-fiction
+22: base_ans: popular reads, exp_ans: film, causal_ans: popular reads
+23: base_ans: cooking, exp_ans: travel, causal_ans: cooking
+24: base_ans: new arrivals, exp_ans: non-fiction, causal_ans: new arrivals
+25: base_ans: history, exp_ans: academic, causal_ans: history
+26: base_ans: technology, exp_ans: botany, causal_ans: technology
+27: base_ans: reference, exp_ans: study materials, causal_ans: reference
+28: base_ans: technology, exp_ans: medicine, causal_ans: technology
+29: base_ans: new arrivals, exp_ans: self-help, causal_ans: new arrivals
+30: base_ans: children's, exp_ans: theology, causal_ans: children's
+31: base_ans: engineering, exp_ans: poetry, causal_ans: engineering
+32: base_ans: biography, exp_ans: fiction, causal_ans: biography
+33: base_ans: reference, exp_ans: art, causal_ans: reference
+34: base_ans: technology, exp_ans: music, causal_ans: technology
+35: base_ans: music, exp_ans: engineering, causal_ans: music
+36: base_ans: photography, exp_ans: self-help, causal_ans: photography
+37: base_ans: music, exp_ans: engineering, causal_ans: music
+38: base_ans: reference, exp_ans: self-help, causal_ans: reference
+39: base_ans: self-help, exp_ans: theology, causal_ans: self-help
+40: base_ans: reference, exp_ans: comics, causal_ans: reference
+41: base_ans: new arrivals, exp_ans: engineering, causal_ans: new arrivals
+42: base_ans: fiction, exp_ans: education, causal_ans: fiction
+43: base_ans: health, exp_ans: fiction, causal_ans: health
+44: base_ans: children's, exp_ans: cooking, causal_ans: children's
+45: base_ans: study materials, exp_ans: medicine, causal_ans: study materials
+46: base_ans: art, exp_ans: theology, causal_ans: art
+47: base_ans: technology, exp_ans: children's, causal_ans: technology
+48: base_ans: reference, exp_ans: health, causal_ans: reference
+49: base_ans: reference, exp_ans: comics, causal_ans: reference
+50: base_ans: travel, exp_ans: health, causal_ans: travel
+51: base_ans: young adult, exp_ans: biography, causal_ans: young adult
+52: base_ans: film, exp_ans: popular reads, causal_ans: film
+53: base_ans: art, exp_ans: self-help, causal_ans: art
+54: base_ans: education, exp_ans: young adult, causal_ans: education
+55: base_ans: science, exp_ans: new arrivals, causal_ans: science
+56: base_ans: poetry, exp_ans: education, causal_ans: poetry
+57: base_ans: study materials, exp_ans: medicine, causal_ans: study materials
+58: base_ans: children's, exp_ans: medicine, causal_ans: children's
+59: base_ans: reference, exp_ans: poetry, causal_ans: reference
+60: base_ans: music, exp_ans: popular reads, causal_ans: music
+61: base_ans: technology, exp_ans: new arrivals, causal_ans: technology
+62: base_ans: education, exp_ans: music, causal_ans: education
+63: base_ans: botany, exp_ans: popular reads, causal_ans: botany
+64: base_ans: self-help, exp_ans: botany, causal_ans: self-help
+65: base_ans: academic, exp_ans: non-fiction, causal_ans: academic
+66: base_ans: children's, exp_ans: comics, causal_ans: children's
+67: base_ans: reference, exp_ans: health, causal_ans: reference
+68: base_ans: cooking, exp_ans: finance, causal_ans: cooking
+69: base_ans: study materials, exp_ans: comics, causal_ans: study materials
+70: base_ans: comics, exp_ans: architecture, causal_ans: comics
+71: base_ans: technology, exp_ans: fiction, causal_ans: technology
+72: base_ans: reference, exp_ans: biography, causal_ans: reference
+73: base_ans: music, exp_ans: medicine, causal_ans: music
+74: base_ans: academic, exp_ans: technology, causal_ans: academic
+75: base_ans: fiction, exp_ans: theology, causal_ans: fiction
+76: base_ans: finance, exp_ans: film, causal_ans: finance
+77: base_ans: popular reads, exp_ans: academic, causal_ans: popular reads
+78: base_ans: engineering, exp_ans: medicine, causal_ans: engineering
+79: base_ans: fiction, exp_ans: travel, causal_ans: fiction
+80: base_ans: academic, exp_ans: comics, causal_ans: academic
+81: base_ans: music, exp_ans: new arrivals, causal_ans: music
+82: base_ans: music, exp_ans: photography, causal_ans: music
+83: base_ans: engineering, exp_ans: biography, causal_ans: engineering
+84: base_ans: technology, exp_ans: engineering, causal_ans: technology
+85: base_ans: finance, exp_ans: new arrivals, causal_ans: finance
+86: base_ans: non-fiction, exp_ans: reference, causal_ans: non-fiction
+87: base_ans: study materials, exp_ans: technology, causal_ans: study materials
+88: base_ans: children's, exp_ans: new arrivals, causal_ans: children's
+89: base_ans: children's, exp_ans: music, causal_ans: children's
+90: base_ans: children's, exp_ans: cooking, causal_ans: children's
+91: base_ans: film, exp_ans: cooking, causal_ans: film
+92: base_ans: reference, exp_ans: comics, causal_ans: reference
+93: base_ans: technology, exp_ans: popular reads, causal_ans: technology
+94: base_ans: children's, exp_ans: biography, causal_ans: children's
+95: base_ans: study materials, exp_ans: engineering, causal_ans: study materials
+96: base_ans: biography, exp_ans: non-fiction, causal_ans: biography
+97: base_ans: non-fiction, exp_ans: comics, causal_ans: non-fiction
+98: base_ans: technology, exp_ans: academic, causal_ans: technology
+99: base_ans: technology, exp_ans: travel, causal_ans: technology
+100: base_ans: academic, exp_ans: biography, causal_ans: academic
+101: base_ans: children's, exp_ans: fiction, causal_ans: children's
+102: base_ans: technology, exp_ans: biography, causal_ans: technology
+103: base_ans: medicine, exp_ans: technology, causal_ans: medicine
+104: base_ans: health, exp_ans: film, causal_ans: health
+105: base_ans: music, exp_ans: architecture, causal_ans: music
+106: base_ans: poetry, exp_ans: self-help, causal_ans: poetry
+107: base_ans: technology, exp_ans: architecture, causal_ans: technology
+108: base_ans: travel, exp_ans: music, causal_ans: travel
+109: base_ans: young adult, exp_ans: non-fiction, causal_ans: young adult
+110: base_ans: young adult, exp_ans: engineering, causal_ans: young adult
+111: base_ans: botany, exp_ans: poetry, causal_ans: botany
+112: base_ans: theology, exp_ans: film, causal_ans: theology
+113: base_ans: engineering, exp_ans: fiction, causal_ans: engineering
+114: base_ans: health, exp_ans: film, causal_ans: health
+115: base_ans: travel, exp_ans: study materials, causal_ans: travel
+116: base_ans: theology, exp_ans: education, causal_ans: theology
+117: base_ans: travel, exp_ans: science, causal_ans: travel
+118: base_ans: technology, exp_ans: finance, causal_ans: technology
+119: base_ans: music, exp_ans: fiction, causal_ans: music
+120: base_ans: health, exp_ans: poetry, causal_ans: health
+121: base_ans: botany, exp_ans: medicine, causal_ans: botany
+122: base_ans: education, exp_ans: art, causal_ans: education
+123: base_ans: reference, exp_ans: fiction, causal_ans: reference
+124: base_ans: theology, exp_ans: study materials, causal_ans: theology
+125: base_ans: cooking, exp_ans: popular reads, causal_ans: cooking
+126: base_ans: poetry, exp_ans: photography, causal_ans: poetry
+127: base_ans: academic, exp_ans: engineering, causal_ans: academic
+128: base_ans: health, exp_ans: study materials, causal_ans: health
+129: base_ans: music, exp_ans: theology, causal_ans: music
+130: base_ans: children's, exp_ans: music, causal_ans: children's
+131: base_ans: poetry, exp_ans: technology, causal_ans: poetry
+132: base_ans: medicine, exp_ans: comics, causal_ans: medicine
+133: base_ans: new arrivals, exp_ans: theology, causal_ans: new arrivals
+134: base_ans: new arrivals, exp_ans: health, causal_ans: new arrivals
+135: base_ans: education, exp_ans: fiction, causal_ans: education
+136: base_ans: education, exp_ans: fiction, causal_ans: education
+137: base_ans: fiction, exp_ans: art, causal_ans: fiction
+138: base_ans: music, exp_ans: cooking, causal_ans: music
+139: base_ans: photography, exp_ans: music, causal_ans: photography
+140: base_ans: botany, exp_ans: biography, causal_ans: botany
+141: base_ans: young adult, exp_ans: health, causal_ans: young adult
+142: base_ans: music, exp_ans: botany, causal_ans: music
+143: base_ans: cooking, exp_ans: theology, causal_ans: cooking
+144: base_ans: reference, exp_ans: technology, causal_ans: reference
+145: base_ans: new arrivals, exp_ans: travel, causal_ans: new arrivals
+146: base_ans: music, exp_ans: technology, causal_ans: music
+147: base_ans: botany, exp_ans: finance, causal_ans: botany
+148: base_ans: health, exp_ans: photography, causal_ans: health
+149: base_ans: new arrivals, exp_ans: self-help, causal_ans: new arrivals

@@ -28,7 +28,7 @@
 # CSV caveat: same as c5_loc_tom_heads_matched_prefill.sh -- the locally
 # synced results/lookback_analysis/_summary/top20_by_condition_end.csv is a
 # stale partial pull without this condition. Verified "state_only_no_belief"
-# exists with 17 rows in other_results/lookback_analysis/_summary/
+# exists with 17 rows in results/lookback_analysis/_summary/
 # top20_by_condition_end.csv. Confirm the row count on HPC before trusting
 # head_list.csv from this run.
 
@@ -48,7 +48,7 @@ conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
 mkdir -p logs
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

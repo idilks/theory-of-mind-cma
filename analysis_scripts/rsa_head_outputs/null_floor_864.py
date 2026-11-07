@@ -1,6 +1,6 @@
 """What is the Mantel shuffle-null floor on the 864-stimulus Exp 3 grid?
 
-The doc quotes ~0.04-0.06, a number imported from the 144-stimulus grids.
+Earlier notes quote ~0.04-0.06, a number imported from the 144-stimulus grids.
 Permutation nulls narrow with n, so that floor is almost certainly too high
 here. Measure it directly on the projected code_abstract RDM x the
 queried_slot_abs model (the cell the bolding question is about).
@@ -11,8 +11,8 @@ from pathlib import Path
 import numpy as np
 from scipy.stats import spearmanr
 
-ROOT = Path("/Users/idilsahin/Desktop/modularSymbTom")
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 from analyze_code_ledger_rdms import build_model_rdms, upper_tri  # noqa: E402
 from analyze_code_padtwins_rdms import load  # noqa: E402

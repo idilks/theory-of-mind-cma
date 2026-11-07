@@ -12,7 +12,7 @@
 #SBATCH --output=logs/circuit_s2_ctl_%A_%a.out
 #SBATCH --error=logs/circuit_s2_ctl_%A_%a.err
 
-# Two follow-up steering jobs asked for in writeups/results_for_pi/steering-only.qmd.
+# Two follow-up steering jobs asked for in results/summary/steering-only.qmd.
 # Both reuse the Stage-1 directions and the SAME --control_seed 99, so the
 # control directions are byte-identical to the ones already in L41_main.
 #
@@ -38,7 +38,7 @@
 #           Everything else in L41_main is skipped by the resume logic.
 #
 # After BOTH finish, pull and run on the laptop:
-#   python scripts/circuit/analyze_steering_attention_null.py
+#   python analysis_scripts/circuit/analyze_steering_attention_null.py
 # which merges L41_main (clean + target) with L41_attn_null (controls) and
 # emits the target-vs-control attention comparison the qmd is missing.
 
@@ -63,7 +63,7 @@ fi
 
 if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
   echo "Task 0: attention null (control directions, attention capture ON)"
-  python scripts/circuit/stage2_steering.py \
+  python analysis_scripts/circuit/stage2_steering.py \
     --site L41 \
     --run_label attn_null \
     --only_controls \
@@ -71,7 +71,7 @@ if [ "$SLURM_ARRAY_TASK_ID" -eq 0 ]; then
     --control_seed 99
 else
   echo "Task 1: negative-control legs (FB-inject; TB-delete already present)"
-  python scripts/circuit/stage2_steering.py \
+  python analysis_scripts/circuit/stage2_steering.py \
     --site L41 \
     --run_label main \
     --skip_cross_domain \

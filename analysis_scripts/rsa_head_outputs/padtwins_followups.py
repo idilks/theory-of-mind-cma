@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""CPU follow-ups to the pad-twins analysis (code_pointer_rdm_idil.qmd, July 27).
+"""CPU follow-ups to the pad-twins analysis (see the pad-twins report notes).
 
 Three independent modes (run any subset):
 
@@ -31,7 +31,7 @@ Outputs:
   aggregation_code_padtwins/random_head_baseline{_gemma}.csv
   aggregation_code_padtwins/rdm_ceilings.csv
   aggregation_code_padtwins/orthogonality_fits.csv
-  docs/figures/code_pointer_rdm/fig_orthogonality_panels.png
+  results/summary/code_pointer_rdm/figures/fig_orthogonality_panels.png
 """
 
 from __future__ import annotations
@@ -50,7 +50,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr, mannwhitneyu
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 from analyze_code_ledger_rdms import (  # noqa: E402
     HEADS_CSV, GEMMA_HEADSET_DIR, HEAD_SETS, GEMMA_HEAD_SETS,
@@ -70,8 +70,7 @@ CELL_KEYS = {
              "copy_syntax", "alias_syntax", "pad_len", "suffix_pad_len"),
 }
 REP_KEY = {"exp1": "replicate", "exp3": "content_id"}
-FIG_DIR = ROOT / "docs/figures/code_pointer_rdm"
-DOC_FIG_DIR = ROOT / "writeups/results_for_pi/code_pointer_rdm/figures"
+FIG_DIR = ROOT / "results/summary/code_pointer_rdm/figures"
 
 # Okabe-Ito (colorblind-safe): blue / vermillion / gray
 C_BLUE, C_ORANGE, C_GRAY = "#0072B2", "#D55E00", "#8a8a8a"
@@ -274,21 +273,11 @@ def orthogonality_for_model(model, set_name, rng, rows):
     halves = [[i for i in all_idx if stim[i]["content_id"] == c] for c in (0, 1)]
     aucs = np.zeros(4)
     disp22 = np.zeros(4)  # pad-pairs x (pad axis, tag axis), obj-pairs x same
-    x_cf, y_cf = np.zeros(len(stim)), np.zeros(len(stim))  # cross-fitted coords
     for fit, ev in ((0, 1), (1, 0)):
         ut_f = tag_direction(X, stim, halves[fit])
         pc1_f, _, _ = pad_pc(X, stim, halves[fit])
-        # SVD sign is arbitrary: orient on the FIT half so more pad = larger x
-        fi = np.array(halves[fit])
-        pf = np.array([stim[i]["pad_len"] for i in fi])
-        xf = X[fi] @ pc1_f
-        if xf[pf == 32].mean() < xf[pf == 0].mean():
-            pc1_f = -pc1_f
         xi = np.array(halves[ev])
         x_pad, y_tag = X[xi] @ pc1_f, X[xi] @ ut_f
-        # each stimulus is scored by the axes fit on the OTHER content half;
-        # per-fold centring removes the arbitrary fold-specific offset
-        x_cf[xi], y_cf[xi] = x_pad - x_pad.mean(), y_tag - y_tag.mean()
         pad_on = np.array([stim[i]["pad_len"] > 0 for i in xi])
         is_copy = np.array([stim[i]["queried_object"] == "copy" for i in xi])
         aucs += [auc(x_pad, pad_on), auc(y_tag, pad_on),
@@ -311,9 +300,8 @@ def orthogonality_for_model(model, set_name, rng, rows):
         "disp_padpairs_along_pad": disp22[0], "disp_padpairs_along_tag": disp22[1],
         "disp_objpairs_along_pad": disp22[2], "disp_objpairs_along_tag": disp22[3],
     })
-    # display coordinates: full-data axes (x, y) and cross-fitted ones
-    # (x_cf, y_cf) — the latter are what fig_orthogonality_scatter plots.
-    return {"x": X @ pc1, "y": X @ u_tag, "x_cf": x_cf, "y_cf": y_cf,
+    # display coordinates (full-data axes, like the existing scatter)
+    return {"x": X @ pc1, "y": X @ u_tag,
             "pad": np.array([stim[i]["pad_len"] for i in all_idx]),
             "copy": np.array([stim[i]["queried_object"] == "copy"
                               for i in all_idx]),
@@ -381,32 +369,33 @@ def run_orthogonality(seed):
         axC.set_title("each axis reads only its own factor\n"
                       "(color = prefix pad; ○ copy / △ alias)")
     fig.tight_layout()
-    for out_dir in (FIG_DIR, DOC_FIG_DIR):
-        out_dir.mkdir(parents=True, exist_ok=True)
-        fig.savefig(out_dir / "fig_orthogonality_panels.png", dpi=180,
-                    bbox_inches="tight")
+    FIG_DIR.mkdir(parents=True, exist_ok=True)
+    fig.savefig(FIG_DIR / "fig_orthogonality_panels.png", dpi=180,
+                bbox_inches="tight")
     plt.close(fig)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / "orthogonality_fits.csv"
     pd.DataFrame(rows).to_csv(out, index=False)
-    print(f"-> {out}\n-> {FIG_DIR / 'fig_orthogonality_panels.png'} "
-          f"(+ copy in {DOC_FIG_DIR})")
+    print(f"-> {out}\n-> {FIG_DIR / 'fig_orthogonality_panels.png'}")
 
 
 # ------------------------------------------------------------ scatter (2-panel)
 
 def run_scatter(seed):
-    """Standalone (pad-carrier, tag) scatter, CROSS-FITTED: every stimulus is
-    projected onto axes estimated from the other content half, so the visible
-    copy/alias separation is out-of-sample, not a consequence of fitting the
-    tag axis on the points being plotted. Both coordinates are then expressed
-    in units of the panel's SD along the pad axis (equal aspect + matched
-    limits) so the two models are directly comparable."""
+    """Standalone (pad-carrier, tag) scatter, both coordinates in units of the
+    panel's SD along the pad axis so the two models are on one comparable,
+    interpretable scale (equal aspect + matched limits). Display only — the
+    axes are the same full-data directions used by --orthogonality, and every
+    statistic quoted alongside comes from the projection test / held-out AUCs."""
     rng = np.random.default_rng(seed)
     rows, panels = [], {}
     for model, set_name in (("qwen", "code_abstract"), ("gemma", "gemma_c1")):
         p = orthogonality_for_model(model, set_name, rng, rows)
-        x, y = p["x_cf"].astype(float), p["y_cf"].astype(float)
+        x, y = p["x"].astype(float), p["y"].astype(float)
+        # orient: increasing prefix pad -> right; copy -> up (tag = copy - alias)
+        if x[p["pad"] == 32].mean() < x[p["pad"] == 0].mean():
+            x = -x
+        x, y = x - x.mean(), y - y.mean()
         sd = x.std()
         p["xn"], p["yn"], p["set"] = x / sd, y / sd, set_name
         panels[model] = p
@@ -441,20 +430,18 @@ def run_scatter(seed):
     fig.legend(handles=handles, loc="upper center", ncol=5, frameon=False,
                fontsize=9, bbox_to_anchor=(0.5, 0.99))
     fig.suptitle("Pads move stimuli mostly horizontally, copy/alias mostly "
-                 "vertically\n(cross-fitted: each point is scored by axes "
-                 "estimated on the other content half; axes in SD units of "
-                 "that panel's pad axis, equal aspect, matched limits)",
+                 "vertically\n(both axes in SD units of that panel's pad axis; "
+                 "equal aspect, matched limits; tag axis is display-only)",
                  fontsize=11, y=1.10)
     fig.tight_layout(rect=(0, 0, 1, 0.93))
-    for out_dir in (FIG_DIR, DOC_FIG_DIR):
-        out_dir.mkdir(parents=True, exist_ok=True)
-        fig.savefig(out_dir / "fig_orthogonality_scatter.png", dpi=180,
-                    bbox_inches="tight")
+    FIG_DIR.mkdir(parents=True, exist_ok=True)
+    fig.savefig(FIG_DIR / "fig_orthogonality_scatter.png", dpi=180,
+                bbox_inches="tight")
     plt.close(fig)
     for model, p in panels.items():
         print(f"[{model}] pad-axis SD normalisation: tag spread / pad spread = "
               f"{p['yn'].std():.2f}")
-    print(f"-> {FIG_DIR / 'fig_orthogonality_scatter.png'} (+ copy in {DOC_FIG_DIR})")
+    print(f"-> {FIG_DIR / 'fig_orthogonality_scatter.png'}")
 
 
 # -------------------------------------------------------- address-matched
@@ -463,7 +450,7 @@ def run_address_matched(n_perm, seed):
     """Veracity fit on untouched-slot queries only: copy and alias answers
     both come from the line-1 init literal at the same token address, so any
     copy/alias separation here is veracity content with the lookback target
-    held constant (idil's same-address question, qmd July 27)."""
+    held constant (the same-address question raised in the pad-twins report)."""
     rng = np.random.default_rng(seed)
     rows = []
     for model in ("qwen", "gemma"):

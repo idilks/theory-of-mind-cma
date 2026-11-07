@@ -16,16 +16,16 @@ Inputs: per-condition fingerprints (clamped) saved by aggregate_conditions.py.
 Outputs:
 - results/aggregated/head_profile_rsa/cluster_assignments.csv (1920 rows)
 - results/aggregated/head_profile_rsa/cluster_profiles.csv
-- results_for_pi/aggregation/rsa_head_rdm.png  (sorted by cluster)
-- results_for_pi/aggregation/rsa_head_cluster_profiles.png
-- results_for_pi/aggregation/rsa_head_clusters_on_layer_grid.png
+- results/summary/aggregation/rsa_head_rdm.png  (sorted by cluster)
+- results/summary/aggregation/rsa_head_cluster_profiles.png
+- results/summary/aggregation/rsa_head_clusters_on_layer_grid.png
 
 Filtering: heads with max profile < ACTIVE_THRESHOLD are dropped from the
 clustering step (their profiles are noise-around-zero so Pearson is ill-
 defined). They are kept in the per-(layer, head) grid as "inactive".
 
 Usage:
-    python scripts/head_profile_rsa.py [--k 8] [--threshold 1.0]
+    python analysis_scripts/head_profile_rsa.py [--k 8] [--threshold 1.0]
 """
 
 from __future__ import annotations
@@ -42,7 +42,7 @@ from scipy.spatial.distance import squareform
 ROOT = Path(__file__).resolve().parents[1]
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 OUT_AGG = ROOT / "results/aggregated/head_profile_rsa"
-OUT_FIG = ROOT / "results_for_pi/aggregation"
+OUT_FIG = ROOT / "results/summary/aggregation"
 
 CONDITIONS = [
     "C1_abstract_belief",

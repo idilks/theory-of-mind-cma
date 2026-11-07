@@ -4,7 +4,7 @@ Gemma-2's chat template raises `TemplateError: System role not supported`, so
 the `[{system}, {user}]` message list used throughout this pipeline fails.
 
 The CMA that produced the Gemma head lists already handles this, in
-`codebase/tasks/causal_analysis/prompt_generators/unified_tom.py`:
+`cma_scripts/tasks/causal_analysis/prompt_generators/unified_tom.py`:
 
     if self._supports_system_role:
         return [{"role": "system", ...}, {"role": "user", ...}]

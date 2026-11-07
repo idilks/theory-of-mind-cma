@@ -23,8 +23,8 @@ Inputs:
 Outputs:
   results/rsa_head_outputs/aggregation_topk_sweep/topk_sweep.csv
   results/rsa_head_outputs/aggregation_topk_sweep/noise_floor.csv
-  results_for_pi/aggregation/topk_sweep.png
-  results_for_pi/aggregation/noise_floor_dissociation.png
+  results/summary/aggregation/topk_sweep.png
+  results/summary/aggregation/noise_floor_dissociation.png
 """
 
 from __future__ import annotations
@@ -42,7 +42,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations_full"
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 OUT_DIR = ROOT / "results/rsa_head_outputs/aggregation_topk_sweep"
-FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_DIR = ROOT / "results/summary/aggregation"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 N_LAYERS, N_HEADS = 48, 40
@@ -153,9 +153,9 @@ def main():
         fp = np.load(FP_DIR / f"{full}_clamped.npy").astype(np.float32)
         for draw in range(args.n_null):
             idx = rng.choice(N_TOTAL, size=args.null_size, replace=False)
-            # Two weighting flavors: uniform (pure random pool) and the heads'
-            # own CMA scores in this condition (most are near-zero — emulates
-            # what you'd get if you just picked random heads but kept CMA weighting).
+            # Two weighting flavors: "uniform" (pure random pool) and
+            # "cma_at_random" (random head subset, weighted by those heads' own
+            # CMA scores in this condition, most of which are near-zero).
             for flavor, w in [("uniform", np.ones(args.null_size)),
                               ("cma_at_random", fp[idx])]:
                 rdm = weighted_rdm(head_rdms, idx, w)

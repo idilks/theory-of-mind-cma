@@ -1,0 +1,4 @@
+layer,head,observed_score,p_value,significant
+17,38,1.1052631,0.0,True
+17,7,1.0065789,0.0,True
+0,17,0.8947368,0.0248,True

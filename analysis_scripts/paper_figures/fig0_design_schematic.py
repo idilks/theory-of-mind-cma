@@ -16,7 +16,7 @@ information flow would have been nice." Camera-ready Figure 1 candidate.
     late answer-retrieval heads read it through their query weights and fetch
     the believed or the current location; the two contributions add (H2).
 
-Half-text-width-ish, ~3 in tall. Output: rebuttal_figures/fig0_design_schematic.{png,pdf}
+Half-text-width-ish, ~3 in tall. Output: paper_figures/fig0_design_schematic.{png,pdf}
 """
 
 import sys

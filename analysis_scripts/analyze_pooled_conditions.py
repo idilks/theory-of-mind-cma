@@ -2,12 +2,8 @@
 """
 pooled statistical analysis across experimental conditions and templates.
 
-this script performs post-hoc analysis after running multiple CMA experiments.
-it pools per-sample causal scores across templates, runs statistical tests,
-and performs differential testing to identify condition-specific effects.
-
 usage:
-    python scripts/analyze_pooled_conditions.py \
+    python analysis_scripts/analyze_pooled_conditions.py \
         --results_dir results/causal_analysis/cma \
         --conditions cross_belief within_belief control \
         --output_dir results/pooled_analysis
@@ -39,7 +35,7 @@ from scipy.stats import pearsonr, spearmanr
 from statsmodels.stats.multitest import multipletests
 
 # add codebase to path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'codebase', 'tasks', 'causal_analysis'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'cma_scripts', 'tasks', 'causal_analysis'))
 from statistical_testing import permutation_test_heads
 
 logging.basicConfig(
@@ -150,7 +146,6 @@ def load_and_pool_scores(files: List[Path]) -> torch.Tensor:
     for i, scores in enumerate(scores_list):
         if scores.shape[1:] != first_shape[1:]:
             logger.warning(f"shape mismatch: {scores.shape} vs {first_shape}")
-            # could handle this by padding, but for now just warn
 
     # concatenate along sample dimension (dim=0)
     pooled = torch.cat(scores_list, dim=0)

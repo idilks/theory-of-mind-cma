@@ -1,0 +1,15 @@
+{
+  "site": "L41",
+  "model_type": "Qwen2.5-14B-Instruct",
+  "run_label": "shared",
+  "plot_only": false,
+  "dry_run": false,
+  "n_devices": 1,
+  "device_map": "cuda",
+  "scales": {
+    "tom": 53.56802435329458,
+    "code": 89.01727296183705
+  },
+  "hook": "blocks.42.hook_resid_pre",
+  "shared_npz": "/dartfs/rc/lab/F/FranklandS/tom/results/aggregated/circuit/shared_direction_L41.npz"
+}

@@ -14,7 +14,7 @@ correlations (Spearman, 5000 permutations) test whether each weighted-avg
 data RDM matches its predicted model RDM.
 
 Outputs:
-  results_for_pi/aggregation/rsa_head_output_rdms.png
+  results/summary/aggregation/rsa_head_output_rdms.png
   results/rsa_head_outputs/mantel_results.csv
 """
 
@@ -34,12 +34,12 @@ ROOT = Path(__file__).resolve().parents[2]
 
 # same guard as the other rsa_head_outputs/* scripts: makes rsa_utils resolvable
 # when this module is imported, not just when it is run as a script
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads"
-FIG_OUT = ROOT / "results_for_pi/aggregation/rsa_head_output_rdms.png"
+FIG_OUT = ROOT / "results/summary/aggregation/rsa_head_output_rdms.png"
 CSV_OUT = ROOT / "results/rsa_head_outputs/mantel_results.csv"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]

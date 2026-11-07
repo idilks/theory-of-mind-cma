@@ -1,0 +1,1500 @@
+CORRECT: Juniper Lane
+ALT: Market Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bagels is on Market Street. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Lincoln Boulevard
+ALT: Heneage Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling polenta is on Heneage Lane. Bob drives the truck to Lincoln Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Heneage Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Heneage Lane. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling hummus is on Monroe Street. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Oak Avenue
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Park Boulevard. Bob drives the truck to Oak Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ladd Road
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Park Boulevard. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Burton Road
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Jefferson Street. Bob drives the truck to Burton Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Adams Boulevard. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Market Street
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Adams Boulevard. Bob drives the truck to Market Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Hovey Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Hovey Lane. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Adams Boulevard. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Franklin Avenue
+ALT: Jericho Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Jericho Road. Bob drives the truck to Franklin Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hemlock Road
+ALT: Pine Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling kebab is on Pine Street. Bob drives the truck to Hemlock Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Hunter Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Hunter Lane. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hemlock Road
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Highland Avenue. Bob drives the truck to Hemlock Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Allen Street
+ALT: First Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on First Street. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling milkshakes is on Maple Drive. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Highland Avenue
+ALT: Jefferson Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Jefferson Street. Bob drives the truck to Highland Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Monroe Street
+ALT: Ivy Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pupusas is on Ivy Lane. Bob drives the truck to Monroe Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: University Drive
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Mink Drive. Bob drives the truck to University Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jericho Road
+ALT: Downtown Plaza
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Downtown Plaza. Bob drives the truck to Jericho Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Hilltop Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling ramen is on Hilltop Drive. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyros is on Oak Avenue. Bob drives the truck to Buck Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Elm Avenue
+ALT: Pine Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling shawarmas is on Pine Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Elm Avenue
+ALT: Second Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Second Street. Bob drives the truck to Elm Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Franklin Avenue
+ALT: Monroe Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Monroe Street. Bob drives the truck to Franklin Avenue. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Adams Boulevard
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling muffins is on Burton Road. Bob drives the truck to Adams Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Ladd Road
+ALT: Madison Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling sandwiches is on Madison Drive. Bob drives the truck to Ladd Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Brook Road
+ALT: Ivy Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Ivy Lane. Bob drives the truck to Brook Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Allen Street
+ALT: Park Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pozoles is on Park Boulevard. Bob drives the truck to Allen Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Madison Drive
+ALT: Washington Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling empanadas is on Washington Avenue. Bob drives the truck to Madison Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling donuts is on Lincoln Boulevard. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Cedar Lane
+ALT: Highland Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Highland Avenue. Bob drives the truck to Cedar Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Mink Drive. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Jefferson Street
+ALT: Hunter Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling crabcakes is on Hunter Lane. Bob drives the truck to Jefferson Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Hovey Lane
+ALT: Brook Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling bratwursts is on Brook Road. Bob drives the truck to Hovey Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Downtown Plaza
+ALT: Lincoln Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling hot dogs is on Lincoln Boulevard. Bob drives the truck to Downtown Plaza. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: Allen Street
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling wraps is on Allen Street. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: First Street
+ALT: Oak Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling gyozas is on Oak Avenue. Bob drives the truck to First Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Maple Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling quesadillas is on Maple Drive. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: River Road
+ALT: Burton Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pizza is on Burton Road. Bob drives the truck to River Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: River Road
+ALT: Juniper Lane
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Juniper Lane. Bob drives the truck to River Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Juniper Lane
+ALT: Mink Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling okonomiyaki is on Mink Drive. Bob drives the truck to Juniper Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Park Boulevard
+ALT: Adams Boulevard
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burgers is on Adams Boulevard. Bob drives the truck to Park Boulevard. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Buck Road
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on University Drive. Bob drives the truck to Buck Road. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Heneage Lane
+ALT: River Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling samosas is on River Road. Bob drives the truck to Heneage Lane. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Second Street
+ALT: Franklin Avenue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling burritos is on Franklin Avenue. Bob drives the truck to Second Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Maple Drive
+ALT: University Drive
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling waffles is on University Drive. Bob drives the truck to Maple Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Mink Drive
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling pasta is on Buck Road. Bob drives the truck to Mink Drive. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: Market Street
+ALT: Buck Road
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+A food truck selling cookies is on Buck Road. Bob drives the truck to Market Street. The food truck stays in place. Where is the food truck?
+Answer only with the location, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: aquamarine
+ALT: lime
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has lime hair. On Monday, Alice dyes her hair aquamarine. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: cream
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. On Monday, Alice dyes her hair cream. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brown
+ALT: red
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has red hair. On Monday, Alice dyes her hair brown. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: amethyst
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has teal hair. On Monday, Alice dyes her hair amethyst. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: tangerine
+ALT: turquoise
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has turquoise hair. On Monday, Alice dyes her hair tangerine. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: jade
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cobalt hair. On Monday, Alice dyes her hair jade. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: yellow
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. On Monday, Alice dyes her hair yellow. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: jade
+ALT: cream
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cream hair. On Monday, Alice dyes her hair jade. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: beige
+ALT: verdigris
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has verdigris hair. On Monday, Alice dyes her hair beige. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: burgundy
+ALT: pink
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has pink hair. On Monday, Alice dyes her hair burgundy. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: navy
+ALT: caramel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has caramel hair. On Monday, Alice dyes her hair navy. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: sienna
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sienna hair. On Monday, Alice dyes her hair grey. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: chestnut
+ALT: crimson
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has crimson hair. On Monday, Alice dyes her hair chestnut. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pearl
+ALT: mulberry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has mulberry hair. On Monday, Alice dyes her hair pearl. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: blue
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has blue hair. On Monday, Alice dyes her hair grey. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lavender
+ALT: maroon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has maroon hair. On Monday, Alice dyes her hair lavender. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: orange
+ALT: copper
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has copper hair. On Monday, Alice dyes her hair orange. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: mauve
+ALT: silver
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has silver hair. On Monday, Alice dyes her hair mauve. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: sage
+ALT: coral
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has coral hair. On Monday, Alice dyes her hair sage. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: plum
+ALT: brown
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has brown hair. On Monday, Alice dyes her hair plum. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fuchsia
+ALT: white
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has white hair. On Monday, Alice dyes her hair fuchsia. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: black
+ALT: wine
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has wine hair. On Monday, Alice dyes her hair black. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: wine
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. On Monday, Alice dyes her hair wine. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: ivory
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has ivory hair. On Monday, Alice dyes her hair teal. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: auburn
+ALT: teal
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has teal hair. On Monday, Alice dyes her hair auburn. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: umber
+ALT: rust
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has rust hair. On Monday, Alice dyes her hair umber. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: white
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has white hair. On Monday, Alice dyes her hair teal. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: chartreuse
+ALT: neon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has neon hair. On Monday, Alice dyes her hair chartreuse. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: yellow
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. On Monday, Alice dyes her hair yellow. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: platinum
+ALT: navy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has navy hair. On Monday, Alice dyes her hair platinum. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: gold
+ALT: magenta
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has magenta hair. On Monday, Alice dyes her hair gold. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: wine
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. On Monday, Alice dyes her hair wine. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: hazel
+ALT: cherry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cherry hair. On Monday, Alice dyes her hair hazel. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: blush
+ALT: cobalt
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cobalt hair. On Monday, Alice dyes her hair blush. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: orange
+ALT: pink
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has pink hair. On Monday, Alice dyes her hair orange. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: auburn
+ALT: amethyst
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has amethyst hair. On Monday, Alice dyes her hair auburn. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: verdigris
+ALT: lime
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has lime hair. On Monday, Alice dyes her hair verdigris. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pearl
+ALT: coral
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has coral hair. On Monday, Alice dyes her hair pearl. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: plum
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. On Monday, Alice dyes her hair plum. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: sapphire
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sapphire hair. On Monday, Alice dyes her hair grey. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: grey
+ALT: burgundy
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has burgundy hair. On Monday, Alice dyes her hair grey. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: brown
+ALT: cream
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has cream hair. On Monday, Alice dyes her hair brown. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: teal
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. On Monday, Alice dyes her hair teal. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: lilac
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. On Monday, Alice dyes her hair lilac. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: mahogany
+ALT: hazel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has hazel hair. On Monday, Alice dyes her hair mahogany. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: topaz
+ALT: emerald
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has emerald hair. On Monday, Alice dyes her hair topaz. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: maroon
+ALT: neon
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has neon hair. On Monday, Alice dyes her hair maroon. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: rust
+ALT: violet
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has violet hair. On Monday, Alice dyes her hair rust. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: pink
+ALT: topaz
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has topaz hair. On Monday, Alice dyes her hair pink. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: maroon
+ALT: sage
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Alice has sage hair. On Monday, Alice dyes her hair maroon. What color is Alice's hair?
+Answer only with the color, be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: popular reads
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the young adult section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: botany
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the botany section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the young adult section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: engineering
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the engineering section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: fiction
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a physics book in the music section of the library. A librarian moves the book to the fiction section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: science
+ALT: non-fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the non-fiction section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: biography
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a chemistry book in the music section of the library. A librarian moves the book to the biography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the poetry section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: comics
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the comics section of the library. A librarian moves the book to the engineering section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the health section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a philosophy book in the fiction section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: botany
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the poetry section of the library. A librarian moves the book to the botany section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the fiction section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the poetry section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: health
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the music section of the library. A librarian moves the book to the health section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: cooking
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the cooking section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: theology
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the self-help section of the library. A librarian moves the book to the theology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the fiction section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: photography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the photography section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: non-fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the non-fiction section of the library. A librarian moves the book to the engineering section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: travel
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the travel section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: engineering
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the history section of the library. A librarian moves the book to the engineering section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the finance section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: art
+ALT: reference
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the reference section of the library. A librarian moves the book to the art section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the academic section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: popular reads
+ALT: self-help
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the self-help section of the library. A librarian moves the book to the popular reads section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: science
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the health section of the library. A librarian moves the book to the science section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: film
+ALT: academic
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a economics book in the academic section of the library. A librarian moves the book to the film section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: art
+ALT: poetry
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a computer science book in the poetry section of the library. A librarian moves the book to the art section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: travel
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the education section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: history
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the technology section of the library. A librarian moves the book to the history section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: architecture
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the education section of the library. A librarian moves the book to the architecture section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: academic
+ALT: cooking
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a political science book in the cooking section of the library. A librarian moves the book to the academic section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: finance
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a literature book in the history section of the library. A librarian moves the book to the finance section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: theology
+ALT: young adult
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a medicine book in the young adult section of the library. A librarian moves the book to the theology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: science
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a sociology book in the science section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: technology
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the study materials section of the library. A librarian moves the book to the technology section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: travel
+ALT: study materials
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a anthropology book in the study materials section of the library. A librarian moves the book to the travel section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: health
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a science book in the health section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: children's
+ALT: art
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a engineering book in the art section of the library. A librarian moves the book to the children's section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: education
+ALT: technology
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a business book in the technology section of the library. A librarian moves the book to the education section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the music section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: finance
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a biology book in the finance section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: comics
+ALT: photography
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a mathematics book in the photography section of the library. A librarian moves the book to the comics section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: popular reads
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the popular reads section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: music
+ALT: architecture
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a history book in the architecture section of the library. A librarian moves the book to the music section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: self-help
+ALT: education
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a education book in the education section of the library. A librarian moves the book to the self-help section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: biography
+ALT: music
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a psychology book in the music section of the library. A librarian moves the book to the biography section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: young adult
+ALT: history
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a law book in the history section of the library. A librarian moves the book to the young adult section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================
+CORRECT: reference
+ALT: fiction
+<|im_start|>system
+You are a helpful assistant. Answer concisely.<|im_end|>
+<|im_start|>user
+Sarah places a art book in the fiction section of the library. A librarian moves the book to the reference section. The book stays there. Where is the book?
+Answer with only the section name (eg. young adult, classics), be concise.<|im_end|>
+<|im_start|>assistant
+
+============================================================

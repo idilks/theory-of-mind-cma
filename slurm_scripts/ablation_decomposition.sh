@@ -21,10 +21,10 @@
 #   2 intersection_belief_rank (K=19) -> eval false_photo   (cf. published bottom row, K=32)
 #   3 belief_only              (K=13) -> eval false_photo   (belief-selection heads NOT in photo set)
 #
-# Protocol matches scripts/render_cross_frame_ablation.py "corrected" rows
+# Protocol matches analysis_scripts/render_cross_frame_ablation.py "corrected" rows
 # (matched sysprompt + per_variant prefill) so curves are directly comparable.
 #
-# Prereq:  python scripts/build_decomposition_head_csvs.py
+# Prereq:  python analysis_scripts/build_decomposition_head_csvs.py
 #          (produces results/lookback_analysis/_summary/decomposition_heads_end.csv)
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -44,9 +44,9 @@ export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD
 mkdir -p logs
 
 HEAD_CSV=results/lookback_analysis/_summary/decomposition_heads_end.csv
-# NOTE: the build script's inputs (other_results/ablation/*/head_list.csv)
+# NOTE: the build script's inputs (results/ablation/*/head_list.csv)
 # are excluded from sync_to_hpc.sh, so we cannot build on HPC. Build locally
-# with `python scripts/build_decomposition_head_csvs.py` and scp the CSV to
+# with `python analysis_scripts/build_decomposition_head_csvs.py` and scp the CSV to
 # /dartfs/rc/lab/F/FranklandS/tom/results/lookback_analysis/_summary/.
 if [ ! -f "$HEAD_CSV" ]; then
   echo "ERROR: $HEAD_CSV not present on HPC. Build it locally and scp it over." >&2
@@ -72,7 +72,7 @@ LABEL=${JOB_LABELS[$IDX]}
 
 echo "Job $IDX: condition=$COND label=$LABEL"
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 50 \
   --max_new_tokens 5 \

@@ -25,8 +25,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
-ABL = ROOT / "other_results" / "ablation"
-OUT = ROOT / "other_results" / "ablation" / "_baseline_comparison"
+ABL = ROOT / "results" / "ablation"
+OUT = ROOT / "results" / "ablation" / "_baseline_comparison"
 OUT.mkdir(parents=True, exist_ok=True)
 
 # (label, subdir) in the order we want them displayed

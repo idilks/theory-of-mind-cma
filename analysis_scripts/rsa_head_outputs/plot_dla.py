@@ -26,8 +26,8 @@ Produces three figures per template + one cross-template summary:
     3-template heatmap grid for fast comparison.
 
 Usage (local):
-  python scripts/rsa_head_outputs/plot_dla.py                       # belief
-  python scripts/rsa_head_outputs/plot_dla.py --context_type photo  # photo
+  python analysis_scripts/rsa_head_outputs/plot_dla.py                       # belief
+  python analysis_scripts/rsa_head_outputs/plot_dla.py --context_type photo  # photo
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ DEFAULT_DLA_DIR_PHOTO = ROOT / "results/rsa_head_outputs/dla_photo"
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]
 
 # CMA conditions to pair with each DLA framing on the scatter x-axis.
-# Both use the canonical end-position seed=1 run (per CLAUDE.md memory).
+# Both use the canonical end-position seed=1 run (per the project conventions in README.md).
 CMA_CONDITION_FOR = {
     "abstract": "abstract_belief",
     "photo": "abstract_photo",

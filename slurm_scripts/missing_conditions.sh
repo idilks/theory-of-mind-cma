@@ -87,7 +87,7 @@ if [ "$USE_BF" -eq 1 ]; then
   PATCH_FLAG="--patch_after_movement"
 fi
 
-python codebase/tasks/causal_analysis/cma.py \
+python cma_scripts/tasks/causal_analysis/cma.py \
   --use_template_system \
   --condition $CONDITION \
   --base_rule $RULE \

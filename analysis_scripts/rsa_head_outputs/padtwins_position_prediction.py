@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Deconfound step 1: is the pad response POSITIONAL INHERITANCE or a pointer?
 
-The caveat this closes (steering-only.qmd / code_pointer_rdm_idil.qmd): a
+The caveat this closes: a
 head's output at the final token is an attention-weighted sum of value
 vectors, and value vectors carry positional information through RoPE. So any
 head that attends into the code block inherits some position signal
@@ -62,7 +62,7 @@ import torch
 from scipy.stats import rankdata, spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from analyze_code_ledger_rdms import (  # noqa: E402
     HEADS_CSV, GEMMA_HEADSET_DIR, HEAD_SETS, GEMMA_HEAD_SETS)
 from analyze_code_padtwins_rdms import OUT_DIR  # noqa: E402

@@ -28,8 +28,8 @@ Per pair, asserts:
     a small fixed number of token positions
 
 Usage:
-    python scripts/verify_code_index_pairs.py --n 2000
-    python scripts/verify_code_index_pairs.py --n 500 --tokenizer Qwen/Qwen2.5-14B-Instruct --show 1
+    python analysis_scripts/verify_code_index_pairs.py --n 2000
+    python analysis_scripts/verify_code_index_pairs.py --n 500 --tokenizer Qwen/Qwen2.5-14B-Instruct --show 1
 """
 
 import argparse
@@ -43,7 +43,7 @@ from pathlib import Path
 from transformers import AutoTokenizer
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(REPO_ROOT / "codebase" / "tasks" / "causal_analysis"))
+sys.path.insert(0, str(REPO_ROOT / "cma_scripts" / "tasks" / "causal_analysis"))
 
 from prompt_generators.code_templates import CodeTemplateSystem, filter_answer_pool  # noqa: E402
 from prompt_generators.code_generator import CodeGenerator  # noqa: E402

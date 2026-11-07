@@ -1,13 +1,13 @@
 """
 Aggregate prompt-anatomy attention from lookback + belief_formation query
-positions across all 42 cells × top heads, for the analysis described in
-neurips/neurips_2026.tex sec. 'Attention-pattern characterization'.
+positions across all 42 cells × top heads, for the attention-pattern
+characterization analysis.
 
 Reads:
-  other_results/lookback_analysis/{condition}/template_*/base_rule_*/patch_before_movement/lookback_scores.csv
-  other_results/lookback_analysis/_summary/top20_by_condition_end.csv
+  results/lookback_analysis/{condition}/template_*/base_rule_*/patch_before_movement/lookback_scores.csv
+  results/lookback_analysis/_summary/top20_by_condition_end.csv
 
-Writes (to other_results/lookback_analysis/_summary/):
+Writes (to results/lookback_analysis/_summary/):
   prompt_anatomy_long.csv             one row per (condition, layer, head, template, base_rule, query_pos, source_cat)
   prompt_anatomy_per_head_profile.csv head x (query, source) averaged over templates and rules
   prompt_anatomy_template_consistency.csv  per-template std for each (head, query, source)
@@ -34,7 +34,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 log = logging.getLogger("prompt_anatomy")
 
 ROOT = Path(__file__).resolve().parent.parent.parent
-DATA_ROOT = ROOT / "other_results" / "lookback_analysis"
+DATA_ROOT = ROOT / "results" / "lookback_analysis"
 SUMMARY = DATA_ROOT / "_summary"
 PATCH = "patch_before_movement"
 

@@ -1,0 +1,7 @@
+condition,template,rule,n,seed
+code_abstract,template_indexed_list,base_rule_ABA_exp_rule_ABB,149,1
+code_abstract,template_indexed_list,base_rule_ABB_exp_rule_ABA,149,1
+code_answer_changes,template_indexed_list,base_rule_ABA_exp_rule_ABB,149,0
+code_answer_changes,template_indexed_list,base_rule_ABB_exp_rule_ABA,148,0
+code_control,template_indexed_list,base_rule_ABA_exp_rule_ABA,148,0
+code_control,template_indexed_list,base_rule_ABB_exp_rule_ABB,150,0

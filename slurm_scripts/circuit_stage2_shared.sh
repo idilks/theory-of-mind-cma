@@ -20,7 +20,7 @@
 #    question. Only the cross legs re-run, fresh run label.
 #
 # Prereq (synced via results/aggregated): shared_direction_L41.npz from
-# scripts/circuit/extract_shared_direction.py. Both scripts checkpoint per
+# analysis_scripts/circuit/extract_shared_direction.py. Both scripts checkpoint per
 # config — resubmit on preemption.
 
 export LD_LIBRARY_PATH=/dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis/lib:$LD_LIBRARY_PATH
@@ -42,9 +42,9 @@ if [ ! -f results/aggregated/circuit/shared_direction_L41.npz ]; then
   exit 1
 fi
 
-python scripts/circuit/stage2_shared_direction.py --site L41
+python analysis_scripts/circuit/stage2_shared_direction.py --site L41
 
-python scripts/circuit/stage2_steering.py \
+python analysis_scripts/circuit/stage2_steering.py \
   --domain tom \
   --site L41 \
   --only_cross_domain \

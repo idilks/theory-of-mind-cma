@@ -12,7 +12,7 @@
 #SBATCH --error=logs/circuit_s2_steer_%j.err
 
 # Stage-2 causal steering for the layered-lookback circuit
-# (docs/design_layered_lookback_circuit.md). Injects/deletes the Stage-1
+# Injects/deletes the Stage-1
 # wire directions at resid_pre L42 on held-out prompts, dose grid x full
 # control battery + specificity + cross-domain (ToM direction -> code_alias).
 # Forward passes only; ~15k prompts total. Checkpoints per config into
@@ -45,6 +45,6 @@ if [ ! -f results/aggregated/circuit/stage1/directions_L41.npz ]; then
   exit 1
 fi
 
-python scripts/circuit/stage2_steering.py \
+python analysis_scripts/circuit/stage2_steering.py \
   --site L41 \
   --run_label main

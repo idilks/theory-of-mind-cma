@@ -41,7 +41,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts" / "rsa_head_outputs"))
+sys.path.insert(0, str(ROOT / "analysis_scripts" / "rsa_head_outputs"))
 from rsa_utils import cosine_rdm  # noqa: E402
 from analyze_code_ledger_rdms import (  # noqa: E402
     GEMMA_TOKENIZER, build_model_rdms, mantel, upper_tri)
@@ -151,25 +151,16 @@ def main():
             nvec = upper_tri(R)
             for m in MANTEL_MODELS:
                 row[f"r_{m}"] = float(spearmanr(nvec, mvecs[m]).statistic)
-            if variant in ("raw", "pad_projected"):
-                # permutation p for every Mantel model, before and after
-                # projection — so "the position fit collapses to the null"
-                # is a test, not an eyeball comparison against a floor
-                # quoted from another grid.
-                for m in MANTEL_MODELS:
-                    _, p = mantel(R, model_rdms[m], args.n_perm_mantel, rng)
-                    row[f"p_{m}"] = p
-                row["p_object_div"] = row["p_object_divergence"]  # legacy name
+            if variant == "pad_projected":
+                _, p = mantel(R, model_rdms["object_divergence"],
+                              args.n_perm_mantel, rng)
+                row["p_object_div"] = p
             rows.append(row)
-            ps = (f"  p: obj {row['p_object_divergence']:.4f} slot "
-                  f"{row['p_queried_slot_abs']:.4f} ans "
-                  f"{row['p_answer_identity']:.4f}"
-                  if "p_object_divergence" in row else "")
             print(f"[{set_name}/{variant}] pre|suf = "
                   f"{row['rho_prefix|suffix']:+.3f}  obj_div r = "
                   f"{row['r_object_divergence']:+.3f}  slot_abs r = "
                   f"{row['r_queried_slot_abs']:+.3f}  answer r = "
-                  f"{row['r_answer_identity']:+.3f}{ps}")
+                  f"{row['r_answer_identity']:+.3f}")
         hsub = [h for h in head_rows if h["head_set"] == set_name]
         print(f"[{set_name}] pad subspace: mean top-{args.k} EVR = "
               f"{np.mean([h['evr_topk'] for h in hsub]):.3f}, mean PC1 "

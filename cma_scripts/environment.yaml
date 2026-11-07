@@ -1,4 +1,11 @@
-name: LLMSymbMech
+# Conda environment for the CMA pipeline.
+#
+#   conda env create -f cma_scripts/environment.yaml
+#   conda activate cma-tom
+#
+# Kept in sync with the top-level requirements.txt; see that file for notes on
+# installing a CUDA-matched build of torch.
+name: cma-tom
 channels:
   - conda-forge
   - defaults
@@ -6,6 +13,7 @@ dependencies:
   - python=3.11
   - numpy
   - pandas
+  - scipy
   - scikit-learn
   - matplotlib
   - pip
@@ -14,8 +22,13 @@ dependencies:
     - transformer-lens==2.13.0
     - torch
     - datasets
+    - huggingface_hub
     - pyrootutils
     - tqdm
     - statsmodels
     - seaborn
+    - matplotlib-venn
+    - plotly
+    - Pillow
     - sentencepiece
+    - wandb

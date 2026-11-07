@@ -1,6 +1,6 @@
 """Compare saved per-head CMA effects without rerunning a language model.
 
-Read docs/head_evidence_inventory/cma_sources.csv, verify source hashes, and
+Read results/aggregated/head_evidence_inventory/cma_sources.csv, verify source hashes, and
 retain all 1920 heads for uncertainty calibration before displaying the frozen
 41-head selection. Conditions are resolved by condition_registry, not aliases.
 
@@ -117,8 +117,8 @@ def matched_cells(cells: dict[str, Cell], left: str, right: str, sensitivity: bo
 
 def main() -> None:
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--sources',type=Path,default=ROOT/'docs/head_evidence_inventory/cma_sources.csv')
-    ap.add_argument('--membership',type=Path,default=ROOT/'docs/head_evidence_inventory/head_membership.csv')
+    ap.add_argument('--sources',type=Path,default=ROOT/'results/aggregated/head_evidence_inventory/cma_sources.csv')
+    ap.add_argument('--membership',type=Path,default=ROOT/'results/aggregated/head_evidence_inventory/head_membership.csv')
     ap.add_argument('--out-dir',type=Path,default=ROOT/'results/aggregated/head_domain_comparison')
     ap.add_argument('--draws',type=int,default=50000)
     ap.add_argument('--seed',type=int,default=20261022)

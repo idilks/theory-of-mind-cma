@@ -7,7 +7,7 @@ Belief-coding heads should show:  SS ~ SD  <<  DS ~ DD   (belief matters, answer
 Answer-coding heads should show:  SS ~ DS  <<  SD ~ DD   (answer matters, belief doesn't)
 
 Outputs:
-  results_for_pi/aggregation/rsa_head_dissociation.png
+  results/summary/aggregation/rsa_head_dissociation.png
   results/rsa_head_outputs/dissociation_buckets.csv
 """
 
@@ -23,7 +23,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[2]
 ACT_DIR = ROOT / "results/rsa_head_outputs/activations"
 TOPK_DIR = ROOT / "results/rsa_head_outputs/topk_heads"
-FIG_OUT = ROOT / "results_for_pi/aggregation/rsa_head_dissociation.png"
+FIG_OUT = ROOT / "results/summary/aggregation/rsa_head_dissociation.png"
 CSV_OUT = ROOT / "results/rsa_head_outputs/dissociation_buckets.csv"
 
 TEMPLATES = ["food_truck", "hair_styling", "library_book"]

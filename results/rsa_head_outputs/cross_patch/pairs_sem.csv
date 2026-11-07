@@ -1,0 +1,323 @@
+pair_id,semantics,idx_base,idx_exp,pad_len,suffix_pad_len,list_items,mut_char,base_scenario,exp_scenario,base_question,exp_question,base_answer,exp_answer,flip_target
+0,copy->alias,3,3,0,16,PRABMX,D,"a = ['P', 'R', 'A', 'B', 'M', 'X']
+b = a.copy()
+a[3] = 'D'
+pad2 = ['E', '8', 'V', 'J', 'E', 'F', 'S', 'S', 'F', 'K', 'F', 'W', 'S', 'E', '5', 'X']","a = ['P', 'R', 'A', 'B', 'M', 'X']
+b = a
+a[3] = 'D'
+pad2 = ['E', '8', 'V', 'J', 'E', 'F', 'S', 'S', 'F', 'K', 'F', 'W', 'S', 'E', '5', 'X']",What is b[3]?,What is b[3]?,B,D,B
+1,alias->copy,1,1,0,0,COTIAW,E,"a = ['C', 'O', 'T', 'I', 'A', 'W']
+b = a
+a[1] = 'E'","a = ['C', 'O', 'T', 'I', 'A', 'W']
+b = a.copy()
+a[1] = 'E'",What is b[1]?,What is b[1]?,E,O,E
+2,copy->alias,2,2,16,16,WCMBO5,I,"pad = ['0', 'H', 'F', 'X', 'X', 'Z', 'J', 'Q', 'F', 'W', '1', 'E', 'X', 'D', 'Y', 'J']
+a = ['W', 'C', 'M', 'B', 'O', '5']
+b = a.copy()
+a[2] = 'I'
+pad2 = ['U', '0', 'W', 'S', '3', 'P', 'T', 'X', '8', 'T', 'Q', 'N', 'K', '4', 'H', '1']","pad = ['0', 'H', 'F', 'X', 'X', 'Z', 'J', 'Q', 'F', 'W', '1', 'E', 'X', 'D', 'Y', 'J']
+a = ['W', 'C', 'M', 'B', 'O', '5']
+b = a
+a[2] = 'I'
+pad2 = ['U', '0', 'W', 'S', '3', 'P', 'T', 'X', '8', 'T', 'Q', 'N', 'K', '4', 'H', '1']",What is b[2]?,What is b[2]?,M,I,M
+3,alias->copy,2,2,0,16,YMLHSC,E,"a = ['Y', 'M', 'L', 'H', 'S', 'C']
+b = a
+a[2] = 'E'
+pad2 = ['D', 'V', 'R', 'G', '3', 'O', 'F', '8', 'U', 'R', 'B', '9', '0', 'C', '3', 'W']","a = ['Y', 'M', 'L', 'H', 'S', 'C']
+b = a.copy()
+a[2] = 'E'
+pad2 = ['D', 'V', 'R', 'G', '3', 'O', 'F', '8', 'U', 'R', 'B', '9', '0', 'C', '3', 'W']",What is b[2]?,What is b[2]?,E,L,E
+4,copy->alias,3,3,16,16,5OLTSD,B,"pad = ['9', 'J', 'U', '1', '0', 'D', 'C', '2', '1', 'K', 'Z', 'X', '0', '5', 'R', 'K']
+a = ['5', 'O', 'L', 'T', 'S', 'D']
+b = a.copy()
+a[3] = 'B'
+pad2 = ['1', 'P', '7', '0', 'N', 'A', '9', 'R', 'N', 'G', 'Y', 'E', 'U', 'C', 'H', '3']","pad = ['9', 'J', 'U', '1', '0', 'D', 'C', '2', '1', 'K', 'Z', 'X', '0', '5', 'R', 'K']
+a = ['5', 'O', 'L', 'T', 'S', 'D']
+b = a
+a[3] = 'B'
+pad2 = ['1', 'P', '7', '0', 'N', 'A', '9', 'R', 'N', 'G', 'Y', 'E', 'U', 'C', 'H', '3']",What is b[3]?,What is b[3]?,T,B,T
+5,alias->copy,3,3,0,0,SITLBQ,D,"a = ['S', 'I', 'T', 'L', 'B', 'Q']
+b = a
+a[3] = 'D'","a = ['S', 'I', 'T', 'L', 'B', 'Q']
+b = a.copy()
+a[3] = 'D'",What is b[3]?,What is b[3]?,D,L,D
+6,copy->alias,3,3,0,16,9MEIHK,R,"a = ['9', 'M', 'E', 'I', 'H', 'K']
+b = a.copy()
+a[3] = 'R'
+pad2 = ['F', 'C', 'G', 'F', 'K', '0', 'K', 'A', 'U', '5', 'X', 'G', 'L', 'N', 'A', 'F']","a = ['9', 'M', 'E', 'I', 'H', 'K']
+b = a
+a[3] = 'R'
+pad2 = ['F', 'C', 'G', 'F', 'K', '0', 'K', 'A', 'U', '5', 'X', 'G', 'L', 'N', 'A', 'F']",What is b[3]?,What is b[3]?,I,R,I
+7,alias->copy,4,4,16,16,TCSMO7,A,"pad = ['6', '3', '9', '6', '0', '4', 'W', 'Q', 'Q', 'Q', 'Q', 'F', 'U', 'Z', 'Q', 'D']
+a = ['T', 'C', 'S', 'M', 'O', '7']
+b = a
+a[4] = 'A'
+pad2 = ['I', 'E', 'I', 'T', 'H', 'F', 'N', 'Y', 'D', 'F', 'B', 'X', 'G', 'W', 'F', '9']","pad = ['6', '3', '9', '6', '0', '4', 'W', 'Q', 'Q', 'Q', 'Q', 'F', 'U', 'Z', 'Q', 'D']
+a = ['T', 'C', 'S', 'M', 'O', '7']
+b = a.copy()
+a[4] = 'A'
+pad2 = ['I', 'E', 'I', 'T', 'H', 'F', 'N', 'Y', 'D', 'F', 'B', 'X', 'G', 'W', 'F', '9']",What is b[4]?,What is b[4]?,A,O,A
+8,copy->alias,3,3,0,0,9DOICQ,L,"a = ['9', 'D', 'O', 'I', 'C', 'Q']
+b = a.copy()
+a[3] = 'L'","a = ['9', 'D', 'O', 'I', 'C', 'Q']
+b = a
+a[3] = 'L'",What is b[3]?,What is b[3]?,I,L,I
+9,alias->copy,3,3,16,0,KBLSRD,O,"pad = ['F', 'E', '2', 'M', '2', 'J', 'U', '5', '1', 'G', 'V', 'A', 'H', '9', '9', 'V']
+a = ['K', 'B', 'L', 'S', 'R', 'D']
+b = a
+a[3] = 'O'","pad = ['F', 'E', '2', 'M', '2', 'J', 'U', '5', '1', 'G', 'V', 'A', 'H', '9', '9', 'V']
+a = ['K', 'B', 'L', 'S', 'R', 'D']
+b = a.copy()
+a[3] = 'O'",What is b[3]?,What is b[3]?,O,S,O
+10,copy->alias,3,3,0,0,VTMEBP,I,"a = ['V', 'T', 'M', 'E', 'B', 'P']
+b = a.copy()
+a[3] = 'I'","a = ['V', 'T', 'M', 'E', 'B', 'P']
+b = a
+a[3] = 'I'",What is b[3]?,What is b[3]?,E,I,E
+11,alias->copy,2,2,16,0,YMTSH4,D,"pad = ['4', '3', '6', 'I', '4', 'J', '5', 'P', '2', '4', 'J', 'I', 'V', 'U', 'O', '2']
+a = ['Y', 'M', 'T', 'S', 'H', '4']
+b = a
+a[2] = 'D'","pad = ['4', '3', '6', 'I', '4', 'J', '5', 'P', '2', '4', 'J', 'I', 'V', 'U', 'O', '2']
+a = ['Y', 'M', 'T', 'S', 'H', '4']
+b = a.copy()
+a[2] = 'D'",What is b[2]?,What is b[2]?,D,T,D
+12,copy->alias,1,1,0,16,TLEDO4,M,"a = ['T', 'L', 'E', 'D', 'O', '4']
+b = a.copy()
+a[1] = 'M'
+pad2 = ['8', '2', 'Q', '9', 'Q', 'C', 'J', 'F', 'J', 'U', 'I', 'P', 'I', 'U', 'Y', '7']","a = ['T', 'L', 'E', 'D', 'O', '4']
+b = a
+a[1] = 'M'
+pad2 = ['8', '2', 'Q', '9', 'Q', 'C', 'J', 'F', 'J', 'U', 'I', 'P', 'I', 'U', 'Y', '7']",What is b[1]?,What is b[1]?,L,M,L
+13,alias->copy,1,1,16,16,4TRBS1,L,"pad = ['3', 'H', 'U', '7', 'G', 'P', '4', 'Z', 'M', 'D', '4', '9', '2', 'O', 'Q', 'O']
+a = ['4', 'T', 'R', 'B', 'S', '1']
+b = a
+a[1] = 'L'
+pad2 = ['2', '9', 'D', '2', 'G', 'G', 'F', 'A', 'F', 'X', '7', 'Q', '4', 'Z', 'F', 'Y']","pad = ['3', 'H', 'U', '7', 'G', 'P', '4', 'Z', 'M', 'D', '4', '9', '2', 'O', 'Q', 'O']
+a = ['4', 'T', 'R', 'B', 'S', '1']
+b = a.copy()
+a[1] = 'L'
+pad2 = ['2', '9', 'D', '2', 'G', 'G', 'F', 'A', 'F', 'X', '7', 'Q', '4', 'Z', 'F', 'Y']",What is b[1]?,What is b[1]?,L,T,L
+14,copy->alias,4,4,16,0,4MTCA2,B,"pad = ['Z', 'G', 'V', '2', '8', 'H', 'R', '6', 'J', '5', '6', 'J', 'D', 'L', 'J', 'N']
+a = ['4', 'M', 'T', 'C', 'A', '2']
+b = a.copy()
+a[4] = 'B'","pad = ['Z', 'G', 'V', '2', '8', 'H', 'R', '6', 'J', '5', '6', 'J', 'D', 'L', 'J', 'N']
+a = ['4', 'M', 'T', 'C', 'A', '2']
+b = a
+a[4] = 'B'",What is b[4]?,What is b[4]?,A,B,A
+15,alias->copy,2,2,16,16,7MICAT,O,"pad = ['0', 'X', '5', '7', 'V', 'S', '5', '8', '7', 'V', 'G', 'W', 'G', 'V', 'V', 'B']
+a = ['7', 'M', 'I', 'C', 'A', 'T']
+b = a
+a[2] = 'O'
+pad2 = ['6', 'T', '3', 'H', 'Y', 'B', '3', '4', 'G', 'H', 'G', 'U', 'Y', '2', 'F', 'W']","pad = ['0', 'X', '5', '7', 'V', 'S', '5', '8', '7', 'V', 'G', 'W', 'G', 'V', 'V', 'B']
+a = ['7', 'M', 'I', 'C', 'A', 'T']
+b = a.copy()
+a[2] = 'O'
+pad2 = ['6', 'T', '3', 'H', 'Y', 'B', '3', '4', 'G', 'H', 'G', 'U', 'Y', '2', 'F', 'W']",What is b[2]?,What is b[2]?,O,I,O
+16,copy->alias,1,1,16,16,JTBMAL,H,"pad = ['D', '3', 'F', 'V', 'S', 'W', 'C', '3', '7', '8', 'E', 'S', 'O', 'Y', 'V', 'Y']
+a = ['J', 'T', 'B', 'M', 'A', 'L']
+b = a.copy()
+a[1] = 'H'
+pad2 = ['V', 'J', '1', 'L', 'S', 'V', 'W', '4', 'U', 'V', '9', 'K', '1', 'V', '7', '7']","pad = ['D', '3', 'F', 'V', 'S', 'W', 'C', '3', '7', '8', 'E', 'S', 'O', 'Y', 'V', 'Y']
+a = ['J', 'T', 'B', 'M', 'A', 'L']
+b = a
+a[1] = 'H'
+pad2 = ['V', 'J', '1', 'L', 'S', 'V', 'W', '4', 'U', 'V', '9', 'K', '1', 'V', '7', '7']",What is b[1]?,What is b[1]?,T,H,T
+17,alias->copy,3,3,0,16,NCIBSE,R,"a = ['N', 'C', 'I', 'B', 'S', 'E']
+b = a
+a[3] = 'R'
+pad2 = ['0', 'K', 'Q', 'E', 'J', '0', 'M', '4', 'F', '7', '3', 'G', '9', '1', 'Z', '0']","a = ['N', 'C', 'I', 'B', 'S', 'E']
+b = a.copy()
+a[3] = 'R'
+pad2 = ['0', 'K', 'Q', 'E', 'J', '0', 'M', '4', 'F', '7', '3', 'G', '9', '1', 'Z', '0']",What is b[3]?,What is b[3]?,R,B,R
+18,copy->alias,3,3,0,16,7CLDBU,R,"a = ['7', 'C', 'L', 'D', 'B', 'U']
+b = a.copy()
+a[3] = 'R'
+pad2 = ['I', '0', '5', 'K', 'I', '1', 'S', 'V', 'Q', 'O', 'S', 'J', 'P', 'O', 'F', '2']","a = ['7', 'C', 'L', 'D', 'B', 'U']
+b = a
+a[3] = 'R'
+pad2 = ['I', '0', '5', 'K', 'I', '1', 'S', 'V', 'Q', 'O', 'S', 'J', 'P', 'O', 'F', '2']",What is b[3]?,What is b[3]?,D,R,D
+19,alias->copy,3,3,0,16,NMLSAV,O,"a = ['N', 'M', 'L', 'S', 'A', 'V']
+b = a
+a[3] = 'O'
+pad2 = ['Y', 'K', 'V', '9', 'D', 'E', '8', '4', 'I', '7', 'E', 'D', 'J', 'J', 'C', '7']","a = ['N', 'M', 'L', 'S', 'A', 'V']
+b = a.copy()
+a[3] = 'O'
+pad2 = ['Y', 'K', 'V', '9', 'D', 'E', '8', '4', 'I', '7', 'E', 'D', 'J', 'J', 'C', '7']",What is b[3]?,What is b[3]?,O,S,O
+20,copy->alias,2,2,16,0,WIRET8,C,"pad = ['V', 'X', 'U', '1', 'N', 'D', 'L', 'B', '4', '1', 'H', 'Q', '7', 'D', 'L', '9']
+a = ['W', 'I', 'R', 'E', 'T', '8']
+b = a.copy()
+a[2] = 'C'","pad = ['V', 'X', 'U', '1', 'N', 'D', 'L', 'B', '4', '1', 'H', 'Q', '7', 'D', 'L', '9']
+a = ['W', 'I', 'R', 'E', 'T', '8']
+b = a
+a[2] = 'C'",What is b[2]?,What is b[2]?,R,C,R
+21,alias->copy,1,1,0,16,6BODTF,I,"a = ['6', 'B', 'O', 'D', 'T', 'F']
+b = a
+a[1] = 'I'
+pad2 = ['S', 'A', 'N', 'W', 'R', '8', '8', 'L', 'Y', 'G', 'C', 'V', '1', 'K', '9', 'F']","a = ['6', 'B', 'O', 'D', 'T', 'F']
+b = a.copy()
+a[1] = 'I'
+pad2 = ['S', 'A', 'N', 'W', 'R', '8', '8', 'L', 'Y', 'G', 'C', 'V', '1', 'K', '9', 'F']",What is b[1]?,What is b[1]?,I,B,I
+22,copy->alias,2,2,16,0,3CDERJ,T,"pad = ['M', 'S', 'V', '0', 'I', 'L', 'O', '4', 'A', 'L', 'B', 'A', 'A', '2', 'V', 'W']
+a = ['3', 'C', 'D', 'E', 'R', 'J']
+b = a.copy()
+a[2] = 'T'","pad = ['M', 'S', 'V', '0', 'I', 'L', 'O', '4', 'A', 'L', 'B', 'A', 'A', '2', 'V', 'W']
+a = ['3', 'C', 'D', 'E', 'R', 'J']
+b = a
+a[2] = 'T'",What is b[2]?,What is b[2]?,D,T,D
+23,alias->copy,2,2,16,0,WLBRI5,S,"pad = ['7', 'P', 'V', 'M', '1', 'H', 'J', 'N', 'H', '5', '7', '1', '2', 'Z', 'F', 'P']
+a = ['W', 'L', 'B', 'R', 'I', '5']
+b = a
+a[2] = 'S'","pad = ['7', 'P', 'V', 'M', '1', 'H', 'J', 'N', 'H', '5', '7', '1', '2', 'Z', 'F', 'P']
+a = ['W', 'L', 'B', 'R', 'I', '5']
+b = a.copy()
+a[2] = 'S'",What is b[2]?,What is b[2]?,S,B,S
+24,copy->alias,3,3,0,0,IABRED,O,"a = ['I', 'A', 'B', 'R', 'E', 'D']
+b = a.copy()
+a[3] = 'O'","a = ['I', 'A', 'B', 'R', 'E', 'D']
+b = a
+a[3] = 'O'",What is b[3]?,What is b[3]?,R,O,R
+25,alias->copy,1,1,16,16,IODEAI,S,"pad = ['L', 'T', 'B', 'L', 'P', '9', 'N', 'W', 'N', 'K', 'C', '9', '7', 'M', 'J', 'P']
+a = ['I', 'O', 'D', 'E', 'A', 'I']
+b = a
+a[1] = 'S'
+pad2 = ['I', 'B', 'N', 'Q', 'F', 'U', 'L', 'V', 'Z', 'J', 'K', 'V', '3', 'B', 'F', 'L']","pad = ['L', 'T', 'B', 'L', 'P', '9', 'N', 'W', 'N', 'K', 'C', '9', '7', 'M', 'J', 'P']
+a = ['I', 'O', 'D', 'E', 'A', 'I']
+b = a.copy()
+a[1] = 'S'
+pad2 = ['I', 'B', 'N', 'Q', 'F', 'U', 'L', 'V', 'Z', 'J', 'K', 'V', '3', 'B', 'F', 'L']",What is b[1]?,What is b[1]?,S,O,S
+26,copy->alias,1,1,0,16,MOAISZ,H,"a = ['M', 'O', 'A', 'I', 'S', 'Z']
+b = a.copy()
+a[1] = 'H'
+pad2 = ['K', 'D', 'X', '9', 'V', '6', '3', 'F', '0', '7', '1', '4', '7', 'Y', 'Q', '3']","a = ['M', 'O', 'A', 'I', 'S', 'Z']
+b = a
+a[1] = 'H'
+pad2 = ['K', 'D', 'X', '9', 'V', '6', '3', 'F', '0', '7', '1', '4', '7', 'Y', 'Q', '3']",What is b[1]?,What is b[1]?,O,H,O
+27,alias->copy,3,3,16,0,5ESOC5,A,"pad = ['1', '7', 'V', 'Z', 'R', '2', '1', '4', 'V', 'H', '8', 'V', '3', 'V', 'X', '5']
+a = ['5', 'E', 'S', 'O', 'C', '5']
+b = a
+a[3] = 'A'","pad = ['1', '7', 'V', 'Z', 'R', '2', '1', '4', 'V', 'H', '8', 'V', '3', 'V', 'X', '5']
+a = ['5', 'E', 'S', 'O', 'C', '5']
+b = a.copy()
+a[3] = 'A'",What is b[3]?,What is b[3]?,A,O,A
+28,copy->alias,1,1,0,0,QATCH5,D,"a = ['Q', 'A', 'T', 'C', 'H', '5']
+b = a.copy()
+a[1] = 'D'","a = ['Q', 'A', 'T', 'C', 'H', '5']
+b = a
+a[1] = 'D'",What is b[1]?,What is b[1]?,A,D,A
+29,alias->copy,4,4,0,0,JRMTDA,O,"a = ['J', 'R', 'M', 'T', 'D', 'A']
+b = a
+a[4] = 'O'","a = ['J', 'R', 'M', 'T', 'D', 'A']
+b = a.copy()
+a[4] = 'O'",What is b[4]?,What is b[4]?,O,D,O
+30,copy->alias,4,4,0,0,4RMBLD,H,"a = ['4', 'R', 'M', 'B', 'L', 'D']
+b = a.copy()
+a[4] = 'H'","a = ['4', 'R', 'M', 'B', 'L', 'D']
+b = a
+a[4] = 'H'",What is b[4]?,What is b[4]?,L,H,L
+31,alias->copy,3,3,0,0,6DSRLP,O,"a = ['6', 'D', 'S', 'R', 'L', 'P']
+b = a
+a[3] = 'O'","a = ['6', 'D', 'S', 'R', 'L', 'P']
+b = a.copy()
+a[3] = 'O'",What is b[3]?,What is b[3]?,O,R,O
+32,copy->alias,1,1,16,16,YTAODH,C,"pad = ['N', 'L', 'Z', '2', '1', 'M', 'Y', 'X', 'H', 'B', 'U', 'E', 'U', 'L', '0', 'G']
+a = ['Y', 'T', 'A', 'O', 'D', 'H']
+b = a.copy()
+a[1] = 'C'
+pad2 = ['1', 'J', '0', 'U', 'M', '1', 'V', 'M', 'S', 'S', 'S', '3', 'G', '7', 'W', 'J']","pad = ['N', 'L', 'Z', '2', '1', 'M', 'Y', 'X', 'H', 'B', 'U', 'E', 'U', 'L', '0', 'G']
+a = ['Y', 'T', 'A', 'O', 'D', 'H']
+b = a
+a[1] = 'C'
+pad2 = ['1', 'J', '0', 'U', 'M', '1', 'V', 'M', 'S', 'S', 'S', '3', 'G', '7', 'W', 'J']",What is b[1]?,What is b[1]?,T,C,T
+33,alias->copy,3,3,0,16,9AELBS,T,"a = ['9', 'A', 'E', 'L', 'B', 'S']
+b = a
+a[3] = 'T'
+pad2 = ['M', 'Q', 'J', '8', '9', '8', 'J', 'F', 'X', 'F', 'H', '2', 'V', 'M', '9', 'P']","a = ['9', 'A', 'E', 'L', 'B', 'S']
+b = a.copy()
+a[3] = 'T'
+pad2 = ['M', 'Q', 'J', '8', '9', '8', 'J', 'F', 'X', 'F', 'H', '2', 'V', 'M', '9', 'P']",What is b[3]?,What is b[3]?,T,L,T
+34,copy->alias,2,2,16,0,PSHDLA,R,"pad = ['G', 'A', '9', 'U', '0', 'T', 'P', 'M', '2', 'F', 'Q', 'O', 'P', 'N', 'E', '5']
+a = ['P', 'S', 'H', 'D', 'L', 'A']
+b = a.copy()
+a[2] = 'R'","pad = ['G', 'A', '9', 'U', '0', 'T', 'P', 'M', '2', 'F', 'Q', 'O', 'P', 'N', 'E', '5']
+a = ['P', 'S', 'H', 'D', 'L', 'A']
+b = a
+a[2] = 'R'",What is b[2]?,What is b[2]?,H,R,H
+35,alias->copy,3,3,0,16,1THIBA,E,"a = ['1', 'T', 'H', 'I', 'B', 'A']
+b = a
+a[3] = 'E'
+pad2 = ['7', '2', 'N', 'M', 'P', 'D', 'Q', 'Q', '6', 'X', 'D', 'P', '8', 'R', '3', 'M']","a = ['1', 'T', 'H', 'I', 'B', 'A']
+b = a.copy()
+a[3] = 'E'
+pad2 = ['7', '2', 'N', 'M', 'P', 'D', 'Q', 'Q', '6', 'X', 'D', 'P', '8', 'R', '3', 'M']",What is b[3]?,What is b[3]?,E,I,E
+36,copy->alias,1,1,16,0,MARECS,I,"pad = ['V', 'O', 'K', '3', 'P', '4', '9', 'S', '7', 'B', '4', '3', 'Z', 'Q', '8', '7']
+a = ['M', 'A', 'R', 'E', 'C', 'S']
+b = a.copy()
+a[1] = 'I'","pad = ['V', 'O', 'K', '3', 'P', '4', '9', 'S', '7', 'B', '4', '3', 'Z', 'Q', '8', '7']
+a = ['M', 'A', 'R', 'E', 'C', 'S']
+b = a
+a[1] = 'I'",What is b[1]?,What is b[1]?,A,I,A
+37,alias->copy,2,2,0,0,ZSILO6,C,"a = ['Z', 'S', 'I', 'L', 'O', '6']
+b = a
+a[2] = 'C'","a = ['Z', 'S', 'I', 'L', 'O', '6']
+b = a.copy()
+a[2] = 'C'",What is b[2]?,What is b[2]?,C,I,C
+38,copy->alias,3,3,16,0,NMCSLK,O,"pad = ['K', 'J', '2', '2', 'Z', 'J', 'Q', 'Z', 'I', 'K', 'U', 'W', '0', 'Q', 'E', 'G']
+a = ['N', 'M', 'C', 'S', 'L', 'K']
+b = a.copy()
+a[3] = 'O'","pad = ['K', 'J', '2', '2', 'Z', 'J', 'Q', 'Z', 'I', 'K', 'U', 'W', '0', 'Q', 'E', 'G']
+a = ['N', 'M', 'C', 'S', 'L', 'K']
+b = a
+a[3] = 'O'",What is b[3]?,What is b[3]?,S,O,S
+39,alias->copy,2,2,0,0,8MLTDN,R,"a = ['8', 'M', 'L', 'T', 'D', 'N']
+b = a
+a[2] = 'R'","a = ['8', 'M', 'L', 'T', 'D', 'N']
+b = a.copy()
+a[2] = 'R'",What is b[2]?,What is b[2]?,R,L,R
+40,copy->alias,4,4,16,0,OMDSBW,E,"pad = ['F', 'O', 'K', 'P', 'L', '4', 'X', 'J', '7', 'A', '2', '6', 'R', 'Q', 'R', '2']
+a = ['O', 'M', 'D', 'S', 'B', 'W']
+b = a.copy()
+a[4] = 'E'","pad = ['F', 'O', 'K', 'P', 'L', '4', 'X', 'J', '7', 'A', '2', '6', 'R', 'Q', 'R', '2']
+a = ['O', 'M', 'D', 'S', 'B', 'W']
+b = a
+a[4] = 'E'",What is b[4]?,What is b[4]?,B,E,B
+41,alias->copy,2,2,16,16,GHALE0,O,"pad = ['V', 'V', 'Z', '4', '6', '6', 'J', 'D', 'M', '7', 'K', 'R', 'R', 'Z', 'T', 'S']
+a = ['G', 'H', 'A', 'L', 'E', '0']
+b = a
+a[2] = 'O'
+pad2 = ['9', 'N', '6', '5', '6', '9', 'B', 'G', 'C', 'S', '1', '3', '7', '4', 'U', '9']","pad = ['V', 'V', 'Z', '4', '6', '6', 'J', 'D', 'M', '7', 'K', 'R', 'R', 'Z', 'T', 'S']
+a = ['G', 'H', 'A', 'L', 'E', '0']
+b = a.copy()
+a[2] = 'O'
+pad2 = ['9', 'N', '6', '5', '6', '9', 'B', 'G', 'C', 'S', '1', '3', '7', '4', 'U', '9']",What is b[2]?,What is b[2]?,O,A,O
+42,copy->alias,4,4,0,0,4IMLRE,D,"a = ['4', 'I', 'M', 'L', 'R', 'E']
+b = a.copy()
+a[4] = 'D'","a = ['4', 'I', 'M', 'L', 'R', 'E']
+b = a
+a[4] = 'D'",What is b[4]?,What is b[4]?,R,D,R
+43,alias->copy,2,2,0,0,WMRBL3,C,"a = ['W', 'M', 'R', 'B', 'L', '3']
+b = a
+a[2] = 'C'","a = ['W', 'M', 'R', 'B', 'L', '3']
+b = a.copy()
+a[2] = 'C'",What is b[2]?,What is b[2]?,C,R,C
+44,copy->alias,1,1,0,0,ZDOAEM,H,"a = ['Z', 'D', 'O', 'A', 'E', 'M']
+b = a.copy()
+a[1] = 'H'","a = ['Z', 'D', 'O', 'A', 'E', 'M']
+b = a
+a[1] = 'H'",What is b[1]?,What is b[1]?,D,H,D
+45,alias->copy,4,4,0,0,RBEMOL,H,"a = ['R', 'B', 'E', 'M', 'O', 'L']
+b = a
+a[4] = 'H'","a = ['R', 'B', 'E', 'M', 'O', 'L']
+b = a.copy()
+a[4] = 'H'",What is b[4]?,What is b[4]?,H,O,H
+46,copy->alias,2,2,0,0,ZMELS5,I,"a = ['Z', 'M', 'E', 'L', 'S', '5']
+b = a.copy()
+a[2] = 'I'","a = ['Z', 'M', 'E', 'L', 'S', '5']
+b = a
+a[2] = 'I'",What is b[2]?,What is b[2]?,E,I,E
+47,alias->copy,2,2,16,0,CMDAIB,L,"pad = ['J', 'U', '7', '0', 'Z', 'S', 'E', 'N', 'K', '0', 'S', '8', 'Q', 'K', 'U', 'C']
+a = ['C', 'M', 'D', 'A', 'I', 'B']
+b = a
+a[2] = 'L'","pad = ['J', 'U', '7', '0', 'Z', 'S', 'E', 'N', 'K', '0', 'S', '8', 'Q', 'K', 'U', 'C']
+a = ['C', 'M', 'D', 'A', 'I', 'B']
+b = a.copy()
+a[2] = 'L'",What is b[2]?,What is b[2]?,L,D,L

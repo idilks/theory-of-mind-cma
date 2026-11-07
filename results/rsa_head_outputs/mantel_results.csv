@@ -1,0 +1,5 @@
+head_set,model,spearman_r,p_perm
+topk_C1_abstract_belief,belief_veracity,0.3942756222199646,0.0
+topk_C1_abstract_belief,answer_state,0.0866413534820485,0.0
+topk_C5_answer_changes_location_only,belief_veracity,0.0938704175232337,0.0
+topk_C5_answer_changes_location_only,answer_state,0.15196317957734018,0.0

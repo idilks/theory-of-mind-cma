@@ -17,8 +17,8 @@
 # weights.pt from the ToM capture dir — no --save_weights here.
 #
 # Downstream (laptop):
-#   python scripts/circuit/stage1_geometric_screen.py --domain code
-#   python scripts/circuit/compare_wires.py \
+#   python analysis_scripts/circuit/stage1_geometric_screen.py --domain code
+#   python analysis_scripts/circuit/compare_wires.py \
 #     --a results/aggregated/circuit/stage1/directions_L41.npz \
 #     --b results/aggregated/circuit/stage1_code/directions_L41.npz
 
@@ -36,7 +36,7 @@ mkdir -p .conda/pkgs/cache .conda/envs
 cd /dartfs/rc/lab/F/FranklandS/tom
 conda activate /dartfs/rc/lab/F/FranklandS/tom/envs/tom_analysis
 
-python scripts/circuit/capture_circuit_activations.py \
+python analysis_scripts/circuit/capture_circuit_activations.py \
   --domain code \
   --prompt_num 150 \
   --seed 0

@@ -15,7 +15,7 @@
 # at end-position) and evaluate on the full 6-variant flip-matrix set.
 # Heads ranked by geometric mean of belief and photo max_observed_score.
 #
-# Prereq: run scripts/build_intersection_head_csv.py first to generate
+# Prereq: run analysis_scripts/build_intersection_head_csv.py first to generate
 #   results/lookback_analysis/_summary/top20_with_intersection_end.csv
 
 export PIP_CACHE_DIR="/dartfs/rc/lab/F/FranklandS/.pip/cache"
@@ -38,12 +38,12 @@ mkdir -p logs
 # Build the intersection-augmented head CSV if missing.
 if [ ! -f results/lookback_analysis/_summary/top20_with_intersection_end.csv ]; then
   echo "Building intersection head CSV..."
-  python scripts/build_intersection_head_csv.py
+  python analysis_scripts/build_intersection_head_csv.py
 fi
 
 LABEL=intersection_belief_photo
 
-python codebase/tasks/causal_analysis/ablation_experiment.py \
+python cma_scripts/tasks/causal_analysis/ablation_experiment.py \
   --model_type Qwen2.5-14B-Instruct \
   --prompt_num 150 \
   --max_new_tokens 5 \

@@ -33,7 +33,7 @@ mkdir -p logs
 
 # Reads the matched captures from lookback_capture_matched.sh (both head groups on the
 # same prompts, false- and true-belief); run that job first.
-python scripts/lookback_analysis/region_attention_shares.py \
+python analysis_scripts/lookback_analysis/region_attention_shares.py \
   --root results/lookback_analysis/_matched \
   --conditions abstract_belief abstract_photo \
   --vocab_dir tom_datasets \

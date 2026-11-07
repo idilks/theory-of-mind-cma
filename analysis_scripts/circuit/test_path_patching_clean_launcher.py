@@ -19,7 +19,7 @@ class CleanLauncherTests(unittest.TestCase):
         self.source = self.root / 'results/circuit/path_patching/union41_v2'
         self.source.mkdir(parents=True)
         (self.source / 'study.json').write_text('{"plan":{"revision":"' + fixture.REVISION + '"}}')
-        (self.root / 'scripts/circuit/path_patching_clean_control.py').write_text('# frozen control v1\n')
+        (self.root / 'analysis_scripts/circuit/path_patching_clean_control.py').write_text('# frozen control v1\n')
         (self.root / 'slurm_scripts').mkdir()
         self.script = (fixture.ROOT / 'slurm_scripts/path_patching_clean_control.sh').read_text()
         (self.root / 'slurm_scripts/path_patching_clean_control.sh').write_text(self.script)
@@ -55,13 +55,13 @@ class CleanLauncherTests(unittest.TestCase):
         fixture.LauncherTests.add_snapshot(self, self.cache)
         result, calls = self.run_launcher()
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn(str(self.root/'output/code_snapshot/scripts/circuit/path_patching_clean_control.py'), calls)
+        self.assertIn(str(self.root/'output/code_snapshot/analysis_scripts/circuit/path_patching_clean_control.py'), calls)
         self.assertIn(str(self.source), calls)
         self.assertIn(f'HF_HUB_CACHE={self.cache}', calls)
-        (self.root/'scripts/circuit/path_patching_clean_control.py').write_text('# pushed edit\n')
+        (self.root/'analysis_scripts/circuit/path_patching_clean_control.py').write_text('# pushed edit\n')
         result, _ = self.run_launcher()
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual((self.root/'output/code_snapshot/scripts/circuit/path_patching_clean_control.py').read_text(), '# frozen control v1\n')
+        self.assertEqual((self.root/'output/code_snapshot/analysis_scripts/circuit/path_patching_clean_control.py').read_text(), '# frozen control v1\n')
 
     def test_hub_cache(self):
         fixture.LauncherTests.add_snapshot(self, self.cache/'hub')

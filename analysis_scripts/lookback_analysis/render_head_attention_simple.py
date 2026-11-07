@@ -16,7 +16,7 @@ Sources (both head groups measured on the same prompts):
       (capture_code_attention_rows.sh -> code_region_shares.py); K1 / K5 head lists
 
 The full per-head view is region_bubble_matrix.py.
-Run: python scripts/lookback_analysis/render_head_attention_simple.py
+Run: python analysis_scripts/lookback_analysis/render_head_attention_simple.py
 """
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ from head_groups import story_head_group, code_head_group  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 REG = ROOT / "results/lookback_analysis/_regions"
-OUT = ROOT / "results_for_pi/aggregation"
+OUT = ROOT / "results/summary/aggregation"
 STEM = OUT / "head_attention_simple"
 
 DIV = "#E07B39"

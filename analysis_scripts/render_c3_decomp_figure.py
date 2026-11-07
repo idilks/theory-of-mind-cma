@@ -1,11 +1,11 @@
-"""Render the C3 ≈ C1 + C5 decomposition figure for the NeurIPS paper.
+"""Render the C3 ≈ C1 + C5 decomposition figure.
 
 Two panels only (no OLS, no betas, no R^2):
   - bar chart of r(C3, C1), r(C3, C5), r(C3, C1+C5)
   - per-head scatter of (C1+C5) vs C3 with y=x reference
 
 Reads pre-computed clamped fingerprints from results/aggregated/fingerprints/
-and writes directly into theory_of_mind_neurips/figures/.
+and writes directly into results/summary/figures/.
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ from scipy.stats import pearsonr
 
 ROOT = Path(__file__).resolve().parents[1]
 FP_DIR = ROOT / "results/aggregated/fingerprints"
-OUT = ROOT / "theory_of_mind_neurips/figures/h2_C3_eq_C1plusC5_clamped.png"
+OUT = ROOT / "results/summary/figures/h2_C3_eq_C1plusC5_clamped.png"
 
 
 def main():

@@ -140,10 +140,10 @@ def render(df: pd.DataFrame, out_path: Path, *, condition_label: str):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--csv", type=Path,
-                   default=Path("other_results/ablation/loc_belief_heads/cumulative_ablation_results.csv"))
+                   default=Path("results/ablation/loc_belief_heads/cumulative_ablation_results.csv"))
     p.add_argument("--label", type=str, default="loc_belief (C7-derived)")
     p.add_argument("--out", type=Path,
-                   default=Path("neurips/figures/ablation_loc_belief.png"))
+                   default=Path("results/summary/figures/ablation_loc_belief.png"))
     args = p.parse_args()
 
     project_root = Path(__file__).resolve().parents[1]

@@ -1,23 +1,20 @@
 #!/usr/bin/env python
-"""Reviewer-driven robustness controls for the cross-condition aggregation.
-
-Two analyses, in response to a peer-review of aggregation_analysis.qmd:
+"""Robustness controls for the cross-condition aggregation.
 
 1. Partial correlation matrix controlling for the across-context indicator.
    The cell-level Mantel test showed the across/within-context axis
    explains cell similarity better than condition identity. For each
-   pair (C_i, C_j), we compute Pearson r(C_i, C_j | across-context indicator)
-   on per-cell vectors, with cells as observations. Tells us how much of
+   pair (C_i, C_j), Pearson r(C_i, C_j | across-context indicator) on
+   per-cell vectors, with cells as observations, quantifies how much of
    the condition-condition similarity remains once that axis is partialled out.
    The across-context indicator = 1 for C1/C2/C3/C4 (false_template <->
    true_template patches) and 0 for C5/C6 (within-context, no template flip).
 
 2. Bootstrap null for the H2 OLS R^2.
-   Reviewer pointed out: when you regress a target onto two predictors that
-   each correlate ~0.7-0.8 with it and are partly orthogonal to each other,
-   R^2 is mathematically constrained to be high. The relevant null is:
-   what R^2 do you get when components are random vectors with matched
-   marginal correlation to the target?
+   Regressing a target onto two predictors that each correlate ~0.7-0.8 with
+   it and are partly orthogonal to each other constrains R^2 to be high on
+   arithmetic alone. The relevant null is therefore: what R^2 do random
+   component vectors with matched marginal correlation to the target produce?
 
 Generates a "matched-r" null:
    * For each pair of components, sample 1000 pairs (X1, X2) of random
@@ -29,8 +26,8 @@ Generates a "matched-r" null:
 Outputs:
 - results/aggregated/controls/partial_corr_pearson.csv
 - results/aggregated/controls/h2_bootstrap_null.csv
-- results_for_pi/aggregation/controls_partial_corr.png
-- results_for_pi/aggregation/controls_h2_null.png
+- results/summary/aggregation/controls_partial_corr.png
+- results/summary/aggregation/controls_h2_null.png
 """
 
 from __future__ import annotations
@@ -44,10 +41,10 @@ import pandas as pd
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "results_for_pi/heatmaps/manifest.csv"
+MANIFEST = ROOT / "results/summary/heatmaps/manifest.csv"
 FP_DIR = ROOT / "results/aggregated/fingerprints"
 OUT_AGG = ROOT / "results/aggregated/controls"
-OUT_FIG = ROOT / "results_for_pi/aggregation"
+OUT_FIG = ROOT / "results/summary/aggregation"
 
 CONDITIONS = [
     "C1_abstract_belief", "C2_abstract_photo", "C3_answer_changes_belief",
