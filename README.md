@@ -36,19 +36,20 @@ python cma.py \
   --run_statistical_tests
 ```
 
-`--use_template_system` (ToM) or `--context_type code` is required; omitting both raises.
-`--patch_after_movement` selects the belief-formation patch position; omitting it patches
-the end token. All headline results use the end token.
+One of `--use_template_system` (ToM) or `--context_type code` is required; without either,
+the run stops with an error. With `--patch_after_movement` we patch at the belief-formation
+position; without it we patch the end token. All headline results use the end token.
 
-Statistics are a max-statistic permutation test with FWER correction over all 1920 heads,
-5000 permutations in `tasks/causal_analysis/statistical_testing.py`. We recommend importing it rather than
-reimplementing, so correction stays consistent across conditions.
+For statistics we use a max-statistic permutation test with FWER correction over all 1920
+heads, 5000 permutations, implemented in `tasks/causal_analysis/statistical_testing.py`. We
+recommend importing it rather than reimplementing, so correction stays consistent across
+conditions.
 
 ## conditions
 
-Canonical numbering lives in `analysis_scripts/condition_registry.py` (`REGISTRY`).
+We keep the canonical numbering in `analysis_scripts/condition_registry.py` (`REGISTRY`).
 
-| #  | folder name                          | what varies (base↔exp)          | answers   | what it isolates                  |
+| #  | folder name                          | what varies (base↔exp)          | answers   | target heads                      |
 |----|--------------------------------------|---------------------------------|-----------|-----------------------------------|
 | C1 | `abstract_belief`                    | belief type (false↔true)        | same      | belief-divergence heads           |
 | C2 | `abstract_photo`                     | photo timing (false↔true)       | same      | state-divergence heads (no beliefs) |
@@ -58,11 +59,11 @@ Canonical numbering lives in `analysis_scripts/condition_registry.py` (`REGISTRY
 | C6 | `answer_changes_location_only_photo` | location tokens only, photo     | different | answer / location-retrieval heads |
 | C7 | `state_only_no_belief`               | state change, no belief         | different | state-update heads (control, no beliefs and no representations)      |
 
-C1–C4 patch across contexts, so the rule flips (`ABA`↔`ABB`); C5–C7 patch within one
-context and keep it. A parallel code domain uses copy-vs-alias list mutation as a non-ToM
-analog (`CODE_REGISTRY` in the same file):
+In C1–C4 we patch across contexts, so the rule flips (`ABA`↔`ABB`); in C5–C7 we patch within
+one context and keep it. For the parallel code domain we use copy-vs-alias list mutation as a
+non-ToM analog (`CODE_REGISTRY` in the same file):
 
-| #  | folder name                | mirrors | what it isolates |
+| #  | folder name                | story analog | target heads |
 |----|----------------------------|---------|------------------|
 | K1 | `code_abstract`            | C1      | divergence heads, code frame (copy↔alias, answer same) |
 | K3 | `code_answer_changes`      | C3      | divergence + answer (copy↔alias, answer differs) |
@@ -71,9 +72,9 @@ analog (`CODE_REGISTRY` in the same file):
 | Q2a–c | `code_veracity_only`, `code_site_only`, `code_site_only_rev` | — | copy status with the read site fixed, and the reverse |
 | Q3a–b | `code_pos_matched`, `code_pos_unmatched` | — | answer-token position confound (pilot) |
 
-The Q conditions use a held-out protocol: seed 0 selects heads, seed 1 tests them
-(`analysis_scripts/analyze_code_index_dissociation.py`). Only `template_indexed_list`
-runs count for the code domain.
+For the Q conditions we use a held-out protocol: we select heads on seed 0 and test them on
+seed 1 (`analysis_scripts/analyze_code_index_dissociation.py`). For the code domain we count
+only `template_indexed_list` runs.
 
 ## layout
 
@@ -81,11 +82,11 @@ runs count for the code domain.
 |---|---|
 | `cma_scripts/tasks/causal_analysis/` | the CMA pipeline: `cma.py`, `ablation_experiment.py`, `cma_config.py`, prompt generators |
 | `cma_scripts/tom_datasets/` | prompt stimuli |
-| `analysis_scripts/` | post-hoc analysis; also `circuit/`, `lookback_analysis/`, `rsa_head_outputs/`, `paper_figures/`, `tests/`. See its README, which also maps each paper figure to its script |
+| `analysis_scripts/` | post-hoc analysis; also `circuit/`, `lookback_analysis/`, `rsa_head_outputs/`, `paper_figures/`, `tests/`. Its README also lists the script behind each paper figure |
 | `slurm_scripts/` | the SLURM launchers we ran, kept as the record of exact arguments (n, seeds, time limits). See its README |
 
-Every module has a docstring with its own usage line; `condition_registry.py` is the
-shared vocabulary most of them build on.
+Every module has a docstring with a usage line; the shared condition vocabulary we import in
+most of them is in `condition_registry.py`.
 
 ## results
 
@@ -102,12 +103,12 @@ results/causal_analysis/cma/{Qwen/Qwen2.5-14B-Instruct | google/gemma-2-27b-it_u
 Seed priority when resolving a source: `combined` > `1` > `0`. Use **seed=1, end position**
 for the seven-condition analysis. `resid_post_*` folders are residual-stream arms.
 
-`code_abstract` ships seed 0 (the runs behind the paper's code-domain cells) and seed 1
-(added later as the held-out seed for the Q conditions); the seed priority picks seed 1, so
-the code rows of `results/summary/h2_robustness/` are the seed-1 values. The paper quotes
-only the story and Gemma rows, which do not depend on this choice.
+For `code_abstract` we include seed 0 (the runs behind the paper's code-domain cells) and
+seed 1 (added later as the held-out seed for the Q conditions). Under the seed priority, seed
+1 is used, so the code rows of `results/summary/h2_robustness/` are the seed-1 values. In the
+paper we quote only the story and Gemma rows, which do not depend on this choice.
 
-Shipped alongside the CMA cells (derived tables only, no figures):
+Included alongside the CMA cells (derived tables only, no figures):
 
 | path | content |
 |---|---|
@@ -119,14 +120,14 @@ Shipped alongside the CMA cells (derived tables only, no figures):
 | `results/summary/` | the statistics behind the paper's tables and the heatmap manifest |
 | `results/tom_performance/` | behavioral accuracy runs |
 
-**Not shipped** (regenerable; multi-GB): activation captures (`results/circuit/stage1_capture/*.pt`,
+**Not included** (multi-GB): activation captures (`results/circuit/stage1_capture/*.pt`,
 `results/rsa_head_outputs/activations_*`), raw per-prompt path-patching outputs
 (`results/circuit/path_patching/`, summarised in `results/aggregated/path_patching_*`),
-and raw behavioral responses. The capture scripts are
+and raw behavioral responses. We regenerate the captures with
 `analysis_scripts/circuit/capture_circuit_activations.py`,
 `analysis_scripts/rsa_head_outputs/capture_head_outputs*.py` and
 `analysis_scripts/lookback_analysis/capture_attention_patterns.py`.
 
-**Path:** CMA writes to `cma_scripts/results/` (its `log_dir` is relative and
-`pyrootutils` chdirs into `cma_scripts/`), but every analysis script *reads*
-`<repo_root>/results/`. Results must end up at the repository root.
+**Path:** the outputs of `cma.py` land in `cma_scripts/results/` (its `log_dir` is relative,
+and we use `pyrootutils` to set the working directory to `cma_scripts/`), while we run every
+analysis script against `<repo_root>/results/`. Move results to the repository root.
