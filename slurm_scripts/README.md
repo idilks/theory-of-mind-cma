@@ -3,9 +3,9 @@
 The batch scripts we ran on our cluster, kept as the record of the exact arguments
 behind each result: prompt counts, seeds, time limits, head lists, patch positions.
 They are not portable as-is: `PROJECT_DIR`, conda hooks, model caches and partition
-names are specific to our cluster. Treat each one as a worked command line for the script
-we launch with it (`cma_scripts/tasks/causal_analysis/cma.py`, `ablation_experiment.py`,
-or an `analysis_scripts/` module) and adapt the header.
+names are specific to our cluster. Each one is the exact command line we used for
+`cma_scripts/tasks/causal_analysis/cma.py`, `ablation_experiment.py` or an `analysis_scripts/`
+module; adapt the header.
 
 | family | scripts |
 |---|---|
@@ -17,7 +17,7 @@ or an `analysis_scripts/` module) and adapt the header.
 | RSA / DLA captures | `rsa_*.sh` |
 | attention | `lookback_capture*.sh`, `capture_code_attention_rows.sh`, `prompt_attention_bars.sh`, `region_attention_shares.sh`, `reanalyze_c4_lookback.sh` |
 
-Timing that matters: a code CMA at n=150 takes about 8.4 h on an A100. With `cma.py` the
+Timing: a code CMA at n=150 takes about 8.4 h on an A100. With `cma.py` the
 output is written only after all prompts, so a timed-out run is lost; with
 `ablation_experiment.py` a checkpoint is written per step and we resume from it.
 

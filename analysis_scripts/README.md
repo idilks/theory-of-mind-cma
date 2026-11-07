@@ -14,9 +14,9 @@ than hand-rolling tables, and import the permutation test from
 Paths are relative to the repository root; run scripts from there, e.g.
 `python analysis_scripts/aggregate_conditions.py`.
 
-## regenerating the paper's figures and tables
+## paper figures and tables
 
-| paper figure | script | input data |
+| figure | script | inputs |
 |---|---|---|
 | Fig. 1, Fig. 2, Fig. A1 (TikZ schematics) | drawn by hand, not generated | — |
 | condition heatmaps (`fig7_*`) | `paper_figures/fig7_fingerprint_heatmaps.py` | `results/aggregated/fingerprints/`, Gemma CMA cells |
@@ -38,7 +38,7 @@ Figure output is in `results/figures/`. For the tables we use the CSVs produced 
 
 ## cross-condition aggregation (data-only)
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `condition_registry.py` | canonical registry (story C1–C7, code K/Q) and CMA result-path resolution; `python analysis_scripts/condition_registry.py` is a self-check of the registry against the results tree |
 | `aggregate_conditions.py` | per-condition fingerprints, pairwise correlations, H1–H3 tests → `results/aggregated/` |
@@ -55,7 +55,7 @@ Figure output is in `results/figures/`. For the tables we use the CSVs produced 
 
 ## head sets and ablation
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `build_tom_c1_c5_head_csv.py`, `build_tom_c1_c5_full_ranking_csv.py` | C1/C5 head lists and the full 1,920-head ranking for cumulative ablation |
 | `build_decomposition_head_csvs.py`, `build_intersection_head_csv.py` | belief-only / location-only / shared decompositions and the C1 ∩ C2 set |
@@ -70,7 +70,7 @@ Figure output is in `results/figures/`. For the tables we use the CSVs produced 
 
 ## heatmaps and reports
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `build_avg_heatmaps.py` | cross-template averaged heatmap + significance mask per condition (appendix grids) |
 | `build_summary_heatmaps.py`, `make_singlecolor_heatmaps.py` | per-cell heatmaps and `results/summary/heatmaps/manifest.csv` |
@@ -96,7 +96,7 @@ tested on seed 1) over `code_index`, `code_index_flip`, `code_abstract_two_mut`,
 In Stage 1 we run a geometric screen on captured activations; in Stage 2 we steer the
 residual stream with the Stage-1 directions on held-out prompts.
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `build_circuit_head_sets.py` | writer and reader head sets for the circuit |
 | `capture_circuit_activations.py` | Stage-1 capture (**GPU**) → `results/circuit/stage1_capture/` (not included) |
@@ -115,7 +115,7 @@ residual stream with the Stage-1 directions on held-out prompts.
 
 ## lookback_analysis/ — attention
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `capture_attention_patterns.py`, `capture_code_attention_rows.py` | attention captures for CMA-significant heads (**GPU**) |
 | `per_condition_top_heads.py`, `head_groups.py` | head selection per condition; fixed groups for the region figures |
@@ -127,7 +127,7 @@ residual stream with the Stage-1 directions on held-out prompts.
 
 ## rsa_head_outputs/ — RSA, DLA, geometry, steering by head
 
-| script | what we use it for |
+| script | purpose |
 |---|---|
 | `build_stimulus_set.py`, `build_content_stimulus_set.py`, `build_code_position_stimuli.py`, `build_code_ledger_stimuli.py`, `build_code_padtwins_stimuli.py` | balanced stimulus grids (story 2×2, content-separable, code position / ledger / pad-twins) |
 | `capture_head_outputs.py`, `capture_head_outputs_full.py` | per-head output captures at the final token (**GPU**; not included) |
