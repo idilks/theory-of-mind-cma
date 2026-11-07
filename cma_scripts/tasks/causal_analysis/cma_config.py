@@ -12,16 +12,16 @@ import os
 class CMACondition(Enum):
     """CMA conditions. Canonical IDs (story C1-C7, code K/Q) live in analysis_scripts/condition_registry.py;
     the C/K/Q tags below follow it. Do not renumber here."""
-    ABSTRACT_BELIEF = "abstract_belief"              # C1: belief false↔true, answer SAME
-    ABSTRACT_PHOTO = "abstract_photo"                # C2: photo false↔true, answer SAME
-    ANSWER_CHANGES_BELIEF = "answer_changes_belief"  # C3: belief false↔true, answer DIFFERENT
-    ANSWER_CHANGES_PHOTO = "answer_changes_photo"    # C4: photo false↔true, answer DIFFERENT
-    STATE_ONLY_NO_BELIEF = "state_only_no_belief"    # C7: no observer/belief/photo. Pure state-change scenario; location swap, answer DIFFERENT. Uses BasicTemplate. End-patch only.
+    ABSTRACT_BELIEF = "abstract_belief"              # C1 divergence-change belief: belief false↔true, answer SAME
+    ABSTRACT_PHOTO = "abstract_photo"                # C2 divergence-change photo: photo false↔true, answer SAME
+    ANSWER_CHANGES_BELIEF = "answer_changes_belief"  # C3 dual-change belief: belief false↔true, answer DIFFERENT
+    ANSWER_CHANGES_PHOTO = "answer_changes_photo"    # C4 dual-change photo: photo false↔true, answer DIFFERENT
+    STATE_ONLY_NO_BELIEF = "state_only_no_belief"    # C7 state-only control: no observer/belief/photo. Pure state-change scenario; location swap, answer DIFFERENT. Uses BasicTemplate. End-patch only.
     ABSTRACT_PHOTO_NEW = "abstract_photo_new"        # C2 variant: patch at photo event, answer SAME
     ANSWER_CHANGES_PHOTO_NEW = "answer_changes_photo_new"  # C4 variant: patch at photo event, answer DIFFERENT
-    CODE_ANSWER_CHANGES = "code_answer_changes"      # K3 (~C3): copy vs reference semantics, answer DIFFERENT
-    CODE_CONTROL = "code_control"                    # K5 (~C5): direct mutation only, answer DIFFERENT
-    CODE_ABSTRACT = "code_abstract"                  # K1 (~C1): copy vs reference semantics, answer SAME (asks about mutated var)
+    CODE_ANSWER_CHANGES = "code_answer_changes"      # K3 dual-change code (~C3): copy vs reference semantics, answer DIFFERENT
+    CODE_CONTROL = "code_control"                    # K5 answer-change code (~C5): direct mutation only, answer DIFFERENT
+    CODE_ABSTRACT = "code_abstract"                  # K1 divergence-change code (~C1): copy vs reference semantics, answer SAME (asks about mutated var)
     CODE_INDEX = "code_index"                        # Q1a, Sept 2026: queried index differs (b[p] vs b[q]), copy/alias kind + answer SAME. Two-mutation format. ABA=copy→copy, ABB=alias→alias
     CODE_INDEX_FLIP = "code_index_flip"              # Q1b: code_index with base mutation lines in descending order: separates index key from line position (diagnostic under alias only)
     CODE_ABSTRACT_TWO_MUT = "code_abstract_two_mut"  # Q1c: code_abstract in the two-mutation format (format-matched comparison for code_index)
@@ -30,8 +30,8 @@ class CMACondition(Enum):
     CODE_SITE_ONLY_REV = "code_site_only_rev"        # Q2c: code_site_only reversed: read site mutation line→list
     CODE_POS_MATCHED = "code_pos_matched"            # Q3a, Sept 2026 pilot: one-element copy↔alias, answer-token index + length matched via comment fillers
     CODE_POS_UNMATCHED = "code_pos_unmatched"        # Q3b, pilot baseline: same fillers placed identically in both prompts (positions unmatched)
-    LOCATION_ONLY_MATCHED_BELIEF = "answer_changes_location_only"  # C5: both prompts false-belief, swapped subs, answer DIFFERENT. bf-control: isolates location/answer under matched belief engagement. NOTE: matched_belief is currently always "false"; "true" variant deferred to next sprint.
-    LOCATION_ONLY_MATCHED_PHOTO = "answer_changes_location_only_photo"  # C6: photo analogue of C5. Both prompts false-photo, swapped subs, answer DIFFERENT. Photo control for the H1/decomposition tests.
+    LOCATION_ONLY_MATCHED_BELIEF = "answer_changes_location_only"  # C5 answer-change belief: both prompts false-belief, swapped subs, answer DIFFERENT. bf-control: isolates location/answer under matched belief engagement. NOTE: matched_belief is currently always "false"; "true" variant deferred to next sprint.
+    LOCATION_ONLY_MATCHED_PHOTO = "answer_changes_location_only_photo"  # C6 answer-change photo: photo analogue of C5. Both prompts false-photo, swapped subs, answer DIFFERENT. Photo control for the H1/decomposition tests.
 
     @property
     def context_type(self) -> str:

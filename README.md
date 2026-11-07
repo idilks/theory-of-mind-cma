@@ -1,7 +1,8 @@
 # Causal mediation analysis of theory of mind in transformer language models
 
 We patch activations between matched prompt pairs differing in one factor, per attention
-head, to separate the heads encode abstract divergence information from heads responsible for retrieval
+head, to separate heads that encode abstract divergence information from heads responsible
+for retrieval.
 
 - primary model: Qwen2.5-14B-Instruct (48 layers × 40 heads = 1920 heads)
 - replication: Gemma-2-27B-it (`--ungroup_grouped_query_attention`)
@@ -43,32 +44,35 @@ recommend importing for consistency across conditions.
 
 ## conditions
 
-| #  | folder name                          | what varies (base↔exp)          | answers   | target heads                      |
-|----|--------------------------------------|---------------------------------|-----------|-----------------------------------|
-| C1 | `abstract_belief`                    | belief type (false↔true)        | same      | belief-divergence heads           |
-| C2 | `abstract_photo`                     | photo timing (false↔true)       | same      | state-divergence heads (no beliefs) |
-| C3 | `answer_changes_belief`              | belief type (false↔true)        | different | belief + answer heads (= C1 + C5) |
-| C4 | `answer_changes_photo`               | photo timing (false↔true)       | different | state + answer heads              |
-| C5 | `answer_changes_location_only`       | location tokens only, ToM frame | different | answer / location-retrieval heads |
-| C6 | `answer_changes_location_only_photo` | location tokens only, photo     | different | answer / location-retrieval heads |
-| C7 | `state_only_no_belief`               | state change, no belief         | different | state-update heads (control, no beliefs and no representations)      |
+Each condition is named by what changes between the two prompts (divergence, answer, or both)
+and by its domain. The canonical table is `REGISTRY` in `analysis_scripts/condition_registry.py`.
+
+| #  | paper name               | folder name                          | changes between prompts       | answers   | target heads |
+|----|--------------------------|--------------------------------------|-------------------------------|-----------|--------------|
+| C1 | divergence-change belief | `abstract_belief`                    | false ↔ true belief           | same      | divergence heads |
+| C2 | divergence-change photo  | `abstract_photo`                     | outdated ↔ current photo      | same      | divergence heads, no agent |
+| C3 | dual-change belief       | `answer_changes_belief`              | false ↔ true belief           | different | divergence + retrieval (= C1 + C5) |
+| C4 | dual-change photo        | `answer_changes_photo`               | outdated ↔ current photo      | different | divergence + retrieval |
+| C5 | answer-change belief     | `answer_changes_location_only`       | location tokens, belief frame | different | retrieval heads |
+| C6 | answer-change photo      | `answer_changes_location_only_photo` | location tokens, photo frame  | different | retrieval heads |
+| C7 | state-only control       | `state_only_no_belief`               | location tokens, no agent     | different | retrieval heads, no divergence |
 
 In C1–C4 we patch across contexts, so the rule flips (`ABA`↔`ABB`); in C5–C7 we patch within
-one context and keep it. For the parallel code domain we use copy-vs-alias list mutation as a
-non-ToM analog (`CODE_REGISTRY` in the same file):
+one context. The code domain mirrors the story contrasts with copy-vs-alias list mutation
+(`CODE_REGISTRY` in the same file):
 
-| #  | folder name                | story analog | target heads |
-|----|----------------------------|---------|------------------|
-| K1 | `code_abstract`            | C1      | divergence heads, code frame (copy↔alias, answer same) |
-| K3 | `code_answer_changes`      | C3      | divergence + answer (copy↔alias, answer differs) |
-| K5 | `code_control`             | C5      | answer retrieval (letters swapped, copy/alias held) |
-| Q1a–c | `code_index`, `code_index_flip`, `code_abstract_two_mut` | — | does a head track *which index* is queried? |
-| Q2a–c | `code_veracity_only`, `code_site_only`, `code_site_only_rev` | — | copy status with the read site fixed, and the reverse |
-| Q3a–b | `code_pos_matched`, `code_pos_unmatched` | — | answer-token position confound (pilot) |
+| #  | paper name              | folder name            | story analog | changes between prompts |
+|----|-------------------------|------------------------|--------------|-------------------------|
+| K1 | divergence-change code  | `code_abstract`        | C1 | copy ↔ alias, answer same |
+| K3 | dual-change code        | `code_answer_changes`  | C3 | copy ↔ alias, answer differs |
+| K5 | answer-change code      | `code_control`         | C5 | letters swapped, copy/alias held |
+| Q1a–c | — | `code_index`, `code_index_flip`, `code_abstract_two_mut` | — | queried index |
+| Q2a–c | — | `code_veracity_only`, `code_site_only`, `code_site_only_rev` | — | copy status with the read site fixed, and the reverse |
+| Q3a–b | — | `code_pos_matched`, `code_pos_unmatched` | — | answer-token position (pilot) |
 
-For the Q conditions we use a held-out protocol: we select heads on seed 0 and test them on
-seed 1 (`analysis_scripts/analyze_code_index_dissociation.py`). For the code domain we count
-only `template_indexed_list` runs.
+The Q conditions test whether divergence heads track veracity or the queried address. We
+select heads on seed 0 and test them on seed 1 (`analysis_scripts/analyze_code_index_dissociation.py`).
+For the code domain we count only `template_indexed_list` runs.
 
 ## layout
 
@@ -76,11 +80,11 @@ only `template_indexed_list` runs.
 |---|---|
 | `cma_scripts/tasks/causal_analysis/` | the CMA pipeline: `cma.py`, `ablation_experiment.py`, `cma_config.py`, prompt generators |
 | `cma_scripts/tom_datasets/` | prompt stimuli |
-| `analysis_scripts/` | post-hoc analysis; also `circuit/`, `lookback_analysis/`, `rsa_head_outputs/`, `paper_figures/`, `tests/`. Its README also lists the script behind each paper figure |
-| `slurm_scripts/` | the SLURM launchers we ran, kept as the record of exact arguments (n, seeds, time limits). See its README |
+| `analysis_scripts/` | post-hoc analysis; also `circuit/`, `lookback_analysis/`, `rsa_head_outputs/`, `paper_figures/`, `tests/`. Its README lists the script behind each paper figure |
+| `slurm_scripts/` | the SLURM launchers we ran, with the exact arguments (n, seeds, time limits). See its README |
 
-Every module has a docstring with a usage line; the shared condition vocabulary we import in
-most of them is in `condition_registry.py`.
+Every module has a docstring with a usage line. The shared condition vocabulary is in
+`condition_registry.py`.
 
 ## results
 
@@ -109,4 +113,3 @@ Included alongside the CMA cells:
 | `results/lookback_analysis/` | attention-mass tables per condition |
 | `results/summary/` | the statistics behind the paper's tables and the heatmap manifest |
 | `results/tom_performance/` | behavioral accuracy runs |
-

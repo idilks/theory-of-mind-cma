@@ -1,12 +1,12 @@
 """Canonical condition registry (story C1-C7 + code K/Q) + shared CMA result-path resolution.
 
-    C1 abstract_belief                     (belief false<->true, answer SAME)
-    C2 abstract_photo                      (photo  false<->true, answer SAME)
-    C3 answer_changes_belief               (belief false<->true, answer DIFFERENT)
-    C4 answer_changes_photo                (photo  false<->true, answer DIFFERENT)
-    C5 answer_changes_location_only        (location only, ToM frame, answer DIFFERENT)
-    C6 answer_changes_location_only_photo  (location only, photo frame, answer DIFFERENT)
-    C7 state_only_no_belief                (state change, no belief, answer DIFFERENT)
+    C1 abstract_belief                     divergence-change belief  (answer SAME)
+    C2 abstract_photo                      divergence-change photo   (answer SAME)
+    C3 answer_changes_belief               dual-change belief        (answer DIFFERENT)
+    C4 answer_changes_photo                dual-change photo         (answer DIFFERENT)
+    C5 answer_changes_location_only        answer-change belief      (answer DIFFERENT)
+    C6 answer_changes_location_only_photo  answer-change photo       (answer DIFFERENT)
+    C7 state_only_no_belief                state-only control        (answer DIFFERENT)
 
 Folder names are derived from `CMACondition` in the LLMSymbMech codebase; the
 flip-vs-keep rule-pair split is derived from `CMACondition.within_context`
@@ -16,9 +16,9 @@ Code-domain conditions live in a separate CODE_REGISTRY so that scripts
 iterating REGISTRY keep getting exactly C1-C7. K-ids are numbered by the story
 condition they mirror; Q-ids by the veracity-vs-address question they answer:
 
-    K1 code_abstract          (copy<->alias, answer SAME;  ~C1)
-    K3 code_answer_changes    (copy<->alias, answer DIFFERENT; ~C3)
-    K5 code_control           (letters swapped, copy/alias held; ~C5)
+    K1 code_abstract          divergence-change code  (copy<->alias, answer SAME;  ~C1)
+    K3 code_answer_changes    dual-change code        (copy<->alias, answer DIFFERENT; ~C3)
+    K5 code_control           answer-change code      (letters swapped, copy/alias held; ~C5)
     Q1a code_index / Q1b code_index_flip / Q1c code_abstract_two_mut   (which index)
     Q2a code_veracity_only / Q2b code_site_only / Q2c code_site_only_rev (which state / read site)
     Q3a code_pos_matched / Q3b code_pos_unmatched                       (token position, pilot)
@@ -82,24 +82,24 @@ class Condition:
 
 
 REGISTRY: list[Condition] = [
-    Condition("C1", CMACondition.ABSTRACT_BELIEF, "abstract belief"),
-    Condition("C2", CMACondition.ABSTRACT_PHOTO, "abstract photo"),
-    Condition("C3", CMACondition.ANSWER_CHANGES_BELIEF, "answer-changes belief"),
-    Condition("C4", CMACondition.ANSWER_CHANGES_PHOTO, "answer-changes photo"),
-    Condition("C5", CMACondition.LOCATION_ONLY_MATCHED_BELIEF, "answer-changes location-only (ToM frame)"),
-    Condition("C6", CMACondition.LOCATION_ONLY_MATCHED_PHOTO, "answer-changes location-only (photo frame)"),
-    Condition("C7", CMACondition.STATE_ONLY_NO_BELIEF, "state-only, no belief"),
+    Condition("C1", CMACondition.ABSTRACT_BELIEF, "divergence-change belief"),
+    Condition("C2", CMACondition.ABSTRACT_PHOTO, "divergence-change photo"),
+    Condition("C3", CMACondition.ANSWER_CHANGES_BELIEF, "dual-change belief"),
+    Condition("C4", CMACondition.ANSWER_CHANGES_PHOTO, "dual-change photo"),
+    Condition("C5", CMACondition.LOCATION_ONLY_MATCHED_BELIEF, "answer-change belief"),
+    Condition("C6", CMACondition.LOCATION_ONLY_MATCHED_PHOTO, "answer-change photo"),
+    Condition("C7", CMACondition.STATE_ONLY_NO_BELIEF, "state-only control"),
 ]
 
 _INDEXED = ("template_indexed_list",)
 
 CODE_REGISTRY: list[Condition] = [
-    Condition("K1", CMACondition.CODE_ABSTRACT, "code abstract (copy vs alias)", "code", "C1", _INDEXED),
-    Condition("K3", CMACondition.CODE_ANSWER_CHANGES, "code answer-changes", "code", "C3", _INDEXED),
-    Condition("K5", CMACondition.CODE_CONTROL, "code control (letters only)", "code", "C5", _INDEXED),
+    Condition("K1", CMACondition.CODE_ABSTRACT, "divergence-change code", "code", "C1", _INDEXED),
+    Condition("K3", CMACondition.CODE_ANSWER_CHANGES, "dual-change code", "code", "C3", _INDEXED),
+    Condition("K5", CMACondition.CODE_CONTROL, "answer-change code", "code", "C5", _INDEXED),
     Condition("Q1a", CMACondition.CODE_INDEX, "queried index", "code", None, _INDEXED),
     Condition("Q1b", CMACondition.CODE_INDEX_FLIP, "queried index, lines reversed", "code", None, _INDEXED),
-    Condition("Q1c", CMACondition.CODE_ABSTRACT_TWO_MUT, "code abstract, two-mutation format", "code", "C1", _INDEXED),
+    Condition("Q1c", CMACondition.CODE_ABSTRACT_TWO_MUT, "divergence-change code, two-mutation format", "code", "C1", _INDEXED),
     Condition("Q2a", CMACondition.CODE_VERACITY_ONLY, "veracity only (read site held)", "code", None, _INDEXED),
     Condition("Q2b", CMACondition.CODE_SITE_ONLY, "read site only (veracity held)", "code", None, _INDEXED),
     Condition("Q2c", CMACondition.CODE_SITE_ONLY_REV, "read site only, reversed", "code", None, _INDEXED),

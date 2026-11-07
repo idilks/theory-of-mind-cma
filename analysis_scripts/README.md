@@ -6,10 +6,8 @@ results layout. `condition_registry.py` contains the shared vocabulary: import c
 than hand-rolling tables, and import the permutation test from
 `cma_scripts/tasks/causal_analysis/statistical_testing.py`.
 
-> We run everything here against a populated `results/` tree at the repository root. The
-> derived data included in this repository is enough for the scripts marked **data-only**
-> below; for the scripts marked **GPU** we load a model and regenerate the activation
-> captures that are not included (see "not included" in the top-level README).
+> All scripts read `results/` at the repository root. Scripts marked **data-only** run on the
+> included data; scripts marked **GPU** load a model and produce the activation captures.
 
 Paths are relative to the repository root; run scripts from there, e.g.
 `python analysis_scripts/aggregate_conditions.py`.
@@ -47,7 +45,7 @@ Figure output is in `results/figures/`. For the tables we use the CSVs produced 
 | `h2_gain_bootstrap.py` | bootstrap CI for the H2 additivity gain |
 | `template_holdout_check.py` | leave-one-template-out check on the fingerprint correlations |
 | `build_fingerprint_scatters.py`, `build_fingerprint_scatters_dual.py` | pairwise fingerprint scatters (clamped; clamped vs raw) |
-| `analyze_pooled_conditions.py` | pooled permutation/FDR testing across templates (older workflow, usable on `causal_scores_per_sample.pt`) |
+| `analyze_pooled_conditions.py` | pooled permutation/FDR testing across templates |
 | `sweep_permutation_alpha.py`, `rerun_statistical_tests.py` | re-running or sweeping the FWER permutation test on saved per-sample scores |
 | `combine_per_sample_runs.py`, `combine_aliased_c2_c3.py` | merging seed_0/seed_1 per-sample runs into a `combined` source |
 | `head_profile_rsa.py`, `plot_rsa_mds.py` | head-level and cell-level RSA/MDS over the condition fingerprints |
@@ -57,8 +55,8 @@ Figure output is in `results/figures/`. For the tables we use the CSVs produced 
 
 | script | purpose |
 |---|---|
-| `build_tom_c1_c5_head_csv.py`, `build_tom_c1_c5_full_ranking_csv.py` | C1/C5 head lists and the full 1,920-head ranking for cumulative ablation |
-| `build_decomposition_head_csvs.py`, `build_intersection_head_csv.py` | belief-only / location-only / shared decompositions and the C1 ∩ C2 set |
+| `build_tom_c1_c5_head_csv.py`, `build_tom_c1_c5_full_ranking_csv.py` | divergence (C1) and retrieval (C5) head lists and the full 1,920-head ranking for cumulative ablation |
+| `build_decomposition_head_csvs.py`, `build_intersection_head_csv.py` | belief-unique / location-unique / shared decompositions and the C1 ∩ C2 set |
 | `build_code_head_csvs.py`, `build_gemma_head_sets.py` | code-domain and Gemma head sets from their CMA tests |
 | `build_significance_head_sets.py` | significance-count selection as an alternative to fingerprint top-k |
 | `random_baseline_ablation.py` | layer-matched random baseline for any head-set ablation (**GPU**) |
