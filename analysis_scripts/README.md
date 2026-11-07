@@ -1,125 +1,16 @@
-# analysis scripts
+# scripts
 
-post-hoc analysis tools for causal mediation experiments.
+Analysis entry points are mapped in the root `CLAUDE.md` ("Analysis pipeline" table).
+Experiment-to-script/output/report links are in [the evidence index](../docs/EXPERIMENTS.md);
+dated open work remains in [STATUS.md](../docs/STATUS.md). Check existing artifacts
+before proposing a repeat run, and leave uncertain provenance fields blank.
+Import conditions from `condition_registry.py`; import stats from
+`codebase/tasks/causal_analysis/statistical_testing.py`.
 
-## pooled statistical analysis
+Scripts that write to `results_for_pi/...` are writing to `writeups/results_for_pi/`
+(the root `results_for_pi` is a symlink, so HPC-side paths stay unchanged).
 
-`analyze_pooled_conditions.py` performs rigorous statistical testing across multiple experimental conditions and templates.
-
-### workflow
-
-**step 1: run all individual experiments**
-```bash
-cd codebase/tasks/causal_analysis
-
-# cross-belief condition (abstract context)
-python cma.py \
-  --use_template_system \
-  --context_type abstract \
-  --base_rule ABA \
-  --prompt_num 50 \
-  --model_type Qwen/Qwen2.5-14B-Instruct \
-  --template_names food_truck hair_styling object_relocation
-
-# within-belief condition (token context)
-python cma.py \
-  --use_template_system \
-  --context_type token \
-  --base_rule ABA \
-  --prompt_num 50 \
-  --model_type Qwen/Qwen2.5-14B-Instruct \
-  --template_names food_truck hair_styling object_relocation
-
-# control condition
-python cma.py \
-  --use_template_system \
-  --context_type control \
-  --base_rule ABA \
-  --prompt_num 50 \
-  --model_type Qwen/Qwen2.5-14B-Instruct \
-  --template_names food_truck hair_styling object_relocation
-```
-
-each run produces `causal_scores_per_sample.pt` in its result folder.
-
-**step 2: run pooled analysis**
-```bash
-python scripts/analyze_pooled_conditions.py \
-  --results_dir results/causal_analysis/cma \
-  --output_dir results/pooled_analysis \
-  --n_permutations 1000 \
-  --alpha 0.05
-```
-
-### what it does
-
-1. **discovers** all `causal_scores_per_sample.pt` files in results directory
-2. **groups** by condition (abstract → cross_belief, token → within_belief, etc)
-3. **pools** across templates (combines food_truck + hair_styling + object_relocation)
-4. **tests** each pooled condition with permutation testing + FDR correction
-5. **compares** conditions with differential testing (e.g., cross_belief vs control)
-
-### output structure
-
-```
-results/pooled_analysis/
-├── pooled_by_condition/
-│   ├── cross_belief_pooled_stats.csv        # all heads, pooled across templates
-│   ├── cross_belief_significant_heads.csv   # only significant heads
-│   ├── within_belief_pooled_stats.csv
-│   ├── within_belief_significant_heads.csv
-│   ├── control_pooled_stats.csv
-│   └── control_significant_heads.csv
-├── differential_tests/
-│   ├── cross_belief_vs_control_differential.csv
-│   ├── cross_belief_vs_control_significant_differential.csv
-│   ├── cross_belief_vs_within_belief_differential.csv
-│   └── cross_belief_vs_within_belief_significant_differential.csv
-└── pooled_analysis_summary.txt              # human-readable summary
-```
-
-### interpreting results
-
-**pooled condition tests** answer: "which heads are significant for this condition?"
-- `cross_belief_significant_heads.csv`: heads that causally matter for belief-type distinction
-- column `observed_score`: mean causal mediation effect
-- column `q_value`: FDR-corrected p-value
-
-**differential tests** answer: "which heads are SPECIFIC to this condition?"
-- `cross_belief_vs_control_significant_differential.csv`: heads more important for cross-belief than control
-- column `differential_effect`: difference in causal scores between conditions
-- column `q_value`: FDR-corrected p-value for the difference
-
-### workflow notes
-
-some example claim: "layers 29-35, heads 30-34 support belief tracking"
-
-**statistical support**:
-1. open `cross_belief_vs_control_significant_differential.csv`
-2. filter for layers 29-35, heads 30-34
-3. verify `q_value < 0.05` and `differential_effect > 0`
-4. report: "N heads in layers 29-35 showed significantly greater activation during cross-belief patching compared to control (permutation test, FDR-corrected p < 0.05, differential effect = X.XX)"
-
-### advanced usage
-
-**custom differential tests**:
-```bash
-python scripts/analyze_pooled_conditions.py \
-  --results_dir results/ \
-  --differential_tests cross_belief:control cross_belief:within_belief control:within_belief
-```
-
-**more permutations for higher precision**:
-```bash
-python scripts/analyze_pooled_conditions.py \
-  --results_dir results/ \
-  --n_permutations 10000 \
-  --alpha 0.01
-```
-
-**analyze specific conditions only**:
-```bash
-python scripts/analyze_pooled_conditions.py \
-  --results_dir results/ \
-  --conditions cross_belief control
-```
+Legacy (old C-numbering, "C8" = C5; don't use for new results): `build_c8_comparison.py`,
+`compare_bf_conditions.py`, `build_qmd.py`, `build_pi_qmd.py`, `build_pi_results.py`.
+The previous README (pooled-analysis workflow with removed `context_type token`) is in
+`archive/scripts_README_old.md`.

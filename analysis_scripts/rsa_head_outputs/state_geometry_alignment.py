@@ -48,18 +48,22 @@ Inputs:
   results/rsa_head_outputs/activations_code_divergence/code_divergence.pt
   fingerprints + perhead_geometry.csv (head sets, as in the subset split)
 
-Outputs (results/rsa_head_outputs/state_geometry/):
+Outputs (results/rsa_head_outputs/state_geometry_{qwen,gemma}/):
   perhead_geometry_alignment.csv, summary printout,
-  figure results_for_pi/aggregation/state_geometry_alignment.png
+  figure results_for_pi/aggregation/state_geometry_alignment_{tag}.png
 """
 
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import dims as _dims  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 TOM_ACT = ROOT / "results/rsa_head_outputs/activations_full"
@@ -79,12 +83,12 @@ N_LAYERS, N_HEADS, D = 48, 40, 128
 NH = N_LAYERS * N_HEADS
 MODEL_TYPE = "Qwen2.5-14B-Instruct"
 GEMMA_DIR = None
+FIG_TAG = _dims.tag(MODEL_TYPE)
 
 
 def configure(model_type: str, gemma_dir=None):
     """Set the head-grid dimensions for `model_type` (see dims.py)."""
     global N_LAYERS, N_HEADS, D, NH, MODEL_TYPE, GEMMA_DIR
-    import dims as _dims
     d = _dims.for_model_type(model_type)
     N_LAYERS, N_HEADS, D, NH = d.n_layers, d.n_heads, d.head_dim, d.nh
     MODEL_TYPE, GEMMA_DIR = model_type, gemma_dir
@@ -145,7 +149,6 @@ def head_sets():
     div_unique/div_shared/dual_sig/address/random32 are bit-identical, and
     photo_C2 (added by the threeway script) is unchanged at 21 heads.
     """
-    import dims as _dims
     import head_sets_source as _hss
     d = _dims.for_model_type(MODEL_TYPE)
     return _hss.build(MODEL_TYPE, d, FP_DIR, gemma_dir=GEMMA_DIR,
@@ -168,6 +171,11 @@ def main():
                     help="dir holding gemma_c{1,2,5}_head_list.csv")
     args = ap.parse_args()
 
+    # Model-suffixed outputs: the un-suffixed dir let a Gemma run overwrite the
+    # Qwen one (see dims.tag). Qwen writes state_geometry_qwen/.
+    global OUT_DIR, FIG_TAG
+    FIG_TAG = _dims.tag(args.model_type)
+    OUT_DIR = OUT_DIR.with_name(f"{OUT_DIR.name}_{FIG_TAG}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     rng = np.random.default_rng(0)
@@ -449,7 +457,7 @@ def main():
     ax.set_xlabel("AUC: ToM true/false via code direction (zero-shot)")
     ax.set_title("cross-domain decoding"); ax.legend(fontsize=8, frameon=False)
     fig.tight_layout()
-    fig.savefig(FIG_DIR / "state_geometry_alignment.png", dpi=160)
+    fig.savefig(FIG_DIR / f"state_geometry_alignment_{FIG_TAG}.png", dpi=160)
     print(f"\nwrote -> {OUT_DIR}, figure -> {FIG_DIR}")
 
 

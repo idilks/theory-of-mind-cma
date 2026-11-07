@@ -1,0 +1,10 @@
+file,cell,pair,senders,receivers,component,path_effect,clean_margin,batch_clean_margin,receiver_delta_l2
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L44H15,k,0.125,-23.0,-23.25,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L45H38,k,0.125,-23.0,-23.25,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H10,q,0.125,-23.0,-23.25,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H25,k,0.125,-23.0,-23.25,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H25,v,-0.125,-23.0,-23.375,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H28,q,-0.125,-23.0,-23.375,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H34,q,-0.125,-23.0,-23.375,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H34,k,-0.125,-23.0,-23.375,[0.0]
+results/circuit/path_patching/union41_v2/C1_hair_styling_ABB/existing_candidates/pair_000006.json,C1_hair_styling_ABB,6,L36H34,L46H34,v,-0.125,-23.0,-23.375,[0.0]

@@ -94,6 +94,17 @@ CODE_SYSTEM_PROMPT = (
     "determines variable values. Answer with only the Python value, nothing else."
 )
 
+# Filler vocabulary for the position-matched pairs: comment lines are built
+# from words that tokenize to exactly one token with a leading space (checked
+# per tokenizer at CodeTemplateSystem init), so any token count is reachable.
+FILLER_WORD_CANDIDATES = (
+    "the quick brown fox jumps over lazy dogs today small green house river "
+    "stone light paper cloud water table chair window garden morning summer "
+    "winter music letter number simple always never under above").split()
+
+# Closing fence CodeGenerator._format_code_prompt appends after the snippet.
+CODE_BLOCK_CLOSE = "\n```"
+
 # Patch-position markers.
 COPY_MARKER = r"b = a\.copy\(\)"
 ALIAS_MARKER = r"b = a(?!\.)"
@@ -118,10 +129,16 @@ class CodeScenarioTemplate:
 class CodeTemplateSystem:
     """Generates indexed-list code-tracing CMA prompt pairs."""
 
-    def __init__(self, length_range=(4, 8), pool=None, answer_pool=None):
+    def __init__(self, length_range=(4, 8), pool=None, answer_pool=None, tokenizer=None):
         self.length_range = length_range
         self.pool = pool if pool is not None else CODE_VALUE_POOL
         self.answer_pool = answer_pool if answer_pool is not None else self.pool
+        # Only the position-matched pairs need a tokenizer (filler sizing).
+        self.tokenizer = tokenizer
+        self.filler_words = (
+            [w for w in FILLER_WORD_CANDIDATES
+             if len(tokenizer(" " + w, add_special_tokens=False)["input_ids"]) == 1]
+            if tokenizer is not None else list(FILLER_WORD_CANDIDATES))
         self.templates = {
             "indexed_list": CodeScenarioTemplate(
                 name="indexed_list",
@@ -148,10 +165,10 @@ class CodeTemplateSystem:
         items[idx] = orig_value
         return "[" + ", ".join(f"'{c}'" for c in items) + "]"
 
-    def _render_scenario(self, fillers, idx, orig, kind, mut):
+    def _render_scenario(self, fillers, idx, orig, kind, mut, mut_var="a"):
         body = "b = a.copy()" if kind == "copy" else "b = a"
         init = self._render_init(fillers, idx, orig)
-        return f"a = {init}\n{body}\na[{idx}] = '{mut}'"
+        return f"a = {init}\n{body}\n{mut_var}[{idx}] = '{mut}'"
 
     @staticmethod
     def _quoted(c):
@@ -241,6 +258,267 @@ class CodeTemplateSystem:
         return (base, exp,
                 self._quoted(x), self._quoted(y),
                 self._quoted(x), self._question(idx))
+
+    # ---- mutate-b pairs (Sept 2026: veracity vs read site) ----------------
+    #
+    # Where b[idx] is read from: the init list iff b is a copy AND the
+    # mutation hits a; otherwise the mutation line. With only `a` mutated
+    # (all other conditions) copy/alias and read site are locked together;
+    # letting the mutation hit `b` unlocks them. code_abstract (ABA) factors
+    # exactly through the (copy, mutate b) cell:
+    #   code_abstract base --site_only--> (copy, mutate b) --veracity_only--> code_abstract exp
+
+    def _sample_clean_setup(self):
+        """Like _sample_pair_setup, but fillers never equal X or Y."""
+        length, idx, x, y, _ = self._sample_pair_setup()
+        filler_pool = [c for c in self.pool if c not in (x, y)]
+        return idx, x, y, [random.choice(filler_pool) for _ in range(length)]
+
+    @staticmethod
+    def _require_copy_base(base_rule, name):
+        if base_rule != "ABA":
+            raise ValueError(
+                f"{name} is defined only with a copy prompt as base "
+                f"(base_rule=ABA), got {base_rule}")
+
+    def generate_veracity_only_pair(
+        self, template_name: str, base_rule: str
+    ) -> Tuple[str, str, str, str, str, str]:
+        """Copy/alias status differs; read site (mutation line) and answer
+        (=Y) are the same. Prompts differ only in `.copy()` and the mutated
+        variable name.
+
+            base=(orig=X, copy,  b[idx]=Y);  exp=(orig=X, alias, a[idx]=Y)
+
+        Transferring "b is a separate copy" into exp (whose mutation hits a)
+        predicts the init value X; transferring "read the mutation line"
+        predicts Y (no change). One direction only: a receiving copy prompt
+        in which copy status matters reads from the list, and no alias
+        prompt reads from the list.
+        """
+        self._check_template(template_name)
+        self._require_copy_base(base_rule, "code_veracity_only")
+        idx, x, y, fillers = self._sample_clean_setup()
+        base = self._render_scenario(fillers, idx, x, "copy", y, mut_var="b")
+        exp = self._render_scenario(fillers, idx, x, "alias", y, mut_var="a")
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(idx))
+
+    def generate_site_only_pair(
+        self, template_name: str, base_rule: str, reverse: bool = False
+    ) -> Tuple[str, str, str, str, str, str]:
+        """Read site differs; copy status (both copy) and answer (=Y) are
+        the same.
+
+            list side     = (orig=Y, copy, a[idx]=X)  -> Y from the init list
+            mutation side = (orig=X, copy, b[idx]=Y)  -> Y from the mutation line
+
+        Forward: base=list side, exp=mutation side. reverse swaps them.
+        Either way causal = X = the letter exp holds at base's read site.
+        """
+        self._check_template(template_name)
+        self._require_copy_base(base_rule, "code_site_only")
+        idx, x, y, fillers = self._sample_clean_setup()
+        list_side = self._render_scenario(fillers, idx, y, "copy", x, mut_var="a")
+        mut_side = self._render_scenario(fillers, idx, x, "copy", y, mut_var="b")
+        base, exp = (mut_side, list_side) if reverse else (list_side, mut_side)
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(idx))
+
+    # ---- position-matched one-element pairs (Sept 2026 pilot) -------------
+    #
+    # One-element lists (index selection removed). Copy prompt reads the
+    # answer from the init list, alias prompt from the mutation line, as in
+    # code_abstract. EVERY prompt carries a prefix and a suffix comment block,
+    # so the two conditions have the same block count, filler amount and
+    # total length; they differ only in where the filler sits relative to
+    # the answer:
+    #
+    #   matched     copy:  [F k1] a=['Y'] b=a.copy() a[0]='X' [F k2]
+    #               alias: [F k3] a=['X'] b=a        a[0]='Y' [F k4]
+    #               k1 > k3 and k4 > k2 solved with the tokenizer so the
+    #               answer-token index AND the total length are equal
+    #   unmatched   both:  [F kbar] core [F kbar']  with kbar=(k1+k3)/2,
+    #               kbar'=(k2+k4)/2 -> same total length as matched, answer
+    #               positions differ by the natural copy/alias offset
+    #
+    # Both prompts answer Y; causal = X (the copy/alias flip, as code_abstract).
+
+    POS_BASE_WORDS = 4  # words in the shorter block of each matched pair
+
+    def _filler_line(self, n_words):
+        return "# " + " ".join(random.choice(self.filler_words) for _ in range(n_words))
+
+    def _tok_len(self, text):
+        # Sized in the context the prompt formatter embeds the block in: a
+        # trailing quote merges with the following newline ("'\n") while a
+        # comment does not, so lengths must be equalised WITH the fence.
+        return len(self.tokenizer(text + CODE_BLOCK_CLOSE, add_special_tokens=False)["input_ids"])
+
+    def _answer_token_index(self, code, answer_char):
+        """Index of the token containing the (unique) answer letter."""
+        assert code.count(answer_char) == 1, (code, answer_char)
+        pos = code.index(answer_char)
+        enc = self.tokenizer(code, add_special_tokens=False, return_offsets_mapping=True)
+        for i, (a, b) in enumerate(enc["offset_mapping"]):
+            if a <= pos < b:
+                return i
+        raise ValueError("answer char not covered by any token")
+
+    def _size_filler(self, make_code, target_fn, target, max_words=40):
+        """Smallest word count n for which target_fn(make_code(filler_n))
+        == target; returns (n, filler). Comment lines add one token per
+        word plus '#' and newline, so n is searched upward from 0."""
+        for n in range(0, max_words + 1):
+            filler = self._filler_line(n)
+            if target_fn(make_code(filler)) == target:
+                return n, filler
+        raise ValueError(f"could not size filler to hit target {target}")
+
+    def generate_pos_matched_pair(
+        self, template_name: str, base_rule: str, matched: bool = True
+    ) -> Tuple[str, str, str, str, str, str]:
+        """base_rule ABA: copy donor -> alias recipient; ABB: the reverse.
+        Requires a tokenizer (filler sizing)."""
+        self._check_template(template_name)
+        if self.tokenizer is None:
+            raise ValueError("generate_pos_matched_pair needs CodeTemplateSystem(tokenizer=...)")
+        x, y = random.sample(self.answer_pool, 2)
+        copy_core = f"a = ['{y}']\nb = a.copy()\na[0] = '{x}'"
+        alias_core = f"a = ['{x}']\nb = a\na[0] = '{y}'"
+        wrap = lambda pre, core, suf: f"{pre}\n{core}\n{suf}"
+
+        # Matched sizes: alias gets the short prefix (k3) and the copy prompt
+        # gets the short suffix (k2); k1 aligns the answer token, k4 the length.
+        k3 = k2 = self.POS_BASE_WORDS
+        f3, f2 = self._filler_line(k3), self._filler_line(k2)
+        alias_pre = wrap(f3, alias_core, "")
+        k1, f1 = self._size_filler(
+            lambda f: wrap(f, copy_core, ""),
+            lambda c: self._answer_token_index(c, y),
+            self._answer_token_index(alias_pre, y))
+        copy_code = wrap(f1, copy_core, f2)
+        k4, f4 = self._size_filler(
+            lambda f: wrap(f3, alias_core, f),
+            self._tok_len,
+            self._tok_len(copy_code))
+        alias_code = wrap(f3, alias_core, f4)
+
+        if not matched:
+            # Same filler amount, placed identically in both prompts.
+            kbar, kbar2 = round((k1 + k3) / 2), round((k2 + k4) / 2)
+            fa, fb = self._filler_line(kbar), self._filler_line(kbar2)
+            copy_code = wrap(fa, copy_core, fb)
+            alias_code = wrap(fa, alias_core, fb)
+
+        if base_rule == "ABA":
+            base, exp = copy_code, alias_code
+        elif base_rule == "ABB":
+            base, exp = alias_code, copy_code
+        else:
+            raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(0))
+
+
+    # ---- two-mutation pairs (Sept 2026: index contrast) --------------------
+
+    def _sample_two_mut_setup(self):
+        """Per-pair setup for two-mutation prompts: two distinct indices
+        (p, q), answer letters (X, Y), a shared mutation/placeholder letter H,
+        and fillers that avoid X, Y, H so neither answer letter appears
+        anywhere except its designated slot."""
+        length = random.randint(*self.length_range)
+        p, q = random.sample(range(length), 2)
+        x, y = random.sample(self.answer_pool, 2)
+        h = random.choice([c for c in self.pool if c not in (x, y)])
+        filler_pool = [c for c in self.pool if c not in (x, y, h)]
+        fillers = [random.choice(filler_pool) for _ in range(length)]
+        return p, q, x, y, h, fillers
+
+    def _render_two_mut(self, fillers, init_vals, kind, mut_vals, descending=False):
+        """init_vals / mut_vals: {index: letter} for the two target indices.
+        Mutation lines are emitted in ascending index order unless
+        `descending`."""
+        items = list(fillers)
+        for i, c in init_vals.items():
+            items[i] = c
+        init = "[" + ", ".join(f"'{c}'" for c in items) + "]"
+        body = "b = a.copy()" if kind == "copy" else "b = a"
+        muts = "\n".join(f"a[{i}] = '{mut_vals[i]}'"
+                         for i in sorted(mut_vals, reverse=descending))
+        return f"a = {init}\n{body}\n{muts}"
+
+    def generate_index_pair(
+        self, template_name: str, base_rule: str, flip_order: bool = False
+    ) -> Tuple[str, str, str, str, str, str, str]:
+        """Index contrast: copy/alias kind AND answer (=Y) held fixed; only
+        the queried index differs (base asks b[p], exp asks b[q]). Both
+        indices are mutated in both prompts. causal = X = the letter exp
+        holds at index p, so transferring "retrieve index p" predicts X while
+        transferring the answer identity predicts Y (no change).
+
+        ABA (copy→copy): answers live in the init list; mutations write H.
+            base init {p:Y, q:X}; exp init {p:X, q:Y}.
+        ABB (alias→alias): answers live on the mutation lines; init holds H.
+            base muts {p:Y, q:X}; exp muts {p:X, q:Y}.
+
+        flip_order: base emits its mutation lines in descending index order,
+        exp ascending, so index p sits on a different line in each prompt.
+        Under alias a transferred index key still predicts X, but a
+        transferred line position lands on exp's index-q line (=Y, no
+        change). Not diagnostic under copy (retrieval reads the list).
+
+        Returns a 7-tuple: the question differs between base and exp.
+        """
+        self._check_template(template_name)
+        p, q, x, y, h, fillers = self._sample_two_mut_setup()
+
+        answers_base, answers_exp = {p: y, q: x}, {p: x, q: y}
+        placeholder = {p: h, q: h}
+        if base_rule == "ABA":
+            base = self._render_two_mut(fillers, answers_base, "copy", placeholder,
+                                        descending=flip_order)
+            exp = self._render_two_mut(fillers, answers_exp, "copy", placeholder)
+        elif base_rule == "ABB":
+            base = self._render_two_mut(fillers, placeholder, "alias", answers_base,
+                                        descending=flip_order)
+            exp = self._render_two_mut(fillers, placeholder, "alias", answers_exp)
+        else:
+            raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
+
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(p), self._question(q))
+
+    def generate_abstract_two_mut_pair(
+        self, template_name: str, base_rule: str
+    ) -> Tuple[str, str, str, str, str, str]:
+        """code_abstract in the two-mutation format, so the copy/alias
+        contrast can be compared with the index contrast without a prompt-
+        format difference. Target index p behaves exactly as in
+        generate_abstract_pair; index q is a distractor (init filler,
+        mutated to H) identical in both prompts.
+        """
+        self._check_template(template_name)
+        p, q, x, y, h, fillers = self._sample_two_mut_setup()
+        f_q = fillers[q]
+
+        copy_side = self._render_two_mut(fillers, {p: y, q: f_q}, "copy", {p: x, q: h})
+        alias_side = self._render_two_mut(fillers, {p: x, q: f_q}, "alias", {p: y, q: h})
+        if base_rule == "ABA":
+            base, exp = copy_side, alias_side
+        elif base_rule == "ABB":
+            base, exp = alias_side, copy_side
+        else:
+            raise ValueError(f"base_rule must be ABA or ABB, got {base_rule}")
+
+        return (base, exp,
+                self._quoted(y), self._quoted(y),
+                self._quoted(x), self._question(p))
 
 
 # ---------------------------------------------------------------------------

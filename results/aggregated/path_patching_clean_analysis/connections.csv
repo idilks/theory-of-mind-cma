@@ -1,0 +1,2219 @@
+sender,control,membership,scope,component,receiver_layer,receiver_index,receiver,aliases
+L28H13,L28H24,photo,existing_candidates,q,42,6,L42H6,L42H6
+L28H13,L28H24,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L28H13,L28H24,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L28H13,L28H24,photo,existing_candidates,q,42,7,L42H7,L42H7
+L28H13,L28H24,photo,existing_candidates,q,42,21,L42H21,L42H21
+L28H13,L28H24,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L28H13,L28H24,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L28H13,L28H24,photo,existing_candidates,q,43,16,L43H16,L43H16
+L28H13,L28H24,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L28H13,L28H24,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L28H13,L28H24,photo,existing_candidates,q,43,30,L43H30,L43H30
+L28H13,L28H24,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H13,L28H24,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H13,L28H24,photo,existing_candidates,q,43,32,L43H32,L43H32
+L28H13,L28H24,photo,existing_candidates,q,43,34,L43H34,L43H34
+L28H13,L28H24,photo,existing_candidates,q,43,36,L43H36,L43H36
+L28H13,L28H24,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L28H13,L28H24,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L28H13,L28H24,photo,existing_candidates,q,44,14,L44H14,L44H14
+L28H13,L28H24,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L28H13,L28H24,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L28H13,L28H24,photo,existing_candidates,q,44,15,L44H15,L44H15
+L28H13,L28H24,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H13,L28H24,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H13,L28H24,photo,existing_candidates,q,44,16,L44H16,L44H16
+L28H13,L28H24,photo,existing_candidates,q,44,18,L44H18,L44H18
+L28H13,L28H24,photo,existing_candidates,q,44,29,L44H29,L44H29
+L28H13,L28H24,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L28H13,L28H24,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L28H13,L28H24,photo,existing_candidates,q,45,27,L45H27,L45H27
+L28H13,L28H24,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L28H13,L28H24,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L28H13,L28H24,photo,existing_candidates,q,45,29,L45H29,L45H29
+L28H13,L28H24,photo,existing_candidates,q,45,38,L45H38,L45H38
+L28H13,L28H24,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L28H13,L28H24,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L28H13,L28H24,photo,existing_candidates,q,46,3,L46H3,L46H3
+L28H13,L28H24,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L28H13,L28H24,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L28H13,L28H24,photo,existing_candidates,q,46,10,L46H10,L46H10
+L28H13,L28H24,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H13,L28H24,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H13,L28H24,photo,existing_candidates,q,46,11,L46H11,L46H11
+L28H13,L28H24,photo,existing_candidates,q,46,12,L46H12,L46H12
+L28H13,L28H24,photo,existing_candidates,q,46,13,L46H13,L46H13
+L28H13,L28H24,photo,existing_candidates,q,46,14,L46H14,L46H14
+L28H13,L28H24,photo,existing_candidates,q,46,25,L46H25,L46H25
+L28H13,L28H24,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H13,L28H24,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H13,L28H24,photo,existing_candidates,q,46,27,L46H27,L46H27
+L28H13,L28H24,photo,existing_candidates,q,46,28,L46H28,L46H28
+L28H13,L28H24,photo,existing_candidates,q,46,34,L46H34,L46H34
+L28H13,L28H24,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L28H13,L28H24,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L28H14,L28H20,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L28H14,L28H20,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L28H14,L28H20,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L28H14,L28H20,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L28H14,L28H20,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L28H14,L28H20,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L28H14,L28H20,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L28H14,L28H20,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L28H14,L28H20,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L28H14,L28H20,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L28H14,L28H20,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L28H14,L28H20,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H14,L28H20,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H14,L28H20,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L28H14,L28H20,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L28H14,L28H20,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L28H14,L28H20,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L28H14,L28H20,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L28H14,L28H20,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L28H14,L28H20,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L28H14,L28H20,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L28H14,L28H20,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L28H14,L28H20,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H14,L28H20,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H14,L28H20,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L28H14,L28H20,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L28H14,L28H20,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L28H14,L28H20,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L28H14,L28H20,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L28H14,L28H20,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L28H14,L28H20,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L28H14,L28H20,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L28H14,L28H20,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L28H14,L28H20,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L28H14,L28H20,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L28H14,L28H20,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L28H14,L28H20,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L28H14,L28H20,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L28H14,L28H20,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H14,L28H20,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L28H14,L28H20,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H14,L28H20,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L28H14,L28H20,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L28H14,L28H20,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L28H14,L28H20,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L28H35,L28H11,photo,existing_candidates,q,42,6,L42H6,L42H6
+L28H35,L28H11,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L28H35,L28H11,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L28H35,L28H11,photo,existing_candidates,q,42,7,L42H7,L42H7
+L28H35,L28H11,photo,existing_candidates,q,42,21,L42H21,L42H21
+L28H35,L28H11,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L28H35,L28H11,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L28H35,L28H11,photo,existing_candidates,q,43,16,L43H16,L43H16
+L28H35,L28H11,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L28H35,L28H11,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L28H35,L28H11,photo,existing_candidates,q,43,30,L43H30,L43H30
+L28H35,L28H11,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H35,L28H11,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H35,L28H11,photo,existing_candidates,q,43,32,L43H32,L43H32
+L28H35,L28H11,photo,existing_candidates,q,43,34,L43H34,L43H34
+L28H35,L28H11,photo,existing_candidates,q,43,36,L43H36,L43H36
+L28H35,L28H11,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L28H35,L28H11,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L28H35,L28H11,photo,existing_candidates,q,44,14,L44H14,L44H14
+L28H35,L28H11,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L28H35,L28H11,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L28H35,L28H11,photo,existing_candidates,q,44,15,L44H15,L44H15
+L28H35,L28H11,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H35,L28H11,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H35,L28H11,photo,existing_candidates,q,44,16,L44H16,L44H16
+L28H35,L28H11,photo,existing_candidates,q,44,18,L44H18,L44H18
+L28H35,L28H11,photo,existing_candidates,q,44,29,L44H29,L44H29
+L28H35,L28H11,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L28H35,L28H11,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L28H35,L28H11,photo,existing_candidates,q,45,27,L45H27,L45H27
+L28H35,L28H11,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L28H35,L28H11,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L28H35,L28H11,photo,existing_candidates,q,45,29,L45H29,L45H29
+L28H35,L28H11,photo,existing_candidates,q,45,38,L45H38,L45H38
+L28H35,L28H11,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L28H35,L28H11,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L28H35,L28H11,photo,existing_candidates,q,46,3,L46H3,L46H3
+L28H35,L28H11,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L28H35,L28H11,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L28H35,L28H11,photo,existing_candidates,q,46,10,L46H10,L46H10
+L28H35,L28H11,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H35,L28H11,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H35,L28H11,photo,existing_candidates,q,46,11,L46H11,L46H11
+L28H35,L28H11,photo,existing_candidates,q,46,12,L46H12,L46H12
+L28H35,L28H11,photo,existing_candidates,q,46,13,L46H13,L46H13
+L28H35,L28H11,photo,existing_candidates,q,46,14,L46H14,L46H14
+L28H35,L28H11,photo,existing_candidates,q,46,25,L46H25,L46H25
+L28H35,L28H11,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H35,L28H11,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H35,L28H11,photo,existing_candidates,q,46,27,L46H27,L46H27
+L28H35,L28H11,photo,existing_candidates,q,46,28,L46H28,L46H28
+L28H35,L28H11,photo,existing_candidates,q,46,34,L46H34,L46H34
+L28H35,L28H11,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L28H35,L28H11,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L28H37,L28H3,photo,existing_candidates,q,42,6,L42H6,L42H6
+L28H37,L28H3,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L28H37,L28H3,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L28H37,L28H3,photo,existing_candidates,q,42,7,L42H7,L42H7
+L28H37,L28H3,photo,existing_candidates,q,42,21,L42H21,L42H21
+L28H37,L28H3,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L28H37,L28H3,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L28H37,L28H3,photo,existing_candidates,q,43,16,L43H16,L43H16
+L28H37,L28H3,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L28H37,L28H3,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L28H37,L28H3,photo,existing_candidates,q,43,30,L43H30,L43H30
+L28H37,L28H3,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H37,L28H3,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H37,L28H3,photo,existing_candidates,q,43,32,L43H32,L43H32
+L28H37,L28H3,photo,existing_candidates,q,43,34,L43H34,L43H34
+L28H37,L28H3,photo,existing_candidates,q,43,36,L43H36,L43H36
+L28H37,L28H3,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L28H37,L28H3,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L28H37,L28H3,photo,existing_candidates,q,44,14,L44H14,L44H14
+L28H37,L28H3,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L28H37,L28H3,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L28H37,L28H3,photo,existing_candidates,q,44,15,L44H15,L44H15
+L28H37,L28H3,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H37,L28H3,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H37,L28H3,photo,existing_candidates,q,44,16,L44H16,L44H16
+L28H37,L28H3,photo,existing_candidates,q,44,18,L44H18,L44H18
+L28H37,L28H3,photo,existing_candidates,q,44,29,L44H29,L44H29
+L28H37,L28H3,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L28H37,L28H3,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L28H37,L28H3,photo,existing_candidates,q,45,27,L45H27,L45H27
+L28H37,L28H3,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L28H37,L28H3,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L28H37,L28H3,photo,existing_candidates,q,45,29,L45H29,L45H29
+L28H37,L28H3,photo,existing_candidates,q,45,38,L45H38,L45H38
+L28H37,L28H3,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L28H37,L28H3,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L28H37,L28H3,photo,existing_candidates,q,46,3,L46H3,L46H3
+L28H37,L28H3,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L28H37,L28H3,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L28H37,L28H3,photo,existing_candidates,q,46,10,L46H10,L46H10
+L28H37,L28H3,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H37,L28H3,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H37,L28H3,photo,existing_candidates,q,46,11,L46H11,L46H11
+L28H37,L28H3,photo,existing_candidates,q,46,12,L46H12,L46H12
+L28H37,L28H3,photo,existing_candidates,q,46,13,L46H13,L46H13
+L28H37,L28H3,photo,existing_candidates,q,46,14,L46H14,L46H14
+L28H37,L28H3,photo,existing_candidates,q,46,25,L46H25,L46H25
+L28H37,L28H3,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H37,L28H3,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H37,L28H3,photo,existing_candidates,q,46,27,L46H27,L46H27
+L28H37,L28H3,photo,existing_candidates,q,46,28,L46H28,L46H28
+L28H37,L28H3,photo,existing_candidates,q,46,34,L46H34,L46H34
+L28H37,L28H3,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L28H37,L28H3,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L28H38,L28H17,photo,existing_candidates,q,42,6,L42H6,L42H6
+L28H38,L28H17,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L28H38,L28H17,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L28H38,L28H17,photo,existing_candidates,q,42,7,L42H7,L42H7
+L28H38,L28H17,photo,existing_candidates,q,42,21,L42H21,L42H21
+L28H38,L28H17,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L28H38,L28H17,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L28H38,L28H17,photo,existing_candidates,q,43,16,L43H16,L43H16
+L28H38,L28H17,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L28H38,L28H17,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L28H38,L28H17,photo,existing_candidates,q,43,30,L43H30,L43H30
+L28H38,L28H17,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H38,L28H17,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L28H38,L28H17,photo,existing_candidates,q,43,32,L43H32,L43H32
+L28H38,L28H17,photo,existing_candidates,q,43,34,L43H34,L43H34
+L28H38,L28H17,photo,existing_candidates,q,43,36,L43H36,L43H36
+L28H38,L28H17,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L28H38,L28H17,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L28H38,L28H17,photo,existing_candidates,q,44,14,L44H14,L44H14
+L28H38,L28H17,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L28H38,L28H17,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L28H38,L28H17,photo,existing_candidates,q,44,15,L44H15,L44H15
+L28H38,L28H17,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H38,L28H17,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L28H38,L28H17,photo,existing_candidates,q,44,16,L44H16,L44H16
+L28H38,L28H17,photo,existing_candidates,q,44,18,L44H18,L44H18
+L28H38,L28H17,photo,existing_candidates,q,44,29,L44H29,L44H29
+L28H38,L28H17,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L28H38,L28H17,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L28H38,L28H17,photo,existing_candidates,q,45,27,L45H27,L45H27
+L28H38,L28H17,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L28H38,L28H17,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L28H38,L28H17,photo,existing_candidates,q,45,29,L45H29,L45H29
+L28H38,L28H17,photo,existing_candidates,q,45,38,L45H38,L45H38
+L28H38,L28H17,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L28H38,L28H17,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L28H38,L28H17,photo,existing_candidates,q,46,3,L46H3,L46H3
+L28H38,L28H17,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L28H38,L28H17,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L28H38,L28H17,photo,existing_candidates,q,46,10,L46H10,L46H10
+L28H38,L28H17,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H38,L28H17,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L28H38,L28H17,photo,existing_candidates,q,46,11,L46H11,L46H11
+L28H38,L28H17,photo,existing_candidates,q,46,12,L46H12,L46H12
+L28H38,L28H17,photo,existing_candidates,q,46,13,L46H13,L46H13
+L28H38,L28H17,photo,existing_candidates,q,46,14,L46H14,L46H14
+L28H38,L28H17,photo,existing_candidates,q,46,25,L46H25,L46H25
+L28H38,L28H17,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H38,L28H17,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L28H38,L28H17,photo,existing_candidates,q,46,27,L46H27,L46H27
+L28H38,L28H17,photo,existing_candidates,q,46,28,L46H28,L46H28
+L28H38,L28H17,photo,existing_candidates,q,46,34,L46H34,L46H34
+L28H38,L28H17,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L28H38,L28H17,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L29H11,L29H15,belief,existing_candidates,q,42,6,L42H6,L42H6
+L29H11,L29H15,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L29H11,L29H15,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L29H11,L29H15,belief,existing_candidates,q,42,7,L42H7,L42H7
+L29H11,L29H15,belief,existing_candidates,q,42,21,L42H21,L42H21
+L29H11,L29H15,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L29H11,L29H15,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L29H11,L29H15,belief,existing_candidates,q,43,16,L43H16,L43H16
+L29H11,L29H15,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L29H11,L29H15,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L29H11,L29H15,belief,existing_candidates,q,43,30,L43H30,L43H30
+L29H11,L29H15,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H11,L29H15,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H11,L29H15,belief,existing_candidates,q,43,32,L43H32,L43H32
+L29H11,L29H15,belief,existing_candidates,q,43,34,L43H34,L43H34
+L29H11,L29H15,belief,existing_candidates,q,43,36,L43H36,L43H36
+L29H11,L29H15,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L29H11,L29H15,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L29H11,L29H15,belief,existing_candidates,q,44,14,L44H14,L44H14
+L29H11,L29H15,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L29H11,L29H15,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L29H11,L29H15,belief,existing_candidates,q,44,15,L44H15,L44H15
+L29H11,L29H15,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H11,L29H15,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H11,L29H15,belief,existing_candidates,q,44,16,L44H16,L44H16
+L29H11,L29H15,belief,existing_candidates,q,44,18,L44H18,L44H18
+L29H11,L29H15,belief,existing_candidates,q,44,29,L44H29,L44H29
+L29H11,L29H15,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L29H11,L29H15,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L29H11,L29H15,belief,existing_candidates,q,45,27,L45H27,L45H27
+L29H11,L29H15,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L29H11,L29H15,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L29H11,L29H15,belief,existing_candidates,q,45,29,L45H29,L45H29
+L29H11,L29H15,belief,existing_candidates,q,45,38,L45H38,L45H38
+L29H11,L29H15,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L29H11,L29H15,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L29H11,L29H15,belief,existing_candidates,q,46,3,L46H3,L46H3
+L29H11,L29H15,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L29H11,L29H15,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L29H11,L29H15,belief,existing_candidates,q,46,10,L46H10,L46H10
+L29H11,L29H15,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H11,L29H15,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H11,L29H15,belief,existing_candidates,q,46,11,L46H11,L46H11
+L29H11,L29H15,belief,existing_candidates,q,46,12,L46H12,L46H12
+L29H11,L29H15,belief,existing_candidates,q,46,13,L46H13,L46H13
+L29H11,L29H15,belief,existing_candidates,q,46,14,L46H14,L46H14
+L29H11,L29H15,belief,existing_candidates,q,46,25,L46H25,L46H25
+L29H11,L29H15,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H11,L29H15,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H11,L29H15,belief,existing_candidates,q,46,27,L46H27,L46H27
+L29H11,L29H15,belief,existing_candidates,q,46,28,L46H28,L46H28
+L29H11,L29H15,belief,existing_candidates,q,46,34,L46H34,L46H34
+L29H11,L29H15,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L29H11,L29H15,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L29H31,L29H16,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L29H31,L29H16,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L29H31,L29H16,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L29H31,L29H16,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L29H31,L29H16,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L29H31,L29H16,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L29H31,L29H16,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L29H31,L29H16,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L29H31,L29H16,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L29H31,L29H16,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L29H31,L29H16,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L29H31,L29H16,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H31,L29H16,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H31,L29H16,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L29H31,L29H16,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L29H31,L29H16,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L29H31,L29H16,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L29H31,L29H16,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L29H31,L29H16,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L29H31,L29H16,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L29H31,L29H16,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L29H31,L29H16,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L29H31,L29H16,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H31,L29H16,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H31,L29H16,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L29H31,L29H16,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L29H31,L29H16,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L29H31,L29H16,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L29H31,L29H16,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L29H31,L29H16,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L29H31,L29H16,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L29H31,L29H16,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L29H31,L29H16,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L29H31,L29H16,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L29H31,L29H16,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L29H31,L29H16,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L29H31,L29H16,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L29H31,L29H16,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L29H31,L29H16,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H31,L29H16,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L29H31,L29H16,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H31,L29H16,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L29H31,L29H16,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L29H31,L29H16,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L29H31,L29H16,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L29H34,L29H0,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L29H34,L29H0,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L29H34,L29H0,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L29H34,L29H0,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L29H34,L29H0,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L29H34,L29H0,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L29H34,L29H0,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L29H34,L29H0,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L29H34,L29H0,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L29H34,L29H0,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L29H34,L29H0,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L29H34,L29H0,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H34,L29H0,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L29H34,L29H0,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L29H34,L29H0,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L29H34,L29H0,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L29H34,L29H0,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L29H34,L29H0,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L29H34,L29H0,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L29H34,L29H0,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L29H34,L29H0,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L29H34,L29H0,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L29H34,L29H0,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H34,L29H0,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L29H34,L29H0,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L29H34,L29H0,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L29H34,L29H0,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L29H34,L29H0,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L29H34,L29H0,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L29H34,L29H0,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L29H34,L29H0,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L29H34,L29H0,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L29H34,L29H0,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L29H34,L29H0,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L29H34,L29H0,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L29H34,L29H0,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L29H34,L29H0,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L29H34,L29H0,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L29H34,L29H0,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H34,L29H0,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L29H34,L29H0,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H34,L29H0,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L29H34,L29H0,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L29H34,L29H0,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L29H34,L29H0,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L31H17,L31H39,belief,existing_candidates,q,42,6,L42H6,L42H6
+L31H17,L31H39,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L31H17,L31H39,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L31H17,L31H39,belief,existing_candidates,q,42,7,L42H7,L42H7
+L31H17,L31H39,belief,existing_candidates,q,42,21,L42H21,L42H21
+L31H17,L31H39,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L31H17,L31H39,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L31H17,L31H39,belief,existing_candidates,q,43,16,L43H16,L43H16
+L31H17,L31H39,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L31H17,L31H39,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L31H17,L31H39,belief,existing_candidates,q,43,30,L43H30,L43H30
+L31H17,L31H39,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H17,L31H39,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H17,L31H39,belief,existing_candidates,q,43,32,L43H32,L43H32
+L31H17,L31H39,belief,existing_candidates,q,43,34,L43H34,L43H34
+L31H17,L31H39,belief,existing_candidates,q,43,36,L43H36,L43H36
+L31H17,L31H39,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L31H17,L31H39,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L31H17,L31H39,belief,existing_candidates,q,44,14,L44H14,L44H14
+L31H17,L31H39,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L31H17,L31H39,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L31H17,L31H39,belief,existing_candidates,q,44,15,L44H15,L44H15
+L31H17,L31H39,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H17,L31H39,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H17,L31H39,belief,existing_candidates,q,44,16,L44H16,L44H16
+L31H17,L31H39,belief,existing_candidates,q,44,18,L44H18,L44H18
+L31H17,L31H39,belief,existing_candidates,q,44,29,L44H29,L44H29
+L31H17,L31H39,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L31H17,L31H39,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L31H17,L31H39,belief,existing_candidates,q,45,27,L45H27,L45H27
+L31H17,L31H39,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L31H17,L31H39,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L31H17,L31H39,belief,existing_candidates,q,45,29,L45H29,L45H29
+L31H17,L31H39,belief,existing_candidates,q,45,38,L45H38,L45H38
+L31H17,L31H39,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L31H17,L31H39,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L31H17,L31H39,belief,existing_candidates,q,46,3,L46H3,L46H3
+L31H17,L31H39,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L31H17,L31H39,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L31H17,L31H39,belief,existing_candidates,q,46,10,L46H10,L46H10
+L31H17,L31H39,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H17,L31H39,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H17,L31H39,belief,existing_candidates,q,46,11,L46H11,L46H11
+L31H17,L31H39,belief,existing_candidates,q,46,12,L46H12,L46H12
+L31H17,L31H39,belief,existing_candidates,q,46,13,L46H13,L46H13
+L31H17,L31H39,belief,existing_candidates,q,46,14,L46H14,L46H14
+L31H17,L31H39,belief,existing_candidates,q,46,25,L46H25,L46H25
+L31H17,L31H39,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H17,L31H39,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H17,L31H39,belief,existing_candidates,q,46,27,L46H27,L46H27
+L31H17,L31H39,belief,existing_candidates,q,46,28,L46H28,L46H28
+L31H17,L31H39,belief,existing_candidates,q,46,34,L46H34,L46H34
+L31H17,L31H39,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L31H17,L31H39,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L31H18,L31H8,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L31H18,L31H8,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L31H18,L31H8,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L31H18,L31H8,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L31H18,L31H8,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L31H18,L31H8,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L31H18,L31H8,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L31H18,L31H8,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L31H18,L31H8,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L31H18,L31H8,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L31H18,L31H8,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L31H18,L31H8,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H18,L31H8,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H18,L31H8,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L31H18,L31H8,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L31H18,L31H8,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L31H18,L31H8,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L31H18,L31H8,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L31H18,L31H8,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L31H18,L31H8,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L31H18,L31H8,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L31H18,L31H8,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L31H18,L31H8,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H18,L31H8,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H18,L31H8,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L31H18,L31H8,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L31H18,L31H8,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L31H18,L31H8,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L31H18,L31H8,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L31H18,L31H8,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L31H18,L31H8,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L31H18,L31H8,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L31H18,L31H8,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L31H18,L31H8,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L31H18,L31H8,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L31H18,L31H8,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L31H18,L31H8,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L31H18,L31H8,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L31H18,L31H8,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L31H18,L31H8,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L31H18,L31H8,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H18,L31H8,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H18,L31H8,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L31H18,L31H8,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L31H18,L31H8,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L31H18,L31H8,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L31H18,L31H8,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L31H18,L31H8,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H18,L31H8,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H18,L31H8,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L31H18,L31H8,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L31H18,L31H8,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L31H18,L31H8,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L31H18,L31H8,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L31H19,L31H3,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L31H19,L31H3,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L31H19,L31H3,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L31H19,L31H3,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L31H19,L31H3,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L31H19,L31H3,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L31H19,L31H3,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L31H19,L31H3,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L31H19,L31H3,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L31H19,L31H3,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L31H19,L31H3,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L31H19,L31H3,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H19,L31H3,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H19,L31H3,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L31H19,L31H3,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L31H19,L31H3,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L31H19,L31H3,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L31H19,L31H3,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L31H19,L31H3,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L31H19,L31H3,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L31H19,L31H3,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L31H19,L31H3,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L31H19,L31H3,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H19,L31H3,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H19,L31H3,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L31H19,L31H3,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L31H19,L31H3,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L31H19,L31H3,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L31H19,L31H3,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L31H19,L31H3,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L31H19,L31H3,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L31H19,L31H3,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L31H19,L31H3,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L31H19,L31H3,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L31H19,L31H3,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L31H19,L31H3,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L31H19,L31H3,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L31H19,L31H3,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L31H19,L31H3,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L31H19,L31H3,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L31H19,L31H3,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H19,L31H3,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H19,L31H3,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L31H19,L31H3,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L31H19,L31H3,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L31H19,L31H3,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L31H19,L31H3,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L31H19,L31H3,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H19,L31H3,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H19,L31H3,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L31H19,L31H3,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L31H19,L31H3,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L31H19,L31H3,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L31H19,L31H3,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L31H21,L31H12,belief,existing_candidates,q,42,6,L42H6,L42H6
+L31H21,L31H12,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L31H21,L31H12,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L31H21,L31H12,belief,existing_candidates,q,42,7,L42H7,L42H7
+L31H21,L31H12,belief,existing_candidates,q,42,21,L42H21,L42H21
+L31H21,L31H12,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L31H21,L31H12,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L31H21,L31H12,belief,existing_candidates,q,43,16,L43H16,L43H16
+L31H21,L31H12,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L31H21,L31H12,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L31H21,L31H12,belief,existing_candidates,q,43,30,L43H30,L43H30
+L31H21,L31H12,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H21,L31H12,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H21,L31H12,belief,existing_candidates,q,43,32,L43H32,L43H32
+L31H21,L31H12,belief,existing_candidates,q,43,34,L43H34,L43H34
+L31H21,L31H12,belief,existing_candidates,q,43,36,L43H36,L43H36
+L31H21,L31H12,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L31H21,L31H12,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L31H21,L31H12,belief,existing_candidates,q,44,14,L44H14,L44H14
+L31H21,L31H12,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L31H21,L31H12,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L31H21,L31H12,belief,existing_candidates,q,44,15,L44H15,L44H15
+L31H21,L31H12,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H21,L31H12,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H21,L31H12,belief,existing_candidates,q,44,16,L44H16,L44H16
+L31H21,L31H12,belief,existing_candidates,q,44,18,L44H18,L44H18
+L31H21,L31H12,belief,existing_candidates,q,44,29,L44H29,L44H29
+L31H21,L31H12,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L31H21,L31H12,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L31H21,L31H12,belief,existing_candidates,q,45,27,L45H27,L45H27
+L31H21,L31H12,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L31H21,L31H12,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L31H21,L31H12,belief,existing_candidates,q,45,29,L45H29,L45H29
+L31H21,L31H12,belief,existing_candidates,q,45,38,L45H38,L45H38
+L31H21,L31H12,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L31H21,L31H12,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L31H21,L31H12,belief,existing_candidates,q,46,3,L46H3,L46H3
+L31H21,L31H12,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L31H21,L31H12,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L31H21,L31H12,belief,existing_candidates,q,46,10,L46H10,L46H10
+L31H21,L31H12,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H21,L31H12,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H21,L31H12,belief,existing_candidates,q,46,11,L46H11,L46H11
+L31H21,L31H12,belief,existing_candidates,q,46,12,L46H12,L46H12
+L31H21,L31H12,belief,existing_candidates,q,46,13,L46H13,L46H13
+L31H21,L31H12,belief,existing_candidates,q,46,14,L46H14,L46H14
+L31H21,L31H12,belief,existing_candidates,q,46,25,L46H25,L46H25
+L31H21,L31H12,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H21,L31H12,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H21,L31H12,belief,existing_candidates,q,46,27,L46H27,L46H27
+L31H21,L31H12,belief,existing_candidates,q,46,28,L46H28,L46H28
+L31H21,L31H12,belief,existing_candidates,q,46,34,L46H34,L46H34
+L31H21,L31H12,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L31H21,L31H12,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L31H26,L31H23,photo,existing_candidates,q,42,6,L42H6,L42H6
+L31H26,L31H23,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L31H26,L31H23,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L31H26,L31H23,photo,existing_candidates,q,42,7,L42H7,L42H7
+L31H26,L31H23,photo,existing_candidates,q,42,21,L42H21,L42H21
+L31H26,L31H23,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L31H26,L31H23,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L31H26,L31H23,photo,existing_candidates,q,43,16,L43H16,L43H16
+L31H26,L31H23,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L31H26,L31H23,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L31H26,L31H23,photo,existing_candidates,q,43,30,L43H30,L43H30
+L31H26,L31H23,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H26,L31H23,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L31H26,L31H23,photo,existing_candidates,q,43,32,L43H32,L43H32
+L31H26,L31H23,photo,existing_candidates,q,43,34,L43H34,L43H34
+L31H26,L31H23,photo,existing_candidates,q,43,36,L43H36,L43H36
+L31H26,L31H23,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L31H26,L31H23,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L31H26,L31H23,photo,existing_candidates,q,44,14,L44H14,L44H14
+L31H26,L31H23,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L31H26,L31H23,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L31H26,L31H23,photo,existing_candidates,q,44,15,L44H15,L44H15
+L31H26,L31H23,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H26,L31H23,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L31H26,L31H23,photo,existing_candidates,q,44,16,L44H16,L44H16
+L31H26,L31H23,photo,existing_candidates,q,44,18,L44H18,L44H18
+L31H26,L31H23,photo,existing_candidates,q,44,29,L44H29,L44H29
+L31H26,L31H23,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L31H26,L31H23,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L31H26,L31H23,photo,existing_candidates,q,45,27,L45H27,L45H27
+L31H26,L31H23,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L31H26,L31H23,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L31H26,L31H23,photo,existing_candidates,q,45,29,L45H29,L45H29
+L31H26,L31H23,photo,existing_candidates,q,45,38,L45H38,L45H38
+L31H26,L31H23,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L31H26,L31H23,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L31H26,L31H23,photo,existing_candidates,q,46,3,L46H3,L46H3
+L31H26,L31H23,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L31H26,L31H23,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L31H26,L31H23,photo,existing_candidates,q,46,10,L46H10,L46H10
+L31H26,L31H23,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H26,L31H23,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L31H26,L31H23,photo,existing_candidates,q,46,11,L46H11,L46H11
+L31H26,L31H23,photo,existing_candidates,q,46,12,L46H12,L46H12
+L31H26,L31H23,photo,existing_candidates,q,46,13,L46H13,L46H13
+L31H26,L31H23,photo,existing_candidates,q,46,14,L46H14,L46H14
+L31H26,L31H23,photo,existing_candidates,q,46,25,L46H25,L46H25
+L31H26,L31H23,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H26,L31H23,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L31H26,L31H23,photo,existing_candidates,q,46,27,L46H27,L46H27
+L31H26,L31H23,photo,existing_candidates,q,46,28,L46H28,L46H28
+L31H26,L31H23,photo,existing_candidates,q,46,34,L46H34,L46H34
+L31H26,L31H23,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L31H26,L31H23,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L32H4,L32H7,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L32H4,L32H7,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H4,L32H7,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H4,L32H7,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L32H4,L32H7,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L32H4,L32H7,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L32H4,L32H7,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L32H4,L32H7,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L32H4,L32H7,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L32H4,L32H7,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L32H4,L32H7,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L32H4,L32H7,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H4,L32H7,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H4,L32H7,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L32H4,L32H7,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L32H4,L32H7,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L32H4,L32H7,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L32H4,L32H7,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L32H4,L32H7,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L32H4,L32H7,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L32H4,L32H7,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L32H4,L32H7,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L32H4,L32H7,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H4,L32H7,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H4,L32H7,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L32H4,L32H7,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L32H4,L32H7,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L32H4,L32H7,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L32H4,L32H7,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L32H4,L32H7,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L32H4,L32H7,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H4,L32H7,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H4,L32H7,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L32H4,L32H7,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L32H4,L32H7,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L32H4,L32H7,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L32H4,L32H7,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L32H4,L32H7,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L32H4,L32H7,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L32H4,L32H7,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L32H4,L32H7,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H4,L32H7,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H4,L32H7,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L32H4,L32H7,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L32H4,L32H7,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L32H4,L32H7,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L32H4,L32H7,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L32H4,L32H7,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H4,L32H7,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H4,L32H7,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L32H4,L32H7,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L32H4,L32H7,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L32H4,L32H7,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L32H4,L32H7,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L32H26,L32H13,belief,existing_candidates,q,42,6,L42H6,L42H6
+L32H26,L32H13,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H26,L32H13,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H26,L32H13,belief,existing_candidates,q,42,7,L42H7,L42H7
+L32H26,L32H13,belief,existing_candidates,q,42,21,L42H21,L42H21
+L32H26,L32H13,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L32H26,L32H13,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L32H26,L32H13,belief,existing_candidates,q,43,16,L43H16,L43H16
+L32H26,L32H13,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L32H26,L32H13,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L32H26,L32H13,belief,existing_candidates,q,43,30,L43H30,L43H30
+L32H26,L32H13,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H26,L32H13,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H26,L32H13,belief,existing_candidates,q,43,32,L43H32,L43H32
+L32H26,L32H13,belief,existing_candidates,q,43,34,L43H34,L43H34
+L32H26,L32H13,belief,existing_candidates,q,43,36,L43H36,L43H36
+L32H26,L32H13,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L32H26,L32H13,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L32H26,L32H13,belief,existing_candidates,q,44,14,L44H14,L44H14
+L32H26,L32H13,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L32H26,L32H13,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L32H26,L32H13,belief,existing_candidates,q,44,15,L44H15,L44H15
+L32H26,L32H13,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H26,L32H13,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H26,L32H13,belief,existing_candidates,q,44,16,L44H16,L44H16
+L32H26,L32H13,belief,existing_candidates,q,44,18,L44H18,L44H18
+L32H26,L32H13,belief,existing_candidates,q,44,29,L44H29,L44H29
+L32H26,L32H13,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L32H26,L32H13,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L32H26,L32H13,belief,existing_candidates,q,45,27,L45H27,L45H27
+L32H26,L32H13,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H26,L32H13,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H26,L32H13,belief,existing_candidates,q,45,29,L45H29,L45H29
+L32H26,L32H13,belief,existing_candidates,q,45,38,L45H38,L45H38
+L32H26,L32H13,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L32H26,L32H13,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L32H26,L32H13,belief,existing_candidates,q,46,3,L46H3,L46H3
+L32H26,L32H13,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L32H26,L32H13,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L32H26,L32H13,belief,existing_candidates,q,46,10,L46H10,L46H10
+L32H26,L32H13,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H26,L32H13,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H26,L32H13,belief,existing_candidates,q,46,11,L46H11,L46H11
+L32H26,L32H13,belief,existing_candidates,q,46,12,L46H12,L46H12
+L32H26,L32H13,belief,existing_candidates,q,46,13,L46H13,L46H13
+L32H26,L32H13,belief,existing_candidates,q,46,14,L46H14,L46H14
+L32H26,L32H13,belief,existing_candidates,q,46,25,L46H25,L46H25
+L32H26,L32H13,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H26,L32H13,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H26,L32H13,belief,existing_candidates,q,46,27,L46H27,L46H27
+L32H26,L32H13,belief,existing_candidates,q,46,28,L46H28,L46H28
+L32H26,L32H13,belief,existing_candidates,q,46,34,L46H34,L46H34
+L32H26,L32H13,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L32H26,L32H13,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L32H30,L32H10,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L32H30,L32H10,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H30,L32H10,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H30,L32H10,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L32H30,L32H10,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L32H30,L32H10,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L32H30,L32H10,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L32H30,L32H10,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L32H30,L32H10,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L32H30,L32H10,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L32H30,L32H10,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L32H30,L32H10,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H30,L32H10,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H30,L32H10,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L32H30,L32H10,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L32H30,L32H10,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L32H30,L32H10,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L32H30,L32H10,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L32H30,L32H10,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L32H30,L32H10,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L32H30,L32H10,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L32H30,L32H10,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L32H30,L32H10,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H30,L32H10,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H30,L32H10,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L32H30,L32H10,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L32H30,L32H10,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L32H30,L32H10,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L32H30,L32H10,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L32H30,L32H10,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L32H30,L32H10,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H30,L32H10,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H30,L32H10,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L32H30,L32H10,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L32H30,L32H10,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L32H30,L32H10,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L32H30,L32H10,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L32H30,L32H10,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L32H30,L32H10,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H30,L32H10,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L32H30,L32H10,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H30,L32H10,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L32H30,L32H10,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L32H30,L32H10,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L32H30,L32H10,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L32H32,L32H17,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L32H32,L32H17,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H32,L32H17,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H32,L32H17,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L32H32,L32H17,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L32H32,L32H17,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L32H32,L32H17,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L32H32,L32H17,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L32H32,L32H17,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L32H32,L32H17,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L32H32,L32H17,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L32H32,L32H17,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H32,L32H17,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H32,L32H17,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L32H32,L32H17,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L32H32,L32H17,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L32H32,L32H17,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L32H32,L32H17,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L32H32,L32H17,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L32H32,L32H17,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L32H32,L32H17,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L32H32,L32H17,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L32H32,L32H17,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H32,L32H17,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H32,L32H17,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L32H32,L32H17,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L32H32,L32H17,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L32H32,L32H17,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L32H32,L32H17,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L32H32,L32H17,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L32H32,L32H17,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H32,L32H17,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H32,L32H17,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L32H32,L32H17,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L32H32,L32H17,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L32H32,L32H17,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L32H32,L32H17,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L32H32,L32H17,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L32H32,L32H17,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L32H32,L32H17,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L32H32,L32H17,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H32,L32H17,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H32,L32H17,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L32H32,L32H17,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L32H32,L32H17,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L32H32,L32H17,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L32H32,L32H17,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L32H32,L32H17,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H32,L32H17,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H32,L32H17,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L32H32,L32H17,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L32H32,L32H17,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L32H32,L32H17,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L32H32,L32H17,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L32H33,L32H3,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L32H33,L32H3,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H33,L32H3,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H33,L32H3,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L32H33,L32H3,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L32H33,L32H3,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L32H33,L32H3,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L32H33,L32H3,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L32H33,L32H3,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L32H33,L32H3,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L32H33,L32H3,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L32H33,L32H3,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H33,L32H3,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H33,L32H3,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L32H33,L32H3,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L32H33,L32H3,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L32H33,L32H3,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L32H33,L32H3,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L32H33,L32H3,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L32H33,L32H3,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L32H33,L32H3,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L32H33,L32H3,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L32H33,L32H3,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H33,L32H3,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H33,L32H3,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L32H33,L32H3,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L32H33,L32H3,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L32H33,L32H3,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L32H33,L32H3,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L32H33,L32H3,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L32H33,L32H3,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H33,L32H3,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H33,L32H3,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L32H33,L32H3,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L32H33,L32H3,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L32H33,L32H3,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L32H33,L32H3,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L32H33,L32H3,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L32H33,L32H3,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H33,L32H3,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L32H33,L32H3,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H33,L32H3,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L32H33,L32H3,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L32H33,L32H3,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L32H33,L32H3,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L32H34,L32H39,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L32H34,L32H39,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L32H34,L32H39,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L32H34,L32H39,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L32H34,L32H39,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L32H34,L32H39,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L32H34,L32H39,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L32H34,L32H39,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L32H34,L32H39,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L32H34,L32H39,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L32H34,L32H39,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L32H34,L32H39,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H34,L32H39,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L32H34,L32H39,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L32H34,L32H39,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L32H34,L32H39,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L32H34,L32H39,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L32H34,L32H39,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L32H34,L32H39,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L32H34,L32H39,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L32H34,L32H39,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L32H34,L32H39,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L32H34,L32H39,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H34,L32H39,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L32H34,L32H39,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L32H34,L32H39,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L32H34,L32H39,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L32H34,L32H39,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L32H34,L32H39,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L32H34,L32H39,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L32H34,L32H39,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L32H34,L32H39,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L32H34,L32H39,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L32H34,L32H39,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L32H34,L32H39,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L32H34,L32H39,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L32H34,L32H39,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L32H34,L32H39,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L32H34,L32H39,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H34,L32H39,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L32H34,L32H39,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H34,L32H39,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L32H34,L32H39,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L32H34,L32H39,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L32H34,L32H39,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L33H1,L33H31,belief,existing_candidates,q,42,6,L42H6,L42H6
+L33H1,L33H31,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L33H1,L33H31,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L33H1,L33H31,belief,existing_candidates,q,42,7,L42H7,L42H7
+L33H1,L33H31,belief,existing_candidates,q,42,21,L42H21,L42H21
+L33H1,L33H31,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L33H1,L33H31,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L33H1,L33H31,belief,existing_candidates,q,43,16,L43H16,L43H16
+L33H1,L33H31,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L33H1,L33H31,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L33H1,L33H31,belief,existing_candidates,q,43,30,L43H30,L43H30
+L33H1,L33H31,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H1,L33H31,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H1,L33H31,belief,existing_candidates,q,43,32,L43H32,L43H32
+L33H1,L33H31,belief,existing_candidates,q,43,34,L43H34,L43H34
+L33H1,L33H31,belief,existing_candidates,q,43,36,L43H36,L43H36
+L33H1,L33H31,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L33H1,L33H31,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L33H1,L33H31,belief,existing_candidates,q,44,14,L44H14,L44H14
+L33H1,L33H31,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L33H1,L33H31,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L33H1,L33H31,belief,existing_candidates,q,44,15,L44H15,L44H15
+L33H1,L33H31,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H1,L33H31,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H1,L33H31,belief,existing_candidates,q,44,16,L44H16,L44H16
+L33H1,L33H31,belief,existing_candidates,q,44,18,L44H18,L44H18
+L33H1,L33H31,belief,existing_candidates,q,44,29,L44H29,L44H29
+L33H1,L33H31,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L33H1,L33H31,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L33H1,L33H31,belief,existing_candidates,q,45,27,L45H27,L45H27
+L33H1,L33H31,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L33H1,L33H31,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L33H1,L33H31,belief,existing_candidates,q,45,29,L45H29,L45H29
+L33H1,L33H31,belief,existing_candidates,q,45,38,L45H38,L45H38
+L33H1,L33H31,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L33H1,L33H31,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L33H1,L33H31,belief,existing_candidates,q,46,3,L46H3,L46H3
+L33H1,L33H31,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L33H1,L33H31,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L33H1,L33H31,belief,existing_candidates,q,46,10,L46H10,L46H10
+L33H1,L33H31,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H1,L33H31,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H1,L33H31,belief,existing_candidates,q,46,11,L46H11,L46H11
+L33H1,L33H31,belief,existing_candidates,q,46,12,L46H12,L46H12
+L33H1,L33H31,belief,existing_candidates,q,46,13,L46H13,L46H13
+L33H1,L33H31,belief,existing_candidates,q,46,14,L46H14,L46H14
+L33H1,L33H31,belief,existing_candidates,q,46,25,L46H25,L46H25
+L33H1,L33H31,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H1,L33H31,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H1,L33H31,belief,existing_candidates,q,46,27,L46H27,L46H27
+L33H1,L33H31,belief,existing_candidates,q,46,28,L46H28,L46H28
+L33H1,L33H31,belief,existing_candidates,q,46,34,L46H34,L46H34
+L33H1,L33H31,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L33H1,L33H31,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L33H2,L33H0,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L33H2,L33H0,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L33H2,L33H0,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L33H2,L33H0,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L33H2,L33H0,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L33H2,L33H0,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L33H2,L33H0,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L33H2,L33H0,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L33H2,L33H0,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L33H2,L33H0,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L33H2,L33H0,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L33H2,L33H0,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H2,L33H0,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H2,L33H0,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L33H2,L33H0,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L33H2,L33H0,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L33H2,L33H0,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L33H2,L33H0,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L33H2,L33H0,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L33H2,L33H0,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L33H2,L33H0,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L33H2,L33H0,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L33H2,L33H0,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H2,L33H0,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H2,L33H0,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L33H2,L33H0,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L33H2,L33H0,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L33H2,L33H0,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L33H2,L33H0,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L33H2,L33H0,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L33H2,L33H0,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L33H2,L33H0,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L33H2,L33H0,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L33H2,L33H0,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L33H2,L33H0,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L33H2,L33H0,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L33H2,L33H0,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L33H2,L33H0,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L33H2,L33H0,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L33H2,L33H0,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L33H2,L33H0,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H2,L33H0,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H2,L33H0,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L33H2,L33H0,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L33H2,L33H0,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L33H2,L33H0,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L33H2,L33H0,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L33H2,L33H0,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H2,L33H0,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H2,L33H0,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L33H2,L33H0,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L33H2,L33H0,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L33H2,L33H0,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L33H2,L33H0,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L33H3,L33H10,code,existing_candidates,q,42,6,L42H6,L42H6
+L33H3,L33H10,code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L33H3,L33H10,code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L33H3,L33H10,code,existing_candidates,q,42,7,L42H7,L42H7
+L33H3,L33H10,code,existing_candidates,q,42,21,L42H21,L42H21
+L33H3,L33H10,code,existing_candidates,k,42,4,L42KV4,L42H21
+L33H3,L33H10,code,existing_candidates,v,42,4,L42KV4,L42H21
+L33H3,L33H10,code,existing_candidates,q,43,16,L43H16,L43H16
+L33H3,L33H10,code,existing_candidates,k,43,3,L43KV3,L43H16
+L33H3,L33H10,code,existing_candidates,v,43,3,L43KV3,L43H16
+L33H3,L33H10,code,existing_candidates,q,43,30,L43H30,L43H30
+L33H3,L33H10,code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H3,L33H10,code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L33H3,L33H10,code,existing_candidates,q,43,32,L43H32,L43H32
+L33H3,L33H10,code,existing_candidates,q,43,34,L43H34,L43H34
+L33H3,L33H10,code,existing_candidates,q,43,36,L43H36,L43H36
+L33H3,L33H10,code,existing_candidates,k,43,7,L43KV7,L43H36
+L33H3,L33H10,code,existing_candidates,v,43,7,L43KV7,L43H36
+L33H3,L33H10,code,existing_candidates,q,44,14,L44H14,L44H14
+L33H3,L33H10,code,existing_candidates,k,44,2,L44KV2,L44H14
+L33H3,L33H10,code,existing_candidates,v,44,2,L44KV2,L44H14
+L33H3,L33H10,code,existing_candidates,q,44,15,L44H15,L44H15
+L33H3,L33H10,code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H3,L33H10,code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L33H3,L33H10,code,existing_candidates,q,44,16,L44H16,L44H16
+L33H3,L33H10,code,existing_candidates,q,44,18,L44H18,L44H18
+L33H3,L33H10,code,existing_candidates,q,44,29,L44H29,L44H29
+L33H3,L33H10,code,existing_candidates,k,44,5,L44KV5,L44H29
+L33H3,L33H10,code,existing_candidates,v,44,5,L44KV5,L44H29
+L33H3,L33H10,code,existing_candidates,q,45,27,L45H27,L45H27
+L33H3,L33H10,code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L33H3,L33H10,code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L33H3,L33H10,code,existing_candidates,q,45,29,L45H29,L45H29
+L33H3,L33H10,code,existing_candidates,q,45,38,L45H38,L45H38
+L33H3,L33H10,code,existing_candidates,k,45,7,L45KV7,L45H38
+L33H3,L33H10,code,existing_candidates,v,45,7,L45KV7,L45H38
+L33H3,L33H10,code,existing_candidates,q,46,3,L46H3,L46H3
+L33H3,L33H10,code,existing_candidates,k,46,0,L46KV0,L46H3
+L33H3,L33H10,code,existing_candidates,v,46,0,L46KV0,L46H3
+L33H3,L33H10,code,existing_candidates,q,46,10,L46H10,L46H10
+L33H3,L33H10,code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H3,L33H10,code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L33H3,L33H10,code,existing_candidates,q,46,11,L46H11,L46H11
+L33H3,L33H10,code,existing_candidates,q,46,12,L46H12,L46H12
+L33H3,L33H10,code,existing_candidates,q,46,13,L46H13,L46H13
+L33H3,L33H10,code,existing_candidates,q,46,14,L46H14,L46H14
+L33H3,L33H10,code,existing_candidates,q,46,25,L46H25,L46H25
+L33H3,L33H10,code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H3,L33H10,code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L33H3,L33H10,code,existing_candidates,q,46,27,L46H27,L46H27
+L33H3,L33H10,code,existing_candidates,q,46,28,L46H28,L46H28
+L33H3,L33H10,code,existing_candidates,q,46,34,L46H34,L46H34
+L33H3,L33H10,code,existing_candidates,k,46,6,L46KV6,L46H34
+L33H3,L33H10,code,existing_candidates,v,46,6,L46KV6,L46H34
+L34H29,L34H23,belief + code,existing_candidates,q,42,6,L42H6,L42H6
+L34H29,L34H23,belief + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L34H29,L34H23,belief + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L34H29,L34H23,belief + code,existing_candidates,q,42,7,L42H7,L42H7
+L34H29,L34H23,belief + code,existing_candidates,q,42,21,L42H21,L42H21
+L34H29,L34H23,belief + code,existing_candidates,k,42,4,L42KV4,L42H21
+L34H29,L34H23,belief + code,existing_candidates,v,42,4,L42KV4,L42H21
+L34H29,L34H23,belief + code,existing_candidates,q,43,16,L43H16,L43H16
+L34H29,L34H23,belief + code,existing_candidates,k,43,3,L43KV3,L43H16
+L34H29,L34H23,belief + code,existing_candidates,v,43,3,L43KV3,L43H16
+L34H29,L34H23,belief + code,existing_candidates,q,43,30,L43H30,L43H30
+L34H29,L34H23,belief + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L34H29,L34H23,belief + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L34H29,L34H23,belief + code,existing_candidates,q,43,32,L43H32,L43H32
+L34H29,L34H23,belief + code,existing_candidates,q,43,34,L43H34,L43H34
+L34H29,L34H23,belief + code,existing_candidates,q,43,36,L43H36,L43H36
+L34H29,L34H23,belief + code,existing_candidates,k,43,7,L43KV7,L43H36
+L34H29,L34H23,belief + code,existing_candidates,v,43,7,L43KV7,L43H36
+L34H29,L34H23,belief + code,existing_candidates,q,44,14,L44H14,L44H14
+L34H29,L34H23,belief + code,existing_candidates,k,44,2,L44KV2,L44H14
+L34H29,L34H23,belief + code,existing_candidates,v,44,2,L44KV2,L44H14
+L34H29,L34H23,belief + code,existing_candidates,q,44,15,L44H15,L44H15
+L34H29,L34H23,belief + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L34H29,L34H23,belief + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L34H29,L34H23,belief + code,existing_candidates,q,44,16,L44H16,L44H16
+L34H29,L34H23,belief + code,existing_candidates,q,44,18,L44H18,L44H18
+L34H29,L34H23,belief + code,existing_candidates,q,44,29,L44H29,L44H29
+L34H29,L34H23,belief + code,existing_candidates,k,44,5,L44KV5,L44H29
+L34H29,L34H23,belief + code,existing_candidates,v,44,5,L44KV5,L44H29
+L34H29,L34H23,belief + code,existing_candidates,q,45,27,L45H27,L45H27
+L34H29,L34H23,belief + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L34H29,L34H23,belief + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L34H29,L34H23,belief + code,existing_candidates,q,45,29,L45H29,L45H29
+L34H29,L34H23,belief + code,existing_candidates,q,45,38,L45H38,L45H38
+L34H29,L34H23,belief + code,existing_candidates,k,45,7,L45KV7,L45H38
+L34H29,L34H23,belief + code,existing_candidates,v,45,7,L45KV7,L45H38
+L34H29,L34H23,belief + code,existing_candidates,q,46,3,L46H3,L46H3
+L34H29,L34H23,belief + code,existing_candidates,k,46,0,L46KV0,L46H3
+L34H29,L34H23,belief + code,existing_candidates,v,46,0,L46KV0,L46H3
+L34H29,L34H23,belief + code,existing_candidates,q,46,10,L46H10,L46H10
+L34H29,L34H23,belief + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L34H29,L34H23,belief + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L34H29,L34H23,belief + code,existing_candidates,q,46,11,L46H11,L46H11
+L34H29,L34H23,belief + code,existing_candidates,q,46,12,L46H12,L46H12
+L34H29,L34H23,belief + code,existing_candidates,q,46,13,L46H13,L46H13
+L34H29,L34H23,belief + code,existing_candidates,q,46,14,L46H14,L46H14
+L34H29,L34H23,belief + code,existing_candidates,q,46,25,L46H25,L46H25
+L34H29,L34H23,belief + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L34H29,L34H23,belief + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L34H29,L34H23,belief + code,existing_candidates,q,46,27,L46H27,L46H27
+L34H29,L34H23,belief + code,existing_candidates,q,46,28,L46H28,L46H28
+L34H29,L34H23,belief + code,existing_candidates,q,46,34,L46H34,L46H34
+L34H29,L34H23,belief + code,existing_candidates,k,46,6,L46KV6,L46H34
+L34H29,L34H23,belief + code,existing_candidates,v,46,6,L46KV6,L46H34
+L35H30,L35H9,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L35H30,L35H9,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L35H30,L35H9,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L35H30,L35H9,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L35H30,L35H9,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L35H30,L35H9,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L35H30,L35H9,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L35H30,L35H9,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L35H30,L35H9,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L35H30,L35H9,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L35H30,L35H9,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L35H30,L35H9,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L35H30,L35H9,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L35H30,L35H9,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L35H30,L35H9,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L35H30,L35H9,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L35H30,L35H9,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L35H30,L35H9,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L35H30,L35H9,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L35H30,L35H9,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L35H30,L35H9,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L35H30,L35H9,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L35H30,L35H9,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L35H30,L35H9,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L35H30,L35H9,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L35H30,L35H9,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L35H30,L35H9,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L35H30,L35H9,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L35H30,L35H9,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L35H30,L35H9,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L35H30,L35H9,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L35H30,L35H9,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L35H30,L35H9,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L35H30,L35H9,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L35H30,L35H9,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L35H30,L35H9,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L35H30,L35H9,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L35H30,L35H9,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L35H30,L35H9,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L35H30,L35H9,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L35H30,L35H9,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L35H30,L35H9,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L35H30,L35H9,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L35H30,L35H9,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L35H30,L35H9,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L35H33,L35H39,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L35H33,L35H39,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L35H33,L35H39,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L35H33,L35H39,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L35H33,L35H39,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L35H33,L35H39,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L35H33,L35H39,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L35H33,L35H39,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L35H33,L35H39,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L35H33,L35H39,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L35H33,L35H39,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L35H33,L35H39,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L35H33,L35H39,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L35H33,L35H39,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L35H33,L35H39,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L35H33,L35H39,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L35H33,L35H39,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L35H33,L35H39,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L35H33,L35H39,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L35H33,L35H39,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L35H33,L35H39,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L35H33,L35H39,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L35H33,L35H39,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L35H33,L35H39,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L35H33,L35H39,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L35H33,L35H39,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L35H33,L35H39,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L35H33,L35H39,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L35H33,L35H39,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L35H33,L35H39,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L35H33,L35H39,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L35H33,L35H39,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L35H33,L35H39,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L35H33,L35H39,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L35H33,L35H39,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L35H33,L35H39,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L35H33,L35H39,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L35H33,L35H39,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L35H33,L35H39,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L35H33,L35H39,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L35H33,L35H39,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L35H33,L35H39,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L35H33,L35H39,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L35H33,L35H39,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L35H33,L35H39,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L36H10,L36H13,belief,existing_candidates,q,42,6,L42H6,L42H6
+L36H10,L36H13,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H10,L36H13,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H10,L36H13,belief,existing_candidates,q,42,7,L42H7,L42H7
+L36H10,L36H13,belief,existing_candidates,q,42,21,L42H21,L42H21
+L36H10,L36H13,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L36H10,L36H13,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L36H10,L36H13,belief,existing_candidates,q,43,16,L43H16,L43H16
+L36H10,L36H13,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L36H10,L36H13,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L36H10,L36H13,belief,existing_candidates,q,43,30,L43H30,L43H30
+L36H10,L36H13,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H10,L36H13,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H10,L36H13,belief,existing_candidates,q,43,32,L43H32,L43H32
+L36H10,L36H13,belief,existing_candidates,q,43,34,L43H34,L43H34
+L36H10,L36H13,belief,existing_candidates,q,43,36,L43H36,L43H36
+L36H10,L36H13,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L36H10,L36H13,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L36H10,L36H13,belief,existing_candidates,q,44,14,L44H14,L44H14
+L36H10,L36H13,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L36H10,L36H13,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L36H10,L36H13,belief,existing_candidates,q,44,15,L44H15,L44H15
+L36H10,L36H13,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H10,L36H13,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H10,L36H13,belief,existing_candidates,q,44,16,L44H16,L44H16
+L36H10,L36H13,belief,existing_candidates,q,44,18,L44H18,L44H18
+L36H10,L36H13,belief,existing_candidates,q,44,29,L44H29,L44H29
+L36H10,L36H13,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L36H10,L36H13,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L36H10,L36H13,belief,existing_candidates,q,45,27,L45H27,L45H27
+L36H10,L36H13,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H10,L36H13,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H10,L36H13,belief,existing_candidates,q,45,29,L45H29,L45H29
+L36H10,L36H13,belief,existing_candidates,q,45,38,L45H38,L45H38
+L36H10,L36H13,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L36H10,L36H13,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L36H10,L36H13,belief,existing_candidates,q,46,3,L46H3,L46H3
+L36H10,L36H13,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L36H10,L36H13,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L36H10,L36H13,belief,existing_candidates,q,46,10,L46H10,L46H10
+L36H10,L36H13,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H10,L36H13,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H10,L36H13,belief,existing_candidates,q,46,11,L46H11,L46H11
+L36H10,L36H13,belief,existing_candidates,q,46,12,L46H12,L46H12
+L36H10,L36H13,belief,existing_candidates,q,46,13,L46H13,L46H13
+L36H10,L36H13,belief,existing_candidates,q,46,14,L46H14,L46H14
+L36H10,L36H13,belief,existing_candidates,q,46,25,L46H25,L46H25
+L36H10,L36H13,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H10,L36H13,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H10,L36H13,belief,existing_candidates,q,46,27,L46H27,L46H27
+L36H10,L36H13,belief,existing_candidates,q,46,28,L46H28,L46H28
+L36H10,L36H13,belief,existing_candidates,q,46,34,L46H34,L46H34
+L36H10,L36H13,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L36H10,L36H13,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L36H12,L36H17,belief,existing_candidates,q,42,6,L42H6,L42H6
+L36H12,L36H17,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H12,L36H17,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H12,L36H17,belief,existing_candidates,q,42,7,L42H7,L42H7
+L36H12,L36H17,belief,existing_candidates,q,42,21,L42H21,L42H21
+L36H12,L36H17,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L36H12,L36H17,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L36H12,L36H17,belief,existing_candidates,q,43,16,L43H16,L43H16
+L36H12,L36H17,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L36H12,L36H17,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L36H12,L36H17,belief,existing_candidates,q,43,30,L43H30,L43H30
+L36H12,L36H17,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H12,L36H17,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H12,L36H17,belief,existing_candidates,q,43,32,L43H32,L43H32
+L36H12,L36H17,belief,existing_candidates,q,43,34,L43H34,L43H34
+L36H12,L36H17,belief,existing_candidates,q,43,36,L43H36,L43H36
+L36H12,L36H17,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L36H12,L36H17,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L36H12,L36H17,belief,existing_candidates,q,44,14,L44H14,L44H14
+L36H12,L36H17,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L36H12,L36H17,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L36H12,L36H17,belief,existing_candidates,q,44,15,L44H15,L44H15
+L36H12,L36H17,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H12,L36H17,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H12,L36H17,belief,existing_candidates,q,44,16,L44H16,L44H16
+L36H12,L36H17,belief,existing_candidates,q,44,18,L44H18,L44H18
+L36H12,L36H17,belief,existing_candidates,q,44,29,L44H29,L44H29
+L36H12,L36H17,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L36H12,L36H17,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L36H12,L36H17,belief,existing_candidates,q,45,27,L45H27,L45H27
+L36H12,L36H17,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H12,L36H17,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H12,L36H17,belief,existing_candidates,q,45,29,L45H29,L45H29
+L36H12,L36H17,belief,existing_candidates,q,45,38,L45H38,L45H38
+L36H12,L36H17,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L36H12,L36H17,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L36H12,L36H17,belief,existing_candidates,q,46,3,L46H3,L46H3
+L36H12,L36H17,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L36H12,L36H17,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L36H12,L36H17,belief,existing_candidates,q,46,10,L46H10,L46H10
+L36H12,L36H17,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H12,L36H17,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H12,L36H17,belief,existing_candidates,q,46,11,L46H11,L46H11
+L36H12,L36H17,belief,existing_candidates,q,46,12,L46H12,L46H12
+L36H12,L36H17,belief,existing_candidates,q,46,13,L46H13,L46H13
+L36H12,L36H17,belief,existing_candidates,q,46,14,L46H14,L46H14
+L36H12,L36H17,belief,existing_candidates,q,46,25,L46H25,L46H25
+L36H12,L36H17,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H12,L36H17,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H12,L36H17,belief,existing_candidates,q,46,27,L46H27,L46H27
+L36H12,L36H17,belief,existing_candidates,q,46,28,L46H28,L46H28
+L36H12,L36H17,belief,existing_candidates,q,46,34,L46H34,L46H34
+L36H12,L36H17,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L36H12,L36H17,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L36H21,L36H1,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L36H21,L36H1,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H21,L36H1,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H21,L36H1,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L36H21,L36H1,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L36H21,L36H1,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L36H21,L36H1,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L36H21,L36H1,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L36H21,L36H1,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L36H21,L36H1,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L36H21,L36H1,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L36H21,L36H1,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H21,L36H1,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H21,L36H1,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L36H21,L36H1,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L36H21,L36H1,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L36H21,L36H1,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L36H21,L36H1,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L36H21,L36H1,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L36H21,L36H1,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L36H21,L36H1,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L36H21,L36H1,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L36H21,L36H1,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H21,L36H1,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H21,L36H1,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L36H21,L36H1,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L36H21,L36H1,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L36H21,L36H1,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L36H21,L36H1,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L36H21,L36H1,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L36H21,L36H1,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H21,L36H1,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H21,L36H1,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L36H21,L36H1,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L36H21,L36H1,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L36H21,L36H1,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L36H21,L36H1,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L36H21,L36H1,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L36H21,L36H1,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L36H21,L36H1,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L36H21,L36H1,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H21,L36H1,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H21,L36H1,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L36H21,L36H1,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L36H21,L36H1,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L36H21,L36H1,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L36H21,L36H1,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L36H21,L36H1,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H21,L36H1,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H21,L36H1,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L36H21,L36H1,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L36H21,L36H1,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L36H21,L36H1,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L36H21,L36H1,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L36H22,L36H36,photo,existing_candidates,q,42,6,L42H6,L42H6
+L36H22,L36H36,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H22,L36H36,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H22,L36H36,photo,existing_candidates,q,42,7,L42H7,L42H7
+L36H22,L36H36,photo,existing_candidates,q,42,21,L42H21,L42H21
+L36H22,L36H36,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L36H22,L36H36,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L36H22,L36H36,photo,existing_candidates,q,43,16,L43H16,L43H16
+L36H22,L36H36,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L36H22,L36H36,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L36H22,L36H36,photo,existing_candidates,q,43,30,L43H30,L43H30
+L36H22,L36H36,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H22,L36H36,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H22,L36H36,photo,existing_candidates,q,43,32,L43H32,L43H32
+L36H22,L36H36,photo,existing_candidates,q,43,34,L43H34,L43H34
+L36H22,L36H36,photo,existing_candidates,q,43,36,L43H36,L43H36
+L36H22,L36H36,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L36H22,L36H36,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L36H22,L36H36,photo,existing_candidates,q,44,14,L44H14,L44H14
+L36H22,L36H36,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L36H22,L36H36,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L36H22,L36H36,photo,existing_candidates,q,44,15,L44H15,L44H15
+L36H22,L36H36,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H22,L36H36,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H22,L36H36,photo,existing_candidates,q,44,16,L44H16,L44H16
+L36H22,L36H36,photo,existing_candidates,q,44,18,L44H18,L44H18
+L36H22,L36H36,photo,existing_candidates,q,44,29,L44H29,L44H29
+L36H22,L36H36,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L36H22,L36H36,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L36H22,L36H36,photo,existing_candidates,q,45,27,L45H27,L45H27
+L36H22,L36H36,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H22,L36H36,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H22,L36H36,photo,existing_candidates,q,45,29,L45H29,L45H29
+L36H22,L36H36,photo,existing_candidates,q,45,38,L45H38,L45H38
+L36H22,L36H36,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L36H22,L36H36,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L36H22,L36H36,photo,existing_candidates,q,46,3,L46H3,L46H3
+L36H22,L36H36,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L36H22,L36H36,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L36H22,L36H36,photo,existing_candidates,q,46,10,L46H10,L46H10
+L36H22,L36H36,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H22,L36H36,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H22,L36H36,photo,existing_candidates,q,46,11,L46H11,L46H11
+L36H22,L36H36,photo,existing_candidates,q,46,12,L46H12,L46H12
+L36H22,L36H36,photo,existing_candidates,q,46,13,L46H13,L46H13
+L36H22,L36H36,photo,existing_candidates,q,46,14,L46H14,L46H14
+L36H22,L36H36,photo,existing_candidates,q,46,25,L46H25,L46H25
+L36H22,L36H36,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H22,L36H36,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H22,L36H36,photo,existing_candidates,q,46,27,L46H27,L46H27
+L36H22,L36H36,photo,existing_candidates,q,46,28,L46H28,L46H28
+L36H22,L36H36,photo,existing_candidates,q,46,34,L46H34,L46H34
+L36H22,L36H36,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L36H22,L36H36,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L36H23,L36H34,photo,existing_candidates,q,42,6,L42H6,L42H6
+L36H23,L36H34,photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H23,L36H34,photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H23,L36H34,photo,existing_candidates,q,42,7,L42H7,L42H7
+L36H23,L36H34,photo,existing_candidates,q,42,21,L42H21,L42H21
+L36H23,L36H34,photo,existing_candidates,k,42,4,L42KV4,L42H21
+L36H23,L36H34,photo,existing_candidates,v,42,4,L42KV4,L42H21
+L36H23,L36H34,photo,existing_candidates,q,43,16,L43H16,L43H16
+L36H23,L36H34,photo,existing_candidates,k,43,3,L43KV3,L43H16
+L36H23,L36H34,photo,existing_candidates,v,43,3,L43KV3,L43H16
+L36H23,L36H34,photo,existing_candidates,q,43,30,L43H30,L43H30
+L36H23,L36H34,photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H23,L36H34,photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H23,L36H34,photo,existing_candidates,q,43,32,L43H32,L43H32
+L36H23,L36H34,photo,existing_candidates,q,43,34,L43H34,L43H34
+L36H23,L36H34,photo,existing_candidates,q,43,36,L43H36,L43H36
+L36H23,L36H34,photo,existing_candidates,k,43,7,L43KV7,L43H36
+L36H23,L36H34,photo,existing_candidates,v,43,7,L43KV7,L43H36
+L36H23,L36H34,photo,existing_candidates,q,44,14,L44H14,L44H14
+L36H23,L36H34,photo,existing_candidates,k,44,2,L44KV2,L44H14
+L36H23,L36H34,photo,existing_candidates,v,44,2,L44KV2,L44H14
+L36H23,L36H34,photo,existing_candidates,q,44,15,L44H15,L44H15
+L36H23,L36H34,photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H23,L36H34,photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H23,L36H34,photo,existing_candidates,q,44,16,L44H16,L44H16
+L36H23,L36H34,photo,existing_candidates,q,44,18,L44H18,L44H18
+L36H23,L36H34,photo,existing_candidates,q,44,29,L44H29,L44H29
+L36H23,L36H34,photo,existing_candidates,k,44,5,L44KV5,L44H29
+L36H23,L36H34,photo,existing_candidates,v,44,5,L44KV5,L44H29
+L36H23,L36H34,photo,existing_candidates,q,45,27,L45H27,L45H27
+L36H23,L36H34,photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H23,L36H34,photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H23,L36H34,photo,existing_candidates,q,45,29,L45H29,L45H29
+L36H23,L36H34,photo,existing_candidates,q,45,38,L45H38,L45H38
+L36H23,L36H34,photo,existing_candidates,k,45,7,L45KV7,L45H38
+L36H23,L36H34,photo,existing_candidates,v,45,7,L45KV7,L45H38
+L36H23,L36H34,photo,existing_candidates,q,46,3,L46H3,L46H3
+L36H23,L36H34,photo,existing_candidates,k,46,0,L46KV0,L46H3
+L36H23,L36H34,photo,existing_candidates,v,46,0,L46KV0,L46H3
+L36H23,L36H34,photo,existing_candidates,q,46,10,L46H10,L46H10
+L36H23,L36H34,photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H23,L36H34,photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H23,L36H34,photo,existing_candidates,q,46,11,L46H11,L46H11
+L36H23,L36H34,photo,existing_candidates,q,46,12,L46H12,L46H12
+L36H23,L36H34,photo,existing_candidates,q,46,13,L46H13,L46H13
+L36H23,L36H34,photo,existing_candidates,q,46,14,L46H14,L46H14
+L36H23,L36H34,photo,existing_candidates,q,46,25,L46H25,L46H25
+L36H23,L36H34,photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H23,L36H34,photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H23,L36H34,photo,existing_candidates,q,46,27,L46H27,L46H27
+L36H23,L36H34,photo,existing_candidates,q,46,28,L46H28,L46H28
+L36H23,L36H34,photo,existing_candidates,q,46,34,L46H34,L46H34
+L36H23,L36H34,photo,existing_candidates,k,46,6,L46KV6,L46H34
+L36H23,L36H34,photo,existing_candidates,v,46,6,L46KV6,L46H34
+L36H24,L36H4,belief,existing_candidates,q,42,6,L42H6,L42H6
+L36H24,L36H4,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H24,L36H4,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H24,L36H4,belief,existing_candidates,q,42,7,L42H7,L42H7
+L36H24,L36H4,belief,existing_candidates,q,42,21,L42H21,L42H21
+L36H24,L36H4,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L36H24,L36H4,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L36H24,L36H4,belief,existing_candidates,q,43,16,L43H16,L43H16
+L36H24,L36H4,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L36H24,L36H4,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L36H24,L36H4,belief,existing_candidates,q,43,30,L43H30,L43H30
+L36H24,L36H4,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H24,L36H4,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H24,L36H4,belief,existing_candidates,q,43,32,L43H32,L43H32
+L36H24,L36H4,belief,existing_candidates,q,43,34,L43H34,L43H34
+L36H24,L36H4,belief,existing_candidates,q,43,36,L43H36,L43H36
+L36H24,L36H4,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L36H24,L36H4,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L36H24,L36H4,belief,existing_candidates,q,44,14,L44H14,L44H14
+L36H24,L36H4,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L36H24,L36H4,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L36H24,L36H4,belief,existing_candidates,q,44,15,L44H15,L44H15
+L36H24,L36H4,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H24,L36H4,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H24,L36H4,belief,existing_candidates,q,44,16,L44H16,L44H16
+L36H24,L36H4,belief,existing_candidates,q,44,18,L44H18,L44H18
+L36H24,L36H4,belief,existing_candidates,q,44,29,L44H29,L44H29
+L36H24,L36H4,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L36H24,L36H4,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L36H24,L36H4,belief,existing_candidates,q,45,27,L45H27,L45H27
+L36H24,L36H4,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H24,L36H4,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H24,L36H4,belief,existing_candidates,q,45,29,L45H29,L45H29
+L36H24,L36H4,belief,existing_candidates,q,45,38,L45H38,L45H38
+L36H24,L36H4,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L36H24,L36H4,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L36H24,L36H4,belief,existing_candidates,q,46,3,L46H3,L46H3
+L36H24,L36H4,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L36H24,L36H4,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L36H24,L36H4,belief,existing_candidates,q,46,10,L46H10,L46H10
+L36H24,L36H4,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H24,L36H4,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H24,L36H4,belief,existing_candidates,q,46,11,L46H11,L46H11
+L36H24,L36H4,belief,existing_candidates,q,46,12,L46H12,L46H12
+L36H24,L36H4,belief,existing_candidates,q,46,13,L46H13,L46H13
+L36H24,L36H4,belief,existing_candidates,q,46,14,L46H14,L46H14
+L36H24,L36H4,belief,existing_candidates,q,46,25,L46H25,L46H25
+L36H24,L36H4,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H24,L36H4,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H24,L36H4,belief,existing_candidates,q,46,27,L46H27,L46H27
+L36H24,L36H4,belief,existing_candidates,q,46,28,L46H28,L46H28
+L36H24,L36H4,belief,existing_candidates,q,46,34,L46H34,L46H34
+L36H24,L36H4,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L36H24,L36H4,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L36H30,L36H32,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L36H30,L36H32,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H30,L36H32,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H30,L36H32,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L36H30,L36H32,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L36H30,L36H32,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L36H30,L36H32,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L36H30,L36H32,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L36H30,L36H32,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L36H30,L36H32,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L36H30,L36H32,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L36H30,L36H32,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H30,L36H32,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H30,L36H32,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L36H30,L36H32,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L36H30,L36H32,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L36H30,L36H32,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L36H30,L36H32,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L36H30,L36H32,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L36H30,L36H32,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L36H30,L36H32,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L36H30,L36H32,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L36H30,L36H32,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H30,L36H32,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H30,L36H32,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L36H30,L36H32,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L36H30,L36H32,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L36H30,L36H32,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L36H30,L36H32,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L36H30,L36H32,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L36H30,L36H32,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H30,L36H32,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H30,L36H32,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L36H30,L36H32,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L36H30,L36H32,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L36H30,L36H32,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L36H30,L36H32,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L36H30,L36H32,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L36H30,L36H32,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L36H30,L36H32,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L36H30,L36H32,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H30,L36H32,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H30,L36H32,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L36H30,L36H32,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L36H30,L36H32,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L36H30,L36H32,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L36H30,L36H32,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L36H30,L36H32,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H30,L36H32,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H30,L36H32,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L36H30,L36H32,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L36H30,L36H32,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L36H30,L36H32,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L36H30,L36H32,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L36H33,L36H16,belief,existing_candidates,q,42,6,L42H6,L42H6
+L36H33,L36H16,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H33,L36H16,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H33,L36H16,belief,existing_candidates,q,42,7,L42H7,L42H7
+L36H33,L36H16,belief,existing_candidates,q,42,21,L42H21,L42H21
+L36H33,L36H16,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L36H33,L36H16,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L36H33,L36H16,belief,existing_candidates,q,43,16,L43H16,L43H16
+L36H33,L36H16,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L36H33,L36H16,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L36H33,L36H16,belief,existing_candidates,q,43,30,L43H30,L43H30
+L36H33,L36H16,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H33,L36H16,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H33,L36H16,belief,existing_candidates,q,43,32,L43H32,L43H32
+L36H33,L36H16,belief,existing_candidates,q,43,34,L43H34,L43H34
+L36H33,L36H16,belief,existing_candidates,q,43,36,L43H36,L43H36
+L36H33,L36H16,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L36H33,L36H16,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L36H33,L36H16,belief,existing_candidates,q,44,14,L44H14,L44H14
+L36H33,L36H16,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L36H33,L36H16,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L36H33,L36H16,belief,existing_candidates,q,44,15,L44H15,L44H15
+L36H33,L36H16,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H33,L36H16,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H33,L36H16,belief,existing_candidates,q,44,16,L44H16,L44H16
+L36H33,L36H16,belief,existing_candidates,q,44,18,L44H18,L44H18
+L36H33,L36H16,belief,existing_candidates,q,44,29,L44H29,L44H29
+L36H33,L36H16,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L36H33,L36H16,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L36H33,L36H16,belief,existing_candidates,q,45,27,L45H27,L45H27
+L36H33,L36H16,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H33,L36H16,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H33,L36H16,belief,existing_candidates,q,45,29,L45H29,L45H29
+L36H33,L36H16,belief,existing_candidates,q,45,38,L45H38,L45H38
+L36H33,L36H16,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L36H33,L36H16,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L36H33,L36H16,belief,existing_candidates,q,46,3,L46H3,L46H3
+L36H33,L36H16,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L36H33,L36H16,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L36H33,L36H16,belief,existing_candidates,q,46,10,L46H10,L46H10
+L36H33,L36H16,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H33,L36H16,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H33,L36H16,belief,existing_candidates,q,46,11,L46H11,L46H11
+L36H33,L36H16,belief,existing_candidates,q,46,12,L46H12,L46H12
+L36H33,L36H16,belief,existing_candidates,q,46,13,L46H13,L46H13
+L36H33,L36H16,belief,existing_candidates,q,46,14,L46H14,L46H14
+L36H33,L36H16,belief,existing_candidates,q,46,25,L46H25,L46H25
+L36H33,L36H16,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H33,L36H16,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H33,L36H16,belief,existing_candidates,q,46,27,L46H27,L46H27
+L36H33,L36H16,belief,existing_candidates,q,46,28,L46H28,L46H28
+L36H33,L36H16,belief,existing_candidates,q,46,34,L46H34,L46H34
+L36H33,L36H16,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L36H33,L36H16,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L36H37,L36H2,code,existing_candidates,q,42,6,L42H6,L42H6
+L36H37,L36H2,code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L36H37,L36H2,code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L36H37,L36H2,code,existing_candidates,q,42,7,L42H7,L42H7
+L36H37,L36H2,code,existing_candidates,q,42,21,L42H21,L42H21
+L36H37,L36H2,code,existing_candidates,k,42,4,L42KV4,L42H21
+L36H37,L36H2,code,existing_candidates,v,42,4,L42KV4,L42H21
+L36H37,L36H2,code,existing_candidates,q,43,16,L43H16,L43H16
+L36H37,L36H2,code,existing_candidates,k,43,3,L43KV3,L43H16
+L36H37,L36H2,code,existing_candidates,v,43,3,L43KV3,L43H16
+L36H37,L36H2,code,existing_candidates,q,43,30,L43H30,L43H30
+L36H37,L36H2,code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H37,L36H2,code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L36H37,L36H2,code,existing_candidates,q,43,32,L43H32,L43H32
+L36H37,L36H2,code,existing_candidates,q,43,34,L43H34,L43H34
+L36H37,L36H2,code,existing_candidates,q,43,36,L43H36,L43H36
+L36H37,L36H2,code,existing_candidates,k,43,7,L43KV7,L43H36
+L36H37,L36H2,code,existing_candidates,v,43,7,L43KV7,L43H36
+L36H37,L36H2,code,existing_candidates,q,44,14,L44H14,L44H14
+L36H37,L36H2,code,existing_candidates,k,44,2,L44KV2,L44H14
+L36H37,L36H2,code,existing_candidates,v,44,2,L44KV2,L44H14
+L36H37,L36H2,code,existing_candidates,q,44,15,L44H15,L44H15
+L36H37,L36H2,code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H37,L36H2,code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L36H37,L36H2,code,existing_candidates,q,44,16,L44H16,L44H16
+L36H37,L36H2,code,existing_candidates,q,44,18,L44H18,L44H18
+L36H37,L36H2,code,existing_candidates,q,44,29,L44H29,L44H29
+L36H37,L36H2,code,existing_candidates,k,44,5,L44KV5,L44H29
+L36H37,L36H2,code,existing_candidates,v,44,5,L44KV5,L44H29
+L36H37,L36H2,code,existing_candidates,q,45,27,L45H27,L45H27
+L36H37,L36H2,code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L36H37,L36H2,code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L36H37,L36H2,code,existing_candidates,q,45,29,L45H29,L45H29
+L36H37,L36H2,code,existing_candidates,q,45,38,L45H38,L45H38
+L36H37,L36H2,code,existing_candidates,k,45,7,L45KV7,L45H38
+L36H37,L36H2,code,existing_candidates,v,45,7,L45KV7,L45H38
+L36H37,L36H2,code,existing_candidates,q,46,3,L46H3,L46H3
+L36H37,L36H2,code,existing_candidates,k,46,0,L46KV0,L46H3
+L36H37,L36H2,code,existing_candidates,v,46,0,L46KV0,L46H3
+L36H37,L36H2,code,existing_candidates,q,46,10,L46H10,L46H10
+L36H37,L36H2,code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H37,L36H2,code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L36H37,L36H2,code,existing_candidates,q,46,11,L46H11,L46H11
+L36H37,L36H2,code,existing_candidates,q,46,12,L46H12,L46H12
+L36H37,L36H2,code,existing_candidates,q,46,13,L46H13,L46H13
+L36H37,L36H2,code,existing_candidates,q,46,14,L46H14,L46H14
+L36H37,L36H2,code,existing_candidates,q,46,25,L46H25,L46H25
+L36H37,L36H2,code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H37,L36H2,code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L36H37,L36H2,code,existing_candidates,q,46,27,L46H27,L46H27
+L36H37,L36H2,code,existing_candidates,q,46,28,L46H28,L46H28
+L36H37,L36H2,code,existing_candidates,q,46,34,L46H34,L46H34
+L36H37,L36H2,code,existing_candidates,k,46,6,L46KV6,L46H34
+L36H37,L36H2,code,existing_candidates,v,46,6,L46KV6,L46H34
+L37H15,L37H6,belief,existing_candidates,q,42,6,L42H6,L42H6
+L37H15,L37H6,belief,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L37H15,L37H6,belief,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L37H15,L37H6,belief,existing_candidates,q,42,7,L42H7,L42H7
+L37H15,L37H6,belief,existing_candidates,q,42,21,L42H21,L42H21
+L37H15,L37H6,belief,existing_candidates,k,42,4,L42KV4,L42H21
+L37H15,L37H6,belief,existing_candidates,v,42,4,L42KV4,L42H21
+L37H15,L37H6,belief,existing_candidates,q,43,16,L43H16,L43H16
+L37H15,L37H6,belief,existing_candidates,k,43,3,L43KV3,L43H16
+L37H15,L37H6,belief,existing_candidates,v,43,3,L43KV3,L43H16
+L37H15,L37H6,belief,existing_candidates,q,43,30,L43H30,L43H30
+L37H15,L37H6,belief,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L37H15,L37H6,belief,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L37H15,L37H6,belief,existing_candidates,q,43,32,L43H32,L43H32
+L37H15,L37H6,belief,existing_candidates,q,43,34,L43H34,L43H34
+L37H15,L37H6,belief,existing_candidates,q,43,36,L43H36,L43H36
+L37H15,L37H6,belief,existing_candidates,k,43,7,L43KV7,L43H36
+L37H15,L37H6,belief,existing_candidates,v,43,7,L43KV7,L43H36
+L37H15,L37H6,belief,existing_candidates,q,44,14,L44H14,L44H14
+L37H15,L37H6,belief,existing_candidates,k,44,2,L44KV2,L44H14
+L37H15,L37H6,belief,existing_candidates,v,44,2,L44KV2,L44H14
+L37H15,L37H6,belief,existing_candidates,q,44,15,L44H15,L44H15
+L37H15,L37H6,belief,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L37H15,L37H6,belief,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L37H15,L37H6,belief,existing_candidates,q,44,16,L44H16,L44H16
+L37H15,L37H6,belief,existing_candidates,q,44,18,L44H18,L44H18
+L37H15,L37H6,belief,existing_candidates,q,44,29,L44H29,L44H29
+L37H15,L37H6,belief,existing_candidates,k,44,5,L44KV5,L44H29
+L37H15,L37H6,belief,existing_candidates,v,44,5,L44KV5,L44H29
+L37H15,L37H6,belief,existing_candidates,q,45,27,L45H27,L45H27
+L37H15,L37H6,belief,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L37H15,L37H6,belief,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L37H15,L37H6,belief,existing_candidates,q,45,29,L45H29,L45H29
+L37H15,L37H6,belief,existing_candidates,q,45,38,L45H38,L45H38
+L37H15,L37H6,belief,existing_candidates,k,45,7,L45KV7,L45H38
+L37H15,L37H6,belief,existing_candidates,v,45,7,L45KV7,L45H38
+L37H15,L37H6,belief,existing_candidates,q,46,3,L46H3,L46H3
+L37H15,L37H6,belief,existing_candidates,k,46,0,L46KV0,L46H3
+L37H15,L37H6,belief,existing_candidates,v,46,0,L46KV0,L46H3
+L37H15,L37H6,belief,existing_candidates,q,46,10,L46H10,L46H10
+L37H15,L37H6,belief,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L37H15,L37H6,belief,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L37H15,L37H6,belief,existing_candidates,q,46,11,L46H11,L46H11
+L37H15,L37H6,belief,existing_candidates,q,46,12,L46H12,L46H12
+L37H15,L37H6,belief,existing_candidates,q,46,13,L46H13,L46H13
+L37H15,L37H6,belief,existing_candidates,q,46,14,L46H14,L46H14
+L37H15,L37H6,belief,existing_candidates,q,46,25,L46H25,L46H25
+L37H15,L37H6,belief,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L37H15,L37H6,belief,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L37H15,L37H6,belief,existing_candidates,q,46,27,L46H27,L46H27
+L37H15,L37H6,belief,existing_candidates,q,46,28,L46H28,L46H28
+L37H15,L37H6,belief,existing_candidates,q,46,34,L46H34,L46H34
+L37H15,L37H6,belief,existing_candidates,k,46,6,L46KV6,L46H34
+L37H15,L37H6,belief,existing_candidates,v,46,6,L46KV6,L46H34
+L38H31,L38H38,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L38H31,L38H38,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L38H31,L38H38,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L38H31,L38H38,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L38H31,L38H38,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L38H31,L38H38,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L38H31,L38H38,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L38H31,L38H38,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L38H31,L38H38,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L38H31,L38H38,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L38H31,L38H38,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L38H31,L38H38,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L38H31,L38H38,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L38H31,L38H38,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L38H31,L38H38,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L38H31,L38H38,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L38H31,L38H38,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L38H31,L38H38,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L38H31,L38H38,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L38H31,L38H38,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L38H31,L38H38,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L38H31,L38H38,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L38H31,L38H38,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L38H31,L38H38,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L38H31,L38H38,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L38H31,L38H38,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L38H31,L38H38,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L38H31,L38H38,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L38H31,L38H38,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L38H31,L38H38,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L38H31,L38H38,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L38H31,L38H38,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L38H31,L38H38,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L38H31,L38H38,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L38H31,L38H38,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L38H31,L38H38,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L38H31,L38H38,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L38H31,L38H38,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L38H31,L38H38,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L38H31,L38H38,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L38H31,L38H38,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L38H31,L38H38,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L38H31,L38H38,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L38H31,L38H38,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L38H31,L38H38,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L38H31,L38H38,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L38H31,L38H38,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L38H31,L38H38,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L38H31,L38H38,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L38H31,L38H38,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L38H31,L38H38,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L38H31,L38H38,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L38H31,L38H38,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L38H31,L38H38,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L38H33,L38H14,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L38H33,L38H14,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L38H33,L38H14,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L38H33,L38H14,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L38H33,L38H14,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L38H33,L38H14,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L38H33,L38H14,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L38H33,L38H14,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L38H33,L38H14,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L38H33,L38H14,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L38H33,L38H14,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L38H33,L38H14,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L38H33,L38H14,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L38H33,L38H14,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L38H33,L38H14,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L38H33,L38H14,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L38H33,L38H14,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L38H33,L38H14,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L38H33,L38H14,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L38H33,L38H14,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L38H33,L38H14,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L38H33,L38H14,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L38H33,L38H14,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L38H33,L38H14,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L38H33,L38H14,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L38H33,L38H14,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L38H33,L38H14,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L38H33,L38H14,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L38H33,L38H14,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L38H33,L38H14,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L38H33,L38H14,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L38H33,L38H14,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L38H33,L38H14,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L38H33,L38H14,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L38H33,L38H14,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L38H33,L38H14,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L38H33,L38H14,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L38H33,L38H14,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L38H33,L38H14,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L38H33,L38H14,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L38H33,L38H14,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L38H33,L38H14,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L38H33,L38H14,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L38H33,L38H14,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L38H33,L38H14,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L38H33,L38H14,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L38H33,L38H14,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L38H33,L38H14,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L38H33,L38H14,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L38H33,L38H14,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L38H33,L38H14,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L38H33,L38H14,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L38H33,L38H14,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L38H33,L38H14,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L39H20,L39H34,belief + photo,existing_candidates,q,42,6,L42H6,L42H6
+L39H20,L39H34,belief + photo,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L39H20,L39H34,belief + photo,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L39H20,L39H34,belief + photo,existing_candidates,q,42,7,L42H7,L42H7
+L39H20,L39H34,belief + photo,existing_candidates,q,42,21,L42H21,L42H21
+L39H20,L39H34,belief + photo,existing_candidates,k,42,4,L42KV4,L42H21
+L39H20,L39H34,belief + photo,existing_candidates,v,42,4,L42KV4,L42H21
+L39H20,L39H34,belief + photo,existing_candidates,q,43,16,L43H16,L43H16
+L39H20,L39H34,belief + photo,existing_candidates,k,43,3,L43KV3,L43H16
+L39H20,L39H34,belief + photo,existing_candidates,v,43,3,L43KV3,L43H16
+L39H20,L39H34,belief + photo,existing_candidates,q,43,30,L43H30,L43H30
+L39H20,L39H34,belief + photo,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L39H20,L39H34,belief + photo,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L39H20,L39H34,belief + photo,existing_candidates,q,43,32,L43H32,L43H32
+L39H20,L39H34,belief + photo,existing_candidates,q,43,34,L43H34,L43H34
+L39H20,L39H34,belief + photo,existing_candidates,q,43,36,L43H36,L43H36
+L39H20,L39H34,belief + photo,existing_candidates,k,43,7,L43KV7,L43H36
+L39H20,L39H34,belief + photo,existing_candidates,v,43,7,L43KV7,L43H36
+L39H20,L39H34,belief + photo,existing_candidates,q,44,14,L44H14,L44H14
+L39H20,L39H34,belief + photo,existing_candidates,k,44,2,L44KV2,L44H14
+L39H20,L39H34,belief + photo,existing_candidates,v,44,2,L44KV2,L44H14
+L39H20,L39H34,belief + photo,existing_candidates,q,44,15,L44H15,L44H15
+L39H20,L39H34,belief + photo,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L39H20,L39H34,belief + photo,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L39H20,L39H34,belief + photo,existing_candidates,q,44,16,L44H16,L44H16
+L39H20,L39H34,belief + photo,existing_candidates,q,44,18,L44H18,L44H18
+L39H20,L39H34,belief + photo,existing_candidates,q,44,29,L44H29,L44H29
+L39H20,L39H34,belief + photo,existing_candidates,k,44,5,L44KV5,L44H29
+L39H20,L39H34,belief + photo,existing_candidates,v,44,5,L44KV5,L44H29
+L39H20,L39H34,belief + photo,existing_candidates,q,45,27,L45H27,L45H27
+L39H20,L39H34,belief + photo,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L39H20,L39H34,belief + photo,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L39H20,L39H34,belief + photo,existing_candidates,q,45,29,L45H29,L45H29
+L39H20,L39H34,belief + photo,existing_candidates,q,45,38,L45H38,L45H38
+L39H20,L39H34,belief + photo,existing_candidates,k,45,7,L45KV7,L45H38
+L39H20,L39H34,belief + photo,existing_candidates,v,45,7,L45KV7,L45H38
+L39H20,L39H34,belief + photo,existing_candidates,q,46,3,L46H3,L46H3
+L39H20,L39H34,belief + photo,existing_candidates,k,46,0,L46KV0,L46H3
+L39H20,L39H34,belief + photo,existing_candidates,v,46,0,L46KV0,L46H3
+L39H20,L39H34,belief + photo,existing_candidates,q,46,10,L46H10,L46H10
+L39H20,L39H34,belief + photo,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L39H20,L39H34,belief + photo,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L39H20,L39H34,belief + photo,existing_candidates,q,46,11,L46H11,L46H11
+L39H20,L39H34,belief + photo,existing_candidates,q,46,12,L46H12,L46H12
+L39H20,L39H34,belief + photo,existing_candidates,q,46,13,L46H13,L46H13
+L39H20,L39H34,belief + photo,existing_candidates,q,46,14,L46H14,L46H14
+L39H20,L39H34,belief + photo,existing_candidates,q,46,25,L46H25,L46H25
+L39H20,L39H34,belief + photo,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L39H20,L39H34,belief + photo,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L39H20,L39H34,belief + photo,existing_candidates,q,46,27,L46H27,L46H27
+L39H20,L39H34,belief + photo,existing_candidates,q,46,28,L46H28,L46H28
+L39H20,L39H34,belief + photo,existing_candidates,q,46,34,L46H34,L46H34
+L39H20,L39H34,belief + photo,existing_candidates,k,46,6,L46KV6,L46H34
+L39H20,L39H34,belief + photo,existing_candidates,v,46,6,L46KV6,L46H34
+L39H23,L39H22,belief + photo + code,existing_candidates,q,42,6,L42H6,L42H6
+L39H23,L39H22,belief + photo + code,existing_candidates,k,42,1,L42KV1,L42H6;L42H7
+L39H23,L39H22,belief + photo + code,existing_candidates,v,42,1,L42KV1,L42H6;L42H7
+L39H23,L39H22,belief + photo + code,existing_candidates,q,42,7,L42H7,L42H7
+L39H23,L39H22,belief + photo + code,existing_candidates,q,42,21,L42H21,L42H21
+L39H23,L39H22,belief + photo + code,existing_candidates,k,42,4,L42KV4,L42H21
+L39H23,L39H22,belief + photo + code,existing_candidates,v,42,4,L42KV4,L42H21
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,16,L43H16,L43H16
+L39H23,L39H22,belief + photo + code,existing_candidates,k,43,3,L43KV3,L43H16
+L39H23,L39H22,belief + photo + code,existing_candidates,v,43,3,L43KV3,L43H16
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30
+L39H23,L39H22,belief + photo + code,existing_candidates,k,43,6,L43KV6,L43H30;L43H32;L43H34
+L39H23,L39H22,belief + photo + code,existing_candidates,v,43,6,L43KV6,L43H30;L43H32;L43H34
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,32,L43H32,L43H32
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,34,L43H34,L43H34
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,36,L43H36,L43H36
+L39H23,L39H22,belief + photo + code,existing_candidates,k,43,7,L43KV7,L43H36
+L39H23,L39H22,belief + photo + code,existing_candidates,v,43,7,L43KV7,L43H36
+L39H23,L39H22,belief + photo + code,existing_candidates,q,44,14,L44H14,L44H14
+L39H23,L39H22,belief + photo + code,existing_candidates,k,44,2,L44KV2,L44H14
+L39H23,L39H22,belief + photo + code,existing_candidates,v,44,2,L44KV2,L44H14
+L39H23,L39H22,belief + photo + code,existing_candidates,q,44,15,L44H15,L44H15
+L39H23,L39H22,belief + photo + code,existing_candidates,k,44,3,L44KV3,L44H15;L44H16;L44H18
+L39H23,L39H22,belief + photo + code,existing_candidates,v,44,3,L44KV3,L44H15;L44H16;L44H18
+L39H23,L39H22,belief + photo + code,existing_candidates,q,44,16,L44H16,L44H16
+L39H23,L39H22,belief + photo + code,existing_candidates,q,44,18,L44H18,L44H18
+L39H23,L39H22,belief + photo + code,existing_candidates,q,44,29,L44H29,L44H29
+L39H23,L39H22,belief + photo + code,existing_candidates,k,44,5,L44KV5,L44H29
+L39H23,L39H22,belief + photo + code,existing_candidates,v,44,5,L44KV5,L44H29
+L39H23,L39H22,belief + photo + code,existing_candidates,q,45,27,L45H27,L45H27
+L39H23,L39H22,belief + photo + code,existing_candidates,k,45,5,L45KV5,L45H27;L45H29
+L39H23,L39H22,belief + photo + code,existing_candidates,v,45,5,L45KV5,L45H27;L45H29
+L39H23,L39H22,belief + photo + code,existing_candidates,q,45,29,L45H29,L45H29
+L39H23,L39H22,belief + photo + code,existing_candidates,q,45,38,L45H38,L45H38
+L39H23,L39H22,belief + photo + code,existing_candidates,k,45,7,L45KV7,L45H38
+L39H23,L39H22,belief + photo + code,existing_candidates,v,45,7,L45KV7,L45H38
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,3,L46H3,L46H3
+L39H23,L39H22,belief + photo + code,existing_candidates,k,46,0,L46KV0,L46H3
+L39H23,L39H22,belief + photo + code,existing_candidates,v,46,0,L46KV0,L46H3
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,10,L46H10,L46H10
+L39H23,L39H22,belief + photo + code,existing_candidates,k,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L39H23,L39H22,belief + photo + code,existing_candidates,v,46,2,L46KV2,L46H10;L46H11;L46H12;L46H13;L46H14
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,11,L46H11,L46H11
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,12,L46H12,L46H12
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,13,L46H13,L46H13
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,14,L46H14,L46H14
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,25,L46H25,L46H25
+L39H23,L39H22,belief + photo + code,existing_candidates,k,46,5,L46KV5,L46H25;L46H27;L46H28
+L39H23,L39H22,belief + photo + code,existing_candidates,v,46,5,L46KV5,L46H25;L46H27;L46H28
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,27,L46H27,L46H27
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,28,L46H28,L46H28
+L39H23,L39H22,belief + photo + code,existing_candidates,q,46,34,L46H34,L46H34
+L39H23,L39H22,belief + photo + code,existing_candidates,k,46,6,L46KV6,L46H34
+L39H23,L39H22,belief + photo + code,existing_candidates,v,46,6,L46KV6,L46H34
+L46H10,L46H6,belief,exploratory_layer47,q,47,0,L47H0,L47H0
+L46H10,L46H6,belief,exploratory_layer47,k,47,0,L47KV0,L47H0;L47H1;L47H2;L47H3;L47H4
+L46H10,L46H6,belief,exploratory_layer47,v,47,0,L47KV0,L47H0;L47H1;L47H2;L47H3;L47H4
+L46H10,L46H6,belief,exploratory_layer47,q,47,1,L47H1,L47H1
+L46H10,L46H6,belief,exploratory_layer47,q,47,2,L47H2,L47H2
+L46H10,L46H6,belief,exploratory_layer47,q,47,3,L47H3,L47H3
+L46H10,L46H6,belief,exploratory_layer47,q,47,4,L47H4,L47H4
+L46H10,L46H6,belief,exploratory_layer47,q,47,5,L47H5,L47H5
+L46H10,L46H6,belief,exploratory_layer47,k,47,1,L47KV1,L47H5;L47H6;L47H7;L47H8;L47H9
+L46H10,L46H6,belief,exploratory_layer47,v,47,1,L47KV1,L47H5;L47H6;L47H7;L47H8;L47H9
+L46H10,L46H6,belief,exploratory_layer47,q,47,6,L47H6,L47H6
+L46H10,L46H6,belief,exploratory_layer47,q,47,7,L47H7,L47H7
+L46H10,L46H6,belief,exploratory_layer47,q,47,8,L47H8,L47H8
+L46H10,L46H6,belief,exploratory_layer47,q,47,9,L47H9,L47H9
+L46H10,L46H6,belief,exploratory_layer47,q,47,10,L47H10,L47H10
+L46H10,L46H6,belief,exploratory_layer47,k,47,2,L47KV2,L47H10;L47H11;L47H12;L47H13;L47H14
+L46H10,L46H6,belief,exploratory_layer47,v,47,2,L47KV2,L47H10;L47H11;L47H12;L47H13;L47H14
+L46H10,L46H6,belief,exploratory_layer47,q,47,11,L47H11,L47H11
+L46H10,L46H6,belief,exploratory_layer47,q,47,12,L47H12,L47H12
+L46H10,L46H6,belief,exploratory_layer47,q,47,13,L47H13,L47H13
+L46H10,L46H6,belief,exploratory_layer47,q,47,14,L47H14,L47H14
+L46H10,L46H6,belief,exploratory_layer47,q,47,15,L47H15,L47H15
+L46H10,L46H6,belief,exploratory_layer47,k,47,3,L47KV3,L47H15;L47H16;L47H17;L47H18;L47H19
+L46H10,L46H6,belief,exploratory_layer47,v,47,3,L47KV3,L47H15;L47H16;L47H17;L47H18;L47H19
+L46H10,L46H6,belief,exploratory_layer47,q,47,16,L47H16,L47H16
+L46H10,L46H6,belief,exploratory_layer47,q,47,17,L47H17,L47H17
+L46H10,L46H6,belief,exploratory_layer47,q,47,18,L47H18,L47H18
+L46H10,L46H6,belief,exploratory_layer47,q,47,19,L47H19,L47H19
+L46H10,L46H6,belief,exploratory_layer47,q,47,20,L47H20,L47H20
+L46H10,L46H6,belief,exploratory_layer47,k,47,4,L47KV4,L47H20;L47H21;L47H22;L47H23;L47H24
+L46H10,L46H6,belief,exploratory_layer47,v,47,4,L47KV4,L47H20;L47H21;L47H22;L47H23;L47H24
+L46H10,L46H6,belief,exploratory_layer47,q,47,21,L47H21,L47H21
+L46H10,L46H6,belief,exploratory_layer47,q,47,22,L47H22,L47H22
+L46H10,L46H6,belief,exploratory_layer47,q,47,23,L47H23,L47H23
+L46H10,L46H6,belief,exploratory_layer47,q,47,24,L47H24,L47H24
+L46H10,L46H6,belief,exploratory_layer47,q,47,25,L47H25,L47H25
+L46H10,L46H6,belief,exploratory_layer47,k,47,5,L47KV5,L47H25;L47H26;L47H27;L47H28;L47H29
+L46H10,L46H6,belief,exploratory_layer47,v,47,5,L47KV5,L47H25;L47H26;L47H27;L47H28;L47H29
+L46H10,L46H6,belief,exploratory_layer47,q,47,26,L47H26,L47H26
+L46H10,L46H6,belief,exploratory_layer47,q,47,27,L47H27,L47H27
+L46H10,L46H6,belief,exploratory_layer47,q,47,28,L47H28,L47H28
+L46H10,L46H6,belief,exploratory_layer47,q,47,29,L47H29,L47H29
+L46H10,L46H6,belief,exploratory_layer47,q,47,30,L47H30,L47H30
+L46H10,L46H6,belief,exploratory_layer47,k,47,6,L47KV6,L47H30;L47H31;L47H32;L47H33;L47H34
+L46H10,L46H6,belief,exploratory_layer47,v,47,6,L47KV6,L47H30;L47H31;L47H32;L47H33;L47H34
+L46H10,L46H6,belief,exploratory_layer47,q,47,31,L47H31,L47H31
+L46H10,L46H6,belief,exploratory_layer47,q,47,32,L47H32,L47H32
+L46H10,L46H6,belief,exploratory_layer47,q,47,33,L47H33,L47H33
+L46H10,L46H6,belief,exploratory_layer47,q,47,34,L47H34,L47H34
+L46H10,L46H6,belief,exploratory_layer47,q,47,35,L47H35,L47H35
+L46H10,L46H6,belief,exploratory_layer47,k,47,7,L47KV7,L47H35;L47H36;L47H37;L47H38;L47H39
+L46H10,L46H6,belief,exploratory_layer47,v,47,7,L47KV7,L47H35;L47H36;L47H37;L47H38;L47H39
+L46H10,L46H6,belief,exploratory_layer47,q,47,36,L47H36,L47H36
+L46H10,L46H6,belief,exploratory_layer47,q,47,37,L47H37,L47H37
+L46H10,L46H6,belief,exploratory_layer47,q,47,38,L47H38,L47H38
+L46H10,L46H6,belief,exploratory_layer47,q,47,39,L47H39,L47H39
+L46H13,L46H12,belief,exploratory_layer47,q,47,0,L47H0,L47H0
+L46H13,L46H12,belief,exploratory_layer47,k,47,0,L47KV0,L47H0;L47H1;L47H2;L47H3;L47H4
+L46H13,L46H12,belief,exploratory_layer47,v,47,0,L47KV0,L47H0;L47H1;L47H2;L47H3;L47H4
+L46H13,L46H12,belief,exploratory_layer47,q,47,1,L47H1,L47H1
+L46H13,L46H12,belief,exploratory_layer47,q,47,2,L47H2,L47H2
+L46H13,L46H12,belief,exploratory_layer47,q,47,3,L47H3,L47H3
+L46H13,L46H12,belief,exploratory_layer47,q,47,4,L47H4,L47H4
+L46H13,L46H12,belief,exploratory_layer47,q,47,5,L47H5,L47H5
+L46H13,L46H12,belief,exploratory_layer47,k,47,1,L47KV1,L47H5;L47H6;L47H7;L47H8;L47H9
+L46H13,L46H12,belief,exploratory_layer47,v,47,1,L47KV1,L47H5;L47H6;L47H7;L47H8;L47H9
+L46H13,L46H12,belief,exploratory_layer47,q,47,6,L47H6,L47H6
+L46H13,L46H12,belief,exploratory_layer47,q,47,7,L47H7,L47H7
+L46H13,L46H12,belief,exploratory_layer47,q,47,8,L47H8,L47H8
+L46H13,L46H12,belief,exploratory_layer47,q,47,9,L47H9,L47H9
+L46H13,L46H12,belief,exploratory_layer47,q,47,10,L47H10,L47H10
+L46H13,L46H12,belief,exploratory_layer47,k,47,2,L47KV2,L47H10;L47H11;L47H12;L47H13;L47H14
+L46H13,L46H12,belief,exploratory_layer47,v,47,2,L47KV2,L47H10;L47H11;L47H12;L47H13;L47H14
+L46H13,L46H12,belief,exploratory_layer47,q,47,11,L47H11,L47H11
+L46H13,L46H12,belief,exploratory_layer47,q,47,12,L47H12,L47H12
+L46H13,L46H12,belief,exploratory_layer47,q,47,13,L47H13,L47H13
+L46H13,L46H12,belief,exploratory_layer47,q,47,14,L47H14,L47H14
+L46H13,L46H12,belief,exploratory_layer47,q,47,15,L47H15,L47H15
+L46H13,L46H12,belief,exploratory_layer47,k,47,3,L47KV3,L47H15;L47H16;L47H17;L47H18;L47H19
+L46H13,L46H12,belief,exploratory_layer47,v,47,3,L47KV3,L47H15;L47H16;L47H17;L47H18;L47H19
+L46H13,L46H12,belief,exploratory_layer47,q,47,16,L47H16,L47H16
+L46H13,L46H12,belief,exploratory_layer47,q,47,17,L47H17,L47H17
+L46H13,L46H12,belief,exploratory_layer47,q,47,18,L47H18,L47H18
+L46H13,L46H12,belief,exploratory_layer47,q,47,19,L47H19,L47H19
+L46H13,L46H12,belief,exploratory_layer47,q,47,20,L47H20,L47H20
+L46H13,L46H12,belief,exploratory_layer47,k,47,4,L47KV4,L47H20;L47H21;L47H22;L47H23;L47H24
+L46H13,L46H12,belief,exploratory_layer47,v,47,4,L47KV4,L47H20;L47H21;L47H22;L47H23;L47H24
+L46H13,L46H12,belief,exploratory_layer47,q,47,21,L47H21,L47H21
+L46H13,L46H12,belief,exploratory_layer47,q,47,22,L47H22,L47H22
+L46H13,L46H12,belief,exploratory_layer47,q,47,23,L47H23,L47H23
+L46H13,L46H12,belief,exploratory_layer47,q,47,24,L47H24,L47H24
+L46H13,L46H12,belief,exploratory_layer47,q,47,25,L47H25,L47H25
+L46H13,L46H12,belief,exploratory_layer47,k,47,5,L47KV5,L47H25;L47H26;L47H27;L47H28;L47H29
+L46H13,L46H12,belief,exploratory_layer47,v,47,5,L47KV5,L47H25;L47H26;L47H27;L47H28;L47H29
+L46H13,L46H12,belief,exploratory_layer47,q,47,26,L47H26,L47H26
+L46H13,L46H12,belief,exploratory_layer47,q,47,27,L47H27,L47H27
+L46H13,L46H12,belief,exploratory_layer47,q,47,28,L47H28,L47H28
+L46H13,L46H12,belief,exploratory_layer47,q,47,29,L47H29,L47H29
+L46H13,L46H12,belief,exploratory_layer47,q,47,30,L47H30,L47H30
+L46H13,L46H12,belief,exploratory_layer47,k,47,6,L47KV6,L47H30;L47H31;L47H32;L47H33;L47H34
+L46H13,L46H12,belief,exploratory_layer47,v,47,6,L47KV6,L47H30;L47H31;L47H32;L47H33;L47H34
+L46H13,L46H12,belief,exploratory_layer47,q,47,31,L47H31,L47H31
+L46H13,L46H12,belief,exploratory_layer47,q,47,32,L47H32,L47H32
+L46H13,L46H12,belief,exploratory_layer47,q,47,33,L47H33,L47H33
+L46H13,L46H12,belief,exploratory_layer47,q,47,34,L47H34,L47H34
+L46H13,L46H12,belief,exploratory_layer47,q,47,35,L47H35,L47H35
+L46H13,L46H12,belief,exploratory_layer47,k,47,7,L47KV7,L47H35;L47H36;L47H37;L47H38;L47H39
+L46H13,L46H12,belief,exploratory_layer47,v,47,7,L47KV7,L47H35;L47H36;L47H37;L47H38;L47H39
+L46H13,L46H12,belief,exploratory_layer47,q,47,36,L47H36,L47H36
+L46H13,L46H12,belief,exploratory_layer47,q,47,37,L47H37,L47H37
+L46H13,L46H12,belief,exploratory_layer47,q,47,38,L47H38,L47H38
+L46H13,L46H12,belief,exploratory_layer47,q,47,39,L47H39,L47H39

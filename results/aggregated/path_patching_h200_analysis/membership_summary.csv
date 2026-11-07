@@ -1,0 +1,7 @@
+membership,heads,connections,connections_detected_any_cell,shared_positive_supported
+photo,7,378,0,0
+belief + photo + code,9,486,1,0
+belief,12,652,0,0
+belief + photo,10,540,0,0
+code,2,108,0,0
+belief + code,1,54,0,0

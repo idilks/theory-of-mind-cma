@@ -146,13 +146,18 @@ TEMPLATE_QUERY_KEYS = {
 
 
 def _find_token_pos(prompt: str, needle: str, offsets) -> int:
-    """First-occurrence char->token lookup. Returns -1 if needle not in prompt."""
+    """First whole-word occurrence char->token lookup. Returns -1 if needle not in prompt.
+
+    Whole-word since Oct 2026: a plain substring search matched the location "art"
+    inside "<|im_start|>" and anchored it at token 0 (docs/STATUS.md). Captures
+    written before then used the substring search.
+    """
     if not needle:
         return -1
-    idx = prompt.find(needle)
-    if idx == -1:
+    m = re.search(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", prompt)
+    if m is None:
         return -1
-    return char_to_token(offsets, idx, idx + len(needle))
+    return char_to_token(offsets, m.start(), m.end())
 
 
 def _find_all_token_pos(prompt: str, needle: str, offsets) -> list[int]:
@@ -281,16 +286,39 @@ def capture_for_template(
     device_map: str = "cuda",
     load_in_4bit: bool = False,
     load_in_8bit: bool = False,
+    head_conditions: list[str] | None = None,
+    min_frac: float = 0.5,
 ):
-    csv_path = find_csv(
-        condition=condition.value, template=template,
-        base_rule=base_rule, exp_rule=exp_rule,
-        patch_position=patch_position, results_root=results_root,
-    )
-    log.info(f"loading significant heads from {csv_path}")
-    heads_df = load_top_heads(csv_path, top_k)
-    log.info(f"top {len(heads_df)} heads (by signed observed_score, positive only): "
-             f"min={heads_df.observed_score.min():.4g}")
+    if head_conditions:
+        # Fixed head list independent of the prompt cell: the union of the given
+        # conditions' head groups (head_groups.py), so the same heads are measured
+        # on every prompt set (false- and true-belief, own and other condition's prompts).
+        from head_groups import story_head_group
+        parts = []
+        for hc in head_conditions:
+            g = story_head_group(results_root, hc, min_frac)
+            g["group"] = hc
+            parts.append(g)
+            log.info(f"head group {hc}: {len(g)} heads")
+        allh = pd.concat(parts)
+        heads_df = (allh.groupby(["layer", "head"])
+                    .agg(observed_score=("mean_score", "max"),
+                         groups=("group", lambda s: "+".join(sorted(s))))
+                    .reset_index())
+        heads_df["p_value"] = float("nan")
+        heads_df["significant"] = True
+        csv_path = f"head_groups:{'+'.join(head_conditions)} (min_frac {min_frac})"
+        log.info(f"capturing {len(heads_df)} heads (union of {head_conditions})")
+    else:
+        csv_path = find_csv(
+            condition=condition.value, template=template,
+            base_rule=base_rule, exp_rule=exp_rule,
+            patch_position=patch_position, results_root=results_root,
+        )
+        log.info(f"loading significant heads from {csv_path}")
+        heads_df = load_top_heads(csv_path, top_k)
+        log.info(f"top {len(heads_df)} heads (by signed observed_score, positive only): "
+                 f"min={heads_df.observed_score.min():.4g}")
 
     cfg = build_prompt_config(template, base_rule, condition, prompt_num, seed,
                               device_map=device_map,
@@ -457,11 +485,20 @@ def main():
                     help="bitsandbytes 4-bit quantization (Qwen2.5-14B fits ~9GB).")
     ap.add_argument("--load_in_8bit", action="store_true",
                     help="bitsandbytes 8-bit quantization (~16GB).")
+    ap.add_argument("--head_conditions", nargs="+", default=None,
+                    help="capture a FIXED head list, the union of these conditions' head groups "
+                         "(head_groups.py), instead of this cell's own top-k CMA heads. Prompts "
+                         "still come from --condition / --base_rule.")
+    ap.add_argument("--min_frac", type=float, default=0.5,
+                    help="head-group rule: significant in >= this fraction of the condition's cells")
     args = ap.parse_args()
 
     condition = CMACondition(args.condition)
     out_dir = Path(args.out_root) / condition.value / f"template_{args.template}" \
               / f"base_rule_{args.base_rule}_exp_rule_{args.exp_rule}" / args.patch_position
+    if args.head_conditions and Path(args.out_root).resolve() == Path("results/lookback_analysis").resolve():
+        raise SystemExit("--head_conditions captures must not overwrite the per-cell captures; "
+                         "pass a separate --out_root (e.g. results/lookback_analysis/_matched)")
 
     capture_for_template(
         template=args.template,
@@ -477,6 +514,8 @@ def main():
         device_map=args.device_map,
         load_in_4bit=args.load_in_4bit,
         load_in_8bit=args.load_in_8bit,
+        head_conditions=args.head_conditions,
+        min_frac=args.min_frac,
     )
 
 

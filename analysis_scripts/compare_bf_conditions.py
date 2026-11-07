@@ -7,8 +7,8 @@ Builds:
   D6  results_for_pi/rdm_bf.png                 - bf RDMs (continuous + binary)
   D7  results_for_pi/rdm_end.png                - end RDMs (continuous + binary)
 
-Design, predictions, parameter choices: see PLAN_BF_COMPARISON.md.
-Assumptions: see PLAN_BF_COMPARISON.md sections 2-4.
+Design, predictions, parameter choices: see archive/docs/PLAN_BF_COMPARISON.md.
+Assumptions: see archive/docs/PLAN_BF_COMPARISON.md sections 2-4.
 
 Run from repo root:
     python scripts/compare_bf_conditions.py
@@ -343,7 +343,7 @@ def write_summary(out_md: Path, universal_stats, venn_regions, pearson_rs, rdm_b
     """universal_stats: dict {cond: {'strict_6': n, 'permissive_4': n}} for bf."""
     lines = []
     lines.append("# bf-patch comparison: C1 / C3 / C8 summary\n")
-    lines.append("See `PLAN_BF_COMPARISON.md` for full design, assumptions, and parameter choices.\n")
+    lines.append("See `archive/docs/PLAN_BF_COMPARISON.md` for full design, assumptions, and parameter choices.\n")
     lines.append("## Significance consistency (bf)\n")
     lines.append("Per-run FWER-corrected sig counts are small (~10 heads each for C1/C3, **0 for C8**).")
     lines.append("We report # heads significant in at least K of 6 runs for K=1..6:\n")
@@ -375,7 +375,7 @@ def write_summary(out_md: Path, universal_stats, venn_regions, pearson_rs, rdm_b
         lines.append(f"| {k} | {r:.3f} | [{lo:.3f}, {hi:.3f}] |")
     lines.append("")
 
-    lines.append("## Predictions (stated before running — see PLAN_BF_COMPARISON.md §4b)\n")
+    lines.append("## Predictions (stated before running — see archive/docs/PLAN_BF_COMPARISON.md §4b)\n")
     pred_rows = []
 
     # 1. Within-condition < between-condition (bf)

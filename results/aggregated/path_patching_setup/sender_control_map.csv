@@ -1,0 +1,42 @@
+target,control,layer,membership,receiver_scope
+L28H13,L28H24,28,photo,existing_candidates
+L28H14,L28H20,28,belief + photo + code,existing_candidates
+L28H35,L28H11,28,photo,existing_candidates
+L28H37,L28H3,28,photo,existing_candidates
+L28H38,L28H17,28,photo,existing_candidates
+L29H11,L29H15,29,belief,existing_candidates
+L29H31,L29H16,29,belief + photo + code,existing_candidates
+L29H34,L29H0,29,belief + photo + code,existing_candidates
+L31H17,L31H39,31,belief,existing_candidates
+L31H18,L31H8,31,belief + photo,existing_candidates
+L31H19,L31H3,31,belief + photo,existing_candidates
+L31H21,L31H12,31,belief,existing_candidates
+L31H26,L31H23,31,photo,existing_candidates
+L32H4,L32H7,32,belief + photo,existing_candidates
+L32H26,L32H13,32,belief,existing_candidates
+L32H30,L32H10,32,belief + photo + code,existing_candidates
+L32H32,L32H17,32,belief + photo,existing_candidates
+L32H33,L32H3,32,belief + photo + code,existing_candidates
+L32H34,L32H39,32,belief + photo + code,existing_candidates
+L33H1,L33H31,33,belief,existing_candidates
+L33H2,L33H0,33,belief + photo,existing_candidates
+L33H3,L33H10,33,code,existing_candidates
+L34H29,L34H23,34,belief + code,existing_candidates
+L35H30,L35H9,35,belief + photo + code,existing_candidates
+L35H33,L35H39,35,belief + photo + code,existing_candidates
+L36H10,L36H13,36,belief,existing_candidates
+L36H12,L36H17,36,belief,existing_candidates
+L36H21,L36H1,36,belief + photo,existing_candidates
+L36H22,L36H36,36,photo,existing_candidates
+L36H23,L36H34,36,photo,existing_candidates
+L36H24,L36H4,36,belief,existing_candidates
+L36H30,L36H32,36,belief + photo,existing_candidates
+L36H33,L36H16,36,belief,existing_candidates
+L36H37,L36H2,36,code,existing_candidates
+L37H15,L37H6,37,belief,existing_candidates
+L38H31,L38H38,38,belief + photo,existing_candidates
+L38H33,L38H14,38,belief + photo,existing_candidates
+L39H20,L39H34,39,belief + photo,existing_candidates
+L39H23,L39H22,39,belief + photo + code,existing_candidates
+L46H10,L46H6,46,belief,exploratory_layer47
+L46H13,L46H12,46,belief,exploratory_layer47

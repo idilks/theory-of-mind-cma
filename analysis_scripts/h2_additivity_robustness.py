@@ -53,7 +53,9 @@ from matplotlib.lines import Line2D
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
-from condition_registry import resolve_best_source  # noqa: E402
+from condition_registry import (  # noqa: E402
+    resolve_best_source, lookup, FLIP_RULES, KEEP_RULES,
+)
 
 FP_DIR = REPO / "results/aggregated/fingerprints"
 RESULTS_ROOT = REPO / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
@@ -68,8 +70,8 @@ N_PERM = 5000
 N_BOOT = 10000
 RNG = np.random.default_rng(0)
 
-CROSS_RULES = {("ABA", "ABB"), ("ABB", "ABA")}
-WITHIN_RULES = {("ABA", "ABA"), ("ABB", "ABB")}
+CROSS_RULES = FLIP_RULES
+WITHIN_RULES = KEEP_RULES
 
 # Okabe-Ito subset used across this repo's PI reports (CVD-safe)
 BLUE, ORANGE, GREEN, GRAY = "#0072B2", "#D55E00", "#009E73", "#8C8C8C"
@@ -129,8 +131,9 @@ def build_fp(root, folder: str, rules: set, shape: tuple,
 
 
 def build_code_fp(folder: str, rules: set) -> tuple[dict, list]:
+    templates = lookup(folder).templates
     return build_fp(RESULTS_ROOT, folder, rules, QWEN_SHAPE,
-                    keep_template=lambda t: t == "template_indexed_list")
+                    keep_template=lambda t: t in templates)
 
 
 def build_gemma_fp(folder: str, rules: set) -> tuple[dict, list]:

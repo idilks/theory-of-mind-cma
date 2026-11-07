@@ -94,6 +94,15 @@ archive/
 # ...but the team-facing docs stay tracked
 !/README.md
 !/scripts/README.md
+!/docs/path_patching/README.md
+!/CLAUDE.md
+!/docs/STATUS.md
+!/docs/EXPERIMENTS.md
+!/docs/head_evidence_inventory/README.md
+!/docs/head_evidence_inventory/HEAD_DOMAIN_ANALYSIS.md
+!/docs/head_evidence_inventory/ABLATION_ANALYSIS.md
+!/docs/path_patching/NEW_EXPERIMENT.md
+!/rebuttal_figures/FIGURE_INDEX.md
 
 # team-shared distilled results (~3MB: csv/npy/npz/png) — re-include ALL of
 # results/aggregated/, overriding the *.png/*.pt/etc. globs above (last match wins).

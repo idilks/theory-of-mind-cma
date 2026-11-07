@@ -1,0 +1,15 @@
+cell,min_nonzero,median_nonzero,fraction_multiples_one_128
+C1_food_truck_ABA,0.25,0.25,1.0
+C1_food_truck_ABB,0.125,0.125,1.0
+C1_hair_styling_ABA,0.0625,0.1875,1.0
+C1_hair_styling_ABB,0.125,0.125,1.0
+C1_library_book_ABA,0.125,0.25,1.0
+C1_library_book_ABB,0.125,0.25,1.0
+C2_food_truck_ABA,0.0625,0.125,1.0
+C2_food_truck_ABB,0.0625,0.125,1.0
+C2_hair_styling_ABA,0.03125,0.125,1.0
+C2_hair_styling_ABB,0.0625,0.1875,1.0
+C2_library_book_ABA,0.0625,0.125,1.0
+C2_library_book_ABB,0.125,0.125,1.0
+K1_indexed_list_ABA,0.125,0.125,1.0
+K1_indexed_list_ABB,0.125,0.25,1.0

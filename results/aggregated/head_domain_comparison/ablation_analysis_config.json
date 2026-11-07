@@ -1,0 +1,12 @@
+{
+  "script": "scripts/analyze_head_ablation_interactions.py",
+  "script_sha256": "d90a4be77e5cabb7bd5bec23c3e1aef07f8857dc1943775afbacb097779925c2",
+  "draws": 50000,
+  "seed": 20261022,
+  "interaction_null": "mean D(full)-D(shared)-D(remainder)=0",
+  "sampling": "paired prompts within fixed template; equal weight across available templates",
+  "intervals": "percentile bootstrap marginal 95%; interaction Bonferroni 95% family over 48 summaries",
+  "inference_scope": "exploratory; no run-to-run or new-template uncertainty represented",
+  "historical_git_commit": "",
+  "model_weight_revision": ""
+}

@@ -438,7 +438,7 @@ class CMAOrchestrator:
                     condition = self.config.prompts.condition
                     same_belief = getattr(condition, "same_belief", False) if condition is not None else False
                     if same_belief:
-                        # C8 bf-control: both prompts are false-belief, detector uses false marker for both.
+                        # C5 (location-only) bf-control: both prompts are false-belief, detector uses false marker for both.
                         base_pos = prompt_generator.detect_belief_formation_position(
                             base_prompt, tokenizer, is_false_belief=True)
                         exp_pos = prompt_generator.detect_belief_formation_position(

@@ -26,14 +26,16 @@ from matplotlib.lines import Line2D
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
-from condition_registry import resolve_best_source  # noqa: E402
+from condition_registry import (  # noqa: E402
+    resolve_best_source, REGISTRY, CODE_BY_ID, FLIP_RULES, KEEP_RULES,
+)
 
 RESULTS_ROOT = REPO / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
 OUT = REPO / "writeups/results_for_pi/code_domain"
 INTERSECTION_CSV = REPO / "other_results/ablation/decomp_intersection_belief_rank/head_list.csv"
 
-CROSS_RULES = {("ABA", "ABB"), ("ABB", "ABA")}
-WITHIN_RULES = {("ABA", "ABA"), ("ABB", "ABB")}
+CROSS_RULES = FLIP_RULES
+WITHIN_RULES = KEEP_RULES
 
 ABLATION_ROOT = REPO / "other_results/ablation"
 CUMAB_ORDERINGS = [("tom_c1", "C1 belief-fingerprint ordering"),
@@ -50,20 +52,18 @@ CURVE_COLORS = {"target": "#E8000B", "control": "black"}
 CURVE_LABELS = {"target": "Ablation", "control": "Control"}
 
 # (key, results folder, allowed rule pairs, template filter, display label)
-# Code conditions restricted to template_indexed_list: template_list_append
-# holds pre-July-2026 runs of the removed zero-signal design.
-CONDITIONS = [
-    ("code_abs", "code_abstract", CROSS_RULES, "template_indexed_list", "code abstract"),
-    ("code_ac", "code_answer_changes", CROSS_RULES, "template_indexed_list", "code answer-changes"),
-    ("code_ctl", "code_control", WITHIN_RULES, "template_indexed_list", "code control"),
-    ("C1", "abstract_belief", CROSS_RULES, None, "C1 belief"),
-    ("C2", "abstract_photo", CROSS_RULES, None, "C2 photo"),
-    ("C3", "answer_changes_belief", CROSS_RULES, None, "C3 ans-changes belief"),
-    ("C4", "answer_changes_photo", CROSS_RULES, None, "C4 ans-changes photo"),
-    ("C5", "answer_changes_location_only", WITHIN_RULES, None, "C5 loc-only"),
-    ("C6", "answer_changes_location_only_photo", WITHIN_RULES, None, "C6 loc-only photo"),
-    ("C7", "state_only_no_belief", WITHIN_RULES, None, "C7 state-only"),
-]
+# Folders, rule pairs and the code template filter (template_indexed_list only;
+# template_list_append holds the removed zero-signal design) come from the registry.
+_CODE_KEYS = [("code_abs", "K1", "code abstract"),
+              ("code_ac", "K3", "code answer-changes"),
+              ("code_ctl", "K5", "code control")]
+_TOM_LABELS = ["C1 belief", "C2 photo", "C3 ans-changes belief", "C4 ans-changes photo",
+               "C5 loc-only", "C6 loc-only photo", "C7 state-only"]
+CONDITIONS = (
+    [(key, CODE_BY_ID[cid].folder, CODE_BY_ID[cid].rule_pairs, CODE_BY_ID[cid].templates[0], lab)
+     for key, cid, lab in _CODE_KEYS]
+    + [(c.cnum, c.folder, c.rule_pairs, None, lab) for c, lab in zip(REGISTRY, _TOM_LABELS)]
+)
 LABELS = {k: lab for k, _, _, _, lab in CONDITIONS}
 
 # Okabe-Ito (CVD-safe), fixed assignment per head set

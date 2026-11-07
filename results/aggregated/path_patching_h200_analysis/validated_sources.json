@@ -1,0 +1,118 @@
+{
+  "schema": "h200_repair_sources_v1",
+  "status": "validated_all_14_cells",
+  "path_repair_tasks": [
+    1,
+    3,
+    6,
+    7
+  ],
+  "control_repair_tasks": [
+    2,
+    5,
+    8,
+    13
+  ],
+  "note": "Validated combination of original and repaired arms; original source hashes are preserved. See audit.json for provenance and control_audit_by_cell.csv for all numerical checks.",
+  "cells": [
+    {
+      "task_id": 0,
+      "cell": "C1_food_truck_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 1,
+      "cell": "C1_food_truck_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2_h200_path_repair_v1",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 2,
+      "cell": "C1_hair_styling_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_h200_clean_repair_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 3,
+      "cell": "C1_hair_styling_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2_h200_path_repair_v1",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 4,
+      "cell": "C1_library_book_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 5,
+      "cell": "C1_library_book_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_h200_clean_repair_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 6,
+      "cell": "C2_food_truck_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2_h200_path_repair_v1",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 7,
+      "cell": "C2_food_truck_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2_h200_path_repair_v1",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 8,
+      "cell": "C2_hair_styling_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_h200_clean_repair_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 9,
+      "cell": "C2_hair_styling_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 10,
+      "cell": "C2_library_book_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 11,
+      "cell": "C2_library_book_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 12,
+      "cell": "K1_indexed_list_ABA",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_clean_control_v1",
+      "status": "validated_compatible"
+    },
+    {
+      "task_id": 13,
+      "cell": "K1_indexed_list_ABB",
+      "path_root": "results/circuit/path_patching/union41_v2",
+      "control_root": "results/circuit/path_patching/union41_v2_h200_clean_repair_v1",
+      "status": "validated_compatible"
+    }
+  ],
+  "validation_report": "results/aggregated/path_patching_h200_analysis/REPORT.md"
+}

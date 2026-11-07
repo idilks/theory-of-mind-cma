@@ -1,0 +1,29 @@
+{
+  "minimum_two_sided_p_at_ten_all_nonzero": 0.001953125,
+  "minimum_14cell_corrected_p_nine_nonzero": 0.0546875,
+  "cell_bootstrap_critical_min": 4.000000000000001,
+  "cell_bootstrap_critical_max": 4.498371865305969,
+  "by_kind": {
+    "target": {
+      "route_cells": 31052,
+      "all_ten_same_nonzero_sign": 0,
+      "impossible_due_to_zeros": 31037,
+      "pointwise_p05": 118,
+      "within_cell_max_p05": 3,
+      "full_study_p05": 0,
+      "zero_prompt_effect_fraction": 0.6714156898106403
+    },
+    "target_minus_control": {
+      "route_cells": 31052,
+      "all_ten_same_nonzero_sign": 1,
+      "impossible_due_to_zeros": 31027,
+      "pointwise_p05": 172,
+      "within_cell_max_p05": 4,
+      "full_study_p05": 1,
+      "zero_prompt_effect_fraction": 0.6746135514620636
+    }
+  },
+  "input_sha256": "559c08eca81807ab784a798ec4a4145c1deada17ad212ee00cee990138fa5584",
+  "script_sha256": "6c9c2c9b4d3ab1c746291b5aa225fb3352f31bf41b3113eb5ea139074da3496a",
+  "existing_steering_summary_sha256": "997ec12860d4c06660b5b1b40e74bf54ca36d7efc62dddef93aadb686522afac"
+}

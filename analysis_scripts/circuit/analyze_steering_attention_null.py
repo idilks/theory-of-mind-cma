@@ -57,6 +57,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib
+from scipy.stats import spearmanr
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
@@ -139,6 +140,39 @@ def target_vs_control(eff: pd.DataFrame) -> pd.DataFrame:
                 n_controls=int(len(c)),
             ))
     return pd.DataFrame(rows)
+
+
+def coupling(per: pd.DataFrame, root: Path, labels) -> pd.DataFrame:
+    """Does the attention LEVEL track the answer, across every direction?
+
+    The specificity question the raw target-vs-control ratio answers badly.
+    A control that moves attention is only damaging if it also moves the
+    answer; a control that moves the answer without moving attention is
+    equally informative. So correlate the config-level attention level
+    against the config-level flip score, separately for target directions
+    and for control directions. A coupling that holds only for the targets
+    means the wire is the direction along which the two move TOGETHER,
+    which is a sharper claim than "controls move neither"."""
+    K = ["prompt_set", "mode", "direction", "dose"]
+    att = per.groupby(K)["shift"].mean().reset_index()
+    summ = pd.concat([pd.read_csv(root / l / "summary.csv") for l in labels
+                      if (root / l / "summary.csv").exists()])
+    m = att.merge(summ.drop_duplicates(subset=K)[K + ["flip_score"]], on=K)
+    m = m[m["prompt_set"].isin(["false_belief", "true_belief"])]
+    rows = []
+    for pset, g in m.groupby("prompt_set"):
+        for label, sel in (("target", g["direction"].isin(
+                ["target_rank1", "target_topk", "clean"])),
+                ("control", ~g["direction"].isin(
+                    ["target_rank1", "target_topk"]))):
+            sub = g[sel]
+            if len(sub) < 4:
+                continue
+            r, p = spearmanr(sub["shift"], sub["flip_score"])
+            rows.append(dict(prompt_set=pset, direction_class=label,
+                             n_configs=len(sub), spearman_r=float(r),
+                             p=float(p)))
+    return pd.DataFrame(rows), m
 
 
 def render(eff: pd.DataFrame, clean_levels: dict, out_dir: Path) -> None:
@@ -240,9 +274,17 @@ def main():
                   f"{off} {bb[common].round(4).tolist()}  (alphas "
                   f"{list(common)})")
 
+    cpl, joint = coupling(per, root, (args.main_label, args.null_label))
+    print("\n=== attention-level / flip-score coupling, by direction class ===")
+    print(cpl.to_string(index=False, float_format=lambda v: f"{v:+.3f}"))
+    print("  (coupling that holds for targets but not controls = the wire is\n"
+          "   the direction along which attention and answer move TOGETHER)")
+
     out_dir = root / "_attention_null"
     out_dir.mkdir(parents=True, exist_ok=True)
     eff.to_csv(out_dir / "attention_effects.csv", index=False)
+    cpl.to_csv(out_dir / "attention_flip_coupling.csv", index=False)
+    joint.to_csv(out_dir / "config_level_readouts.csv", index=False)
     if not null.empty:
         null.to_csv(out_dir / "attention_null.csv", index=False)
     render(eff, clean_levels, out_dir)

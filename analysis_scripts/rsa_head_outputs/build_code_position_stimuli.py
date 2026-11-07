@@ -5,7 +5,7 @@ Design (week plan Step 6): copy/alias semantics x queried index x prefix pad
 x suffix pad, fully crossed, so answer position varies independently of the
 veracity analog — the property the ToM stimuli lack (their veracity<->position
 model-RDM correlation is r = 0.996-0.999 within template; see
-week_plan_2026-07-23.md Step 5a).
+archive/docs/week_plan_2026-07-23.md Step 5a).
 
 Grid: semantics {copy, alias} x idx {1,2,3,4} x prefix pad {0,16,32} x suffix
 pad {0,16,32} x n_rep (default 2) = 144 stimuli. List length fixed at 6 so

@@ -1,0 +1,15 @@
+cell,domain,original_host,control_gpu,control_rows,failed_controls,nonzero_answer_effects,max_abs_control_effect,max_logit_error,mapped_original_rows,mapped_failed_rows,pairs_with_single_margin_drift,pairs_with_batch_margin_drift,control_rows_with_batch_margin_drift,clean_frozen_caches_equal,frozen_clean_max_logit_error,compatible,measurement_seconds
+C1_food_truck_ABA,C1,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,25.13113594823517
+C1_food_truck_ABB,C1,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,10,9,880,True,0.0,False,24.46391134383157
+C1_hair_styling_ABA,C1,h200b.hpcc.dartmouth.edu,NVIDIA L40S,1100,1100,322,0.375,0.5,44360,44360,8,10,996,True,0.0,False,48.32669921126217
+C1_hair_styling_ABB,C1,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,9,10,892,True,0.0,False,24.94440107815899
+C1_library_book_ABA,C1,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,24.73153933370486
+C1_library_book_ABB,C1,h200b.hpcc.dartmouth.edu,NVIDIA L40S,1100,1100,235,0.25,0.5,44360,44360,9,10,1082,True,0.0,False,49.83623746968806
+C2_food_truck_ABA,C2,a01.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,8,10,978,True,0.0,False,19.298739039804786
+C2_food_truck_ABB,C2,a01.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,7,10,788,True,0.0,False,19.227319865953177
+C2_hair_styling_ABA,C2,h200b.hpcc.dartmouth.edu,NVIDIA L40S,1100,1100,432,0.4375,0.5,44360,44360,8,10,892,True,0.0,False,33.46355393109843
+C2_hair_styling_ABB,C2,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,18.94824198074639
+C2_library_book_ABA,C2,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,20.237542813178152
+C2_library_book_ABB,C2,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,20.72624057647772
+K1_indexed_list_ABA,K1,h200b.hpcc.dartmouth.edu,NVIDIA H200 NVL,1100,0,0,0.0,0.0,44360,0,0,0,0,True,0.0,True,18.670931638218462
+K1_indexed_list_ABB,K1,h200b.hpcc.dartmouth.edu,NVIDIA L40S,1100,1100,163,0.25,0.28125,44360,44360,7,9,868,True,0.0,False,33.11190318176523

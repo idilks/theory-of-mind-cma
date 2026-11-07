@@ -21,6 +21,14 @@ construction.
 Returns flat indices under the model's own head grid (see dims.py) — Qwen
 layer*40+head, Gemma layer*32+head. Mixing the two conventions silently
 misassigns every head, so the dims object is a required argument.
+
+`selection` (Qwen only) picks the rule:
+  "top32"    fingerprint top-32 / top-22 (the paper's original pipeline; default)
+  "sig4of6"  FWER-significant in >= 4 of the condition's 6 end-position cells
+  "sig3of6"  >= 3 of 6 (sensitivity)
+The sig* lists are read from results/aggregated/head_selection/{rule}/, built
+by scripts/build_significance_head_sets.py, so the steering runner and the
+figures consume one file rather than re-deriving the rule.
 """
 
 from __future__ import annotations
@@ -29,6 +37,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+SELECTIONS = ("top32", "sig4of6", "sig3of6")
+SELECTION_DIR = Path(__file__).resolve().parents[2] / "results/aggregated/head_selection"
 
 
 def _flat_from_csv(path: Path, d) -> set[int]:
@@ -41,13 +52,32 @@ def _flat_from_csv(path: Path, d) -> set[int]:
     return {d.flat(r.layer, r["head"]) for _, r in t.iterrows()}
 
 
+def significance_set(cond: str, selection: str, d,
+                     sel_dir: Path = SELECTION_DIR) -> set[int]:
+    """Flat indices from the prebuilt significance-count CSV for one condition."""
+    assert selection in SELECTIONS and selection != "top32", selection
+    path = Path(sel_dir) / selection / f"{cond}.csv"
+    assert path.exists(), (f"missing {path}; run scripts/build_significance_head_sets.py "
+                           "(and push results/aggregated/ to the HPC)")
+    t = pd.read_csv(path)
+    flat = _flat_from_csv(path, d)
+    assert flat == set(t["flat"].astype(int).tolist()), f"{path}: flat column disagrees with layer/head"
+    return flat
+
+
 def qwen_sets(d, fp_dir: Path, geom_csv: Path | None = None,
-              code_sig_csv: Path | None = None, seed: int = 0) -> dict:
+              code_sig_csv: Path | None = None, seed: int = 0,
+              selection: str = "top32") -> dict:
+    assert selection in SELECTIONS, f"unknown selection {selection!r}; choose from {SELECTIONS}"
     fp1 = np.load(fp_dir / "C1_abstract_belief_clamped.npy")
     fp5 = np.load(fp_dir / "C5_answer_changes_location_only_clamped.npy")
     assert len(fp1) == d.nh, f"fingerprint length {len(fp1)} != NH {d.nh}"
-    t1 = set(np.argsort(fp1)[-32:].tolist())
-    t5 = set(np.argsort(fp5)[-22:].tolist())
+    if selection == "top32":
+        t1 = set(np.argsort(fp1)[-32:].tolist())
+        t5 = set(np.argsort(fp5)[-22:].tolist())
+    else:
+        t1 = significance_set("C1_abstract_belief", selection, d)
+        t5 = significance_set("C5_answer_changes_location_only", selection, d)
     sets = {"div_unique": sorted(t1 - t5), "div_shared": sorted(t1 & t5)}
     if code_sig_csv and Path(code_sig_csv).exists():
         dual = sorted(_flat_from_csv(Path(code_sig_csv), d) & t1)
@@ -65,7 +95,11 @@ def qwen_sets(d, fp_dir: Path, geom_csv: Path | None = None,
     sets = _add_random(sets, d, seed)
     c2p = fp_dir / "C2_abstract_photo_clamped.npy"
     c6p = fp_dir / "C6_answer_changes_location_only_photo_clamped.npy"
-    if c2p.exists() and c6p.exists():
+    if selection != "top32":
+        sets["photo_C2"] = sorted(
+            significance_set("C2_abstract_photo", selection, d)
+            - significance_set("C6_answer_changes_location_only_photo", selection, d))
+    elif c2p.exists() and c6p.exists():
         f2, f6 = np.load(c2p), np.load(c6p)
         sets["photo_C2"] = sorted(set(np.argsort(f2)[-26:].tolist())
                                   - set(np.argsort(f6)[-13:].tolist()))
@@ -104,8 +138,9 @@ def _add_random(sets: dict, d, seed: int) -> dict:
 
 def build(model_type: str, d, fp_dir: Path, gemma_dir: Path | None = None,
           geom_csv: Path | None = None, code_sig_csv: Path | None = None,
-          seed: int = 0) -> dict:
+          seed: int = 0, selection: str = "top32") -> dict:
     if "gemma" in model_type.lower():
         assert gemma_dir is not None, "gemma_dir required for Gemma head sets"
+        assert selection == "top32", "Gemma sets are already significance-selected; no selection switch"
         return gemma_sets(d, gemma_dir, seed)
-    return qwen_sets(d, fp_dir, geom_csv, code_sig_csv, seed)
+    return qwen_sets(d, fp_dir, geom_csv, code_sig_csv, seed, selection)

@@ -42,7 +42,7 @@ class CodeGenerator(PromptGenerator):
             logger.warning(
                 "filter_answer_pool collapsed for this tokenizer — enabling "
                 f"QUOTE-PREFILL readout (pool: {''.join(answer_pool)})")
-        self.template_system = CodeTemplateSystem(answer_pool=answer_pool)
+        self.template_system = CodeTemplateSystem(answer_pool=answer_pool, tokenizer=tokenizer)
         self.system_role_ok = self._supports_system_role(tokenizer)
         if not self.system_role_ok:
             logger.warning("chat template lacks system role; folding "
@@ -82,12 +82,46 @@ class CodeGenerator(PromptGenerator):
         cond_name = condition.value if condition is not None else "code_answer_changes"
         is_abstract = cond_name == "code_abstract"
         is_control = cond_name == "code_control"
+        is_index = cond_name in ("code_index", "code_index_flip")
 
         for template_name in self.template_names:
             for _ in range(prompts_per_template):
                 base_rule = self.config.prompts.base_rule
 
-                if is_abstract:
+                exp_question = None  # only the index contrast asks a different question per side
+                if is_index:
+                    (base_scenario, exp_scenario, base_ans, exp_ans, causal_ans,
+                     question, exp_question) = self.template_system.generate_index_pair(
+                        template_name, base_rule=base_rule,
+                        flip_order=cond_name == "code_index_flip",
+                    )
+                elif cond_name == "code_veracity_only":
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
+                        self.template_system.generate_veracity_only_pair(
+                            template_name, base_rule=base_rule
+                        )
+                    )
+                elif cond_name in ("code_site_only", "code_site_only_rev"):
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
+                        self.template_system.generate_site_only_pair(
+                            template_name, base_rule=base_rule,
+                            reverse=cond_name == "code_site_only_rev",
+                        )
+                    )
+                elif cond_name in ("code_pos_matched", "code_pos_unmatched"):
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
+                        self.template_system.generate_pos_matched_pair(
+                            template_name, base_rule=base_rule,
+                            matched=cond_name == "code_pos_matched",
+                        )
+                    )
+                elif cond_name == "code_abstract_two_mut":
+                    base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
+                        self.template_system.generate_abstract_two_mut_pair(
+                            template_name, base_rule=base_rule
+                        )
+                    )
+                elif is_abstract:
                     base_scenario, exp_scenario, base_ans, exp_ans, causal_ans, question = (
                         self.template_system.generate_abstract_pair(
                             template_name, base_rule=base_rule
@@ -105,7 +139,8 @@ class CodeGenerator(PromptGenerator):
                     )
 
                 base_full = self._format_code_prompt(base_scenario, question)
-                exp_full = self._format_code_prompt(exp_scenario, question)
+                exp_full = self._format_code_prompt(
+                    exp_scenario, exp_question if exp_question is not None else question)
 
                 base_formatted = self._apply_chat_template(base_full)
                 exp_formatted = self._apply_chat_template(exp_full)

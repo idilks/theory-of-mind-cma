@@ -1,0 +1,135 @@
+{
+  "primary_hypothesis": "Old location farther from prompt end predicts less attention gained under true-belief injection (negative correlation).",
+  "null": "No association within story template; two-sided within-template permutation test.",
+  "attention": "Sum over all tokens of all mentions, averaged over 26 heads; changes in fraction units.",
+  "behavior": "Change in p(alternative)/(p(alternative)+p(correct)); not accuracy.",
+  "limitations": [
+    "Observational associations do not establish a positional cause.",
+    "Positions were not experimentally varied; wording and length covary.",
+    "No direct test of information lost by averaging the steering direction.",
+    "Original attention includes substring and answer-instruction matches for some prompts; sensitivity excludes those prompts.",
+    "Only the attention test for true-belief injection is primary; other tests are exploratory."
+  ],
+  "tests": [
+    {
+      "x": "old_distance",
+      "y": "delta_old",
+      "n": 225,
+      "correlation": -0.15444761747701946,
+      "p": 0.0212,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": true
+    },
+    {
+      "x": "old_distance",
+      "y": "delta_alt_probability",
+      "n": 225,
+      "correlation": -0.2535798223326801,
+      "p": 0.0004,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false
+    },
+    {
+      "x": "current_distance",
+      "y": "delta_current",
+      "n": 225,
+      "correlation": 0.05978476470691707,
+      "p": 0.3754,
+      "permutations": 4999,
+      "prompt_set": "false_belief",
+      "primary": false
+    },
+    {
+      "x": "current_distance",
+      "y": "delta_alt_probability",
+      "n": 225,
+      "correlation": 0.09289673325462611,
+      "p": 0.169,
+      "permutations": 4999,
+      "prompt_set": "false_belief",
+      "primary": false
+    },
+    {
+      "x": "story_old_distance",
+      "y": "delta_old",
+      "n": 221,
+      "correlation": -0.176853953222429,
+      "p": 0.0108,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false,
+      "sensitivity": "exclude non-narrative or substring matches"
+    },
+    {
+      "x": "story_old_distance",
+      "y": "delta_alt_probability",
+      "n": 221,
+      "correlation": -0.265350258225003,
+      "p": 0.0004,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false,
+      "sensitivity": "exclude non-narrative or substring matches"
+    },
+    {
+      "x": "story_current_distance",
+      "y": "delta_current",
+      "n": 221,
+      "correlation": 0.04952388941104876,
+      "p": 0.4748,
+      "permutations": 4999,
+      "prompt_set": "false_belief",
+      "primary": false,
+      "sensitivity": "exclude non-narrative or substring matches"
+    },
+    {
+      "x": "story_current_distance",
+      "y": "delta_alt_probability",
+      "n": 221,
+      "correlation": 0.07774881126976585,
+      "p": 0.2764,
+      "permutations": 4999,
+      "prompt_set": "false_belief",
+      "primary": false,
+      "sensitivity": "exclude non-narrative or substring matches"
+    },
+    {
+      "x": "story_old_distance",
+      "y": "delta_old",
+      "n": 75,
+      "correlation": -0.3197616480259373,
+      "p": 0.0036,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false,
+      "template": "food_truck",
+      "sensitivity": "per-template, exclude extra matches"
+    },
+    {
+      "x": "story_old_distance",
+      "y": "delta_old",
+      "n": 75,
+      "correlation": -0.10961108676773564,
+      "p": 0.34,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false,
+      "template": "hair_styling",
+      "sensitivity": "per-template, exclude extra matches"
+    },
+    {
+      "x": "story_old_distance",
+      "y": "delta_old",
+      "n": 71,
+      "correlation": -0.06602947906041773,
+      "p": 0.5906,
+      "permutations": 4999,
+      "prompt_set": "true_belief",
+      "primary": false,
+      "template": "library_book",
+      "sensitivity": "per-template, exclude extra matches"
+    }
+  ]
+}

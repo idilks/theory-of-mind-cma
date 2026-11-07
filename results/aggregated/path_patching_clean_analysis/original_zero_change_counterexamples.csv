@@ -1,0 +1,10 @@
+cell,scope,pair,sender,receiver,component,original_effect,new_clean_effect,original_host,control_gpu
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L44H15,k,0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L45H38,k,0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H10,q,0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H25,k,0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H25,v,-0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H28,q,-0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H34,q,-0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H34,k,-0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL
+C1_hair_styling_ABB,existing_candidates,6,L36H34,L46H34,v,-0.125,0.0,l40sx8.hpcc.dartmouth.edu,NVIDIA H200 NVL

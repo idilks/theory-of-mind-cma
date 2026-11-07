@@ -1,0 +1,27 @@
+{
+  "command": [
+    "scripts/analyze_head_domain_profiles.py",
+    "--draws",
+    "50000"
+  ],
+  "bootstrap_draws": 50000,
+  "seed": 20261022,
+  "alpha": 0.05,
+  "cell_alpha": 0.0007462686567164179,
+  "multiplicity_scope": "all 1920 heads in each of 67 cells; union-bound propagation to every listed linear contrast",
+  "assumptions": [
+    "Prompt-row bootstrap within each cell; selected successful prompts only",
+    "Fixed templates and direction weights; not new-template inference",
+    "Unknown across-cell dependence permitted by union-bound construction",
+    "Bootstrap bands approximate; data-dependent selection not independent replication",
+    "Zero-variance uncertainty undefined"
+  ],
+  "missing_seed1_sensitivity": [],
+  "source_manifest_sha256": "c1a0db43acd0eebea1849ebc33c05569e937d6f9a24322ea516d2b26c5585a46",
+  "membership_sha256": "c52cdb0914a82b31f8d82d551ef476a5dbf8622c9ec66b3d11bccef919c6e5b1",
+  "script_sha256": "869a35e8429c81972d4c4a7ee5fc2ad020b48e9478fa6214dd668506171344dc",
+  "git_revision": "2219f7d8e7680c9772ccfd081f1faa96d7e2bdce",
+  "git_dirty": true,
+  "numpy_version": "2.4.4",
+  "torch_version": "2.4.1"
+}

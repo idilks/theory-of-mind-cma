@@ -1,4 +1,4 @@
-"""Canonical C1-C7 condition registry + shared CMA result-path resolution.
+"""Canonical condition registry (story C1-C7 + code K/Q) + shared CMA result-path resolution.
 
 Single source of truth for the condition tables and seed/source-resolution
 logic that were hand-rolled across the heatmap / aggregation scripts. Extracted
@@ -18,6 +18,20 @@ Canonical numbering == scripts/aggregate_conditions.py == the thesis:
 Folder names are derived from `CMACondition` in the LLMSymbMech codebase; the
 flip-vs-keep rule-pair split is derived from `CMACondition.within_context`
 (within-context conditions keep the rule label, across-context flip it).
+
+Code-domain conditions live in a separate CODE_REGISTRY so that scripts
+iterating REGISTRY keep getting exactly C1-C7. K-ids are numbered by the story
+condition they mirror; Q-ids by the veracity-vs-address question they answer:
+
+    K1 code_abstract          (copy<->alias, answer SAME;  ~C1)
+    K3 code_answer_changes    (copy<->alias, answer DIFFERENT; ~C3)
+    K5 code_control           (letters swapped, copy/alias held; ~C5)
+    Q1a code_index / Q1b code_index_flip / Q1c code_abstract_two_mut   (which index)
+    Q2a code_veracity_only / Q2b code_site_only / Q2c code_site_only_rev (which state / read site)
+    Q3a code_pos_matched / Q3b code_pos_unmatched                       (token position, pilot)
+
+Code results only count under template_indexed_list (template_list_append runs
+are invalid), so code conditions carry a `templates` filter.
 
 Other C# numberings exist in legacy scripts (build_pi_results.py,
 compare_bf_conditions.py, visualize_conditions.py) -- do NOT trust those.
@@ -51,9 +65,12 @@ KEEP_RULES = {("ABA", "ABA"), ("ABB", "ABB")}
 @dataclass(frozen=True)
 class Condition:
     """One canonical condition cell in the C1-C7 registry."""
-    cnum: str                  # "C1" .. "C7"
+    cnum: str                  # "C1" .. "C7", "K1" .., "Q1a" ..
     condition: CMACondition    # backing enum member (source of folder name)
     label: str                 # human-readable label
+    domain: str = "tom"        # "tom" | "code"
+    analog: str | None = None  # story condition a code condition mirrors (e.g. "C1")
+    templates: tuple | None = None  # allowed template_* dirs; None = any
 
     @property
     def folder(self) -> str:
@@ -81,9 +98,35 @@ REGISTRY: list[Condition] = [
     Condition("C7", CMACondition.STATE_ONLY_NO_BELIEF, "state-only, no belief"),
 ]
 
+_INDEXED = ("template_indexed_list",)
+
+CODE_REGISTRY: list[Condition] = [
+    Condition("K1", CMACondition.CODE_ABSTRACT, "code abstract (copy vs alias)", "code", "C1", _INDEXED),
+    Condition("K3", CMACondition.CODE_ANSWER_CHANGES, "code answer-changes", "code", "C3", _INDEXED),
+    Condition("K5", CMACondition.CODE_CONTROL, "code control (letters only)", "code", "C5", _INDEXED),
+    Condition("Q1a", CMACondition.CODE_INDEX, "queried index", "code", None, _INDEXED),
+    Condition("Q1b", CMACondition.CODE_INDEX_FLIP, "queried index, lines reversed", "code", None, _INDEXED),
+    Condition("Q1c", CMACondition.CODE_ABSTRACT_TWO_MUT, "code abstract, two-mutation format", "code", "C1", _INDEXED),
+    Condition("Q2a", CMACondition.CODE_VERACITY_ONLY, "veracity only (read site held)", "code", None, _INDEXED),
+    Condition("Q2b", CMACondition.CODE_SITE_ONLY, "read site only (veracity held)", "code", None, _INDEXED),
+    Condition("Q2c", CMACondition.CODE_SITE_ONLY_REV, "read site only, reversed", "code", None, _INDEXED),
+    Condition("Q3a", CMACondition.CODE_POS_MATCHED, "position-matched pilot", "code", None, _INDEXED),
+    Condition("Q3b", CMACondition.CODE_POS_UNMATCHED, "position-unmatched pilot", "code", None, _INDEXED),
+]
+
 BY_CNUM: dict[str, Condition] = {c.cnum: c for c in REGISTRY}
 BY_KEY: dict[str, Condition] = {c.key: c for c in REGISTRY}
 BY_FOLDER: dict[str, Condition] = {c.folder: c for c in REGISTRY}
+CODE_BY_ID: dict[str, Condition] = {c.cnum: c for c in CODE_REGISTRY}
+CODE_BY_FOLDER: dict[str, Condition] = {c.folder: c for c in CODE_REGISTRY}
+
+
+def lookup(name: str) -> Condition:
+    """Find a story or code condition by id ('C1', 'K1', 'Q2a'), key, or folder name."""
+    for table in (BY_CNUM, BY_KEY, BY_FOLDER, CODE_BY_ID, CODE_BY_FOLDER):
+        if name in table:
+            return table[name]
+    raise KeyError(f"unknown condition: {name!r}")
 
 
 # ---------------------------------------------------------------------------
@@ -117,6 +160,18 @@ def heatmap_condition_table() -> dict:
     return {c.key: (c.folder, [c.folder], c.rule_pairs) for c in REGISTRY}
 
 
+def code_keys() -> list[str]:
+    """['K1_code_abstract', ...] in canonical order."""
+    return [c.key for c in CODE_REGISTRY]
+
+
+def resolve_condition(results_root, cond: Condition, **kwargs) -> dict:
+    """resolve_best_source for one registry condition, applying its rule pairs and template filter."""
+    return resolve_best_source(
+        results_root, [cond.folder], cond.rule_pairs, templates=cond.templates, **kwargs
+    )
+
+
 # ---------------------------------------------------------------------------
 # Result-path resolution (seed priority + sample_num_* glob)
 # ---------------------------------------------------------------------------
@@ -132,6 +187,7 @@ def resolve_best_source(
     patch_position: str = "patch_before_movement",
     seed_priority: dict = SEED_PRIORITY,
     require_per_sample: bool = False,
+    templates=None,
 ) -> dict:
     """Return {(template_dir, rule_dir): entry} picking the best source per cell.
 
@@ -146,7 +202,8 @@ def resolve_best_source(
     This is the shared implementation behind build_pi_heatmaps.find_best_source,
     build_avg_heatmaps.find_best_source, and the Gemma variant. Set
     `require_per_sample=True` to skip cells lacking causal_scores_per_sample.pt
-    (Gemma tolerance behavior).
+    (Gemma tolerance behavior). `templates` (iterable of template_* dir names)
+    restricts the walk to those templates; None keeps every template.
     """
     results_root = Path(results_root)
     best: dict[tuple[str, str], dict] = {}
@@ -165,6 +222,8 @@ def resolve_best_source(
             except IndexError:
                 continue
             if logit_dir != "logit" or patch_dir != patch_position:
+                continue
+            if templates is not None and template_dir not in templates:
                 continue
             if not seed_dir.startswith("z_seed_") or not seed_dir.endswith("_shuffle_False"):
                 continue
@@ -255,6 +314,25 @@ def _self_check() -> int:
         "C6_answer_changes_location_only_photo",
         "C7_state_only_no_belief",
     ], within_context_keys()
+
+    print("\nCode registry (K/Q):")
+    for c in CODE_REGISTRY:
+        rp = "FLIP" if c.rule_pairs is FLIP_RULES else "KEEP"
+        mark = "OK" if c.folder in on_disk else "MISSING"
+        print(f"  [{mark}] {c.cnum:4s} {c.folder:24s} rules={rp}  analog={c.analog}")
+    missing = [c.folder for c in CODE_REGISTRY if c.folder not in on_disk]
+    assert not missing, f"code registry folders missing on disk: {missing}"
+    # every code condition's on-disk rule dirs must be allowed by its rule pairs
+    for c in CODE_REGISTRY:
+        for tdir in c.templates:
+            for rdir in (qwen / c.folder / tdir).glob("base_rule_*"):
+                rp = RULE_PAIR_RE.match(rdir.name)
+                assert (rp.group(1), rp.group(2)) in c.rule_pairs, (c.cnum, rdir.name)
+    # the template filter must exclude the invalid list_append runs
+    k1 = resolve_condition(qwen, CODE_BY_ID["K1"])
+    assert k1 and all(t == "template_indexed_list" for t, _ in k1), sorted(k1)
+    ids = [c.cnum for c in REGISTRY + CODE_REGISTRY]
+    assert len(ids) == len(set(ids))
     print("\nself-check passed.")
     return 0
 

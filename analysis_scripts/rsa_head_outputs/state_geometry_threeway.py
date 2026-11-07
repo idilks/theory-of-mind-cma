@@ -52,6 +52,7 @@ import pandas as pd
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import dims as _dims  # noqa: E402
 import state_geometry_alignment as _sga  # noqa: E402
 from state_geometry_alignment import (  # noqa: E402
     unit, directions, load_tom, load_code, head_sets,
@@ -60,9 +61,10 @@ from state_geometry_alignment import (  # noqa: E402
 # alignment module cannot reach them, so main() rebinds them explicitly after
 # calling it. Without that rebind a non-Qwen run would silently use 48x40.
 
-PHOTO_ACT = ROOT / "results/rsa_head_outputs/activations_photo"
+PHOTO_ACT = ROOT / "results/rsa_head_outputs/activations_full_photo"
 OUT_DIR = ROOT / "results/rsa_head_outputs/state_geometry_threeway"
 FIG_DIR = ROOT / "results_for_pi/aggregation"
+FIG_TAG = _dims.tag("Qwen2.5-14B-Instruct")
 
 
 def auc_of(scores, lab):
@@ -90,6 +92,11 @@ def main():
     ap.add_argument("--gemma_dir", type=Path, default=None)
     args = ap.parse_args()
 
+    # Model-suffixed outputs (see dims.tag): the un-suffixed dir let a Gemma
+    # run overwrite the Qwen one.
+    global OUT_DIR, FIG_TAG
+    FIG_TAG = _dims.tag(args.model_type)
+    OUT_DIR = OUT_DIR.with_name(f"{OUT_DIR.name}_{FIG_TAG}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     rng = np.random.default_rng(0)
@@ -276,7 +283,7 @@ def main():
     ax.axhline(0, color="#DDDDDD", lw=0.8)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
-    fig.savefig(FIG_DIR / "state_geometry_threeway.png", dpi=160)
+    fig.savefig(FIG_DIR / f"state_geometry_threeway_{FIG_TAG}.png", dpi=160)
     print(f"\nwrote -> {OUT_DIR}, figure -> {FIG_DIR}")
 
 

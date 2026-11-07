@@ -580,7 +580,7 @@ class UnifiedTemplateSystem:
         base_subs_used = None
 
         if same_belief:
-            # C8 bf-control: both prompts use false_context_template, swapped subs.
+            # C5 (location-only) bf-control: both prompts use false_context_template, swapped subs.
             # Belief type held constant; only the correct answer differs.
             if base_rule == "ABA":
                 base_scenario = template.false_context_template.format(**substitutions)

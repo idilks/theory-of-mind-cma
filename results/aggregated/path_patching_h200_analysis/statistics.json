@@ -1,0 +1,124 @@
+{
+  "seed": 20261023,
+  "bootstrap_draws": 50000,
+  "alpha": 0.05,
+  "cell_families": 14,
+  "columns_per_cell": 4436,
+  "exact_sign_assignments": 1024,
+  "bootstrap_settings": [
+    {
+      "cell": "C1_food_truck_ABA",
+      "bootstrap_critical": 4.000000000000001,
+      "zero_variance_columns": 404
+    },
+    {
+      "cell": "C1_food_truck_ABB",
+      "bootstrap_critical": 4.353502160098626,
+      "zero_variance_columns": 141
+    },
+    {
+      "cell": "C1_hair_styling_ABA",
+      "bootstrap_critical": 4.255248859601851,
+      "zero_variance_columns": 118
+    },
+    {
+      "cell": "C1_hair_styling_ABB",
+      "bootstrap_critical": 4.217723552974888,
+      "zero_variance_columns": 579
+    },
+    {
+      "cell": "C1_library_book_ABA",
+      "bootstrap_critical": 4.218173088354574,
+      "zero_variance_columns": 85
+    },
+    {
+      "cell": "C1_library_book_ABB",
+      "bootstrap_critical": 4.255248859601851,
+      "zero_variance_columns": 630
+    },
+    {
+      "cell": "C2_food_truck_ABA",
+      "bootstrap_critical": 4.357801122356271,
+      "zero_variance_columns": 103
+    },
+    {
+      "cell": "C2_food_truck_ABB",
+      "bootstrap_critical": 4.409810491555002,
+      "zero_variance_columns": 306
+    },
+    {
+      "cell": "C2_hair_styling_ABA",
+      "bootstrap_critical": 4.498371865305969,
+      "zero_variance_columns": 9
+    },
+    {
+      "cell": "C2_hair_styling_ABB",
+      "bootstrap_critical": 4.333333333333334,
+      "zero_variance_columns": 83
+    },
+    {
+      "cell": "C2_library_book_ABA",
+      "bootstrap_critical": 4.4922293155628745,
+      "zero_variance_columns": 220
+    },
+    {
+      "cell": "C2_library_book_ABB",
+      "bootstrap_critical": 4.2577345649182075,
+      "zero_variance_columns": 40
+    },
+    {
+      "cell": "K1_indexed_list_ABA",
+      "bootstrap_critical": 4.333333333333335,
+      "zero_variance_columns": 47
+    },
+    {
+      "cell": "K1_indexed_list_ABB",
+      "bootstrap_critical": 4.4841772030175955,
+      "zero_variance_columns": 331
+    }
+  ],
+  "cell_detection_rows": 1,
+  "cell_detected_unique_connections": 1,
+  "full_grid_positive_patterns": {
+    "": 2218
+  },
+  "full_grid_negative_patterns": {
+    "": 2218
+  },
+  "positive_mean_all_three": 1275,
+  "positive_adjusted_mean_all_three": 283,
+  "contrasts": {
+    "ABA": {
+      "tested": 13308,
+      "finite_bounds": 11629,
+      "exclude_zero": 0
+    },
+    "ABB": {
+      "tested": 13308,
+      "finite_bounds": 10050,
+      "exclude_zero": 0
+    },
+    "all_templates_both_directions": {
+      "tested": 13308,
+      "finite_bounds": 9143,
+      "exclude_zero": 0
+    },
+    "food_truck_both_directions": {
+      "tested": 13308,
+      "finite_bounds": 11161,
+      "exclude_zero": 0
+    },
+    "hair_styling_both_directions": {
+      "tested": 13308,
+      "finite_bounds": 11255,
+      "exclude_zero": 0
+    },
+    "library_book_both_directions": {
+      "tested": 13308,
+      "finite_bounds": 11007,
+      "exclude_zero": 0
+    }
+  },
+  "analysis_sha256": "b3eb8eff56b0d3027c3b3f9a54ae917c7e8c4c830bb4d80622cc0d3bd4599e5b",
+  "validated_effects_sha256": "559c08eca81807ab784a798ec4a4145c1deada17ad212ee00cee990138fa5584"
+}

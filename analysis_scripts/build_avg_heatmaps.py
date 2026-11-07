@@ -6,16 +6,21 @@ For each condition:
      (3 templates x 2 directions) at patch_before_movement, picking the same
      source (combined > seed=1 > seed=0) as build_pi_heatmaps.py.
   2. Per-cell mean -> average those means -> 1 vector of length n_heads.
-     Negatives clamped to 0 (PI heatmap rule). Render viridis.
+     Negatives clamped to 0 (PI heatmap rule). Render with the paper's
+     white-to-dark map (rebuttal_figures/style.py).
   3. Re-run the permutation test on the averaged statistic:
      for each permutation, draw one sign-flip per cell, compute that cell's
      permuted mean, then average the cell-means. Apply max-statistic FWER
      at alpha=0.05 to the resulting null distribution. Render binary mask.
 
 Outputs:
-    <out-dir>/<C#>_avg_viridis.png
-    <out-dir>/<C#>_avg_significance.png
-    <out-dir>/manifest.csv
+    <out-dir>/<C#>_avg_scores.pdf
+    <out-dir>/<C#>_avg_significance.pdf
+    <out-dir>/manifest.csv   (n per cell, vmax, FWER threshold, significant heads)
+
+Panels follow the main-text heatmap style (fig7_fingerprint_heatmaps.py) and are
+untitled: draft2.tex names each panel in a subfigure caption. The manifest records
+the paper's condition name per row; the appendix table reports its values.
 
 Qwen (default, no args) reproduces the original build_avg_heatmaps behavior:
     python scripts/build_avg_heatmaps.py
@@ -26,21 +31,24 @@ tolerant of incomplete cell coverage -- Gemma C2 has 4/6 cells, C3 partial):
         --results-root results/causal_analysis/cma/google/gemma-2-27b-it_ungroup_gqa \
         --out-dir results_for_pi/heatmaps_gemma/aggregated \
         --conditions C1 C2 C3 \
-        --tolerate-missing \
-        --model-label "Gemma-2-27B"
+        --tolerate-missing
 """
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import torch
 
 from condition_registry import BY_CNUM, BY_KEY, REGISTRY, resolve_best_source
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "rebuttal_figures"))
+from style import BLUE, CMAP_SEQ, apply_style
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RESULTS = ROOT / "results/causal_analysis/cma/Qwen/Qwen2.5-14B-Instruct"
@@ -50,6 +58,16 @@ N_PERMUTATIONS = 5000
 ALPHA = 0.05
 RNG_SEED = 0
 EXPECT_CELLS = 6  # 3 templates x 2 directions
+# Condition names used in draft2.tex, by registry key.
+PAPER_NAMES = {
+    "C1_abstract_belief": "divergence-change belief",
+    "C2_abstract_photo": "divergence-change photo",
+    "C3_answer_changes_belief": "dual-change belief",
+    "C4_answer_changes_photo": "dual-change photo",
+    "C5_answer_changes_location_only": "answer-change belief",
+    "C6_answer_changes_location_only_photo": "answer-change photo",
+    "C7_state_only_no_belief": "answer-change state-only",
+}
 
 
 def aggregate_condition(cells):
@@ -78,31 +96,45 @@ def aggregate_condition(cells):
     return avg_scores, sig_mask, threshold, int(sig_mask.sum())
 
 
-def render_viridis(scores, out_png, title):
+def new_panel():
+    """Same axes box for scores and masks, so the two columns line up on the page."""
+    fig, ax = plt.subplots(figsize=(4.2, 2.8))
+    fig.subplots_adjust(left=0.11, right=0.80, top=0.97, bottom=0.15)
+    return fig, ax
+
+
+def finish_panel(fig, ax, out_path):
+    # No in-figure title: draft2.tex names each panel in its subfigure caption.
+    grid = ax.images[0].get_array()
+    ax.set_xlabel("head", fontsize=8.5)
+    ax.set_ylabel("layer", fontsize=8.5)
+    ax.set_xticks(np.arange(0, grid.shape[1], 10))
+    ax.set_yticks(np.arange(0, grid.shape[0], 10))
+    ax.tick_params(length=2, labelsize=7)
+    fig.savefig(out_path)
+    plt.close(fig)
+
+
+def render_scores(scores, out_path):
     x = np.maximum(scores, 0.0)
     pos = x[x > 0]
     vmax = float(pos.max()) if pos.size else 1e-6
-    fig, ax = plt.subplots(figsize=(10, 8))
-    sns.heatmap(x, cmap="viridis", vmin=0, vmax=vmax, cbar=True, ax=ax, square=False)
-    ax.set_xlabel("head")
-    ax.set_ylabel("layer")
-    ax.set_title(f"{title}\n(neg→0, vmax={vmax:.3f})")
-    fig.tight_layout()
-    fig.savefig(out_png, dpi=110, bbox_inches="tight")
-    plt.close(fig)
+    fig, ax = new_panel()
+    im = ax.imshow(x, cmap=CMAP_SEQ, vmin=0, vmax=vmax, aspect="auto", interpolation="nearest")
+    cax = fig.add_axes([0.815, 0.15, 0.025, 0.82])
+    cb = fig.colorbar(im, cax=cax)
+    cb.ax.tick_params(labelsize=6.5, length=2)
+    cb.outline.set_visible(False)
+    cb.set_label("Causal mediation score", fontsize=7.5)
+    finish_panel(fig, ax, out_path)
+    return vmax
 
 
-def render_significance(mask, out_png, title, n_sig, threshold):
-    fig, ax = plt.subplots(figsize=(10, 8))
-    sns.heatmap(mask, cmap=["#f5f5f5", "#1f77b4"], vmin=0, vmax=1, cbar=False, ax=ax, square=False)
-    ax.set_xlabel("head")
-    ax.set_ylabel("layer")
-    ax.set_title(
-        f"{title}\nFWER on averaged-cell-mean (α={ALPHA}, thr={threshold:.4f}): {n_sig}/{mask.size}"
-    )
-    fig.tight_layout()
-    fig.savefig(out_png, dpi=110, bbox_inches="tight")
-    plt.close(fig)
+def render_significance(mask, out_path):
+    fig, ax = new_panel()
+    ax.imshow(mask, cmap=ListedColormap(["#ffffff", BLUE]), vmin=0, vmax=1, aspect="auto",
+              interpolation="nearest")
+    finish_panel(fig, ax, out_path)
 
 
 def select_conditions(names):
@@ -131,15 +163,15 @@ def main():
     ap.add_argument("--tolerate-missing", action="store_true",
                     help="aggregate whatever cells exist (>=1) instead of requiring all 6. "
                          "Also requires per-sample tensors to exist. Use for partial Gemma coverage.")
-    ap.add_argument("--model-label", default="",
-                    help="optional label prefix for figure titles (e.g. 'Gemma-2-27B').")
     args = ap.parse_args()
 
+    apply_style()
+    plt.rcParams["axes.grid"] = False
+    plt.rcParams["savefig.bbox"] = "standard"  # keep the shared box; tight would crop each panel differently
     results_root = args.results_root if args.results_root.is_absolute() else ROOT / args.results_root
     out_dir = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     conditions = select_conditions(args.conditions)
-    prefix = f"{args.model_label} · " if args.model_label else ""
 
     rows = []
     for cond in conditions:
@@ -165,25 +197,24 @@ def main():
             print(f"[{c_key}] aggregating {len(cells)}/{EXPECT_CELLS} cells, n={n_per_cell}, seeds={seeds}")
             for ck in cell_keys:
                 print(f"    cell: {ck}")
-            coverage_note = f"{len(cells)}/{EXPECT_CELLS} cells"
         else:
             print(f"[{c_key}] aggregating {EXPECT_CELLS} cells, n={n_per_cell}, seeds={seeds}")
-            coverage_note = "3 templates × 2 directions"
 
         avg_scores, mask, threshold, n_sig = aggregate_condition(cells)
-        title = f"{prefix}{c_key} · mean across {coverage_note}\nn per cell: {n_per_cell}"
-        v_png = out_dir / f"{c_key}_avg_viridis.png"
-        s_png = out_dir / f"{c_key}_avg_significance.png"
-        render_viridis(avg_scores, v_png, title)
-        render_significance(mask, s_png, title, n_sig, threshold)
+        v_png = out_dir / f"{c_key}_avg_scores.pdf"
+        s_png = out_dir / f"{c_key}_avg_significance.pdf"
+        vmax = render_scores(avg_scores, v_png)
+        render_significance(mask, s_png)
         row = {
             "condition": c_key,
+            "paper_name": PAPER_NAMES[c_key],
             "n_cells": len(cells),
             "n_per_cell": n_per_cell,
             "seeds": seeds,
+            "vmax": vmax,
             "fwer_threshold": threshold,
             "n_sig_avg": n_sig,
-            "viridis": str(v_png.relative_to(ROOT)),
+            "scores": str(v_png.relative_to(ROOT)),
             "significance": str(s_png.relative_to(ROOT)),
         }
         if args.tolerate_missing:

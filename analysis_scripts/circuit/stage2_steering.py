@@ -54,6 +54,14 @@ pre-mutation value? Cross-domain uses additive steering only
 not just the divergence coordinates). The mirror (code-derived direction
 into true_belief) needs a code-domain Stage-1 capture first.
 
+Collateral leg (--include_generic / --only_generic, Nov 2026 dose
+extension): belief-free generic prompts (scripts/circuit/generic_prompts.py)
+under the same final-token edit, rank-1 target + the three controls,
+label-free readouts only — KL(steered || clean) and top-1 agreement with
+the clean model (top1_agree). Rows with empty correct/alt are label-free
+and get NaN p_correct/p_alt/flip_score. --skip_topk drops the 8-dim swap
+operator (already off-manifold at alpha = 4) from every leg.
+
 Checkpointing: per-config rows append to per_prompt.csv; finished configs
 are skipped on restart. --plot_only re-renders figures from the CSVs on a
 laptop (no GPU).
@@ -90,6 +98,7 @@ from circuit_common import (  # noqa: E402
     SYSTEM_PROMPT_MATCHED, TEMPLATES, WRITER_CSV, load_head_csv,
     split_pair_indices,
 )
+from generic_prompts import build_generic_prompts  # noqa: E402
 
 FB, TB = EVAL_VARIANTS  # ToM names kept for the tom-domain legs
 DOSES = [0.5, 1.0, 2.0, 4.0]
@@ -294,18 +303,28 @@ def eval_config(model, tokenizer, prompts, fwd_hooks, applied_norms,
 
         logprobs = torch.log_softmax(logits[0, -1].float(), dim=-1).cpu()
         probs = logprobs.exp()
-        cid = compute_answer_token_id(tokenizer, rec["variant"], rec["correct"], rec["prompt"])
-        aid = compute_answer_token_id(tokenizer, rec["variant"], rec["alt"], rec["prompt"])
-        p_c, p_a = float(probs[cid]), float(probs[aid])
+        labelled = bool(rec.get("correct")) and bool(rec.get("alt"))
+        if labelled:
+            cid = compute_answer_token_id(tokenizer, rec["variant"], rec["correct"], rec["prompt"])
+            aid = compute_answer_token_id(tokenizer, rec["variant"], rec["alt"], rec["prompt"])
+            p_c, p_a = float(probs[cid]), float(probs[aid])
+            flip = p_a / (p_a + p_c + 1e-12)
+        else:  # label-free (generic) row: KL + top-1 agreement only
+            p_c = p_a = flip = float("nan")
         # KL(steered || clean) at the answer position (design readout 3)
         kl = (0.0 if is_clean else float(
             torch.sum(logprobs.exp() * (logprobs - clean_logprobs[i]))))
+        top1 = int(probs.argmax())
+        top1_agree = (1.0 if is_clean
+                      else float(top1 == int(clean_logprobs[i].argmax())))
         rows.append(dict(
             template=rec["template"], pair_idx=rec["pair_idx"],
             variant=rec["variant"], p_correct=p_c, p_alt=p_a,
-            flip_score=p_a / (p_a + p_c + 1e-12),
+            flip_score=flip,
             kl_from_clean=kl,
-            top1_str=tokenizer.decode([int(probs.argmax())]),
+            top1_str=tokenizer.decode([top1]),
+            top1_agree=top1_agree,
+            p_top1=float(probs[top1]),
             applied_norm=float(np.mean(applied_norms)) if applied_norms else 0.0,
         ))
         if is_clean:
@@ -345,14 +364,21 @@ def render_figures(out_dir: Path):
         log.info(f"dropped {n0 - len(per)} duplicate rows (requeued-job appends)")
     fig_dir = out_dir / "figures"
     fig_dir.mkdir(exist_ok=True)
+    # older runs (L41_main) predate the label-free columns
+    for col in ("top1_agree", "p_top1"):
+        if col not in per.columns:
+            per[col] = np.nan
     summary = (per.groupby(["prompt_set", "mode", "direction", "dose"])
                .agg(flip_score=("flip_score", "mean"),
                     flip_sem=("flip_score", "sem"),
                     p_correct=("p_correct", "mean"),
                     p_alt=("p_alt", "mean"),
                     kl=("kl_from_clean", "mean"),
+                    kl_sem=("kl_from_clean", "sem"),
+                    top1_agree=("top1_agree", "mean"),
+                    p_top1=("p_top1", "mean"),
                     applied_norm=("applied_norm", "mean"),
-                    n=("flip_score", "size"))
+                    n=("kl_from_clean", "size"))
                .reset_index())
     summary.to_csv(out_dir / "summary.csv", index=False)
 
@@ -360,7 +386,9 @@ def render_figures(out_dir: Path):
     # one figure per metric (works for both tom- and code-domain runs)
     combos = (summary[summary["direction"] != "clean"]
               [["prompt_set", "mode"]].drop_duplicates().values.tolist())
-    for metric in ("flip_score", "p_correct", "kl"):
+    for metric in ("flip_score", "p_correct", "kl", "top1_agree"):
+        if summary[metric].isna().all():
+            continue
         ncols = 3
         nrows = max(1, -(-len(combos) // ncols))
         fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows),
@@ -443,6 +471,15 @@ def main():
                     "for tom runs / receiving-domain for code runs (the "
                     "original conventions); native/other force it")
     ap.add_argument("--skip_specificity", action="store_true")
+    ap.add_argument("--skip_topk", action="store_true",
+                    help="drop the target_topk (8-dim swap) operator from "
+                         "every leg; it is off-manifold by alpha = 4")
+    ap.add_argument("--include_generic", action="store_true",
+                    help="add the belief-free generic collateral leg "
+                         "(rank-1 target + controls, label-free readouts)")
+    ap.add_argument("--only_generic", action="store_true",
+                    help="run ONLY the generic collateral leg")
+    ap.add_argument("--n_generic", type=int, default=225)
     ap.add_argument("--only_controls", action="store_true",
                     help="run ONLY the control-direction legs (random / "
                          "heads_ctl / shuffled). Pair with "
@@ -460,7 +497,28 @@ def main():
                     help="build directions + config list, no model")
     ap.add_argument("--n_devices", type=int, default=1)
     ap.add_argument("--device_map", type=str, default="cuda")
+    ap.add_argument("--head_residual_bridge", action="store_true",
+                    help="paired head-axis steering and prompt-specific residual restoration")
+    ap.add_argument("--bridge_phase", choices=["pilot", "full"], default="pilot")
+    ap.add_argument("--bridge_pairs", type=int, default=2,
+                    help="pilot held-out pairs per template; full uses all saved hold indices")
+    ap.add_argument("--bridge_seed", type=int, default=20261023)
+    ap.add_argument("--bridge_control_draws", type=int, default=3)
+    ap.add_argument("--bridge_revision", default="cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8")
+    ap.add_argument("--bridge_dtype", choices=["bfloat16"], default="bfloat16",
+                    help="Match the dtype used for the frozen Stage-1 captures")
+    ap.add_argument("--bridge_output", type=Path)
+    ap.add_argument("--bridge_code_capture", type=Path)
+    ap.add_argument("--bridge_preflight", action="store_true",
+                    help="validate bridge inputs and fit/hold separation without model loading")
     args = ap.parse_args()
+
+    if args.head_residual_bridge:
+        from steering_bridge import run_bridge
+        run_bridge(args, make_steer_fn)
+        return
+    if args.bridge_preflight:
+        ap.error("--bridge_preflight requires --head_residual_bridge")
 
     domain = DOMAINS[args.domain]
     FBD, TBD = domain["variants"]  # divergent, non-divergent
@@ -537,6 +595,16 @@ def main():
             # mirror: code direction into held-out ToM true_belief prompts
             # (pre-registered prediction: null, given wire cos = 0.0997)
             legs += [("mirror_tom_tb", "inject", d) for d in TARGET_DIRECTIONS]
+    if args.only_generic:
+        legs = []
+    if args.include_generic or args.only_generic:
+        # collateral on belief-free prompts: both signs for the target
+        # direction, inject only for the (sign-symmetric) controls
+        legs += [("generic", "inject", d)
+                 for d in ["target_rank1"] + CONTROL_DIRECTIONS]
+        legs += [("generic", "delete", "target_rank1")]
+    if args.skip_topk:
+        legs = [leg for leg in legs if leg[2] != "target_topk"]
 
     per_path = out_dir / "per_prompt.csv"
     attn_path = out_dir / "attention.csv"
@@ -607,6 +675,9 @@ def main():
             elif pset == "code_alias":
                 prompt_sets[pset] = fresh_prompt_set(tokenizer, "code_alias",
                                                      args.n_code, args.control_seed)
+            elif pset == "generic":
+                prompt_sets[pset] = build_generic_prompts(
+                    tokenizer, args.n_generic, args.control_seed)
             log.info(f"prompt set {pset}: {len(prompt_sets[pset])} prompts")
         return prompt_sets[pset]
 

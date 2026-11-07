@@ -1,0 +1,2 @@
+sender,control,membership,scope,component,receiver_layer,receiver_index,receiver,aliases,cell,domain,kind,n_prompts,mean,lower,upper,exact_maxstat_p_14_cells,detected,positive_prompts,negative_prompts,matched_control_mean
+L39H23,L39H22,belief + photo + code,existing_candidates,q,43,30,L43H30,L43H30,K1_indexed_list_ABB,K1,target_minus_control,10,0.45,0.09353063166177678,0.8064693683382232,0.02734375,True,10,0,-0.0625

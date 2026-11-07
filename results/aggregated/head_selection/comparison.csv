@@ -1,0 +1,13 @@
+rule,set,n,n_topk,overlap_topk
+sig4of6,C1_abstract_belief,17,32,10.0
+sig4of6,C2_abstract_photo,6,26,4.0
+sig4of6,C5_answer_changes_location_only,15,22,11.0
+sig4of6,C6_answer_changes_location_only_photo,8,13,6.0
+sig4of6,div_unique,16,22,6.0
+sig4of6,div_shared,1,10,
+sig3of6,C1_abstract_belief,27,32,17.0
+sig3of6,C2_abstract_photo,11,26,9.0
+sig3of6,C5_answer_changes_location_only,16,22,12.0
+sig3of6,C6_answer_changes_location_only_photo,8,13,6.0
+sig3of6,div_unique,22,22,10.0
+sig3of6,div_shared,5,10,
