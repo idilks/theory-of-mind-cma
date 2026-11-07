@@ -36,8 +36,8 @@ python cma.py \
   --run_statistical_tests
 ```
 
-One of `--use_template_system` (ToM) or `--context_type code` is required; without either,
-the run stops with an error. With `--patch_after_movement` we patch at the belief-formation
+One of `--use_template_system` (ToM) or `--context_type code` is required; without either
+we get an error. With `--patch_after_movement` we patch at the belief-formation
 position; without it we patch the end token. All headline results use the end token.
 
 For statistics we use a max-statistic permutation test with FWER correction over all 1920
@@ -128,6 +128,6 @@ and raw behavioral responses. We regenerate the captures with
 `analysis_scripts/rsa_head_outputs/capture_head_outputs*.py` and
 `analysis_scripts/lookback_analysis/capture_attention_patterns.py`.
 
-**Path:** the outputs of `cma.py` land in `cma_scripts/results/` (its `log_dir` is relative,
+**Path:** the outputs of `cma.py` are in `cma_scripts/results/` (its `log_dir` is relative,
 and we use `pyrootutils` to set the working directory to `cma_scripts/`), while we run every
 analysis script against `<repo_root>/results/`. Move results to the repository root.

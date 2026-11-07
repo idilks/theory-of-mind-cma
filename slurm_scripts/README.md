@@ -3,7 +3,7 @@
 The batch scripts we ran on our cluster, kept as the record of the exact arguments
 behind each result: prompt counts, seeds, time limits, head lists, patch positions.
 They are not portable as-is: `PROJECT_DIR`, conda hooks, model caches and partition
-names refer to our cluster. Treat each one as a worked command line for the script
+names are specific to our cluster. Treat each one as a worked command line for the script
 we launch with it (`cma_scripts/tasks/causal_analysis/cma.py`, `ablation_experiment.py`,
 or an `analysis_scripts/` module) and adapt the header.
 
@@ -21,6 +21,6 @@ Timing that matters: a code CMA at n=150 takes about 8.4 h on an A100. With `cma
 output is written only after all prompts, so a timed-out run is lost; with
 `ablation_experiment.py` a checkpoint is written per step and we resume from it.
 
-`../slurm_logs/` holds the six job logs we check (in
+`../slurm_logs/` contains the six job logs we check (in
 `analysis_scripts/analyze_head_ablation_interactions.py`) before using a saved ablation run:
 model id, dtype, prefill mode.

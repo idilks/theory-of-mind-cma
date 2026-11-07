@@ -1,8 +1,8 @@
 # Analysis scripts
 
 Post-hoc analysis over the CMA outputs. Every module has a docstring with a usage line;
-the top-level README.md has the condition table, the canonical registry and where results
-live. `condition_registry.py` holds the shared vocabulary: import conditions from it rather
+the top-level README.md contains the condition table, the canonical registry and the
+results layout. `condition_registry.py` contains the shared vocabulary: import conditions from it rather
 than hand-rolling tables, and import the permutation test from
 `cma_scripts/tasks/causal_analysis/statistical_testing.py`.
 
@@ -31,7 +31,7 @@ Paths are relative to the repository root; run scripts from there, e.g.
 | content RDMs (`fig15_*`) | `paper_figures/fig15_content_rdms.py` | head-output captures (**not included**; same capture script on the content stimulus set) |
 | appendix heatmap grids | `build_avg_heatmaps.py` (`--results-root` for Gemma) | CMA cells |
 
-Figures go to `results/figures/`. For the tables we use the CSVs produced with
+Figure output is in `results/figures/`. For the tables we use the CSVs produced with
 `aggregate_conditions.py`, `controls.py`, `h2_additivity_robustness.py`,
 `template_holdout_check.py`, `analyze_head_domain_profiles.py` and
 `analyze_head_ablation_interactions.py`, all data-only.
@@ -144,7 +144,7 @@ residual stream with the Stage-1 directions on held-out prompts.
 
 ## paper_figures/
 
-`fig*.py` are the figure scripts listed above; `style.py` holds the shared palette and
+`fig*.py` are the figure scripts listed above; `style.py` contains the shared palette and
 rcParams; `slides_simple_scatters.py` is a presentation variant.
 
 ## tests/
